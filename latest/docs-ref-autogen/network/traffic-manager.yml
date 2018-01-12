@@ -1,0 +1,71 @@
+### YamlMime:UniversalReference
+items:
+- uid: az_network_traffic_manager
+  name: az network traffic-manager
+  summary: Manage the routing of incoming traffic.
+  description: ''
+  langs:
+  - azurecli
+  children: []
+commands:
+- uid: az_network_traffic_manager_endpoint
+  name: az network traffic-manager endpoint
+  summary: Manage traffic manager end points.
+- uid: az_network_traffic_manager_endpoint_create
+  name: az network traffic-manager endpoint create
+  summary: Create an endpoint.
+- uid: az_network_traffic_manager_endpoint_delete
+  name: az network traffic-manager endpoint delete
+  summary: Delete an endpoint.
+- uid: az_network_traffic_manager_endpoint_list
+  name: az network traffic-manager endpoint list
+  summary: List endpoints.
+- uid: az_network_traffic_manager_endpoint_show
+  name: az network traffic-manager endpoint show
+  summary: Get the details for an endpoint.
+- uid: az_network_traffic_manager_endpoint_show_geographic_hierarchy
+  name: az network traffic-manager endpoint show-geographic-hierarchy
+  summary: Gets the default Geographic Hierarchy used by the Geographic traffic routing method.
+- uid: az_network_traffic_manager_endpoint_update
+  name: az network traffic-manager endpoint update
+  summary: Update an endpoint.
+- uid: az_network_traffic_manager_profile
+  name: az network traffic-manager profile
+  summary: Manage traffic manager profiles.
+- uid: az_network_traffic_manager_profile_check_dns
+  name: az network traffic-manager profile check-dns
+  summary: Check the availability of a relative DNS name.
+- uid: az_network_traffic_manager_profile_create
+  name: az network traffic-manager profile create
+  summary: Create a profile.
+- uid: az_network_traffic_manager_profile_delete
+  name: az network traffic-manager profile delete
+  summary: Delete a profile.
+- uid: az_network_traffic_manager_profile_list
+  name: az network traffic-manager profile list
+  summary: List profiles.
+- uid: az_network_traffic_manager_profile_show
+  name: az network traffic-manager profile show
+  summary: Get the details for a profile.
+- uid: az_network_traffic_manager_profile_update
+  name: az network traffic-manager profile update
+  summary: Update a profile.
+globalParameters:
+- name: --debug
+  summary: Increase logging verbosity to show all debug logs.
+- name: --help -h
+  summary: Show this help message and exit.
+- name: --output -o
+  defaultValue: json
+  parameterValueGroup: json, jsonc, table, tsv
+  summary: Output format.
+- name: --query
+  summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+- name: --verbose
+  summary: Increase logging verbosity. Use --debug for full debug logs.
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/2ae8950ab0babd5a1f814cf5fddebf40d951d85d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 10/27/2017 5:44:13 PM
+ms.date: 10/27/2017

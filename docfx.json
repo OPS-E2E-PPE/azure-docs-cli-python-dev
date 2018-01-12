@@ -3,19 +3,96 @@
     "content": [
       {
         "files": [
+          "toc.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "breadcrumb"
+      },
+      {
+        "files": [
+          "TOC.yml"
+        ],
+        "src": "latest/docs-ref-autogen",
+        "version": "azure-cli-latest",
+        "dest": "command"
+      },
+      {
+        "files": [
+          "TOC.yml"
+        ],
+        "src": "2017-03-09-profile/docs-ref-autogen",
+        "version": "azure-cli-2017-03-09-profile",
+        "dest": "command"
+      },
+      {
+        "files": [
           "**/*.md",
           "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
+        ],
+        "src": "latest/docs-ref-autogen",
+        "version": "azure-cli-latest",
+        "dest": ""
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/TOC.md",
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+        "src": "docs-ref-conceptual",
+        "version": "azure-cli-latest",
+        "dest": ""
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+        "src": "2017-03-09-profile/docs-ref-autogen",
+        "version": "azure-cli-2017-03-09-profile",
+        "dest": ""
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/TOC.md",
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+        "src": "docs-ref-conceptual",
+        "version": "azure-cli-2017-03-09-profile",
+        "dest": ""
       }
     ],
     "resource": [
@@ -26,20 +103,230 @@
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**"
-        ]
+          "**/includes/**"
+        ],
+        "src": "docs-ref-conceptual",
+        "version": "azure-cli-latest",
+        "dest": ""
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "src": "docs-ref-conceptual",
+        "version": "azure-cli-2017-03-09-profile",
+        "dest": ""
       }
     ],
+    "versions": { 
+       "azure-cli-latest": { 
+         "dest": "azure-cli-latest" 
+       }, 
+       "azure-cli-2017-03-09-profile": { 
+         "dest": "azure-cli-2017-03-09-profile" 
+       }
+     },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/azure-cli-docs-dev/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "breadcrumb_path": "/cli/azure/breadcrumb/toc.json",
+      "keywords": "azure, cli, command line",
+      "brand": "azure",
+      "author": "rloutlaw",
+      "ms.author": "routlaw",
+      "manager": "douge",
+      "ms.topic": "reference",
+      "ms.devlang": "azurecli",
+      "ms.date": "12/06/2016",
+      "showPowerShellPicker": "true"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+       "ms.service": {
+          "latest/docs-ref-autogen/account/**": "azure",
+          "latest/docs-ref-autogen/account.yml": "azure",
+          "latest/docs-ref-autogen/acr/**": "container-registry",
+          "latest/docs-ref-autogen/acr.yml": "container-registry",
+          "latest/docs-ref-autogen/acs/**": "container-service",
+          "latest/docs-ref-autogen/acs.yml": "container-service",
+          "latest/docs-ref-autogen/ad/**": "active-directory",
+          "latest/docs-ref-autogen/ad.yml": "active-directory",
+          "latest/docs-ref-autogen/appservice/**": "app-service",
+          "latest/docs-ref-autogen/appservice.yml": "app-service",
+          "latest/docs-ref-autogen/batch/**": "batch",
+          "latest/docs-ref-autogen/batch.yml": "batch",
+          "latest/docs-ref-autogen/cdn/**": "cdn",
+          "latest/docs-ref-autogen/cdn.yml": "cdn",
+          "latest/docs-ref-autogen/cloud/**": "cloud-services",
+          "latest/docs-ref-autogen/cloud.yml": "cloud-services",
+          "latest/docs-ref-autogen/cognitiveservices/**": "cognitive-services",
+          "latest/docs-ref-autogen/cognitiveservices.yml": "cognitive-services",
+          "latest/docs-ref-autogen/component/**": "multiple",
+          "latest/docs-ref-autogen/component.yml": "multiple",
+          "latest/docs-ref-autogen/container/**": "container-service",
+          "latest/docs-ref-autogen/container.yml": "container-service",
+          "latest/docs-ref-autogen/cosmosdb/**": "cosmos-db",
+          "latest/docs-ref-autogen/cosmosdb.yml": "cosmos-db",
+          "latest/docs-ref-autogen/disk/**": "storage",
+          "latest/docs-ref-autogen/disk.yml": "storage",
+          "latest/docs-ref-autogen/dla/**": "datalake-analytics",
+          "latest/docs-ref-autogen/dla.yml": "datalake-analytics",
+          "latest/docs-ref-autogen/dls/**": "datalake-store",
+          "latest/docs-ref-autogen/dls.yml": "datalake-store",
+          "latest/docs-ref-autogen/documentdb/**": "documentdb",
+          "latest/docs-ref-autogen/documentdb.yml": "documentdb",
+          "latest/docs-ref-autogen/feature/**": "azure-resource-manager",
+          "latest/docs-ref-autogen/feature.yml": "azure-resource-manager",
+          "latest/docs-ref-autogen/functionapp/**": "functions",
+          "latest/docs-ref-autogen/functionapp.yml": "functions",
+          "latest/docs-ref-autogen/group/**": "azure-resource-manager",
+          "latest/docs-ref-autogen/group.yml": "azure-resource-manager",
+          "latest/docs-ref-autogen/image/**": "virtual-machines",
+          "latest/docs-ref-autogen/image.yml": "virtual-machines",
+          "latest/docs-ref-autogen/iot/**": "iot-hub",
+          "latest/docs-ref-autogen/iot.yml": "iot-hub",
+          "latest/docs-ref-autogen/keyvault/**":"key-vault",
+          "latest/docs-ref-autogen/keyvault.yml":"key-vault",
+          "latest/docs-ref-autogen/lab/**": "devtest-lab",
+          "latest/docs-ref-autogen/lab.yml": "devtest-lab",
+          "latest/docs-ref-autogen/lock/**": "azure-resource-manager",
+          "latest/docs-ref-autogen/lock.yml": "azure-resource-manager",
+          "latest/docs-ref-autogen/managedapp/**": "app-service",
+          "latest/docs-ref-autogen/managedapp.yml": "app-service",
+          "latest/docs-ref-autogen/monitor/**": "monitoring-and-diagnostics",
+          "latest/docs-ref-autogen/monitor.yml": "monitoring-and-diagnostics",
+          "latest/docs-ref-autogen/mysql/**": "mysql",
+          "latest/docs-ref-autogen/mysql.yml": "mysql",
+          "latest/docs-ref-autogen/network/**":"virtual-network",
+          "latest/docs-ref-autogen/network.yml":"virtual-network",
+          "latest/docs-ref-autogen/policy/**": "azure-resource-manager",
+          "latest/docs-ref-autogen/policy.yml": "azure-resource-manager",
+          "latest/docs-ref-autogen/postgres/**": "postgres",
+          "latest/docs-ref-autogen/postgres.yml": "postgres",
+          "latest/docs-ref-autogen/provider/**": "azure-resource-manager",
+          "latest/docs-ref-autogen/provider.yml": "azure-resource-manager",
+          "latest/docs-ref-autogen/redis/**":"redis-cache",
+          "latest/docs-ref-autogen/redis.yml":"redis-cache",
+          "latest/docs-ref-autogen/resource/**":"azure-resource-manager",
+          "latest/docs-ref-autogen/resource.yml":"azure-resource-manager",
+          "latest/docs-ref-autogen/role/**": "azure-resource-manager",
+          "latest/docs-ref-autogen/role.yml": "azure-resource-manger",
+          "latest/docs-ref-autogen/sf/**": "service-fabric",
+          "latest/docs-ref-autogen/sf.yml": "service-fabric",
+          "latest/docs-ref-autogen/snapshot/**": "virtual-machines",
+          "latest/docs-ref-autogen/snapshot.yml": "virtual-machines",
+          "latest/docs-ref-autogen/sql/**": "sql-database",
+          "latest/docs-ref-autogen/sql.yml": "sql-database",
+          "latest/docs-ref-autogen/storage/**": "storage",
+          "latest/docs-ref-autogen/storage.yml": "storage",
+          "latest/docs-ref-autogen/tag/**": "azure-resource-manager",
+          "latest/docs-ref-autogen/tag.yml": "azure-resource-manager",
+          "latest/docs-ref-autogen/vm/**": "virtual-machines",
+          "latest/docs-ref-autogen/vm.yml": "virtual-machines",
+          "latest/docs-ref-autogen/vmss/**": "virtual-machine-scale-sets",
+          "latest/docs-ref-autogen/vmss.yml": "virtual-machine-scale-sets",
+          "latest/docs-ref-autogen/webapp/**": "app-service-web",
+          "latest/docs-ref-autogen/webapp.yml": "app-service-web",
+          "latest/docs-ref-autogen/taskhelp.yml": "azure",
+          "latest/docs-ref-autogen/index.yml": "azure",
+          "2017-03-09-profile/docs-ref-autogen/account/**": "azure",
+          "2017-03-09-profile/docs-ref-autogen/account.yml": "azure",
+          "2017-03-09-profile/docs-ref-autogen/acr/**": "container-registry",
+          "2017-03-09-profile/docs-ref-autogen/acr.yml": "container-registry",
+          "2017-03-09-profile/docs-ref-autogen/acs/**": "container-service",
+          "2017-03-09-profile/docs-ref-autogen/acs.yml": "container-service",
+          "2017-03-09-profile/docs-ref-autogen/ad/**": "active-directory",
+          "2017-03-09-profile/docs-ref-autogen/ad.yml": "active-directory",
+          "2017-03-09-profile/docs-ref-autogen/appservice/**": "app-service",
+          "2017-03-09-profile/docs-ref-autogen/appservice.yml": "app-service",
+          "2017-03-09-profile/docs-ref-autogen/batch/**": "batch",
+          "2017-03-09-profile/docs-ref-autogen/batch.yml": "batch",
+          "2017-03-09-profile/docs-ref-autogen/cdn/**": "cdn",
+          "2017-03-09-profile/docs-ref-autogen/cdn.yml": "cdn",
+          "2017-03-09-profile/docs-ref-autogen/cloud/**": "cloud-services",
+          "2017-03-09-profile/docs-ref-autogen/cloud.yml": "cloud-services",
+          "2017-03-09-profile/docs-ref-autogen/cognitiveservices/**": "cognitive-services",
+          "2017-03-09-profile/docs-ref-autogen/cognitiveservices.yml": "cognitive-services",
+          "2017-03-09-profile/docs-ref-autogen/component/**": "multiple",
+          "2017-03-09-profile/docs-ref-autogen/component.yml": "multiple",
+          "2017-03-09-profile/docs-ref-autogen/container/**": "container-service",
+          "2017-03-09-profile/docs-ref-autogen/container.yml": "container-service",
+          "2017-03-09-profile/docs-ref-autogen/cosmosdb/**": "cosmos-db",
+          "2017-03-09-profile/docs-ref-autogen/cosmosdb.yml": "cosmos-db",
+          "2017-03-09-profile/docs-ref-autogen/disk/**": "storage",
+          "2017-03-09-profile/docs-ref-autogen/disk.yml": "storage",
+          "2017-03-09-profile/docs-ref-autogen/dla/**": "datalake-analytics",
+          "2017-03-09-profile/docs-ref-autogen/dla.yml": "datalake-analytics",
+          "2017-03-09-profile/docs-ref-autogen/dls/**": "datalake-store",
+          "2017-03-09-profile/docs-ref-autogen/dls.yml": "datalake-store",
+          "2017-03-09-profile/docs-ref-autogen/documentdb/**": "documentdb",
+          "2017-03-09-profile/docs-ref-autogen/documentdb.yml": "documentdb",
+          "2017-03-09-profile/docs-ref-autogen/feature/**": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/feature.yml": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/functionapp/**": "functions",
+          "2017-03-09-profile/docs-ref-autogen/functionapp.yml": "functions",
+          "2017-03-09-profile/docs-ref-autogen/group/**": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/group.yml": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/image/**": "virtual-machines",
+          "2017-03-09-profile/docs-ref-autogen/image.yml": "virtual-machines",
+          "2017-03-09-profile/docs-ref-autogen/iot/**": "iot-hub",
+          "2017-03-09-profile/docs-ref-autogen/iot.yml": "iot-hub",
+          "2017-03-09-profile/docs-ref-autogen/keyvault/**":"key-vault",
+          "2017-03-09-profile/docs-ref-autogen/keyvault.yml":"key-vault",
+          "2017-03-09-profile/docs-ref-autogen/lab/**": "devtest-lab",
+          "2017-03-09-profile/docs-ref-autogen/lab.yml": "devtest-lab",
+          "2017-03-09-profile/docs-ref-autogen/lock/**": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/lock.yml": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/managedapp/**": "app-service",
+          "2017-03-09-profile/docs-ref-autogen/managedapp.yml": "app-service",
+          "2017-03-09-profile/docs-ref-autogen/monitor/**": "monitoring-and-diagnostics",
+          "2017-03-09-profile/docs-ref-autogen/monitor.yml": "monitoring-and-diagnostics",
+          "2017-03-09-profile/docs-ref-autogen/mysql/**": "mysql",
+          "2017-03-09-profile/docs-ref-autogen/mysql.yml": "mysql",
+          "2017-03-09-profile/docs-ref-autogen/network/**":"virtual-network",
+          "2017-03-09-profile/docs-ref-autogen/network.yml":"virtual-network",
+          "2017-03-09-profile/docs-ref-autogen/policy/**": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/policy.yml": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/postgres/**": "postgres",
+          "2017-03-09-profile/docs-ref-autogen/postgres.yml": "postgres",
+          "2017-03-09-profile/docs-ref-autogen/provider/**": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/provider.yml": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/redis/**":"redis-cache",
+          "2017-03-09-profile/docs-ref-autogen/redis.yml":"redis-cache",
+          "2017-03-09-profile/docs-ref-autogen/resource/**":"azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/resource.yml":"azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/role/**": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/role.yml": "azure-resource-manger",
+          "2017-03-09-profile/docs-ref-autogen/sf/**": "service-fabric",
+          "2017-03-09-profile/docs-ref-autogen/sf.yml": "service-fabric",
+          "2017-03-09-profile/docs-ref-autogen/snapshot/**": "virtual-machines",
+          "2017-03-09-profile/docs-ref-autogen/snapshot.yml": "virtual-machines",
+          "2017-03-09-profile/docs-ref-autogen/sql/**": "sql-database",
+          "2017-03-09-profile/docs-ref-autogen/sql.yml": "sql-database",
+          "2017-03-09-profile/docs-ref-autogen/storage/**": "storage",
+          "2017-03-09-profile/docs-ref-autogen/storage.yml": "storage",
+          "2017-03-09-profile/docs-ref-autogen/tag/**": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/tag.yml": "azure-resource-manager",
+          "2017-03-09-profile/docs-ref-autogen/vm/**": "virtual-machines",
+          "2017-03-09-profile/docs-ref-autogen/vm.yml": "virtual-machines",
+          "2017-03-09-profile/docs-ref-autogen/vmss/**": "virtual-machine-scale-sets",
+          "2017-03-09-profile/docs-ref-autogen/vmss.yml": "virtual-machine-scale-sets",
+          "2017-03-09-profile/docs-ref-autogen/webapp/**": "app-service-web",
+          "2017-03-09-profile/docs-ref-autogen/webapp.yml": "app-service-web",
+          "2017-03-09-profile/docs-ref-autogen/taskhelp.yml": "azure",
+          "2017-03-09-profile/docs-ref-autogen/index.yml": "azure"
+      },
+      "hideEdit": {
+          "2017-03-09-profile/docs-ref-autogen/**": "true",
+          "latest/docs-ref-autogen/**": "true"
+      }
+    },
     "template": [],
-    "dest": "azure-cli-docs-dev"
+    "exportrawmodel": true,
+    "dest": ""
   }
 }
