@@ -18,10 +18,6 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --container-name -c
-    summary: Name of the container.
-    description: ''
-  - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
@@ -29,10 +25,13 @@ items:
     name: --vault-name -v
     summary: Name of the Recovery services vault.
     description: ''
+  - name: --container-name -c
+    summary: Name of the container.
+    description: ''
   source:
     path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
     remote:
-      branch: master
+      branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_backup_item_set_policy
@@ -65,7 +64,7 @@ items:
   source:
     path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
     remote:
-      branch: master
+      branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_backup_item_show
@@ -94,7 +93,7 @@ items:
   source:
     path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
     remote:
-      branch: master
+      branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
@@ -120,9 +119,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/8c4d62d0b2e9dfddaf7881dfdff6e63a7f069b6e/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-updated_at: 9/19/2017 6:15:48 PM
-ms.date: 9/19/2017
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
+updated_at: 11/13/2017 7:42:14 PM
+ms.date: 11/13/2017
