@@ -61,14 +61,14 @@
     {
       "TopLevelTOC": "latest/docs-ref-autogen/toc.yml",
       "ConceptualTOC": "docs-ref-conceptual/toc.yml",
-      "ReferenceTOCUrl": "/command/toc.json?view=azure-cli-latest",
-      "ConceptualTOCUrl": "/toc.json?view=azure-cli-latest"
+      "ReferenceTOCUrl": "/azure-cli-docs-dev/command/toc.json?view=azure-cli-latest",
+      "ConceptualTOCUrl": "/azure-cli-docs-dev/toc.json?view=azure-cli-latest"
     },
     {
       "TopLevelTOC": "2017-03-09-profile/docs-ref-autogen/toc.yml",
       "ConceptualTOC": "docs-ref-conceptual/toc.yml",
-      "ReferenceTOCUrl": "/command/toc.json?view=azure-cli-2017-03-09-profile",
-      "ConceptualTOCUrl": "/toc.json?view=azure-cli-2017-03-09-profile"
+      "ReferenceTOCUrl": "/azure-cli-docs-dev/command/toc.json?view=azure-cli-2017-03-09-profile",
+      "ConceptualTOCUrl": "/azure-cli-docs-dev/toc.json?view=azure-cli-2017-03-09-profile"
     }
   ]
 }
