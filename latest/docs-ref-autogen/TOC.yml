@@ -4670,6 +4670,9 @@
       - name: List-Usages
         uid: az_sql_db_list_usages
         displayName: az sql db list-usages
+      - name: Rename
+        uid: az_sql_db_rename
+        displayName: az sql db rename
       - name: Restore
         uid: az_sql_db_restore
         displayName: az sql db restore
