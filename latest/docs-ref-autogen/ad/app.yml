@@ -52,7 +52,7 @@ items:
     summary: The value for the key credentials associated with the application.
     description: ''
   - name: --password
-    summary: ''
+    summary: App password, aka 'client secret'.
     description: ''
   - name: --reply-urls
     summary: Space separated URIs to which Azure AD will redirect in response to an OAuth 2.0 request. The value does not need to be a physical endpoint, but must be a valid URI.
@@ -136,6 +136,10 @@ items:
     name: --id
     summary: Identifier uri, application id, or object id.
     description: ''
+  - name: --available-to-other-tenants
+    parameterValueGroup: false, true
+    summary: The application can be used from any Azure AD tenants.
+    description: ''
   - name: --display-name
     summary: The display name of the application.
     description: ''
@@ -162,7 +166,7 @@ items:
     summary: The value for the key credentials associated with the application.
     description: ''
   - name: --password
-    summary: ''
+    summary: App password, aka 'client secret'.
     description: ''
   - name: --reply-urls
     summary: Space separated URIs to which Azure AD will redirect in response to an OAuth 2.0 request. The value does not need to be a physical endpoint, but must be a valid URI.
