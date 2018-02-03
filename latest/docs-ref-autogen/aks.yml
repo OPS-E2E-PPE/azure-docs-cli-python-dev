@@ -77,8 +77,7 @@ items:
     summary: Generate SSH public and private key files if missing.
     description: ''
   - name: --kubernetes-version -k
-    defaultValue: 1.7.7
-    summary: Version of Kubernetes to use for creating the cluster, such as "1.7.7" or "1.8.2".
+    summary: Version of Kubernetes to use for creating the cluster, such as "1.7.12" or "1.8.6".
     description: ''
   - name: --location -l
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
