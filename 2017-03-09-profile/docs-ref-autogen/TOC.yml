@@ -4045,6 +4045,19 @@
       - name: Update
         uid: az_policy_definition_update
         displayName: az policy definition update
+  - name: Resource Provider Features
+    uid: az_feature
+    displayName: az feature
+    items:
+    - name: List
+      uid: az_feature_list
+      displayName: az feature list
+    - name: Register
+      uid: az_feature_register
+      displayName: az feature register
+    - name: Show
+      uid: az_feature_show
+      displayName: az feature show
   - name: Resource Providers
     uid: az_provider
     displayName: az provider

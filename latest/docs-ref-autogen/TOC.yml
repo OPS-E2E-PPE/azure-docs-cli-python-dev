@@ -4460,6 +4460,9 @@
     - name: Register
       uid: az_feature_register
       displayName: az feature register
+    - name: Show
+      uid: az_feature_show
+      displayName: az feature show
   - name: Resource Providers
     uid: az_provider
     displayName: az provider

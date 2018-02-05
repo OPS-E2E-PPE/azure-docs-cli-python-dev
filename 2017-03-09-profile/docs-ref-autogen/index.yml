@@ -221,6 +221,9 @@ commands:
 - uid: az_extension
   name: az extension
   summary: Manage and update CLI extensions.
+- uid: az_feature
+  name: az feature
+  summary: Manage resource provider features.
 - uid: az_feedback
   name: az feedback
   summary: Loving or hating the CLI?  Let us know!
