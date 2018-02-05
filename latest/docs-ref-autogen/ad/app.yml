@@ -29,7 +29,7 @@ items:
     description: ''
   - isRequired: true
     name: --identifier-uris
-    summary: Space separated unique URIs that Azure AD can use for this app.
+    summary: Space-separated unique URIs that Azure AD can use for this app.
     description: ''
   - name: --available-to-other-tenants
     parameterValueGroup: false, true
@@ -55,7 +55,7 @@ items:
     summary: App password, aka 'client secret'.
     description: ''
   - name: --reply-urls
-    summary: Space separated URIs to which Azure AD will redirect in response to an OAuth 2.0 request. The value does not need to be a physical endpoint, but must be a valid URI.
+    summary: Space-separated URIs to which Azure AD will redirect in response to an OAuth 2.0 request. The value does not need to be a physical endpoint, but must be a valid URI.
     description: ''
   - name: --start-date
     summary: Date or datetime at which credentials become valid(e.g. '2017-01-01T01:00:00+00:00' or '2017-01-01'). Default value is current time.
@@ -150,7 +150,7 @@ items:
     summary: The url where users can sign in and use your app.
     description: ''
   - name: --identifier-uris
-    summary: Space separated unique URIs that Azure AD can use for this app.
+    summary: Space-separated unique URIs that Azure AD can use for this app.
     description: ''
   - name: --key-type
     defaultValue: AsymmetricX509Cert
@@ -169,7 +169,7 @@ items:
     summary: App password, aka 'client secret'.
     description: ''
   - name: --reply-urls
-    summary: Space separated URIs to which Azure AD will redirect in response to an OAuth 2.0 request. The value does not need to be a physical endpoint, but must be a valid URI.
+    summary: Space-separated URIs to which Azure AD will redirect in response to an OAuth 2.0 request. The value does not need to be a physical endpoint, but must be a valid URI.
     description: ''
   - name: --start-date
     summary: Date or datetime at which credentials become valid(e.g. '2017-01-01T01:00:00+00:00' or '2017-01-01'). Default value is current time.

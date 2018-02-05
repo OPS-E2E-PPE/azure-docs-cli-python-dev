@@ -67,7 +67,7 @@ items:
     summary: The required number of CPU cores of the containers.
     description: ''
   - name: --environment-variables -e
-    summary: A list of environment variable for the container. Space separated values in 'key=value' format.
+    summary: A list of environment variable for the container. Space-separated values in 'key=value' format.
     description: ''
   - name: --ip-address
     parameterValueGroup: Public

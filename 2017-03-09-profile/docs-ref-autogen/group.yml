@@ -35,7 +35,7 @@ items:
     summary: Name of the new resource group.
     description: ''
   - name: --tags
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   source:
     path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py

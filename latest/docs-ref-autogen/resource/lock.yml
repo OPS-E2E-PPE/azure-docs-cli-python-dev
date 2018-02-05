@@ -74,7 +74,7 @@ items:
       content: az resource lock delete -n lockName --resource /subscriptions/{SubID}/resourceGroups/{ResourceGroup}/providers/Microsoft.Network/virtualNetworks/{VMName}
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space delimited). If provided, no other "Resource Id" arguments should be specified.
+    summary: One or more resource IDs (space-delimited). If provided, no other "Resource Id" arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the lock.
@@ -147,7 +147,7 @@ items:
       content: az resource lock show -n lockname -g MyResourceGroup --resource myvnet --resource-type Microsoft.Network/virtualNetworks
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space delimited). If provided, no other "Resource Id" arguments should be specified.
+    summary: One or more resource IDs (space-delimited). If provided, no other "Resource Id" arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the lock.
@@ -185,7 +185,7 @@ items:
       content: az resource lock update --name lockName -g MyResourceGroup --resource myvnet --resource-type Microsoft.Network/virtualNetworks --notes newNotesHere --lock-type CanNotDelete
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space delimited). If provided, no other "Resource Id" arguments should be specified.
+    summary: One or more resource IDs (space-delimited). If provided, no other "Resource Id" arguments should be specified.
     description: ''
   - name: --lock-type -t
     parameterValueGroup: CanNotDelete, ReadOnly

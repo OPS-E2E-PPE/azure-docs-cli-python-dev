@@ -48,7 +48,7 @@ items:
     summary: Fails the command if an action group to be added will change existing webhook properties.
     description: ''
   - name: --webhook-properties -w
-    summary: Space separated webhook properties in 'key[=value]' format. These properties will be associated with the action groups added in this command.
+    summary: Space-separated webhook properties in 'key[=value]' format. These properties will be associated with the action groups added in this command.
     description: For any webhook receiver in these action group, these data are appended to the webhook payload. To attach different webhook properties to different action groups, add the action groups in separate update-action commands.
   source:
     path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
@@ -104,6 +104,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/00f4c903221240501ae124a99a421b3069116335/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-updated_at: 1/25/2018 12:43:57 AM
-ms.date: 1/25/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/418fc028dbeb815e71ade8788c109cc8f6d2b893/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+updated_at: 2/5/2018 9:26:46 PM
+ms.date: 2/5/2018

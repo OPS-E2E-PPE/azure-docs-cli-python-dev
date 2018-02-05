@@ -54,7 +54,7 @@ items:
     summary: 'Represent a user, group, or service principal. supported format: object id, user sign-in name, or service principal name.'
     description: ''
   - name: --ids
-    summary: Space separated role assignment ids.
+    summary: Space-separated role assignment ids.
     description: ''
   - name: --include-inherited
     summary: Include assignments applied on parent scopes.

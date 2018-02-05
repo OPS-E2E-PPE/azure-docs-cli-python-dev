@@ -38,7 +38,7 @@ items:
   - isRequired: true
     name: --rights -r
     parameterValueGroup: DeviceConnect, EnrollmentRead, EnrollmentWrite, RegistrationStatusRead, RegistrationStatusWrite, ServiceConfig
-    summary: Access rights for the IoT provisioning service. Use space separated list for multiple rights.
+    summary: Access rights for the IoT provisioning service. Use space-separated list for multiple rights.
     description: ''
   - name: --primary-key
     summary: Primary SAS key value.
@@ -163,7 +163,7 @@ items:
     description: ''
   - name: --rights -r
     parameterValueGroup: DeviceConnect, EnrollmentRead, EnrollmentWrite, RegistrationStatusRead, RegistrationStatusWrite, ServiceConfig
-    summary: Access rights for the IoT provisioning service. Use space separated list for multiple rights.
+    summary: Access rights for the IoT provisioning service. Use space-separated list for multiple rights.
     description: ''
   - name: --secondary-key
     summary: Secondary SAS key value.

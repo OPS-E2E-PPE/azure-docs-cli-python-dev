@@ -51,7 +51,7 @@ items:
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
     description: ''
   - name: --tags
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --action -a
     summary: Add an action to fire when the alert is triggered.
@@ -215,7 +215,7 @@ items:
     summary: ''
     description: ''
   - name: --tags
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --add-action -a
     summary: Add an action to fire when the alert is triggered.
@@ -327,6 +327,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/00f4c903221240501ae124a99a421b3069116335/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-updated_at: 1/25/2018 12:43:57 AM
-ms.date: 1/25/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/418fc028dbeb815e71ade8788c109cc8f6d2b893/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+updated_at: 2/5/2018 9:26:46 PM
+ms.date: 2/5/2018

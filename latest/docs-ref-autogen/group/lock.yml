@@ -57,7 +57,7 @@ items:
       content: az group lock delete --name lockName -g MyResourceGroup
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space delimited). If provided, no other "Resource Id" arguments should be specified.
+    summary: One or more resource IDs (space-delimited). If provided, no other "Resource Id" arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the lock.
@@ -106,7 +106,7 @@ items:
       content: az group lock show -n lockname -g MyResourceGroup
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space delimited). If provided, no other "Resource Id" arguments should be specified.
+    summary: One or more resource IDs (space-delimited). If provided, no other "Resource Id" arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the lock.
@@ -132,7 +132,7 @@ items:
       content: az group lock update --name lockName -g MyResourceGroup --notes newNotesHere --lock-type CanNotDelete
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space delimited). If provided, no other "Resource Id" arguments should be specified.
+    summary: One or more resource IDs (space-delimited). If provided, no other "Resource Id" arguments should be specified.
     description: ''
   - name: --lock-type -t
     parameterValueGroup: CanNotDelete, ReadOnly

@@ -38,7 +38,7 @@ items:
     summary: Name of the new assignment.
     description: ''
   - name: --not-scopes
-    summary: Space separated scopes where the policy assignment does not apply.
+    summary: Space-separated scopes where the policy assignment does not apply.
     description: ''
   - name: --params -p
     summary: JSON formatted string or path to file with parameter values of policy rule.

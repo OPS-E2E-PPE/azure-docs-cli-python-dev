@@ -164,7 +164,7 @@ items:
     summary: The maximum number of entities to return.
     description: ''
   - name: --select
-    summary: Space separated list of properties to return for each entity.
+    summary: Space-separated list of properties to return for each entity.
     description: ''
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
@@ -251,7 +251,7 @@ items:
     summary: Specifies the accepted content type of the response payload. See TablePayloadFormat for possible values.
     description: ''
   - name: --select
-    summary: Space separated list of properties to return for each entity.
+    summary: Space-separated list of properties to return for each entity.
     description: ''
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.

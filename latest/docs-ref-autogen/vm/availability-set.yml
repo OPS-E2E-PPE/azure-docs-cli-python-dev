@@ -75,7 +75,7 @@ items:
     summary: Update Domain count. If unspecified, server picks the most optimal number like 5. For the latest defaults see <a href="https://docs.microsoft.com/en-us/rest/api/compute/availabilitysets/availabilitysets-create">https://docs.microsoft.com/en-us/rest/api/compute/availabilitysets/availabilitysets-create</a>.
     description: ''
   - name: --tags
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --unmanaged
     summary: Contained VMs should use unmanaged disks.

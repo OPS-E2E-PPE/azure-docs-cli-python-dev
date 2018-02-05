@@ -197,7 +197,7 @@ items:
     summary: The VM size to be created. See <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/">https://azure.microsoft.com/en-us/pricing/details/virtual-machines/</a> for size info.
     description: ''
   - name: --tags
-    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --validate
     summary: Generate and validate the ARM template without creating any resources.
@@ -223,7 +223,7 @@ items:
     summary: The SSH public key or public key file path.
     description: ''
   - name: --assign-identity
-    summary: Accept system or user assigned identities with space separated. Use '[system]' to refer system assigned identity, or a resource id to refer user assigned identity. Check out help for more examples.
+    summary: Accept system or user assigned identities separated by spaces. Use '[system]' to refer system assigned identity, or a resource id to refer user assigned identity. Check out help for more examples.
     description: ''
   - name: --role
     defaultValue: Contributor
@@ -287,7 +287,7 @@ items:
     summary: Storage caching type for the VM data disk(s).
     description: ''
   - name: --data-disk-sizes-gb
-    summary: Space separated empty managed data disk sizes in GB to create.
+    summary: Space-separated empty managed data disk sizes in GB to create.
     description: ''
   - name: --os-disk-caching --storage-caching
     defaultValue: ReadWrite
@@ -404,7 +404,7 @@ items:
   parameters:
   - isRequired: true
     name: --secrets -s
-    summary: Space separated list of key vault secret URIs. Perhaps, produced by 'az keyvault secret list-versions --vault-name vaultname -n cert1 --query "[?attributes.enabled].id" -o tsv'.
+    summary: Space-separated list of key vault secret URIs. Perhaps, produced by 'az keyvault secret list-versions --vault-name vaultname -n cert1 --query "[?attributes.enabled].id" -o tsv'.
     description: ''
   - name: --certificate-store
     summary: 'Windows certificate store names. Default: My.'

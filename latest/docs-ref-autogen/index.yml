@@ -28,7 +28,7 @@ items:
       content: az configure --defaults vm='' web=''
   parameters:
   - name: --defaults -d
-    summary: Space separated 'name=value' pairs for common argument defaults.
+    summary: Space-separated 'name=value' pairs for common argument defaults.
     description: ''
   source:
     path: src/command_modules/azure-cli-configure/azure/cli/command_modules/configure/_help.py
