@@ -291,6 +291,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/418fc028dbeb815e71ade8788c109cc8f6d2b893/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 2/5/2018 9:26:46 PM
+gitcommit: https://github.com/Azure/azure-cli/blob/44879f3e15d94fd3ed52aa26d9e209867d5c8016/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 2/5/2018 11:51:42 PM
 ms.date: 2/5/2018
