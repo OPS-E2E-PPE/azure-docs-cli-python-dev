@@ -988,6 +988,9 @@
     uid: az_container
     displayName: az container
     items:
+    - name: Attach
+      uid: az_container_attach
+      displayName: az container attach
     - name: Create
       uid: az_container_create
       displayName: az container create
