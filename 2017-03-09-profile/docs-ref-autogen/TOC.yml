@@ -65,6 +65,9 @@
     - name: Get-Credentials
       uid: az_aks_get_credentials
       displayName: az aks get-credentials
+    - name: Get-Upgrades
+      uid: az_aks_get_upgrades
+      displayName: az aks get-upgrades
     - name: Get-Versions
       uid: az_aks_get_versions
       displayName: az aks get-versions
