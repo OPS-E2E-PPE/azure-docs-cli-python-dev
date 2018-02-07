@@ -849,6 +849,12 @@
       - name: Delete
         uid: az_cdn_custom_domain_delete
         displayName: az cdn custom-domain delete
+      - name: Disable-Https
+        uid: az_cdn_custom_domain_disable_https
+        displayName: az cdn custom-domain disable-https
+      - name: Enable-Https
+        uid: az_cdn_custom_domain_enable_https
+        displayName: az cdn custom-domain enable-https
       - name: List
         uid: az_cdn_custom_domain_list
         displayName: az cdn custom-domain list
