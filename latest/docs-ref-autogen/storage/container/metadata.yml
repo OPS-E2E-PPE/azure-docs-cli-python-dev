@@ -108,6 +108,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/4e8ba81c398bfdb3dfc6f4e4419d960e7f9653b6/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-updated_at: 2/7/2018 5:27:42 PM
-ms.date: 2/7/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/758b24aa8861f4b11901aecd8e310f06a0bbfdb6/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+updated_at: 2/8/2018 1:27:34 AM
+ms.date: 2/8/2018
