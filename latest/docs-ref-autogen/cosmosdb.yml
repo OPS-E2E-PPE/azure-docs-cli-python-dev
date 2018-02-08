@@ -50,6 +50,9 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --capabilities
+    summary: Set custom capabilities on the Cosmos DB database account.
+    description: ''
   - name: --default-consistency-level
     parameterValueGroup: BoundedStaleness, ConsistentPrefix, Eventual, Session, Strong
     summary: Default consistency level of the Cosmos DB database account.
@@ -76,6 +79,9 @@ items:
   - name: --max-staleness-prefix
     defaultValue: "100"
     summary: When used with Bounded Staleness consistency, this value represents the number of stale requests tolerated. Accepted range for this value is 1 - 2,147,483,647.
+    description: ''
+  - name: --tags
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   source:
     path: src/command_modules/azure-cli-cosmosdb/azure/cli/command_modules/cosmosdb/_help.py
@@ -112,15 +118,16 @@ items:
   - azurecli
   parameters:
   - isRequired: true
+    name: --failover-policies
+    summary: Space-separated failover policies in 'regionName=failoverPriority' format. E.g eastus=0 westus=1.
+    description: ''
+  - isRequired: true
     name: --name -n
     summary: Name of the Cosmos DB database account.
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --failover-policies
-    summary: Space-separated failover policies in 'regionName=failoverPriority' format. E.g eastus=0 westus=1.
     description: ''
   source:
     path: src/command_modules/azure-cli-cosmosdb/azure/cli/command_modules/cosmosdb/_help.py
@@ -269,6 +276,9 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --capabilities
+    summary: Set custom capabilities on the Cosmos DB database account.
+    description: ''
   - name: --default-consistency-level
     parameterValueGroup: BoundedStaleness, ConsistentPrefix, Eventual, Session, Strong
     summary: Default consistency level of the Cosmos DB database account.
@@ -288,6 +298,9 @@ items:
     description: ''
   - name: --max-staleness-prefix
     summary: When used with Bounded Staleness consistency, this value represents the number of stale requests tolerated. Accepted range for this value is 1 - 2,147,483,647.
+    description: ''
+  - name: --tags
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   source:
     path: src/command_modules/azure-cli-cosmosdb/azure/cli/command_modules/cosmosdb/_help.py
