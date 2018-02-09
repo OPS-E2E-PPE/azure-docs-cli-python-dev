@@ -5103,6 +5103,9 @@
       - name: Snapshot
         uid: az_storage_blob_snapshot
         displayName: az storage blob snapshot
+      - name: Undelete
+        uid: az_storage_blob_undelete
+        displayName: az storage blob undelete
       - name: Update
         uid: az_storage_blob_update
         displayName: az storage blob update
@@ -5174,6 +5177,16 @@
         - name: Show
           uid: az_storage_blob_service_properties_show
           displayName: az storage blob service-properties show
+        - name: Delete-Policy
+          uid: az_storage_blob_service_properties_delete_policy
+          displayName: az storage blob service-properties delete-policy
+          items:
+          - name: Show
+            uid: az_storage_blob_service_properties_delete_policy_show
+            displayName: az storage blob service-properties delete-policy show
+          - name: Update
+            uid: az_storage_blob_service_properties_delete_policy_update
+            displayName: az storage blob service-properties delete-policy update
     - name: Containers
       uid: az_storage_container
       displayName: az storage container
