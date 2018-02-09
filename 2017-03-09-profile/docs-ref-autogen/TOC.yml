@@ -4427,6 +4427,25 @@
         - name: Update
           uid: az_sql_server_conn_policy_update
           displayName: az sql server conn-policy update
+      - name: Dns-Alias
+        uid: az_sql_server_dns_alias
+        displayName: az sql server dns-alias
+        items:
+        - name: Create
+          uid: az_sql_server_dns_alias_create
+          displayName: az sql server dns-alias create
+        - name: Delete
+          uid: az_sql_server_dns_alias_delete
+          displayName: az sql server dns-alias delete
+        - name: List
+          uid: az_sql_server_dns_alias_list
+          displayName: az sql server dns-alias list
+        - name: Set
+          uid: az_sql_server_dns_alias_set
+          displayName: az sql server dns-alias set
+        - name: Show
+          uid: az_sql_server_dns_alias_show
+          displayName: az sql server dns-alias show
       - name: Firewall Rules
         uid: az_sql_server_firewall_rule
         displayName: az sql server firewall-rule
