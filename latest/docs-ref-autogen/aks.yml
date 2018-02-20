@@ -169,7 +169,7 @@ items:
 - uid: az_aks_get_versions
   name: az aks get-versions
   summary: Get the versions available for creating a managed Kubernetes cluster.
-  description: 'Deprecation notice: the previous behavior of this command is now in `az aks get-upgrades`.'
+  description: ''
   langs:
   - azurecli
   parameters:
