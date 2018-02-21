@@ -968,6 +968,13 @@
     uid: az_consumption
     displayName: az consumption
     items:
+    - name: Pricesheet
+      uid: az_consumption_pricesheet
+      displayName: az consumption pricesheet
+      items:
+      - name: Show
+        uid: az_consumption_pricesheet_show
+        displayName: az consumption pricesheet show
     - name: Reservations
       uid: az_consumption_reservations
       displayName: az consumption reservations
