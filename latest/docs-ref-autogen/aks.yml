@@ -102,7 +102,7 @@ items:
     summary: Service principal used for authentication to Azure APIs.
     description: If not specified, a new service principal is created and cached at $HOME.azureaksServicePrincipal.json to be used by subsequent `az aks` commands.
   - name: --ssh-key-value
-    defaultValue: ~.sshid_rsa.pub
+    defaultValue: ~\.ssh\id_rsa.pub
     summary: Public key path or key contents to install on node VMs for SSH access. For example, 'ssh-rsa AAAAB...snip...UcyupgH azureuser@linuxvm'.
     description: ''
   - name: --tags
@@ -148,7 +148,7 @@ items:
     summary: 'Get cluster administrator credentials.  Default: cluster user credentials.'
     description: ''
   - name: --file -f
-    defaultValue: C:Usersappveyor.kubeconfig
+    defaultValue: C:\Users\appveyor\.kube\config
     summary: Kubernetes configuration file to update. Use "-" to print YAML to stdout instead.
     description: ''
 - uid: az_aks_get_upgrades
@@ -189,7 +189,7 @@ items:
     summary: ''
     description: ''
   - name: --install-location
-    defaultValue: C:Program Files (x86)kubectl.exe
+    defaultValue: C:\Program Files (x86)\kubectl.exe
     summary: ''
     description: ''
 - uid: az_aks_install_connector

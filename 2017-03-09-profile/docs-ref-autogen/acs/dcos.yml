@@ -28,7 +28,7 @@ items:
     summary: Do not open browser after opening a proxy to the cluster web user interface.
     description: ''
   - name: --ssh-key-file
-    defaultValue: ~.sshid_rsa
+    defaultValue: ~\.ssh\id_rsa
     summary: Path to an SSH key file to use.
     description: ''
   source:
@@ -49,7 +49,7 @@ items:
     summary: ''
     description: ''
   - name: --install-location
-    defaultValue: C:Program Files (x86)dcos.exe
+    defaultValue: C:\Program Files (x86)\dcos.exe
     summary: ''
     description: ''
   source:
