@@ -169,7 +169,7 @@ commands:
   summary: Manage Azure Active Directory Graph entities needed for Role Based Access Control.
 - uid: az_advisor
   name: az advisor
-  summary: (PREVIEW) Manage Azure Advisor.
+  summary: Manage Azure Advisor.
 - uid: az_aks
   name: az aks
   summary: Manage Azure Kubernetes Services.

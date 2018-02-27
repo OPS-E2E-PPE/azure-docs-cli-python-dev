@@ -27,12 +27,15 @@
       uid: az_advisor_configuration
       displayName: az advisor configuration
       items:
-      - name: Get
-        uid: az_advisor_configuration_get
-        displayName: az advisor configuration get
-      - name: Set
-        uid: az_advisor_configuration_set
-        displayName: az advisor configuration set
+      - name: List
+        uid: az_advisor_configuration_list
+        displayName: az advisor configuration list
+      - name: Show
+        uid: az_advisor_configuration_show
+        displayName: az advisor configuration show
+      - name: Update
+        uid: az_advisor_configuration_update
+        displayName: az advisor configuration update
     - name: Recommendation
       uid: az_advisor_recommendation
       displayName: az advisor recommendation
@@ -43,9 +46,6 @@
       - name: Enable
         uid: az_advisor_recommendation_enable
         displayName: az advisor recommendation enable
-      - name: Generate
-        uid: az_advisor_recommendation_generate
-        displayName: az advisor recommendation generate
       - name: List
         uid: az_advisor_recommendation_list
         displayName: az advisor recommendation list
