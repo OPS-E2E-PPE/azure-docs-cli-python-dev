@@ -140,7 +140,6 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --priority
-    defaultValue: Regular
     parameterValueGroup: Low, Regular
     summary: (PREVIEW)Priority. Use 'Low' to run short-lived workloads in a cost-effective way.
     description: ''
