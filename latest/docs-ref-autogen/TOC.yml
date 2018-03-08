@@ -5112,6 +5112,237 @@
         - name: Set
           uid: az_sf_cluster_upgrade_type_set
           displayName: az sf cluster upgrade-type set
+  - name: Servicebus
+    uid: az_servicebus
+    displayName: az servicebus
+    items:
+    - name: Georecovery-Alias
+      uid: az_servicebus_georecovery_alias
+      displayName: az servicebus georecovery-alias
+      items:
+      - name: Break-Pair
+        uid: az_servicebus_georecovery_alias_break_pair
+        displayName: az servicebus georecovery-alias break-pair
+      - name: Delete
+        uid: az_servicebus_georecovery_alias_delete
+        displayName: az servicebus georecovery-alias delete
+      - name: Exists
+        uid: az_servicebus_georecovery_alias_exists
+        displayName: az servicebus georecovery-alias exists
+      - name: Fail-Over
+        uid: az_servicebus_georecovery_alias_fail_over
+        displayName: az servicebus georecovery-alias fail-over
+      - name: List
+        uid: az_servicebus_georecovery_alias_list
+        displayName: az servicebus georecovery-alias list
+      - name: Set
+        uid: az_servicebus_georecovery_alias_set
+        displayName: az servicebus georecovery-alias set
+      - name: Show
+        uid: az_servicebus_georecovery_alias_show
+        displayName: az servicebus georecovery-alias show
+      - name: Authorization-Rule
+        uid: az_servicebus_georecovery_alias_authorization_rule
+        displayName: az servicebus georecovery-alias authorization-rule
+        items:
+        - name: List
+          uid: az_servicebus_georecovery_alias_authorization_rule_list
+          displayName: az servicebus georecovery-alias authorization-rule list
+        - name: Show
+          uid: az_servicebus_georecovery_alias_authorization_rule_show
+          displayName: az servicebus georecovery-alias authorization-rule show
+        - name: Keys
+          uid: az_servicebus_georecovery_alias_authorization_rule_keys
+          displayName: az servicebus georecovery-alias authorization-rule keys
+          items:
+          - name: List
+            uid: az_servicebus_georecovery_alias_authorization_rule_keys_list
+            displayName: az servicebus georecovery-alias authorization-rule keys list
+    - name: Namespace
+      uid: az_servicebus_namespace
+      displayName: az servicebus namespace
+      items:
+      - name: Create
+        uid: az_servicebus_namespace_create
+        displayName: az servicebus namespace create
+      - name: Delete
+        uid: az_servicebus_namespace_delete
+        displayName: az servicebus namespace delete
+      - name: Exists
+        uid: az_servicebus_namespace_exists
+        displayName: az servicebus namespace exists
+      - name: List
+        uid: az_servicebus_namespace_list
+        displayName: az servicebus namespace list
+      - name: Show
+        uid: az_servicebus_namespace_show
+        displayName: az servicebus namespace show
+      - name: Update
+        uid: az_servicebus_namespace_update
+        displayName: az servicebus namespace update
+      - name: Authorization-Rule
+        uid: az_servicebus_namespace_authorization_rule
+        displayName: az servicebus namespace authorization-rule
+        items:
+        - name: Create
+          uid: az_servicebus_namespace_authorization_rule_create
+          displayName: az servicebus namespace authorization-rule create
+        - name: Delete
+          uid: az_servicebus_namespace_authorization_rule_delete
+          displayName: az servicebus namespace authorization-rule delete
+        - name: List
+          uid: az_servicebus_namespace_authorization_rule_list
+          displayName: az servicebus namespace authorization-rule list
+        - name: Show
+          uid: az_servicebus_namespace_authorization_rule_show
+          displayName: az servicebus namespace authorization-rule show
+        - name: Update
+          uid: az_servicebus_namespace_authorization_rule_update
+          displayName: az servicebus namespace authorization-rule update
+        - name: Keys
+          uid: az_servicebus_namespace_authorization_rule_keys
+          displayName: az servicebus namespace authorization-rule keys
+          items:
+          - name: List
+            uid: az_servicebus_namespace_authorization_rule_keys_list
+            displayName: az servicebus namespace authorization-rule keys list
+          - name: Renew
+            uid: az_servicebus_namespace_authorization_rule_keys_renew
+            displayName: az servicebus namespace authorization-rule keys renew
+    - name: Queue
+      uid: az_servicebus_queue
+      displayName: az servicebus queue
+      items:
+      - name: Create
+        uid: az_servicebus_queue_create
+        displayName: az servicebus queue create
+      - name: Delete
+        uid: az_servicebus_queue_delete
+        displayName: az servicebus queue delete
+      - name: List
+        uid: az_servicebus_queue_list
+        displayName: az servicebus queue list
+      - name: Show
+        uid: az_servicebus_queue_show
+        displayName: az servicebus queue show
+      - name: Update
+        uid: az_servicebus_queue_update
+        displayName: az servicebus queue update
+      - name: Authorization-Rule
+        uid: az_servicebus_queue_authorization_rule
+        displayName: az servicebus queue authorization-rule
+        items:
+        - name: Create
+          uid: az_servicebus_queue_authorization_rule_create
+          displayName: az servicebus queue authorization-rule create
+        - name: Delete
+          uid: az_servicebus_queue_authorization_rule_delete
+          displayName: az servicebus queue authorization-rule delete
+        - name: List
+          uid: az_servicebus_queue_authorization_rule_list
+          displayName: az servicebus queue authorization-rule list
+        - name: Show
+          uid: az_servicebus_queue_authorization_rule_show
+          displayName: az servicebus queue authorization-rule show
+        - name: Update
+          uid: az_servicebus_queue_authorization_rule_update
+          displayName: az servicebus queue authorization-rule update
+        - name: Keys
+          uid: az_servicebus_queue_authorization_rule_keys
+          displayName: az servicebus queue authorization-rule keys
+          items:
+          - name: List
+            uid: az_servicebus_queue_authorization_rule_keys_list
+            displayName: az servicebus queue authorization-rule keys list
+          - name: Renew
+            uid: az_servicebus_queue_authorization_rule_keys_renew
+            displayName: az servicebus queue authorization-rule keys renew
+    - name: Topic
+      uid: az_servicebus_topic
+      displayName: az servicebus topic
+      items:
+      - name: Create
+        uid: az_servicebus_topic_create
+        displayName: az servicebus topic create
+      - name: Delete
+        uid: az_servicebus_topic_delete
+        displayName: az servicebus topic delete
+      - name: List
+        uid: az_servicebus_topic_list
+        displayName: az servicebus topic list
+      - name: Show
+        uid: az_servicebus_topic_show
+        displayName: az servicebus topic show
+      - name: Update
+        uid: az_servicebus_topic_update
+        displayName: az servicebus topic update
+      - name: Authorization-Rule
+        uid: az_servicebus_topic_authorization_rule
+        displayName: az servicebus topic authorization-rule
+        items:
+        - name: Create
+          uid: az_servicebus_topic_authorization_rule_create
+          displayName: az servicebus topic authorization-rule create
+        - name: Delete
+          uid: az_servicebus_topic_authorization_rule_delete
+          displayName: az servicebus topic authorization-rule delete
+        - name: List
+          uid: az_servicebus_topic_authorization_rule_list
+          displayName: az servicebus topic authorization-rule list
+        - name: Show
+          uid: az_servicebus_topic_authorization_rule_show
+          displayName: az servicebus topic authorization-rule show
+        - name: Update
+          uid: az_servicebus_topic_authorization_rule_update
+          displayName: az servicebus topic authorization-rule update
+        - name: Keys
+          uid: az_servicebus_topic_authorization_rule_keys
+          displayName: az servicebus topic authorization-rule keys
+          items:
+          - name: List
+            uid: az_servicebus_topic_authorization_rule_keys_list
+            displayName: az servicebus topic authorization-rule keys list
+          - name: Renew
+            uid: az_servicebus_topic_authorization_rule_keys_renew
+            displayName: az servicebus topic authorization-rule keys renew
+      - name: Subscription
+        uid: az_servicebus_topic_subscription
+        displayName: az servicebus topic subscription
+        items:
+        - name: Create
+          uid: az_servicebus_topic_subscription_create
+          displayName: az servicebus topic subscription create
+        - name: Delete
+          uid: az_servicebus_topic_subscription_delete
+          displayName: az servicebus topic subscription delete
+        - name: List
+          uid: az_servicebus_topic_subscription_list
+          displayName: az servicebus topic subscription list
+        - name: Show
+          uid: az_servicebus_topic_subscription_show
+          displayName: az servicebus topic subscription show
+        - name: Update
+          uid: az_servicebus_topic_subscription_update
+          displayName: az servicebus topic subscription update
+        - name: Rule
+          uid: az_servicebus_topic_subscription_rule
+          displayName: az servicebus topic subscription rule
+          items:
+          - name: Create
+            uid: az_servicebus_topic_subscription_rule_create
+            displayName: az servicebus topic subscription rule create
+          - name: Delete
+            uid: az_servicebus_topic_subscription_rule_delete
+            displayName: az servicebus topic subscription rule delete
+          - name: List
+            uid: az_servicebus_topic_subscription_rule_list
+            displayName: az servicebus topic subscription rule list
+          - name: Show
+            uid: az_servicebus_topic_subscription_rule_show
+            displayName: az servicebus topic subscription rule show
+          - name: Update
+            uid: az_servicebus_topic_subscription_rule_update
+            displayName: az servicebus topic subscription rule update
   - name: Storage
     uid: az_storage
     displayName: az storage

@@ -286,6 +286,9 @@ commands:
 - uid: az_role
   name: az role
   summary: Manage user roles for access control with Azure Active Directory and service principals.
+- uid: az_servicebus
+  name: az servicebus
+  summary: Manage Azure Service Bus namespaces, queues, topics, subscriptions, rules and geo-disaster recovery configuration alias.
 - uid: az_sf
   name: az sf
   summary: Manage and administer Azure Service Fabric clusters.
