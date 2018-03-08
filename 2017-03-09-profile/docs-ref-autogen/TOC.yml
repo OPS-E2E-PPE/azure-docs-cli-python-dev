@@ -1876,6 +1876,170 @@
       - name: Show
         uid: az_eventgrid_topic_type_show
         displayName: az eventgrid topic-type show
+  - name: Eventhubs
+    uid: az_eventhubs
+    displayName: az eventhubs
+    items:
+    - name: Eventhub
+      uid: az_eventhubs_eventhub
+      displayName: az eventhubs eventhub
+      items:
+      - name: Create
+        uid: az_eventhubs_eventhub_create
+        displayName: az eventhubs eventhub create
+      - name: Delete
+        uid: az_eventhubs_eventhub_delete
+        displayName: az eventhubs eventhub delete
+      - name: List
+        uid: az_eventhubs_eventhub_list
+        displayName: az eventhubs eventhub list
+      - name: Show
+        uid: az_eventhubs_eventhub_show
+        displayName: az eventhubs eventhub show
+      - name: Update
+        uid: az_eventhubs_eventhub_update
+        displayName: az eventhubs eventhub update
+      - name: Authorization-Rule
+        uid: az_eventhubs_eventhub_authorization_rule
+        displayName: az eventhubs eventhub authorization-rule
+        items:
+        - name: Create
+          uid: az_eventhubs_eventhub_authorization_rule_create
+          displayName: az eventhubs eventhub authorization-rule create
+        - name: Delete
+          uid: az_eventhubs_eventhub_authorization_rule_delete
+          displayName: az eventhubs eventhub authorization-rule delete
+        - name: List
+          uid: az_eventhubs_eventhub_authorization_rule_list
+          displayName: az eventhubs eventhub authorization-rule list
+        - name: Show
+          uid: az_eventhubs_eventhub_authorization_rule_show
+          displayName: az eventhubs eventhub authorization-rule show
+        - name: Update
+          uid: az_eventhubs_eventhub_authorization_rule_update
+          displayName: az eventhubs eventhub authorization-rule update
+        - name: Keys
+          uid: az_eventhubs_eventhub_authorization_rule_keys
+          displayName: az eventhubs eventhub authorization-rule keys
+          items:
+          - name: List
+            uid: az_eventhubs_eventhub_authorization_rule_keys_list
+            displayName: az eventhubs eventhub authorization-rule keys list
+          - name: Renew
+            uid: az_eventhubs_eventhub_authorization_rule_keys_renew
+            displayName: az eventhubs eventhub authorization-rule keys renew
+      - name: Consumer-Group
+        uid: az_eventhubs_eventhub_consumer_group
+        displayName: az eventhubs eventhub consumer-group
+        items:
+        - name: Create
+          uid: az_eventhubs_eventhub_consumer_group_create
+          displayName: az eventhubs eventhub consumer-group create
+        - name: Delete
+          uid: az_eventhubs_eventhub_consumer_group_delete
+          displayName: az eventhubs eventhub consumer-group delete
+        - name: List
+          uid: az_eventhubs_eventhub_consumer_group_list
+          displayName: az eventhubs eventhub consumer-group list
+        - name: Show
+          uid: az_eventhubs_eventhub_consumer_group_show
+          displayName: az eventhubs eventhub consumer-group show
+        - name: Update
+          uid: az_eventhubs_eventhub_consumer_group_update
+          displayName: az eventhubs eventhub consumer-group update
+    - name: Georecovery-Alias
+      uid: az_eventhubs_georecovery_alias
+      displayName: az eventhubs georecovery-alias
+      items:
+      - name: Break-Pair
+        uid: az_eventhubs_georecovery_alias_break_pair
+        displayName: az eventhubs georecovery-alias break-pair
+      - name: Delete
+        uid: az_eventhubs_georecovery_alias_delete
+        displayName: az eventhubs georecovery-alias delete
+      - name: Exists
+        uid: az_eventhubs_georecovery_alias_exists
+        displayName: az eventhubs georecovery-alias exists
+      - name: Fail-Over
+        uid: az_eventhubs_georecovery_alias_fail_over
+        displayName: az eventhubs georecovery-alias fail-over
+      - name: List
+        uid: az_eventhubs_georecovery_alias_list
+        displayName: az eventhubs georecovery-alias list
+      - name: Set
+        uid: az_eventhubs_georecovery_alias_set
+        displayName: az eventhubs georecovery-alias set
+      - name: Show
+        uid: az_eventhubs_georecovery_alias_show
+        displayName: az eventhubs georecovery-alias show
+      - name: Authorization-Rule
+        uid: az_eventhubs_georecovery_alias_authorization_rule
+        displayName: az eventhubs georecovery-alias authorization-rule
+        items:
+        - name: List
+          uid: az_eventhubs_georecovery_alias_authorization_rule_list
+          displayName: az eventhubs georecovery-alias authorization-rule list
+        - name: Show
+          uid: az_eventhubs_georecovery_alias_authorization_rule_show
+          displayName: az eventhubs georecovery-alias authorization-rule show
+        - name: Keys
+          uid: az_eventhubs_georecovery_alias_authorization_rule_keys
+          displayName: az eventhubs georecovery-alias authorization-rule keys
+          items:
+          - name: List
+            uid: az_eventhubs_georecovery_alias_authorization_rule_keys_list
+            displayName: az eventhubs georecovery-alias authorization-rule keys list
+    - name: Namespace
+      uid: az_eventhubs_namespace
+      displayName: az eventhubs namespace
+      items:
+      - name: Create
+        uid: az_eventhubs_namespace_create
+        displayName: az eventhubs namespace create
+      - name: Delete
+        uid: az_eventhubs_namespace_delete
+        displayName: az eventhubs namespace delete
+      - name: Exists
+        uid: az_eventhubs_namespace_exists
+        displayName: az eventhubs namespace exists
+      - name: List
+        uid: az_eventhubs_namespace_list
+        displayName: az eventhubs namespace list
+      - name: Show
+        uid: az_eventhubs_namespace_show
+        displayName: az eventhubs namespace show
+      - name: Update
+        uid: az_eventhubs_namespace_update
+        displayName: az eventhubs namespace update
+      - name: Authorization-Rule
+        uid: az_eventhubs_namespace_authorization_rule
+        displayName: az eventhubs namespace authorization-rule
+        items:
+        - name: Create
+          uid: az_eventhubs_namespace_authorization_rule_create
+          displayName: az eventhubs namespace authorization-rule create
+        - name: Delete
+          uid: az_eventhubs_namespace_authorization_rule_delete
+          displayName: az eventhubs namespace authorization-rule delete
+        - name: List
+          uid: az_eventhubs_namespace_authorization_rule_list
+          displayName: az eventhubs namespace authorization-rule list
+        - name: Show
+          uid: az_eventhubs_namespace_authorization_rule_show
+          displayName: az eventhubs namespace authorization-rule show
+        - name: Update
+          uid: az_eventhubs_namespace_authorization_rule_update
+          displayName: az eventhubs namespace authorization-rule update
+        - name: Keys
+          uid: az_eventhubs_namespace_authorization_rule_keys
+          displayName: az eventhubs namespace authorization-rule keys
+          items:
+          - name: List
+            uid: az_eventhubs_namespace_authorization_rule_keys_list
+            displayName: az eventhubs namespace authorization-rule keys list
+          - name: Renew
+            uid: az_eventhubs_namespace_authorization_rule_keys_renew
+            displayName: az eventhubs namespace authorization-rule keys renew
   - name: Extension
     uid: az_extension
     displayName: az extension
