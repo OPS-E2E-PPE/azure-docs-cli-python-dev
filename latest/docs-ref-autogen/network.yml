@@ -10,7 +10,7 @@ items:
   - az_network_list_usages
 - uid: az_network_list_usages
   name: az network list-usages
-  summary: List network usages for a subscription.
+  summary: List the number of network resources in a region that are used against a subscription quota.
   description: ''
   langs:
   - azurecli
@@ -298,7 +298,7 @@ commands:
   summary: Place the CLI in a waiting state until a condition of the application gateway is met.
 - uid: az_network_asg
   name: az network asg
-  summary: Manage application security groups.
+  summary: Manage application security groups (ASGs).
 - uid: az_network_asg_create
   name: az network asg create
   summary: Create an application security group.
@@ -760,7 +760,7 @@ commands:
   summary: Update a load balancer.
 - uid: az_network_list_usages
   name: az network list-usages
-  summary: List network usages for a subscription.
+  summary: List the number of network resources in a region that are used against a subscription quota.
 - uid: az_network_local_gateway
   name: az network local-gateway
   summary: Manage local gateways.
@@ -832,13 +832,13 @@ commands:
   summary: List network interfaces.
 - uid: az_network_nic_list_effective_nsg
   name: az network nic list-effective-nsg
-  summary: List all network security groups applied to a network interface.
+  summary: List all effective network security groups applied to a network interface.
 - uid: az_network_nic_show
   name: az network nic show
   summary: Get the details of a network interface.
 - uid: az_network_nic_show_effective_route_table
   name: az network nic show-effective-route-table
-  summary: Show all route tables applied to a network interface.
+  summary: Show the effective route table applied to a network interface.
 - uid: az_network_nic_update
   name: az network nic update
   summary: Update a network interface.
@@ -1021,7 +1021,7 @@ commands:
   summary: Manage Azure Virtual Networks.
 - uid: az_network_vnet_check_ip_address
   name: az network vnet check-ip-address
-  summary: Check if a private IP address is available for use.
+  summary: Check if a private IP address is available for use within a virtual network.
 - uid: az_network_vnet_create
   name: az network vnet create
   summary: Create a virtual network.
@@ -1228,7 +1228,7 @@ commands:
   summary: Get the network topology of a resource group.
 - uid: az_network_watcher_test_connectivity
   name: az network watcher test-connectivity
-  summary: Test if a direct TCP connection can be established between a Virtual Machine and a given endpoint.
+  summary: (PREVIEW) Test if a connection can be established between a Virtual Machine and a given endpoint.
 - uid: az_network_watcher_test_ip_flow
   name: az network watcher test-ip-flow
   summary: Test IP flow to/from a VM given the currently configured network security group rules.
@@ -1257,6 +1257,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/44879f3e15d94fd3ed52aa26d9e209867d5c8016/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 2/5/2018 11:51:42 PM
-ms.date: 2/5/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/5a5623b46890c19ae3a905796035c603c45ac128/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 3/5/2018 4:46:08 PM
+ms.date: 3/5/2018

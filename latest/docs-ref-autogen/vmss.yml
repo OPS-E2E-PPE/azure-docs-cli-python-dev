@@ -30,14 +30,10 @@ items:
   - az_vmss_wait
 - uid: az_vmss_assign_identity
   name: az vmss assign-identity
-  summary: Enable managed service identity on a VMSS.
-  description: This is required to authenticate and interact with other Azure services using bearer tokens.
+  summary: (Deprecated, please use 'az vmss identity assign').
+  description: ''
   langs:
   - azurecli
-  examples:
-  - summary: Enable identity on a VMSS with the 'Owner' role.
-    syntax:
-      content: az vmss assign-identity -g MyResourceGroup -n MyVmss --role Owner
   parameters:
   - isRequired: true
     name: --name -n
@@ -556,14 +552,10 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vmss_remove_identity
   name: az vmss remove-identity
-  summary: (PREVIEW) Remove user assigned identities from a VM scaleset.
+  summary: (Deprecated, please use 'az vmss identity remove').
   description: ''
   langs:
   - azurecli
-  examples:
-  - summary: Remove 2 identities which are in the same resource group with the VM scaleset
-    syntax:
-      content: az vmss remove-identity -g MyResourceGroup -n MyVm --identities readerId writerId
   parameters:
   - isRequired: true
     name: --identities
@@ -824,7 +816,7 @@ items:
 commands:
 - uid: az_vmss_assign_identity
   name: az vmss assign-identity
-  summary: Enable managed service identity on a VMSS.
+  summary: (Deprecated, please use 'az vmss identity assign').
 - uid: az_vmss_create
   name: az vmss create
   summary: Create an Azure Virtual Machine Scale Set.
@@ -900,6 +892,18 @@ commands:
 - uid: az_vmss_get_instance_view
   name: az vmss get-instance-view
   summary: View an instance of a VMSS.
+- uid: az_vmss_identity
+  name: az vmss identity
+  summary: Manage service identities of a VM scaleset.
+- uid: az_vmss_identity_assign
+  name: az vmss identity assign
+  summary: Enable managed service identity on a VMSS.
+- uid: az_vmss_identity_remove
+  name: az vmss identity remove
+  summary: (PREVIEW) Remove user assigned identities from a VM scaleset.
+- uid: az_vmss_identity_show
+  name: az vmss identity show
+  summary: Display VM scaleset's managed identity info.
 - uid: az_vmss_list
   name: az vmss list
   summary: List VMSS.
@@ -932,7 +936,7 @@ commands:
   summary: Reimage VMs within a VMSS.
 - uid: az_vmss_remove_identity
   name: az vmss remove-identity
-  summary: (PREVIEW) Remove user assigned identities from a VM scaleset.
+  summary: (Deprecated, please use 'az vmss identity remove').
 - uid: az_vmss_restart
   name: az vmss restart
   summary: Restart VMs within a VMSS.
@@ -985,6 +989,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/9e8700c22a7d5ce986018258faa8f32f81dd99d5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 2/13/2018 4:06:23 PM
-ms.date: 2/13/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/7cfdc9d5bd3dc6657b857f201ec3c7df8d2ac2c0/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 3/8/2018 4:05:22 AM
+ms.date: 3/8/2018

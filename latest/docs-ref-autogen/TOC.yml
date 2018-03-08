@@ -92,6 +92,9 @@
     - name: Upgrade
       uid: az_aks_upgrade
       displayName: az aks upgrade
+    - name: Upgrade-Connector
+      uid: az_aks_upgrade_connector
+      displayName: az aks upgrade-connector
     - name: Wait
       uid: az_aks_wait
       displayName: az aks wait
@@ -2051,6 +2054,16 @@
         - name: Show
           uid: az_functionapp_deployment_user_show
           displayName: az functionapp deployment user show
+    - name: Identity
+      uid: az_functionapp_identity
+      displayName: az functionapp identity
+      items:
+      - name: Assign
+        uid: az_functionapp_identity_assign
+        displayName: az functionapp identity assign
+      - name: Show
+        uid: az_functionapp_identity_show
+        displayName: az functionapp identity show
   - name: Identity
     uid: az_identity
     displayName: az identity
@@ -2726,6 +2739,60 @@
       - name: Update
         uid: az_monitor_autoscale_settings_update
         displayName: az monitor autoscale-settings update
+    - name: Autoscale
+      uid: az_monitor_autoscale
+      displayName: az monitor autoscale
+      items:
+      - name: Create
+        uid: az_monitor_autoscale_create
+        displayName: az monitor autoscale create
+      - name: Delete
+        uid: az_monitor_autoscale_delete
+        displayName: az monitor autoscale delete
+      - name: List
+        uid: az_monitor_autoscale_list
+        displayName: az monitor autoscale list
+      - name: Show
+        uid: az_monitor_autoscale_show
+        displayName: az monitor autoscale show
+      - name: Update
+        uid: az_monitor_autoscale_update
+        displayName: az monitor autoscale update
+      - name: Profile
+        uid: az_monitor_autoscale_profile
+        displayName: az monitor autoscale profile
+        items:
+        - name: Create
+          uid: az_monitor_autoscale_profile_create
+          displayName: az monitor autoscale profile create
+        - name: Delete
+          uid: az_monitor_autoscale_profile_delete
+          displayName: az monitor autoscale profile delete
+        - name: List
+          uid: az_monitor_autoscale_profile_list
+          displayName: az monitor autoscale profile list
+        - name: List-Timezones
+          uid: az_monitor_autoscale_profile_list_timezones
+          displayName: az monitor autoscale profile list-timezones
+        - name: Show
+          uid: az_monitor_autoscale_profile_show
+          displayName: az monitor autoscale profile show
+      - name: Rule
+        uid: az_monitor_autoscale_rule
+        displayName: az monitor autoscale rule
+        items:
+        - name: Copy
+          uid: az_monitor_autoscale_rule_copy
+          displayName: az monitor autoscale rule copy
+        - name: Create
+          uid: az_monitor_autoscale_rule_create
+          displayName: az monitor autoscale rule create
+        - name: Delete
+          uid: az_monitor_autoscale_rule_delete
+          displayName: az monitor autoscale rule delete
+        - name: List
+          uid: az_monitor_autoscale_rule_list
+          displayName: az monitor autoscale rule list
     - name: Diagnostics Settings
       uid: az_monitor_diagnostic_settings
       displayName: az monitor diagnostic-settings
@@ -2792,9 +2859,18 @@
       uid: az_mysql_db
       displayName: az mysql db
       items:
+      - name: Create
+        uid: az_mysql_db_create
+        displayName: az mysql db create
+      - name: Delete
+        uid: az_mysql_db_delete
+        displayName: az mysql db delete
       - name: List
         uid: az_mysql_db_list
         displayName: az mysql db list
+      - name: Show
+        uid: az_mysql_db_show
+        displayName: az mysql db show
     - name: Server Logs
       uid: az_mysql_server_logs
       displayName: az mysql server-logs
@@ -2827,6 +2903,9 @@
       - name: Update
         uid: az_mysql_server_update
         displayName: az mysql server update
+      - name: Wait
+        uid: az_mysql_server_wait
+        displayName: az mysql server wait
       - name: Configurations
         uid: az_mysql_server_configuration
         displayName: az mysql server configuration
@@ -4155,9 +4234,18 @@
       uid: az_postgres_db
       displayName: az postgres db
       items:
+      - name: Create
+        uid: az_postgres_db_create
+        displayName: az postgres db create
+      - name: Delete
+        uid: az_postgres_db_delete
+        displayName: az postgres db delete
       - name: List
         uid: az_postgres_db_list
         displayName: az postgres db list
+      - name: Show
+        uid: az_postgres_db_show
+        displayName: az postgres db show
     - name: Server Logs
       uid: az_postgres_server_logs
       displayName: az postgres server-logs
@@ -4190,6 +4278,9 @@
       - name: Update
         uid: az_postgres_server_update
         displayName: az postgres server update
+      - name: Wait
+        uid: az_postgres_server_wait
+        displayName: az postgres server wait
       - name: Configurations
         uid: az_postgres_server_configuration
         displayName: az postgres server configuration
@@ -5786,6 +5877,19 @@
         - name: Show
           uid: az_vmss_extension_image_show
           displayName: az vmss extension image show
+    - name: Identity
+      uid: az_vmss_identity
+      displayName: az vmss identity
+      items:
+      - name: Assign
+        uid: az_vmss_identity_assign
+        displayName: az vmss identity assign
+      - name: Remove
+        uid: az_vmss_identity_remove
+        displayName: az vmss identity remove
+      - name: Show
+        uid: az_vmss_identity_show
+        displayName: az vmss identity show
     - name: Network Interfaces
       uid: az_vmss_nic
       displayName: az vmss nic
@@ -6012,6 +6116,19 @@
         - name: Show
           uid: az_vm_extension_image_show
           displayName: az vm extension image show
+    - name: Identity
+      uid: az_vm_identity
+      displayName: az vm identity
+      items:
+      - name: Assign
+        uid: az_vm_identity_assign
+        displayName: az vm identity assign
+      - name: Remove
+        uid: az_vm_identity_remove
+        displayName: az vm identity remove
+      - name: Show
+        uid: az_vm_identity_show
+        displayName: az vm identity show
     - name: Images
       uid: az_vm_image
       displayName: az vm image
@@ -6339,6 +6456,16 @@
         - name: Show
           uid: az_webapp_deployment_user_show
           displayName: az webapp deployment user show
+    - name: Identity
+      uid: az_webapp_identity
+      displayName: az webapp identity
+      items:
+      - name: Assign
+        uid: az_webapp_identity_assign
+        displayName: az webapp identity assign
+      - name: Show
+        uid: az_webapp_identity_show
+        displayName: az webapp identity show
     - name: Log
       uid: az_webapp_log
       displayName: az webapp log
