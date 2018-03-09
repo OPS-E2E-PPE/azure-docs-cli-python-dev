@@ -4348,6 +4348,31 @@
       - name: Test-Ip-Flow
         uid: az_network_watcher_test_ip_flow
         displayName: az network watcher test-ip-flow
+      - name: Connection-Monitor
+        uid: az_network_watcher_connection_monitor
+        displayName: az network watcher connection-monitor
+        items:
+        - name: Create
+          uid: az_network_watcher_connection_monitor_create
+          displayName: az network watcher connection-monitor create
+        - name: Delete
+          uid: az_network_watcher_connection_monitor_delete
+          displayName: az network watcher connection-monitor delete
+        - name: List
+          uid: az_network_watcher_connection_monitor_list
+          displayName: az network watcher connection-monitor list
+        - name: Query
+          uid: az_network_watcher_connection_monitor_query
+          displayName: az network watcher connection-monitor query
+        - name: Show
+          uid: az_network_watcher_connection_monitor_show
+          displayName: az network watcher connection-monitor show
+        - name: Start
+          uid: az_network_watcher_connection_monitor_start
+          displayName: az network watcher connection-monitor start
+        - name: Stop
+          uid: az_network_watcher_connection_monitor_stop
+          displayName: az network watcher connection-monitor stop
       - name: Flow-Log
         uid: az_network_watcher_flow_log
         displayName: az network watcher flow-log
