@@ -261,6 +261,10 @@ items:
   - name: --force-dns-registration
     summary: If true, web app hostname is force registered with DNS.
     description: ''
+  - name: --https-only
+    parameterValueGroup: false, true
+    summary: Redirect all traffic made to an app using HTTP to HTTPS.
+    description: ''
   - name: --skip-custom-domain-verification
     summary: If true, custom (non *.azurewebsites.net) domains associated with web app are not verified.
     description: ''
