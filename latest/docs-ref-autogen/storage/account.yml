@@ -314,12 +314,6 @@ items:
   - name: --custom-domain
     summary: User domain assigned to the storage account. Name is the CNAME source. Use "" to clear existing value.
     description: ''
-  - name: --encryption-key-source
-    summary: ''
-    description: ''
-  - name: --encryption-key-vault-properties
-    summary: ''
-    description: ''
   - name: --encryption-services
     parameterValueGroup: blob, file, queue, table
     summary: Specifies which service(s) to encrypt.
@@ -338,6 +332,20 @@ items:
   - name: --use-subdomain
     parameterValueGroup: false, true
     summary: Specify whether to use indirect CNAME validation.
+    description: ''
+  - name: --encryption-key-name
+    summary: The name of the KeyVault key.
+    description: ''
+  - name: --encryption-key-source
+    defaultValue: Microsoft.Storage
+    parameterValueGroup: Microsoft.Keyvault, Microsoft.Storage
+    summary: The default encryption service.
+    description: ''
+  - name: --encryption-key-vault
+    summary: The Uri of the KeyVault.
+    description: ''
+  - name: --encryption-key-version
+    summary: The version of the KeyVault key.
     description: ''
   - name: --bypass
     parameterValueGroup: AzureServices, Logging, Metrics, None
