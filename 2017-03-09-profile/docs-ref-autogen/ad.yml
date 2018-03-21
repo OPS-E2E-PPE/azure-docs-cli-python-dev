@@ -13,7 +13,7 @@ commands:
   summary: Manage Azure Active Directory groups.
 - uid: az_ad_group_create
   name: az ad group create
-  summary: Create a group in the directory.
+  summary: ''
 - uid: az_ad_group_delete
   name: az ad group delete
   summary: Delete a group from the directory.
@@ -31,7 +31,7 @@ commands:
   summary: Add a member to a group.
 - uid: az_ad_group_member_check
   name: az ad group member check
-  summary: Checks whether the specified user, group, contact, or service principal is a direct or transitive member of the specified group.
+  summary: ''
 - uid: az_ad_group_member_list
   name: az ad group member list
   summary: Gets the members of a group.
@@ -93,6 +93,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/52b3a0fbe6def1cd049f95e841ea633991f3a648/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-updated_at: 3/16/2018 4:50:33 AM
-ms.date: 3/16/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/4c92d1fb317db3e358a06f53ca6f5714a8f4e27d/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+updated_at: 3/21/2018 10:09:19 PM
+ms.date: 3/21/2018
