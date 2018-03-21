@@ -274,6 +274,9 @@
       - name: Backup-Now
         uid: az_backup_protection_backup_now
         displayName: az backup protection backup-now
+      - name: Check-Vm
+        uid: az_backup_protection_check_vm
+        displayName: az backup protection check-vm
       - name: Disable
         uid: az_backup_protection_disable
         displayName: az backup protection disable
