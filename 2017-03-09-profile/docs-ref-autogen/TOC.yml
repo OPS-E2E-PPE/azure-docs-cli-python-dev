@@ -1032,6 +1032,9 @@
     - name: Delete
       uid: az_container_delete
       displayName: az container delete
+    - name: Exec
+      uid: az_container_exec
+      displayName: az container exec
     - name: List
       uid: az_container_list
       displayName: az container list
