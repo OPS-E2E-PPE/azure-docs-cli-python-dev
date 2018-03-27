@@ -185,6 +185,9 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --public-ip-sku
+    summary: ''
+    description: ''
   - name: --secrets
     summary: 'One or many Key Vault secrets as JSON strings or files via `@&lt;file path&gt;` containing `[{ "sourceVault": { "id": "value" }, "vaultCertificates": [{ "certificateUrl": "value", "certificateStore": "cert store name (only on windows)"}] }]`.'
     description: ''
@@ -257,7 +260,6 @@ items:
     summary: Name of the public IP address when creating one (default) or referencing an existing one. Can also reference an existing public IP by ID or specify "" for None.
     description: ''
   - name: --public-ip-address-allocation
-    defaultValue: dynamic
     parameterValueGroup: dynamic, static
     summary: ''
     description: ''
