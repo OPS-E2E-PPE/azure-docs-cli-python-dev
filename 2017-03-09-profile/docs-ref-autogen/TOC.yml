@@ -5694,9 +5694,6 @@
     uid: az_vmss
     displayName: az vmss
     items:
-    - name: Assign-Identity
-      uid: az_vmss_assign_identity
-      displayName: az vmss assign-identity
     - name: Create
       uid: az_vmss_create
       displayName: az vmss create
@@ -5820,9 +5817,6 @@
     uid: az_vm
     displayName: az vm
     items:
-    - name: Assign-Identity
-      uid: az_vm_assign_identity
-      displayName: az vm assign-identity
     - name: Capture
       uid: az_vm_capture
       displayName: az vm capture
@@ -6080,9 +6074,6 @@
     uid: az_webapp
     displayName: az webapp
     items:
-    - name: Assign-Identity
-      uid: az_webapp_assign_identity
-      displayName: az webapp assign-identity
     - name: Browse
       uid: az_webapp_browse
       displayName: az webapp browse
