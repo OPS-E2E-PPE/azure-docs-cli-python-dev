@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_postgres_server_firewall_rule
+- uid: _ext_az_postgres_server_firewall_rule
   name: az postgres server firewall-rule
   summary: Manage firewall rules for a server.
   description: ''
@@ -12,7 +12,7 @@ items:
   - az_postgres_server_firewall_rule_list
   - az_postgres_server_firewall_rule_show
   - az_postgres_server_firewall_rule_update
-- uid: az_postgres_server_firewall_rule_create
+- uid: _ext_az_postgres_server_firewall_rule_create
   name: az postgres server firewall-rule create
   summary: Create a new firewall rule for a server.
   description: ''
@@ -43,7 +43,7 @@ items:
     name: --start-ip-address
     summary: The start IP address of the firewall rule. Must be IPv4 format. Use value '0.0.0.0' to represent all Azure-internal IP addresses.
     description: ''
-- uid: az_postgres_server_firewall_rule_delete
+- uid: _ext_az_postgres_server_firewall_rule_delete
   name: az postgres server firewall-rule delete
   summary: Delete a firewall rule.
   description: ''
@@ -65,7 +65,7 @@ items:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-- uid: az_postgres_server_firewall_rule_list
+- uid: _ext_az_postgres_server_firewall_rule_list
   name: az postgres server firewall-rule list
   summary: List all firewall rules for a server.
   description: ''
@@ -80,7 +80,7 @@ items:
     name: --server-name -s
     summary: Name of the server.
     description: ''
-- uid: az_postgres_server_firewall_rule_show
+- uid: _ext_az_postgres_server_firewall_rule_show
   name: az postgres server firewall-rule show
   summary: Get the details of a firewall rule.
   description: ''
@@ -99,7 +99,7 @@ items:
     name: --server-name -s
     summary: Name of the server.
     description: ''
-- uid: az_postgres_server_firewall_rule_update
+- uid: _ext_az_postgres_server_firewall_rule_update
   name: az postgres server firewall-rule update
   summary: Update a firewall rule.
   description: ''
@@ -141,19 +141,19 @@ items:
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
     description: ''
 commands:
-- uid: az_postgres_server_firewall_rule_create
+- uid: _ext_az_postgres_server_firewall_rule_create
   name: az postgres server firewall-rule create
   summary: Create a new firewall rule for a server.
-- uid: az_postgres_server_firewall_rule_delete
+- uid: _ext_az_postgres_server_firewall_rule_delete
   name: az postgres server firewall-rule delete
   summary: Delete a firewall rule.
-- uid: az_postgres_server_firewall_rule_list
+- uid: _ext_az_postgres_server_firewall_rule_list
   name: az postgres server firewall-rule list
   summary: List all firewall rules for a server.
-- uid: az_postgres_server_firewall_rule_show
+- uid: _ext_az_postgres_server_firewall_rule_show
   name: az postgres server firewall-rule show
   summary: Get the details of a firewall rule.
-- uid: az_postgres_server_firewall_rule_update
+- uid: _ext_az_postgres_server_firewall_rule_update
   name: az postgres server firewall-rule update
   summary: Update a firewall rule.
 globalParameters:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_mysql_server_configuration
+- uid: _ext_az_mysql_server_configuration
   name: az mysql server configuration
   summary: Manage configuration values for a server.
   description: ''
@@ -10,7 +10,7 @@ items:
   - az_mysql_server_configuration_list
   - az_mysql_server_configuration_set
   - az_mysql_server_configuration_show
-- uid: az_mysql_server_configuration_list
+- uid: _ext_az_mysql_server_configuration_list
   name: az mysql server configuration list
   summary: List the configuration values for a server.
   description: ''
@@ -25,7 +25,7 @@ items:
     name: --server-name -s
     summary: Name of the server.
     description: ''
-- uid: az_mysql_server_configuration_set
+- uid: _ext_az_mysql_server_configuration_set
   name: az mysql server configuration set
   summary: Update the configuration of a server.
   description: ''
@@ -54,7 +54,7 @@ items:
   - name: --value
     summary: Value of the configuration. If not provided, configuration value will be set to default.
     description: ''
-- uid: az_mysql_server_configuration_show
+- uid: _ext_az_mysql_server_configuration_show
   name: az mysql server configuration show
   summary: Get the configuration for a server.".
   description: ''
@@ -74,13 +74,13 @@ items:
     summary: Name of the server.
     description: ''
 commands:
-- uid: az_mysql_server_configuration_list
+- uid: _ext_az_mysql_server_configuration_list
   name: az mysql server configuration list
   summary: List the configuration values for a server.
-- uid: az_mysql_server_configuration_set
+- uid: _ext_az_mysql_server_configuration_set
   name: az mysql server configuration set
   summary: Update the configuration of a server.
-- uid: az_mysql_server_configuration_show
+- uid: _ext_az_mysql_server_configuration_show
   name: az mysql server configuration show
   summary: Get the configuration for a server.".
 globalParameters:

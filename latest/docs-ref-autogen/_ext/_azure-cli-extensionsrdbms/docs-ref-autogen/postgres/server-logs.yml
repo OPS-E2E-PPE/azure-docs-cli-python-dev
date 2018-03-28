@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_postgres_server_logs
+- uid: _ext_az_postgres_server_logs
   name: az postgres server-logs
   summary: Manage server logs.
   description: ''
@@ -9,7 +9,7 @@ items:
   children:
   - az_postgres_server_logs_download
   - az_postgres_server_logs_list
-- uid: az_postgres_server_logs_download
+- uid: _ext_az_postgres_server_logs_download
   name: az postgres server-logs download
   summary: Download log files.
   description: ''
@@ -32,7 +32,7 @@ items:
     name: --server-name -s
     summary: Name of the server.
     description: ''
-- uid: az_postgres_server_logs_list
+- uid: _ext_az_postgres_server_logs_list
   name: az postgres server-logs list
   summary: List log files for a server.
   description: ''
@@ -67,10 +67,10 @@ items:
     summary: The file size limitation to filter files.
     description: ''
 commands:
-- uid: az_postgres_server_logs_download
+- uid: _ext_az_postgres_server_logs_download
   name: az postgres server-logs download
   summary: Download log files.
-- uid: az_postgres_server_logs_list
+- uid: _ext_az_postgres_server_logs_list
   name: az postgres server-logs list
   summary: List log files for a server.
 globalParameters:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_mysql_db
+- uid: _ext_az_mysql_db
   name: az mysql db
   summary: Manage MySQL databases on a server.
   description: ''
@@ -11,7 +11,7 @@ items:
   - az_mysql_db_delete
   - az_mysql_db_list
   - az_mysql_db_show
-- uid: az_mysql_db_create
+- uid: _ext_az_mysql_db_create
   name: az mysql db create
   summary: Create a MySQL database.
   description: ''
@@ -43,7 +43,7 @@ items:
   - name: --collation
     summary: The collation of the database.
     description: ''
-- uid: az_mysql_db_delete
+- uid: _ext_az_mysql_db_delete
   name: az mysql db delete
   summary: Delete a database.
   description: ''
@@ -69,7 +69,7 @@ items:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-- uid: az_mysql_db_list
+- uid: _ext_az_mysql_db_list
   name: az mysql db list
   summary: List the databases for a server.
   description: ''
@@ -88,7 +88,7 @@ items:
     name: --server-name -s
     summary: Name of the server.
     description: ''
-- uid: az_mysql_db_show
+- uid: _ext_az_mysql_db_show
   name: az mysql db show
   summary: Show the details of a database.
   description: ''
@@ -112,16 +112,16 @@ items:
     summary: Name of the server.
     description: ''
 commands:
-- uid: az_mysql_db_create
+- uid: _ext_az_mysql_db_create
   name: az mysql db create
   summary: Create a MySQL database.
-- uid: az_mysql_db_delete
+- uid: _ext_az_mysql_db_delete
   name: az mysql db delete
   summary: Delete a database.
-- uid: az_mysql_db_list
+- uid: _ext_az_mysql_db_list
   name: az mysql db list
   summary: List the databases for a server.
-- uid: az_mysql_db_show
+- uid: _ext_az_mysql_db_show
   name: az mysql db show
   summary: Show the details of a database.
 globalParameters:

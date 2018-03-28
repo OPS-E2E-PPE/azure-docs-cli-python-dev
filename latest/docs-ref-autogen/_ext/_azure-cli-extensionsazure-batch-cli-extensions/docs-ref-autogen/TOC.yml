@@ -1,31 +1,31 @@
 - name: Reference
-  uid: az
+  uid: _ext_az
   items:
   - name: Batch
-    uid: az_batch
+    uid: _ext_az_batch
     displayName: az batch
     items:
     - name: File
-      uid: az_batch_file
+      uid: _ext_az_batch_file
       displayName: az batch file
       items:
       - name: Download
-        uid: az_batch_file_download
+        uid: _ext_az_batch_file_download
         displayName: az batch file download
       - name: Upload
-        uid: az_batch_file_upload
+        uid: _ext_az_batch_file_upload
         displayName: az batch file upload
     - name: Jobs
-      uid: az_batch_job
+      uid: _ext_az_batch_job
       displayName: az batch job
       items:
       - name: Create
-        uid: az_batch_job_create
+        uid: _ext_az_batch_job_create
         displayName: az batch job create
     - name: Pools
-      uid: az_batch_pool
+      uid: _ext_az_batch_pool
       displayName: az batch pool
       items:
       - name: Create
-        uid: az_batch_pool_create
+        uid: _ext_az_batch_pool_create
         displayName: az batch pool create

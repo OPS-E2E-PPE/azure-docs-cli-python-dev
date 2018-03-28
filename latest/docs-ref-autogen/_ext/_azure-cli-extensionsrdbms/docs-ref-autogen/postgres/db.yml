@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_postgres_db
+- uid: _ext_az_postgres_db
   name: az postgres db
   summary: Manage PostgreSQL databases on a server.
   description: ''
@@ -11,7 +11,7 @@ items:
   - az_postgres_db_delete
   - az_postgres_db_list
   - az_postgres_db_show
-- uid: az_postgres_db_create
+- uid: _ext_az_postgres_db_create
   name: az postgres db create
   summary: Create a PostgreSQL database.
   description: ''
@@ -43,7 +43,7 @@ items:
   - name: --collation
     summary: The collation of the database.
     description: ''
-- uid: az_postgres_db_delete
+- uid: _ext_az_postgres_db_delete
   name: az postgres db delete
   summary: Delete a database.
   description: ''
@@ -69,7 +69,7 @@ items:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-- uid: az_postgres_db_list
+- uid: _ext_az_postgres_db_list
   name: az postgres db list
   summary: List the databases for a server.
   description: ''
@@ -88,7 +88,7 @@ items:
     name: --server-name -s
     summary: Name of the server.
     description: ''
-- uid: az_postgres_db_show
+- uid: _ext_az_postgres_db_show
   name: az postgres db show
   summary: Show the details of a database.
   description: ''
@@ -112,16 +112,16 @@ items:
     summary: Name of the server.
     description: ''
 commands:
-- uid: az_postgres_db_create
+- uid: _ext_az_postgres_db_create
   name: az postgres db create
   summary: Create a PostgreSQL database.
-- uid: az_postgres_db_delete
+- uid: _ext_az_postgres_db_delete
   name: az postgres db delete
   summary: Delete a database.
-- uid: az_postgres_db_list
+- uid: _ext_az_postgres_db_list
   name: az postgres db list
   summary: List the databases for a server.
-- uid: az_postgres_db_show
+- uid: _ext_az_postgres_db_show
   name: az postgres db show
   summary: Show the details of a database.
 globalParameters:

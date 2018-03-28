@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az
+- uid: _ext_az
   name: az
   summary: ''
   description: ''
@@ -8,7 +8,7 @@ items:
   - azurecli
   children: []
 commands:
-- uid: az_managementpartner
+- uid: _ext_az_managementpartner
   name: az managementpartner
   summary: Allows the partners to associate a Microsoft Partner Network(MPN) ID to a user or service principal in the customer's Azure directory.
 globalParameters:

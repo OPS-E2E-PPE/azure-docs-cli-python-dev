@@ -1,177 +1,177 @@
 - name: Reference
-  uid: az
+  uid: _ext_az
   items:
   - name: Mysql
-    uid: az_mysql
+    uid: _ext_az_mysql
     displayName: az mysql
     items:
     - name: Databases
-      uid: az_mysql_db
+      uid: _ext_az_mysql_db
       displayName: az mysql db
       items:
       - name: Create
-        uid: az_mysql_db_create
+        uid: _ext_az_mysql_db_create
         displayName: az mysql db create
       - name: Delete
-        uid: az_mysql_db_delete
+        uid: _ext_az_mysql_db_delete
         displayName: az mysql db delete
       - name: List
-        uid: az_mysql_db_list
+        uid: _ext_az_mysql_db_list
         displayName: az mysql db list
       - name: Show
-        uid: az_mysql_db_show
+        uid: _ext_az_mysql_db_show
         displayName: az mysql db show
     - name: Server Logs
-      uid: az_mysql_server_logs
+      uid: _ext_az_mysql_server_logs
       displayName: az mysql server-logs
       items:
       - name: Download
-        uid: az_mysql_server_logs_download
+        uid: _ext_az_mysql_server_logs_download
         displayName: az mysql server-logs download
       - name: List
-        uid: az_mysql_server_logs_list
+        uid: _ext_az_mysql_server_logs_list
         displayName: az mysql server-logs list
     - name: Servers
-      uid: az_mysql_server
+      uid: _ext_az_mysql_server
       displayName: az mysql server
       items:
       - name: Create
-        uid: az_mysql_server_create
+        uid: _ext_az_mysql_server_create
         displayName: az mysql server create
       - name: Delete
-        uid: az_mysql_server_delete
+        uid: _ext_az_mysql_server_delete
         displayName: az mysql server delete
       - name: List
-        uid: az_mysql_server_list
+        uid: _ext_az_mysql_server_list
         displayName: az mysql server list
       - name: Restore
-        uid: az_mysql_server_restore
+        uid: _ext_az_mysql_server_restore
         displayName: az mysql server restore
       - name: Show
-        uid: az_mysql_server_show
+        uid: _ext_az_mysql_server_show
         displayName: az mysql server show
       - name: Update
-        uid: az_mysql_server_update
+        uid: _ext_az_mysql_server_update
         displayName: az mysql server update
       - name: Wait
-        uid: az_mysql_server_wait
+        uid: _ext_az_mysql_server_wait
         displayName: az mysql server wait
       - name: Configurations
-        uid: az_mysql_server_configuration
+        uid: _ext_az_mysql_server_configuration
         displayName: az mysql server configuration
         items:
         - name: List
-          uid: az_mysql_server_configuration_list
+          uid: _ext_az_mysql_server_configuration_list
           displayName: az mysql server configuration list
         - name: Set
-          uid: az_mysql_server_configuration_set
+          uid: _ext_az_mysql_server_configuration_set
           displayName: az mysql server configuration set
         - name: Show
-          uid: az_mysql_server_configuration_show
+          uid: _ext_az_mysql_server_configuration_show
           displayName: az mysql server configuration show
       - name: Firewall Rules
-        uid: az_mysql_server_firewall_rule
+        uid: _ext_az_mysql_server_firewall_rule
         displayName: az mysql server firewall-rule
         items:
         - name: Create
-          uid: az_mysql_server_firewall_rule_create
+          uid: _ext_az_mysql_server_firewall_rule_create
           displayName: az mysql server firewall-rule create
         - name: Delete
-          uid: az_mysql_server_firewall_rule_delete
+          uid: _ext_az_mysql_server_firewall_rule_delete
           displayName: az mysql server firewall-rule delete
         - name: List
-          uid: az_mysql_server_firewall_rule_list
+          uid: _ext_az_mysql_server_firewall_rule_list
           displayName: az mysql server firewall-rule list
         - name: Show
-          uid: az_mysql_server_firewall_rule_show
+          uid: _ext_az_mysql_server_firewall_rule_show
           displayName: az mysql server firewall-rule show
         - name: Update
-          uid: az_mysql_server_firewall_rule_update
+          uid: _ext_az_mysql_server_firewall_rule_update
           displayName: az mysql server firewall-rule update
   - name: Postgresql
-    uid: az_postgres
+    uid: _ext_az_postgres
     displayName: az postgres
     items:
     - name: Databases
-      uid: az_postgres_db
+      uid: _ext_az_postgres_db
       displayName: az postgres db
       items:
       - name: Create
-        uid: az_postgres_db_create
+        uid: _ext_az_postgres_db_create
         displayName: az postgres db create
       - name: Delete
-        uid: az_postgres_db_delete
+        uid: _ext_az_postgres_db_delete
         displayName: az postgres db delete
       - name: List
-        uid: az_postgres_db_list
+        uid: _ext_az_postgres_db_list
         displayName: az postgres db list
       - name: Show
-        uid: az_postgres_db_show
+        uid: _ext_az_postgres_db_show
         displayName: az postgres db show
     - name: Server Logs
-      uid: az_postgres_server_logs
+      uid: _ext_az_postgres_server_logs
       displayName: az postgres server-logs
       items:
       - name: Download
-        uid: az_postgres_server_logs_download
+        uid: _ext_az_postgres_server_logs_download
         displayName: az postgres server-logs download
       - name: List
-        uid: az_postgres_server_logs_list
+        uid: _ext_az_postgres_server_logs_list
         displayName: az postgres server-logs list
     - name: Servers
-      uid: az_postgres_server
+      uid: _ext_az_postgres_server
       displayName: az postgres server
       items:
       - name: Create
-        uid: az_postgres_server_create
+        uid: _ext_az_postgres_server_create
         displayName: az postgres server create
       - name: Delete
-        uid: az_postgres_server_delete
+        uid: _ext_az_postgres_server_delete
         displayName: az postgres server delete
       - name: List
-        uid: az_postgres_server_list
+        uid: _ext_az_postgres_server_list
         displayName: az postgres server list
       - name: Restore
-        uid: az_postgres_server_restore
+        uid: _ext_az_postgres_server_restore
         displayName: az postgres server restore
       - name: Show
-        uid: az_postgres_server_show
+        uid: _ext_az_postgres_server_show
         displayName: az postgres server show
       - name: Update
-        uid: az_postgres_server_update
+        uid: _ext_az_postgres_server_update
         displayName: az postgres server update
       - name: Wait
-        uid: az_postgres_server_wait
+        uid: _ext_az_postgres_server_wait
         displayName: az postgres server wait
       - name: Configurations
-        uid: az_postgres_server_configuration
+        uid: _ext_az_postgres_server_configuration
         displayName: az postgres server configuration
         items:
         - name: List
-          uid: az_postgres_server_configuration_list
+          uid: _ext_az_postgres_server_configuration_list
           displayName: az postgres server configuration list
         - name: Set
-          uid: az_postgres_server_configuration_set
+          uid: _ext_az_postgres_server_configuration_set
           displayName: az postgres server configuration set
         - name: Show
-          uid: az_postgres_server_configuration_show
+          uid: _ext_az_postgres_server_configuration_show
           displayName: az postgres server configuration show
       - name: Firewall Rules
-        uid: az_postgres_server_firewall_rule
+        uid: _ext_az_postgres_server_firewall_rule
         displayName: az postgres server firewall-rule
         items:
         - name: Create
-          uid: az_postgres_server_firewall_rule_create
+          uid: _ext_az_postgres_server_firewall_rule_create
           displayName: az postgres server firewall-rule create
         - name: Delete
-          uid: az_postgres_server_firewall_rule_delete
+          uid: _ext_az_postgres_server_firewall_rule_delete
           displayName: az postgres server firewall-rule delete
         - name: List
-          uid: az_postgres_server_firewall_rule_list
+          uid: _ext_az_postgres_server_firewall_rule_list
           displayName: az postgres server firewall-rule list
         - name: Show
-          uid: az_postgres_server_firewall_rule_show
+          uid: _ext_az_postgres_server_firewall_rule_show
           displayName: az postgres server firewall-rule show
         - name: Update
-          uid: az_postgres_server_firewall_rule_update
+          uid: _ext_az_postgres_server_firewall_rule_update
           displayName: az postgres server firewall-rule update

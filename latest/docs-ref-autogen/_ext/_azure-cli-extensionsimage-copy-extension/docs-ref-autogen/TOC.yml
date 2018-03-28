@@ -1,10 +1,10 @@
 - name: Reference
-  uid: az
+  uid: _ext_az
   items:
   - name: VM Images
-    uid: az_image
+    uid: _ext_az_image
     displayName: az image
     items:
     - name: Copy
-      uid: az_image_copy
+      uid: _ext_az_image_copy
       displayName: az image copy

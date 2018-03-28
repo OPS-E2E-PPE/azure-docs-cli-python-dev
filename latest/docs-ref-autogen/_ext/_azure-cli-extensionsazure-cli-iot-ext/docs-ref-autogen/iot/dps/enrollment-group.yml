@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_iot_dps_enrollment_group
+- uid: _ext_az_iot_dps_enrollment_group
   name: az iot dps enrollment-group
   summary: Manage Azure IoT Hub Device Provisioning Service.
   description: ''
@@ -12,7 +12,7 @@ items:
   - az_iot_dps_enrollment_group_list
   - az_iot_dps_enrollment_group_show
   - az_iot_dps_enrollment_group_update
-- uid: az_iot_dps_enrollment_group_create
+- uid: _ext_az_iot_dps_enrollment_group_create
   name: az iot dps enrollment-group create
   summary: Create an enrollment group in an Azure IoT Hub Device Provisioning Service.
   description: ''
@@ -57,7 +57,7 @@ items:
   - name: --secondary-certificate-path -scp
     summary: The path to the file containing the secondary certificate. One of the certificate path is required.
     description: ''
-- uid: az_iot_dps_enrollment_group_delete
+- uid: _ext_az_iot_dps_enrollment_group_delete
   name: az iot dps enrollment-group delete
   summary: Delete an enrollment group in an Azure IoT Hub Device Provisioning Service.
   description: ''
@@ -76,7 +76,7 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-- uid: az_iot_dps_enrollment_group_list
+- uid: _ext_az_iot_dps_enrollment_group_list
   name: az iot dps enrollment-group list
   summary: List enrollments groups in an Azure IoT Hub Device Provisioning Service.
   description: ''
@@ -94,7 +94,7 @@ items:
   - name: --top
     summary: Maximum number of elements to return.
     description: ''
-- uid: az_iot_dps_enrollment_group_show
+- uid: _ext_az_iot_dps_enrollment_group_show
   name: az iot dps enrollment-group show
   summary: Get the details of an enrollment group in an Azure IoT Hub Device Provisioning Service.
   description: ''
@@ -113,7 +113,7 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-- uid: az_iot_dps_enrollment_group_update
+- uid: _ext_az_iot_dps_enrollment_group_update
   name: az iot dps enrollment-group update
   summary: Update an enrollment group in an Azure IoT Hub Device Provisioning Service.
   description: ''
@@ -168,19 +168,19 @@ items:
     summary: The path to the file containing the secondary certificate.
     description: ''
 commands:
-- uid: az_iot_dps_enrollment_group_create
+- uid: _ext_az_iot_dps_enrollment_group_create
   name: az iot dps enrollment-group create
   summary: Create an enrollment group in an Azure IoT Hub Device Provisioning Service.
-- uid: az_iot_dps_enrollment_group_delete
+- uid: _ext_az_iot_dps_enrollment_group_delete
   name: az iot dps enrollment-group delete
   summary: Delete an enrollment group in an Azure IoT Hub Device Provisioning Service.
-- uid: az_iot_dps_enrollment_group_list
+- uid: _ext_az_iot_dps_enrollment_group_list
   name: az iot dps enrollment-group list
   summary: List enrollments groups in an Azure IoT Hub Device Provisioning Service.
-- uid: az_iot_dps_enrollment_group_show
+- uid: _ext_az_iot_dps_enrollment_group_show
   name: az iot dps enrollment-group show
   summary: Get the details of an enrollment group in an Azure IoT Hub Device Provisioning Service.
-- uid: az_iot_dps_enrollment_group_update
+- uid: _ext_az_iot_dps_enrollment_group_update
   name: az iot dps enrollment-group update
   summary: Update an enrollment group in an Azure IoT Hub Device Provisioning Service.
 globalParameters:

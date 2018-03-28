@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az
+- uid: _ext_az
   name: az
   summary: ''
   description: ''
@@ -8,7 +8,7 @@ items:
   - azurecli
   children: []
 commands:
-- uid: az_account
+- uid: _ext_az_account
   name: az account
   summary: Manage Azure subscription information.
 globalParameters:

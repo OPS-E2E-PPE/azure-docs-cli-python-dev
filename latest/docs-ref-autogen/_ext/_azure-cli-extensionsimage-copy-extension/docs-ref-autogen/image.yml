@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_image
+- uid: _ext_az_image
   name: az image
   summary: Manage custom virtual machine images.
   description: ''
@@ -8,7 +8,7 @@ items:
   - azurecli
   children:
   - az_image_copy
-- uid: az_image_copy
+- uid: _ext_az_image_copy
   name: az image copy
   summary: Copy a managed image (or vm) to other regions.
   description: Allows to copy a managed image (or vm) to other regions. Keep in mind that it requires the source disk to be available.
@@ -51,7 +51,7 @@ items:
     summary: Image or vm.
     description: ''
 commands:
-- uid: az_image_copy
+- uid: _ext_az_image_copy
   name: az image copy
   summary: Copy a managed image (or vm) to other regions.
 globalParameters:

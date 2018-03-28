@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_iot_device
+- uid: _ext_az_iot_device
   name: az iot device
   summary: Leverage device-to-cloud and cloud-to-device messaging capabilities.
   description: ''
@@ -10,7 +10,7 @@ items:
   - az_iot_device_send_d2c_message
   - az_iot_device_simulate
   - az_iot_device_upload_file
-- uid: az_iot_device_send_d2c_message
+- uid: _ext_az_iot_device_send_d2c_message
   name: az iot device send-d2c-message
   summary: Send an MQTT device-to-cloud message.
   description: ''
@@ -39,7 +39,7 @@ items:
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-- uid: az_iot_device_simulate
+- uid: _ext_az_iot_device_simulate
   name: az iot device simulate
   summary: Simulate a device in an Azure IoT Hub.
   description: ''
@@ -73,7 +73,7 @@ items:
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-- uid: az_iot_device_upload_file
+- uid: _ext_az_iot_device_upload_file
   name: az iot device upload-file
   summary: Upload a local file as a device to a pre-configured blob storage container.
   description: ''
@@ -100,28 +100,28 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
 commands:
-- uid: az_iot_device_c2d_message
+- uid: _ext_az_iot_device_c2d_message
   name: az iot device c2d-message
   summary: Cloud-to-device messaging commands.
-- uid: az_iot_device_c2d_message_abandon
+- uid: _ext_az_iot_device_c2d_message_abandon
   name: az iot device c2d-message abandon
   summary: Abandon a cloud-to-device message.
-- uid: az_iot_device_c2d_message_complete
+- uid: _ext_az_iot_device_c2d_message_complete
   name: az iot device c2d-message complete
   summary: Complete a cloud-to-device message.
-- uid: az_iot_device_c2d_message_receive
+- uid: _ext_az_iot_device_c2d_message_receive
   name: az iot device c2d-message receive
   summary: Receive a cloud-to-device message.
-- uid: az_iot_device_c2d_message_reject
+- uid: _ext_az_iot_device_c2d_message_reject
   name: az iot device c2d-message reject
   summary: Reject or deadletter a cloud-to-device message.
-- uid: az_iot_device_send_d2c_message
+- uid: _ext_az_iot_device_send_d2c_message
   name: az iot device send-d2c-message
   summary: Send an MQTT device-to-cloud message.
-- uid: az_iot_device_simulate
+- uid: _ext_az_iot_device_simulate
   name: az iot device simulate
   summary: Simulate a device in an Azure IoT Hub.
-- uid: az_iot_device_upload_file
+- uid: _ext_az_iot_device_upload_file
   name: az iot device upload-file
   summary: Upload a local file as a device to a pre-configured blob storage container.
 globalParameters:

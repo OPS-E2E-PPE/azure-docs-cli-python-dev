@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_account
+- uid: _ext_az_account
   name: az account
   summary: Manage Azure subscription information.
   description: ''
@@ -8,16 +8,16 @@ items:
   - azurecli
   children: []
 commands:
-- uid: az_account_subscription_definition
+- uid: _ext_az_account_subscription_definition
   name: az account subscription-definition
   summary: Manage Azure Subscription Definitions.
-- uid: az_account_subscription_definition_create
+- uid: _ext_az_account_subscription_definition_create
   name: az account subscription-definition create
   summary: Create a subscription definition.
-- uid: az_account_subscription_definition_list
+- uid: _ext_az_account_subscription_definition_list
   name: az account subscription-definition list
   summary: List an Azure subscription definition by subscriptionId.
-- uid: az_account_subscription_definition_show
+- uid: _ext_az_account_subscription_definition_show
   name: az account subscription-definition show
   summary: Get an Azure subscription definition.
 globalParameters:

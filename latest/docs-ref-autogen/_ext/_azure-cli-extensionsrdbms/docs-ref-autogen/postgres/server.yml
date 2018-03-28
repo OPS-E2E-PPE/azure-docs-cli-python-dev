@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_postgres_server
+- uid: _ext_az_postgres_server
   name: az postgres server
   summary: Manage PostgreSQL servers.
   description: ''
@@ -14,7 +14,7 @@ items:
   - az_postgres_server_show
   - az_postgres_server_update
   - az_postgres_server_wait
-- uid: az_postgres_server_create
+- uid: _ext_az_postgres_server_create
   name: az postgres server create
   summary: Create a server.
   description: ''
@@ -72,7 +72,7 @@ items:
   - name: --admin-password -p
     summary: The password of the administrator login.
     description: ''
-- uid: az_postgres_server_delete
+- uid: _ext_az_postgres_server_delete
   name: az postgres server delete
   summary: Delete a server.
   description: ''
@@ -90,7 +90,7 @@ items:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-- uid: az_postgres_server_list
+- uid: _ext_az_postgres_server_list
   name: az postgres server list
   summary: List available servers.
   description: ''
@@ -107,7 +107,7 @@ items:
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-- uid: az_postgres_server_restore
+- uid: _ext_az_postgres_server_restore
   name: az postgres server restore
   summary: Restore a server from backup.
   description: ''
@@ -140,7 +140,7 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-- uid: az_postgres_server_show
+- uid: _ext_az_postgres_server_show
   name: az postgres server show
   summary: Get the details of a server.
   description: ''
@@ -155,7 +155,7 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-- uid: az_postgres_server_update
+- uid: _ext_az_postgres_server_update
   name: az postgres server update
   summary: Update a server.
   description: ''
@@ -205,7 +205,7 @@ items:
   - name: --set
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
     description: ''
-- uid: az_postgres_server_wait
+- uid: _ext_az_postgres_server_wait
   name: az postgres server wait
   summary: ''
   description: ''
@@ -235,55 +235,55 @@ items:
     summary: Maximum wait in seconds.
     description: ''
 commands:
-- uid: az_postgres_server_configuration
+- uid: _ext_az_postgres_server_configuration
   name: az postgres server configuration
   summary: Manage configuration values for a server.
-- uid: az_postgres_server_configuration_list
+- uid: _ext_az_postgres_server_configuration_list
   name: az postgres server configuration list
   summary: List the configuration values for a server.
-- uid: az_postgres_server_configuration_set
+- uid: _ext_az_postgres_server_configuration_set
   name: az postgres server configuration set
   summary: Update the configuration of a server.
-- uid: az_postgres_server_configuration_show
+- uid: _ext_az_postgres_server_configuration_show
   name: az postgres server configuration show
   summary: Get the configuration for a server.".
-- uid: az_postgres_server_create
+- uid: _ext_az_postgres_server_create
   name: az postgres server create
   summary: Create a server.
-- uid: az_postgres_server_delete
+- uid: _ext_az_postgres_server_delete
   name: az postgres server delete
   summary: Delete a server.
-- uid: az_postgres_server_firewall_rule
+- uid: _ext_az_postgres_server_firewall_rule
   name: az postgres server firewall-rule
   summary: Manage firewall rules for a server.
-- uid: az_postgres_server_firewall_rule_create
+- uid: _ext_az_postgres_server_firewall_rule_create
   name: az postgres server firewall-rule create
   summary: Create a new firewall rule for a server.
-- uid: az_postgres_server_firewall_rule_delete
+- uid: _ext_az_postgres_server_firewall_rule_delete
   name: az postgres server firewall-rule delete
   summary: Delete a firewall rule.
-- uid: az_postgres_server_firewall_rule_list
+- uid: _ext_az_postgres_server_firewall_rule_list
   name: az postgres server firewall-rule list
   summary: List all firewall rules for a server.
-- uid: az_postgres_server_firewall_rule_show
+- uid: _ext_az_postgres_server_firewall_rule_show
   name: az postgres server firewall-rule show
   summary: Get the details of a firewall rule.
-- uid: az_postgres_server_firewall_rule_update
+- uid: _ext_az_postgres_server_firewall_rule_update
   name: az postgres server firewall-rule update
   summary: Update a firewall rule.
-- uid: az_postgres_server_list
+- uid: _ext_az_postgres_server_list
   name: az postgres server list
   summary: List available servers.
-- uid: az_postgres_server_restore
+- uid: _ext_az_postgres_server_restore
   name: az postgres server restore
   summary: Restore a server from backup.
-- uid: az_postgres_server_show
+- uid: _ext_az_postgres_server_show
   name: az postgres server show
   summary: Get the details of a server.
-- uid: az_postgres_server_update
+- uid: _ext_az_postgres_server_update
   name: az postgres server update
   summary: Update a server.
-- uid: az_postgres_server_wait
+- uid: _ext_az_postgres_server_wait
   name: az postgres server wait
   summary: ''
 globalParameters:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_account_management_group_subscription
+- uid: _ext_az_account_management_group_subscription
   name: az account management-group subscription
   summary: Subscription operations for Management Groups.
   description: ''
@@ -9,7 +9,7 @@ items:
   children:
   - az_account_management_group_subscription_add
   - az_account_management_group_subscription_remove
-- uid: az_account_management_group_subscription_add
+- uid: _ext_az_account_management_group_subscription_add
   name: az account management-group subscription add
   summary: Add a subscription to a management group.
   description: Add a subscription to a management group.
@@ -28,7 +28,7 @@ items:
     name: --subscription
     summary: Subscription Id or Name.
     description: ''
-- uid: az_account_management_group_subscription_remove
+- uid: _ext_az_account_management_group_subscription_remove
   name: az account management-group subscription remove
   summary: Remove an existing subscription from a management group.
   description: Remove an existing subscription from a management group.
@@ -48,10 +48,10 @@ items:
     summary: Subscription Id or Name.
     description: ''
 commands:
-- uid: az_account_management_group_subscription_add
+- uid: _ext_az_account_management_group_subscription_add
   name: az account management-group subscription add
   summary: Add a subscription to a management group.
-- uid: az_account_management_group_subscription_remove
+- uid: _ext_az_account_management_group_subscription_remove
   name: az account management-group subscription remove
   summary: Remove an existing subscription from a management group.
 globalParameters:

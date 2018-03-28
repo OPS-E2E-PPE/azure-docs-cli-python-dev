@@ -1,10 +1,10 @@
 - name: Reference
-  uid: az
+  uid: _ext_az
   items:
   - name: Web Apps
-    uid: az_webapp
+    uid: _ext_az_webapp
     displayName: az webapp
     items:
     - name: Up
-      uid: az_webapp_up
+      uid: _ext_az_webapp_up
       displayName: az webapp up

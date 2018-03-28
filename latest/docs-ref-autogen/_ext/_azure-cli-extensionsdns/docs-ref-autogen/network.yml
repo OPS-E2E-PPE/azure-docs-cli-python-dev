@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_network
+- uid: _ext_az_network
   name: az network
   summary: Manage Azure Network resources.
   description: ''
@@ -8,16 +8,16 @@ items:
   - azurecli
   children: []
 commands:
-- uid: az_network_dns
+- uid: _ext_az_network_dns
   name: az network dns
   summary: Manage DNS domains in Azure.
-- uid: az_network_dns_zone
+- uid: _ext_az_network_dns_zone
   name: az network dns zone
   summary: Manage DNS zones.
-- uid: az_network_dns_zone_create
+- uid: _ext_az_network_dns_zone_create
   name: az network dns zone create
   summary: Create a DNS zone.
-- uid: az_network_dns_zone_update
+- uid: _ext_az_network_dns_zone_update
   name: az network dns zone update
   summary: Update a DNS zone's properties. Does not modify DNS records within the zone.
 globalParameters:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_batch_file
+- uid: _ext_az_batch_file
   name: az batch file
   summary: Manage Batch input files.
   description: ''
@@ -9,7 +9,7 @@ items:
   children:
   - az_batch_file_download
   - az_batch_file_upload
-- uid: az_batch_file_download
+- uid: _ext_az_batch_file_download
   name: az batch file download
   summary: Download a specified file or directory of files to the specified storage path.
   description: ''
@@ -42,7 +42,7 @@ items:
   - name: --resource-group
     summary: The resource group of the Batch account.
     description: ''
-- uid: az_batch_file_upload
+- uid: _ext_az_batch_file_upload
   name: az batch file upload
   summary: Upload a specified file or directory of files to the specified storage path.
   description: ''
@@ -76,10 +76,10 @@ items:
     summary: The resource group of the Batch account.
     description: ''
 commands:
-- uid: az_batch_file_download
+- uid: _ext_az_batch_file_download
   name: az batch file download
   summary: Download a specified file or directory of files to the specified storage path.
-- uid: az_batch_file_upload
+- uid: _ext_az_batch_file_upload
   name: az batch file upload
   summary: Upload a specified file or directory of files to the specified storage path.
 globalParameters:

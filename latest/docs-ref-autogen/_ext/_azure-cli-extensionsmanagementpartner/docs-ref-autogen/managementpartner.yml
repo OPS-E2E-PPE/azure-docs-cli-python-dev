@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_managementpartner
+- uid: _ext_az_managementpartner
   name: az managementpartner
   summary: Allows the partners to associate a Microsoft Partner Network(MPN) ID to a user or service principal in the customer's Azure directory.
   description: ''
@@ -11,7 +11,7 @@ items:
   - az_managementpartner_delete
   - az_managementpartner_show
   - az_managementpartner_update
-- uid: az_managementpartner_create
+- uid: _ext_az_managementpartner_create
   name: az managementpartner create
   summary: Associates a Microsoft Partner Network(MPN) ID to the current authenticated user or service principal.
   description: ''
@@ -22,7 +22,7 @@ items:
     name: --partner-id
     summary: Microsoft partner network ID.
     description: ''
-- uid: az_managementpartner_delete
+- uid: _ext_az_managementpartner_delete
   name: az managementpartner delete
   summary: Delete the Microsoft Partner Network(MPN) ID of the current authenticated user or service principal.
   description: ''
@@ -33,7 +33,7 @@ items:
     name: --partner-id
     summary: Microsoft partner network ID.
     description: ''
-- uid: az_managementpartner_show
+- uid: _ext_az_managementpartner_show
   name: az managementpartner show
   summary: Gets the Microsoft Partner Network(MPN) ID of the current authenticated user or service principal.
   description: ''
@@ -43,7 +43,7 @@ items:
   - name: --partner-id
     summary: Microsoft partner network ID.
     description: ''
-- uid: az_managementpartner_update
+- uid: _ext_az_managementpartner_update
   name: az managementpartner update
   summary: Updates the Microsoft Partner Network(MPN) ID of the current authenticated user or service principal.
   description: ''
@@ -55,16 +55,16 @@ items:
     summary: Microsoft partner network ID.
     description: ''
 commands:
-- uid: az_managementpartner_create
+- uid: _ext_az_managementpartner_create
   name: az managementpartner create
   summary: Associates a Microsoft Partner Network(MPN) ID to the current authenticated user or service principal.
-- uid: az_managementpartner_delete
+- uid: _ext_az_managementpartner_delete
   name: az managementpartner delete
   summary: Delete the Microsoft Partner Network(MPN) ID of the current authenticated user or service principal.
-- uid: az_managementpartner_show
+- uid: _ext_az_managementpartner_show
   name: az managementpartner show
   summary: Gets the Microsoft Partner Network(MPN) ID of the current authenticated user or service principal.
-- uid: az_managementpartner_update
+- uid: _ext_az_managementpartner_update
   name: az managementpartner update
   summary: Updates the Microsoft Partner Network(MPN) ID of the current authenticated user or service principal.
 globalParameters:

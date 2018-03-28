@@ -1,36 +1,36 @@
 - name: Reference
-  uid: az
+  uid: _ext_az
   items:
   - name: Subscriptions
-    uid: az_account
+    uid: _ext_az_account
     displayName: az account
     items:
     - name: Management-Group
-      uid: az_account_management_group
+      uid: _ext_az_account_management_group
       displayName: az account management-group
       items:
       - name: Create
-        uid: az_account_management_group_create
+        uid: _ext_az_account_management_group_create
         displayName: az account management-group create
       - name: Delete
-        uid: az_account_management_group_delete
+        uid: _ext_az_account_management_group_delete
         displayName: az account management-group delete
       - name: List
-        uid: az_account_management_group_list
+        uid: _ext_az_account_management_group_list
         displayName: az account management-group list
       - name: Show
-        uid: az_account_management_group_show
+        uid: _ext_az_account_management_group_show
         displayName: az account management-group show
       - name: Update
-        uid: az_account_management_group_update
+        uid: _ext_az_account_management_group_update
         displayName: az account management-group update
       - name: Subscription
-        uid: az_account_management_group_subscription
+        uid: _ext_az_account_management_group_subscription
         displayName: az account management-group subscription
         items:
         - name: Add
-          uid: az_account_management_group_subscription_add
+          uid: _ext_az_account_management_group_subscription_add
           displayName: az account management-group subscription add
         - name: Remove
-          uid: az_account_management_group_subscription_remove
+          uid: _ext_az_account_management_group_subscription_remove
           displayName: az account management-group subscription remove
