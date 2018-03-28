@@ -7,9 +7,9 @@ items:
   langs:
   - azurecli
   children:
-  - az_iot_hub_module_twin_replace
-  - az_iot_hub_module_twin_show
-  - az_iot_hub_module_twin_update
+  - _ext_az_iot_hub_module_twin_replace
+  - _ext_az_iot_hub_module_twin_show
+  - _ext_az_iot_hub_module_twin_update
 - uid: _ext_az_iot_hub_module_twin_replace
   name: az iot hub module-twin replace
   summary: Replace module twin definition with target json.

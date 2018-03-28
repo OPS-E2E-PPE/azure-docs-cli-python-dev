@@ -7,11 +7,11 @@ items:
   langs:
   - azurecli
   children:
-  - az_iot_dps_enrollment_create
-  - az_iot_dps_enrollment_delete
-  - az_iot_dps_enrollment_list
-  - az_iot_dps_enrollment_show
-  - az_iot_dps_enrollment_update
+  - _ext_az_iot_dps_enrollment_create
+  - _ext_az_iot_dps_enrollment_delete
+  - _ext_az_iot_dps_enrollment_list
+  - _ext_az_iot_dps_enrollment_show
+  - _ext_az_iot_dps_enrollment_update
 - uid: _ext_az_iot_dps_enrollment_create
   name: az iot dps enrollment create
   summary: Create a device enrollment in an Azure IoT Hub Device Provisioning Service.

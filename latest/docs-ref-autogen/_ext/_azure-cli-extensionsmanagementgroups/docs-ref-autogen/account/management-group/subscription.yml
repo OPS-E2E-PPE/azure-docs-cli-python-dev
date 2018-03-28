@@ -7,8 +7,8 @@ items:
   langs:
   - azurecli
   children:
-  - az_account_management_group_subscription_add
-  - az_account_management_group_subscription_remove
+  - _ext_az_account_management_group_subscription_add
+  - _ext_az_account_management_group_subscription_remove
 - uid: _ext_az_account_management_group_subscription_add
   name: az account management-group subscription add
   summary: Add a subscription to a management group.

@@ -7,8 +7,8 @@ items:
   langs:
   - azurecli
   children:
-  - az_network_dns_zone_create
-  - az_network_dns_zone_update
+  - _ext_az_network_dns_zone_create
+  - _ext_az_network_dns_zone_update
 - uid: _ext_az_network_dns_zone_create
   name: az network dns zone create
   summary: Create a DNS zone.

@@ -7,12 +7,12 @@ items:
   langs:
   - azurecli
   children:
-  - az_iot_hub_apply_configuration
-  - az_iot_hub_generate_sas_token
-  - az_iot_hub_invoke_device_method
-  - az_iot_hub_invoke_module_method
-  - az_iot_hub_query
-  - az_iot_hub_show_connection_string
+  - _ext_az_iot_hub_apply_configuration
+  - _ext_az_iot_hub_generate_sas_token
+  - _ext_az_iot_hub_invoke_device_method
+  - _ext_az_iot_hub_invoke_module_method
+  - _ext_az_iot_hub_query
+  - _ext_az_iot_hub_show_connection_string
 - uid: _ext_az_iot_hub_apply_configuration
   name: az iot hub apply-configuration
   summary: Apply deployment manifest to a single device.

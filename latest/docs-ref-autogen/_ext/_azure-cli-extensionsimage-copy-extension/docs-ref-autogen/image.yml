@@ -7,7 +7,7 @@ items:
   langs:
   - azurecli
   children:
-  - az_image_copy
+  - _ext_az_image_copy
 - uid: _ext_az_image_copy
   name: az image copy
   summary: Copy a managed image (or vm) to other regions.

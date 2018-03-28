@@ -7,9 +7,9 @@ items:
   langs:
   - azurecli
   children:
-  - az_iot_device_send_d2c_message
-  - az_iot_device_simulate
-  - az_iot_device_upload_file
+  - _ext_az_iot_device_send_d2c_message
+  - _ext_az_iot_device_simulate
+  - _ext_az_iot_device_upload_file
 - uid: _ext_az_iot_device_send_d2c_message
   name: az iot device send-d2c-message
   summary: Send an MQTT device-to-cloud message.

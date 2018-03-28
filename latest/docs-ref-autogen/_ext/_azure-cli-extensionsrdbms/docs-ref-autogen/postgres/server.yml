@@ -7,13 +7,13 @@ items:
   langs:
   - azurecli
   children:
-  - az_postgres_server_create
-  - az_postgres_server_delete
-  - az_postgres_server_list
-  - az_postgres_server_restore
-  - az_postgres_server_show
-  - az_postgres_server_update
-  - az_postgres_server_wait
+  - _ext_az_postgres_server_create
+  - _ext_az_postgres_server_delete
+  - _ext_az_postgres_server_list
+  - _ext_az_postgres_server_restore
+  - _ext_az_postgres_server_show
+  - _ext_az_postgres_server_update
+  - _ext_az_postgres_server_wait
 - uid: _ext_az_postgres_server_create
   name: az postgres server create
   summary: Create a server.

@@ -7,7 +7,7 @@ items:
   langs:
   - azurecli
   children:
-  - az_batch_job_create
+  - _ext_az_batch_job_create
 - uid: _ext_az_batch_job_create
   name: az batch job create
   summary: Add a job and associated task(s) to a Batch account.

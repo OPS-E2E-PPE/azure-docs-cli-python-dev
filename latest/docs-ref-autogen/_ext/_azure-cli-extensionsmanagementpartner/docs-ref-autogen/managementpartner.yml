@@ -7,10 +7,10 @@ items:
   langs:
   - azurecli
   children:
-  - az_managementpartner_create
-  - az_managementpartner_delete
-  - az_managementpartner_show
-  - az_managementpartner_update
+  - _ext_az_managementpartner_create
+  - _ext_az_managementpartner_delete
+  - _ext_az_managementpartner_show
+  - _ext_az_managementpartner_update
 - uid: _ext_az_managementpartner_create
   name: az managementpartner create
   summary: Associates a Microsoft Partner Network(MPN) ID to the current authenticated user or service principal.

@@ -7,9 +7,9 @@ items:
   langs:
   - azurecli
   children:
-  - az_iot_hub_device_twin_replace
-  - az_iot_hub_device_twin_show
-  - az_iot_hub_device_twin_update
+  - _ext_az_iot_hub_device_twin_replace
+  - _ext_az_iot_hub_device_twin_show
+  - _ext_az_iot_hub_device_twin_update
 - uid: _ext_az_iot_hub_device_twin_replace
   name: az iot hub device-twin replace
   summary: Replace device twin definition with target json.

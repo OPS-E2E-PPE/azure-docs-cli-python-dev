@@ -7,8 +7,8 @@ items:
   langs:
   - azurecli
   children:
-  - az_postgres_server_logs_download
-  - az_postgres_server_logs_list
+  - _ext_az_postgres_server_logs_download
+  - _ext_az_postgres_server_logs_list
 - uid: _ext_az_postgres_server_logs_download
   name: az postgres server-logs download
   summary: Download log files.

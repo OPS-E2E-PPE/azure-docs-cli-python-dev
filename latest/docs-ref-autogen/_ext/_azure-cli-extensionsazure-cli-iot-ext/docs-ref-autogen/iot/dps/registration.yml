@@ -7,9 +7,9 @@ items:
   langs:
   - azurecli
   children:
-  - az_iot_dps_registration_delete
-  - az_iot_dps_registration_list
-  - az_iot_dps_registration_show
+  - _ext_az_iot_dps_registration_delete
+  - _ext_az_iot_dps_registration_list
+  - _ext_az_iot_dps_registration_show
 - uid: _ext_az_iot_dps_registration_delete
   name: az iot dps registration delete
   summary: Delete a device registration in an Azure IoT Hub Device Provisioning Service.

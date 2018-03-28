@@ -7,11 +7,11 @@ items:
   langs:
   - azurecli
   children:
-  - az_postgres_server_firewall_rule_create
-  - az_postgres_server_firewall_rule_delete
-  - az_postgres_server_firewall_rule_list
-  - az_postgres_server_firewall_rule_show
-  - az_postgres_server_firewall_rule_update
+  - _ext_az_postgres_server_firewall_rule_create
+  - _ext_az_postgres_server_firewall_rule_delete
+  - _ext_az_postgres_server_firewall_rule_list
+  - _ext_az_postgres_server_firewall_rule_show
+  - _ext_az_postgres_server_firewall_rule_update
 - uid: _ext_az_postgres_server_firewall_rule_create
   name: az postgres server firewall-rule create
   summary: Create a new firewall rule for a server.

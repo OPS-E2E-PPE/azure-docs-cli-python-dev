@@ -7,8 +7,8 @@ items:
   langs:
   - azurecli
   children:
-  - az_batch_file_download
-  - az_batch_file_upload
+  - _ext_az_batch_file_download
+  - _ext_az_batch_file_upload
 - uid: _ext_az_batch_file_download
   name: az batch file download
   summary: Download a specified file or directory of files to the specified storage path.

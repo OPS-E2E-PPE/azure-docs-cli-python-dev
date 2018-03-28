@@ -7,9 +7,9 @@ items:
   langs:
   - azurecli
   children:
-  - az_postgres_server_configuration_list
-  - az_postgres_server_configuration_set
-  - az_postgres_server_configuration_show
+  - _ext_az_postgres_server_configuration_list
+  - _ext_az_postgres_server_configuration_set
+  - _ext_az_postgres_server_configuration_show
 - uid: _ext_az_postgres_server_configuration_list
   name: az postgres server configuration list
   summary: List the configuration values for a server.

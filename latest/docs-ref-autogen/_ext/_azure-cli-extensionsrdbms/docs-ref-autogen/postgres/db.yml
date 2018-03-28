@@ -7,10 +7,10 @@ items:
   langs:
   - azurecli
   children:
-  - az_postgres_db_create
-  - az_postgres_db_delete
-  - az_postgres_db_list
-  - az_postgres_db_show
+  - _ext_az_postgres_db_create
+  - _ext_az_postgres_db_delete
+  - _ext_az_postgres_db_list
+  - _ext_az_postgres_db_show
 - uid: _ext_az_postgres_db_create
   name: az postgres db create
   summary: Create a PostgreSQL database.

@@ -7,13 +7,13 @@ items:
   langs:
   - azurecli
   children:
-  - az_mysql_server_create
-  - az_mysql_server_delete
-  - az_mysql_server_list
-  - az_mysql_server_restore
-  - az_mysql_server_show
-  - az_mysql_server_update
-  - az_mysql_server_wait
+  - _ext_az_mysql_server_create
+  - _ext_az_mysql_server_delete
+  - _ext_az_mysql_server_list
+  - _ext_az_mysql_server_restore
+  - _ext_az_mysql_server_show
+  - _ext_az_mysql_server_update
+  - _ext_az_mysql_server_wait
 - uid: _ext_az_mysql_server_create
   name: az mysql server create
   summary: Create a server.

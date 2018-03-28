@@ -7,11 +7,11 @@ items:
   langs:
   - azurecli
   children:
-  - az_account_management_group_create
-  - az_account_management_group_delete
-  - az_account_management_group_list
-  - az_account_management_group_show
-  - az_account_management_group_update
+  - _ext_az_account_management_group_create
+  - _ext_az_account_management_group_delete
+  - _ext_az_account_management_group_list
+  - _ext_az_account_management_group_show
+  - _ext_az_account_management_group_update
 - uid: _ext_az_account_management_group_create
   name: az account management-group create
   summary: Add a new management group.

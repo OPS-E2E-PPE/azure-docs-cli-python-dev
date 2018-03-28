@@ -7,14 +7,14 @@ items:
   langs:
   - azurecli
   children:
-  - az_iot_hub_device_identity_create
-  - az_iot_hub_device_identity_delete
-  - az_iot_hub_device_identity_export
-  - az_iot_hub_device_identity_import
-  - az_iot_hub_device_identity_list
-  - az_iot_hub_device_identity_show
-  - az_iot_hub_device_identity_show_connection_string
-  - az_iot_hub_device_identity_update
+  - _ext_az_iot_hub_device_identity_create
+  - _ext_az_iot_hub_device_identity_delete
+  - _ext_az_iot_hub_device_identity_export
+  - _ext_az_iot_hub_device_identity_import
+  - _ext_az_iot_hub_device_identity_list
+  - _ext_az_iot_hub_device_identity_show
+  - _ext_az_iot_hub_device_identity_show_connection_string
+  - _ext_az_iot_hub_device_identity_update
 - uid: _ext_az_iot_hub_device_identity_create
   name: az iot hub device-identity create
   summary: Create a device in an IoT Hub.

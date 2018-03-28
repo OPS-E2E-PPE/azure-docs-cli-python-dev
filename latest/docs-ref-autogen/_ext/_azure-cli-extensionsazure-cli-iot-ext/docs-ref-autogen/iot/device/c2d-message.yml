@@ -7,10 +7,10 @@ items:
   langs:
   - azurecli
   children:
-  - az_iot_device_c2d_message_abandon
-  - az_iot_device_c2d_message_complete
-  - az_iot_device_c2d_message_receive
-  - az_iot_device_c2d_message_reject
+  - _ext_az_iot_device_c2d_message_abandon
+  - _ext_az_iot_device_c2d_message_complete
+  - _ext_az_iot_device_c2d_message_receive
+  - _ext_az_iot_device_c2d_message_reject
 - uid: _ext_az_iot_device_c2d_message_abandon
   name: az iot device c2d-message abandon
   summary: Abandon a cloud-to-device message.

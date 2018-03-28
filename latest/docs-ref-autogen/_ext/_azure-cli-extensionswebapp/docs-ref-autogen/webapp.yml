@@ -7,7 +7,7 @@ items:
   langs:
   - azurecli
   children:
-  - az_webapp_up
+  - _ext_az_webapp_up
 - uid: _ext_az_webapp_up
   name: az webapp up
   summary: Experimental command to create and deploy a web app. Current supports includes Node on Linux & .NET Core on Windows.

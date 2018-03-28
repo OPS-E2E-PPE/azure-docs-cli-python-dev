@@ -7,9 +7,9 @@ items:
   langs:
   - azurecli
   children:
-  - az_account_subscription_definition_create
-  - az_account_subscription_definition_list
-  - az_account_subscription_definition_show
+  - _ext_az_account_subscription_definition_create
+  - _ext_az_account_subscription_definition_list
+  - _ext_az_account_subscription_definition_show
 - uid: _ext_az_account_subscription_definition_create
   name: az account subscription-definition create
   summary: Create a subscription definition.
