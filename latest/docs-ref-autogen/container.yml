@@ -195,6 +195,10 @@ items:
       content: az container exec -g MyResourceGroup --name mynginx --container-name nginx --exec-command "/bin/bash"
   parameters:
   - isRequired: true
+    name: --exec-command
+    summary: The command to run from within the container.
+    description: ''
+  - isRequired: true
     name: --name -n
     summary: The name of the container group.
     description: ''
@@ -204,9 +208,6 @@ items:
     description: ''
   - name: --container-name
     summary: The container name where to execute the command. Can be ommitted for container groups with only one container.
-    description: ''
-  - name: --exec-command
-    summary: The command to run from within the container.
     description: ''
   - name: --terminal-col-size
     defaultValue: "80"
