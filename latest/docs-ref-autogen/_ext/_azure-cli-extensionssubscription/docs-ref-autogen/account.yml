@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+- uid: az_account
+  name: az account
+  summary: Manage Azure subscription information.
+  description: ''
+  langs:
+  - azurecli
+  children: []
+commands:
+- uid: az_account_subscription_definition
+  name: az account subscription-definition
+  summary: Manage Azure Subscription Definitions.
+- uid: az_account_subscription_definition_create
+  name: az account subscription-definition create
+  summary: Create a subscription definition.
+- uid: az_account_subscription_definition_list
+  name: az account subscription-definition list
+  summary: List an Azure subscription definition by subscriptionId.
+- uid: az_account_subscription_definition_show
+  name: az account subscription-definition show
+  summary: Get an Azure subscription definition.
+globalParameters:
+- name: --debug
+  summary: Increase logging verbosity to show all debug logs.
+- name: --help -h
+  summary: Show this help message and exit.
+- name: --output -o
+  defaultValue: json
+  parameterValueGroup: json, jsonc, table, tsv
+  summary: Output format.
+- name: --query
+  summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+- name: --verbose
+  summary: Increase logging verbosity. Use --debug for full debug logs.

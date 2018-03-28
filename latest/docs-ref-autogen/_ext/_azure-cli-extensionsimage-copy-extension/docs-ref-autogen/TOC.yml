@@ -1,0 +1,10 @@
+- name: Reference
+  uid: az
+  items:
+  - name: VM Images
+    uid: az_image
+    displayName: az image
+    items:
+    - name: Copy
+      uid: az_image_copy
+      displayName: az image copy

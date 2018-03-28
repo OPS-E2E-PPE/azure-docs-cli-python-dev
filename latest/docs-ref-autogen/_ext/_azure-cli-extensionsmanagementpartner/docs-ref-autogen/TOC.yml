@@ -1,0 +1,19 @@
+- name: Reference
+  uid: az
+  items:
+  - name: Managementpartner
+    uid: az_managementpartner
+    displayName: az managementpartner
+    items:
+    - name: Create
+      uid: az_managementpartner_create
+      displayName: az managementpartner create
+    - name: Delete
+      uid: az_managementpartner_delete
+      displayName: az managementpartner delete
+    - name: Show
+      uid: az_managementpartner_show
+      displayName: az managementpartner show
+    - name: Update
+      uid: az_managementpartner_update
+      displayName: az managementpartner update

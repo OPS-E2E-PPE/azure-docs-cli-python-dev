@@ -1,0 +1,20 @@
+- name: Reference
+  uid: az
+  items:
+  - name: Subscriptions
+    uid: az_account
+    displayName: az account
+    items:
+    - name: Subscription-Definition
+      uid: az_account_subscription_definition
+      displayName: az account subscription-definition
+      items:
+      - name: Create
+        uid: az_account_subscription_definition_create
+        displayName: az account subscription-definition create
+      - name: List
+        uid: az_account_subscription_definition_list
+        displayName: az account subscription-definition list
+      - name: Show
+        uid: az_account_subscription_definition_show
+        displayName: az account subscription-definition show

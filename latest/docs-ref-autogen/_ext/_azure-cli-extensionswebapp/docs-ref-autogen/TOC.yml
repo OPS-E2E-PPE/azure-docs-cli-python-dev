@@ -1,0 +1,10 @@
+- name: Reference
+  uid: az
+  items:
+  - name: Web Apps
+    uid: az_webapp
+    displayName: az webapp
+    items:
+    - name: Up
+      uid: az_webapp_up
+      displayName: az webapp up

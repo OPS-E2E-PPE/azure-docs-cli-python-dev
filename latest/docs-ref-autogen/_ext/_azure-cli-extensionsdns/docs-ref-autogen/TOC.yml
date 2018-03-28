@@ -1,0 +1,21 @@
+- name: Reference
+  uid: az
+  items:
+  - name: Networking
+    uid: az_network
+    displayName: az network
+    items:
+    - name: DNS
+      uid: az_network_dns
+      displayName: az network dns
+      items:
+      - name: Zones
+        uid: az_network_dns_zone
+        displayName: az network dns zone
+        items:
+        - name: Create
+          uid: az_network_dns_zone_create
+          displayName: az network dns zone create
+        - name: Update
+          uid: az_network_dns_zone_update
+          displayName: az network dns zone update
