@@ -738,6 +738,9 @@
     uid: az_batchai
     displayName: az batchai
     items:
+    - name: List-Usages
+      uid: az_batchai_list_usages
+      displayName: az batchai list-usages
     - name: Cluster
       uid: az_batchai_cluster
       displayName: az batchai cluster
@@ -754,6 +757,9 @@
       - name: List
         uid: az_batchai_cluster_list
         displayName: az batchai cluster list
+      - name: List-Files
+        uid: az_batchai_cluster_list_files
+        displayName: az batchai cluster list-files
       - name: List-Nodes
         uid: az_batchai_cluster_list_nodes
         displayName: az batchai cluster list-nodes
@@ -792,21 +798,28 @@
       - name: List
         uid: az_batchai_job_list
         displayName: az batchai job list
-      - name: List-Files
-        uid: az_batchai_job_list_files
-        displayName: az batchai job list-files
       - name: List-Nodes
         uid: az_batchai_job_list_nodes
         displayName: az batchai job list-nodes
       - name: Show
         uid: az_batchai_job_show
         displayName: az batchai job show
-      - name: Stream-File
-        uid: az_batchai_job_stream_file
-        displayName: az batchai job stream-file
       - name: Terminate
         uid: az_batchai_job_terminate
         displayName: az batchai job terminate
+      - name: Wait
+        uid: az_batchai_job_wait
+        displayName: az batchai job wait
+      - name: File
+        uid: az_batchai_job_file
+        displayName: az batchai job file
+        items:
+        - name: List
+          uid: az_batchai_job_file_list
+          displayName: az batchai job file list
+        - name: Stream
+          uid: az_batchai_job_file_stream
+          displayName: az batchai job file stream
   - name: Billing
     uid: az_billing
     displayName: az billing
