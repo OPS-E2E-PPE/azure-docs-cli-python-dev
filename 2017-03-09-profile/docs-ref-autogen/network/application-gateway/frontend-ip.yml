@@ -2,7 +2,7 @@
 items:
 - uid: az_network_application_gateway_frontend_ip
   name: az network application-gateway frontend-ip
-  summary: Manage frontend IP addresses for an application gateway.
+  summary: Manage frontend IP addresses of an application gateway.
   description: ''
   langs:
   - azurecli
@@ -18,6 +18,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Create a frontend IP address.
+    syntax:
+      content: az network application-gateway frontend-ip create -g MyResourceGroup --gateway-name MyAppGateway     -n MyFrontendIp --public-ip-address MyPublicIpAddress
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -58,6 +62,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Delete a frontend IP address.
+    syntax:
+      content: az network application-gateway frontend-ip delete -g MyResourceGroup --gateway-name MyAppGateway -n MyFrontendIp
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -86,6 +94,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: List frontend IP addresses.
+    syntax:
+      content: az network application-gateway frontend-ip list -g MyResourceGroup --gateway-name MyAppGateway
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -107,6 +119,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Get the details of a frontend IP address.
+    syntax:
+      content: az network application-gateway frontend-ip show -g MyResourceGroup --gateway-name MyAppGateway -n MyFrontendIp
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -132,6 +148,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Update a frontend IP address to use a new IP address.
+    syntax:
+      content: az network application-gateway frontend-ip update -g MyResourceGroup --gateway-name MyAppGateway -n MyFrontendIp --public-ip-address MyNewPublicIpAddress
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -207,6 +227,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/a961c66e1c66c14349b421972d8c8d6bf27e3400/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 3/16/2018 2:49:34 PM
-ms.date: 3/16/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/2e400f4de9b356c7f0813b412ae4b86cc054f7b0/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 3/29/2018 8:49:05 PM
+ms.date: 3/29/2018

@@ -18,6 +18,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Create a route table.
+    syntax:
+      content: az network route-table create -g MyResourceGroup -n MyRouteTable
   parameters:
   - isRequired: true
     name: --name -n
@@ -48,6 +52,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Delete a route table.
+    syntax:
+      content: az network route-table delete -g MyResourceGroup -n MyRouteTable
   parameters:
   - isRequired: true
     name: --name -n
@@ -69,6 +77,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: List all route tables in a subscription.
+    syntax:
+      content: az network route-table list -g MyResourceGroup
   parameters:
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -81,10 +93,14 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_route_table_show
   name: az network route-table show
-  summary: Get the details for a route table.
+  summary: Get the details of a route table.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Get the details of a route table.
+    syntax:
+      content: az network route-table show -g MyResourceGroup -n MyRouteTable
   parameters:
   - isRequired: true
     name: --name -n
@@ -109,6 +125,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Update a route table to disable BGP route propogation.
+    syntax:
+      content: az network route-table update -g MyResourceGroup -n MyRouteTable --disable-bgp-route-propagation true
   parameters:
   - isRequired: true
     name: --name -n
@@ -169,7 +189,7 @@ commands:
   summary: Update a route in a route table.
 - uid: az_network_route_table_show
   name: az network route-table show
-  summary: Get the details for a route table.
+  summary: Get the details of a route table.
 - uid: az_network_route_table_update
   name: az network route-table update
   summary: Update a route table.
@@ -189,6 +209,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/a961c66e1c66c14349b421972d8c8d6bf27e3400/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 3/16/2018 2:49:34 PM
-ms.date: 3/16/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/2e400f4de9b356c7f0813b412ae4b86cc054f7b0/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 3/29/2018 8:49:05 PM
+ms.date: 3/29/2018
