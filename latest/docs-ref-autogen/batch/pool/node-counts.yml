@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_batch_pool_node_agent_skus
-  name: az batch pool node-agent-skus
-  summary: Retrieve node agent SKUs of Batch pools using a Virtual Machine Configuration.
+- uid: az_batch_pool_node_counts
+  name: az batch pool node-counts
+  summary: ''
   description: ''
   langs:
   - azurecli
   children:
-  - az_batch_pool_node_agent_skus_list
-- uid: az_batch_pool_node_agent_skus_list
-  name: az batch pool node-agent-skus list
-  summary: Lists all node agent SKUs supported by the Azure Batch service.
+  - az_batch_pool_node_counts_list
+- uid: az_batch_pool_node_counts_list
+  name: az batch pool node-counts list
+  summary: Gets the number of nodes in each state, grouped by pool.
   description: ''
   langs:
   - azurecli
@@ -25,7 +25,7 @@ items:
     summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
     description: ''
   - name: --filter
-    summary: An OData $filter clause. For more information on constructing this filter, see <a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-node-agent-skus">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-node-agent-skus</a>.
+    summary: An OData $filter clause.
     description: ''
   source:
     path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
@@ -34,9 +34,9 @@ items:
       path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_batch_pool_node_agent_skus_list
-  name: az batch pool node-agent-skus list
-  summary: Lists all node agent SKUs supported by the Azure Batch service.
+- uid: az_batch_pool_node_counts_list
+  name: az batch pool node-counts list
+  summary: Gets the number of nodes in each state, grouped by pool.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
