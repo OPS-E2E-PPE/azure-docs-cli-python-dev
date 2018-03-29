@@ -6423,9 +6423,6 @@
     - name: Delete
       uid: az_vm_delete
       displayName: az vm delete
-    - name: Format-Secret
-      uid: az_vm_format_secret
-      displayName: az vm format-secret
     - name: Generalize
       uid: az_vm_generalize
       displayName: az vm generalize

@@ -12,7 +12,6 @@ items:
   - az_vm_create
   - az_vm_deallocate
   - az_vm_delete
-  - az_vm_format_secret
   - az_vm_generalize
   - az_vm_get_instance_view
   - az_vm_list
@@ -391,26 +390,6 @@ items:
     description: ''
   - name: --yes -y
     summary: Do not prompt for confirmation.
-    description: ''
-  source:
-    path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-    remote:
-      branch: dev
-      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_vm_format_secret
-  name: az vm format-secret
-  summary: ''
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --secrets -s
-    summary: Space-separated list of key vault secret URIs. Perhaps, produced by 'az keyvault secret list-versions --vault-name vaultname -n cert1 --query "[?attributes.enabled].id" -o tsv'.
-    description: ''
-  - name: --certificate-store
-    summary: 'Windows certificate store names. Default: My.'
     description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
@@ -1101,9 +1080,6 @@ commands:
 - uid: az_vm_extension_show
   name: az vm extension show
   summary: Display information about extensions attached to a VM.
-- uid: az_vm_format_secret
-  name: az vm format-secret
-  summary: ''
 - uid: az_vm_generalize
   name: az vm generalize
   summary: Mark a VM as generalized, allowing it to be imaged for multiple deployments.
@@ -1211,16 +1187,16 @@ commands:
   summary: ''
 - uid: az_vm_secret_add
   name: az vm secret add
-  summary: ''
+  summary: Add a secret to a VM.
 - uid: az_vm_secret_format
   name: az vm secret format
   summary: Transform secrets into a form that can be used by VMs and VMSSes.
 - uid: az_vm_secret_list
   name: az vm secret list
-  summary: ''
+  summary: List secrets on a VM.
 - uid: az_vm_secret_remove
   name: az vm secret remove
-  summary: ''
+  summary: Remove a secret from a VM.
 - uid: az_vm_show
   name: az vm show
   summary: Get the details of a VM.
@@ -1276,6 +1252,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/dd64a546bac52c9c752babdc0a43d83f85e941a9/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 3/27/2018 9:02:06 PM
-ms.date: 3/27/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/baa2e895d16ad1977277c92d81944ab6c16a5cd2/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 3/29/2018 11:07:49 PM
+ms.date: 3/29/2018
