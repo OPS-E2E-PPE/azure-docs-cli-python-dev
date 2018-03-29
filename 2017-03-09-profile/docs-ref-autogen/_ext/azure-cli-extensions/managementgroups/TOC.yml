@@ -1,0 +1,36 @@
+- name: Reference
+  uid: _ext_azure-cli-extensions_managementgroups_az
+  items:
+  - name: Subscriptions
+    uid: _ext_azure-cli-extensions_managementgroups_az_account
+    displayName: az account
+    items:
+    - name: Management-Group
+      uid: _ext_azure-cli-extensions_managementgroups_az_account_management_group
+      displayName: az account management-group
+      items:
+      - name: Create
+        uid: _ext_azure-cli-extensions_managementgroups_az_account_management_group_create
+        displayName: az account management-group create
+      - name: Delete
+        uid: _ext_azure-cli-extensions_managementgroups_az_account_management_group_delete
+        displayName: az account management-group delete
+      - name: List
+        uid: _ext_azure-cli-extensions_managementgroups_az_account_management_group_list
+        displayName: az account management-group list
+      - name: Show
+        uid: _ext_azure-cli-extensions_managementgroups_az_account_management_group_show
+        displayName: az account management-group show
+      - name: Update
+        uid: _ext_azure-cli-extensions_managementgroups_az_account_management_group_update
+        displayName: az account management-group update
+      - name: Subscription
+        uid: _ext_azure-cli-extensions_managementgroups_az_account_management_group_subscription
+        displayName: az account management-group subscription
+        items:
+        - name: Add
+          uid: _ext_azure-cli-extensions_managementgroups_az_account_management_group_subscription_add
+          displayName: az account management-group subscription add
+        - name: Remove
+          uid: _ext_azure-cli-extensions_managementgroups_az_account_management_group_subscription_remove
+          displayName: az account management-group subscription remove

@@ -1,0 +1,10 @@
+- name: Reference
+  uid: _ext_azure-cli-extensions_webapp_az
+  items:
+  - name: Web Apps
+    uid: _ext_azure-cli-extensions_webapp_az_webapp
+    displayName: az webapp
+    items:
+    - name: Up
+      uid: _ext_azure-cli-extensions_webapp_az_webapp_up
+      displayName: az webapp up
