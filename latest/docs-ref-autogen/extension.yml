@@ -51,7 +51,7 @@ items:
   source:
     path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_extension_list
@@ -64,7 +64,7 @@ items:
   source:
     path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_extension_list_available
@@ -87,7 +87,7 @@ items:
   source:
     path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_extension_remove
@@ -104,7 +104,7 @@ items:
   source:
     path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_extension_show
@@ -121,7 +121,7 @@ items:
   source:
     path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_extension_update
@@ -151,7 +151,7 @@ items:
   source:
     path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
@@ -186,9 +186,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
 gitcommit: https://github.com/Azure/azure-cli/blob/25697c470874a965c57977e026224a5cfd8be9f2/src/command_modules/azure-cli-extension/azure/cli/command_modules/extension/_help.py
 updated_at: 2/8/2018 1:02:51 AM
 ms.date: 2/8/2018

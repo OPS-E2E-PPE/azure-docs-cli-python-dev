@@ -7,6 +7,7 @@ items:
   langs:
   - azurecli
   children:
+  - az_vm_assign_identity
   - az_vm_capture
   - az_vm_create
   - az_vm_deallocate
@@ -28,6 +29,40 @@ items:
   - az_vm_stop
   - az_vm_update
   - az_vm_wait
+- uid: az_vm_assign_identity
+  name: az vm assign-identity
+  summary: (Deprecated, please use 'az vm identity assign').
+  description: ''
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --name -n
+    summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=&lt;name&gt;`.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --identities
+    summary: The identities to assign.
+    description: ''
+  - name: --port
+    summary: 'The port to fetch AAD token. Default: 50342.'
+    description: ''
+  - name: --role
+    defaultValue: Contributor
+    summary: Role name or id the system assigned identity will have.
+    description: ''
+  - name: --scope
+    summary: Scope that the system assigned identity can access.
+    description: ''
+  source:
+    path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+    remote:
+      branch: master
+      path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_capture
   name: az vm capture
   summary: Capture information for a stopped VM.
@@ -72,7 +107,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_create
@@ -150,9 +185,6 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --public-ip-sku
-    summary: ''
-    description: ''
   - name: --secrets
     summary: 'One or many Key Vault secrets as JSON strings or files via `@&lt;file path&gt;` containing `[{ "sourceVault": { "id": "value" }, "vaultCertificates": [{ "certificateUrl": "value", "certificateStore": "cert store name (only on windows)"}] }]`.'
     description: ''
@@ -170,7 +202,7 @@ items:
     summary: Password for the VM if authentication type is 'Password'.
     description: ''
   - name: --admin-username
-    defaultValue: appveyor
+    defaultValue: shujia
     summary: Username for the VM.
     description: ''
   - name: --authentication-type
@@ -225,6 +257,7 @@ items:
     summary: Name of the public IP address when creating one (default) or referencing an existing one. Can also reference an existing public IP by ID or specify "" for None.
     description: ''
   - name: --public-ip-address-allocation
+    defaultValue: dynamic
     parameterValueGroup: dynamic, static
     summary: ''
     description: ''
@@ -281,7 +314,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_deallocate
@@ -319,7 +352,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_delete
@@ -353,7 +386,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_format_secret
@@ -373,7 +406,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_generalize
@@ -411,7 +444,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_get_instance_view
@@ -439,7 +472,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list
@@ -468,7 +501,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list_ip_addresses
@@ -494,7 +527,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list_sizes
@@ -515,7 +548,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list_usage
@@ -536,7 +569,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list_vm_resize_options
@@ -564,7 +597,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_open_port
@@ -609,7 +642,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_redeploy
@@ -640,7 +673,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_resize
@@ -676,7 +709,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_restart
@@ -707,7 +740,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_show
@@ -738,7 +771,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_start
@@ -769,7 +802,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_stop
@@ -800,7 +833,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_update
@@ -849,7 +882,7 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_wait
@@ -900,10 +933,13 @@ items:
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
+- uid: az_vm_assign_identity
+  name: az vm assign-identity
+  summary: (Deprecated, please use 'az vm identity assign').
 - uid: az_vm_availability_set
   name: az vm availability-set
   summary: Group resources into availability sets.
@@ -1157,9 +1193,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/dd64a546bac52c9c752babdc0a43d83f85e941a9/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 3/27/2018 9:02:06 PM
-ms.date: 3/27/2018
+original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/e8f93ba0e7337ea3afebe25a827f2be04828695d/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 3/12/2018 7:13:12 PM
+ms.date: 3/12/2018

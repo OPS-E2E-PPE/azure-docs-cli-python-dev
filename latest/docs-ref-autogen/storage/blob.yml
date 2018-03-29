@@ -81,7 +81,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_delete_batch
@@ -138,7 +138,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_download
@@ -216,7 +216,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_download_batch
@@ -262,7 +262,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_exists
@@ -301,7 +301,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_generate_sas
@@ -367,7 +367,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_list
@@ -411,7 +411,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_set_tier
@@ -456,7 +456,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_show
@@ -514,7 +514,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_snapshot
@@ -568,7 +568,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_undelete
@@ -604,7 +604,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_update
@@ -673,7 +673,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_upload
@@ -774,7 +774,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_upload_batch
@@ -872,7 +872,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_url
@@ -913,7 +913,7 @@ items:
   source:
     path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
     remote:
-      branch: dev
+      branch: master
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
@@ -1038,9 +1038,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
 gitcommit: https://github.com/Azure/azure-cli/blob/3e495ca2db15e64d7cc219c35c7a2002c485c5e6/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
 updated_at: 3/20/2018 7:27:47 PM
 ms.date: 3/20/2018

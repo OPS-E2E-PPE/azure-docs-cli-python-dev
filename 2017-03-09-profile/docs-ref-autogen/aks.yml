@@ -149,7 +149,7 @@ items:
     summary: 'Get cluster administrator credentials.  Default: cluster user credentials.'
     description: ''
   - name: --file -f
-    defaultValue: C:\Users\appveyor\.kube\config
+    defaultValue: C:\Users\shujia\.kube\config
     summary: Kubernetes configuration file to update. Use "-" to print YAML to stdout instead.
     description: ''
 - uid: az_aks_get_upgrades
@@ -190,7 +190,7 @@ items:
     summary: ''
     description: ''
   - name: --install-location
-    defaultValue: C:\Program Files (x86)\kubectl.exe
+    defaultValue: C:\Program Files\kubectl.exe
     summary: ''
     description: ''
 - uid: az_aks_install_connector
