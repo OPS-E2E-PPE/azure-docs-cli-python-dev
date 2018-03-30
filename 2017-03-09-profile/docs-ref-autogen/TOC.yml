@@ -824,6 +824,16 @@
     uid: az_billing
     displayName: az billing
     items:
+    - name: Enrollment-Account
+      uid: az_billing_enrollment_account
+      displayName: az billing enrollment-account
+      items:
+      - name: List
+        uid: az_billing_enrollment_account_list
+        displayName: az billing enrollment-account list
+      - name: Show
+        uid: az_billing_enrollment_account_show
+        displayName: az billing enrollment-account show
     - name: Invoice
       uid: az_billing_invoice
       displayName: az billing invoice
