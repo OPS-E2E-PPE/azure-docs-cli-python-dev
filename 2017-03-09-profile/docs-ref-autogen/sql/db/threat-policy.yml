@@ -43,16 +43,26 @@ items:
   examples:
   - summary: Enable by storage account name.
     syntax:
-      content: az sql db threat-policy update -g mygroup -s myserver -n mydb     --state Enabled --storage-account mystorage
+      content: >-
+        az sql db threat-policy update -g mygroup -s myserver -n mydb \
+                                    --state Enabled --storage-account mystorage
   - summary: Enable by storage endpoint and key.
     syntax:
-      content: az sql db threat-policy update -g mygroup -s myserver -n mydb     --state Enabled --storage-endpoint https://mystorage.blob.core.windows.net     --storage-key MYKEY==
+      content: >-
+        az sql db threat-policy update -g mygroup -s myserver -n mydb \
+                                    --state Enabled --storage-endpoint https://mystorage.blob.core.windows.net \
+                                    --storage-key MYKEY==
   - summary: Disable a subset of alert types.
     syntax:
-      content: az sql db threat-policy update -g mygroup -s myserver -n mydb     --disabled-alerts Sql_Injection_Vulnerability Access_Anomaly
+      content: >-
+        az sql db threat-policy update -g mygroup -s myserver -n mydb \
+                                    --disabled-alerts Sql_Injection_Vulnerability Access_Anomaly
   - summary: Configure email recipients for a policy.
     syntax:
-      content: az sql db threat-policy update -g mygroup -s myserver -n mydb     --email-addresses me@examlee.comyou@example.com     --email-account-admins Enabled
+      content: >-
+        az sql db threat-policy update -g mygroup -s myserver -n mydb \
+                                    --email-addresses me@examlee.comyou@example.com \
+                                    --email-account-admins Enabled
   - summary: Disable a threat policy.
     syntax:
       content: az sql db threat-policy update -g mygroup -s myserver -n mydb --state Disabled

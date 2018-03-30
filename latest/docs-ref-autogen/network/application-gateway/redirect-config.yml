@@ -21,7 +21,10 @@ items:
   examples:
   - summary: Create a redirect configuration to a http-listener called MyBackendListener.
     syntax:
-      content: az network application-gateway redirect-config create -g MyResourceGroup     --gateway-name MyAppGateway -n MyRedirectConfig --type Permanent     --include-path true --include-query-string true --target-listener MyBackendListener
+      content: >-
+        az network application-gateway redirect-config create -g MyResourceGroup \
+                                    --gateway-name MyAppGateway -n MyRedirectConfig --type Permanent \
+                                    --include-path true --include-query-string true --target-listener MyBackendListener
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -72,7 +75,7 @@ items:
   examples:
   - summary: Delete a redirect configuration.
     syntax:
-      content: az network application-gateway redirect-config delete -g MyResourceGroup --gateway-name MyAppGateway -n MyRedirectConfig
+      content: az network application-gateway redirect-config delete -g MyResourceGroup \ --gateway-name MyAppGateway -n MyRedirectConfig
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -158,7 +161,9 @@ items:
   examples:
   - summary: Update a redirect configuration to a different http-listener.
     syntax:
-      content: az network application-gateway redirect-config update -g MyResourceGroup --gateway-name MyAppGateway     -n MyRedirectConfig --type Permanent --target-listener MyNewBackendListener
+      content: >-
+        az network application-gateway redirect-config update -g MyResourceGroup --gateway-name MyAppGateway \
+                                    -n MyRedirectConfig --type Permanent --target-listener MyNewBackendListener
   parameters:
   - isRequired: true
     name: --gateway-name

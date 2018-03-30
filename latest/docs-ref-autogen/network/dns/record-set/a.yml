@@ -23,7 +23,9 @@ items:
   examples:
   - summary: Add an A record.
     syntax:
-      content: az network dns record-set a add-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -a MyIpv4Address
+      content: >-
+        az network dns record-set a add-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -a MyIpv4Address
   parameters:
   - isRequired: true
     name: --ipv4-address -a
@@ -158,7 +160,9 @@ items:
   examples:
   - summary: Remove an A record from its record set.
     syntax:
-      content: az network dns record-set a remove-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -a MyIpv4Address
+      content: >-
+        az network dns record-set a remove-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -a MyIpv4Address
   parameters:
   - isRequired: true
     name: --ipv4-address -a
@@ -223,7 +227,9 @@ items:
   examples:
   - summary: Update an A record set.
     syntax:
-      content: az network dns record-set a update -g MyResourceGroup -n MyRecordSet     -z www.mysite.com --metadata owner=WebTeam
+      content: >-
+        az network dns record-set a update -g MyResourceGroup -n MyRecordSet \
+                                    -z www.mysite.com --metadata owner=WebTeam
   parameters:
   - isRequired: true
     name: --name -n

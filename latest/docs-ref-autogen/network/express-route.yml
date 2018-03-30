@@ -26,7 +26,9 @@ items:
   examples:
   - summary: Create an ExpressRoute circuit.
     syntax:
-      content: az network express-route create --bandwidth 200 -n MyCircuit --peering-location "Silicon Valley"     -g --provider "Equinix" -l "West US" --sku-family MeteredData --sku-tier Standard
+      content: >-
+        az network express-route create --bandwidth 200 -n MyCircuit --peering-location "Silicon Valley" \
+                                    -g --provider "Equinix" -l "West US" --sku-family MeteredData --sku-tier Standard
   parameters:
   - isRequired: true
     name: --bandwidth
@@ -158,7 +160,9 @@ items:
   examples:
   - summary: Show the current Address Resolution Protocol (ARP) table of an ExpressRoute circuit.
     syntax:
-      content: az network express-route list-arp-tables -g MyResourceGroup -n MyCircuit     --path primary --peering-name AzurePrivatePeering
+      content: >-
+        az network express-route list-arp-tables -g MyResourceGroup -n MyCircuit \
+                                    --path primary --peering-name AzurePrivatePeering
   parameters:
   - isRequired: true
     name: --name -n
@@ -192,7 +196,9 @@ items:
   examples:
   - summary: Show the current routing table of an ExpressRoute circuit peering.
     syntax:
-      content: az network express-route list-route-tables -g MyResourceGroup -n MyCircuit     --path primary --peering-name AzurePrivatePeering
+      content: >-
+        az network express-route list-route-tables -g MyResourceGroup -n MyCircuit \
+                                    --path primary --peering-name AzurePrivatePeering
   parameters:
   - isRequired: true
     name: --name -n

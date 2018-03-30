@@ -23,7 +23,11 @@ items:
       content: az batchai file-server create -n MyNFS -g MyResourceGroup -c nfs.json
   - summary: Create a NFS manually providing parameters.
     syntax:
-      content: az file-server create -n MyNFS -g MyResourceGroup     -s Standard_D14 --disk-count 4 --disk-size 512     --storage-sku Premium_LRS --caching-type readonly     -u $USER -k ~/.ssh/id_rsa.pub
+      content: >-
+        az file-server create -n MyNFS -g MyResourceGroup \
+                                    -s Standard_D14 --disk-count 4 --disk-size 512 \
+                                    --storage-sku Premium_LRS --caching-type readonly \
+                                    -u $USER -k ~/.ssh/id_rsa.pub
   parameters:
   - isRequired: true
     name: --name -n

@@ -23,7 +23,9 @@ items:
   examples:
   - summary: Add an MX record.
     syntax:
-      content: az network dns record-set mx add-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -e mail.mysite.com -p 10
+      content: >-
+        az network dns record-set mx add-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -e mail.mysite.com -p 10
   parameters:
   - isRequired: true
     name: --exchange -e
@@ -162,7 +164,9 @@ items:
   examples:
   - summary: Remove an MX record from its record set.
     syntax:
-      content: az network dns record-set mx remove-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -e mail.mysite.com -p 10
+      content: >-
+        az network dns record-set mx remove-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -e mail.mysite.com -p 10
   parameters:
   - isRequired: true
     name: --exchange -e
@@ -231,7 +235,9 @@ items:
   examples:
   - summary: Update an MX record set.
     syntax:
-      content: az network dns record-set mx update -g MyResourceGroup -z www.mysite.com     -n MyRecordSet --metadata owner=WebTeam
+      content: >-
+        az network dns record-set mx update -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet --metadata owner=WebTeam
   parameters:
   - isRequired: true
     name: --name -n

@@ -22,7 +22,9 @@ items:
   examples:
   - summary: Create an endpoint for a performance profile to point to an Azure Web App endpoint.
     syntax:
-      content: az network traffic-manager endpoint create -g MyResourceGroup --profile-name MyTmProfile     -n MyEndpoint --type azureEndpoints --target-resource-id $MyWebApp1Id --endpoint-status enabled
+      content: >-
+        az network traffic-manager endpoint create -g MyResourceGroup --profile-name MyTmProfile \
+                                    -n MyEndpoint --type azureEndpoints --target-resource-id $MyWebApp1Id --endpoint-status enabled
   parameters:
   - isRequired: true
     name: --name -n
@@ -84,7 +86,7 @@ items:
   examples:
   - summary: Delete a traffic manager endpoint.
     syntax:
-      content: az network traffic-manager endpoint delete -g MyResourceGroup --profile-name MyTmProfile -n MyEndpoint --type azureEndpoints
+      content: az network traffic-manager endpoint delete -g MyResourceGroup \ --profile-name MyTmProfile -n MyEndpoint --type azureEndpoints
   parameters:
   - isRequired: true
     name: --name -n
@@ -147,7 +149,9 @@ items:
   examples:
   - summary: Get the details of a traffic manager endpoint.
     syntax:
-      content: az network traffic-manager endpoint show -g MyResourceGroup     --profile-name MyTmProfile -n MyEndpoint --type azureEndpoints
+      content: >-
+        az network traffic-manager endpoint show -g MyResourceGroup \
+                                    --profile-name MyTmProfile -n MyEndpoint --type azureEndpoints
   parameters:
   - isRequired: true
     name: --name -n
@@ -198,7 +202,7 @@ items:
   examples:
   - summary: Update a traffic manager endpoint to change its weight.
     syntax:
-      content: az network traffic-manager endpoint update -g MyResourceGroup --profile-name MyTmProfile -n MyEndpoint --weight 20 --type azureEndpoints
+      content: az network traffic-manager endpoint update -g MyResourceGroup --profile-name MyTmProfile \ -n MyEndpoint --weight 20 --type azureEndpoints
   parameters:
   - isRequired: true
     name: --name -n

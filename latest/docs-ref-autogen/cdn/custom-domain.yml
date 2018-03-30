@@ -22,7 +22,9 @@ items:
   examples:
   - summary: Create a custom domain within an endpoint and profile.
     syntax:
-      content: az cdn custom-domain create -g group --endpoint-name endpoint --profile-name profile     -n domain-name --hostname www.example.com
+      content: >-
+        az cdn custom-domain create -g group --endpoint-name endpoint --profile-name profile \
+                                    -n domain-name --hostname www.example.com
   parameters:
   - isRequired: true
     name: --endpoint-name
@@ -65,7 +67,9 @@ items:
   examples:
   - summary: Delete a custom domain.
     syntax:
-      content: az cdn custom-domain delete -g group --endpoint-name endpoint --profile-name profile     -n domain-name
+      content: >-
+        az cdn custom-domain delete -g group --endpoint-name endpoint --profile-name profile \
+                                    -n domain-name
   parameters:
   - isRequired: true
     name: --endpoint-name
@@ -181,7 +185,9 @@ items:
   examples:
   - summary: Get the details of a custom domain.
     syntax:
-      content: az cdn custom-domain show -g group --endpoint-name endpoint --profile-name profile     -n domain-name
+      content: >-
+        az cdn custom-domain show -g group --endpoint-name endpoint --profile-name profile \
+                                    -n domain-name
   parameters:
   - isRequired: true
     name: --endpoint-name

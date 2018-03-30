@@ -21,7 +21,9 @@ items:
   examples:
   - summary: Create new subnet attached to an NSG with a custom route table.
     syntax:
-      content: az network vnet subnet create -g MyResourceGroup --vnet-name MyVnet -n MySubnet     --address-prefix 10.0.0.0/24 --network-security-group MyNsg --route-table MyRouteTable
+      content: >-
+        az network vnet subnet create -g MyResourceGroup --vnet-name MyVnet -n MySubnet \
+                                    --address-prefix 10.0.0.0/24 --network-security-group MyNsg --route-table MyRouteTable
   parameters:
   - isRequired: true
     name: --address-prefix

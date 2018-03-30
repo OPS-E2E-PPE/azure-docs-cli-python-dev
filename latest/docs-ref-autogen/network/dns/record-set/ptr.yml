@@ -23,7 +23,9 @@ items:
   examples:
   - summary: Add a PTR record.
     syntax:
-      content: az network dns record-set ptr add-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -d another.site.com
+      content: >-
+        az network dns record-set ptr add-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -d another.site.com
   parameters:
   - isRequired: true
     name: --ptrdname -d
@@ -158,7 +160,9 @@ items:
   examples:
   - summary: Remove a PTR record from its record set.
     syntax:
-      content: az network dns record-set ptr remove-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -d another.site.com
+      content: >-
+        az network dns record-set ptr remove-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -d another.site.com
   parameters:
   - isRequired: true
     name: --ptrdname -d
@@ -223,7 +227,9 @@ items:
   examples:
   - summary: Update a PTR record set.
     syntax:
-      content: az network dns record-set ptr update -g MyResourceGroup -z www.mysite.com     -n MyRecordSet --metadata owner=WebTeam
+      content: >-
+        az network dns record-set ptr update -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet --metadata owner=WebTeam
   parameters:
   - isRequired: true
     name: --name -n

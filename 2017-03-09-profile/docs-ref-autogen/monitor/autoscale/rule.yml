@@ -53,13 +53,19 @@ items:
   examples:
   - summary: Scale to 5 instances when the CPU Percentage across instances is greater than 75 averaged over 10 minutes.
     syntax:
-      content: az monitor autoscale rule create -g {myrg} --autoscale-name {myvmss}   --scale to 5 --condition "Percentage CPU > 75 avg 10m"
+      content: >-
+        az monitor autoscale rule create -g {myrg} --autoscale-name {myvmss} \
+                                  --scale to 5 --condition "Percentage CPU > 75 avg 10m"
   - summary: Scale up 2 instances when the CPU Percentage across instances is greater than 75 averaged over 5 minutes.
     syntax:
-      content: az monitor autoscale rule create -g {myrg} --autoscale-name {myvmss}   --scale out 2 --condition "Percentage CPU > 75 avg 5m"
+      content: >-
+        az monitor autoscale rule create -g {myrg} --autoscale-name {myvmss} \
+                                  --scale out 2 --condition "Percentage CPU > 75 avg 5m"
   - summary: Scale down 50% when the CPU Percentage across instances is less than 25 averaged over 15 minutes.
     syntax:
-      content: az monitor autoscale rule create -g {myrg} --autoscale-name {myvmss}   --scale in 50% --condition "Percentage CPU < 25 avg 15m"
+      content: >-
+        az monitor autoscale rule create -g {myrg} --autoscale-name {myvmss} \
+                                  --scale in 50% --condition "Percentage CPU < 25 avg 15m"
   parameters:
   - isRequired: true
     name: --autoscale-name

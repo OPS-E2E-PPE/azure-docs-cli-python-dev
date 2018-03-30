@@ -21,10 +21,14 @@ items:
   examples:
   - summary: Create a basic inbound NAT rule for port 80.
     syntax:
-      content: az network lb inbound-nat-rule create -g MyResourceGroup --lb-name MyLb -n MyNatRule     --protocol Tcp --frontend-port 80 --backend-port 80
+      content: >-
+        az network lb inbound-nat-rule create -g MyResourceGroup --lb-name MyLb -n MyNatRule \
+                                    --protocol Tcp --frontend-port 80 --backend-port 80
   - summary: Create a basic inbound NAT rule for a specific frontend IP and enable floating IP for NAT Rule.
     syntax:
-      content: az network lb inbound-nat-rule create -g MyResourceGroup --lb-name MyLb -n MyNatRule --protocol Tcp     --frontend-port 5432 --backend-port 3389 --frontend-ip-name MyFrontendIp --floating-ip true
+      content: >-
+        az network lb inbound-nat-rule create -g MyResourceGroup --lb-name MyLb -n MyNatRule --protocol Tcp \
+                                    --frontend-port 5432 --backend-port 3389 --frontend-ip-name MyFrontendIp --floating-ip true
   parameters:
   - isRequired: true
     name: --backend-port
@@ -160,7 +164,9 @@ items:
   examples:
   - summary: Update an inbound NAT rule to disable floating IP and modify idle timeout duration.
     syntax:
-      content: az network lb inbound-nat-rule update -g MyResourceGroup --lb-name MyLb -n MyNatRule     --floating-ip false --idle-timeout 5
+      content: >-
+        az network lb inbound-nat-rule update -g MyResourceGroup --lb-name MyLb -n MyNatRule \
+                                    --floating-ip false --idle-timeout 5
   parameters:
   - isRequired: true
     name: --lb-name

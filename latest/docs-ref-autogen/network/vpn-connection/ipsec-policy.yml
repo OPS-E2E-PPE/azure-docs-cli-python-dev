@@ -19,7 +19,10 @@ items:
   examples:
   - summary: Add specified IPsec policies to a connection instead of relying on defaults.
     syntax:
-      content: az network vpn-connection ipsec-policy add -g MyResourceGroup --connection-name MyConnection     --dh-group DHGroup14 --ike-encryption AES256 --ike-integrity SHA384 --ipsec-encryption DES3     --ipsec-integrity GCMAES256 --pfs-group PFS2048 --sa-lifetime 600 --sa-max-size 1024
+      content: >-
+        az network vpn-connection ipsec-policy add -g MyResourceGroup --connection-name MyConnection \
+                                    --dh-group DHGroup14 --ike-encryption AES256 --ike-integrity SHA384 --ipsec-encryption DES3 \
+                                    --ipsec-integrity GCMAES256 --pfs-group PFS2048 --sa-lifetime 600 --sa-max-size 1024
   parameters:
   - isRequired: true
     name: --connection-name

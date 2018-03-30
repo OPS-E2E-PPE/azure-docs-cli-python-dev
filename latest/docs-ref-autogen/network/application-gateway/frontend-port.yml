@@ -21,7 +21,9 @@ items:
   examples:
   - summary: Create a frontend port.
     syntax:
-      content: az network application-gateway frontend-port create -g MyResourceGroup --gateway-name MyAppGateway     -n MyFrontendPort --port 8080
+      content: >-
+        az network application-gateway frontend-port create -g MyResourceGroup --gateway-name MyAppGateway \
+                                    -n MyFrontendPort --port 8080
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -143,7 +145,9 @@ items:
   examples:
   - summary: Update a frontend port to use a different port.
     syntax:
-      content: az network application-gateway frontend-port update -g MyResourceGroup --gateway-name MyAppGateway     -n MyFrontendPort --port 8081
+      content: >-
+        az network application-gateway frontend-port update -g MyResourceGroup --gateway-name MyAppGateway \
+                                    -n MyFrontendPort --port 8081
   parameters:
   - isRequired: true
     name: --gateway-name

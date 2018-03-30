@@ -21,7 +21,9 @@ items:
   examples:
   - summary: Create a site-to-site connection between an Azure virtual network and an on-premises local network gateway.
     syntax:
-      content: az network vpn-connection create -g MyResourceGroup -n MyConnection --vnet-gateway1 MyVnetGateway     -local-gateway2 MyLocalGateway --shared-key Abc123
+      content: >-
+        az network vpn-connection create -g MyResourceGroup -n MyConnection --vnet-gateway1 MyVnetGateway \
+                                    -local-gateway2 MyLocalGateway --shared-key Abc123
   parameters:
   - isRequired: true
     name: --name -n

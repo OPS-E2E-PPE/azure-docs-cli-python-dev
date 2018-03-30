@@ -23,7 +23,9 @@ items:
   examples:
   - summary: Add an SRV record.
     syntax:
-      content: az network dns record-set srv add-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -d another.site.com
+      content: >-
+        az network dns record-set srv add-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -d another.site.com
   parameters:
   - isRequired: true
     name: --port -r
@@ -68,7 +70,9 @@ items:
   examples:
   - summary: Create an empty SRV record set.
     syntax:
-      content: az network dns record-set srv create -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -t webserver.mysite.com -r 8081 -p 10 -w 10
+      content: >-
+        az network dns record-set srv create -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -t webserver.mysite.com -r 8081 -p 10 -w 10
   parameters:
   - isRequired: true
     name: --name -n
@@ -170,7 +174,9 @@ items:
   examples:
   - summary: Remove an SRV record from its record set.
     syntax:
-      content: az network dns record-set srv remove-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -t webserver.mysite.com -r 8081 -p 10 -w 10
+      content: >-
+        az network dns record-set srv remove-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -t webserver.mysite.com -r 8081 -p 10 -w 10
   parameters:
   - isRequired: true
     name: --port -r
@@ -247,7 +253,9 @@ items:
   examples:
   - summary: Update an SRV record set.
     syntax:
-      content: az network dns record-set srv update -g MyResourceGroup -z www.mysite.com     -n MyRecordSet --metadata owner=WebTeam
+      content: >-
+        az network dns record-set srv update -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet --metadata owner=WebTeam
   parameters:
   - isRequired: true
     name: --name -n

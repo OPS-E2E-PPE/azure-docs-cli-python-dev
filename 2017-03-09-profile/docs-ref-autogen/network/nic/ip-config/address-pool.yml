@@ -18,7 +18,9 @@ items:
   examples:
   - summary: Add an address pool to an IP configuration.
     syntax:
-      content: az network nic ip-config address-pool add -g MyResourceGroup --nic-name MyNic     -n MyIpConfig --address-poolMyAddressPool
+      content: >-
+        az network nic ip-config address-pool add -g MyResourceGroup --nic-name MyNic \
+                                    -n MyIpConfig --address-poolMyAddressPool
   parameters:
   - isRequired: true
     name: --address-pool
@@ -54,7 +56,9 @@ items:
   examples:
   - summary: Remove an address pool of an IP configuration.
     syntax:
-      content: az network nic ip-config address-pool remove -g MyResourceGroup --nic-name MyNic     -n MyIpConfig --address-pool MyAddressPool
+      content: >-
+        az network nic ip-config address-pool remove -g MyResourceGroup --nic-name MyNic \
+                                    -n MyIpConfig --address-pool MyAddressPool
   parameters:
   - isRequired: true
     name: --address-pool

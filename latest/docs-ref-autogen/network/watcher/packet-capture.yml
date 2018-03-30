@@ -25,7 +25,30 @@ items:
       content: az network watcher packet-capture create -g MyResourceGroup -n MyPacketCaptureName --vm MyVm --storage-account MyStorageAccount
   - summary: Create a packet capture session on a VM with optional filters for protocols, local IP address and remote IP address ranges and ports.
     syntax:
-      content: az network watcher packet-capture create -g MyResourceGroup -n MyPacketCaptureName --vm MyVm     --storage-account MyStorageAccount --filters '[         {             "protocol":"TCP",             "remoteIPAddress":"1.1.1.1-255.255.255",             "localIPAddress":"10.0.0.3",             "remotePort":"20"         },         {             "protocol":"TCP",             "remoteIPAddress":"1.1.1.1-255.255.255",             "localIPAddress":"10.0.0.3",             "remotePort":"80"         },         {             "protocol":"TCP",             "remoteIPAddress":"1.1.1.1-255.255.255",             "localIPAddress":"10.0.0.3",             "remotePort":"443"         },         {             "protocol":"UDP"         }]'
+      content: >-
+        az network watcher packet-capture create -g MyResourceGroup -n MyPacketCaptureName --vm MyVm \
+                                    --storage-account MyStorageAccount --filters '[ \
+                                        { \
+                                            "protocol":"TCP", \
+                                            "remoteIPAddress":"1.1.1.1-255.255.255", \
+                                            "localIPAddress":"10.0.0.3", \
+                                            "remotePort":"20" \
+                                        }, \
+                                        { \
+                                            "protocol":"TCP", \
+                                            "remoteIPAddress":"1.1.1.1-255.255.255", \
+                                            "localIPAddress":"10.0.0.3", \
+                                            "remotePort":"80" \
+                                        }, \
+                                        { \
+                                            "protocol":"TCP", \
+                                            "remoteIPAddress":"1.1.1.1-255.255.255", \
+                                            "localIPAddress":"10.0.0.3", \
+                                            "remotePort":"443" \
+                                        }, \
+                                        { \
+                                            "protocol":"UDP" \
+                                        }]'
   parameters:
   - isRequired: true
     name: --name -n

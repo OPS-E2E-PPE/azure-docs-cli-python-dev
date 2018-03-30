@@ -21,10 +21,17 @@ items:
   examples:
   - summary: Create Microsoft Peering settings with IPv4 configuration.
     syntax:
-      content: az network express-route peering create -g MyResourceGroup --circuit-name MyCircuit     --peering-type MicrosoftPeering --peer-asn 10002 --vlan-id 103     --primary-peer-subnet 101.0.0.0/30 --secondary-peer-subnet 102.0.0.0/30     --advertised-public-prefixes 101.0.0.0/30
+      content: >-
+        az network express-route peering create -g MyResourceGroup --circuit-name MyCircuit \
+                                    --peering-type MicrosoftPeering --peer-asn 10002 --vlan-id 103 \
+                                    --primary-peer-subnet 101.0.0.0/30 --secondary-peer-subnet 102.0.0.0/30 \
+                                    --advertised-public-prefixes 101.0.0.0/30
   - summary: Add IPv6 settings to existing IPv4 config for Microsoft peering.
     syntax:
-      content: az network express-route peering update -g MyResourceGroup --circuit-name MyCircuit     --peering-type MicrosoftPeering --ip-version ipv6 --primary-peer-subnet 2002:db00::/126     --secondary-peer-subnet 2003:db00::/126 --advertised-public-prefixes 2002:db00::/126
+      content: >-
+        az network express-route peering update -g MyResourceGroup --circuit-name MyCircuit \
+                                    --peering-type MicrosoftPeering --ip-version ipv6 --primary-peer-subnet 2002:db00::/126 \
+                                    --secondary-peer-subnet 2003:db00::/126 --advertised-public-prefixes 2002:db00::/126
   parameters:
   - isRequired: true
     name: --circuit-name

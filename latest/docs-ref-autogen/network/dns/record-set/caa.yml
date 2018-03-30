@@ -23,7 +23,9 @@ items:
   examples:
   - summary: Add a CAA record.
     syntax:
-      content: az network dns record-set caa add-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet --flags 0 --tag "issue" --value "ca.contoso.com"
+      content: >-
+        az network dns record-set caa add-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet --flags 0 --tag "issue" --value "ca.contoso.com"
   parameters:
   - isRequired: true
     name: --flags
@@ -166,7 +168,9 @@ items:
   examples:
   - summary: Remove a CAA record from its record set.
     syntax:
-      content: az network dns record-set caa remove-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet --flags 0 --tag "issue" --value "ca.contoso.com"
+      content: >-
+        az network dns record-set caa remove-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet --flags 0 --tag "issue" --value "ca.contoso.com"
   parameters:
   - isRequired: true
     name: --flags
@@ -239,7 +243,9 @@ items:
   examples:
   - summary: Update a CAA record set.
     syntax:
-      content: az network dns record-set caa update -g MyResourceGroup -z www.mysite.com     -n MyRecordSet --metadata owner=WebTeam
+      content: >-
+        az network dns record-set caa update -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet --metadata owner=WebTeam
   parameters:
   - isRequired: true
     name: --name -n

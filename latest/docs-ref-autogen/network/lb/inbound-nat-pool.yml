@@ -21,7 +21,10 @@ items:
   examples:
   - summary: Create an inbound NAT address pool.
     syntax:
-      content: az network lb inbound-nat-pool create -g MyResourceGroup --lb-name MyLb -n MyNatPool --protocol Tcp --frontend-port-range-start 80 --frontend-port-range-end 89 --backend-port 80 --frontend-ip-name MyFrontendIp
+      content: >-
+        az network lb inbound-nat-pool create -g MyResourceGroup --lb-name MyLb \
+                                -n MyNatPool --protocol Tcp --frontend-port-range-start 80 --frontend-port-range-end 89 \
+                                --backend-port 80 --frontend-ip-name MyFrontendIp
   parameters:
   - isRequired: true
     name: --backend-port
@@ -153,7 +156,9 @@ items:
   examples:
   - summary: Update an inbound NAT address pool to a different backend port.
     syntax:
-      content: az network lb inbound-nat-pool update -g MyResourceGroup --lb-name MyLb -n MyNatPool     --protocol Tcp --backend-port 8080
+      content: >-
+        az network lb inbound-nat-pool update -g MyResourceGroup --lb-name MyLb -n MyNatPool \
+                                    --protocol Tcp --backend-port 8080
   parameters:
   - isRequired: true
     name: --lb-name

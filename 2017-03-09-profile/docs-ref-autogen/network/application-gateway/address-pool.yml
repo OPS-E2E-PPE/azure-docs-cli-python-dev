@@ -21,7 +21,9 @@ items:
   examples:
   - summary: Create an address pool with two endpoints.
     syntax:
-      content: az network application-gateway address-pool create -g MyResourceGroup     --gateway-name MyAppGateway -n MyAddressPool --servers 10.0.0.4 10.0.0.5
+      content: >-
+        az network application-gateway address-pool create -g MyResourceGroup \
+                                    --gateway-name MyAppGateway -n MyAddressPool --servers 10.0.0.4 10.0.0.5
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -142,7 +144,7 @@ items:
   examples:
   - summary: Update an address pool, add server.
     syntax:
-      content: az network application-gateway address-pool update -g MyResourceGroup --gateway-name MyAppGateway -n MyAddressPool --servers 10.0.0.4 10.0.0.5 10.0.0.6
+      content: az network application-gateway address-pool update -g MyResourceGroup --gateway-name MyAppGateway \ -n MyAddressPool --servers 10.0.0.4 10.0.0.5 10.0.0.6
   parameters:
   - isRequired: true
     name: --gateway-name

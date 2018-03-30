@@ -167,7 +167,8 @@ items:
   - summary: Show information for the latest available CentOS image from OpenLogic.
     syntax:
       content: >-
-        latest=$(az vm image list -p OpenLogic -s 7.3 --all --query     "[?offer=='CentOS'].version" -o tsv | sort -u | tail -n 1)
+        latest=$(az vm image list -p OpenLogic -s 7.3 --all --query \
+                                    "[?offer=='CentOS'].version" -o tsv | sort -u | tail -n 1)
                                 az vm image show -l westus -f CentOS -p OpenLogic --s 7.3 --version {latest}
   parameters:
   - name: --location -l

@@ -21,13 +21,22 @@ items:
   examples:
   - summary: Create a load balancing rule that assigns a front-facing IP configuration and port to an address pool and port.
     syntax:
-      content: az network lb rule create -g MyResourceGroup --lb-name MyLb -n MyLbRule --protocol Tcp     --frontend-ip-name MyFrontEndIp --frontend-port 80     --backend-pool-name MyAddressPool --backend-port 80
+      content: >-
+        az network lb rule create -g MyResourceGroup --lb-name MyLb -n MyLbRule --protocol Tcp \
+                                    --frontend-ip-name MyFrontEndIp --frontend-port 80 \
+                                    --backend-pool-name MyAddressPool --backend-port 80
   - summary: Create a load balancing rule that assigns a front-facing IP configuration and port to an address pool and port with the floating ip feature.
     syntax:
-      content: az network lb rule create -g MyResourceGroup --lb-name MyLb -n MyLbRule --protocol Tcp     --frontend-ip-name MyFrontEndIp --backend-pool-name MyAddressPool --backend-port 80     --floating-ip true
+      content: >-
+        az network lb rule create -g MyResourceGroup --lb-name MyLb -n MyLbRule --protocol Tcp \
+                                    --frontend-ip-name MyFrontEndIp --backend-pool-name MyAddressPool --backend-port 80 \
+                                    --floating-ip true
   - summary: Create an HA ports load balancing rule that assigns a frontend IP and port to use all available backend IPs in a pool on the same port.
     syntax:
-      content: az network lb rule create -g MyResourceGroup --lb-name MyLb -n MyHAPortsRule     --protocol All --frontend-port 0 --backend-port 0 --frontend-ip-name MyFrontendIp     --backend-pool-name MyAddressPool
+      content: >-
+        az network lb rule create -g MyResourceGroup --lb-name MyLb -n MyHAPortsRule \
+                                    --protocol All --frontend-port 0 --backend-port 0 --frontend-ip-name MyFrontendIp \
+                                    --backend-pool-name MyAddressPool
   parameters:
   - isRequired: true
     name: --backend-port
@@ -177,7 +186,7 @@ items:
       content: az network lb rule update -g MyResourceGroup --lb-name MyLb -n MyLbRule --protocol Udp
   - summary: Update a load balancing rule to support HA ports.
     syntax:
-      content: az network lb rule update -g MyResourceGroup --lb-name MyLb -n MyLbRule --protocol All --frontend-port 0 --backend-port 0
+      content: az network lb rule update -g MyResourceGroup --lb-name MyLb -n MyLbRule \ --protocol All --frontend-port 0 --backend-port 0
   parameters:
   - isRequired: true
     name: --lb-name

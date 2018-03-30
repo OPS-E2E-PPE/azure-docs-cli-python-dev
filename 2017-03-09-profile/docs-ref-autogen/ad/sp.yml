@@ -27,7 +27,10 @@ items:
       content: az ad sp create-for-rbac --skip-assignment
   - summary: Create with customized contributor assignments.
     syntax:
-      content: az ad sp create-for-rbac -n "MyApp" --role contributor     --scopes /subscriptions/{SubID}/resourceGroups/{ResourceGroup1}     /subscriptions/{SubID}/resourceGroups/{ResourceGroup2}
+      content: >-
+        az ad sp create-for-rbac -n "MyApp" --role contributor \
+                                    --scopes /subscriptions/{SubID}/resourceGroups/{ResourceGroup1} \
+                                    /subscriptions/{SubID}/resourceGroups/{ResourceGroup2}
   - summary: Create using a self-signed certificte.
     syntax:
       content: az ad sp create-for-rbac --create-cert

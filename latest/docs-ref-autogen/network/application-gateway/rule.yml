@@ -21,7 +21,9 @@ items:
   examples:
   - summary: Create a basic rule.
     syntax:
-      content: az network application-gateway rule create -g MyResourceGroup --gateway-name MyAppGateway     -n MyRule --http-listener MyBackendListener --rule-type Basic --address-pool MyAddressPool --http-settings MyHttpSettings
+      content: >-
+        az network application-gateway rule create -g MyResourceGroup --gateway-name MyAppGateway \
+                                    -n MyRule --http-listener MyBackendListener --rule-type Basic --address-pool MyAddressPool --http-settings MyHttpSettings
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -158,7 +160,9 @@ items:
   examples:
   - summary: Update a rule use a new HTTP listener.
     syntax:
-      content: az network application-gateway rule update -g MyResourceGroup --gateway-name MyAppGateway     -n MyRule --http-listener MyNewBackendListener
+      content: >-
+        az network application-gateway rule update -g MyResourceGroup --gateway-name MyAppGateway \
+                                    -n MyRule --http-listener MyNewBackendListener
   parameters:
   - isRequired: true
     name: --gateway-name

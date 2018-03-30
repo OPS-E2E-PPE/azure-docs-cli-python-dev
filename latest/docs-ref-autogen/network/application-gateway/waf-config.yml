@@ -54,10 +54,15 @@ items:
   examples:
   - summary: Configure WAF on an application gateway in detection mode with default values
     syntax:
-      content: az network application-gateway waf-config set -g MyResourceGroup -n MyAppGateway     --enabled true --firewall-mode Detection --rule-set-version 3.0
+      content: >-
+        az network application-gateway waf-config set -g MyResourceGroup -n MyAppGateway \
+                                    --enabled true --firewall-mode Detection --rule-set-version 3.0
   - summary: Disable rules for validation of request body parsing and SQL injection.
     syntax:
-      content: az network application-gateway waf-config set -g MyResourceGroup -n MyAppGateway     --enabled true --rule-set-type OWASP --rule-set-version 3.0     --disabled-rules 920130 920140 --disabled-rule-groups REQUEST-942-APPLICATION-ATTACK-SQLI
+      content: >-
+        az network application-gateway waf-config set -g MyResourceGroup -n MyAppGateway \
+                                    --enabled true --rule-set-type OWASP --rule-set-version 3.0 \
+                                    --disabled-rules 920130 920140 --disabled-rule-groups REQUEST-942-APPLICATION-ATTACK-SQLI
   parameters:
   - isRequired: true
     name: --enabled

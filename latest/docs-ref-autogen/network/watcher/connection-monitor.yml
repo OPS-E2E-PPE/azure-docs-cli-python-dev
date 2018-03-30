@@ -28,7 +28,9 @@ items:
   examples:
   - summary: Create a connection monitor for a virtual machine.
     syntax:
-      content: az network watcher connection-monitor create -g MyResourceGroup -n MyConnectionMonitorName     --source-resource MyVM
+      content: >-
+        az network watcher connection-monitor create -g MyResourceGroup -n MyConnectionMonitorName \
+                                    --source-resource MyVM
   parameters:
   - isRequired: true
     name: --name -n

@@ -121,7 +121,9 @@ items:
   examples:
   - summary: Remove a CNAME record from its record set.
     syntax:
-      content: az network dns record-set cname remove-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -c www.contoso.com
+      content: >-
+        az network dns record-set cname remove-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -c www.contoso.com
   parameters:
   - isRequired: true
     name: --cname -c
@@ -157,7 +159,9 @@ items:
   examples:
   - summary: Set the value of a CNAME record.
     syntax:
-      content: az network dns record-set cname set-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -c www.contoso.com
+      content: >-
+        az network dns record-set cname set-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -c www.contoso.com
   parameters:
   - isRequired: true
     name: --cname -c

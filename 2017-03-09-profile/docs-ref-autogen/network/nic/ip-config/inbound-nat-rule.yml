@@ -18,7 +18,9 @@ items:
   examples:
   - summary: Add an inbound NAT rule to an IP configuration.
     syntax:
-      content: az network nic ip-config inbound-nat-rule add -g MyResourceGroup --nic-name MyNic     -n MyIpConfig --inbound-nat-rule MyNatRule
+      content: >-
+        az network nic ip-config inbound-nat-rule add -g MyResourceGroup --nic-name MyNic \
+                                    -n MyIpConfig --inbound-nat-rule MyNatRule
   parameters:
   - isRequired: true
     name: --inbound-nat-rule
@@ -54,7 +56,9 @@ items:
   examples:
   - summary: Remove an inbound NAT rule of an IP configuration.
     syntax:
-      content: az network nic ip-config inbound-nat-rule remove -g MyResourceGroup --nic-name MyNic     -n MyIpConfig --inbound-nat-rule MyNatRule
+      content: >-
+        az network nic ip-config inbound-nat-rule remove -g MyResourceGroup --nic-name MyNic \
+                                    -n MyIpConfig --inbound-nat-rule MyNatRule
   parameters:
   - isRequired: true
     name: --inbound-nat-rule

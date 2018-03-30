@@ -22,7 +22,9 @@ items:
   examples:
   - summary: Create a Local Network Gateway to represent your on-premises site.
     syntax:
-      content: az network local-gateway create -g MyResourceGroup -n MyLocalGateway     --gateway-ip-address 23.99.221.164 --local-address-prefixes 10.0.0.0/24 20.0.0.0/24
+      content: >-
+        az network local-gateway create -g MyResourceGroup -n MyLocalGateway \
+                                    --gateway-ip-address 23.99.221.164 --local-address-prefixes 10.0.0.0/24 20.0.0.0/24
   parameters:
   - isRequired: true
     name: --gateway-ip-address
@@ -146,7 +148,9 @@ items:
   examples:
   - summary: Update a Local Network Gateway provisioned with a 10.0.0.0/24 address prefix with additional prefixes.
     syntax:
-      content: az network local-gateway update -g MyResourceGroup -n MyLocalGateway     --local-address-prefixes 10.0.0.0/24 20.0.0.0/24 30.0.0.0/24
+      content: >-
+        az network local-gateway update -g MyResourceGroup -n MyLocalGateway \
+                                    --local-address-prefixes 10.0.0.0/24 20.0.0.0/24 30.0.0.0/24
   parameters:
   - isRequired: true
     name: --name -n

@@ -18,7 +18,9 @@ items:
   examples:
   - summary: Add a Root Certificate to the list of certs allowed to connect to this Gateway.
     syntax:
-      content: az network vnet-gateway root-cert create -g MyResourceGroup -n MyRootCertificate     --gateway-name MyVnetGateway --public-cert-data MyCertificateData
+      content: >-
+        az network vnet-gateway root-cert create -g MyResourceGroup -n MyRootCertificate \
+                                    --gateway-name MyVnetGateway --public-cert-data MyCertificateData
   parameters:
   - isRequired: true
     name: --gateway-name

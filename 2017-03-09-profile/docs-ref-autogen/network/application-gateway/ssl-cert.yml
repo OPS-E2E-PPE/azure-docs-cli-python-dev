@@ -21,7 +21,9 @@ items:
   examples:
   - summary: Upload an SSL certificate.
     syntax:
-      content: az network application-gateway ssl-cert create -g MyResourceGroup --gateway-name MyAppGateway     -n MySslCert --cert-file pathtocertfile --cert-password Abc123
+      content: >-
+        az network application-gateway ssl-cert create -g MyResourceGroup --gateway-name MyAppGateway \
+                                    -n MySslCert --cert-file \path\to\cert\file --cert-password Abc123
   parameters:
   - isRequired: true
     name: --cert-file
@@ -147,7 +149,9 @@ items:
   examples:
   - summary: Change a gateway SSL certificate and password.
     syntax:
-      content: az network application-gateway ssl-cert update -g MyResourceGroup --gateway-name MyAppGateway -n MySslCert     --cert-file pathtonewcertfile --cert-password Abc123Abc123
+      content: >-
+        az network application-gateway ssl-cert update -g MyResourceGroup --gateway-name MyAppGateway -n MySslCert \
+                                    --cert-file \path\to\new\cert\file --cert-password Abc123Abc123
   parameters:
   - isRequired: true
     name: --gateway-name

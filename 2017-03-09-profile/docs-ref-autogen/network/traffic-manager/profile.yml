@@ -43,7 +43,9 @@ items:
   examples:
   - summary: Create a traffic manager profile with performance routing.
     syntax:
-      content: az network traffic-manager profile create -g MyResourceGroup -n MyTmProfile --routing-method Performance     --unique-dns-name mywebapp --ttl 30 --monitor-protocol HTTP --monitor-port 80 --monitor-path "/"
+      content: >-
+        az network traffic-manager profile create -g MyResourceGroup -n MyTmProfile --routing-method Performance \
+                                    --unique-dns-name mywebapp --ttl 30 --monitor-protocol HTTP --monitor-port 80 --monitor-path "/"
   parameters:
   - isRequired: true
     name: --name -n

@@ -24,7 +24,9 @@ items:
       content: az appservice plan create -g MyResourceGroup -n MyPlan
   - summary: Create a standard app service plan with with four Linux workers.
     syntax:
-      content: az appservice plan create -g MyResourceGroup -n MyPlan     --is-linux --number-of-workers 4 --sku S1
+      content: >-
+        az appservice plan create -g MyResourceGroup -n MyPlan \
+                                    --is-linux --number-of-workers 4 --sku S1
   parameters:
   - isRequired: true
     name: --name -n

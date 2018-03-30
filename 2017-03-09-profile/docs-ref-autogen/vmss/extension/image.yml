@@ -26,7 +26,10 @@ items:
       content: az vmss extension image list --query "[].name" -o tsv | sort -u | grep Docker
   - summary: List extension names where the publisher name starts with "Microsoft.Azure.App".
     syntax:
-      content: az vmss extension image list --query     "[?starts_with(publisher, 'Microsoft.Azure.App')].publisher"     -o tsv | sort -u | xargs -I{} az vmss extension image list-names --publisher {} -l westus
+      content: >-
+        az vmss extension image list --query \
+                                    "[?starts_with(publisher, 'Microsoft.Azure.App')].publisher" \
+                                    -o tsv | sort -u | xargs -I{} az vmss extension image list-names --publisher {} -l westus
   parameters:
   - name: --latest
     summary: Show the latest version only.

@@ -24,7 +24,10 @@ items:
   examples:
   - summary: Create an application gateway with VMs as backend servers.
     syntax:
-      content: az network application-gateway create -g MyResourceGroup -n MyAppGateway --capacity 2 --sku Standard_Medium     --vnet-name MyVNet --subnet MySubnet --http-settings-cookie-based-affinity Enabled     --public-ip-address MyAppGatewayPublicIp --servers 10.0.0.4 10.0.0.5
+      content: >-
+        az network application-gateway create -g MyResourceGroup -n MyAppGateway --capacity 2 --sku Standard_Medium \
+                                    --vnet-name MyVNet --subnet MySubnet --http-settings-cookie-based-affinity Enabled \
+                                    --public-ip-address MyAppGatewayPublicIp --servers 10.0.0.4 10.0.0.5
   parameters:
   - isRequired: true
     name: --name -n
@@ -249,7 +252,9 @@ items:
   examples:
   - summary: Update an application gateway to use additional servers.
     syntax:
-      content: az network application-gateway update -g MyResourceGroup -n MyAppGateway     --capacity 3 --servers 10.0.0.4 10.0.0.5 10.0.0.6
+      content: >-
+        az network application-gateway update -g MyResourceGroup -n MyAppGateway \
+                                    --capacity 3 --servers 10.0.0.4 10.0.0.5 10.0.0.6
   parameters:
   - isRequired: true
     name: --name -n

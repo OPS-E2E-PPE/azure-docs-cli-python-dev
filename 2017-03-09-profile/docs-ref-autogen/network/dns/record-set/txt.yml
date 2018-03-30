@@ -23,7 +23,9 @@ items:
   examples:
   - summary: Add a TXT record.
     syntax:
-      content: az network dns record-set txt add-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -v Owner=WebTeam
+      content: >-
+        az network dns record-set txt add-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -v Owner=WebTeam
   parameters:
   - isRequired: true
     name: --record-set-name -n
@@ -158,7 +160,9 @@ items:
   examples:
   - summary: Remove a TXT record from its record set.
     syntax:
-      content: az network dns record-set txt remove-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -v Owner=WebTeam
+      content: >-
+        az network dns record-set txt remove-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -v Owner=WebTeam
   parameters:
   - isRequired: true
     name: --record-set-name -n
@@ -223,7 +227,9 @@ items:
   examples:
   - summary: Update a TXT record set.
     syntax:
-      content: az network dns record-set txt update -g MyResourceGroup -z www.mysite.com     -n MyRecordSet --metadata owner=WebTeam
+      content: >-
+        az network dns record-set txt update -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet --metadata owner=WebTeam
   parameters:
   - isRequired: true
     name: --name -n

@@ -21,7 +21,9 @@ items:
   examples:
   - summary: Create an authorization certificate.
     syntax:
-      content: az network application-gateway auth-cert create -g MyResourceGroup --gateway-name MyAppGateway     -n MyAuthCert --cert-file /path/to/cert/file
+      content: >-
+        az network application-gateway auth-cert create -g MyResourceGroup --gateway-name MyAppGateway \
+                                    -n MyAuthCert --cert-file /path/to/cert/file
   parameters:
   - isRequired: true
     name: --cert-file
@@ -143,7 +145,7 @@ items:
   examples:
   - summary: Update authorization certificates to use a new cert file.
     syntax:
-      content: az network application-gateway auth-cert update -g MyResourceGroup --gateway-name MyAppGateway -n MyAuthCert --cert-file /path/to/new/cert/file
+      content: az network application-gateway auth-cert update -g MyResourceGroup --gateway-name MyAppGateway \ -n MyAuthCert --cert-file /path/to/new/cert/file
   parameters:
   - isRequired: true
     name: --cert-file

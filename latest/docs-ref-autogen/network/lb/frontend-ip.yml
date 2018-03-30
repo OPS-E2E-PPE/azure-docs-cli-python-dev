@@ -24,7 +24,9 @@ items:
       content: az network lb frontend-ip create -g MyResourceGroup -n MyFrontendIp --lb-name MyLb --public-ip-name MyFrontendIp
   - summary: Create a frontend ip address for an internal load balancer.
     syntax:
-      content: az network lb frontend-ip create -g MyResourceGroup -n MyFrontendIp --lb-name MyLb     --private-ip-address 10.10.10.100 --subnet-name MySubnet --subnet-vnet-name MyVnet
+      content: >-
+        az network lb frontend-ip create -g MyResourceGroup -n MyFrontendIp --lb-name MyLb \
+                                    --private-ip-address 10.10.10.100 --subnet-name MySubnet --subnet-vnet-name MyVnet
   parameters:
   - isRequired: true
     name: --lb-name

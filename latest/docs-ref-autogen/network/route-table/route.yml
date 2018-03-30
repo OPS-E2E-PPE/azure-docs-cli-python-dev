@@ -21,7 +21,9 @@ items:
   examples:
   - summary: Create a route that forces all inbound traffic to a Network Virtual Appliance.
     syntax:
-      content: az network route-table route create -g MyResourceGroup --route-table-name MyRouteTable -n MyRoute     --next-hop-type VirtualAppliance --address-prefix 10.0.0.0/16 --next-hop-ip-address 10.0.100.4
+      content: >-
+        az network route-table route create -g MyResourceGroup --route-table-name MyRouteTable -n MyRoute \
+                                    --next-hop-type VirtualAppliance --address-prefix 10.0.0.0/16 --next-hop-ip-address 10.0.100.4
   parameters:
   - isRequired: true
     name: --address-prefix
@@ -145,7 +147,7 @@ items:
   examples:
   - summary: Update a route in a route table to change the next hop ip address.
     syntax:
-      content: az network route-table route update -g MyResourceGroup ---route-table-name MyRouteTable -n MyRoute --next-hop-ip-address 10.0.100.5
+      content: az network route-table route update -g MyResourceGroup ---route-table-name MyRouteTable \ -n MyRoute --next-hop-ip-address 10.0.100.5
   parameters:
   - isRequired: true
     name: --name -n

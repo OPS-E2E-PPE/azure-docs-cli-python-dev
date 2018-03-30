@@ -21,7 +21,7 @@ items:
   examples:
   - summary: Create autoscale settings to scale between 2 and 5 instances (3 as default). Email the administrator when scaling occurs.
     syntax:
-      content: "az monitor autoscale create -g {myrg} --resource {resource-id} --min-count 2 --max-count 5   --count 3 --email-administrator\n                        \n                        az monitor autoscale rule create -g {myrg} --autoscale-name {resource-name} --scale out 1   --condition \"Percentage CPU > 75 avg 5m\"\n                        \n                        az monitor autoscale rule create -g {myrg} --autoscale-name {resource-name} --scale in 1   --condition \"Percentage CPU < 25 avg 5m\""
+      content: "az monitor autoscale create -g {myrg} --resource {resource-id} --min-count 2 --max-count 5 \\\n                          --count 3 --email-administrator\n                        \n                        az monitor autoscale rule create -g {myrg} --autoscale-name {resource-name} --scale out 1 \\\n                          --condition \"Percentage CPU > 75 avg 5m\"\n                        \n                        az monitor autoscale rule create -g {myrg} --autoscale-name {resource-name} --scale in 1 \\\n                          --condition \"Percentage CPU < 25 avg 5m\""
   - summary: Create autoscale settings for exactly 4 instances.
     syntax:
       content: az monitor autoscale create -g {myrg} --resource {resource-id} --count 4
@@ -162,7 +162,9 @@ items:
       content: az monitor autoscale update -g {myrg} -n {autoscale-name} --count 3
   - summary: Update autoscale settings to remove an email notification.
     syntax:
-      content: az monitor autoscale update -g {myrg} -n {autoscale-name}   --remove-action email bob@contoso.com
+      content: >-
+        az monitor autoscale update -g {myrg} -n {autoscale-name} \
+                                  --remove-action email bob@contoso.com
   parameters:
   - isRequired: true
     name: --name -n

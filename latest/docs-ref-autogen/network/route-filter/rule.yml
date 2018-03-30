@@ -22,7 +22,9 @@ items:
   examples:
   - summary: Create a rule in a route filter to allow Dynamics 365.
     syntax:
-      content: az network route-filter rule create -g MyResourceGroup --filter-name MyRouteFilter     -n MyRouteFilterRule --communities 12076:5040 --access Allow
+      content: >-
+        az network route-filter rule create -g MyResourceGroup --filter-name MyRouteFilter \
+                                    -n MyRouteFilterRule --communities 12076:5040 --access Allow
   parameters:
   - isRequired: true
     name: --access
@@ -121,7 +123,9 @@ items:
       content: az network route-filter rule list-service-communities -o table
   - summary: Get the community value for Exchange.
     syntax:
-      content: az network route-filter rule list-service-communities     --query '[].bgpCommunities[?communityName==`Exchange`].[communityValue][][]' -o tsv
+      content: >-
+        az network route-filter rule list-service-communities \
+                                    --query '[].bgpCommunities[?communityName==`Exchange`].[communityValue][][]' -o tsv
   parameters: []
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
@@ -167,7 +171,9 @@ items:
   examples:
   - summary: Update a rule in a route filter to add Exchange to rule list.
     syntax:
-      content: az network route-filter rule update -g MyResourceGroup --filter-name MyRouteFilter     -n MyRouteFilterRule --add communities='12076:5010'
+      content: >-
+        az network route-filter rule update -g MyResourceGroup --filter-name MyRouteFilter \
+                                    -n MyRouteFilterRule --add communities='12076:5010'
   parameters:
   - isRequired: true
     name: --filter-name

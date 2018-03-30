@@ -160,10 +160,14 @@ items:
   examples:
   - summary: Update a NIC to use a new private IP address.
     syntax:
-      content: az network nic ip-config update -g MyResourceGroup --nic-name MyNic     -n MyIpConfig --private-ip-address 10.0.0.9
+      content: >-
+        az network nic ip-config update -g MyResourceGroup --nic-name MyNic \
+                                    -n MyIpConfig --private-ip-address 10.0.0.9
   - summary: Make an IP configuration the default for the supplied NIC.
     syntax:
-      content: az network nic ip-config update -g MyResourceGroup --nic-name MyNic     -n MyIpConfig --make-primary
+      content: >-
+        az network nic ip-config update -g MyResourceGroup --nic-name MyNic \
+                                    -n MyIpConfig --make-primary
   parameters:
   - isRequired: true
     name: --name -n

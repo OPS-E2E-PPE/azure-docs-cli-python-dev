@@ -26,7 +26,12 @@ items:
       content: az monitor alert create -n rule1 -g {ResourceGroup} --target {VirtualMachineID} --condition "Percentage CPU > 90 avg 5m"
   - summary: Create a high CPU usage alert on a VM with email and webhook actions.
     syntax:
-      content: az monitor alert create -n rule1 -g {ResourceGroup} --target {VirtualMachineID}     --condition "Percentage CPU > 90 avg 5m"     --action email bob@contoso.comann@contoso.com --email-service-owners     --action webhook https://www.contoso.com/alerts?type=HighCPU     --action webhook https://alerts.contoso.com apiKey={APIKey} type=HighCPU
+      content: >-
+        az monitor alert create -n rule1 -g {ResourceGroup} --target {VirtualMachineID} \
+                                    --condition "Percentage CPU > 90 avg 5m" \
+                                    --action email bob@contoso.comann@contoso.com --email-service-owners \
+                                    --action webhook https://www.contoso.com/alerts?type=HighCPU \
+                                    --action webhook https://alerts.contoso.com apiKey={APIKey} type=HighCPU
   parameters:
   - isRequired: true
     name: --condition

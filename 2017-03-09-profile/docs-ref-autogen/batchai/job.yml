@@ -26,7 +26,9 @@ items:
       content: az batchai job create -n MyJob -r MyCluster -g MyResourceGroup -c job.json
   - summary: Create a job using a configuration file and submit it for running on a cluster in a different resource group.
     syntax:
-      content: az batchai job create -n MyJob -g MyJobResourceGroup -c job.json     -r MyCluster --cluster-resource-group MyClusterResourceGroup
+      content: >-
+        az batchai job create -n MyJob -g MyJobResourceGroup -c job.json \
+                                    -r MyCluster --cluster-resource-group MyClusterResourceGroup
   parameters:
   - isRequired: true
     name: --config -c

@@ -21,7 +21,9 @@ items:
   examples:
   - summary: Create HTTP settings.
     syntax:
-      content: az network application-gateway http-settings create -g MyResourceGroup --gateway-name MyAppGateway     -n MyHttpSettings --port 80 --protocol Http --cookie-based-affinity Disabled --timeout 30
+      content: >-
+        az network application-gateway http-settings create -g MyResourceGroup --gateway-name MyAppGateway \
+                                    -n MyHttpSettings --port 80 --protocol Http --cookie-based-affinity Disabled --timeout 30
   parameters:
   - isRequired: true
     name: --gateway-name
@@ -158,7 +160,9 @@ items:
   examples:
   - summary: Update HTTP settings to use a new probe.
     syntax:
-      content: az network application-gateway http-settings update -g MyResourceGroup --gateway-name MyAppGateway     -n MyHttpSettings --probe MyNewProbe
+      content: >-
+        az network application-gateway http-settings update -g MyResourceGroup --gateway-name MyAppGateway \
+                                    -n MyHttpSettings --probe MyNewProbe
   parameters:
   - isRequired: true
     name: --gateway-name

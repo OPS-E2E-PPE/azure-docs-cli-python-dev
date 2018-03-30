@@ -23,7 +23,9 @@ items:
   examples:
   - summary: Add an AAAA record.
     syntax:
-      content: az network dns record-set aaaa add-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -a MyIpv6Address
+      content: >-
+        az network dns record-set aaaa add-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -a MyIpv6Address
   parameters:
   - isRequired: true
     name: --ipv6-address -a
@@ -158,7 +160,9 @@ items:
   examples:
   - summary: Remove an AAAA record from its record set.
     syntax:
-      content: az network dns record-set aaaa remove-record -g MyResourceGroup -z www.mysite.com     -n MyRecordSet -a MyIpv6Address
+      content: >-
+        az network dns record-set aaaa remove-record -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet -a MyIpv6Address
   parameters:
   - isRequired: true
     name: --ipv6-address -a
@@ -223,7 +227,9 @@ items:
   examples:
   - summary: Update an AAAA record set.
     syntax:
-      content: az network dns record-set aaaa update -g MyResourceGroup -z www.mysite.com     -n MyRecordSet --metadata owner=WebTeam
+      content: >-
+        az network dns record-set aaaa update -g MyResourceGroup -z www.mysite.com \
+                                    -n MyRecordSet --metadata owner=WebTeam
   parameters:
   - isRequired: true
     name: --name -n
