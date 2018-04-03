@@ -6958,7 +6958,7 @@
         displayName: az webapp traffic-routing show
 - name: Extensions Reference
   items:
-  - name: TOC.yml
+  - name: aem
     uid: _ext_aem_az
     items:
     - name: Virtual Machines
@@ -6978,7 +6978,7 @@
         - name: Verify
           uid: _ext_aem_az_vm_aem_verify
           displayName: az vm aem verify
-  - name: TOC.yml
+  - name: alias
     uid: _ext_alias_az
     items:
     - name: Alias
@@ -6994,7 +6994,7 @@
       - name: Remove
         uid: _ext_alias_az_alias_remove
         displayName: az alias remove
-  - name: TOC.yml
+  - name: azure-batch-cli-extensions
     uid: _ext_azure-batch-cli-extensions_az
     items:
     - name: Batch
@@ -7025,7 +7025,7 @@
         - name: Create
           uid: _ext_azure-batch-cli-extensions_az_batch_pool_create
           displayName: az batch pool create
-  - name: TOC.yml
+  - name: azure-cli-iot-ext
     uid: _ext_azure-cli-iot-ext_az
     items:
     - name: Iot
@@ -7237,7 +7237,7 @@
           - name: Update
             uid: _ext_azure-cli-iot-ext_az_iot_hub_module_twin_update
             displayName: az iot hub module-twin update
-  - name: TOC.yml
+  - name: dns
     uid: _ext_dns_az
     items:
     - name: Networking
@@ -7264,7 +7264,7 @@
           - name: Update
             uid: _ext_dns_az_network_dns_zone_update
             displayName: az network dns zone update
-  - name: TOC.yml
+  - name: image-copy-extension
     uid: _ext_image-copy-extension_az
     items:
     - name: VM Images
@@ -7274,7 +7274,7 @@
       - name: Copy
         uid: _ext_image-copy-extension_az_image_copy
         displayName: az image copy
-  - name: TOC.yml
+  - name: managementgroups
     uid: _ext_managementgroups_az
     items:
     - name: Subscriptions
@@ -7310,7 +7310,7 @@
           - name: Remove
             uid: _ext_managementgroups_az_account_management_group_subscription_remove
             displayName: az account management-group subscription remove
-  - name: TOC.yml
+  - name: managementpartner
     uid: _ext_managementpartner_az
     items:
     - name: Managementpartner
@@ -7329,7 +7329,7 @@
       - name: Update
         uid: _ext_managementpartner_az_managementpartner_update
         displayName: az managementpartner update
-  - name: TOC.yml
+  - name: rdbms
     uid: _ext_rdbms_az
     items:
     - name: Mysql
@@ -7360,7 +7360,7 @@
         - name: Georestore
           uid: _ext_rdbms_az_postgres_server_georestore
           displayName: az postgres server georestore
-  - name: TOC.yml
+  - name: subscription
     uid: _ext_subscription_az
     items:
     - name: Subscriptions
@@ -7370,7 +7370,7 @@
       - name: Create
         uid: _ext_subscription_az_account_create
         displayName: az account create
-  - name: TOC.yml
+  - name: webapp
     uid: _ext_webapp_az
     items:
     - name: Web Apps
