@@ -54,7 +54,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_sql_db_replica_delete_link
   name: az sql db replica delete-link
   summary: Permanently stop data replication between two database replicas.
@@ -89,7 +89,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_sql_db_replica_list_links
   name: az sql db replica list-links
   summary: List the replicas of a database and their replication status.
@@ -114,7 +114,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_sql_db_replica_set_primary
   name: az sql db replica set-primary
   summary: Set the primary replica database by failing over from the current primary replica database.
@@ -142,7 +142,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_sql_db_replica_create
   name: az sql db replica create
@@ -169,9 +169,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/69d6e0b85855c9f490b3c6d2277d07fa8b22ee91/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/69d6e0b85855c9f490b3c6d2277d07fa8b22ee91/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
 updated_at: 2/21/2018 6:26:23 PM
 ms.date: 2/21/2018

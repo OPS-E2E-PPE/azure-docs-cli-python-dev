@@ -42,7 +42,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_dls_account_trusted_provider_delete
   name: az dls account trusted-provider delete
   summary: Deletes the specified trusted identity provider from the specified Data Lake Store account.
@@ -66,7 +66,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_dls_account_trusted_provider_list
   name: az dls account trusted-provider list
   summary: Lists the Data Lake Store trusted identity providers within the specified Data Lake Store account.
@@ -86,7 +86,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_dls_account_trusted_provider_show
   name: az dls account trusted-provider show
   summary: Gets the specified Data Lake Store trusted identity provider.
@@ -110,7 +110,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_dls_account_trusted_provider_update
   name: az dls account trusted-provider update
   summary: Updates the specified trusted identity provider.
@@ -137,7 +137,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_dls_account_trusted_provider_create
   name: az dls account trusted-provider create
@@ -167,9 +167,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-dls/azure/cli/command_modules/dls/_help.py
 updated_at: 11/13/2017 7:42:14 PM
 ms.date: 11/13/2017

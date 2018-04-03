@@ -78,7 +78,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_resource_delete
   name: az resource delete
   summary: Delete a resource.
@@ -122,7 +122,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_resource_invoke_action
   name: az resource invoke-action
   summary: Invoke an action on the resource.
@@ -179,7 +179,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_resource_list
   name: az resource list
   summary: List resources.
@@ -226,7 +226,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_resource_move
   name: az resource move
   summary: Moves resources from one resource group to another(can be under different subscription).
@@ -250,7 +250,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_resource_show
   name: az resource show
   summary: Get the details of a resource.
@@ -304,7 +304,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_resource_tag
   name: az resource tag
   summary: Tag a resource.
@@ -349,7 +349,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_resource_update
   name: az resource update
   summary: Update a resource.
@@ -396,7 +396,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_resource_create
   name: az resource create
@@ -471,9 +471,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/3f02d67c5f5e26fbedbdf0a8c031de3a8880d9b9/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/3f02d67c5f5e26fbedbdf0a8c031de3a8880d9b9/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
 updated_at: 3/20/2018 10:30:14 PM
 ms.date: 3/20/2018

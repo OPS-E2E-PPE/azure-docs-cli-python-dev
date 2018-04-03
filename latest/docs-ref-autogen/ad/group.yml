@@ -32,7 +32,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_ad_group_delete
   name: az ad group delete
   summary: Delete a group from the directory.
@@ -49,7 +49,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_ad_group_get_member_groups
   name: az ad group get-member-groups
   summary: Gets a collection of object IDs of groups of which the specified group is a member.
@@ -70,7 +70,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_ad_group_list
   name: az ad group list
   summary: List groups in the directory.
@@ -89,7 +89,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_ad_group_show
   name: az ad group show
   summary: Gets group information from the directory.
@@ -106,7 +106,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_ad_group_create
   name: az ad group create
@@ -151,9 +151,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/4c92d1fb317db3e358a06f53ca6f5714a8f4e27d/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/4c92d1fb317db3e358a06f53ca6f5714a8f4e27d/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
 updated_at: 3/21/2018 10:09:19 PM
 ms.date: 3/21/2018

@@ -49,7 +49,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_lab_environment_delete
   name: az lab environment delete
   summary: Delete an environment from a lab.
@@ -74,7 +74,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_lab_environment_list
   name: az lab environment list
   summary: List environments in a lab.
@@ -107,7 +107,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_lab_environment_show
   name: az lab environment show
   summary: Get the details for an environment of a lab.
@@ -135,7 +135,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_lab_environment_create
   name: az lab environment create
@@ -162,9 +162,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e8f93ba0e7337ea3afebe25a827f2be04828695d/src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/e8f93ba0e7337ea3afebe25a827f2be04828695d/src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
 updated_at: 3/12/2018 7:13:12 PM
 ms.date: 3/12/2018

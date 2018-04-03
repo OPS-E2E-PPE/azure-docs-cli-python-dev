@@ -90,7 +90,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_monitor_autoscale_delete
   name: az monitor autoscale delete
   summary: Deletes and autoscale setting.
@@ -111,7 +111,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_monitor_autoscale_list
   name: az monitor autoscale list
   summary: Lists the autoscale settings for a resource group.
@@ -128,7 +128,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_monitor_autoscale_show
   name: az monitor autoscale show
   summary: Show autoscale setting details.
@@ -149,7 +149,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_monitor_autoscale_update
   name: az monitor autoscale update
   summary: Update autoscale settings.
@@ -232,7 +232,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_monitor_autoscale_create
   name: az monitor autoscale create
@@ -295,9 +295,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/7a68b3bb76a732dc976ba7247eb852ec72f9d08e/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/7a68b3bb76a732dc976ba7247eb852ec72f9d08e/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
 updated_at: 3/8/2018 2:37:41 AM
 ms.date: 3/8/2018

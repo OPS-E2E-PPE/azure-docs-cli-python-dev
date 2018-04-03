@@ -43,7 +43,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_backup_protection_check_vm
   name: az backup protection check-vm
   summary: Find out whether the virtual machine is protected or not. If protected, it returns the recovery services vault ID, otherwise it returns empty.
@@ -60,7 +60,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_backup_protection_disable
   name: az backup protection disable
   summary: Stop protecting a backed up Azure VM.
@@ -96,7 +96,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_backup_protection_enable_for_vm
   name: az backup protection enable-for-vm
   summary: Start protecting a previously unprotected Azure VM as per the specified policy to a Recovery services vault.
@@ -125,7 +125,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_backup_protection_backup_now
   name: az backup protection backup-now
@@ -152,9 +152,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/2ed6d9926e8914bc6ac9af3aec6084a7bb7b14c6/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/2ed6d9926e8914bc6ac9af3aec6084a7bb7b14c6/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
 updated_at: 3/21/2018 11:04:10 PM
 ms.date: 3/21/2018

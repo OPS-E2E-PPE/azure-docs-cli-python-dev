@@ -56,7 +56,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_vm_availability_set_delete
   name: az vm availability-set delete
   summary: Delete an availability set.
@@ -81,7 +81,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_vm_availability_set_list
   name: az vm availability-set list
   summary: List availability sets.
@@ -102,7 +102,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_vm_availability_set_list_sizes
   name: az vm availability-set list-sizes
   summary: List VM sizes for an availability set.
@@ -127,7 +127,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_vm_availability_set_show
   name: az vm availability-set show
   summary: Get information for an availability set.
@@ -152,7 +152,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_vm_availability_set_update
   name: az vm availability-set update
   summary: Update an Azure Availability Set.
@@ -196,7 +196,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_vm_availability_set_create
   name: az vm availability-set create
@@ -229,9 +229,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/baa2e895d16ad1977277c92d81944ab6c16a5cd2/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/baa2e895d16ad1977277c92d81944ab6c16a5cd2/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 updated_at: 3/29/2018 11:07:49 PM
 ms.date: 3/29/2018

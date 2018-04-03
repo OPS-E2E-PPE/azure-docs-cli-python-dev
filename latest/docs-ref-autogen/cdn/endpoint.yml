@@ -93,7 +93,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cdn_endpoint_delete
   name: az cdn endpoint delete
   summary: Delete a CDN endpoint.
@@ -122,7 +122,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cdn_endpoint_list
   name: az cdn endpoint list
   summary: List available endpoints for a CDN.
@@ -147,7 +147,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cdn_endpoint_load
   name: az cdn endpoint load
   summary: Pre-load content for a CDN endpoint.
@@ -182,7 +182,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cdn_endpoint_purge
   name: az cdn endpoint purge
   summary: Purge pre-loaded content for a CDN endpoint.
@@ -217,7 +217,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cdn_endpoint_show
   name: az cdn endpoint show
   summary: Gets an existing CDN endpoint with the specified endpoint name under the specified subscription, resource group and profile.
@@ -242,7 +242,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cdn_endpoint_start
   name: az cdn endpoint start
   summary: Start a CDN endpoint.
@@ -271,7 +271,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cdn_endpoint_stop
   name: az cdn endpoint stop
   summary: Stop a CDN endpoint.
@@ -300,7 +300,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cdn_endpoint_update
   name: az cdn endpoint update
   summary: Update a CDN endpoint to manage how content is delivered.
@@ -371,7 +371,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cdn_endpoint_validate_custom_domain
   name: az cdn endpoint validate-custom-domain
   summary: Validates the custom domain mapping to ensure it maps to the correct CDN endpoint in DNS.
@@ -400,7 +400,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_cdn_endpoint_create
   name: az cdn endpoint create
@@ -445,9 +445,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-cdn/azure/cli/command_modules/cdn/_help.py
 updated_at: 11/13/2017 7:42:14 PM
 ms.date: 11/13/2017

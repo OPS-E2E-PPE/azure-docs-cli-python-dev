@@ -107,7 +107,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_monitor_metrics_list_definitions
   name: az monitor metrics list-definitions
   summary: Lists the metric definitions for the resource.
@@ -139,7 +139,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_monitor_metrics_list
   name: az monitor metrics list
@@ -160,9 +160,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/7a68b3bb76a732dc976ba7247eb852ec72f9d08e/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/7a68b3bb76a732dc976ba7247eb852ec72f9d08e/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
 updated_at: 3/8/2018 2:37:41 AM
 ms.date: 3/8/2018

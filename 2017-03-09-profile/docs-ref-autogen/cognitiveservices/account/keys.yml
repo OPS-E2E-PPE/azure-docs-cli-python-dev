@@ -29,7 +29,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cognitiveservices/azure/cli/command_modules/cognitiveservices/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_cognitiveservices_account_keys_regenerate
   name: az cognitiveservices account keys regenerate
   summary: Regenerate the keys of an Azure Cognitive Services account.
@@ -55,7 +55,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-cognitiveservices/azure/cli/command_modules/cognitiveservices/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_cognitiveservices_account_keys_list
   name: az cognitiveservices account keys list
@@ -76,9 +76,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-cognitiveservices/azure/cli/command_modules/cognitiveservices/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-cognitiveservices/azure/cli/command_modules/cognitiveservices/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-cognitiveservices/azure/cli/command_modules/cognitiveservices/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-cognitiveservices/azure/cli/command_modules/cognitiveservices/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-cognitiveservices/azure/cli/command_modules/cognitiveservices/_help.py
 updated_at: 11/13/2017 7:42:14 PM
 ms.date: 11/13/2017

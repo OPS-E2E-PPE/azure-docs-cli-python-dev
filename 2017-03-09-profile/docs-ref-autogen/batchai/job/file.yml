@@ -54,7 +54,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_batchai_job_file_stream
   name: az batchai job file stream
   summary: Output the current content of the file and outputs appended data as the file grows (similar to 'tail -f').
@@ -94,7 +94,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_batchai_job_file_list
   name: az batchai job file list
@@ -115,9 +115,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/1b50977ec2d2f9e91eb77b3cf160a7cfe1c09c2d/src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/1b50977ec2d2f9e91eb77b3cf160a7cfe1c09c2d/src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
 updated_at: 3/29/2018 7:52:42 PM
 ms.date: 3/29/2018

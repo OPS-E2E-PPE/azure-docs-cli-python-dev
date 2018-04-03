@@ -57,7 +57,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_dla_account_delete
   name: az dla account delete
   summary: Delete a Data Lake Analytics account.
@@ -77,7 +77,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_dla_account_list
   name: az dla account list
   summary: List available Data Lake Analytics accounts.
@@ -93,7 +93,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_dla_account_show
   name: az dla account show
   summary: Get the details of a Data Lake Analytics account.
@@ -113,7 +113,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_dla_account_update
   name: az dla account update
   summary: Update a Data Lake Analytics account.
@@ -157,7 +157,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
-      repo: https://github.com/Azure/azure-cli.git
+      repo: https://github.com/daxianji007/azure-cli.git
 commands:
 - uid: az_dla_account_blob_storage
   name: az dla account blob-storage
@@ -256,9 +256,9 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/d93f0afa5922deaa8be615de05e3963a37d84dec/src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
+original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
+gitcommit: https://github.com/daxianji007/azure-cli/blob/d93f0afa5922deaa8be615de05e3963a37d84dec/src/command_modules/azure-cli-dla/azure/cli/command_modules/dla/_help.py
 updated_at: 1/11/2018 10:49:29 PM
 ms.date: 1/11/2018
