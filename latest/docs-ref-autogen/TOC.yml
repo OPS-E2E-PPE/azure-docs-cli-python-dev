@@ -3114,6 +3114,9 @@
       - name: Delete
         uid: az_mysql_server_delete
         displayName: az mysql server delete
+      - name: Georestore
+        uid: az_mysql_server_georestore
+        displayName: az mysql server georestore
       - name: List
         uid: az_mysql_server_list
         displayName: az mysql server list
@@ -4514,6 +4517,9 @@
       - name: Delete
         uid: az_postgres_server_delete
         displayName: az postgres server delete
+      - name: Georestore
+        uid: az_postgres_server_georestore
+        displayName: az postgres server georestore
       - name: List
         uid: az_postgres_server_list
         displayName: az postgres server list
