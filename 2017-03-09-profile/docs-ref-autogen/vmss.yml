@@ -105,7 +105,7 @@ items:
     description: ''
   - name: --single-placement-group
     parameterValueGroup: false, true
-    summary: Enable single placement group. This flag will default to True if instance count <=100, and default to False for instance count >100.
+    summary: Enable replicate using fault domains within the same cluster. Default to 'false' for any zonals, or with 100+ instances See <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups">https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups</a> for details.
     description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.

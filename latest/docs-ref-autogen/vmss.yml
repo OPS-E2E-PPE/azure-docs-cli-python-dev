@@ -104,6 +104,9 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --platform-fault-domain-count
+    summary: Fault Domain count for each placement group in the availability zone.
+    description: ''
   - name: --priority
     parameterValueGroup: Low, Regular
     summary: (PREVIEW)Priority. Use 'Low' to run short-lived workloads in a cost-effective way.
@@ -113,7 +116,7 @@ items:
     description: ''
   - name: --single-placement-group
     parameterValueGroup: false, true
-    summary: Enable single placement group. This flag will default to True if instance count <=100, and default to False for instance count >100.
+    summary: Enable replicate using fault domains within the same cluster. Default to 'false' for any zonals, or with 100+ instances See <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups">https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups</a> for details.
     description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
@@ -242,7 +245,7 @@ items:
     description: ''
   - name: --lb-sku
     parameterValueGroup: Basic, Standard
-    summary: SKU when creating a new Load Balancer. Default to 'Basic' for any non-zonal scaleset and 'Standard' otherwise.
+    summary: Sku of the Load Balancer to create. Default to 'Standard' when single placement group is turned off; otherwise, default to 'Basic'.
     description: ''
   - name: --data-disk-caching
     summary: Storage caching type for data disk(s), including 'None', 'ReadOnly', 'ReadWrite', etc. Use a singular value to apply on all disks, or use '<lun>=<vaule1> <lun>=<value2>' to configure individual disk.
