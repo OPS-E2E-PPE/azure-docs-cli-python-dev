@@ -1,36 +1,34 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_consumption_reservations_summaries
-  name: az consumption reservations summaries
-  summary: List reservations summaries.
+- uid: az_consumption_reservation_detail
+  name: az consumption reservation detail
+  summary: List reservation details.
   description: ''
   langs:
   - azurecli
   children:
-  - az_consumption_reservations_summaries_list
-- uid: az_consumption_reservations_summaries_list
-  name: az consumption reservations summaries list
-  summary: List reservations summaries for daily or monthly by reservation order Id and optionally by reservation id.
+  - az_consumption_reservation_detail_list
+- uid: az_consumption_reservation_detail_list
+  name: az consumption reservation detail list
+  summary: List the details of a reservation by order id or reservation id.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --grain -g
-    summary: Reservation summaries grain. Possible values are daily or monthly.
+    name: --end-date -e
+    summary: End date (YYYY-MM-DD in UTC). Only needed for daily grain and if specified, also requires --start-date.
     description: ''
   - isRequired: true
-    name: --reservation-order-id -r
+    name: --reservation-order-id
     summary: Reservation order id.
     description: ''
-  - name: --end-date -e
-    summary: End date (in UTC Y-m-d) of the reservation summaries. Only needed for daily grain and both start date and end date need to be supplied or neither.
+  - isRequired: true
+    name: --start-date -s
+    summary: Start date (YYYY-MM-DD in UTC). Only needed for daily grain and if specified, also requires --end-date.
     description: ''
-  - name: --reservation-id -i
+  - name: --reservation-id
     summary: Reservation id.
-    description: ''
-  - name: --start-date -s
-    summary: Start date (in UTC Y-m-d) of the reservation summaries. Only needed for daily grain and both start date and end date need to be supplied or neither.
     description: ''
   source:
     path: src/command_modules/azure-cli-consumption/azure/cli/command_modules/consumption/_help.py
@@ -39,9 +37,9 @@ items:
       path: src/command_modules/azure-cli-consumption/azure/cli/command_modules/consumption/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_consumption_reservations_summaries_list
-  name: az consumption reservations summaries list
-  summary: List reservations summaries for daily or monthly by reservation order Id and optionally by reservation id.
+- uid: az_consumption_reservation_detail_list
+  name: az consumption reservation detail list
+  summary: List the details of a reservation by order id or reservation id.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -58,6 +56,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-consumption/azure/cli/command_modules/consumption/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-consumption/azure/cli/command_modules/consumption/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/7791a64daed96ac38f1db5b4718ae14d01383de7/src/command_modules/azure-cli-consumption/azure/cli/command_modules/consumption/_help.py
-updated_at: 2/21/2018 2:10:43 AM
-ms.date: 2/21/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/3cdd7070ef2118f1c65c6483763523153dd51db8/src/command_modules/azure-cli-consumption/azure/cli/command_modules/consumption/_help.py
+updated_at: 4/4/2018 9:23:12 PM
+ms.date: 4/4/2018

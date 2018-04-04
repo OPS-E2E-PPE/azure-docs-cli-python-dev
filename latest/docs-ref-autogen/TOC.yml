@@ -1055,6 +1055,13 @@
     uid: az_consumption
     displayName: az consumption
     items:
+    - name: Marketplace
+      uid: az_consumption_marketplace
+      displayName: az consumption marketplace
+      items:
+      - name: List
+        uid: az_consumption_marketplace_list
+        displayName: az consumption marketplace list
     - name: Pricesheet
       uid: az_consumption_pricesheet
       displayName: az consumption pricesheet
@@ -1062,24 +1069,24 @@
       - name: Show
         uid: az_consumption_pricesheet_show
         displayName: az consumption pricesheet show
-    - name: Reservations
-      uid: az_consumption_reservations
-      displayName: az consumption reservations
+    - name: Reservation
+      uid: az_consumption_reservation
+      displayName: az consumption reservation
       items:
-      - name: Details
-        uid: az_consumption_reservations_details
-        displayName: az consumption reservations details
+      - name: Detail
+        uid: az_consumption_reservation_detail
+        displayName: az consumption reservation detail
         items:
         - name: List
-          uid: az_consumption_reservations_details_list
-          displayName: az consumption reservations details list
-      - name: Summaries
-        uid: az_consumption_reservations_summaries
-        displayName: az consumption reservations summaries
+          uid: az_consumption_reservation_detail_list
+          displayName: az consumption reservation detail list
+      - name: Summary
+        uid: az_consumption_reservation_summary
+        displayName: az consumption reservation summary
         items:
         - name: List
-          uid: az_consumption_reservations_summaries_list
-          displayName: az consumption reservations summaries list
+          uid: az_consumption_reservation_summary_list
+          displayName: az consumption reservation summary list
     - name: Usage
       uid: az_consumption_usage
       displayName: az consumption usage
