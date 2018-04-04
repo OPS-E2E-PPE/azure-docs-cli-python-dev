@@ -3751,6 +3751,25 @@
         - name: Update
           uid: az_network_dns_zone_update
           displayName: az network dns zone update
+    - name: Ddos-Protection
+      uid: az_network_ddos_protection
+      displayName: az network ddos-protection
+      items:
+      - name: Create
+        uid: az_network_ddos_protection_create
+        displayName: az network ddos-protection create
+      - name: Delete
+        uid: az_network_ddos_protection_delete
+        displayName: az network ddos-protection delete
+      - name: List
+        uid: az_network_ddos_protection_list
+        displayName: az network ddos-protection list
+      - name: Show
+        uid: az_network_ddos_protection_show
+        displayName: az network ddos-protection show
+      - name: Update
+        uid: az_network_ddos_protection_update
+        displayName: az network ddos-protection update
     - name: Express Route
       uid: az_network_express_route
       displayName: az network express-route
