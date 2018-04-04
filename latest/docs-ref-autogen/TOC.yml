@@ -5165,6 +5165,16 @@
       - name: Update
         uid: az_sql_elastic_pool_update
         displayName: az sql elastic-pool update
+      - name: Op
+        uid: az_sql_elastic_pool_op
+        displayName: az sql elastic-pool op
+        items:
+        - name: Cancel
+          uid: az_sql_elastic_pool_op_cancel
+          displayName: az sql elastic-pool op cancel
+        - name: List
+          uid: az_sql_elastic_pool_op_list
+          displayName: az sql elastic-pool op list
     - name: Server
       uid: az_sql_server
       displayName: az sql server
@@ -6992,6 +7002,24 @@
   items:
   - name: aem
     uid: _ext_aem_az
+    items:
+    - name: Virtual Machines
+      uid: _ext_aem_az_vm
+      displayName: az vm
+      items:
+      - name: Aem
+        uid: _ext_aem_az_vm_aem
+        displayName: az vm aem
+        items:
+        - name: Delete
+          uid: _ext_aem_az_vm_aem_delete
+          displayName: az vm aem delete
+        - name: Set
+          uid: _ext_aem_az_vm_aem_set
+          displayName: az vm aem set
+        - name: Verify
+          uid: _ext_aem_az_vm_aem_verify
+          displayName: az vm aem verify
   - name: alias
     uid: _ext_alias_az
     items:
