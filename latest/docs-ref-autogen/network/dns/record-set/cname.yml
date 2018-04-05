@@ -40,14 +40,14 @@ items:
     summary: The etag of the record set. Omit this value to always overwrite the current record set. Specify the last-seen etag value to prevent accidentally overwritting any concurrent changes.
     description: ''
   - name: --if-none-match
-    summary: Set to '*' to allow a new record set to be created, but to prevent updating an existing record set. Other values will be ignored.
+    summary: Create the record set only if it does not already exist.
     description: ''
   - name: --metadata
     summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
     description: ''
   - name: --ttl
     defaultValue: "3600"
-    summary: ''
+    summary: Record set TTL (time-to-live).
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
@@ -249,6 +249,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/dad6954222da9df97b97aa201406d2a5bfeaf35a/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 4/4/2018 10:21:25 PM
-ms.date: 4/4/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/b9e20814dcf82d6d53d2632a2c60b96262c85c89/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 4/5/2018 11:34:01 PM
+ms.date: 4/5/2018

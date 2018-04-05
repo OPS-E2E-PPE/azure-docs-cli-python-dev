@@ -60,15 +60,23 @@ items:
   - name: --private-ip-address
     summary: Static private IP address to use.
     description: ''
+  - name: --sku
+    defaultValue: Basic
+    parameterValueGroup: Basic, Standard
+    summary: Load balancer SKU.
+    description: ''
+  - name: --tags
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --validate
+    summary: Generate and validate the ARM template without creating any resources.
+    description: ''
   - name: --public-ip-address
     summary: Name or ID of the public IP address, or "" for none. Uses existing resource if available or will create a new resource with defaults if omitted.
     description: ''
   - name: --public-ip-address-allocation
     parameterValueGroup: Dynamic, Static
-    summary: ''
-    description: ''
-  - name: --public-ip-address-type
-    summary: ''
+    summary: IP allocation method.
     description: ''
   - name: --public-ip-dns-name
     summary: Globally unique DNS name for a new public IP.
@@ -77,26 +85,12 @@ items:
     parameterValueGroup: 1, 2, 3
     summary: Used to created a new public ip for the load balancer, a.k.a public facing Load balancer.
     description: ''
-  - name: --sku
-    defaultValue: Basic
-    parameterValueGroup: Basic, Standard
-    summary: Load balancer SKU.
-    description: ''
   - name: --subnet
     summary: Name or ID of a subnet. Uses existing resource or creates new if specified, or none if omitted. If name specified, also specify --vnet-name.
     description: ''
   - name: --subnet-address-prefix
     defaultValue: 10.0.0.0/24
     summary: The CIDR address prefix to use when creating a new subnet.
-    description: ''
-  - name: --subnet-type
-    summary: ''
-    description: ''
-  - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
-    description: ''
-  - name: --validate
-    summary: Generate and validate the ARM template without creating any resources.
     description: ''
   - name: --vnet-address-prefix
     defaultValue: 10.0.0.0/16
@@ -355,6 +349,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/dad6954222da9df97b97aa201406d2a5bfeaf35a/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 4/4/2018 10:21:25 PM
-ms.date: 4/4/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/b9e20814dcf82d6d53d2632a2c60b96262c85c89/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 4/5/2018 11:34:01 PM
+ms.date: 4/5/2018
