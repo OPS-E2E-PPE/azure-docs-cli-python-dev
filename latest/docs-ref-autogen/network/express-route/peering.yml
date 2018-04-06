@@ -43,6 +43,7 @@ items:
     description: ''
   - isRequired: true
     name: --peering-type
+    parameterValueGroup: AzurePrivatePeering, AzurePublicPeering, MicrosoftPeering
     summary: BGP peering type for the circuit.
     description: ''
   - isRequired: true
