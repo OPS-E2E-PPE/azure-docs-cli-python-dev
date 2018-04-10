@@ -6300,6 +6300,9 @@
     - name: List-Skus
       uid: az_vmss_list_skus
       displayName: az vmss list-skus
+    - name: Perform-Maintenance
+      uid: az_vmss_perform_maintenance
+      displayName: az vmss perform-maintenance
     - name: Reimage
       uid: az_vmss_reimage
       displayName: az vmss reimage
