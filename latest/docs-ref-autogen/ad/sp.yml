@@ -239,6 +239,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/0a67aa2c0862f7fd34ce34960d9d5444fe39c141/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-updated_at: 4/9/2018 10:14:20 PM
-ms.date: 4/9/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/11607d4f7b7a74a5ede41929a906a21d1344c047/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+updated_at: 4/10/2018 2:16:09 AM
+ms.date: 4/10/2018

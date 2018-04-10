@@ -4643,6 +4643,9 @@
       - name: Set
         uid: az_redis_patch_schedule_set
         displayName: az redis patch-schedule set
+      - name: Show
+        uid: az_redis_patch_schedule_show
+        displayName: az redis patch-schedule show
       - name: Patch-Schedule
         uid: az_redis_patch_schedule_patch_schedule
         displayName: az redis patch-schedule patch-schedule
