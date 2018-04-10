@@ -190,6 +190,9 @@ items:
   - name: --snapshot
     summary: The snapshot parameter is an opaque DateTime value that, when present, specifies the blob snapshot to retrieve.
     description: ''
+  - name: --socket-timeout
+    summary: The socket timeout(secs), used by the service to regulate data flow.
+    description: ''
   - name: --start-range
     summary: 'Start of byte range to use for downloading a section of the blob. If no end_range is given, all bytes after the start_range will be downloaded. The start_range and end_range params are inclusive. Ex: start_range=0, end_range=511 will download first 512 bytes of blob.'
     description: ''
@@ -253,6 +256,9 @@ items:
     description: ''
   - name: --pattern
     summary: The pattern used for globbing files or blobs in the source. The supported patterns are '*', '?', '[seq]', and '[!seq]'.
+    description: ''
+  - name: --socket-timeout
+    summary: The socket timeout(secs), used by the service to regulate data flow.
     description: ''
   - name: --account-key
     summary: 'Storage account key. Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_KEY.'
@@ -704,6 +710,9 @@ items:
   - name: --no-progress
     summary: Include this flag to disable progress reporting for the command.
     description: ''
+  - name: --socket-timeout
+    summary: The socket timeout(secs), used by the service to regulate data flow.
+    description: ''
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
@@ -777,6 +786,9 @@ items:
     description: ''
   - name: --pattern
     summary: The pattern used for globbing files or blobs in the source. The supported patterns are '*', '?', '[seq]', and '[!seq]'.
+    description: ''
+  - name: --socket-timeout
+    summary: The socket timeout(secs), used by the service to regulate data flow.
     description: ''
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
