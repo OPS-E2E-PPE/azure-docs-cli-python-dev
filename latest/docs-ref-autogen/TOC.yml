@@ -4609,6 +4609,9 @@
     - name: Force-Reboot
       uid: az_redis_force_reboot
       displayName: az redis force-reboot
+    - name: Import
+      uid: az_redis_import
+      displayName: az redis import
     - name: Import-Method
       uid: az_redis_import_method
       displayName: az redis import-method
@@ -7008,24 +7011,6 @@
   items:
   - name: aem
     uid: _ext_aem_az
-    items:
-    - name: Virtual Machines
-      uid: _ext_aem_az_vm
-      displayName: az vm
-      items:
-      - name: Aem
-        uid: _ext_aem_az_vm_aem
-        displayName: az vm aem
-        items:
-        - name: Delete
-          uid: _ext_aem_az_vm_aem_delete
-          displayName: az vm aem delete
-        - name: Set
-          uid: _ext_aem_az_vm_aem_set
-          displayName: az vm aem set
-        - name: Verify
-          uid: _ext_aem_az_vm_aem_verify
-          displayName: az vm aem verify
   - name: alias
     uid: _ext_alias_az
     items:
