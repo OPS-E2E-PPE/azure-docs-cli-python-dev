@@ -370,6 +370,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e4d0bcfbcd60040e50bc331cc6009a25a22b9b2a/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-updated_at: 3/6/2018 12:01:04 AM
-ms.date: 3/6/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/988924aaf6be37dbed2a3fe8de5a36c0e2d1f006/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
+updated_at: 4/12/2018 9:23:50 PM
+ms.date: 4/12/2018

@@ -171,7 +171,7 @@ commands:
   summary: Manage Azure Advisor.
 - uid: az_aks
   name: az aks
-  summary: Manage Azure Kubernetes Services.
+  summary: (PREVIEW) Manage Azure Kubernetes Services.
 - uid: az_appservice
   name: az appservice
   summary: Manage App Service plans.
