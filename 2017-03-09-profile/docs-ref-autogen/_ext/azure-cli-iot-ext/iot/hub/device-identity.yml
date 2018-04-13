@@ -42,10 +42,6 @@ items:
     name: --device-id -d
     summary: Target Device.
     description: ''
-  - isRequired: true
-    name: --hub-name -n
-    summary: IoT Hub name.
-    description: ''
   - name: --auth-method -am
     defaultValue: shared_private_key
     parameterValueGroup: shared_private_key, x509_ca, x509_thumbprint
@@ -54,6 +50,12 @@ items:
   - name: --edge-enabled -ee
     parameterValueGroup: false, true
     summary: Flag indicating edge enablement.
+    description: ''
+  - name: --hub-name -n
+    summary: IoT Hub name.
+    description: ''
+  - name: --login -l
+    summary: This command supports an entity connection string with rights to perform action. Use to avoid session login via “az login”. If both an entity connection string and name are provided the connection string takes priority.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure –defaults group=&lt;name&gt;`.
@@ -89,9 +91,11 @@ items:
     name: --device-id -d
     summary: Target Device.
     description: ''
-  - isRequired: true
-    name: --hub-name -n
+  - name: --hub-name -n
     summary: IoT Hub name.
+    description: ''
+  - name: --login -l
+    summary: This command supports an entity connection string with rights to perform action. Use to avoid session login via “az login”. If both an entity connection string and name are provided the connection string takes priority.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure –defaults group=&lt;name&gt;`.
@@ -147,13 +151,15 @@ items:
   langs:
   - azurecli
   parameters:
-  - isRequired: true
-    name: --hub-name -n
-    summary: IoT Hub name.
-    description: ''
   - name: --edge-enabled -ee
     parameterValueGroup: false, true
     summary: Flag indicating edge enablement.
+    description: ''
+  - name: --hub-name -n
+    summary: IoT Hub name.
+    description: ''
+  - name: --login -l
+    summary: This command supports an entity connection string with rights to perform action. Use to avoid session login via “az login”. If both an entity connection string and name are provided the connection string takes priority.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure –defaults group=&lt;name&gt;`.
@@ -173,9 +179,11 @@ items:
     name: --device-id -d
     summary: Target Device.
     description: ''
-  - isRequired: true
-    name: --hub-name -n
+  - name: --hub-name -n
     summary: IoT Hub name.
+    description: ''
+  - name: --login -l
+    summary: This command supports an entity connection string with rights to perform action. Use to avoid session login via “az login”. If both an entity connection string and name are provided the connection string takes priority.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure –defaults group=&lt;name&gt;`.
@@ -191,14 +199,16 @@ items:
     name: --device-id -d
     summary: Target Device.
     description: ''
-  - isRequired: true
-    name: --hub-name -n
+  - name: --hub-name -n
     summary: IoT Hub name.
     description: ''
   - name: --key-type -kt
     defaultValue: primary
     parameterValueGroup: primary, secondary
     summary: Shared access policy key type for auth.
+    description: ''
+  - name: --login -l
+    summary: This command supports an entity connection string with rights to perform action. Use to avoid session login via “az login”. If both an entity connection string and name are provided the connection string takes priority.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure –defaults group=&lt;name&gt;`.
@@ -224,9 +234,11 @@ items:
     name: --device-id -d
     summary: Target Device.
     description: ''
-  - isRequired: true
-    name: --hub-name -n
+  - name: --hub-name -n
     summary: IoT Hub name.
+    description: ''
+  - name: --login -l
+    summary: This command supports an entity connection string with rights to perform action. Use to avoid session login via “az login”. If both an entity connection string and name are provided the connection string takes priority.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure –defaults group=&lt;name&gt;`.

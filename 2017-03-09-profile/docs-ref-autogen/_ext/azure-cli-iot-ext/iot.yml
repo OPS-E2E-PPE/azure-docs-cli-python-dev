@@ -28,7 +28,7 @@ commands:
   summary: Reject or deadletter a cloud-to-device message.
 - uid: _ext_azure-cli-iot-ext_az_iot_device_send_d2c_message
   name: az iot device send-d2c-message
-  summary: Send an MQTT device-to-cloud message.
+  summary: Send an mqtt device-to-cloud message.
 - uid: _ext_azure-cli-iot-ext_az_iot_device_simulate
   name: az iot device simulate
   summary: Simulate a device in an Azure IoT Hub.
@@ -154,7 +154,7 @@ commands:
   summary: Update device twin definition.
 - uid: _ext_azure-cli-iot-ext_az_iot_hub_generate_sas_token
   name: az iot hub generate-sas-token
-  summary: Generate a SAS token for a target hub or device.
+  summary: Generate a SAS token for a target IoT Hub or device.
 - uid: _ext_azure-cli-iot-ext_az_iot_hub_invoke_device_method
   name: az iot hub invoke-device-method
   summary: Invoke a device method.
