@@ -335,7 +335,7 @@ commands:
   summary: Launch a proxy and browse the Kubernetes web UI.
 - uid: az_acs_kubernetes_get_credentials
   name: az acs kubernetes get-credentials
-  summary: Download and install credentials to access a cluster.
+  summary: Download and install credentials to access a cluster.  This command requires the same private-key used to create the cluster.
 - uid: az_acs_kubernetes_install_cli
   name: az acs kubernetes install-cli
   summary: Download and install the Kubernetes command-line tool for a cluster.
@@ -370,6 +370,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/988924aaf6be37dbed2a3fe8de5a36c0e2d1f006/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-updated_at: 4/12/2018 9:23:50 PM
-ms.date: 4/12/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/49ffb4d4b09ad654a04d68f1a11e95732989e735/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
+updated_at: 4/16/2018 9:42:27 PM
+ms.date: 4/16/2018
