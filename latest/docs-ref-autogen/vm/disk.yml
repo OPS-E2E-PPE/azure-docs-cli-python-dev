@@ -40,6 +40,9 @@ items:
     parameterValueGroup: None, ReadOnly, ReadWrite
     summary: Disk caching policy.
     description: ''
+  - name: --enable-write-accelerator
+    summary: Enable write accelerator.
+    description: ''
   - name: --lun
     summary: 0-based logical unit number (LUN). Max value depends on the Virtual Machine size.
     description: ''

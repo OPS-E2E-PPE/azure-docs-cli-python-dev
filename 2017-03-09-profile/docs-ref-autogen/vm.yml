@@ -145,6 +145,9 @@ items:
     summary: The name of the operating system image as a URN alias, URN, custom image name or ID, or VHD blob URI. This parameter is required unless using `--attach-os-disk.`.
     description: ''
     valueFrom: az vm image list, az vm image show
+  - name: --image-data-disks
+    summary: ''
+    description: ''
   - name: --license-type
     parameterValueGroup: Windows_Client, Windows_Server
     summary: License type if the Windows image or disk used was licensed on-premises.
@@ -818,6 +821,9 @@ items:
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --disk-caching
+    summary: Use singular value to apply across, or specify individual disks, e.g. 'os=ReadWrite 0=None 1=ReadOnly' should enable update os disk and 2 data disks.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.

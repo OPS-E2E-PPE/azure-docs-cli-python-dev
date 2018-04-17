@@ -91,6 +91,9 @@ items:
   - name: --health-probe
     summary: (Preview) probe name from the existing load balancer, mainly used for rolling upgrade.
     description: ''
+  - name: --image-data-disks
+    summary: ''
+    description: ''
   - name: --instance-count
     defaultValue: "2"
     summary: Number of VMs in the scale set.
