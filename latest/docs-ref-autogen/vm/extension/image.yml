@@ -113,10 +113,10 @@ items:
     summary: The filter to apply on the operation.
     description: ''
   - name: --orderby
-    summary: ''
+    summary: The $orderby odata query option.
     description: ''
   - name: --top
-    summary: ''
+    summary: The $top odata query option.
     description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py

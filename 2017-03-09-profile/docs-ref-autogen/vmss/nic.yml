@@ -23,7 +23,7 @@ items:
     description: ''
   - isRequired: true
     name: --vmss-name
-    summary: Scale set name.
+    summary: Scale set name. You can configure the default using `az configure --defaults vmss=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py

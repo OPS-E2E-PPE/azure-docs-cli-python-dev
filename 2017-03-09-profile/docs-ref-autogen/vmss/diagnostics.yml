@@ -17,7 +17,7 @@ items:
   - azurecli
   parameters:
   - name: --is-windows-os
-    summary: ''
+    summary: For Windows VMs.
     description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
