@@ -88,6 +88,10 @@ items:
   - name: --disable-overprovision
     summary: Overprovision option (see <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machine-scale-sets-overview/">https://azure.microsoft.com/en-us/documentation/articles/virtual-machine-scale-sets-overview/</a> for details).
     description: ''
+  - name: --eviction-policy
+    parameterValueGroup: Deallocate, Delete
+    summary: (PREVIEW) the eviction policy for virtual machines in a low priority scale set.
+    description: ''
   - name: --health-probe
     summary: (Preview) probe name from the existing load balancer, mainly used for rolling upgrade.
     description: ''
