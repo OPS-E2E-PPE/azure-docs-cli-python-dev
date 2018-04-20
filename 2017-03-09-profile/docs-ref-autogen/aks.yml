@@ -253,7 +253,7 @@ items:
     summary: The image tag of the virtual kubelet. Use 'latest' if it is not specified.
     description: ''
   - name: --location -l
-    summary: The location to create the ACI container groups.
+    summary: The location to create the ACI container groups. Use the location of the MC_* resource group if it is not specified.
     description: ''
   - name: --os-type
     defaultValue: Linux
@@ -429,7 +429,7 @@ items:
     summary: The image tag of the virtual kubelet. Use 'latest' if it is not specified.
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: The location to create the ACI container groups. Use the location of the MC_* resource group if it is not specified.
     description: ''
   - name: --os-type
     defaultValue: Linux
