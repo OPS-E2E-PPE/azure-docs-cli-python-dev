@@ -34,7 +34,7 @@ items:
     description: ''
   - name: --action
     defaultValue: Allow
-    summary: ''
+    summary: The action of virtual network rule.
     description: ''
   - name: --ip-address
     summary: IPv4 address or CIDR range.
