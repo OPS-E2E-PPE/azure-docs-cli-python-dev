@@ -31,9 +31,6 @@ items:
   - name: --identities
     summary: The identities to assign.
     description: ''
-  - name: --port
-    summary: 'The port to fetch AAD token. Default: 50342.'
-    description: ''
   - name: --role
     defaultValue: Contributor
     summary: Role name or id the system assigned identity will have.

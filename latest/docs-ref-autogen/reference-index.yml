@@ -128,9 +128,6 @@ items:
   - name: --identity -i
     summary: Log in using the Virtual Machine's identity.
     description: ''
-  - name: --identity-port
-    summary: 'The port to retrieve tokens for login. Default: 50342.'
-    description: ''
   source:
     path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
     remote:
