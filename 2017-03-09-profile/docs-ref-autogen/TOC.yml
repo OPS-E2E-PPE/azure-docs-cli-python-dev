@@ -1021,6 +1021,22 @@
     uid: az_consumption
     displayName: az consumption
     items:
+    - name: Budget
+      uid: az_consumption_budget
+      displayName: az consumption budget
+      items:
+      - name: Create
+        uid: az_consumption_budget_create
+        displayName: az consumption budget create
+      - name: Delete
+        uid: az_consumption_budget_delete
+        displayName: az consumption budget delete
+      - name: List
+        uid: az_consumption_budget_list
+        displayName: az consumption budget list
+      - name: Show
+        uid: az_consumption_budget_show
+        displayName: az consumption budget show
     - name: Marketplace
       uid: az_consumption_marketplace
       displayName: az consumption marketplace
