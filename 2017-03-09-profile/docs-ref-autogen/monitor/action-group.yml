@@ -221,6 +221,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/81a3b94bc1973c6ae26a13b2bbf40c632a2872fe/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-updated_at: 4/20/2018 10:23:04 PM
-ms.date: 4/20/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/bac79c3194370ac1c876b316da79b1dd267f4766/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+updated_at: 4/24/2018 8:19:50 PM
+ms.date: 4/24/2018
