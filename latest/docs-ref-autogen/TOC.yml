@@ -98,6 +98,171 @@
     - name: Wait
       uid: az_aks_wait
       displayName: az aks wait
+  - name: Ams
+    uid: az_ams
+    displayName: az ams
+    items:
+    - name: Account
+      uid: az_ams_account
+      displayName: az ams account
+      items:
+      - name: Create
+        uid: az_ams_account_create
+        displayName: az ams account create
+      - name: Delete
+        uid: az_ams_account_delete
+        displayName: az ams account delete
+      - name: List
+        uid: az_ams_account_list
+        displayName: az ams account list
+      - name: Show
+        uid: az_ams_account_show
+        displayName: az ams account show
+      - name: Update
+        uid: az_ams_account_update
+        displayName: az ams account update
+      - name: Sp
+        uid: az_ams_account_sp
+        displayName: az ams account sp
+        items:
+        - name: Create
+          uid: az_ams_account_sp_create
+          displayName: az ams account sp create
+        - name: Reset-Credentials
+          uid: az_ams_account_sp_reset_credentials
+          displayName: az ams account sp reset-credentials
+      - name: Storage
+        uid: az_ams_account_storage
+        displayName: az ams account storage
+        items:
+        - name: Add
+          uid: az_ams_account_storage_add
+          displayName: az ams account storage add
+        - name: Remove
+          uid: az_ams_account_storage_remove
+          displayName: az ams account storage remove
+    - name: Asset
+      uid: az_ams_asset
+      displayName: az ams asset
+      items:
+      - name: Create
+        uid: az_ams_asset_create
+        displayName: az ams asset create
+      - name: Delete
+        uid: az_ams_asset_delete
+        displayName: az ams asset delete
+      - name: Get-Sas-Urls
+        uid: az_ams_asset_get_sas_urls
+        displayName: az ams asset get-sas-urls
+      - name: List
+        uid: az_ams_asset_list
+        displayName: az ams asset list
+      - name: Show
+        uid: az_ams_asset_show
+        displayName: az ams asset show
+      - name: Update
+        uid: az_ams_asset_update
+        displayName: az ams asset update
+    - name: Job
+      uid: az_ams_job
+      displayName: az ams job
+      items:
+      - name: Cancel
+        uid: az_ams_job_cancel
+        displayName: az ams job cancel
+      - name: Delete
+        uid: az_ams_job_delete
+        displayName: az ams job delete
+      - name: List
+        uid: az_ams_job_list
+        displayName: az ams job list
+      - name: Show
+        uid: az_ams_job_show
+        displayName: az ams job show
+      - name: Start
+        uid: az_ams_job_start
+        displayName: az ams job start
+    - name: Streaming
+      uid: az_ams_streaming
+      displayName: az ams streaming
+      items:
+      - name: Endpoint
+        uid: az_ams_streaming_endpoint
+        displayName: az ams streaming endpoint
+        items:
+        - name: List
+          uid: az_ams_streaming_endpoint_list
+          displayName: az ams streaming endpoint list
+        - name: Start
+          uid: az_ams_streaming_endpoint_start
+          displayName: az ams streaming endpoint start
+        - name: Stop
+          uid: az_ams_streaming_endpoint_stop
+          displayName: az ams streaming endpoint stop
+      - name: Locator
+        uid: az_ams_streaming_locator
+        displayName: az ams streaming locator
+        items:
+        - name: Create
+          uid: az_ams_streaming_locator_create
+          displayName: az ams streaming locator create
+        - name: Delete
+          uid: az_ams_streaming_locator_delete
+          displayName: az ams streaming locator delete
+        - name: Get-Paths
+          uid: az_ams_streaming_locator_get_paths
+          displayName: az ams streaming locator get-paths
+        - name: List
+          uid: az_ams_streaming_locator_list
+          displayName: az ams streaming locator list
+        - name: Show
+          uid: az_ams_streaming_locator_show
+          displayName: az ams streaming locator show
+      - name: Policy
+        uid: az_ams_streaming_policy
+        displayName: az ams streaming policy
+        items:
+        - name: Create
+          uid: az_ams_streaming_policy_create
+          displayName: az ams streaming policy create
+        - name: Delete
+          uid: az_ams_streaming_policy_delete
+          displayName: az ams streaming policy delete
+        - name: List
+          uid: az_ams_streaming_policy_list
+          displayName: az ams streaming policy list
+        - name: Show
+          uid: az_ams_streaming_policy_show
+          displayName: az ams streaming policy show
+    - name: Transform
+      uid: az_ams_transform
+      displayName: az ams transform
+      items:
+      - name: Create
+        uid: az_ams_transform_create
+        displayName: az ams transform create
+      - name: Delete
+        uid: az_ams_transform_delete
+        displayName: az ams transform delete
+      - name: List
+        uid: az_ams_transform_list
+        displayName: az ams transform list
+      - name: Show
+        uid: az_ams_transform_show
+        displayName: az ams transform show
+      - name: Update
+        uid: az_ams_transform_update
+        displayName: az ams transform update
+      - name: Output
+        uid: az_ams_transform_output
+        displayName: az ams transform output
+        items:
+        - name: Add
+          uid: az_ams_transform_output_add
+          displayName: az ams transform output add
+        - name: Remove
+          uid: az_ams_transform_output_remove
+          displayName: az ams transform output remove
   - name: App Service
     uid: az_appservice
     displayName: az appservice
@@ -7021,24 +7186,6 @@
   items:
   - name: aem
     uid: ext_aem_az
-    items:
-    - name: Virtual Machines
-      uid: ext_aem_az_vm
-      displayName: az vm
-      items:
-      - name: Aem
-        uid: ext_aem_az_vm_aem
-        displayName: az vm aem
-        items:
-        - name: Delete
-          uid: ext_aem_az_vm_aem_delete
-          displayName: az vm aem delete
-        - name: Set
-          uid: ext_aem_az_vm_aem_set
-          displayName: az vm aem set
-        - name: Verify
-          uid: ext_aem_az_vm_aem_verify
-          displayName: az vm aem verify
   - name: alias
     uid: ext_alias_az
     items:
