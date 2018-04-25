@@ -169,9 +169,6 @@ commands:
 - uid: az_aks
   name: az aks
   summary: (PREVIEW) Manage Azure Kubernetes Services.
-- uid: az_ams
-  name: az ams
-  summary: Manage Azure Media Services resources.
 - uid: az_appservice
   name: az appservice
   summary: Manage App Service plans.
