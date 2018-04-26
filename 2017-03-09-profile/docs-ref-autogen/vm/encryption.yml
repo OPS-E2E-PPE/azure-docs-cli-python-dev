@@ -46,10 +46,6 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --aad-client-id
-    summary: Client ID of an AAD app with permissions to write secrets to the key vault.
-    description: ''
-  - isRequired: true
     name: --disk-encryption-keyvault
     summary: The key vault where the generated encryption key will be placed.
     description: ''
@@ -63,6 +59,9 @@ items:
     description: ''
   - name: --aad-client-cert-thumbprint
     summary: Thumbprint of the AAD app certificate with permissions to write secrets to the key vault.
+    description: ''
+  - name: --aad-client-id
+    summary: Client ID of an AAD app with permissions to write secrets to the key vault.
     description: ''
   - name: --aad-client-secret
     summary: Client secret of the AAD app with permissions to write secrets to the key vault.
