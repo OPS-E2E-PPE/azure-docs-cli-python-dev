@@ -7305,3 +7305,17 @@
       - name: Up
         uid: ext_webapp_az_webapp_up
         displayName: az webapp up
+      - name: Config
+        uid: ext_webapp_az_webapp_config
+        displayName: az webapp config
+        items:
+        - name: Snapshot
+          uid: ext_webapp_az_webapp_config_snapshot
+          displayName: az webapp config snapshot
+          items:
+          - name: List
+            uid: ext_webapp_az_webapp_config_snapshot_list
+            displayName: az webapp config snapshot list
+          - name: Restore
+            uid: ext_webapp_az_webapp_config_snapshot_restore
+            displayName: az webapp config snapshot restore
