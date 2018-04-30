@@ -179,6 +179,10 @@ items:
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
+  - name: --build-status
+    parameterValueGroup: Canceled, Error, Failed, Queued, Running, Started, Succeeded, Timeout
+    summary: The current status of build.
+    description: ''
   - name: --name -n
     summary: The name of the build task.
     description: ''
