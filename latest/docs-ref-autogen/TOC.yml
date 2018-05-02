@@ -7945,6 +7945,9 @@
         - name: Recover
           uid: ext_keyvault-preview_az_keyvault_storage_recover
           displayName: az keyvault storage recover
+        - name: Regenerate-Key
+          uid: ext_keyvault-preview_az_keyvault_storage_regenerate_key
+          displayName: az keyvault storage regenerate-key
         - name: Remove
           uid: ext_keyvault-preview_az_keyvault_storage_remove
           displayName: az keyvault storage remove
