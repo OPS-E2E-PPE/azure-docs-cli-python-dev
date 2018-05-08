@@ -172,6 +172,9 @@ items:
   - name: --availability-set
     summary: Name or ID of an existing availability set to add the VM to. None by default.
     description: ''
+  - name: --boot-diagnostics-storage
+    summary: Pre-existing storage account name or its blob uri to capture boot diagnostics. Its sku should be one of Standard_GRS, Standard_LRS and Standard_RAGRS.
+    description: ''
   - name: --custom-data
     summary: Custom init script file or text (cloud-init, cloud-config, etc..).
     description: ''
