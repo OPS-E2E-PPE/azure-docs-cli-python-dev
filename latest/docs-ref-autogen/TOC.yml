@@ -8492,6 +8492,25 @@
         - name: Show-Permission
           uid: ext_storage-preview_az_storage_container_show_permission
           displayName: az storage container show-permission
+        - name: Immutability-Policy
+          uid: ext_storage-preview_az_storage_container_immutability_policy
+          displayName: az storage container immutability-policy
+          items:
+          - name: Create
+            uid: ext_storage-preview_az_storage_container_immutability_policy_create
+            displayName: az storage container immutability-policy create
+          - name: Delete
+            uid: ext_storage-preview_az_storage_container_immutability_policy_delete
+            displayName: az storage container immutability-policy delete
+          - name: Extend
+            uid: ext_storage-preview_az_storage_container_immutability_policy_extend
+            displayName: az storage container immutability-policy extend
+          - name: Lock
+            uid: ext_storage-preview_az_storage_container_immutability_policy_lock
+            displayName: az storage container immutability-policy lock
+          - name: Show
+            uid: ext_storage-preview_az_storage_container_immutability_policy_show
+            displayName: az storage container immutability-policy show
         - name: Leases
           uid: ext_storage-preview_az_storage_container_lease
           displayName: az storage container lease
@@ -8511,6 +8530,19 @@
           - name: Renew
             uid: ext_storage-preview_az_storage_container_lease_renew
             displayName: az storage container lease renew
+        - name: Legal-Hold
+          uid: ext_storage-preview_az_storage_container_legal_hold
+          displayName: az storage container legal-hold
+          items:
+          - name: Clear
+            uid: ext_storage-preview_az_storage_container_legal_hold_clear
+            displayName: az storage container legal-hold clear
+          - name: Set
+            uid: ext_storage-preview_az_storage_container_legal_hold_set
+            displayName: az storage container legal-hold set
+          - name: Show
+            uid: ext_storage-preview_az_storage_container_legal_hold_show
+            displayName: az storage container legal-hold show
         - name: Metadata
           uid: ext_storage-preview_az_storage_container_metadata
           displayName: az storage container metadata

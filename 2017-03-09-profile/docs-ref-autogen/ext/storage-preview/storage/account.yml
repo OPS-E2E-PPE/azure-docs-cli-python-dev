@@ -240,7 +240,10 @@ items:
   description: ''
   langs:
   - azurecli
-  parameters: []
+  parameters:
+  - name: --location -l
+    summary: Location. You can configure the default location using `az configure –defaults location=&lt;location&gt;`.
+    description: ''
 - uid: ext_storage-preview_az_storage_account_update
   name: az storage account update
   summary: Update the properties of a storage account.
