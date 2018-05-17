@@ -61,6 +61,9 @@ items:
     name: --group -g
     summary: Group's object id or display name(prefix also works if there is a unique match).
     description: ''
+  - name: --additional-properties
+    summary: Unmatched properties from the message are deserialized this collection.
+    description: ''
   - name: --security-enabled-only
     parameterValueGroup: false, true
     summary: If true, only membership in security-enabled groups should be checked. Otherwise, membership in all groups should be checked.
@@ -154,6 +157,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/eaaecbc20e24bc50ace143eaaba7de06a5e135ed/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-updated_at: 5/10/2018 11:22:47 PM
-ms.date: 5/10/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/c4dc0c9435f3597815ac666d6acebfa22c172889/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+updated_at: 5/17/2018 5:59:52 PM
+ms.date: 5/17/2018
