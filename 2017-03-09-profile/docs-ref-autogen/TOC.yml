@@ -83,6 +83,9 @@
     - name: Remove-Connector
       uid: az_aks_remove_connector
       displayName: az aks remove-connector
+    - name: Remove-Dev-Spaces
+      uid: az_aks_remove_dev_spaces
+      displayName: az aks remove-dev-spaces
     - name: Scale
       uid: az_aks_scale
       displayName: az aks scale
@@ -95,6 +98,9 @@
     - name: Upgrade-Connector
       uid: az_aks_upgrade_connector
       displayName: az aks upgrade-connector
+    - name: Use-Dev-Spaces
+      uid: az_aks_use_dev_spaces
+      displayName: az aks use-dev-spaces
     - name: Wait
       uid: az_aks_wait
       displayName: az aks wait
