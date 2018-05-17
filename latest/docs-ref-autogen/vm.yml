@@ -328,9 +328,6 @@ items:
   - name: --use-unmanaged-disk
     summary: Do not use managed disk to persist VM.
     description: ''
-  - name: --write-accelerator
-    summary: Enable/disable disk write accelerator. Use singular value 'true/false' to apply across, or specify individual disks, e.g.'os=true 1=true 2=true' for os disk and data disks with lun of 1 & 2.
-    description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
