@@ -7432,6 +7432,9 @@
           - name: Reject
             uid: ext_azure-cli-iot-ext_az_iot_device_c2d_message_reject
             displayName: az iot device c2d-message reject
+          - name: Send
+            uid: ext_azure-cli-iot-ext_az_iot_device_c2d_message_send
+            displayName: az iot device c2d-message send
       - name: Dps
         uid: ext_azure-cli-iot-ext_az_iot_dps
         displayName: az iot dps
