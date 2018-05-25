@@ -41,6 +41,21 @@ commands:
 - uid: az_policy_definition_update
   name: az policy definition update
   summary: Update a policy definition.
+- uid: az_policy_event
+  name: az policy event
+  summary: Manage policy events.
+- uid: az_policy_event_list
+  name: az policy event list
+  summary: List policy events.
+- uid: az_policy_state
+  name: az policy state
+  summary: Manage policy compliance states.
+- uid: az_policy_state_list
+  name: az policy state list
+  summary: List policy compliance states.
+- uid: az_policy_state_summarize
+  name: az policy state summarize
+  summary: Summarize policy compliance states.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
