@@ -251,6 +251,10 @@ items:
   - name: --plan-publisher
     summary: Plan publisher.
     description: ''
+  - name: --accelerated-networking
+    parameterValueGroup: false, true
+    summary: Enable accelerated networking. Unless specified, CLI will enable it based on machine image and size.
+    description: ''
   - name: --asgs
     summary: Space-separated list of existing application security groups to associate with the VM.
     description: ''

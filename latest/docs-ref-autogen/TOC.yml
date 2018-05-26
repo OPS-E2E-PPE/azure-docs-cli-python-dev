@@ -5156,6 +5156,13 @@
       - name: Update
         uid: az_policy_definition_update
         displayName: az policy definition update
+    - name: Event
+      uid: az_policy_event
+      displayName: az policy event
+      items:
+      - name: List
+        uid: az_policy_event_list
+        displayName: az policy event list
     - name: Set-Definition
       uid: az_policy_set_definition
       displayName: az policy set-definition
@@ -5175,6 +5182,16 @@
       - name: Update
         uid: az_policy_set_definition_update
         displayName: az policy set-definition update
+    - name: State
+      uid: az_policy_state
+      displayName: az policy state
+      items:
+      - name: List
+        uid: az_policy_state_list
+        displayName: az policy state list
+      - name: Summarize
+        uid: az_policy_state_summarize
+        displayName: az policy state summarize
   - name: Resource Provider Features
     uid: az_feature
     displayName: az feature
