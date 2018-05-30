@@ -8416,6 +8416,22 @@
           - name: Renew
             uid: ext_storage-preview_az_storage_account_keys_renew
             displayName: az storage account keys renew
+        - name: Management-Policy
+          uid: ext_storage-preview_az_storage_account_management_policy
+          displayName: az storage account management-policy
+          items:
+          - name: Create
+            uid: ext_storage-preview_az_storage_account_management_policy_create
+            displayName: az storage account management-policy create
+          - name: Delete
+            uid: ext_storage-preview_az_storage_account_management_policy_delete
+            displayName: az storage account management-policy delete
+          - name: Show
+            uid: ext_storage-preview_az_storage_account_management_policy_show
+            displayName: az storage account management-policy show
+          - name: Update
+            uid: ext_storage-preview_az_storage_account_management_policy_update
+            displayName: az storage account management-policy update
         - name: Network-Rule
           uid: ext_storage-preview_az_storage_account_network_rule
           displayName: az storage account network-rule
