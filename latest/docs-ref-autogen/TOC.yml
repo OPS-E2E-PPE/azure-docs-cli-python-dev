@@ -5527,6 +5527,44 @@
         - name: List
           uid: az_sql_elastic_pool_op_list
           displayName: az sql elastic-pool op list
+    - name: Mi
+      uid: az_sql_mi
+      displayName: az sql mi
+      items:
+      - name: Create
+        uid: az_sql_mi_create
+        displayName: az sql mi create
+      - name: Delete
+        uid: az_sql_mi_delete
+        displayName: az sql mi delete
+      - name: List
+        uid: az_sql_mi_list
+        displayName: az sql mi list
+      - name: Show
+        uid: az_sql_mi_show
+        displayName: az sql mi show
+      - name: Update
+        uid: az_sql_mi_update
+        displayName: az sql mi update
+    - name: Midb
+      uid: az_sql_midb
+      displayName: az sql midb
+      items:
+      - name: Create
+        uid: az_sql_midb_create
+        displayName: az sql midb create
+      - name: Delete
+        uid: az_sql_midb_delete
+        displayName: az sql midb delete
+      - name: List
+        uid: az_sql_midb_list
+        displayName: az sql midb list
+      - name: Restore
+        uid: az_sql_midb_restore
+        displayName: az sql midb restore
+      - name: Show
+        uid: az_sql_midb_show
+        displayName: az sql midb show
     - name: Server
       uid: az_sql_server
       displayName: az sql server
