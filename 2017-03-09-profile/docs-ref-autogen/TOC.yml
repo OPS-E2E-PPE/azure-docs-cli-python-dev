@@ -6140,6 +6140,35 @@
       - name: Update
         uid: az_account_lock_update
         displayName: az account lock update
+    - name: Management-Group
+      uid: az_account_management_group
+      displayName: az account management-group
+      items:
+      - name: Create
+        uid: az_account_management_group_create
+        displayName: az account management-group create
+      - name: Delete
+        uid: az_account_management_group_delete
+        displayName: az account management-group delete
+      - name: List
+        uid: az_account_management_group_list
+        displayName: az account management-group list
+      - name: Show
+        uid: az_account_management_group_show
+        displayName: az account management-group show
+      - name: Update
+        uid: az_account_management_group_update
+        displayName: az account management-group update
+      - name: Subscription
+        uid: az_account_management_group_subscription
+        displayName: az account management-group subscription
+        items:
+        - name: Add
+          uid: az_account_management_group_subscription_add
+          displayName: az account management-group subscription add
+        - name: Remove
+          uid: az_account_management_group_subscription_remove
+          displayName: az account management-group subscription remove
   - name: VM Scale Sets
     uid: az_vmss
     displayName: az vmss
