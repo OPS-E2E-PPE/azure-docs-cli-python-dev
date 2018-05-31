@@ -1291,6 +1291,9 @@
     - name: Delete
       uid: az_acr_delete
       displayName: az acr delete
+    - name: Import
+      uid: az_acr_import
+      displayName: az acr import
     - name: List
       uid: az_acr_list
       displayName: az acr list
