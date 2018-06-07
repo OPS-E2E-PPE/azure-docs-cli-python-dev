@@ -204,9 +204,7 @@ items:
   examples:
   - summary: Install the ACI Connector for Linux to a managed Kubernetes cluster.
     syntax:
-      content: >-
-        az aks install-connector --name MyManagedCluster --resource-group MyResourceGroup \
-                                  --connector-name aci-connector
+      content: az aks install-connector --name MyManagedCluster --resource-group MyResourceGroup
   - summary: Install the ACI Connector for Windows to a managed Kubernetes cluster.
     syntax:
       content: >-
@@ -230,10 +228,6 @@ items:
                                   --connector-name aci-connector --chart-url <CustomURL> --image-tag <VirtualKubeletImageTag>
   parameters:
   - isRequired: true
-    name: --connector-name
-    summary: Name of the ACI Connector.
-    description: ''
-  - isRequired: true
     name: --name -n
     summary: Name of the managed cluster.
     description: ''
@@ -250,6 +244,10 @@ items:
     description: ''
   - name: --client-secret
     summary: Secret associated with the service principal. This argument is required if `--service-principal` is specified.
+    description: ''
+  - name: --connector-name
+    defaultValue: aci-connector
+    summary: Name of the ACI Connector.
     description: ''
   - name: --image-tag
     summary: The image tag of the virtual kubelet. Use 'latest' if it is not specified.
@@ -289,10 +287,6 @@ items:
                                   --connector-name MyConnector --graceful
   parameters:
   - isRequired: true
-    name: --connector-name
-    summary: Name of the ACI Connector.
-    description: ''
-  - isRequired: true
     name: --name -n
     summary: Name of the managed cluster.
     description: ''
@@ -300,8 +294,15 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --connector-name
+    defaultValue: aci-connector
+    summary: Name of the ACI Connector.
+    description: ''
   - name: --graceful
     summary: Use a "cordon and drain" strategy to evict pods safely before removing the ACI node.
+    description: ''
+  - name: --location -l
+    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
     description: ''
   - name: --os-type
     defaultValue: Linux
@@ -424,10 +425,6 @@ items:
                                   --connector-name aci-connector --chart-url <CustomURL> --image-tag <VirtualKubeletImageTag>
   parameters:
   - isRequired: true
-    name: --connector-name
-    summary: Name of the ACI Connector.
-    description: ''
-  - isRequired: true
     name: --name -n
     summary: Name of the managed cluster.
     description: ''
@@ -444,6 +441,10 @@ items:
     description: ''
   - name: --client-secret
     summary: Secret associated with the service principal. This argument is required if `--service-principal` is specified.
+    description: ''
+  - name: --connector-name
+    defaultValue: aci-connector
+    summary: Name of the ACI Connector.
     description: ''
   - name: --image-tag
     summary: The image tag of the virtual kubelet. Use 'latest' if it is not specified.
