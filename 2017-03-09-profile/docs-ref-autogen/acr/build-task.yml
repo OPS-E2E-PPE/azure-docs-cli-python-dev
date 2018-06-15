@@ -101,7 +101,7 @@ items:
     description: ''
   - name: --timeout
     defaultValue: "3600"
-    summary: Build timeout in seconds.
+    summary: The build timeout in seconds.
     description: ''
   source:
     path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
@@ -396,7 +396,7 @@ items:
     summary: The current status of build task.
     description: ''
   - name: --timeout
-    summary: Build timeout in seconds.
+    summary: The build timeout in seconds.
     description: ''
   source:
     path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
