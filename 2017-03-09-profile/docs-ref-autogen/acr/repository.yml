@@ -15,17 +15,17 @@ items:
 - uid: az_acr_repository_delete
   name: az acr repository delete
   summary: Delete a repository or image in a container registry.
-  description: ''
+  description: This command deletes all associated layer data that are not referenced by any other manifest in the container registry.
   langs:
   - azurecli
   examples:
-  - summary: Delete a repository from a container registry.
+  - summary: Delete a repository from a container registry. This deletes all manifests and tags under 'hello-world'.
     syntax:
       content: az acr repository delete -n MyRegistry --repository hello-world
-  - summary: Delete an image by tag. This deletes the manifest referenced by 'hello-world:latest', all other tags referencing the manifest, and any associated layer data.
+  - summary: Delete an image by tag. This deletes the manifest referenced by 'hello-world:latest' and all other tags referencing the manifest.
     syntax:
       content: az acr repository delete -n MyRegistry --image hello-world:latest
-  - summary: Delete an image by sha256-based manifest digest. This deletes all tags referencing the manifest and any associated layer data.
+  - summary: Delete an image by sha256-based manifest digest. This deletes the manifest identified by 'hello-world@sha256:abc123' and all tags referencing the manifest.
     syntax:
       content: az acr repository delete -n MyRegistry --image hello-world@sha256:abc123
   parameters:
@@ -221,7 +221,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/dbe24401b163ac2bac4f993982375296414b81b7/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-updated_at: 5/31/2018 10:45:58 PM
-ms.date: 05/31/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/b4a617735bc44db377ec025c85c25427d373548e/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+updated_at: 6/21/2018 9:03:44 PM
+ms.date: 06/21/2018
 description: Manage repositories (image names) for Azure Container Registries.
