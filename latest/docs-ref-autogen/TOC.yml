@@ -3553,6 +3553,25 @@
         - name: Update
           uid: az_mysql_server_firewall_rule_update
           displayName: az mysql server firewall-rule update
+      - name: Vnet-Rule
+        uid: az_mysql_server_vnet_rule
+        displayName: az mysql server vnet-rule
+        items:
+        - name: Create
+          uid: az_mysql_server_vnet_rule_create
+          displayName: az mysql server vnet-rule create
+        - name: Delete
+          uid: az_mysql_server_vnet_rule_delete
+          displayName: az mysql server vnet-rule delete
+        - name: List
+          uid: az_mysql_server_vnet_rule_list
+          displayName: az mysql server vnet-rule list
+        - name: Show
+          uid: az_mysql_server_vnet_rule_show
+          displayName: az mysql server vnet-rule show
+        - name: Update
+          uid: az_mysql_server_vnet_rule_update
+          displayName: az mysql server vnet-rule update
   - name: Networking
     uid: az_network
     displayName: az network
@@ -4975,6 +4994,25 @@
         - name: Update
           uid: az_postgres_server_firewall_rule_update
           displayName: az postgres server firewall-rule update
+      - name: Vnet-Rule
+        uid: az_postgres_server_vnet_rule
+        displayName: az postgres server vnet-rule
+        items:
+        - name: Create
+          uid: az_postgres_server_vnet_rule_create
+          displayName: az postgres server vnet-rule create
+        - name: Delete
+          uid: az_postgres_server_vnet_rule_delete
+          displayName: az postgres server vnet-rule delete
+        - name: List
+          uid: az_postgres_server_vnet_rule_list
+          displayName: az postgres server vnet-rule list
+        - name: Show
+          uid: az_postgres_server_vnet_rule_show
+          displayName: az postgres server vnet-rule show
+        - name: Update
+          uid: az_postgres_server_vnet_rule_update
+          displayName: az postgres server vnet-rule update
   - name: Redis Cache
     uid: az_redis
     displayName: az redis
