@@ -18,6 +18,13 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Create a firewall rule
+    syntax:
+      content: az sql server firewall-rule create -g mygroup -s myserver -n myrule --start-ip-address 1.2.3.4 --end-ip-address 5.6.7.8
+  - summary: Create a firewall rule that allows access from Azure services
+    syntax:
+      content: az sql server firewall-rule create -g mygroup -s myserver -n myrule --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
   parameters:
   - isRequired: true
     name: --end-ip-address
@@ -76,6 +83,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: List a server's firewall rules
+    syntax:
+      content: az sql server firewall-rule list -g mygroup -s myserver
   parameters:
   - isRequired: true
     name: --resource-group -g
@@ -97,6 +108,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Show a firewall rule
+    syntax:
+      content: az sql server firewall-rule show -g mygroup -s myserver -n myrule
   parameters:
   - isRequired: true
     name: --name -n
@@ -122,6 +137,10 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Update a firewall rule
+    syntax:
+      content: az sql server firewall-rule update -g mygroup -s myserver -n myrule --start-ip-address 9.8.7.6 --end-ip-address 5.4.3.2
   parameters:
   - isRequired: true
     name: --name -n
@@ -179,7 +198,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/2cd0ed3e39d743e2464d6b31a69f06a44b6c2efc/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-updated_at: 5/31/2018 7:49:41 PM
-ms.date: 05/31/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/71bdd96e859d3259b9086a33485427a438173be9/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+updated_at: 6/25/2018 5:02:27 PM
+ms.date: 06/25/2018
 description: Manage a server's firewall rules.

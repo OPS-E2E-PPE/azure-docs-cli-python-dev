@@ -116,7 +116,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/2cd0ed3e39d743e2464d6b31a69f06a44b6c2efc/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-updated_at: 5/31/2018 7:49:41 PM
-ms.date: 05/31/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/71bdd96e859d3259b9086a33485427a438173be9/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+updated_at: 6/25/2018 5:02:27 PM
+ms.date: 06/25/2018
 description: Manage a database's transparent data encryption.
