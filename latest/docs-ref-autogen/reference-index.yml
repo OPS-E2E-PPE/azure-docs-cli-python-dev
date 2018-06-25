@@ -15,7 +15,7 @@ items:
   - az_logout
 - uid: az_configure
   name: az configure
-  summary: Display and manage the Azure CLI 2.0 configuration. This command is interactive.
+  summary: Manage Azure CLI configuration. This command is interactive.
   description: ''
   langs:
   - azurecli
@@ -38,7 +38,7 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_feedback
   name: az feedback
-  summary: Loving or hating the CLI?  Let us know!
+  summary: Send feedback to the Azure CLI Team!
   description: ''
   langs:
   - azurecli
@@ -180,7 +180,7 @@ commands:
   summary: Manage App Service plans.
 - uid: az_backup
   name: az backup
-  summary: Commands to manage Azure Backups.
+  summary: Manage Azure Backups.
 - uid: az_batch
   name: az batch
   summary: Manage Azure Batch.
@@ -201,7 +201,7 @@ commands:
   summary: Manage Azure Cognitive Services accounts.
 - uid: az_configure
   name: az configure
-  summary: Display and manage the Azure CLI 2.0 configuration. This command is interactive.
+  summary: Manage Azure CLI configuration. This command is interactive.
 - uid: az_consumption
   name: az consumption
   summary: Manage consumption of Azure resources.
@@ -237,7 +237,7 @@ commands:
   summary: Manage resource provider features.
 - uid: az_feedback
   name: az feedback
-  summary: Loving or hating the CLI?  Let us know!
+  summary: Send feedback to the Azure CLI Team!
 - uid: az_find
   name: az find
   summary: Find Azure CLI commands.
@@ -261,7 +261,7 @@ commands:
   summary: (PREVIEW) Manage Internet of Things (IoT) assets.
 - uid: az_keyvault
   name: az keyvault
-  summary: Safeguard and maintain control of keys, secrets, and certificates.
+  summary: Manage KeyVault keys, secrets, and certificates.
 - uid: az_lab
   name: az lab
   summary: Manage Azure DevTest Labs.
@@ -300,7 +300,7 @@ commands:
   summary: Manage resource providers.
 - uid: az_redis
   name: az redis
-  summary: Access to a secure, dedicated Redis cache for your Azure applications.
+  summary: Manage dedicated Redis caches for your Azure applications.
 - uid: az_reservations
   name: az reservations
   summary: Manage Azure Reservations.
@@ -330,7 +330,7 @@ commands:
   summary: Manage resource tags.
 - uid: az_vm
   name: az vm
-  summary: Provision Linux or Windows virtual machines.
+  summary: Manage Linux or Windows virtual machines.
 - uid: az_vmss
   name: az vmss
   summary: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).
