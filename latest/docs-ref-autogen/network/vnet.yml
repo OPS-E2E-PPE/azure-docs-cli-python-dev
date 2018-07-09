@@ -26,15 +26,16 @@ items:
       content: az network vnet check-ip-address -g MyResourceGroup -n MyVnet --ip-address 10.0.0.4
   parameters:
   - isRequired: true
+    name: --ip-address
+    summary: The private IP address to be verified.
+    description: ''
+  - isRequired: true
     name: --name -n
     summary: The virtual network (VNet) name.
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --ip-address
-    summary: The private IP address to be verified.
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
@@ -327,7 +328,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b9e20814dcf82d6d53d2632a2c60b96262c85c89/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 4/5/2018 11:34:01 PM
-ms.date: 04/05/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/83e31cb595b745b5dd883c55555d1984a7f83fd5/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 6/29/2018 9:03:12 PM
+ms.date: 06/29/2018
 description: To learn more about Virtual Networks visit <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-network">https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-network</a>.

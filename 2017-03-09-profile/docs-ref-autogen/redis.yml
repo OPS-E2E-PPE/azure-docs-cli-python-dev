@@ -188,7 +188,7 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_redis_import_method
   name: az redis import-method
-  summary: (DEPRECATED) Import data into a Redis cache.
+  summary: Import data into a Redis cache.
   description: ''
   langs:
   - azurecli
@@ -233,7 +233,7 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_redis_list_all
   name: az redis list-all
-  summary: (DEPRECATED) Gets all Redis caches in the specified subscription.
+  summary: Gets all Redis caches in the specified subscription.
   description: ''
   langs:
   - azurecli
@@ -351,8 +351,8 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_redis_update_settings
   name: az redis update-settings
-  summary: (DEPRECATED) Update the settings of a Redis cache.
-  description: 'WARNING: This command is deprecated. Instead, use the `update` command.'
+  summary: Update the settings of a Redis cache.
+  description: ''
   langs:
   - azurecli
   parameters:
@@ -392,13 +392,13 @@ commands:
   summary: Import data into a Redis cache.
 - uid: az_redis_import_method
   name: az redis import-method
-  summary: (DEPRECATED) Import data into a Redis cache.
+  summary: Import data into a Redis cache.
 - uid: az_redis_list
   name: az redis list
   summary: List Redis caches.
 - uid: az_redis_list_all
   name: az redis list-all
-  summary: (DEPRECATED) Gets all Redis caches in the specified subscription.
+  summary: Gets all Redis caches in the specified subscription.
 - uid: az_redis_list_keys
   name: az redis list-keys
   summary: Retrieve a Redis cache's access keys.
@@ -408,12 +408,6 @@ commands:
 - uid: az_redis_patch_schedule_delete
   name: az redis patch-schedule delete
   summary: Deletes the patching schedule of a redis cache (requires Premium SKU).
-- uid: az_redis_patch_schedule_patch_schedule
-  name: az redis patch-schedule patch-schedule
-  summary: This group is deprecated and will be removed in CLI version 2.0.36. The command, `redis patch-schedule patch-schedule show`, will be replaced with `redis patch-schedule show`'.
-- uid: az_redis_patch_schedule_patch_schedule_show
-  name: az redis patch-schedule patch-schedule show
-  summary: Gets the patching schedule of a redis cache (requires Premium SKU).
 - uid: az_redis_patch_schedule_set
   name: az redis patch-schedule set
   summary: Create or replace the patching schedule for Redis cache (requires Premium SKU).
@@ -431,7 +425,7 @@ commands:
   summary: Scale or update settings of a Redis cache.
 - uid: az_redis_update_settings
   name: az redis update-settings
-  summary: (DEPRECATED) Update the settings of a Redis cache.
+  summary: Update the settings of a Redis cache.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -448,7 +442,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/cebc63e442d5df36ef4f827ab0f4aa1dadec7c19/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
-updated_at: 6/25/2018 4:35:18 PM
-ms.date: 06/25/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
+updated_at: 6/28/2018 6:01:13 PM
+ms.date: 06/28/2018
 description: Manage dedicated Redis caches for your Azure applications.

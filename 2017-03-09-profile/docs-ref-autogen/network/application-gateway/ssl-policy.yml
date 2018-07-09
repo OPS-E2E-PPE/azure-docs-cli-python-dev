@@ -96,7 +96,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b9e20814dcf82d6d53d2632a2c60b96262c85c89/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 4/5/2018 11:34:01 PM
-ms.date: 04/05/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/83e31cb595b745b5dd883c55555d1984a7f83fd5/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 6/29/2018 9:03:12 PM
+ms.date: 06/29/2018
 description: Manage the SSL policy of an application gateway.

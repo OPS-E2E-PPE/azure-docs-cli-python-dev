@@ -40,14 +40,18 @@ items:
     summary: The relative path of the the docker file to the source code root folder.
     description: ''
   - name: --image -t
-    summary: The image repository and optionally a tag in the 'repository:tag' format.
+    summary: The name of the image. May include a tag in the format 'name:tag'.
     description: ''
   - name: --no-logs
     summary: Do not show logs after successfully queuing the build.
     description: ''
   - name: --no-push
-    parameterValueGroup: false, true
     summary: Indicates whether the image built should be pushed to the registry.
+    description: ''
+  - name: --os
+    defaultValue: Linux
+    parameterValueGroup: Linux, Windows
+    summary: The operating system type required for the build.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -181,7 +185,7 @@ items:
     summary: Overwrite the existing tag of the image to be imported.
     description: ''
   - name: --image -t
-    summary: The repository and optionally a tag in the 'repository:tag' format for target images.
+    summary: The name of the image. May include a tag in the format 'name:tag'.
     description: ''
   - name: --registry -r
     summary: The source container registry can be name, login server or resource ID of the source registry.
@@ -501,7 +505,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/325d31ff179c4c8370f7be560270890a71e129b6/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-updated_at: 6/25/2018 4:58:35 PM
-ms.date: 06/25/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+updated_at: 6/28/2018 6:01:13 PM
+ms.date: 06/28/2018
 description: Manage Azure Container Registries for private registries within Azure.

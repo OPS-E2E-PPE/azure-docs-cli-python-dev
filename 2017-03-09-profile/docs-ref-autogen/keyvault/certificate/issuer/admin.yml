@@ -25,10 +25,6 @@ items:
     name: --issuer-name
     summary: Certificate issuer name.
     description: ''
-  - isRequired: true
-    name: --vault-name
-    summary: Name of the key vault.
-    description: ''
   - name: --first-name
     summary: ''
     description: ''
@@ -37,6 +33,10 @@ items:
     description: ''
   - name: --phone
     summary: Amin phone number.
+    description: ''
+  - isRequired: true
+    name: --vault-name
+    summary: Name of the key vault.
     description: ''
   source:
     path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
@@ -116,7 +116,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/cebc63e442d5df36ef4f827ab0f4aa1dadec7c19/src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
-updated_at: 6/25/2018 4:35:18 PM
-ms.date: 06/25/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/9610ba0a4eeb1607abf88e7ecac3013a6dcbd313/src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
+updated_at: 7/6/2018 8:35:03 PM
+ms.date: 07/06/2018
 description: Manage admin information for certificate issuers.

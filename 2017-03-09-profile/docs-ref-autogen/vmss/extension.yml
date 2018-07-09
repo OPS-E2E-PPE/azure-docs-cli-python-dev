@@ -30,6 +30,9 @@ items:
     name: --vmss-name
     summary: Scale set name. You can configure the default using `az configure --defaults vmss=&lt;name&gt;`.
     description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
@@ -82,6 +85,9 @@ items:
     description: ''
   - name: --no-auto-upgrade
     summary: By doing this, extension system will not pick the highest minor version for the specified version number, and will not auto update to the latest build/revision number on any scale set updates in future.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --protected-settings
     summary: Protected settings in JSON format for sensitive information like credentials. A JSON file path is also accepted.
@@ -167,7 +173,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/cebc63e442d5df36ef4f827ab0f4aa1dadec7c19/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 6/25/2018 4:35:18 PM
-ms.date: 06/25/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/83e31cb595b745b5dd883c55555d1984a7f83fd5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 6/29/2018 9:03:12 PM
+ms.date: 06/29/2018
 description: Manage extensions on a VM scale set.

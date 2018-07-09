@@ -62,6 +62,12 @@
     - name: Delete
       uid: az_aks_delete
       displayName: az aks delete
+    - name: Disable-Addons
+      uid: az_aks_disable_addons
+      displayName: az aks disable-addons
+    - name: Enable-Addons
+      uid: az_aks_enable_addons
+      displayName: az aks enable-addons
     - name: Get-Credentials
       uid: az_aks_get_credentials
       displayName: az aks get-credentials
@@ -2609,6 +2615,9 @@
       - name: Assign
         uid: az_functionapp_identity_assign
         displayName: az functionapp identity assign
+      - name: Remove
+        uid: az_functionapp_identity_remove
+        displayName: az functionapp identity remove
       - name: Show
         uid: az_functionapp_identity_show
         displayName: az functionapp identity show
@@ -3024,6 +3033,19 @@
       - name: Show-Deleted
         uid: az_keyvault_key_show_deleted
         displayName: az keyvault key show-deleted
+    - name: Network-Rule
+      uid: az_keyvault_network_rule
+      displayName: az keyvault network-rule
+      items:
+      - name: Add
+        uid: az_keyvault_network_rule_add
+        displayName: az keyvault network-rule add
+      - name: List
+        uid: az_keyvault_network_rule_list
+        displayName: az keyvault network-rule list
+      - name: Remove
+        uid: az_keyvault_network_rule_remove
+        displayName: az keyvault network-rule remove
     - name: Secrets
       uid: az_keyvault_secret
       displayName: az keyvault secret
@@ -3067,6 +3089,74 @@
       - name: Show-Deleted
         uid: az_keyvault_secret_show_deleted
         displayName: az keyvault secret show-deleted
+    - name: Storage
+      uid: az_keyvault_storage
+      displayName: az keyvault storage
+      items:
+      - name: Add
+        uid: az_keyvault_storage_add
+        displayName: az keyvault storage add
+      - name: Backup
+        uid: az_keyvault_storage_backup
+        displayName: az keyvault storage backup
+      - name: List
+        uid: az_keyvault_storage_list
+        displayName: az keyvault storage list
+      - name: List-Deleted
+        uid: az_keyvault_storage_list_deleted
+        displayName: az keyvault storage list-deleted
+      - name: Purge
+        uid: az_keyvault_storage_purge
+        displayName: az keyvault storage purge
+      - name: Recover
+        uid: az_keyvault_storage_recover
+        displayName: az keyvault storage recover
+      - name: Regenerate-Key
+        uid: az_keyvault_storage_regenerate_key
+        displayName: az keyvault storage regenerate-key
+      - name: Remove
+        uid: az_keyvault_storage_remove
+        displayName: az keyvault storage remove
+      - name: Restore
+        uid: az_keyvault_storage_restore
+        displayName: az keyvault storage restore
+      - name: Show
+        uid: az_keyvault_storage_show
+        displayName: az keyvault storage show
+      - name: Show-Deleted
+        uid: az_keyvault_storage_show_deleted
+        displayName: az keyvault storage show-deleted
+      - name: Update
+        uid: az_keyvault_storage_update
+        displayName: az keyvault storage update
+      - name: Sas-Definition
+        uid: az_keyvault_storage_sas_definition
+        displayName: az keyvault storage sas-definition
+        items:
+        - name: Create
+          uid: az_keyvault_storage_sas_definition_create
+          displayName: az keyvault storage sas-definition create
+        - name: Delete
+          uid: az_keyvault_storage_sas_definition_delete
+          displayName: az keyvault storage sas-definition delete
+        - name: List
+          uid: az_keyvault_storage_sas_definition_list
+          displayName: az keyvault storage sas-definition list
+        - name: List-Deleted
+          uid: az_keyvault_storage_sas_definition_list_deleted
+          displayName: az keyvault storage sas-definition list-deleted
+        - name: Recover
+          uid: az_keyvault_storage_sas_definition_recover
+          displayName: az keyvault storage sas-definition recover
+        - name: Show
+          uid: az_keyvault_storage_sas_definition_show
+          displayName: az keyvault storage sas-definition show
+        - name: Show-Deleted
+          uid: az_keyvault_storage_sas_definition_show_deleted
+          displayName: az keyvault storage sas-definition show-deleted
+        - name: Update
+          uid: az_keyvault_storage_sas_definition_update
+          displayName: az keyvault storage sas-definition update
   - name: Locks
     uid: az_lock
     displayName: az lock
@@ -4061,6 +4151,9 @@
       - name: Update
         uid: az_network_nic_update
         displayName: az network nic update
+      - name: Wait
+        uid: az_network_nic_wait
+        displayName: az network nic wait
       - name: NIC IP Configurations
         uid: az_network_nic_ip_config
         displayName: az network nic ip-config
@@ -4639,13 +4732,6 @@
       - name: Show
         uid: az_redis_patch_schedule_show
         displayName: az redis patch-schedule show
-      - name: Patch-Schedule
-        uid: az_redis_patch_schedule_patch_schedule
-        displayName: az redis patch-schedule patch-schedule
-        items:
-        - name: Show
-          uid: az_redis_patch_schedule_patch_schedule_show
-          displayName: az redis patch-schedule patch-schedule show
   - name: Reservations
     uid: az_reservations
     displayName: az reservations
@@ -6521,6 +6607,9 @@
       - name: Show
         uid: az_vm_extension_show
         displayName: az vm extension show
+      - name: Wait
+        uid: az_vm_extension_wait
+        displayName: az vm extension wait
       - name: Extension Images
         uid: az_vm_extension_image
         displayName: az vm extension image
@@ -6862,6 +6951,9 @@
       - name: Assign
         uid: az_webapp_identity_assign
         displayName: az webapp identity assign
+      - name: Remove
+        uid: az_webapp_identity_remove
+        displayName: az webapp identity remove
       - name: Show
         uid: az_webapp_identity_show
         displayName: az webapp identity show
@@ -6943,6 +7035,35 @@
         displayName: az alias remove-all
   - name: azure-batch-cli-extensions
     uid: ext_azure-batch-cli-extensions_az
+    items:
+    - name: Batch
+      uid: ext_azure-batch-cli-extensions_az_batch
+      displayName: az batch
+      items:
+      - name: File
+        uid: ext_azure-batch-cli-extensions_az_batch_file
+        displayName: az batch file
+        items:
+        - name: Download
+          uid: ext_azure-batch-cli-extensions_az_batch_file_download
+          displayName: az batch file download
+        - name: Upload
+          uid: ext_azure-batch-cli-extensions_az_batch_file_upload
+          displayName: az batch file upload
+      - name: Jobs
+        uid: ext_azure-batch-cli-extensions_az_batch_job
+        displayName: az batch job
+        items:
+        - name: Create
+          uid: ext_azure-batch-cli-extensions_az_batch_job_create
+          displayName: az batch job create
+      - name: Pools
+        uid: ext_azure-batch-cli-extensions_az_batch_pool
+        displayName: az batch pool
+        items:
+        - name: Create
+          uid: ext_azure-batch-cli-extensions_az_batch_pool_create
+          displayName: az batch pool create
   - name: azure-cli-iot-ext
     uid: ext_azure-cli-iot-ext_az
     items:
@@ -7041,6 +7162,9 @@
         uid: ext_azure-cli-iot-ext_az_iot_edge
         displayName: az iot edge
         items:
+        - name: Set-Modules
+          uid: ext_azure-cli-iot-ext_az_iot_edge_set_modules
+          displayName: az iot edge set-modules
         - name: Deployment
           uid: ext_azure-cli-iot-ext_az_iot_edge_deployment
           displayName: az iot edge deployment
@@ -7057,6 +7181,9 @@
           - name: Show
             uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_show
             displayName: az iot edge deployment show
+          - name: Show-Metric
+            uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_show_metric
+            displayName: az iot edge deployment show-metric
           - name: Update
             uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_update
             displayName: az iot edge deployment update
@@ -7085,6 +7212,28 @@
         - name: Show-Connection-String
           uid: ext_azure-cli-iot-ext_az_iot_hub_show_connection_string
           displayName: az iot hub show-connection-string
+        - name: Configuration
+          uid: ext_azure-cli-iot-ext_az_iot_hub_configuration
+          displayName: az iot hub configuration
+          items:
+          - name: Create
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_create
+            displayName: az iot hub configuration create
+          - name: Delete
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_delete
+            displayName: az iot hub configuration delete
+          - name: List
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_list
+            displayName: az iot hub configuration list
+          - name: Show
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_show
+            displayName: az iot hub configuration show
+          - name: Show-Metric
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_show_metric
+            displayName: az iot hub configuration show-metric
+          - name: Update
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_update
+            displayName: az iot hub configuration update
         - name: Device-Identity
           uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity
           displayName: az iot hub device-identity
@@ -8054,6 +8203,9 @@
           - name: Show
             uid: ext_storage-preview_az_storage_blob_service_properties_show
             displayName: az storage blob service-properties show
+          - name: Update
+            uid: ext_storage-preview_az_storage_blob_service_properties_update
+            displayName: az storage blob service-properties update
           - name: Delete-Policy
             uid: ext_storage-preview_az_storage_blob_service_properties_delete_policy
             displayName: az storage blob service-properties delete-policy

@@ -995,6 +995,9 @@ commands:
 - uid: az_vm_extension_show
   name: az vm extension show
   summary: Display information about extensions attached to a VM.
+- uid: az_vm_extension_wait
+  name: az vm extension wait
+  summary: Place the CLI in a waiting state until a condition of a virtual machine extension is met.
 - uid: az_vm_generalize
   name: az vm generalize
   summary: Mark a VM as generalized, allowing it to be imaged for multiple deployments.
@@ -1152,7 +1155,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/cebc63e442d5df36ef4f827ab0f4aa1dadec7c19/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 6/25/2018 4:35:18 PM
-ms.date: 06/25/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/83e31cb595b745b5dd883c55555d1984a7f83fd5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 6/29/2018 9:03:12 PM
+ms.date: 06/29/2018
 description: Manage Linux or Windows virtual machines.

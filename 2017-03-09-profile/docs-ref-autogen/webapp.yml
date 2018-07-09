@@ -454,13 +454,16 @@ commands:
   summary: Gets publishing user.
 - uid: az_webapp_identity
   name: az webapp identity
-  summary: (PREVIEW) manage webapp's managed service identity.
+  summary: Manage webapp's managed service identity.
 - uid: az_webapp_identity_assign
   name: az webapp identity assign
-  summary: (PREVIEW) assign managed service identity to the webapp.
+  summary: Assign or disable managed service identity to the webapp.
+- uid: az_webapp_identity_remove
+  name: az webapp identity remove
+  summary: Disable webapp's managed service identity.
 - uid: az_webapp_identity_show
   name: az webapp identity show
-  summary: (PREVIEW) display webapp's managed service identity.
+  summary: Display webapp's managed service identity.
 - uid: az_webapp_list
   name: az webapp list
   summary: List web apps.

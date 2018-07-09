@@ -277,13 +277,16 @@ commands:
   summary: Gets publishing user.
 - uid: az_functionapp_identity
   name: az functionapp identity
-  summary: (PREVIEW) manage functionapp's managed service identity.
+  summary: Manage functionapp's managed service identity.
 - uid: az_functionapp_identity_assign
   name: az functionapp identity assign
-  summary: (PREVIEW) assign managed service identity to the functionapp.
+  summary: Assign or disable managed service identity to the functionapp.
+- uid: az_functionapp_identity_remove
+  name: az functionapp identity remove
+  summary: Disable functionapp's managed service identity.
 - uid: az_functionapp_identity_show
   name: az functionapp identity show
-  summary: (PREVIEW) display functionapp's managed service identity.
+  summary: Display functionapp's managed service identity.
 - uid: az_functionapp_list
   name: az functionapp list
   summary: List function apps.
