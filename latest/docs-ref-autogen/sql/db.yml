@@ -49,7 +49,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --dest-resource-group
     summary: Name of the resouce group to create the copy in. If unspecified, defaults to the origin resource group.
@@ -119,7 +119,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --license-type
     parameterValueGroup: BasePrice, LicenseIncluded
@@ -186,7 +186,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -244,7 +244,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --storage-key
@@ -313,7 +313,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --storage-key
@@ -351,7 +351,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --elastic-pool
     summary: If specified, lists only the databases in this elastic pool.
@@ -375,7 +375,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -446,7 +446,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -475,7 +475,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -504,7 +504,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --license-type
     parameterValueGroup: BasePrice, LicenseIncluded
@@ -564,7 +564,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -594,7 +594,7 @@ items:
     description: ''
   - name: --server -s
     defaultValue: <servername>
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --auth-type -a
     defaultValue: SqlPassword
@@ -631,7 +631,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --max-size
     summary: The new maximum size of the database expressed in bytes.

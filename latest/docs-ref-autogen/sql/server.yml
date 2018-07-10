@@ -38,7 +38,7 @@ items:
     description: ''
   - isRequired: true
     name: --name -n
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -62,7 +62,7 @@ items:
   parameters:
   - isRequired: true
     name: --name -n
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -109,7 +109,7 @@ items:
   parameters:
   - isRequired: true
     name: --name -n
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -130,7 +130,7 @@ items:
   parameters:
   - isRequired: true
     name: --name -n
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -151,7 +151,7 @@ items:
   parameters:
   - isRequired: true
     name: --name -n
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --resource-group -g

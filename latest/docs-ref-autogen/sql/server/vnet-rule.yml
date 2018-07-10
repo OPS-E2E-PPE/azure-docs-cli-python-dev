@@ -38,7 +38,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --subnet
@@ -74,7 +74,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -95,7 +95,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -120,7 +120,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -145,7 +145,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: The server name.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --subnet

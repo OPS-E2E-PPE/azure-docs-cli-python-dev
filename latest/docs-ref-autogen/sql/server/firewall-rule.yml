@@ -40,7 +40,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - isRequired: true
     name: --start-ip-address
@@ -69,7 +69,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -94,7 +94,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -123,7 +123,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -152,7 +152,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --end-ip-address
     summary: The end IP address of the firewall rule. Must be IPv4 format. Use value '0.0.0.0' to represent all Azure-internal IP addresses.
