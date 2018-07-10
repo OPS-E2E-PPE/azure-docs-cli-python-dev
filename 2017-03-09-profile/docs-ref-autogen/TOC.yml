@@ -1435,6 +1435,9 @@
       - name: List
         uid: az_acr_repository_list
         displayName: az acr repository list
+      - name: Show
+        uid: az_acr_repository_show
+        displayName: az acr repository show
       - name: Show-Manifests
         uid: az_acr_repository_show_manifests
         displayName: az acr repository show-manifests
@@ -1444,6 +1447,9 @@
       - name: Untag
         uid: az_acr_repository_untag
         displayName: az acr repository untag
+      - name: Update
+        uid: az_acr_repository_update
+        displayName: az acr repository update
     - name: Webhook
       uid: az_acr_webhook
       displayName: az acr webhook

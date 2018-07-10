@@ -444,6 +444,9 @@ commands:
 - uid: az_acr_repository_list
   name: az acr repository list
   summary: List repositories in a container registry.
+- uid: az_acr_repository_show
+  name: az acr repository show
+  summary: Get the attributes of a repository or image in a container registry.
 - uid: az_acr_repository_show_manifests
   name: az acr repository show-manifests
   summary: Show manifests of a repository in a container registry.
@@ -453,6 +456,9 @@ commands:
 - uid: az_acr_repository_untag
   name: az acr repository untag
   summary: Untag an image in a container registry.
+- uid: az_acr_repository_update
+  name: az acr repository update
+  summary: Update the attributes of a repository or image in a container registry.
 - uid: az_acr_show
   name: az acr show
   summary: Get the details of a container registry.
@@ -505,7 +511,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-updated_at: 6/28/2018 6:01:13 PM
-ms.date: 06/28/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/c90f66675267b8f6c6cacba56171ec1c588f1483/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+updated_at: 7/10/2018 3:42:58 PM
+ms.date: 07/10/2018
 description: Manage Azure Container Registries for private registries within Azure.
