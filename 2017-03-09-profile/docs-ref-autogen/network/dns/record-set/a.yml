@@ -48,7 +48,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_dns_record_set_a_create
   name: az network dns record-set a create
   summary: Create an empty A record set.
@@ -90,7 +90,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_dns_record_set_a_delete
   name: az network dns record-set a delete
   summary: Delete an A record set and all associated records.
@@ -125,7 +125,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_dns_record_set_a_list
   name: az network dns record-set a list
   summary: List all A record sets in a zone.
@@ -150,7 +150,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_dns_record_set_a_remove_record
   name: az network dns record-set a remove-record
   summary: Remove an A record from its record set.
@@ -188,7 +188,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_dns_record_set_a_show
   name: az network dns record-set a show
   summary: Get the details of an A record set.
@@ -217,7 +217,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_dns_record_set_a_update
   name: az network dns record-set a update
   summary: Update an A record set.
@@ -269,7 +269,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_network_dns_record_set_a_add_record
   name: az network dns record-set a add-record
@@ -305,10 +305,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 updated_at: 7/25/2018 10:19:48 PM
 ms.date: 07/25/2018
 description: Manage DNS A records.

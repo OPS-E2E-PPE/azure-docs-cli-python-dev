@@ -37,7 +37,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_dms_check_status
   name: az dms check-status
   summary: Perform a health check and return the status of the service and virtual machine size.
@@ -58,7 +58,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_dms_create
   name: az dms create
   summary: Create an instance of the Data Migration Service.
@@ -101,7 +101,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_dms_delete
   name: az dms delete
   summary: Delete an instance of the Data Migration Service.
@@ -131,7 +131,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_dms_list
   name: az dms list
   summary: List the DMS instances within your currently configured subscription (to set this use "az account set"). If provided, only show the instances within a given resource group.
@@ -154,7 +154,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_dms_list_skus
   name: az dms list-skus
   summary: List the SKUs that are supported by the Data Migration Service.
@@ -167,7 +167,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_dms_show
   name: az dms show
   summary: Show the details for an instance of the Data Migration Service.
@@ -188,7 +188,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_dms_start
   name: az dms start
   summary: Start an instance of the Data Migration Service. It can then be used to run data migrations.
@@ -212,7 +212,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_dms_stop
   name: az dms stop
   summary: Stop an instance of the Data Migration Service. While stopped, it can't be used to run data migrations and the owner won't be billed.
@@ -236,7 +236,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_dms_wait
   name: az dms wait
   summary: Place the CLI in a waiting state until a condition of the DMS instance is met.
@@ -280,7 +280,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_dms_check_name
   name: az dms check-name
@@ -364,10 +364,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-dms/azure/cli/command_modules/dms/_help.py
 updated_at: 6/28/2018 6:01:13 PM
 ms.date: 06/28/2018
 description: Manage Azure Data Migration Service (DMS) instances.

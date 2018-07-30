@@ -42,7 +42,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_lab_vm_claim
   name: az lab vm claim
   summary: Claim a virtual machine from the Lab.
@@ -77,7 +77,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_lab_vm_create
   name: az lab vm create
   summary: Create a VM in a lab.
@@ -183,7 +183,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_lab_vm_delete
   name: az lab vm delete
   summary: Delete virtual machine.
@@ -208,7 +208,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_lab_vm_list
   name: az lab vm list
   summary: List the VMs in an Azure DevTest Lab.
@@ -253,7 +253,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_lab_vm_show
   name: az lab vm show
   summary: Get virtual machine.
@@ -281,7 +281,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_lab_vm_start
   name: az lab vm start
   summary: Start a virtual machine.
@@ -306,7 +306,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_lab_vm_stop
   name: az lab vm stop
   summary: Stop a virtual machine This operation can take a while to complete.
@@ -331,7 +331,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_lab_vm_apply_artifacts
   name: az lab vm apply-artifacts
@@ -370,10 +370,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-lab/azure/cli/command_modules/lab/_help.py
 updated_at: 6/28/2018 6:01:13 PM
 ms.date: 06/28/2018
 description: Manage VMs in an Azure DevTest Lab.

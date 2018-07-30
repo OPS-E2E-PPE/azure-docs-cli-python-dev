@@ -88,7 +88,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_create
   name: az sql db create
   summary: Create a database.
@@ -168,7 +168,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_delete
   name: az sql db delete
   summary: Delete a database.
@@ -199,7 +199,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_export
   name: az sql db export
   summary: Export a database to a bacpac.
@@ -268,7 +268,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_import
   name: az sql db import
   summary: Imports a bacpac into an existing database.
@@ -337,7 +337,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_list
   name: az sql db list
   summary: List databases a server or elastic pool.
@@ -361,7 +361,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_list_deleted
   name: az sql db list-deleted
   summary: Gets a list of deleted databases that can be restored.
@@ -382,7 +382,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_list_editions
   name: az sql db list-editions
   summary: Show database editions available for the currently active subscription.
@@ -428,7 +428,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_list_usages
   name: az sql db list-usages
   summary: Returns database usages.
@@ -453,7 +453,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_rename
   name: az sql db rename
   summary: Rename a database.
@@ -482,7 +482,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_restore
   name: az sql db restore
   summary: Create a new database by restoring from a backup.
@@ -546,7 +546,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_show
   name: az sql db show
   summary: Get the details for a database.
@@ -571,7 +571,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_show_connection_string
   name: az sql db show-connection-string
   summary: Generates a connection string to a database.
@@ -606,7 +606,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_db_update
   name: az sql db update
   summary: Update a database.
@@ -675,7 +675,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_sql_db_audit_policy
   name: az sql db audit-policy
@@ -786,10 +786,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
 updated_at: 6/28/2018 6:01:13 PM
 ms.date: 06/28/2018
 description: Manage databases.

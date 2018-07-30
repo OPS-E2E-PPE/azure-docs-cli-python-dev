@@ -105,7 +105,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_delete
   name: az network nic delete
   summary: Delete a network interface.
@@ -133,7 +133,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_list
   name: az network nic list
   summary: List network interfaces.
@@ -153,7 +153,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_list_effective_nsg
   name: az network nic list-effective-nsg
   summary: List all effective network security groups applied to a network interface.
@@ -178,7 +178,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_show
   name: az network nic show
   summary: Get the details of a network interface.
@@ -206,7 +206,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_show_effective_route_table
   name: az network nic show-effective-route-table
   summary: Show the effective route table applied to a network interface.
@@ -231,7 +231,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_update
   name: az network nic update
   summary: Update a network interface.
@@ -288,7 +288,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_wait
   name: az network nic wait
   summary: Place the CLI in a waiting state until a condition of the network interface is met.
@@ -339,7 +339,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_network_nic_create
   name: az network nic create
@@ -414,10 +414,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 updated_at: 7/25/2018 10:19:48 PM
 ms.date: 07/25/2018
 description: To learn more about network interfaces in Azure visit <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface">https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface</a>.

@@ -42,7 +42,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_delete
   name: az group delete
   summary: Delete a resource group.
@@ -69,7 +69,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_exists
   name: az group exists
   summary: Check if a resource group exists.
@@ -90,7 +90,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_export
   name: az group export
   summary: Captures a resource group as a template.
@@ -113,7 +113,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_list
   name: az group list
   summary: List resource groups.
@@ -133,7 +133,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_show
   name: az group show
   summary: Get a resource group.
@@ -150,7 +150,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_update
   name: az group update
   summary: Update a resource group.
@@ -182,7 +182,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_wait
   name: az group wait
   summary: Place the CLI in a waiting state until a condition of the resource group is met.
@@ -222,7 +222,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_group_create
   name: az group create
@@ -312,10 +312,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/83e31cb595b745b5dd883c55555d1984a7f83fd5/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/83e31cb595b745b5dd883c55555d1984a7f83fd5/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
 updated_at: 6/29/2018 9:03:12 PM
 ms.date: 06/29/2018
 description: Manage resource groups and template deployments.

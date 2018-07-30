@@ -49,7 +49,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_servicebus_queue_authorization_rule_delete
   name: az servicebus queue authorization-rule delete
   summary: Delete the Authorization Rule of Service Bus Queue.
@@ -82,7 +82,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_servicebus_queue_authorization_rule_list
   name: az servicebus queue authorization-rule list
   summary: List of Authorization Rule by Service Bus Queue.
@@ -111,7 +111,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_servicebus_queue_authorization_rule_show
   name: az servicebus queue authorization-rule show
   summary: Show properties of Authorization Rule for the given Service Bus Queue.
@@ -144,7 +144,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_servicebus_queue_authorization_rule_update
   name: az servicebus queue authorization-rule update
   summary: Update Authorization Rule for the given Service Bus Queue.
@@ -194,7 +194,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_servicebus_queue_authorization_rule_create
   name: az servicebus queue authorization-rule create
@@ -233,10 +233,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/d3dca09c3b652acd8fcc7d24d19bf1977b634126/src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/d3dca09c3b652acd8fcc7d24d19bf1977b634126/src/command_modules/azure-cli-servicebus/azure/cli/command_modules/servicebus/_help.py
 updated_at: 7/25/2018 5:40:41 PM
 ms.date: 07/25/2018
 description: Manage Azure Service Bus Queue Authorization Rule.

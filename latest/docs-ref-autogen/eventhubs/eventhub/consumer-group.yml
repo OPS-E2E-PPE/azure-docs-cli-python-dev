@@ -47,7 +47,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_eventhub_consumer_group_delete
   name: az eventhubs eventhub consumer-group delete
   summary: Deletes the ConsumerGroup.
@@ -80,7 +80,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_eventhub_consumer_group_list
   name: az eventhubs eventhub consumer-group list
   summary: List the ConsumerGroup by Eventhub.
@@ -109,7 +109,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_eventhub_consumer_group_show
   name: az eventhubs eventhub consumer-group show
   summary: Shows the ConsumerGroup Details.
@@ -142,7 +142,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_eventhub_consumer_group_update
   name: az eventhubs eventhub consumer-group update
   summary: Updates the EventHub ConsumerGroup.
@@ -190,7 +190,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_eventhubs_eventhub_consumer_group_create
   name: az eventhubs eventhub consumer-group create
@@ -220,10 +220,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/c000a1da1e33cec29846ac54a78f69f332e44618/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/c000a1da1e33cec29846ac54a78f69f332e44618/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
 updated_at: 7/9/2018 3:51:32 PM
 ms.date: 07/09/2018
 description: Manage Azure Event Hubs consumergroup.

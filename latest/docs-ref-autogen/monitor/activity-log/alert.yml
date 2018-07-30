@@ -71,7 +71,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_monitor_activity_log_alert_delete
   name: az monitor activity-log alert delete
   summary: Delete an activity log alert.
@@ -92,7 +92,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_monitor_activity_log_alert_list
   name: az monitor activity-log alert list
   summary: List activity log alerts under a resource group or the current subscription.
@@ -108,7 +108,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_monitor_activity_log_alert_show
   name: az monitor activity-log alert show
   summary: Get an activity log alert.
@@ -129,7 +129,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_monitor_activity_log_alert_update
   name: az monitor activity-log alert update
   summary: Update the details of this activity log alert.
@@ -184,7 +184,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_monitor_activity_log_alert_action_group
   name: az monitor activity-log alert action-group
@@ -232,10 +232,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
 updated_at: 6/28/2018 6:01:13 PM
 ms.date: 06/28/2018
 description: Manage activity log alerts.

@@ -71,7 +71,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_webhook_delete
   name: az acr webhook delete
   summary: Delete a webhook from a container registry.
@@ -99,7 +99,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_webhook_get_config
   name: az acr webhook get-config
   summary: Get the service URI and custom headers for the webhook.
@@ -127,7 +127,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_webhook_list
   name: az acr webhook list
   summary: List all of the webhooks for a container registry.
@@ -151,7 +151,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_webhook_list_events
   name: az acr webhook list-events
   summary: List recent events for a webhook.
@@ -179,7 +179,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_webhook_ping
   name: az acr webhook ping
   summary: Trigger a ping event for a webhook.
@@ -207,7 +207,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_webhook_show
   name: az acr webhook show
   summary: Get the details of a webhook.
@@ -235,7 +235,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_webhook_update
   name: az acr webhook update
   summary: Update a webhook.
@@ -301,7 +301,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_acr_webhook_create
   name: az acr webhook create
@@ -340,10 +340,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/bd3e48d5f8cf70f8bc08e0841392ce5f14fdfec4/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/bd3e48d5f8cf70f8bc08e0841392ce5f14fdfec4/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 updated_at: 7/23/2018 4:29:34 PM
 ms.date: 07/23/2018
 description: Manage webhooks for Azure Container Registries.

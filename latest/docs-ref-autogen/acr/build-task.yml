@@ -109,7 +109,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_build_task_delete
   name: az acr build-task delete
   summary: Delete a build task from a container registry.
@@ -137,7 +137,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_build_task_list
   name: az acr build-task list
   summary: List the build tasks for a container registry.
@@ -161,7 +161,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_build_task_list_builds
   name: az acr build-task list-builds
   summary: List all of the executed builds for a registry, with the ability to filter by a specific build task.
@@ -208,7 +208,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_build_task_logs
   name: az acr build-task logs
   summary: Show logs for a particular build. If no build-id is supplied, it shows logs for the last created build.
@@ -250,7 +250,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_build_task_run
   name: az acr build-task run
   summary: Trigger a build task that might otherwise be waiting for git commits or base image update triggers.
@@ -281,7 +281,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_build_task_show
   name: az acr build-task show
   summary: Get the properties of a specified build task.
@@ -315,7 +315,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_build_task_show_build
   name: az acr build-task show-build
   summary: Get the properties of a specified build.
@@ -343,7 +343,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_build_task_update
   name: az acr build-task update
   summary: Update a build task for a container registry.
@@ -425,7 +425,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_build_task_update_build
   name: az acr build-task update-build
   summary: Patch the build properties.
@@ -457,7 +457,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_acr_build_task_create
   name: az acr build-task create
@@ -502,10 +502,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/bd3e48d5f8cf70f8bc08e0841392ce5f14fdfec4/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/bd3e48d5f8cf70f8bc08e0841392ce5f14fdfec4/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 updated_at: 7/23/2018 4:29:34 PM
 ms.date: 07/23/2018
 description: Manage build definitions, which can be triggered by git commits or base image updates.

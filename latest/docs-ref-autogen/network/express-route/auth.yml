@@ -39,7 +39,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_express_route_auth_delete
   name: az network express-route auth delete
   summary: Delete a link authorization of an ExpressRoute circuit.
@@ -68,7 +68,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_express_route_auth_list
   name: az network express-route auth list
   summary: List link authorizations of an ExpressRoute circuit.
@@ -93,7 +93,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_express_route_auth_show
   name: az network express-route auth show
   summary: Get the details of a link authorization of an ExpressRoute circuit.
@@ -122,7 +122,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_network_express_route_auth_create
   name: az network express-route auth create
@@ -149,10 +149,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 updated_at: 7/25/2018 10:19:48 PM
 ms.date: 07/25/2018
 description: To learn more about ExpressRoute circuit authentication visit <a href="https://docs.microsoft.com/en-us/azure/expressroute/howto-linkvnet-cli#connect-a-virtual-network-in-a-different-subscription-to-a-circuit">https://docs.microsoft.com/en-us/azure/expressroute/howto-linkvnet-cli#connect-a-virtual-network-in-a-different-subscription-to-a-circuit</a>.

@@ -83,7 +83,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_delete_batch
   name: az storage blob delete-batch
   summary: Delete blobs from a blob container recursively.
@@ -140,7 +140,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_download
   name: az storage blob download
   summary: Downloads a blob to a file path, with automatic chunking and progress notifications.
@@ -221,7 +221,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_download_batch
   name: az storage blob download-batch
   summary: Download blobs from a blob container recursively.
@@ -270,7 +270,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_exists
   name: az storage blob exists
   summary: Check for the existence of a blob in a container.
@@ -309,7 +309,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_generate_sas
   name: az storage blob generate-sas
   summary: Generates a shared access signature for the blob.
@@ -375,7 +375,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_list
   name: az storage blob list
   summary: List blobs in a given container.
@@ -419,7 +419,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_set_tier
   name: az storage blob set-tier
   summary: Set the block or page tiers on the blob.
@@ -464,7 +464,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_show
   name: az storage blob show
   summary: Get the details of a blob.
@@ -522,7 +522,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_snapshot
   name: az storage blob snapshot
   summary: Creates a read-only snapshot of a blob.
@@ -576,7 +576,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_undelete
   name: az storage blob undelete
   summary: The undelete Blob operation restores the contents and metadata of soft deleted blob or snapshot.
@@ -612,7 +612,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_update
   name: az storage blob update
   summary: Sets system properties on the blob.
@@ -681,7 +681,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_upload
   name: az storage blob upload
   summary: Upload a file to a storage blob.
@@ -785,7 +785,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_upload_batch
   name: az storage blob upload-batch
   summary: Upload files from a local directory to a blob container.
@@ -886,7 +886,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_url
   name: az storage blob url
   summary: Creates the url to access a blob.
@@ -927,7 +927,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_storage_blob_copy
   name: az storage blob copy
@@ -1050,10 +1050,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
 updated_at: 6/28/2018 6:01:13 PM
 ms.date: 06/28/2018
 description: Manage object storage for unstructured data (blobs).

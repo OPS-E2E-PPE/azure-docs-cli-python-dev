@@ -38,7 +38,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_container_create
   name: az container create
   summary: Create a container group.
@@ -201,7 +201,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_container_delete
   name: az container delete
   summary: Delete a container group.
@@ -225,7 +225,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_container_exec
   name: az container exec
   summary: Execute a command from within a running container of a container group.
@@ -265,7 +265,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_container_export
   name: az container export
   summary: Export a container group in yaml format.
@@ -294,7 +294,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_container_list
   name: az container list
   summary: List container groups.
@@ -310,7 +310,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_container_logs
   name: az container logs
   summary: Examine the logs for a container in a container group.
@@ -337,7 +337,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_container_show
   name: az container show
   summary: Get the details of a container group.
@@ -358,7 +358,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_container_attach
   name: az container attach
@@ -397,10 +397,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
 updated_at: 6/28/2018 6:01:13 PM
 ms.date: 06/28/2018
 description: Manage Azure Container Instances.

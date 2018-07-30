@@ -49,7 +49,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_batchai_cluster_create
   name: az batchai cluster create
   summary: Create a cluster.
@@ -177,7 +177,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_batchai_cluster_delete
   name: az batchai cluster delete
   summary: Delete a cluster.
@@ -218,7 +218,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_batchai_cluster_list
   name: az batchai cluster list
   summary: List clusters.
@@ -243,7 +243,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_batchai_cluster_resize
   name: az batchai cluster resize
   summary: Resize a cluster.
@@ -279,7 +279,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_batchai_cluster_show
   name: az batchai cluster show
   summary: Show information about a cluster.
@@ -311,7 +311,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_batchai_cluster_auto_scale
   name: az batchai cluster auto-scale
@@ -359,10 +359,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-batchai/azure/cli/command_modules/batchai/_help.py
 updated_at: 6/28/2018 6:01:13 PM
 ms.date: 06/28/2018
 description: Commands to manage clusters.

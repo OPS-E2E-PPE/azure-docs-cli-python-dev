@@ -71,7 +71,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_ip_config_delete
   name: az network nic ip-config delete
   summary: Delete an IP configuration.
@@ -100,7 +100,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_ip_config_list
   name: az network nic ip-config list
   summary: List the IP configurations of a NIC.
@@ -125,7 +125,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_ip_config_show
   name: az network nic ip-config show
   summary: Show the details of an IP configuration.
@@ -154,7 +154,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_network_nic_ip_config_update
   name: az network nic ip-config update
   summary: Update an IP configuration.
@@ -234,7 +234,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_network_nic_ip_config_address_pool
   name: az network nic ip-config address-pool
@@ -282,10 +282,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 updated_at: 7/25/2018 10:19:48 PM
 ms.date: 07/25/2018
 description: Manage IP configurations of a network interface.

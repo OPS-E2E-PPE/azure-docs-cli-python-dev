@@ -58,7 +58,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_namespace_delete
   name: az eventhubs namespace delete
   summary: Deletes the Namespaces.
@@ -83,7 +83,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_namespace_exists
   name: az eventhubs namespace exists
   summary: Check for the availability of the given name for the Namespace.
@@ -104,7 +104,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_namespace_list
   name: az eventhubs namespace list
   summary: Lists the Event Hubs Namespaces.
@@ -127,7 +127,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_namespace_show
   name: az eventhubs namespace show
   summary: Shows the Event Hubs Namespace Details.
@@ -152,7 +152,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_namespace_update
   name: az eventhubs namespace update
   summary: Updates the Event Hubs Namespace.
@@ -206,7 +206,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_eventhubs_namespace_authorization_rule
   name: az eventhubs namespace authorization-rule
@@ -266,10 +266,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/c000a1da1e33cec29846ac54a78f69f332e44618/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/c000a1da1e33cec29846ac54a78f69f332e44618/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
 updated_at: 7/9/2018 3:51:32 PM
 ms.date: 07/09/2018
 description: Manage Azure Event Hubs namespace and Authorizationrule.

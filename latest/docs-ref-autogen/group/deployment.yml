@@ -70,7 +70,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_deployment_delete
   name: az group deployment delete
   summary: Deletes a deployment from the deployment history.
@@ -94,7 +94,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_deployment_export
   name: az group deployment export
   summary: Export the template used for a deployment.
@@ -115,7 +115,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_deployment_list
   name: az group deployment list
   summary: Get all the deployments for a resource group.
@@ -138,7 +138,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_deployment_show
   name: az group deployment show
   summary: Gets a deployment.
@@ -159,7 +159,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_deployment_validate
   name: az group deployment validate
   summary: Validate whether a template is syntactically correct.
@@ -193,7 +193,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_group_deployment_wait
   name: az group deployment wait
   summary: Place the CLI in a waiting state until a deployment condition is met.
@@ -237,7 +237,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_group_deployment_create
   name: az group deployment create
@@ -282,10 +282,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/83e31cb595b745b5dd883c55555d1984a7f83fd5/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/83e31cb595b745b5dd883c55555d1984a7f83fd5/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
 updated_at: 6/29/2018 9:03:12 PM
 ms.date: 06/29/2018
 description: Manage Azure Resource Manager deployments.

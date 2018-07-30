@@ -33,7 +33,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_backup_item_set_policy
   name: az backup item set-policy
   summary: Update the policy associated with this item.
@@ -66,7 +66,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_backup_item_show
   name: az backup item show
   summary: Show details of a particular backed up item.
@@ -95,7 +95,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_backup_item_list
   name: az backup item list
@@ -119,10 +119,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-backup/azure/cli/command_modules/backup/_help.py
 updated_at: 6/28/2018 6:01:13 PM
 ms.date: 06/28/2018
 description: An item which is already protected or backed up to an Azure Recovery services vault with an associated policy.

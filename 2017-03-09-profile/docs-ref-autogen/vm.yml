@@ -73,7 +73,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_create
   name: az vm create
   summary: Create an Azure Virtual Machine.
@@ -291,7 +291,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_deallocate
   name: az vm deallocate
   summary: Deallocate a VM.
@@ -329,7 +329,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_delete
   name: az vm delete
   summary: Delete a VM.
@@ -363,7 +363,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_generalize
   name: az vm generalize
   summary: Mark a VM as generalized, allowing it to be imaged for multiple deployments.
@@ -401,7 +401,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_get_instance_view
   name: az vm get-instance-view
   summary: Get instance information about a VM.
@@ -429,7 +429,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list
   name: az vm list
   summary: List details of Virtual Machines.
@@ -458,7 +458,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list_ip_addresses
   name: az vm list-ip-addresses
   summary: List IP addresses associated with a VM.
@@ -484,7 +484,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list_sizes
   name: az vm list-sizes
   summary: List available sizes for VMs.
@@ -505,7 +505,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list_usage
   name: az vm list-usage
   summary: List available usage resources for VMs.
@@ -526,7 +526,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_list_vm_resize_options
   name: az vm list-vm-resize-options
   summary: List available resizing options for VMs.
@@ -554,7 +554,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_open_port
   name: az vm open-port
   summary: Opens a VM to inbound traffic on specified ports.
@@ -599,7 +599,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_redeploy
   name: az vm redeploy
   summary: Redeploy an existing VM.
@@ -630,7 +630,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_resize
   name: az vm resize
   summary: Update a VM's size.
@@ -666,7 +666,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_restart
   name: az vm restart
   summary: Restart VMs.
@@ -697,7 +697,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_show
   name: az vm show
   summary: Get the details of a VM.
@@ -728,7 +728,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_start
   name: az vm start
   summary: Start a stopped VM.
@@ -759,7 +759,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_stop
   name: az vm stop
   summary: Stop a running VM.
@@ -790,7 +790,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_update
   name: az vm update
   summary: Update the properties of a VM.
@@ -849,7 +849,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vm_wait
   name: az vm wait
   summary: Place the CLI in a waiting state until a condition of the VM is met.
@@ -900,7 +900,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_vm_availability_set
   name: az vm availability-set
@@ -1082,12 +1082,6 @@ commands:
 - uid: az_vm_restart
   name: az vm restart
   summary: Restart VMs.
-- uid: az_vm_run_command
-  name: az vm run-command
-  summary: Manage run commands on a Virtual Machine.
-- uid: az_vm_run_command_invoke
-  name: az vm run-command invoke
-  summary: Run command on a vm.
 - uid: az_vm_secret
   name: az vm secret
   summary: Manage VM secrets.
@@ -1155,10 +1149,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/fc02be9f1d69f937eb13e756f89adbb4ca23d8c4/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/fc02be9f1d69f937eb13e756f89adbb4ca23d8c4/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 updated_at: 7/24/2018 2:55:54 AM
 ms.date: 07/24/2018
 description: Manage Linux or Windows virtual machines.

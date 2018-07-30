@@ -42,7 +42,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_georecovery_alias_delete
   name: az eventhubs georecovery-alias delete
   summary: Delete Geo-Disaster Recovery Configuration Alias.
@@ -71,7 +71,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_georecovery_alias_exists
   name: az eventhubs georecovery-alias exists
   summary: Check the availability of Geo-Disaster Recovery Configuration Alias Name.
@@ -100,7 +100,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_georecovery_alias_fail_over
   name: az eventhubs georecovery-alias fail-over
   summary: Invokes Geo-Disaster Recovery Configuration Alias to point to the secondary namespace.
@@ -129,7 +129,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_georecovery_alias_list
   name: az eventhubs georecovery-alias list
   summary: Gets all Alias(Disaster Recovery configurations).
@@ -150,7 +150,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_georecovery_alias_set
   name: az eventhubs georecovery-alias set
   summary: Sets a Geo-Disaster Recovery Configuration Alias for the give Namespace.
@@ -186,7 +186,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_eventhubs_georecovery_alias_show
   name: az eventhubs georecovery-alias show
   summary: Shows properties of Geo-Disaster Recovery Configuration Alias for Primay or Secondary Namespace.
@@ -218,7 +218,7 @@ items:
     remote:
       branch: dev
       path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-      repo: https://github.com/daxianji007/azure-cli.git
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_eventhubs_georecovery_alias_authorization_rule
   name: az eventhubs georecovery-alias authorization-rule
@@ -269,10 +269,10 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
+doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/c000a1da1e33cec29846ac54a78f69f332e44618/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/c000a1da1e33cec29846ac54a78f69f332e44618/src/command_modules/azure-cli-eventhubs/azure/cli/command_modules/eventhubs/_help.py
 updated_at: 7/9/2018 3:51:32 PM
 ms.date: 07/09/2018
 description: Manage Azure Event Hubs Geo Recovery configuration Alias.
