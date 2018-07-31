@@ -1430,6 +1430,20 @@
       - name: Update-Build
         uid: az_acr_build_task_update_build
         displayName: az acr build-task update-build
+    - name: Config
+      uid: az_acr_config
+      displayName: az acr config
+      items:
+      - name: Content-Trust
+        uid: az_acr_config_content_trust
+        displayName: az acr config content-trust
+        items:
+        - name: Show
+          uid: az_acr_config_content_trust_show
+          displayName: az acr config content-trust show
+        - name: Update
+          uid: az_acr_config_content_trust_update
+          displayName: az acr config content-trust update
     - name: Credentials
       uid: az_acr_credential
       displayName: az acr credential
