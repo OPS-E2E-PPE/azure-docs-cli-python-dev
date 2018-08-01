@@ -17,9 +17,9 @@ items:
   langs:
   - azurecli
   examples:
-  - summary: Enable identity on a VMSS with the 'Owner' role.
+  - summary: Enable system assigned identity on a VMSS with the 'Owner' role.
     syntax:
-      content: az vmss identity assign -g MyResourceGroup -n MyVmss --role Owner
+      content: az vmss identity assign -g MyResourceGroup -n MyVmss --role Owner --scope /subscriptions/db5eb68e-73e2-4fa8-b18a-0123456789999/resourceGroups/MyResourceGroup
   parameters:
   - isRequired: true
     name: --name -n
@@ -126,7 +126,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/fc02be9f1d69f937eb13e756f89adbb4ca23d8c4/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 7/24/2018 2:55:54 AM
-ms.date: 07/24/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/54d309789d3e35e4b9b3eedb63d38da787511b14/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 8/1/2018 11:06:45 PM
+ms.date: 08/01/2018
 description: Manage service identities of a VM scaleset.
