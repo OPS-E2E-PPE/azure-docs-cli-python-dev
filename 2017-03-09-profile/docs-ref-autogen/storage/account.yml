@@ -102,8 +102,7 @@ items:
     name: --name -n
     summary: The storage account name.
     description: ''
-  - isRequired: true
-    name: --resource-group -g
+  - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --yes -y
@@ -203,8 +202,7 @@ items:
     name: --name -n
     summary: The storage account name.
     description: ''
-  - isRequired: true
-    name: --resource-group -g
+  - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   source:
@@ -228,10 +226,6 @@ items:
     name: --name -n
     summary: The storage account name.
     description: ''
-  - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
   - name: --blob-endpoint
     summary: Custom endpoint for blobs.
     description: ''
@@ -250,6 +244,9 @@ items:
     description: ''
   - name: --queue-endpoint
     summary: Custom endpoint for queues.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --table-endpoint
     summary: Custom endpoint for tables.
