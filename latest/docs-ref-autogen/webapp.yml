@@ -77,6 +77,13 @@ items:
   - name: --deployment-source-url -u
     summary: Git repository URL to link with manual integration.
     description: ''
+  - name: --multicontainer-config-file
+    summary: Linux only. Config file for multicontainer apps. (local or remote).
+    description: ''
+  - name: --multicontainer-config-type
+    parameterValueGroup: COMPOSE, KUBE
+    summary: Linux only.
+    description: ''
   - name: --runtime -r
     summary: Canonicalized web runtime in the format of Framework|Version, e.g. "PHP|5.6". Use 'az webapp list-runtimes' for available list.
     description: ''
@@ -233,6 +240,7 @@ items:
     summary: Enables sending session affinity cookies.
     description: ''
   - name: --force-dns-registration
+    parameterValueGroup: false, true
     summary: If true, web app hostname is force registered with DNS.
     description: ''
   - name: --https-only
@@ -240,16 +248,25 @@ items:
     summary: Redirect all traffic made to an app using HTTP to HTTPS.
     description: ''
   - name: --skip-custom-domain-verification
+    parameterValueGroup: false, true
     summary: If true, custom (non *.azurewebsites.net) domains associated with web app are not verified.
     description: ''
   - name: --skip-dns-registration
-    summary: If true web app hostname is not registered with DNS on creation. This parameter is only used for app creation.
+    parameterValueGroup: false, true
+    summary: If true web app hostname is not registered with DNS on creation.
+    description: ''
+  - name: --slot -s
+    summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --ttl-in-seconds
+    parameterValueGroup: false, true
     summary: Time to live in seconds for web app's default domain name.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --force-string
+    summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
@@ -440,13 +457,16 @@ commands:
   summary: Gets publishing user.
 - uid: az_webapp_identity
   name: az webapp identity
-  summary: (PREVIEW) manage webapp's managed service identity.
+  summary: Manage webapp's managed service identity.
 - uid: az_webapp_identity_assign
   name: az webapp identity assign
-  summary: (PREVIEW) assign managed service identity to the webapp.
+  summary: Assign or disable managed service identity to the webapp.
+- uid: az_webapp_identity_remove
+  name: az webapp identity remove
+  summary: Disable webapp's managed service identity.
 - uid: az_webapp_identity_show
   name: az webapp identity show
-  summary: (PREVIEW) display webapp's managed service identity.
+  summary: Display webapp's managed service identity.
 - uid: az_webapp_list
   name: az webapp list
   summary: List web apps.
@@ -508,3 +528,4 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
+description: Manage web apps.

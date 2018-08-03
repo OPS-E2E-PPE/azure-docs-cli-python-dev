@@ -28,7 +28,7 @@ items:
       repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_account_get_access_token
   name: az account get-access-token
-  summary: Get a token for utlilities to access Azure.
+  summary: Get a token for utilities to access Azure.
   description: The token will be valid for at least 5 minutes with the maximum at 60 minutes. If the subscription argument isn't specified, the current account is used.
   langs:
   - azurecli
@@ -119,7 +119,7 @@ commands:
   summary: Clear all subscriptions from the CLI's local cache.
 - uid: az_account_get_access_token
   name: az account get-access-token
-  summary: Get a token for utlilities to access Azure.
+  summary: Get a token for utilities to access Azure.
 - uid: az_account_list
   name: az account list
   summary: Get a list of subscriptions for the logged in account.
@@ -144,6 +144,33 @@ commands:
 - uid: az_account_lock_update
   name: az account lock update
   summary: Update a subscription lock.
+- uid: az_account_management_group
+  name: az account management-group
+  summary: Manage Azure Management Groups.
+- uid: az_account_management_group_create
+  name: az account management-group create
+  summary: Create a new management group.
+- uid: az_account_management_group_delete
+  name: az account management-group delete
+  summary: Delete an existing management group.
+- uid: az_account_management_group_list
+  name: az account management-group list
+  summary: List all management groups.
+- uid: az_account_management_group_show
+  name: az account management-group show
+  summary: Get a specific management group.
+- uid: az_account_management_group_subscription
+  name: az account management-group subscription
+  summary: Subscription operations for Management Groups.
+- uid: az_account_management_group_subscription_add
+  name: az account management-group subscription add
+  summary: Add a subscription to a management group.
+- uid: az_account_management_group_subscription_remove
+  name: az account management-group subscription remove
+  summary: Remove an existing subscription from a management group.
+- uid: az_account_management_group_update
+  name: az account management-group update
+  summary: Update an existing management group.
 - uid: az_account_set
   name: az account set
   summary: Set a subscription to be the current active subscription.
@@ -166,6 +193,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/7cfdc9d5bd3dc6657b857f201ec3c7df8d2ac2c0/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-updated_at: 3/8/2018 4:05:22 AM
-ms.date: 3/8/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+updated_at: 6/28/2018 6:01:13 PM
+ms.date: 06/28/2018
+description: Manage Azure subscription information.

@@ -31,14 +31,14 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --authentication-method
-    summary: ''
+    summary: Method used to authenticate with the generated client.
     description: ''
   - name: --client-root-certificates
     summary: Space-separated list of client root certificate public certificate data in Base-64 format. Optional for external Radius-based auth with EAPTLS.
     description: ''
   - name: --processor-architecture
     parameterValueGroup: Amd64, X86
-    summary: ''
+    summary: Processor architecture of the target system.
     description: ''
   - name: --radius-server-auth-certificate
     summary: Public certificate data for the Radius server auth certificate in Base-64 format. Required only if external Radius auth has been configured with EAPTLS auth.
@@ -69,6 +69,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/2e400f4de9b356c7f0813b412ae4b86cc054f7b0/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 3/29/2018 8:49:05 PM
-ms.date: 3/29/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 7/25/2018 10:19:48 PM
+ms.date: 07/25/2018
+description: Download a VPN client configuration required to connect to Azure via point-to-site.

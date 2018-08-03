@@ -40,6 +40,9 @@ items:
     parameterValueGroup: None, ReadOnly, ReadWrite
     summary: Disk caching policy.
     description: ''
+  - name: --enable-write-accelerator
+    summary: Enable write accelerator.
+    description: ''
   - name: --lun
     summary: 0-based logical unit number (LUN). Max value depends on the Virtual Machine size.
     description: ''
@@ -50,7 +53,7 @@ items:
     summary: Size in GB.
     description: ''
   - name: --sku
-    parameterValueGroup: Premium_LRS, Standard_LRS
+    parameterValueGroup: Premium_LRS, StandardSSD_LRS, Standard_LRS
     summary: Underlying storage SKU.
     description: ''
   source:
@@ -61,7 +64,7 @@ items:
       repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_vm_disk_detach
   name: az vm disk detach
-  summary: Detatch a managed disk from a VM.
+  summary: Detach a managed disk from a VM.
   description: ''
   langs:
   - azurecli
@@ -94,7 +97,7 @@ commands:
   summary: Attach a managed persistent disk to a VM.
 - uid: az_vm_disk_detach
   name: az vm disk detach
-  summary: Detatch a managed disk from a VM.
+  summary: Detach a managed disk from a VM.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -111,6 +114,11 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/baa2e895d16ad1977277c92d81944ab6c16a5cd2/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 3/29/2018 11:07:49 PM
-ms.date: 3/29/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/fc02be9f1d69f937eb13e756f89adbb4ca23d8c4/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 7/24/2018 2:55:54 AM
+ms.date: 07/24/2018
+description: >-
+  Just like any other computer, virtual machines in Azure use disks as a place to store an operating system, applications, and data. All Azure virtual machines have at least two disks: An operating system disk, and a temporary disk. The operating system disk is created from an image, and both the operating system disk and the image are actually virtual hard disks (VHDs) stored in an Azure storage account. Virtual machines also can have one or more data disks, that are also stored as VHDs.
+                              Operating System Disk Every virtual machine has one attached operating system disk. It's registered as a SATA drive and is labeled /dev/sda by default. This disk has a maximum capacity of 1023 gigabytes (GB).
+                              Temporary disk The temporary disk is automatically created for you. On Linux virtual machines, the disk is typically /dev/sdb and is formatted and mounted to /mnt/resource by the Azure Linux Agent. The size of the temporary disk varies, based on the size of the virtual machine.
+                              Data disk A data disk is a VHD that's attached to a virtual machine to store application data, or other data you need to keep. Data disks are registered as SCSI drives and are labeled by the creator. Each data disk has a maximum capacity of 1023 GB. The size of the virtual machine determines how many data disks can be attached and the type of storage that can be used to host the disks.

@@ -10,6 +10,8 @@ items:
   - az_aks_browse
   - az_aks_create
   - az_aks_delete
+  - az_aks_disable_addons
+  - az_aks_enable_addons
   - az_aks_get_credentials
   - az_aks_get_upgrades
   - az_aks_get_versions
@@ -17,10 +19,12 @@ items:
   - az_aks_install_connector
   - az_aks_list
   - az_aks_remove_connector
+  - az_aks_remove_dev_spaces
   - az_aks_scale
   - az_aks_show
   - az_aks_upgrade
   - az_aks_upgrade_connector
+  - az_aks_use_dev_spaces
   - az_aks_wait
 - uid: az_aks_browse
   name: az aks browse
@@ -40,6 +44,10 @@ items:
   - name: --disable-browser
     summary: Don't launch a web browser after establishing port-forwarding.
     description: Add this argument when launching a web browser manually, or for automated testing.
+  - name: --listen-port
+    defaultValue: "8001"
+    summary: The listening port for the dashboard.
+    description: ''
 - uid: az_aks_create
   name: az aks create
   summary: Create a new managed Kubernetes cluster.
@@ -65,6 +73,18 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --aad-client-app-id
+    summary: (PREVIEW) The ID of an Azure Active Directory client application of type "Native". This application is for user login via kubectl.
+    description: ''
+  - name: --aad-server-app-id
+    summary: (PREVIEW) The ID of an Azure Active Directory server application of type "Web app/API". This application represents the managed cluster's apiserver (Server application).
+    description: ''
+  - name: --aad-server-app-secret
+    summary: (PREVIEW) The secret of an Azure Active Directory server application.
+    description: ''
+  - name: --aad-tenant-id
+    summary: (PREVIEW) The ID of an Azure Active Directory tenant.
+    description: ''
   - name: --admin-username -u
     defaultValue: azureuser
     summary: User account to create on node VMs for SSH access.
@@ -72,8 +92,26 @@ items:
   - name: --client-secret
     summary: Secret associated with the service principal. This argument is required if `--service-principal` is specified.
     description: ''
+  - name: --disable-rbac
+    summary: Disable Kubernetes Role-Based Access Control.
+    description: ''
   - name: --dns-name-prefix -p
-    summary: Prefix for hostnames that are created. If not specified, gemerate a hostname using the managed cluster and resource group names.
+    summary: Prefix for hostnames that are created. If not specified, generate a hostname using the managed cluster and resource group names.
+    description: ''
+  - name: --dns-service-ip
+    summary: An IP address assigned to the Kubernetes DNS service.
+    description: This address must be within the Kubernetes service address range specified by "--service-cidr". For example, 10.0.0.10.
+  - name: --docker-bridge-address
+    summary: An IP address and netmask assigned to the Docker bridge.
+    description: This address must not be in any Subnet IP ranges, or the Kubernetes service address range. For example, 172.17.0.1/16.
+  - name: --enable-addons -a
+    summary: Enable the Kubernetes addons in a comma-separated list.
+    description: >-
+      These addons are available:
+                                              http_application_routing - configure ingress with automatic public DNS name creation.
+                                              monitoring - turn on Log Analytics monitoring. Uses the Log Analytics Default Workspace if it exists, else creates one. Specify "--workspace-resource-id" to use an existing workspace.
+  - name: --enable-rbac -r
+    summary: 'Enable Kubernetes Role-Based Access Control. Default: enabled.'
     description: ''
   - name: --generate-ssh-keys
     summary: Generate SSH public and private key files if missing.
@@ -85,6 +123,15 @@ items:
   - name: --location -l
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
     description: ''
+  - name: --max-pods -m
+    summary: The maximum number of pods deployable to a node.
+    description: If not specified, defaults to 110, or 30 for advanced networking configurations.
+  - name: --network-plugin
+    summary: The Kubernetes network plugin to use.
+    description: Specify "azure" for advanced networking configurations. Defaults to "kubenet".
+  - name: --no-ssh-key -x
+    summary: Do not use or create a local SSH key.
+    description: To access nodes after creating a cluster with this option, use the Azure Portal.
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
@@ -93,12 +140,18 @@ items:
     summary: Number of nodes in the Kubernetes node pool. After creating a cluster, you can change the size of its node pool with `az aks scale`.
     description: ''
   - name: --node-osdisk-size
-    summary: Size in GB of the OS disk for each node in the node pool.
+    summary: Size in GB of the OS disk for each node in the node pool. Minimum 30 GB.
     description: ''
   - name: --node-vm-size -s
     defaultValue: Standard_DS1_v2
     summary: Size of Virtual Machines to create as Kubernetes nodes.
     description: ''
+  - name: --pod-cidr
+    summary: A CIDR notation IP range from which to assign pod IPs when kubenet is used.
+    description: This range must not overlap with any Subnet IP ranges. For example, 172.244.0.0/16.
+  - name: --service-cidr
+    summary: A CIDR notation IP range from which to assign service cluster IPs.
+    description: This range must not overlap with any Subnet IP ranges. For example, 10.0.0.0/16.
   - name: --service-principal
     summary: Service principal used for authentication to Azure APIs.
     description: If not specified, a new service principal is created and cached at $HOME.azureaksServicePrincipal.json to be used by subsequent `az aks` commands.
@@ -108,6 +161,12 @@ items:
     description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --vnet-subnet-id
+    summary: The ID of a subnet in an existing VNet into which to deploy the cluster.
+    description: ''
+  - name: --workspace-resource-id
+    summary: The resource ID of an existing Log Analytics Workspace to use for storing monitoring data. If not specified, uses the default Log Analytics Workspace if it exists, otherwise creates one.
     description: ''
 - uid: az_aks_delete
   name: az aks delete
@@ -129,6 +188,56 @@ items:
     description: ''
   - name: --yes -y
     summary: Do not prompt for confirmation.
+    description: ''
+- uid: az_aks_disable_addons
+  name: az aks disable-addons
+  summary: Disable Kubernetes addons.
+  description: ''
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --addons -a
+    summary: Disable the Kubernetes addons in a comma-separated list.
+    description: ''
+  - isRequired: true
+    name: --name -n
+    summary: Name of the managed cluster.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
+- uid: az_aks_enable_addons
+  name: az aks enable-addons
+  summary: Enable Kubernetes addons.
+  description: >-
+    These addons are available:
+                                    http_application_routing - configure ingress with automatic public DNS name creation.
+                                    monitoring - turn on Log Analytics monitoring. Requires "--workspace-resource-id".
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --addons -a
+    summary: Enable the Kubernetes addons in a comma-separated list.
+    description: ''
+  - isRequired: true
+    name: --name -n
+    summary: Name of the managed cluster.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --workspace-resource-id
+    summary: The resource ID of an existing Log Analytics Workspace to use for storing monitoring data.
     description: ''
 - uid: az_aks_get_credentials
   name: az aks get-credentials
@@ -195,16 +304,14 @@ items:
     description: ''
 - uid: az_aks_install_connector
   name: az aks install-connector
-  summary: Install the ACI Connector on a managed Kubernetes cluster.
+  summary: (PREVIEW) Install the ACI Connector on a managed Kubernetes cluster.
   description: ''
   langs:
   - azurecli
   examples:
   - summary: Install the ACI Connector for Linux to a managed Kubernetes cluster.
     syntax:
-      content: >-
-        az aks install-connector --name MyManagedCluster --resource-group MyResourceGroup \
-                                  --connector-name aci-connector
+      content: az aks install-connector --name MyManagedCluster --resource-group MyResourceGroup
   - summary: Install the ACI Connector for Windows to a managed Kubernetes cluster.
     syntax:
       content: >-
@@ -228,10 +335,6 @@ items:
                                   --connector-name aci-connector --chart-url <CustomURL> --image-tag <VirtualKubeletImageTag>
   parameters:
   - isRequired: true
-    name: --connector-name
-    summary: Name of the ACI Connector.
-    description: ''
-  - isRequired: true
     name: --name -n
     summary: Name of the managed cluster.
     description: ''
@@ -243,17 +346,21 @@ items:
     summary: The resource group to create the ACI container groups. Use the MC_* resource group if it is not specified.
     description: ''
   - name: --chart-url
-    defaultValue: <a href="https://github.com/virtual-kubelet/virtual-kubelet/raw/master/charts/virtual-kubelet-for-aks-0.1.3.tgz">https://github.com/virtual-kubelet/virtual-kubelet/raw/master/charts/virtual-kubelet-for-aks-0.1.3.tgz</a>
+    defaultValue: <a href="https://github.com/virtual-kubelet/virtual-kubelet/raw/master/charts/virtual-kubelet-for-aks-latest.tgz">https://github.com/virtual-kubelet/virtual-kubelet/raw/master/charts/virtual-kubelet-for-aks-latest.tgz</a>
     summary: URL of a Helm chart that installs ACI Connector.
     description: ''
   - name: --client-secret
     summary: Secret associated with the service principal. This argument is required if `--service-principal` is specified.
     description: ''
+  - name: --connector-name
+    defaultValue: aci-connector
+    summary: Name of the ACI Connector.
+    description: ''
   - name: --image-tag
     summary: The image tag of the virtual kubelet. Use 'latest' if it is not specified.
     description: ''
   - name: --location -l
-    summary: The location to create the ACI container groups.
+    summary: The location to create the ACI container groups. Use the location of the MC_* resource group if it is not specified.
     description: ''
   - name: --os-type
     defaultValue: Linux
@@ -275,7 +382,7 @@ items:
     description: ''
 - uid: az_aks_remove_connector
   name: az aks remove-connector
-  summary: Remove the ACI Connector from a managed Kubernetes cluster.
+  summary: (PREVIEW) Remove the ACI Connector from a managed Kubernetes cluster.
   description: ''
   langs:
   - azurecli
@@ -287,9 +394,42 @@ items:
                                   --connector-name MyConnector --graceful
   parameters:
   - isRequired: true
-    name: --connector-name
+    name: --name -n
+    summary: Name of the managed cluster.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --connector-name
+    defaultValue: aci-connector
     summary: Name of the ACI Connector.
     description: ''
+  - name: --graceful
+    summary: Use a "cordon and drain" strategy to evict pods safely before removing the ACI node.
+    description: ''
+  - name: --location -l
+    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    description: ''
+  - name: --os-type
+    defaultValue: Linux
+    parameterValueGroup: Both, Linux, Windows
+    summary: Remove support for deploying ACIs of this operating system type.
+    description: ''
+- uid: az_aks_remove_dev_spaces
+  name: az aks remove-dev-spaces
+  summary: (PREVIEW) Remove Azure Dev Spaces from a managed Kubernetes cluster.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Remove Azure Dev Spaces from a managed Kubernetes cluster.
+    syntax:
+      content: az aks remove-dev-spaces -g my-aks-group -n my-aks
+  - summary: Remove Azure Dev Spaces from a managed Kubernetes cluster without prompting.
+    syntax:
+      content: az aks remove-dev-spaces -g my-aks-group -n my-aks --yes
+  parameters:
   - isRequired: true
     name: --name -n
     summary: Name of the managed cluster.
@@ -298,13 +438,8 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - name: --graceful
-    summary: Use a "cordon and drain" strategy to evict pods safely before removing the ACI node.
-    description: ''
-  - name: --os-type
-    defaultValue: Linux
-    parameterValueGroup: Both, Linux, Windows
-    summary: Remove support for deploying ACIs of this operating system type.
+  - name: --yes -y
+    summary: Do not prompt for confirmation.
     description: ''
 - uid: az_aks_scale
   name: az aks scale
@@ -371,7 +506,7 @@ items:
     description: ''
 - uid: az_aks_upgrade_connector
   name: az aks upgrade-connector
-  summary: Upgrade the ACI Connector on a managed Kubernetes cluster.
+  summary: (PREVIEW) Upgrade the ACI Connector on a managed Kubernetes cluster.
   description: ''
   langs:
   - azurecli
@@ -404,10 +539,6 @@ items:
                                   --connector-name aci-connector --chart-url <CustomURL> --image-tag <VirtualKubeletImageTag>
   parameters:
   - isRequired: true
-    name: --connector-name
-    summary: Name of the ACI Connector.
-    description: ''
-  - isRequired: true
     name: --name -n
     summary: Name of the managed cluster.
     description: ''
@@ -419,17 +550,21 @@ items:
     summary: The resource group to create the ACI container groups. Use the MC_* resource group if it is not specified.
     description: ''
   - name: --chart-url
-    defaultValue: <a href="https://github.com/virtual-kubelet/virtual-kubelet/raw/master/charts/virtual-kubelet-for-aks-0.1.3.tgz">https://github.com/virtual-kubelet/virtual-kubelet/raw/master/charts/virtual-kubelet-for-aks-0.1.3.tgz</a>
+    defaultValue: <a href="https://github.com/virtual-kubelet/virtual-kubelet/raw/master/charts/virtual-kubelet-for-aks-latest.tgz">https://github.com/virtual-kubelet/virtual-kubelet/raw/master/charts/virtual-kubelet-for-aks-latest.tgz</a>
     summary: URL of a Helm chart that installs ACI Connector.
     description: ''
   - name: --client-secret
     summary: Secret associated with the service principal. This argument is required if `--service-principal` is specified.
     description: ''
+  - name: --connector-name
+    defaultValue: aci-connector
+    summary: Name of the ACI Connector.
+    description: ''
   - name: --image-tag
     summary: The image tag of the virtual kubelet. Use 'latest' if it is not specified.
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: The location to create the ACI container groups. Use the location of the MC_* resource group if it is not specified.
     description: ''
   - name: --os-type
     defaultValue: Linux
@@ -439,6 +574,40 @@ items:
   - name: --service-principal
     summary: Service principal used for authentication to Azure APIs.
     description: If not specified, use the AKS service principal defined in the file /etc/kubernetes/azure.json on the node which runs the virtual kubelet pod.
+- uid: az_aks_use_dev_spaces
+  name: az aks use-dev-spaces
+  summary: (PREVIEW) Use Azure Dev Spaces with a managed Kubernetes cluster.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Use Azure Dev Spaces with a managed Kubernetes cluster, interactively selecting a dev space.
+    syntax:
+      content: az aks use-dev-spaces -g my-aks-group -n my-aks
+  - summary: Use Azure Dev Spaces with a managed Kubernetes cluster, updating to the latest Azure Dev Spaces         client components and selecting a new or existing dev space 'my-space'.
+    syntax:
+      content: az aks use-dev-spaces -g my-aks-group -n my-aks --update --space my-space
+  - summary: Use Azure Dev Spaces with a managed Kubernetes cluster, selecting a new or existing dev space         'develop/my-space' without prompting for confirmation.
+    syntax:
+      content: az aks use-dev-spaces -g my-aks-group -n my-aks -s develop/my-space -y
+  parameters:
+  - isRequired: true
+    name: --name -n
+    summary: Name of the managed cluster.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --space -s
+    summary: Name of the new or existing dev space to select. Defaults to an interactive selection experience.
+    description: ''
+  - name: --update
+    summary: Update to the latest Azure Dev Spaces client components.
+    description: ''
+  - name: --yes -y
+    summary: Do not prompt for confirmation. Requires --space.
+    description: ''
 - uid: az_aks_wait
   name: az aks wait
   summary: Wait for a managed Kubernetes cluster to reach a desired state.
@@ -491,6 +660,12 @@ commands:
 - uid: az_aks_delete
   name: az aks delete
   summary: Delete a managed Kubernetes cluster.
+- uid: az_aks_disable_addons
+  name: az aks disable-addons
+  summary: Disable Kubernetes addons.
+- uid: az_aks_enable_addons
+  name: az aks enable-addons
+  summary: Enable Kubernetes addons.
 - uid: az_aks_get_credentials
   name: az aks get-credentials
   summary: Get access credentials for a managed Kubernetes cluster.
@@ -505,13 +680,16 @@ commands:
   summary: Download and install kubectl, the Kubernetes command-line tool.
 - uid: az_aks_install_connector
   name: az aks install-connector
-  summary: Install the ACI Connector on a managed Kubernetes cluster.
+  summary: (PREVIEW) Install the ACI Connector on a managed Kubernetes cluster.
 - uid: az_aks_list
   name: az aks list
   summary: List managed Kubernetes clusters.
 - uid: az_aks_remove_connector
   name: az aks remove-connector
-  summary: Remove the ACI Connector from a managed Kubernetes cluster.
+  summary: (PREVIEW) Remove the ACI Connector from a managed Kubernetes cluster.
+- uid: az_aks_remove_dev_spaces
+  name: az aks remove-dev-spaces
+  summary: (PREVIEW) Remove Azure Dev Spaces from a managed Kubernetes cluster.
 - uid: az_aks_scale
   name: az aks scale
   summary: Scale the node pool in a managed Kubernetes cluster.
@@ -523,7 +701,10 @@ commands:
   summary: Upgrade a managed Kubernetes cluster to a newer version.
 - uid: az_aks_upgrade_connector
   name: az aks upgrade-connector
-  summary: Upgrade the ACI Connector on a managed Kubernetes cluster.
+  summary: (PREVIEW) Upgrade the ACI Connector on a managed Kubernetes cluster.
+- uid: az_aks_use_dev_spaces
+  name: az aks use-dev-spaces
+  summary: (PREVIEW) Use Azure Dev Spaces with a managed Kubernetes cluster.
 - uid: az_aks_wait
   name: az aks wait
   summary: Wait for a managed Kubernetes cluster to reach a desired state.
@@ -540,3 +721,4 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
+description: Manage Azure Kubernetes Services.

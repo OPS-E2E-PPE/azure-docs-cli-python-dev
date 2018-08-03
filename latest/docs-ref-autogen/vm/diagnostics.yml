@@ -27,7 +27,7 @@ items:
       content: az vm diagnostics get-default-config --is-windows-os
   parameters:
   - name: --is-windows-os
-    summary: ''
+    summary: For Windows VMs.
     description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
@@ -44,7 +44,7 @@ items:
   examples:
   - summary: Set up default diagnostics on a Linux VM for Azure Portal VM metrics graphs and syslog collection.
     syntax:
-      content: "# Set the following 3 parameters first.\n                        my_resource_group=<Resource group name containing your Linux VM and the storage account>\n                        my_linux_vm=<Your Azure Linux VM name>\n                        my_diagnostic_storage_account=<Your Azure storage account for storing VM diagnostic data>\n                        \n                        my_vm_resource_id=$(az vm show -g $my_resource_group -n $my_linux_vm --query \"id\" -o tsv)\n                        \n                        default_config=$(az vm diagnostics get-default-config \\\n                            | sed \"s#__DIAGNOSTIC_STORAGE_ACCOUNT__#$my_diagnostic_storage_account#g\" \\\n                            | sed \"s#__VM_OR_VMSS_RESOURCE_ID__#$my_vm_resource_id#g\")\n                        \n                        storage_sastoken=$(az storage account generate-sas \\\n                            --account-name $my_diagnostic_storage_account --expiry 9999-12-31T23:59Z \\\n                            --permissions wlacu --resource-types co --services bt -o tsv)\n                        \n                        protected_settings=\"{'storageAccountName': '{my_diagnostic_storage_account}', \\\n                            'storageAccountSasToken': '{storage_sastoken}'}\"\n                        \n                        az vm diagnostics set --settings \"{default_config}\" \\\n                            --protected-settings \"{protected_settings}\" \\\n                            --resource-group $my_resource_group --vm-name $my_linux_vm"
+      content: "# Set the following 3 parameters first.\n                        my_resource_group=<Resource group name containing your Linux VM and the storage account>\n                        my_linux_vm=<Your Azure Linux VM name>\n                        my_diagnostic_storage_account=<Your Azure storage account for storing VM diagnostic data>\n                        \n                        my_vm_resource_id=$(az vm show -g $my_resource_group -n $my_linux_vm --query \"id\" -o tsv)\n                        \n                        default_config=$(az vm diagnostics get-default-config \\\n                            | sed \"s#__DIAGNOSTIC_STORAGE_ACCOUNT__#$my_diagnostic_storage_account#g\" \\\n                            | sed \"s#__VM_OR_VMSS_RESOURCE_ID__#$my_vm_resource_id#g\")\n                        \n                        storage_sastoken=$(az storage account generate-sas \\\n                            --account-name $my_diagnostic_storage_account --expiry 2037-12-31T23:59:00Z \\\n                            --permissions wlacu --resource-types co --services bt -o tsv)\n                        \n                        protected_settings=\"{'storageAccountName': '{my_diagnostic_storage_account}', \\\n                            'storageAccountSasToken': '{storage_sastoken}'}\"\n                        \n                        az vm diagnostics set --settings \"{default_config}\" \\\n                            --protected-settings \"{protected_settings}\" \\\n                            --resource-group $my_resource_group --vm-name $my_linux_vm"
   parameters:
   - isRequired: true
     name: --resource-group -g
@@ -96,6 +96,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/baa2e895d16ad1977277c92d81944ab6c16a5cd2/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 3/29/2018 11:07:49 PM
-ms.date: 3/29/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/fc02be9f1d69f937eb13e756f89adbb4ca23d8c4/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 7/24/2018 2:55:54 AM
+ms.date: 07/24/2018
+description: Configure the Azure Virtual Machine diagnostics extension.

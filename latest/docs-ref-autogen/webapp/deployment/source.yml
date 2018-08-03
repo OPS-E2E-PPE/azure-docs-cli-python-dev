@@ -112,7 +112,7 @@ items:
 - uid: az_webapp_deployment_source_config_zip
   name: az webapp deployment source config-zip
   summary: Perform deployment using the kudu zip push deployment for a webapp.
-  description: By default Kudu assumes that zip deployments do not require any build-related actions like npm install or dotnet publish. This can be overridden by including a .deployment file on your zip file with the following content '[config] SCM_DO_BUILD_DURING_DEPLOYMENT = true', to enable Kudu detection logic and build script generation process. See <a href="https://github.com/projectkudu/kudu/wiki/Configurable-settings#enabledisable-build-actions-preview">https://github.com/projectkudu/kudu/wiki/Configurable-settings#enabledisable-build-actions-preview</a>. Alternately the setting can be enabled using the az webapp config appsettings set command.
+  description: By default Kudu assumes that zip deployments do not require any build-related actions like npm install or dotnet publish. This can be overridden by including a .deployment file in your zip file with the following content '[config] SCM_DO_BUILD_DURING_DEPLOYMENT = true', to enable Kudu detection logic and build script generation process. See <a href="https://github.com/projectkudu/kudu/wiki/Configurable-settings#enabledisable-build-actions-preview">https://github.com/projectkudu/kudu/wiki/Configurable-settings#enabledisable-build-actions-preview</a>. Alternately the setting can be enabled using the az webapp config appsettings set command.
   langs:
   - azurecli
   examples:
@@ -133,7 +133,7 @@ items:
     description: ''
   - isRequired: true
     name: --src
-    summary: ''
+    summary: A zip file path for deployment.
     description: ''
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
@@ -237,3 +237,4 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
+description: Manage web app deployment via source control.

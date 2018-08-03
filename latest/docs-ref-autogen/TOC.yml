@@ -62,6 +62,12 @@
     - name: Delete
       uid: az_aks_delete
       displayName: az aks delete
+    - name: Disable-Addons
+      uid: az_aks_disable_addons
+      displayName: az aks disable-addons
+    - name: Enable-Addons
+      uid: az_aks_enable_addons
+      displayName: az aks enable-addons
     - name: Get-Credentials
       uid: az_aks_get_credentials
       displayName: az aks get-credentials
@@ -83,6 +89,9 @@
     - name: Remove-Connector
       uid: az_aks_remove_connector
       displayName: az aks remove-connector
+    - name: Remove-Dev-Spaces
+      uid: az_aks_remove_dev_spaces
+      displayName: az aks remove-dev-spaces
     - name: Scale
       uid: az_aks_scale
       displayName: az aks scale
@@ -95,6 +104,9 @@
     - name: Upgrade-Connector
       uid: az_aks_upgrade_connector
       displayName: az aks upgrade-connector
+    - name: Use-Dev-Spaces
+      uid: az_aks_use_dev_spaces
+      displayName: az aks use-dev-spaces
     - name: Wait
       uid: az_aks_wait
       displayName: az aks wait
@@ -198,9 +210,6 @@
       - name: List
         uid: az_ad_sp_list
         displayName: az ad sp list
-      - name: Reset-Credentials
-        uid: az_ad_sp_reset_credentials
-        displayName: az ad sp reset-credentials
       - name: Show
         uid: az_ad_sp_show
         displayName: az ad sp show
@@ -233,6 +242,171 @@
       - name: Show
         uid: az_ad_user_show
         displayName: az ad user show
+  - name: Azure Media Services
+    uid: az_ams
+    displayName: az ams
+    items:
+    - name: Account
+      uid: az_ams_account
+      displayName: az ams account
+      items:
+      - name: Create
+        uid: az_ams_account_create
+        displayName: az ams account create
+      - name: Delete
+        uid: az_ams_account_delete
+        displayName: az ams account delete
+      - name: List
+        uid: az_ams_account_list
+        displayName: az ams account list
+      - name: Show
+        uid: az_ams_account_show
+        displayName: az ams account show
+      - name: Update
+        uid: az_ams_account_update
+        displayName: az ams account update
+      - name: Sp
+        uid: az_ams_account_sp
+        displayName: az ams account sp
+        items:
+        - name: Create
+          uid: az_ams_account_sp_create
+          displayName: az ams account sp create
+        - name: Reset-Credentials
+          uid: az_ams_account_sp_reset_credentials
+          displayName: az ams account sp reset-credentials
+      - name: Storage
+        uid: az_ams_account_storage
+        displayName: az ams account storage
+        items:
+        - name: Add
+          uid: az_ams_account_storage_add
+          displayName: az ams account storage add
+        - name: Remove
+          uid: az_ams_account_storage_remove
+          displayName: az ams account storage remove
+    - name: Asset
+      uid: az_ams_asset
+      displayName: az ams asset
+      items:
+      - name: Create
+        uid: az_ams_asset_create
+        displayName: az ams asset create
+      - name: Delete
+        uid: az_ams_asset_delete
+        displayName: az ams asset delete
+      - name: Get-Sas-Urls
+        uid: az_ams_asset_get_sas_urls
+        displayName: az ams asset get-sas-urls
+      - name: List
+        uid: az_ams_asset_list
+        displayName: az ams asset list
+      - name: Show
+        uid: az_ams_asset_show
+        displayName: az ams asset show
+      - name: Update
+        uid: az_ams_asset_update
+        displayName: az ams asset update
+    - name: Job
+      uid: az_ams_job
+      displayName: az ams job
+      items:
+      - name: Cancel
+        uid: az_ams_job_cancel
+        displayName: az ams job cancel
+      - name: Delete
+        uid: az_ams_job_delete
+        displayName: az ams job delete
+      - name: List
+        uid: az_ams_job_list
+        displayName: az ams job list
+      - name: Show
+        uid: az_ams_job_show
+        displayName: az ams job show
+      - name: Start
+        uid: az_ams_job_start
+        displayName: az ams job start
+    - name: Streaming
+      uid: az_ams_streaming
+      displayName: az ams streaming
+      items:
+      - name: Endpoint
+        uid: az_ams_streaming_endpoint
+        displayName: az ams streaming endpoint
+        items:
+        - name: List
+          uid: az_ams_streaming_endpoint_list
+          displayName: az ams streaming endpoint list
+        - name: Start
+          uid: az_ams_streaming_endpoint_start
+          displayName: az ams streaming endpoint start
+        - name: Stop
+          uid: az_ams_streaming_endpoint_stop
+          displayName: az ams streaming endpoint stop
+      - name: Locator
+        uid: az_ams_streaming_locator
+        displayName: az ams streaming locator
+        items:
+        - name: Create
+          uid: az_ams_streaming_locator_create
+          displayName: az ams streaming locator create
+        - name: Delete
+          uid: az_ams_streaming_locator_delete
+          displayName: az ams streaming locator delete
+        - name: Get-Paths
+          uid: az_ams_streaming_locator_get_paths
+          displayName: az ams streaming locator get-paths
+        - name: List
+          uid: az_ams_streaming_locator_list
+          displayName: az ams streaming locator list
+        - name: Show
+          uid: az_ams_streaming_locator_show
+          displayName: az ams streaming locator show
+      - name: Policy
+        uid: az_ams_streaming_policy
+        displayName: az ams streaming policy
+        items:
+        - name: Create
+          uid: az_ams_streaming_policy_create
+          displayName: az ams streaming policy create
+        - name: Delete
+          uid: az_ams_streaming_policy_delete
+          displayName: az ams streaming policy delete
+        - name: List
+          uid: az_ams_streaming_policy_list
+          displayName: az ams streaming policy list
+        - name: Show
+          uid: az_ams_streaming_policy_show
+          displayName: az ams streaming policy show
+    - name: Transform
+      uid: az_ams_transform
+      displayName: az ams transform
+      items:
+      - name: Create
+        uid: az_ams_transform_create
+        displayName: az ams transform create
+      - name: Delete
+        uid: az_ams_transform_delete
+        displayName: az ams transform delete
+      - name: List
+        uid: az_ams_transform_list
+        displayName: az ams transform list
+      - name: Show
+        uid: az_ams_transform_show
+        displayName: az ams transform show
+      - name: Update
+        uid: az_ams_transform_update
+        displayName: az ams transform update
+      - name: Output
+        uid: az_ams_transform_output
+        displayName: az ams transform output
+        items:
+        - name: Add
+          uid: az_ams_transform_output_add
+          displayName: az ams transform output add
+        - name: Remove
+          uid: az_ams_transform_output_remove
+          displayName: az ams transform output remove
   - name: Backup
     uid: az_backup
     displayName: az backup
@@ -788,18 +962,45 @@
       - name: List
         uid: az_batchai_cluster_list
         displayName: az batchai cluster list
-      - name: List-Files
-        uid: az_batchai_cluster_list_files
-        displayName: az batchai cluster list-files
-      - name: List-Nodes
-        uid: az_batchai_cluster_list_nodes
-        displayName: az batchai cluster list-nodes
       - name: Resize
         uid: az_batchai_cluster_resize
         displayName: az batchai cluster resize
       - name: Show
         uid: az_batchai_cluster_show
         displayName: az batchai cluster show
+      - name: File
+        uid: az_batchai_cluster_file
+        displayName: az batchai cluster file
+        items:
+        - name: List
+          uid: az_batchai_cluster_file_list
+          displayName: az batchai cluster file list
+      - name: Node
+        uid: az_batchai_cluster_node
+        displayName: az batchai cluster node
+        items:
+        - name: Exec
+          uid: az_batchai_cluster_node_exec
+          displayName: az batchai cluster node exec
+        - name: List
+          uid: az_batchai_cluster_node_list
+          displayName: az batchai cluster node list
+    - name: Experiment
+      uid: az_batchai_experiment
+      displayName: az batchai experiment
+      items:
+      - name: Create
+        uid: az_batchai_experiment_create
+        displayName: az batchai experiment create
+      - name: Delete
+        uid: az_batchai_experiment_delete
+        displayName: az batchai experiment delete
+      - name: List
+        uid: az_batchai_experiment_list
+        displayName: az batchai experiment list
+      - name: Show
+        uid: az_batchai_experiment_show
+        displayName: az batchai experiment show
     - name: File-Server
       uid: az_batchai_file_server
       displayName: az batchai file-server
@@ -829,9 +1030,6 @@
       - name: List
         uid: az_batchai_job_list
         displayName: az batchai job list
-      - name: List-Nodes
-        uid: az_batchai_job_list_nodes
-        displayName: az batchai job list-nodes
       - name: Show
         uid: az_batchai_job_show
         displayName: az batchai job show
@@ -851,6 +1049,32 @@
         - name: Stream
           uid: az_batchai_job_file_stream
           displayName: az batchai job file stream
+      - name: Node
+        uid: az_batchai_job_node
+        displayName: az batchai job node
+        items:
+        - name: Exec
+          uid: az_batchai_job_node_exec
+          displayName: az batchai job node exec
+        - name: List
+          uid: az_batchai_job_node_list
+          displayName: az batchai job node list
+    - name: Workspace
+      uid: az_batchai_workspace
+      displayName: az batchai workspace
+      items:
+      - name: Create
+        uid: az_batchai_workspace_create
+        displayName: az batchai workspace create
+      - name: Delete
+        uid: az_batchai_workspace_delete
+        displayName: az batchai workspace delete
+      - name: List
+        uid: az_batchai_workspace_list
+        displayName: az batchai workspace list
+      - name: Show
+        uid: az_batchai_workspace_show
+        displayName: az batchai workspace show
   - name: Billing
     uid: az_billing
     displayName: az billing
@@ -1055,6 +1279,29 @@
     uid: az_consumption
     displayName: az consumption
     items:
+    - name: Budget
+      uid: az_consumption_budget
+      displayName: az consumption budget
+      items:
+      - name: Create
+        uid: az_consumption_budget_create
+        displayName: az consumption budget create
+      - name: Delete
+        uid: az_consumption_budget_delete
+        displayName: az consumption budget delete
+      - name: List
+        uid: az_consumption_budget_list
+        displayName: az consumption budget list
+      - name: Show
+        uid: az_consumption_budget_show
+        displayName: az consumption budget show
+    - name: Marketplace
+      uid: az_consumption_marketplace
+      displayName: az consumption marketplace
+      items:
+      - name: List
+        uid: az_consumption_marketplace_list
+        displayName: az consumption marketplace list
     - name: Pricesheet
       uid: az_consumption_pricesheet
       displayName: az consumption pricesheet
@@ -1062,24 +1309,24 @@
       - name: Show
         uid: az_consumption_pricesheet_show
         displayName: az consumption pricesheet show
-    - name: Reservations
-      uid: az_consumption_reservations
-      displayName: az consumption reservations
+    - name: Reservation
+      uid: az_consumption_reservation
+      displayName: az consumption reservation
       items:
-      - name: Details
-        uid: az_consumption_reservations_details
-        displayName: az consumption reservations details
+      - name: Detail
+        uid: az_consumption_reservation_detail
+        displayName: az consumption reservation detail
         items:
         - name: List
-          uid: az_consumption_reservations_details_list
-          displayName: az consumption reservations details list
-      - name: Summaries
-        uid: az_consumption_reservations_summaries
-        displayName: az consumption reservations summaries
+          uid: az_consumption_reservation_detail_list
+          displayName: az consumption reservation detail list
+      - name: Summary
+        uid: az_consumption_reservation_summary
+        displayName: az consumption reservation summary
         items:
         - name: List
-          uid: az_consumption_reservations_summaries_list
-          displayName: az consumption reservations summaries list
+          uid: az_consumption_reservation_summary_list
+          displayName: az consumption reservation summary list
     - name: Usage
       uid: az_consumption_usage
       displayName: az consumption usage
@@ -1103,6 +1350,9 @@
     - name: Exec
       uid: az_container_exec
       displayName: az container exec
+    - name: Export
+      uid: az_container_export
+      displayName: az container export
     - name: List
       uid: az_container_list
       displayName: az container list
@@ -1116,6 +1366,9 @@
     uid: az_acr
     displayName: az acr
     items:
+    - name: Build
+      uid: az_acr_build
+      displayName: az acr build
     - name: Check-Name
       uid: az_acr_check_name
       displayName: az acr check-name
@@ -1125,6 +1378,9 @@
     - name: Delete
       uid: az_acr_delete
       displayName: az acr delete
+    - name: Import
+      uid: az_acr_import
+      displayName: az acr import
     - name: List
       uid: az_acr_list
       displayName: az acr list
@@ -1140,6 +1396,40 @@
     - name: Update
       uid: az_acr_update
       displayName: az acr update
+    - name: Build-Task
+      uid: az_acr_build_task
+      displayName: az acr build-task
+      items:
+      - name: Create
+        uid: az_acr_build_task_create
+        displayName: az acr build-task create
+      - name: Delete
+        uid: az_acr_build_task_delete
+        displayName: az acr build-task delete
+      - name: List
+        uid: az_acr_build_task_list
+        displayName: az acr build-task list
+      - name: List-Builds
+        uid: az_acr_build_task_list_builds
+        displayName: az acr build-task list-builds
+      - name: Logs
+        uid: az_acr_build_task_logs
+        displayName: az acr build-task logs
+      - name: Run
+        uid: az_acr_build_task_run
+        displayName: az acr build-task run
+      - name: Show
+        uid: az_acr_build_task_show
+        displayName: az acr build-task show
+      - name: Show-Build
+        uid: az_acr_build_task_show_build
+        displayName: az acr build-task show-build
+      - name: Update
+        uid: az_acr_build_task_update
+        displayName: az acr build-task update
+      - name: Update-Build
+        uid: az_acr_build_task_update_build
+        displayName: az acr build-task update-build
     - name: Credentials
       uid: az_acr_credential
       displayName: az acr credential
@@ -1179,6 +1469,9 @@
       - name: List
         uid: az_acr_repository_list
         displayName: az acr repository list
+      - name: Show
+        uid: az_acr_repository_show
+        displayName: az acr repository show
       - name: Show-Manifests
         uid: az_acr_repository_show_manifests
         displayName: az acr repository show-manifests
@@ -1188,6 +1481,9 @@
       - name: Untag
         uid: az_acr_repository_untag
         displayName: az acr repository untag
+      - name: Update
+        uid: az_acr_repository_update
+        displayName: az acr repository update
     - name: Webhook
       uid: az_acr_webhook
       displayName: az acr webhook
@@ -1755,6 +2051,41 @@
         - name: Show
           uid: az_dls_fs_access_show
           displayName: az dls fs access show
+  - name: Deployment
+    uid: az_deployment
+    displayName: az deployment
+    items:
+    - name: Create
+      uid: az_deployment_create
+      displayName: az deployment create
+    - name: Delete
+      uid: az_deployment_delete
+      displayName: az deployment delete
+    - name: Export
+      uid: az_deployment_export
+      displayName: az deployment export
+    - name: List
+      uid: az_deployment_list
+      displayName: az deployment list
+    - name: Show
+      uid: az_deployment_show
+      displayName: az deployment show
+    - name: Validate
+      uid: az_deployment_validate
+      displayName: az deployment validate
+    - name: Wait
+      uid: az_deployment_wait
+      displayName: az deployment wait
+    - name: Operation
+      uid: az_deployment_operation
+      displayName: az deployment operation
+      items:
+      - name: List
+        uid: az_deployment_operation_list
+        displayName: az deployment operation list
+      - name: Show
+        uid: az_deployment_operation_show
+        displayName: az deployment operation show
   - name: Devtest Lab
     uid: az_lab
     displayName: az lab
@@ -1863,17 +2194,7 @@
       - name: Show
         uid: az_lab_secret_show
         displayName: az lab secret show
-    - name: Virtual Networks
-      uid: az_lab_vnet
-      displayName: az lab vnet
-      items:
-      - name: Get
-        uid: az_lab_vnet_get
-        displayName: az lab vnet get
-      - name: List
-        uid: az_lab_vnet_list
-        displayName: az lab vnet list
-    - name: Virutal Machines
+    - name: Virtual Machines
       uid: az_lab_vm
       displayName: az lab vm
       items:
@@ -1901,6 +2222,91 @@
       - name: Stop
         uid: az_lab_vm_stop
         displayName: az lab vm stop
+    - name: Virtual Networks
+      uid: az_lab_vnet
+      displayName: az lab vnet
+      items:
+      - name: Get
+        uid: az_lab_vnet_get
+        displayName: az lab vnet get
+      - name: List
+        uid: az_lab_vnet_list
+        displayName: az lab vnet list
+  - name: Dms
+    uid: az_dms
+    displayName: az dms
+    items:
+    - name: Check-Name
+      uid: az_dms_check_name
+      displayName: az dms check-name
+    - name: Check-Status
+      uid: az_dms_check_status
+      displayName: az dms check-status
+    - name: Create
+      uid: az_dms_create
+      displayName: az dms create
+    - name: Delete
+      uid: az_dms_delete
+      displayName: az dms delete
+    - name: List
+      uid: az_dms_list
+      displayName: az dms list
+    - name: List-Skus
+      uid: az_dms_list_skus
+      displayName: az dms list-skus
+    - name: Show
+      uid: az_dms_show
+      displayName: az dms show
+    - name: Start
+      uid: az_dms_start
+      displayName: az dms start
+    - name: Stop
+      uid: az_dms_stop
+      displayName: az dms stop
+    - name: Wait
+      uid: az_dms_wait
+      displayName: az dms wait
+    - name: Project
+      uid: az_dms_project
+      displayName: az dms project
+      items:
+      - name: Check-Name
+        uid: az_dms_project_check_name
+        displayName: az dms project check-name
+      - name: Create
+        uid: az_dms_project_create
+        displayName: az dms project create
+      - name: Delete
+        uid: az_dms_project_delete
+        displayName: az dms project delete
+      - name: List
+        uid: az_dms_project_list
+        displayName: az dms project list
+      - name: Show
+        uid: az_dms_project_show
+        displayName: az dms project show
+      - name: Task
+        uid: az_dms_project_task
+        displayName: az dms project task
+        items:
+        - name: Cancel
+          uid: az_dms_project_task_cancel
+          displayName: az dms project task cancel
+        - name: Check-Name
+          uid: az_dms_project_task_check_name
+          displayName: az dms project task check-name
+        - name: Create
+          uid: az_dms_project_task_create
+          displayName: az dms project task create
+        - name: Delete
+          uid: az_dms_project_task_delete
+          displayName: az dms project task delete
+        - name: List
+          uid: az_dms_project_task_list
+          displayName: az dms project task list
+        - name: Show
+          uid: az_dms_project_task_show
+          displayName: az dms project task show
   - name: Eventgrid
     uid: az_eventgrid
     displayName: az eventgrid
@@ -2156,9 +2562,6 @@
     uid: az_functionapp
     displayName: az functionapp
     items:
-    - name: Assign-Identity
-      uid: az_functionapp_assign_identity
-      displayName: az functionapp assign-identity
     - name: Create
       uid: az_functionapp_create
       displayName: az functionapp create
@@ -2183,6 +2586,9 @@
     - name: Stop
       uid: az_functionapp_stop
       displayName: az functionapp stop
+    - name: Update
+      uid: az_functionapp_update
+      displayName: az functionapp update
     - name: Config
       uid: az_functionapp_config
       displayName: az functionapp config
@@ -2284,6 +2690,9 @@
       - name: Assign
         uid: az_functionapp_identity_assign
         displayName: az functionapp identity assign
+      - name: Remove
+        uid: az_functionapp_identity_remove
+        displayName: az functionapp identity remove
       - name: Show
         uid: az_functionapp_identity_show
         displayName: az functionapp identity show
@@ -2840,6 +3249,39 @@
     - name: Wait
       uid: az_disk_wait
       displayName: az disk wait
+  - name: Maps
+    uid: az_maps
+    displayName: az maps
+    items:
+    - name: Account
+      uid: az_maps_account
+      displayName: az maps account
+      items:
+      - name: Create
+        uid: az_maps_account_create
+        displayName: az maps account create
+      - name: Delete
+        uid: az_maps_account_delete
+        displayName: az maps account delete
+      - name: List
+        uid: az_maps_account_list
+        displayName: az maps account list
+      - name: Show
+        uid: az_maps_account_show
+        displayName: az maps account show
+      - name: Update
+        uid: az_maps_account_update
+        displayName: az maps account update
+      - name: Keys
+        uid: az_maps_account_keys
+        displayName: az maps account keys
+        items:
+        - name: List
+          uid: az_maps_account_keys_list
+          displayName: az maps account keys list
+        - name: Renew
+          uid: az_maps_account_keys_renew
+          displayName: az maps account keys renew
   - name: Monitoring
     uid: az_monitor
     displayName: az monitor
@@ -3114,6 +3556,9 @@
       - name: Delete
         uid: az_mysql_server_delete
         displayName: az mysql server delete
+      - name: Georestore
+        uid: az_mysql_server_georestore
+        displayName: az mysql server georestore
       - name: List
         uid: az_mysql_server_list
         displayName: az mysql server list
@@ -3161,6 +3606,25 @@
         - name: Update
           uid: az_mysql_server_firewall_rule_update
           displayName: az mysql server firewall-rule update
+      - name: Vnet-Rule
+        uid: az_mysql_server_vnet_rule
+        displayName: az mysql server vnet-rule
+        items:
+        - name: Create
+          uid: az_mysql_server_vnet_rule_create
+          displayName: az mysql server vnet-rule create
+        - name: Delete
+          uid: az_mysql_server_vnet_rule_delete
+          displayName: az mysql server vnet-rule delete
+        - name: List
+          uid: az_mysql_server_vnet_rule_list
+          displayName: az mysql server vnet-rule list
+        - name: Show
+          uid: az_mysql_server_vnet_rule_show
+          displayName: az mysql server vnet-rule show
+        - name: Update
+          uid: az_mysql_server_vnet_rule_update
+          displayName: az mysql server vnet-rule update
   - name: Networking
     uid: az_network
     displayName: az network
@@ -3741,6 +4205,25 @@
         - name: Update
           uid: az_network_dns_zone_update
           displayName: az network dns zone update
+    - name: Ddos-Protection
+      uid: az_network_ddos_protection
+      displayName: az network ddos-protection
+      items:
+      - name: Create
+        uid: az_network_ddos_protection_create
+        displayName: az network ddos-protection create
+      - name: Delete
+        uid: az_network_ddos_protection_delete
+        displayName: az network ddos-protection delete
+      - name: List
+        uid: az_network_ddos_protection_list
+        displayName: az network ddos-protection list
+      - name: Show
+        uid: az_network_ddos_protection_show
+        displayName: az network ddos-protection show
+      - name: Update
+        uid: az_network_ddos_protection_update
+        displayName: az network ddos-protection update
     - name: Express Route
       uid: az_network_express_route
       displayName: az network express-route
@@ -3857,6 +4340,9 @@
       - name: Update
         uid: az_network_nic_update
         displayName: az network nic update
+      - name: Wait
+        uid: az_network_nic_wait
+        displayName: az network nic wait
       - name: NIC IP Configurations
         uid: az_network_nic_ip_config
         displayName: az network nic ip-config
@@ -4514,6 +5000,9 @@
       - name: Delete
         uid: az_postgres_server_delete
         displayName: az postgres server delete
+      - name: Georestore
+        uid: az_postgres_server_georestore
+        displayName: az postgres server georestore
       - name: List
         uid: az_postgres_server_list
         displayName: az postgres server list
@@ -4561,6 +5050,25 @@
         - name: Update
           uid: az_postgres_server_firewall_rule_update
           displayName: az postgres server firewall-rule update
+      - name: Vnet-Rule
+        uid: az_postgres_server_vnet_rule
+        displayName: az postgres server vnet-rule
+        items:
+        - name: Create
+          uid: az_postgres_server_vnet_rule_create
+          displayName: az postgres server vnet-rule create
+        - name: Delete
+          uid: az_postgres_server_vnet_rule_delete
+          displayName: az postgres server vnet-rule delete
+        - name: List
+          uid: az_postgres_server_vnet_rule_list
+          displayName: az postgres server vnet-rule list
+        - name: Show
+          uid: az_postgres_server_vnet_rule_show
+          displayName: az postgres server vnet-rule show
+        - name: Update
+          uid: az_postgres_server_vnet_rule_update
+          displayName: az postgres server vnet-rule update
   - name: Redis Cache
     uid: az_redis
     displayName: az redis
@@ -4577,6 +5085,9 @@
     - name: Force-Reboot
       uid: az_redis_force_reboot
       displayName: az redis force-reboot
+    - name: Import
+      uid: az_redis_import
+      displayName: az redis import
     - name: Import-Method
       uid: az_redis_import_method
       displayName: az redis import-method
@@ -4611,13 +5122,9 @@
       - name: Set
         uid: az_redis_patch_schedule_set
         displayName: az redis patch-schedule set
-      - name: Patch-Schedule
-        uid: az_redis_patch_schedule_patch_schedule
-        displayName: az redis patch-schedule patch-schedule
-        items:
-        - name: Show
-          uid: az_redis_patch_schedule_patch_schedule_show
-          displayName: az redis patch-schedule patch-schedule show
+      - name: Show
+        uid: az_redis_patch_schedule_show
+        displayName: az redis patch-schedule show
   - name: Reservations
     uid: az_reservations
     displayName: az reservations
@@ -4789,6 +5296,13 @@
       - name: Update
         uid: az_policy_definition_update
         displayName: az policy definition update
+    - name: Event
+      uid: az_policy_event
+      displayName: az policy event
+      items:
+      - name: List
+        uid: az_policy_event_list
+        displayName: az policy event list
     - name: Set-Definition
       uid: az_policy_set_definition
       displayName: az policy set-definition
@@ -4808,6 +5322,16 @@
       - name: Update
         uid: az_policy_set_definition_update
         displayName: az policy set-definition update
+    - name: State
+      uid: az_policy_state
+      displayName: az policy state
+      items:
+      - name: List
+        uid: az_policy_state_list
+        displayName: az policy state list
+      - name: Summarize
+        uid: az_policy_state_summarize
+        displayName: az policy state summarize
   - name: Resource Provider Features
     uid: az_feature
     displayName: az feature
@@ -5133,6 +5657,54 @@
       - name: Update
         uid: az_sql_elastic_pool_update
         displayName: az sql elastic-pool update
+      - name: Op
+        uid: az_sql_elastic_pool_op
+        displayName: az sql elastic-pool op
+        items:
+        - name: Cancel
+          uid: az_sql_elastic_pool_op_cancel
+          displayName: az sql elastic-pool op cancel
+        - name: List
+          uid: az_sql_elastic_pool_op_list
+          displayName: az sql elastic-pool op list
+    - name: Mi
+      uid: az_sql_mi
+      displayName: az sql mi
+      items:
+      - name: Create
+        uid: az_sql_mi_create
+        displayName: az sql mi create
+      - name: Delete
+        uid: az_sql_mi_delete
+        displayName: az sql mi delete
+      - name: List
+        uid: az_sql_mi_list
+        displayName: az sql mi list
+      - name: Show
+        uid: az_sql_mi_show
+        displayName: az sql mi show
+      - name: Update
+        uid: az_sql_mi_update
+        displayName: az sql mi update
+    - name: Midb
+      uid: az_sql_midb
+      displayName: az sql midb
+      items:
+      - name: Create
+        uid: az_sql_midb_create
+        displayName: az sql midb create
+      - name: Delete
+        uid: az_sql_midb_delete
+        displayName: az sql midb delete
+      - name: List
+        uid: az_sql_midb_list
+        displayName: az sql midb list
+      - name: Restore
+        uid: az_sql_midb_restore
+        displayName: az sql midb restore
+      - name: Show
+        uid: az_sql_midb_show
+        displayName: az sql midb show
     - name: Server
       uid: az_sql_server
       displayName: az sql server
@@ -5264,6 +5836,52 @@
         - name: Update
           uid: az_sql_server_vnet_rule_update
           displayName: az sql server vnet-rule update
+  - name: Search
+    uid: az_search
+    displayName: az search
+    items:
+    - name: Admin-Key
+      uid: az_search_admin_key
+      displayName: az search admin-key
+      items:
+      - name: Renew
+        uid: az_search_admin_key_renew
+        displayName: az search admin-key renew
+      - name: Show
+        uid: az_search_admin_key_show
+        displayName: az search admin-key show
+    - name: Query-Key
+      uid: az_search_query_key
+      displayName: az search query-key
+      items:
+      - name: Create
+        uid: az_search_query_key_create
+        displayName: az search query-key create
+      - name: Delete
+        uid: az_search_query_key_delete
+        displayName: az search query-key delete
+      - name: List
+        uid: az_search_query_key_list
+        displayName: az search query-key list
+    - name: Service
+      uid: az_search_service
+      displayName: az search service
+      items:
+      - name: Create
+        uid: az_search_service_create
+        displayName: az search service create
+      - name: Delete
+        uid: az_search_service_delete
+        displayName: az search service delete
+      - name: List
+        uid: az_search_service_list
+        displayName: az search service list
+      - name: Show
+        uid: az_search_service_show
+        displayName: az search service show
+      - name: Update
+        uid: az_search_service_update
+        displayName: az search service update
   - name: Service Fabric
     uid: az_sf
     displayName: az sf
@@ -5406,6 +6024,22 @@
           - name: List
             uid: az_servicebus_georecovery_alias_authorization_rule_keys_list
             displayName: az servicebus georecovery-alias authorization-rule keys list
+    - name: Migration
+      uid: az_servicebus_migration
+      displayName: az servicebus migration
+      items:
+      - name: Abort
+        uid: az_servicebus_migration_abort
+        displayName: az servicebus migration abort
+      - name: Complete
+        uid: az_servicebus_migration_complete
+        displayName: az servicebus migration complete
+      - name: Show
+        uid: az_servicebus_migration_show
+        displayName: az servicebus migration show
+      - name: Start
+        uid: az_servicebus_migration_start
+        displayName: az servicebus migration start
     - name: Namespace
       uid: az_servicebus_namespace
       displayName: az servicebus namespace
@@ -6208,6 +6842,35 @@
       - name: Update
         uid: az_account_lock_update
         displayName: az account lock update
+    - name: Management-Group
+      uid: az_account_management_group
+      displayName: az account management-group
+      items:
+      - name: Create
+        uid: az_account_management_group_create
+        displayName: az account management-group create
+      - name: Delete
+        uid: az_account_management_group_delete
+        displayName: az account management-group delete
+      - name: List
+        uid: az_account_management_group_list
+        displayName: az account management-group list
+      - name: Show
+        uid: az_account_management_group_show
+        displayName: az account management-group show
+      - name: Update
+        uid: az_account_management_group_update
+        displayName: az account management-group update
+      - name: Subscription
+        uid: az_account_management_group_subscription
+        displayName: az account management-group subscription
+        items:
+        - name: Add
+          uid: az_account_management_group_subscription_add
+          displayName: az account management-group subscription add
+        - name: Remove
+          uid: az_account_management_group_subscription_remove
+          displayName: az account management-group subscription remove
   - name: VM Images
     uid: az_image
     displayName: az image
@@ -6258,6 +6921,9 @@
     - name: List-Skus
       uid: az_vmss_list_skus
       displayName: az vmss list-skus
+    - name: Perform-Maintenance
+      uid: az_vmss_perform_maintenance
+      displayName: az vmss perform-maintenance
     - name: Reimage
       uid: az_vmss_reimage
       displayName: az vmss reimage
@@ -6564,6 +7230,9 @@
       - name: Show
         uid: az_vm_extension_show
         displayName: az vm extension show
+      - name: Wait
+        uid: az_vm_extension_wait
+        displayName: az vm extension wait
       - name: Extension Images
         uid: az_vm_extension_image
         displayName: az vm extension image
@@ -6924,6 +7593,9 @@
       - name: Assign
         uid: az_webapp_identity_assign
         displayName: az webapp identity assign
+      - name: Remove
+        uid: az_webapp_identity_remove
+        displayName: az webapp identity remove
       - name: Show
         uid: az_webapp_identity_show
         displayName: az webapp identity show
@@ -6959,406 +7631,1799 @@
 - name: Extensions Reference
   items:
   - name: aem
-    uid: _ext_aem_az
+    uid: ext_aem_az
+    items:
+    - name: Virtual Machines
+      uid: ext_aem_az_vm
+      displayName: az vm
+      items:
+      - name: Aem
+        uid: ext_aem_az_vm_aem
+        displayName: az vm aem
+        items:
+        - name: Delete
+          uid: ext_aem_az_vm_aem_delete
+          displayName: az vm aem delete
+        - name: Set
+          uid: ext_aem_az_vm_aem_set
+          displayName: az vm aem set
+        - name: Verify
+          uid: ext_aem_az_vm_aem_verify
+          displayName: az vm aem verify
   - name: alias
-    uid: _ext_alias_az
+    uid: ext_alias_az
     items:
     - name: Alias
-      uid: _ext_alias_az_alias
+      uid: ext_alias_az_alias
       displayName: az alias
       items:
       - name: Create
-        uid: _ext_alias_az_alias_create
+        uid: ext_alias_az_alias_create
         displayName: az alias create
+      - name: Export
+        uid: ext_alias_az_alias_export
+        displayName: az alias export
+      - name: Import
+        uid: ext_alias_az_alias_import
+        displayName: az alias import
       - name: List
-        uid: _ext_alias_az_alias_list
+        uid: ext_alias_az_alias_list
         displayName: az alias list
       - name: Remove
-        uid: _ext_alias_az_alias_remove
+        uid: ext_alias_az_alias_remove
         displayName: az alias remove
+      - name: Remove-All
+        uid: ext_alias_az_alias_remove_all
+        displayName: az alias remove-all
   - name: azure-batch-cli-extensions
-    uid: _ext_azure-batch-cli-extensions_az
+    uid: ext_azure-batch-cli-extensions_az
     items:
     - name: Batch
-      uid: _ext_azure-batch-cli-extensions_az_batch
+      uid: ext_azure-batch-cli-extensions_az_batch
       displayName: az batch
       items:
       - name: File
-        uid: _ext_azure-batch-cli-extensions_az_batch_file
+        uid: ext_azure-batch-cli-extensions_az_batch_file
         displayName: az batch file
         items:
         - name: Download
-          uid: _ext_azure-batch-cli-extensions_az_batch_file_download
+          uid: ext_azure-batch-cli-extensions_az_batch_file_download
           displayName: az batch file download
         - name: Upload
-          uid: _ext_azure-batch-cli-extensions_az_batch_file_upload
+          uid: ext_azure-batch-cli-extensions_az_batch_file_upload
           displayName: az batch file upload
       - name: Jobs
-        uid: _ext_azure-batch-cli-extensions_az_batch_job
+        uid: ext_azure-batch-cli-extensions_az_batch_job
         displayName: az batch job
         items:
         - name: Create
-          uid: _ext_azure-batch-cli-extensions_az_batch_job_create
+          uid: ext_azure-batch-cli-extensions_az_batch_job_create
           displayName: az batch job create
       - name: Pools
-        uid: _ext_azure-batch-cli-extensions_az_batch_pool
+        uid: ext_azure-batch-cli-extensions_az_batch_pool
         displayName: az batch pool
         items:
         - name: Create
-          uid: _ext_azure-batch-cli-extensions_az_batch_pool_create
+          uid: ext_azure-batch-cli-extensions_az_batch_pool_create
           displayName: az batch pool create
   - name: azure-cli-iot-ext
-    uid: _ext_azure-cli-iot-ext_az
+    uid: ext_azure-cli-iot-ext_az
     items:
     - name: Iot
-      uid: _ext_azure-cli-iot-ext_az_iot
+      uid: ext_azure-cli-iot-ext_az_iot
       displayName: az iot
       items:
       - name: Devices
-        uid: _ext_azure-cli-iot-ext_az_iot_device
+        uid: ext_azure-cli-iot-ext_az_iot_device
         displayName: az iot device
         items:
         - name: Send-D2c-Message
-          uid: _ext_azure-cli-iot-ext_az_iot_device_send_d2c_message
+          uid: ext_azure-cli-iot-ext_az_iot_device_send_d2c_message
           displayName: az iot device send-d2c-message
         - name: Simulate
-          uid: _ext_azure-cli-iot-ext_az_iot_device_simulate
+          uid: ext_azure-cli-iot-ext_az_iot_device_simulate
           displayName: az iot device simulate
         - name: Upload-File
-          uid: _ext_azure-cli-iot-ext_az_iot_device_upload_file
+          uid: ext_azure-cli-iot-ext_az_iot_device_upload_file
           displayName: az iot device upload-file
         - name: C2d-Message
-          uid: _ext_azure-cli-iot-ext_az_iot_device_c2d_message
+          uid: ext_azure-cli-iot-ext_az_iot_device_c2d_message
           displayName: az iot device c2d-message
           items:
           - name: Abandon
-            uid: _ext_azure-cli-iot-ext_az_iot_device_c2d_message_abandon
+            uid: ext_azure-cli-iot-ext_az_iot_device_c2d_message_abandon
             displayName: az iot device c2d-message abandon
           - name: Complete
-            uid: _ext_azure-cli-iot-ext_az_iot_device_c2d_message_complete
+            uid: ext_azure-cli-iot-ext_az_iot_device_c2d_message_complete
             displayName: az iot device c2d-message complete
           - name: Receive
-            uid: _ext_azure-cli-iot-ext_az_iot_device_c2d_message_receive
+            uid: ext_azure-cli-iot-ext_az_iot_device_c2d_message_receive
             displayName: az iot device c2d-message receive
           - name: Reject
-            uid: _ext_azure-cli-iot-ext_az_iot_device_c2d_message_reject
+            uid: ext_azure-cli-iot-ext_az_iot_device_c2d_message_reject
             displayName: az iot device c2d-message reject
+          - name: Send
+            uid: ext_azure-cli-iot-ext_az_iot_device_c2d_message_send
+            displayName: az iot device c2d-message send
       - name: Dps
-        uid: _ext_azure-cli-iot-ext_az_iot_dps
+        uid: ext_azure-cli-iot-ext_az_iot_dps
         displayName: az iot dps
         items:
         - name: Enrollment
-          uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment
+          uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment
           displayName: az iot dps enrollment
           items:
           - name: Create
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_create
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_create
             displayName: az iot dps enrollment create
           - name: Delete
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_delete
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_delete
             displayName: az iot dps enrollment delete
           - name: List
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_list
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_list
             displayName: az iot dps enrollment list
           - name: Show
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_show
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_show
             displayName: az iot dps enrollment show
           - name: Update
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_update
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_update
             displayName: az iot dps enrollment update
         - name: Enrollment-Group
-          uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_group
+          uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_group
           displayName: az iot dps enrollment-group
           items:
           - name: Create
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_create
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_create
             displayName: az iot dps enrollment-group create
           - name: Delete
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_delete
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_delete
             displayName: az iot dps enrollment-group delete
           - name: List
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_list
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_list
             displayName: az iot dps enrollment-group list
           - name: Show
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_show
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_show
             displayName: az iot dps enrollment-group show
           - name: Update
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_update
+            uid: ext_azure-cli-iot-ext_az_iot_dps_enrollment_group_update
             displayName: az iot dps enrollment-group update
         - name: Registration
-          uid: _ext_azure-cli-iot-ext_az_iot_dps_registration
+          uid: ext_azure-cli-iot-ext_az_iot_dps_registration
           displayName: az iot dps registration
           items:
           - name: Delete
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_registration_delete
+            uid: ext_azure-cli-iot-ext_az_iot_dps_registration_delete
             displayName: az iot dps registration delete
           - name: List
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_registration_list
+            uid: ext_azure-cli-iot-ext_az_iot_dps_registration_list
             displayName: az iot dps registration list
           - name: Show
-            uid: _ext_azure-cli-iot-ext_az_iot_dps_registration_show
+            uid: ext_azure-cli-iot-ext_az_iot_dps_registration_show
             displayName: az iot dps registration show
       - name: Edge
-        uid: _ext_azure-cli-iot-ext_az_iot_edge
+        uid: ext_azure-cli-iot-ext_az_iot_edge
         displayName: az iot edge
         items:
+        - name: Set-Modules
+          uid: ext_azure-cli-iot-ext_az_iot_edge_set_modules
+          displayName: az iot edge set-modules
         - name: Deployment
-          uid: _ext_azure-cli-iot-ext_az_iot_edge_deployment
+          uid: ext_azure-cli-iot-ext_az_iot_edge_deployment
           displayName: az iot edge deployment
           items:
           - name: Create
-            uid: _ext_azure-cli-iot-ext_az_iot_edge_deployment_create
+            uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_create
             displayName: az iot edge deployment create
           - name: Delete
-            uid: _ext_azure-cli-iot-ext_az_iot_edge_deployment_delete
+            uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_delete
             displayName: az iot edge deployment delete
           - name: List
-            uid: _ext_azure-cli-iot-ext_az_iot_edge_deployment_list
+            uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_list
             displayName: az iot edge deployment list
           - name: Show
-            uid: _ext_azure-cli-iot-ext_az_iot_edge_deployment_show
+            uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_show
             displayName: az iot edge deployment show
+          - name: Show-Metric
+            uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_show_metric
+            displayName: az iot edge deployment show-metric
           - name: Update
-            uid: _ext_azure-cli-iot-ext_az_iot_edge_deployment_update
+            uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_update
             displayName: az iot edge deployment update
       - name: Hubs
-        uid: _ext_azure-cli-iot-ext_az_iot_hub
+        uid: ext_azure-cli-iot-ext_az_iot_hub
         displayName: az iot hub
         items:
         - name: Apply-Configuration
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_apply_configuration
+          uid: ext_azure-cli-iot-ext_az_iot_hub_apply_configuration
           displayName: az iot hub apply-configuration
         - name: Generate-Sas-Token
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_generate_sas_token
+          uid: ext_azure-cli-iot-ext_az_iot_hub_generate_sas_token
           displayName: az iot hub generate-sas-token
         - name: Invoke-Device-Method
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_invoke_device_method
+          uid: ext_azure-cli-iot-ext_az_iot_hub_invoke_device_method
           displayName: az iot hub invoke-device-method
         - name: Invoke-Module-Method
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_invoke_module_method
+          uid: ext_azure-cli-iot-ext_az_iot_hub_invoke_module_method
           displayName: az iot hub invoke-module-method
+        - name: Monitor-Events
+          uid: ext_azure-cli-iot-ext_az_iot_hub_monitor_events
+          displayName: az iot hub monitor-events
+        - name: Monitor-Feedback
+          uid: ext_azure-cli-iot-ext_az_iot_hub_monitor_feedback
+          displayName: az iot hub monitor-feedback
         - name: Query
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_query
+          uid: ext_azure-cli-iot-ext_az_iot_hub_query
           displayName: az iot hub query
         - name: Show-Connection-String
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_show_connection_string
+          uid: ext_azure-cli-iot-ext_az_iot_hub_show_connection_string
           displayName: az iot hub show-connection-string
+        - name: Configuration
+          uid: ext_azure-cli-iot-ext_az_iot_hub_configuration
+          displayName: az iot hub configuration
+          items:
+          - name: Create
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_create
+            displayName: az iot hub configuration create
+          - name: Delete
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_delete
+            displayName: az iot hub configuration delete
+          - name: List
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_list
+            displayName: az iot hub configuration list
+          - name: Show
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_show
+            displayName: az iot hub configuration show
+          - name: Show-Metric
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_show_metric
+            displayName: az iot hub configuration show-metric
+          - name: Update
+            uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_update
+            displayName: az iot hub configuration update
         - name: Device-Identity
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_device_identity
+          uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity
           displayName: az iot hub device-identity
           items:
           - name: Create
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_identity_create
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity_create
             displayName: az iot hub device-identity create
           - name: Delete
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_identity_delete
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity_delete
             displayName: az iot hub device-identity delete
           - name: Export
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_identity_export
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity_export
             displayName: az iot hub device-identity export
           - name: Import
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_identity_import
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity_import
             displayName: az iot hub device-identity import
           - name: List
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_identity_list
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity_list
             displayName: az iot hub device-identity list
           - name: Show
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_identity_show
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity_show
             displayName: az iot hub device-identity show
           - name: Show-Connection-String
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_identity_show_connection_string
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity_show_connection_string
             displayName: az iot hub device-identity show-connection-string
           - name: Update
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_identity_update
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity_update
             displayName: az iot hub device-identity update
         - name: Device-Twin
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_device_twin
+          uid: ext_azure-cli-iot-ext_az_iot_hub_device_twin
           displayName: az iot hub device-twin
           items:
           - name: Replace
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_twin_replace
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_twin_replace
             displayName: az iot hub device-twin replace
           - name: Show
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_twin_show
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_twin_show
             displayName: az iot hub device-twin show
           - name: Update
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_device_twin_update
+            uid: ext_azure-cli-iot-ext_az_iot_hub_device_twin_update
             displayName: az iot hub device-twin update
         - name: Module-Identity
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_module_identity
+          uid: ext_azure-cli-iot-ext_az_iot_hub_module_identity
           displayName: az iot hub module-identity
           items:
           - name: Create
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_module_identity_create
+            uid: ext_azure-cli-iot-ext_az_iot_hub_module_identity_create
             displayName: az iot hub module-identity create
           - name: Delete
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_module_identity_delete
+            uid: ext_azure-cli-iot-ext_az_iot_hub_module_identity_delete
             displayName: az iot hub module-identity delete
           - name: List
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_module_identity_list
+            uid: ext_azure-cli-iot-ext_az_iot_hub_module_identity_list
             displayName: az iot hub module-identity list
           - name: Show
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_module_identity_show
+            uid: ext_azure-cli-iot-ext_az_iot_hub_module_identity_show
             displayName: az iot hub module-identity show
           - name: Show-Connection-String
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_module_identity_show_connection_string
+            uid: ext_azure-cli-iot-ext_az_iot_hub_module_identity_show_connection_string
             displayName: az iot hub module-identity show-connection-string
           - name: Update
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_module_identity_update
+            uid: ext_azure-cli-iot-ext_az_iot_hub_module_identity_update
             displayName: az iot hub module-identity update
         - name: Module-Twin
-          uid: _ext_azure-cli-iot-ext_az_iot_hub_module_twin
+          uid: ext_azure-cli-iot-ext_az_iot_hub_module_twin
           displayName: az iot hub module-twin
           items:
           - name: Replace
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_module_twin_replace
+            uid: ext_azure-cli-iot-ext_az_iot_hub_module_twin_replace
             displayName: az iot hub module-twin replace
           - name: Show
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_module_twin_show
+            uid: ext_azure-cli-iot-ext_az_iot_hub_module_twin_show
             displayName: az iot hub module-twin show
           - name: Update
-            uid: _ext_azure-cli-iot-ext_az_iot_hub_module_twin_update
+            uid: ext_azure-cli-iot-ext_az_iot_hub_module_twin_update
             displayName: az iot hub module-twin update
+  - name: botservice
+    uid: ext_botservice_az
+    items:
+    - name: Bot
+      uid: ext_botservice_az_bot
+      displayName: az bot
+      items:
+      - name: Create
+        uid: ext_botservice_az_bot_create
+        displayName: az bot create
+      - name: Delete
+        uid: ext_botservice_az_bot_delete
+        displayName: az bot delete
+      - name: Download
+        uid: ext_botservice_az_bot_download
+        displayName: az bot download
+      - name: Publish
+        uid: ext_botservice_az_bot_publish
+        displayName: az bot publish
+      - name: Show
+        uid: ext_botservice_az_bot_show
+        displayName: az bot show
+      - name: Update
+        uid: ext_botservice_az_bot_update
+        displayName: az bot update
+      - name: Directline
+        uid: ext_botservice_az_bot_directline
+        displayName: az bot directline
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_directline_create
+          displayName: az bot directline create
+        - name: Delete
+          uid: ext_botservice_az_bot_directline_delete
+          displayName: az bot directline delete
+        - name: Show
+          uid: ext_botservice_az_bot_directline_show
+          displayName: az bot directline show
+      - name: Email
+        uid: ext_botservice_az_bot_email
+        displayName: az bot email
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_email_create
+          displayName: az bot email create
+        - name: Delete
+          uid: ext_botservice_az_bot_email_delete
+          displayName: az bot email delete
+        - name: Show
+          uid: ext_botservice_az_bot_email_show
+          displayName: az bot email show
+      - name: Facebook
+        uid: ext_botservice_az_bot_facebook
+        displayName: az bot facebook
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_facebook_create
+          displayName: az bot facebook create
+        - name: Delete
+          uid: ext_botservice_az_bot_facebook_delete
+          displayName: az bot facebook delete
+        - name: Show
+          uid: ext_botservice_az_bot_facebook_show
+          displayName: az bot facebook show
+      - name: Kik
+        uid: ext_botservice_az_bot_kik
+        displayName: az bot kik
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_kik_create
+          displayName: az bot kik create
+        - name: Delete
+          uid: ext_botservice_az_bot_kik_delete
+          displayName: az bot kik delete
+        - name: Show
+          uid: ext_botservice_az_bot_kik_show
+          displayName: az bot kik show
+      - name: Msteams
+        uid: ext_botservice_az_bot_msteams
+        displayName: az bot msteams
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_msteams_create
+          displayName: az bot msteams create
+        - name: Delete
+          uid: ext_botservice_az_bot_msteams_delete
+          displayName: az bot msteams delete
+        - name: Show
+          uid: ext_botservice_az_bot_msteams_show
+          displayName: az bot msteams show
+      - name: Skype
+        uid: ext_botservice_az_bot_skype
+        displayName: az bot skype
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_skype_create
+          displayName: az bot skype create
+        - name: Delete
+          uid: ext_botservice_az_bot_skype_delete
+          displayName: az bot skype delete
+        - name: Show
+          uid: ext_botservice_az_bot_skype_show
+          displayName: az bot skype show
+      - name: Slack
+        uid: ext_botservice_az_bot_slack
+        displayName: az bot slack
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_slack_create
+          displayName: az bot slack create
+        - name: Delete
+          uid: ext_botservice_az_bot_slack_delete
+          displayName: az bot slack delete
+        - name: Show
+          uid: ext_botservice_az_bot_slack_show
+          displayName: az bot slack show
+      - name: Sms
+        uid: ext_botservice_az_bot_sms
+        displayName: az bot sms
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_sms_create
+          displayName: az bot sms create
+        - name: Delete
+          uid: ext_botservice_az_bot_sms_delete
+          displayName: az bot sms delete
+        - name: Show
+          uid: ext_botservice_az_bot_sms_show
+          displayName: az bot sms show
+      - name: Telegram
+        uid: ext_botservice_az_bot_telegram
+        displayName: az bot telegram
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_telegram_create
+          displayName: az bot telegram create
+        - name: Delete
+          uid: ext_botservice_az_bot_telegram_delete
+          displayName: az bot telegram delete
+        - name: Show
+          uid: ext_botservice_az_bot_telegram_show
+          displayName: az bot telegram show
+      - name: Webchat
+        uid: ext_botservice_az_bot_webchat
+        displayName: az bot webchat
+        items:
+        - name: Create
+          uid: ext_botservice_az_bot_webchat_create
+          displayName: az bot webchat create
+        - name: Delete
+          uid: ext_botservice_az_bot_webchat_delete
+          displayName: az bot webchat delete
+        - name: Show
+          uid: ext_botservice_az_bot_webchat_show
+          displayName: az bot webchat show
+  - name: dev-spaces-preview
+    uid: ext_dev-spaces-preview_az
   - name: dns
-    uid: _ext_dns_az
+    uid: ext_dns_az
     items:
     - name: Networking
-      uid: _ext_dns_az_network
+      uid: ext_dns_az_network
       displayName: az network
       items:
       - name: DNS
-        uid: _ext_dns_az_network_dns
+        uid: ext_dns_az_network_dns
         displayName: az network dns
         items:
         - name: Zones
-          uid: _ext_dns_az_network_dns_zone
+          uid: ext_dns_az_network_dns_zone
           displayName: az network dns zone
           items:
           - name: Create
-            uid: _ext_dns_az_network_dns_zone_create
+            uid: ext_dns_az_network_dns_zone_create
             displayName: az network dns zone create
           - name: List
-            uid: _ext_dns_az_network_dns_zone_list
+            uid: ext_dns_az_network_dns_zone_list
             displayName: az network dns zone list
           - name: Show
-            uid: _ext_dns_az_network_dns_zone_show
+            uid: ext_dns_az_network_dns_zone_show
             displayName: az network dns zone show
           - name: Update
-            uid: _ext_dns_az_network_dns_zone_update
+            uid: ext_dns_az_network_dns_zone_update
             displayName: az network dns zone update
+  - name: eventgrid
+    uid: ext_eventgrid_az
+    items:
+    - name: Eventgrid
+      uid: ext_eventgrid_az_eventgrid
+      displayName: az eventgrid
+      items:
+      - name: Event-Subscription
+        uid: ext_eventgrid_az_eventgrid_event_subscription
+        displayName: az eventgrid event-subscription
+        items:
+        - name: Create
+          uid: ext_eventgrid_az_eventgrid_event_subscription_create
+          displayName: az eventgrid event-subscription create
+        - name: Delete
+          uid: ext_eventgrid_az_eventgrid_event_subscription_delete
+          displayName: az eventgrid event-subscription delete
+        - name: List
+          uid: ext_eventgrid_az_eventgrid_event_subscription_list
+          displayName: az eventgrid event-subscription list
+        - name: Show
+          uid: ext_eventgrid_az_eventgrid_event_subscription_show
+          displayName: az eventgrid event-subscription show
+        - name: Update
+          uid: ext_eventgrid_az_eventgrid_event_subscription_update
+          displayName: az eventgrid event-subscription update
+      - name: Topic
+        uid: ext_eventgrid_az_eventgrid_topic
+        displayName: az eventgrid topic
+        items:
+        - name: Create
+          uid: ext_eventgrid_az_eventgrid_topic_create
+          displayName: az eventgrid topic create
+        - name: Delete
+          uid: ext_eventgrid_az_eventgrid_topic_delete
+          displayName: az eventgrid topic delete
+        - name: List
+          uid: ext_eventgrid_az_eventgrid_topic_list
+          displayName: az eventgrid topic list
+        - name: Show
+          uid: ext_eventgrid_az_eventgrid_topic_show
+          displayName: az eventgrid topic show
+        - name: Update
+          uid: ext_eventgrid_az_eventgrid_topic_update
+          displayName: az eventgrid topic update
+        - name: Key
+          uid: ext_eventgrid_az_eventgrid_topic_key
+          displayName: az eventgrid topic key
+          items:
+          - name: List
+            uid: ext_eventgrid_az_eventgrid_topic_key_list
+            displayName: az eventgrid topic key list
+          - name: Regenerate
+            uid: ext_eventgrid_az_eventgrid_topic_key_regenerate
+            displayName: az eventgrid topic key regenerate
+      - name: Topic-Type
+        uid: ext_eventgrid_az_eventgrid_topic_type
+        displayName: az eventgrid topic-type
+        items:
+        - name: List
+          uid: ext_eventgrid_az_eventgrid_topic_type_list
+          displayName: az eventgrid topic-type list
+        - name: List-Event-Types
+          uid: ext_eventgrid_az_eventgrid_topic_type_list_event_types
+          displayName: az eventgrid topic-type list-event-types
+        - name: Show
+          uid: ext_eventgrid_az_eventgrid_topic_type_show
+          displayName: az eventgrid topic-type show
   - name: image-copy-extension
-    uid: _ext_image-copy-extension_az
+    uid: ext_image-copy-extension_az
     items:
     - name: VM Images
-      uid: _ext_image-copy-extension_az_image
+      uid: ext_image-copy-extension_az_image
       displayName: az image
       items:
       - name: Copy
-        uid: _ext_image-copy-extension_az_image_copy
+        uid: ext_image-copy-extension_az_image_copy
         displayName: az image copy
+  - name: keyvault-preview
+    uid: ext_keyvault-preview_az
+    items:
+    - name: Key Vault
+      uid: ext_keyvault-preview_az_keyvault
+      displayName: az keyvault
+      items:
+      - name: Create
+        uid: ext_keyvault-preview_az_keyvault_create
+        displayName: az keyvault create
+      - name: Delete
+        uid: ext_keyvault-preview_az_keyvault_delete
+        displayName: az keyvault delete
+      - name: Delete-Policy
+        uid: ext_keyvault-preview_az_keyvault_delete_policy
+        displayName: az keyvault delete-policy
+      - name: List
+        uid: ext_keyvault-preview_az_keyvault_list
+        displayName: az keyvault list
+      - name: List-Deleted
+        uid: ext_keyvault-preview_az_keyvault_list_deleted
+        displayName: az keyvault list-deleted
+      - name: Purge
+        uid: ext_keyvault-preview_az_keyvault_purge
+        displayName: az keyvault purge
+      - name: Recover
+        uid: ext_keyvault-preview_az_keyvault_recover
+        displayName: az keyvault recover
+      - name: Set-Policy
+        uid: ext_keyvault-preview_az_keyvault_set_policy
+        displayName: az keyvault set-policy
+      - name: Show
+        uid: ext_keyvault-preview_az_keyvault_show
+        displayName: az keyvault show
+      - name: Update
+        uid: ext_keyvault-preview_az_keyvault_update
+        displayName: az keyvault update
+      - name: Certificates
+        uid: ext_keyvault-preview_az_keyvault_certificate
+        displayName: az keyvault certificate
+        items:
+        - name: Create
+          uid: ext_keyvault-preview_az_keyvault_certificate_create
+          displayName: az keyvault certificate create
+        - name: Delete
+          uid: ext_keyvault-preview_az_keyvault_certificate_delete
+          displayName: az keyvault certificate delete
+        - name: Download
+          uid: ext_keyvault-preview_az_keyvault_certificate_download
+          displayName: az keyvault certificate download
+        - name: Get-Default-Policy
+          uid: ext_keyvault-preview_az_keyvault_certificate_get_default_policy
+          displayName: az keyvault certificate get-default-policy
+        - name: Import
+          uid: ext_keyvault-preview_az_keyvault_certificate_import
+          displayName: az keyvault certificate import
+        - name: List
+          uid: ext_keyvault-preview_az_keyvault_certificate_list
+          displayName: az keyvault certificate list
+        - name: List-Deleted
+          uid: ext_keyvault-preview_az_keyvault_certificate_list_deleted
+          displayName: az keyvault certificate list-deleted
+        - name: List-Versions
+          uid: ext_keyvault-preview_az_keyvault_certificate_list_versions
+          displayName: az keyvault certificate list-versions
+        - name: Purge
+          uid: ext_keyvault-preview_az_keyvault_certificate_purge
+          displayName: az keyvault certificate purge
+        - name: Recover
+          uid: ext_keyvault-preview_az_keyvault_certificate_recover
+          displayName: az keyvault certificate recover
+        - name: Set-Attributes
+          uid: ext_keyvault-preview_az_keyvault_certificate_set_attributes
+          displayName: az keyvault certificate set-attributes
+        - name: Show
+          uid: ext_keyvault-preview_az_keyvault_certificate_show
+          displayName: az keyvault certificate show
+        - name: Show-Deleted
+          uid: ext_keyvault-preview_az_keyvault_certificate_show_deleted
+          displayName: az keyvault certificate show-deleted
+        - name: Contacts
+          uid: ext_keyvault-preview_az_keyvault_certificate_contact
+          displayName: az keyvault certificate contact
+          items:
+          - name: Add
+            uid: ext_keyvault-preview_az_keyvault_certificate_contact_add
+            displayName: az keyvault certificate contact add
+          - name: Delete
+            uid: ext_keyvault-preview_az_keyvault_certificate_contact_delete
+            displayName: az keyvault certificate contact delete
+          - name: List
+            uid: ext_keyvault-preview_az_keyvault_certificate_contact_list
+            displayName: az keyvault certificate contact list
+        - name: Issuers
+          uid: ext_keyvault-preview_az_keyvault_certificate_issuer
+          displayName: az keyvault certificate issuer
+          items:
+          - name: Create
+            uid: ext_keyvault-preview_az_keyvault_certificate_issuer_create
+            displayName: az keyvault certificate issuer create
+          - name: Delete
+            uid: ext_keyvault-preview_az_keyvault_certificate_issuer_delete
+            displayName: az keyvault certificate issuer delete
+          - name: List
+            uid: ext_keyvault-preview_az_keyvault_certificate_issuer_list
+            displayName: az keyvault certificate issuer list
+          - name: Show
+            uid: ext_keyvault-preview_az_keyvault_certificate_issuer_show
+            displayName: az keyvault certificate issuer show
+          - name: Update
+            uid: ext_keyvault-preview_az_keyvault_certificate_issuer_update
+            displayName: az keyvault certificate issuer update
+          - name: Administration
+            uid: ext_keyvault-preview_az_keyvault_certificate_issuer_admin
+            displayName: az keyvault certificate issuer admin
+            items:
+            - name: Add
+              uid: ext_keyvault-preview_az_keyvault_certificate_issuer_admin_add
+              displayName: az keyvault certificate issuer admin add
+            - name: Delete
+              uid: ext_keyvault-preview_az_keyvault_certificate_issuer_admin_delete
+              displayName: az keyvault certificate issuer admin delete
+            - name: List
+              uid: ext_keyvault-preview_az_keyvault_certificate_issuer_admin_list
+              displayName: az keyvault certificate issuer admin list
+        - name: Pending
+          uid: ext_keyvault-preview_az_keyvault_certificate_pending
+          displayName: az keyvault certificate pending
+          items:
+          - name: Delete
+            uid: ext_keyvault-preview_az_keyvault_certificate_pending_delete
+            displayName: az keyvault certificate pending delete
+          - name: Merge
+            uid: ext_keyvault-preview_az_keyvault_certificate_pending_merge
+            displayName: az keyvault certificate pending merge
+          - name: Show
+            uid: ext_keyvault-preview_az_keyvault_certificate_pending_show
+            displayName: az keyvault certificate pending show
+      - name: Keys
+        uid: ext_keyvault-preview_az_keyvault_key
+        displayName: az keyvault key
+        items:
+        - name: Backup
+          uid: ext_keyvault-preview_az_keyvault_key_backup
+          displayName: az keyvault key backup
+        - name: Create
+          uid: ext_keyvault-preview_az_keyvault_key_create
+          displayName: az keyvault key create
+        - name: Delete
+          uid: ext_keyvault-preview_az_keyvault_key_delete
+          displayName: az keyvault key delete
+        - name: Import
+          uid: ext_keyvault-preview_az_keyvault_key_import
+          displayName: az keyvault key import
+        - name: List
+          uid: ext_keyvault-preview_az_keyvault_key_list
+          displayName: az keyvault key list
+        - name: List-Deleted
+          uid: ext_keyvault-preview_az_keyvault_key_list_deleted
+          displayName: az keyvault key list-deleted
+        - name: List-Versions
+          uid: ext_keyvault-preview_az_keyvault_key_list_versions
+          displayName: az keyvault key list-versions
+        - name: Purge
+          uid: ext_keyvault-preview_az_keyvault_key_purge
+          displayName: az keyvault key purge
+        - name: Recover
+          uid: ext_keyvault-preview_az_keyvault_key_recover
+          displayName: az keyvault key recover
+        - name: Restore
+          uid: ext_keyvault-preview_az_keyvault_key_restore
+          displayName: az keyvault key restore
+        - name: Set-Attributes
+          uid: ext_keyvault-preview_az_keyvault_key_set_attributes
+          displayName: az keyvault key set-attributes
+        - name: Show
+          uid: ext_keyvault-preview_az_keyvault_key_show
+          displayName: az keyvault key show
+        - name: Show-Deleted
+          uid: ext_keyvault-preview_az_keyvault_key_show_deleted
+          displayName: az keyvault key show-deleted
+      - name: Network-Rule
+        uid: ext_keyvault-preview_az_keyvault_network_rule
+        displayName: az keyvault network-rule
+        items:
+        - name: Add
+          uid: ext_keyvault-preview_az_keyvault_network_rule_add
+          displayName: az keyvault network-rule add
+        - name: List
+          uid: ext_keyvault-preview_az_keyvault_network_rule_list
+          displayName: az keyvault network-rule list
+        - name: Remove
+          uid: ext_keyvault-preview_az_keyvault_network_rule_remove
+          displayName: az keyvault network-rule remove
+      - name: Secrets
+        uid: ext_keyvault-preview_az_keyvault_secret
+        displayName: az keyvault secret
+        items:
+        - name: Backup
+          uid: ext_keyvault-preview_az_keyvault_secret_backup
+          displayName: az keyvault secret backup
+        - name: Delete
+          uid: ext_keyvault-preview_az_keyvault_secret_delete
+          displayName: az keyvault secret delete
+        - name: Download
+          uid: ext_keyvault-preview_az_keyvault_secret_download
+          displayName: az keyvault secret download
+        - name: List
+          uid: ext_keyvault-preview_az_keyvault_secret_list
+          displayName: az keyvault secret list
+        - name: List-Deleted
+          uid: ext_keyvault-preview_az_keyvault_secret_list_deleted
+          displayName: az keyvault secret list-deleted
+        - name: List-Versions
+          uid: ext_keyvault-preview_az_keyvault_secret_list_versions
+          displayName: az keyvault secret list-versions
+        - name: Purge
+          uid: ext_keyvault-preview_az_keyvault_secret_purge
+          displayName: az keyvault secret purge
+        - name: Recover
+          uid: ext_keyvault-preview_az_keyvault_secret_recover
+          displayName: az keyvault secret recover
+        - name: Restore
+          uid: ext_keyvault-preview_az_keyvault_secret_restore
+          displayName: az keyvault secret restore
+        - name: Set
+          uid: ext_keyvault-preview_az_keyvault_secret_set
+          displayName: az keyvault secret set
+        - name: Set-Attributes
+          uid: ext_keyvault-preview_az_keyvault_secret_set_attributes
+          displayName: az keyvault secret set-attributes
+        - name: Show
+          uid: ext_keyvault-preview_az_keyvault_secret_show
+          displayName: az keyvault secret show
+        - name: Show-Deleted
+          uid: ext_keyvault-preview_az_keyvault_secret_show_deleted
+          displayName: az keyvault secret show-deleted
+      - name: Storage
+        uid: ext_keyvault-preview_az_keyvault_storage
+        displayName: az keyvault storage
+        items:
+        - name: Add
+          uid: ext_keyvault-preview_az_keyvault_storage_add
+          displayName: az keyvault storage add
+        - name: Backup
+          uid: ext_keyvault-preview_az_keyvault_storage_backup
+          displayName: az keyvault storage backup
+        - name: List
+          uid: ext_keyvault-preview_az_keyvault_storage_list
+          displayName: az keyvault storage list
+        - name: List-Deleted
+          uid: ext_keyvault-preview_az_keyvault_storage_list_deleted
+          displayName: az keyvault storage list-deleted
+        - name: Purge
+          uid: ext_keyvault-preview_az_keyvault_storage_purge
+          displayName: az keyvault storage purge
+        - name: Recover
+          uid: ext_keyvault-preview_az_keyvault_storage_recover
+          displayName: az keyvault storage recover
+        - name: Regenerate-Key
+          uid: ext_keyvault-preview_az_keyvault_storage_regenerate_key
+          displayName: az keyvault storage regenerate-key
+        - name: Remove
+          uid: ext_keyvault-preview_az_keyvault_storage_remove
+          displayName: az keyvault storage remove
+        - name: Restore
+          uid: ext_keyvault-preview_az_keyvault_storage_restore
+          displayName: az keyvault storage restore
+        - name: Show
+          uid: ext_keyvault-preview_az_keyvault_storage_show
+          displayName: az keyvault storage show
+        - name: Show-Deleted
+          uid: ext_keyvault-preview_az_keyvault_storage_show_deleted
+          displayName: az keyvault storage show-deleted
+        - name: Update
+          uid: ext_keyvault-preview_az_keyvault_storage_update
+          displayName: az keyvault storage update
+        - name: Sas-Definition
+          uid: ext_keyvault-preview_az_keyvault_storage_sas_definition
+          displayName: az keyvault storage sas-definition
+          items:
+          - name: Create
+            uid: ext_keyvault-preview_az_keyvault_storage_sas_definition_create
+            displayName: az keyvault storage sas-definition create
+          - name: Delete
+            uid: ext_keyvault-preview_az_keyvault_storage_sas_definition_delete
+            displayName: az keyvault storage sas-definition delete
+          - name: List
+            uid: ext_keyvault-preview_az_keyvault_storage_sas_definition_list
+            displayName: az keyvault storage sas-definition list
+          - name: List-Deleted
+            uid: ext_keyvault-preview_az_keyvault_storage_sas_definition_list_deleted
+            displayName: az keyvault storage sas-definition list-deleted
+          - name: Recover
+            uid: ext_keyvault-preview_az_keyvault_storage_sas_definition_recover
+            displayName: az keyvault storage sas-definition recover
+          - name: Show
+            uid: ext_keyvault-preview_az_keyvault_storage_sas_definition_show
+            displayName: az keyvault storage sas-definition show
+          - name: Show-Deleted
+            uid: ext_keyvault-preview_az_keyvault_storage_sas_definition_show_deleted
+            displayName: az keyvault storage sas-definition show-deleted
+          - name: Update
+            uid: ext_keyvault-preview_az_keyvault_storage_sas_definition_update
+            displayName: az keyvault storage sas-definition update
+  - name: log-analytics
+    uid: ext_log-analytics_az
+    items:
+    - name: Monitoring
+      uid: ext_log-analytics_az_monitor
+      displayName: az monitor
+      items:
+      - name: Log-Analytics
+        uid: ext_log-analytics_az_monitor_log_analytics
+        displayName: az monitor log-analytics
   - name: managementgroups
-    uid: _ext_managementgroups_az
+    uid: ext_managementgroups_az
     items:
     - name: Subscriptions
-      uid: _ext_managementgroups_az_account
+      uid: ext_managementgroups_az_account
       displayName: az account
       items:
       - name: Management-Group
-        uid: _ext_managementgroups_az_account_management_group
+        uid: ext_managementgroups_az_account_management_group
         displayName: az account management-group
         items:
         - name: Create
-          uid: _ext_managementgroups_az_account_management_group_create
+          uid: ext_managementgroups_az_account_management_group_create
           displayName: az account management-group create
         - name: Delete
-          uid: _ext_managementgroups_az_account_management_group_delete
+          uid: ext_managementgroups_az_account_management_group_delete
           displayName: az account management-group delete
         - name: List
-          uid: _ext_managementgroups_az_account_management_group_list
+          uid: ext_managementgroups_az_account_management_group_list
           displayName: az account management-group list
         - name: Show
-          uid: _ext_managementgroups_az_account_management_group_show
+          uid: ext_managementgroups_az_account_management_group_show
           displayName: az account management-group show
         - name: Update
-          uid: _ext_managementgroups_az_account_management_group_update
+          uid: ext_managementgroups_az_account_management_group_update
           displayName: az account management-group update
         - name: Subscription
-          uid: _ext_managementgroups_az_account_management_group_subscription
+          uid: ext_managementgroups_az_account_management_group_subscription
           displayName: az account management-group subscription
           items:
           - name: Add
-            uid: _ext_managementgroups_az_account_management_group_subscription_add
+            uid: ext_managementgroups_az_account_management_group_subscription_add
             displayName: az account management-group subscription add
           - name: Remove
-            uid: _ext_managementgroups_az_account_management_group_subscription_remove
+            uid: ext_managementgroups_az_account_management_group_subscription_remove
             displayName: az account management-group subscription remove
   - name: managementpartner
-    uid: _ext_managementpartner_az
+    uid: ext_managementpartner_az
     items:
     - name: Managementpartner
-      uid: _ext_managementpartner_az_managementpartner
+      uid: ext_managementpartner_az_managementpartner
       displayName: az managementpartner
       items:
       - name: Create
-        uid: _ext_managementpartner_az_managementpartner_create
+        uid: ext_managementpartner_az_managementpartner_create
         displayName: az managementpartner create
       - name: Delete
-        uid: _ext_managementpartner_az_managementpartner_delete
+        uid: ext_managementpartner_az_managementpartner_delete
         displayName: az managementpartner delete
       - name: Show
-        uid: _ext_managementpartner_az_managementpartner_show
+        uid: ext_managementpartner_az_managementpartner_show
         displayName: az managementpartner show
       - name: Update
-        uid: _ext_managementpartner_az_managementpartner_update
+        uid: ext_managementpartner_az_managementpartner_update
         displayName: az managementpartner update
-  - name: rdbms
-    uid: _ext_rdbms_az
+  - name: mesh
+    uid: ext_mesh_az
+    items:
+    - name: Mesh
+      uid: ext_mesh_az_mesh
+      displayName: az mesh
+      items:
+      - name: App
+        uid: ext_mesh_az_mesh_app
+        displayName: az mesh app
+        items:
+        - name: Delete
+          uid: ext_mesh_az_mesh_app_delete
+          displayName: az mesh app delete
+        - name: List
+          uid: ext_mesh_az_mesh_app_list
+          displayName: az mesh app list
+        - name: Show
+          uid: ext_mesh_az_mesh_app_show
+          displayName: az mesh app show
+      - name: Code-Package-Log
+        uid: ext_mesh_az_mesh_code_package_log
+        displayName: az mesh code-package-log
+        items:
+        - name: Get
+          uid: ext_mesh_az_mesh_code_package_log_get
+          displayName: az mesh code-package-log get
+      - name: Deployment
+        uid: ext_mesh_az_mesh_deployment
+        displayName: az mesh deployment
+        items:
+        - name: Create
+          uid: ext_mesh_az_mesh_deployment_create
+          displayName: az mesh deployment create
+      - name: Network
+        uid: ext_mesh_az_mesh_network
+        displayName: az mesh network
+        items:
+        - name: Delete
+          uid: ext_mesh_az_mesh_network_delete
+          displayName: az mesh network delete
+        - name: List
+          uid: ext_mesh_az_mesh_network_list
+          displayName: az mesh network list
+        - name: Show
+          uid: ext_mesh_az_mesh_network_show
+          displayName: az mesh network show
+      - name: Service
+        uid: ext_mesh_az_mesh_service
+        displayName: az mesh service
+        items:
+        - name: List
+          uid: ext_mesh_az_mesh_service_list
+          displayName: az mesh service list
+        - name: Show
+          uid: ext_mesh_az_mesh_service_show
+          displayName: az mesh service show
+      - name: Service-Replica
+        uid: ext_mesh_az_mesh_service_replica
+        displayName: az mesh service-replica
+        items:
+        - name: List
+          uid: ext_mesh_az_mesh_service_replica_list
+          displayName: az mesh service-replica list
+        - name: Show
+          uid: ext_mesh_az_mesh_service_replica_show
+          displayName: az mesh service-replica show
+      - name: Volume
+        uid: ext_mesh_az_mesh_volume
+        displayName: az mesh volume
+        items:
+        - name: Create
+          uid: ext_mesh_az_mesh_volume_create
+          displayName: az mesh volume create
+        - name: Delete
+          uid: ext_mesh_az_mesh_volume_delete
+          displayName: az mesh volume delete
+        - name: List
+          uid: ext_mesh_az_mesh_volume_list
+          displayName: az mesh volume list
+        - name: Show
+          uid: ext_mesh_az_mesh_volume_show
+          displayName: az mesh volume show
+  - name: rdbms-vnet
+    uid: ext_rdbms-vnet_az
     items:
     - name: Mysql
-      uid: _ext_rdbms_az_mysql
+      uid: ext_rdbms-vnet_az_mysql
       displayName: az mysql
       items:
       - name: Servers
-        uid: _ext_rdbms_az_mysql_server
+        uid: ext_rdbms-vnet_az_mysql_server
         displayName: az mysql server
         items:
-        - name: Create
-          uid: _ext_rdbms_az_mysql_server_create
-          displayName: az mysql server create
-        - name: Georestore
-          uid: _ext_rdbms_az_mysql_server_georestore
-          displayName: az mysql server georestore
+        - name: Vnet-Rule
+          uid: ext_rdbms-vnet_az_mysql_server_vnet_rule
+          displayName: az mysql server vnet-rule
+          items:
+          - name: Create
+            uid: ext_rdbms-vnet_az_mysql_server_vnet_rule_create
+            displayName: az mysql server vnet-rule create
+          - name: Delete
+            uid: ext_rdbms-vnet_az_mysql_server_vnet_rule_delete
+            displayName: az mysql server vnet-rule delete
+          - name: List
+            uid: ext_rdbms-vnet_az_mysql_server_vnet_rule_list
+            displayName: az mysql server vnet-rule list
+          - name: Show
+            uid: ext_rdbms-vnet_az_mysql_server_vnet_rule_show
+            displayName: az mysql server vnet-rule show
+          - name: Update
+            uid: ext_rdbms-vnet_az_mysql_server_vnet_rule_update
+            displayName: az mysql server vnet-rule update
     - name: Postgresql
-      uid: _ext_rdbms_az_postgres
+      uid: ext_rdbms-vnet_az_postgres
       displayName: az postgres
       items:
       - name: Servers
-        uid: _ext_rdbms_az_postgres_server
+        uid: ext_rdbms-vnet_az_postgres_server
         displayName: az postgres server
         items:
+        - name: Vnet-Rule
+          uid: ext_rdbms-vnet_az_postgres_server_vnet_rule
+          displayName: az postgres server vnet-rule
+          items:
+          - name: Create
+            uid: ext_rdbms-vnet_az_postgres_server_vnet_rule_create
+            displayName: az postgres server vnet-rule create
+          - name: Delete
+            uid: ext_rdbms-vnet_az_postgres_server_vnet_rule_delete
+            displayName: az postgres server vnet-rule delete
+          - name: List
+            uid: ext_rdbms-vnet_az_postgres_server_vnet_rule_list
+            displayName: az postgres server vnet-rule list
+          - name: Show
+            uid: ext_rdbms-vnet_az_postgres_server_vnet_rule_show
+            displayName: az postgres server vnet-rule show
+          - name: Update
+            uid: ext_rdbms-vnet_az_postgres_server_vnet_rule_update
+            displayName: az postgres server vnet-rule update
+  - name: signalr
+    uid: ext_signalr_az
+    items:
+    - name: Signalr
+      uid: ext_signalr_az_signalr
+      displayName: az signalr
+      items:
+      - name: Create
+        uid: ext_signalr_az_signalr_create
+        displayName: az signalr create
+      - name: Delete
+        uid: ext_signalr_az_signalr_delete
+        displayName: az signalr delete
+      - name: List
+        uid: ext_signalr_az_signalr_list
+        displayName: az signalr list
+      - name: Show
+        uid: ext_signalr_az_signalr_show
+        displayName: az signalr show
+      - name: Key
+        uid: ext_signalr_az_signalr_key
+        displayName: az signalr key
+        items:
+        - name: List
+          uid: ext_signalr_az_signalr_key_list
+          displayName: az signalr key list
+        - name: Renew
+          uid: ext_signalr_az_signalr_key_renew
+          displayName: az signalr key renew
+  - name: storage-preview
+    uid: ext_storage-preview_az
+    items:
+    - name: Storage
+      uid: ext_storage-preview_az_storage
+      displayName: az storage
+      items:
+      - name: Accounts
+        uid: ext_storage-preview_az_storage_account
+        displayName: az storage account
+        items:
+        - name: Check-Name
+          uid: ext_storage-preview_az_storage_account_check_name
+          displayName: az storage account check-name
         - name: Create
-          uid: _ext_rdbms_az_postgres_server_create
-          displayName: az postgres server create
-        - name: Georestore
-          uid: _ext_rdbms_az_postgres_server_georestore
-          displayName: az postgres server georestore
+          uid: ext_storage-preview_az_storage_account_create
+          displayName: az storage account create
+        - name: Delete
+          uid: ext_storage-preview_az_storage_account_delete
+          displayName: az storage account delete
+        - name: Generate-Sas
+          uid: ext_storage-preview_az_storage_account_generate_sas
+          displayName: az storage account generate-sas
+        - name: List
+          uid: ext_storage-preview_az_storage_account_list
+          displayName: az storage account list
+        - name: Show
+          uid: ext_storage-preview_az_storage_account_show
+          displayName: az storage account show
+        - name: Show-Connection-String
+          uid: ext_storage-preview_az_storage_account_show_connection_string
+          displayName: az storage account show-connection-string
+        - name: Show-Usage
+          uid: ext_storage-preview_az_storage_account_show_usage
+          displayName: az storage account show-usage
+        - name: Update
+          uid: ext_storage-preview_az_storage_account_update
+          displayName: az storage account update
+        - name: Keys
+          uid: ext_storage-preview_az_storage_account_keys
+          displayName: az storage account keys
+          items:
+          - name: List
+            uid: ext_storage-preview_az_storage_account_keys_list
+            displayName: az storage account keys list
+          - name: Renew
+            uid: ext_storage-preview_az_storage_account_keys_renew
+            displayName: az storage account keys renew
+        - name: Management-Policy
+          uid: ext_storage-preview_az_storage_account_management_policy
+          displayName: az storage account management-policy
+          items:
+          - name: Create
+            uid: ext_storage-preview_az_storage_account_management_policy_create
+            displayName: az storage account management-policy create
+          - name: Delete
+            uid: ext_storage-preview_az_storage_account_management_policy_delete
+            displayName: az storage account management-policy delete
+          - name: Show
+            uid: ext_storage-preview_az_storage_account_management_policy_show
+            displayName: az storage account management-policy show
+          - name: Update
+            uid: ext_storage-preview_az_storage_account_management_policy_update
+            displayName: az storage account management-policy update
+        - name: Network-Rule
+          uid: ext_storage-preview_az_storage_account_network_rule
+          displayName: az storage account network-rule
+          items:
+          - name: Add
+            uid: ext_storage-preview_az_storage_account_network_rule_add
+            displayName: az storage account network-rule add
+          - name: List
+            uid: ext_storage-preview_az_storage_account_network_rule_list
+            displayName: az storage account network-rule list
+          - name: Remove
+            uid: ext_storage-preview_az_storage_account_network_rule_remove
+            displayName: az storage account network-rule remove
+      - name: Blob
+        uid: ext_storage-preview_az_storage_blob
+        displayName: az storage blob
+        items:
+        - name: Delete
+          uid: ext_storage-preview_az_storage_blob_delete
+          displayName: az storage blob delete
+        - name: Delete-Batch
+          uid: ext_storage-preview_az_storage_blob_delete_batch
+          displayName: az storage blob delete-batch
+        - name: Download
+          uid: ext_storage-preview_az_storage_blob_download
+          displayName: az storage blob download
+        - name: Download-Batch
+          uid: ext_storage-preview_az_storage_blob_download_batch
+          displayName: az storage blob download-batch
+        - name: Exists
+          uid: ext_storage-preview_az_storage_blob_exists
+          displayName: az storage blob exists
+        - name: Generate-Sas
+          uid: ext_storage-preview_az_storage_blob_generate_sas
+          displayName: az storage blob generate-sas
+        - name: List
+          uid: ext_storage-preview_az_storage_blob_list
+          displayName: az storage blob list
+        - name: Set-Tier
+          uid: ext_storage-preview_az_storage_blob_set_tier
+          displayName: az storage blob set-tier
+        - name: Show
+          uid: ext_storage-preview_az_storage_blob_show
+          displayName: az storage blob show
+        - name: Snapshot
+          uid: ext_storage-preview_az_storage_blob_snapshot
+          displayName: az storage blob snapshot
+        - name: Undelete
+          uid: ext_storage-preview_az_storage_blob_undelete
+          displayName: az storage blob undelete
+        - name: Update
+          uid: ext_storage-preview_az_storage_blob_update
+          displayName: az storage blob update
+        - name: Upload
+          uid: ext_storage-preview_az_storage_blob_upload
+          displayName: az storage blob upload
+        - name: Upload-Batch
+          uid: ext_storage-preview_az_storage_blob_upload_batch
+          displayName: az storage blob upload-batch
+        - name: Url
+          uid: ext_storage-preview_az_storage_blob_url
+          displayName: az storage blob url
+        - name: Copy Operations
+          uid: ext_storage-preview_az_storage_blob_copy
+          displayName: az storage blob copy
+          items:
+          - name: Cancel
+            uid: ext_storage-preview_az_storage_blob_copy_cancel
+            displayName: az storage blob copy cancel
+          - name: Start
+            uid: ext_storage-preview_az_storage_blob_copy_start
+            displayName: az storage blob copy start
+          - name: Start-Batch
+            uid: ext_storage-preview_az_storage_blob_copy_start_batch
+            displayName: az storage blob copy start-batch
+        - name: Incremental-Copy
+          uid: ext_storage-preview_az_storage_blob_incremental_copy
+          displayName: az storage blob incremental-copy
+          items:
+          - name: Cancel
+            uid: ext_storage-preview_az_storage_blob_incremental_copy_cancel
+            displayName: az storage blob incremental-copy cancel
+          - name: Start
+            uid: ext_storage-preview_az_storage_blob_incremental_copy_start
+            displayName: az storage blob incremental-copy start
+        - name: Leases
+          uid: ext_storage-preview_az_storage_blob_lease
+          displayName: az storage blob lease
+          items:
+          - name: Acquire
+            uid: ext_storage-preview_az_storage_blob_lease_acquire
+            displayName: az storage blob lease acquire
+          - name: Break
+            uid: ext_storage-preview_az_storage_blob_lease_break
+            displayName: az storage blob lease break
+          - name: Change
+            uid: ext_storage-preview_az_storage_blob_lease_change
+            displayName: az storage blob lease change
+          - name: Release
+            uid: ext_storage-preview_az_storage_blob_lease_release
+            displayName: az storage blob lease release
+          - name: Renew
+            uid: ext_storage-preview_az_storage_blob_lease_renew
+            displayName: az storage blob lease renew
+        - name: Metadata
+          uid: ext_storage-preview_az_storage_blob_metadata
+          displayName: az storage blob metadata
+          items:
+          - name: Show
+            uid: ext_storage-preview_az_storage_blob_metadata_show
+            displayName: az storage blob metadata show
+          - name: Update
+            uid: ext_storage-preview_az_storage_blob_metadata_update
+            displayName: az storage blob metadata update
+        - name: Service Properties
+          uid: ext_storage-preview_az_storage_blob_service_properties
+          displayName: az storage blob service-properties
+          items:
+          - name: Show
+            uid: ext_storage-preview_az_storage_blob_service_properties_show
+            displayName: az storage blob service-properties show
+          - name: Update
+            uid: ext_storage-preview_az_storage_blob_service_properties_update
+            displayName: az storage blob service-properties update
+          - name: Delete-Policy
+            uid: ext_storage-preview_az_storage_blob_service_properties_delete_policy
+            displayName: az storage blob service-properties delete-policy
+            items:
+            - name: Show
+              uid: ext_storage-preview_az_storage_blob_service_properties_delete_policy_show
+              displayName: az storage blob service-properties delete-policy show
+            - name: Update
+              uid: ext_storage-preview_az_storage_blob_service_properties_delete_policy_update
+              displayName: az storage blob service-properties delete-policy update
+      - name: Containers
+        uid: ext_storage-preview_az_storage_container
+        displayName: az storage container
+        items:
+        - name: Create
+          uid: ext_storage-preview_az_storage_container_create
+          displayName: az storage container create
+        - name: Delete
+          uid: ext_storage-preview_az_storage_container_delete
+          displayName: az storage container delete
+        - name: Exists
+          uid: ext_storage-preview_az_storage_container_exists
+          displayName: az storage container exists
+        - name: Generate-Sas
+          uid: ext_storage-preview_az_storage_container_generate_sas
+          displayName: az storage container generate-sas
+        - name: List
+          uid: ext_storage-preview_az_storage_container_list
+          displayName: az storage container list
+        - name: Set-Permission
+          uid: ext_storage-preview_az_storage_container_set_permission
+          displayName: az storage container set-permission
+        - name: Show
+          uid: ext_storage-preview_az_storage_container_show
+          displayName: az storage container show
+        - name: Show-Permission
+          uid: ext_storage-preview_az_storage_container_show_permission
+          displayName: az storage container show-permission
+        - name: Immutability-Policy
+          uid: ext_storage-preview_az_storage_container_immutability_policy
+          displayName: az storage container immutability-policy
+          items:
+          - name: Create
+            uid: ext_storage-preview_az_storage_container_immutability_policy_create
+            displayName: az storage container immutability-policy create
+          - name: Delete
+            uid: ext_storage-preview_az_storage_container_immutability_policy_delete
+            displayName: az storage container immutability-policy delete
+          - name: Extend
+            uid: ext_storage-preview_az_storage_container_immutability_policy_extend
+            displayName: az storage container immutability-policy extend
+          - name: Lock
+            uid: ext_storage-preview_az_storage_container_immutability_policy_lock
+            displayName: az storage container immutability-policy lock
+          - name: Show
+            uid: ext_storage-preview_az_storage_container_immutability_policy_show
+            displayName: az storage container immutability-policy show
+        - name: Leases
+          uid: ext_storage-preview_az_storage_container_lease
+          displayName: az storage container lease
+          items:
+          - name: Acquire
+            uid: ext_storage-preview_az_storage_container_lease_acquire
+            displayName: az storage container lease acquire
+          - name: Break
+            uid: ext_storage-preview_az_storage_container_lease_break
+            displayName: az storage container lease break
+          - name: Change
+            uid: ext_storage-preview_az_storage_container_lease_change
+            displayName: az storage container lease change
+          - name: Release
+            uid: ext_storage-preview_az_storage_container_lease_release
+            displayName: az storage container lease release
+          - name: Renew
+            uid: ext_storage-preview_az_storage_container_lease_renew
+            displayName: az storage container lease renew
+        - name: Legal-Hold
+          uid: ext_storage-preview_az_storage_container_legal_hold
+          displayName: az storage container legal-hold
+          items:
+          - name: Clear
+            uid: ext_storage-preview_az_storage_container_legal_hold_clear
+            displayName: az storage container legal-hold clear
+          - name: Set
+            uid: ext_storage-preview_az_storage_container_legal_hold_set
+            displayName: az storage container legal-hold set
+          - name: Show
+            uid: ext_storage-preview_az_storage_container_legal_hold_show
+            displayName: az storage container legal-hold show
+        - name: Metadata
+          uid: ext_storage-preview_az_storage_container_metadata
+          displayName: az storage container metadata
+          items:
+          - name: Show
+            uid: ext_storage-preview_az_storage_container_metadata_show
+            displayName: az storage container metadata show
+          - name: Update
+            uid: ext_storage-preview_az_storage_container_metadata_update
+            displayName: az storage container metadata update
+        - name: Policies
+          uid: ext_storage-preview_az_storage_container_policy
+          displayName: az storage container policy
+          items:
+          - name: Create
+            uid: ext_storage-preview_az_storage_container_policy_create
+            displayName: az storage container policy create
+          - name: Delete
+            uid: ext_storage-preview_az_storage_container_policy_delete
+            displayName: az storage container policy delete
+          - name: List
+            uid: ext_storage-preview_az_storage_container_policy_list
+            displayName: az storage container policy list
+          - name: Show
+            uid: ext_storage-preview_az_storage_container_policy_show
+            displayName: az storage container policy show
+          - name: Update
+            uid: ext_storage-preview_az_storage_container_policy_update
+            displayName: az storage container policy update
+      - name: Cross-Origin Resorce Sharing
+        uid: ext_storage-preview_az_storage_cors
+        displayName: az storage cors
+        items:
+        - name: Add
+          uid: ext_storage-preview_az_storage_cors_add
+          displayName: az storage cors add
+        - name: Clear
+          uid: ext_storage-preview_az_storage_cors_clear
+          displayName: az storage cors clear
+        - name: List
+          uid: ext_storage-preview_az_storage_cors_list
+          displayName: az storage cors list
+      - name: Directories
+        uid: ext_storage-preview_az_storage_directory
+        displayName: az storage directory
+        items:
+        - name: Create
+          uid: ext_storage-preview_az_storage_directory_create
+          displayName: az storage directory create
+        - name: Delete
+          uid: ext_storage-preview_az_storage_directory_delete
+          displayName: az storage directory delete
+        - name: Exists
+          uid: ext_storage-preview_az_storage_directory_exists
+          displayName: az storage directory exists
+        - name: List
+          uid: ext_storage-preview_az_storage_directory_list
+          displayName: az storage directory list
+        - name: Show
+          uid: ext_storage-preview_az_storage_directory_show
+          displayName: az storage directory show
+        - name: Metadata
+          uid: ext_storage-preview_az_storage_directory_metadata
+          displayName: az storage directory metadata
+          items:
+          - name: Show
+            uid: ext_storage-preview_az_storage_directory_metadata_show
+            displayName: az storage directory metadata show
+          - name: Update
+            uid: ext_storage-preview_az_storage_directory_metadata_update
+            displayName: az storage directory metadata update
+      - name: File Shares
+        uid: ext_storage-preview_az_storage_share
+        displayName: az storage share
+        items:
+        - name: Create
+          uid: ext_storage-preview_az_storage_share_create
+          displayName: az storage share create
+        - name: Delete
+          uid: ext_storage-preview_az_storage_share_delete
+          displayName: az storage share delete
+        - name: Exists
+          uid: ext_storage-preview_az_storage_share_exists
+          displayName: az storage share exists
+        - name: Generate-Sas
+          uid: ext_storage-preview_az_storage_share_generate_sas
+          displayName: az storage share generate-sas
+        - name: List
+          uid: ext_storage-preview_az_storage_share_list
+          displayName: az storage share list
+        - name: Show
+          uid: ext_storage-preview_az_storage_share_show
+          displayName: az storage share show
+        - name: Snapshot
+          uid: ext_storage-preview_az_storage_share_snapshot
+          displayName: az storage share snapshot
+        - name: Stats
+          uid: ext_storage-preview_az_storage_share_stats
+          displayName: az storage share stats
+        - name: Update
+          uid: ext_storage-preview_az_storage_share_update
+          displayName: az storage share update
+        - name: Metadata
+          uid: ext_storage-preview_az_storage_share_metadata
+          displayName: az storage share metadata
+          items:
+          - name: Show
+            uid: ext_storage-preview_az_storage_share_metadata_show
+            displayName: az storage share metadata show
+          - name: Update
+            uid: ext_storage-preview_az_storage_share_metadata_update
+            displayName: az storage share metadata update
+        - name: Policies
+          uid: ext_storage-preview_az_storage_share_policy
+          displayName: az storage share policy
+          items:
+          - name: Create
+            uid: ext_storage-preview_az_storage_share_policy_create
+            displayName: az storage share policy create
+          - name: Delete
+            uid: ext_storage-preview_az_storage_share_policy_delete
+            displayName: az storage share policy delete
+          - name: List
+            uid: ext_storage-preview_az_storage_share_policy_list
+            displayName: az storage share policy list
+          - name: Show
+            uid: ext_storage-preview_az_storage_share_policy_show
+            displayName: az storage share policy show
+          - name: Update
+            uid: ext_storage-preview_az_storage_share_policy_update
+            displayName: az storage share policy update
+      - name: Files
+        uid: ext_storage-preview_az_storage_file
+        displayName: az storage file
+        items:
+        - name: Delete
+          uid: ext_storage-preview_az_storage_file_delete
+          displayName: az storage file delete
+        - name: Delete-Batch
+          uid: ext_storage-preview_az_storage_file_delete_batch
+          displayName: az storage file delete-batch
+        - name: Download
+          uid: ext_storage-preview_az_storage_file_download
+          displayName: az storage file download
+        - name: Download-Batch
+          uid: ext_storage-preview_az_storage_file_download_batch
+          displayName: az storage file download-batch
+        - name: Exists
+          uid: ext_storage-preview_az_storage_file_exists
+          displayName: az storage file exists
+        - name: Generate-Sas
+          uid: ext_storage-preview_az_storage_file_generate_sas
+          displayName: az storage file generate-sas
+        - name: List
+          uid: ext_storage-preview_az_storage_file_list
+          displayName: az storage file list
+        - name: Resize
+          uid: ext_storage-preview_az_storage_file_resize
+          displayName: az storage file resize
+        - name: Show
+          uid: ext_storage-preview_az_storage_file_show
+          displayName: az storage file show
+        - name: Update
+          uid: ext_storage-preview_az_storage_file_update
+          displayName: az storage file update
+        - name: Upload
+          uid: ext_storage-preview_az_storage_file_upload
+          displayName: az storage file upload
+        - name: Upload-Batch
+          uid: ext_storage-preview_az_storage_file_upload_batch
+          displayName: az storage file upload-batch
+        - name: Url
+          uid: ext_storage-preview_az_storage_file_url
+          displayName: az storage file url
+        - name: Copy Operations
+          uid: ext_storage-preview_az_storage_file_copy
+          displayName: az storage file copy
+          items:
+          - name: Cancel
+            uid: ext_storage-preview_az_storage_file_copy_cancel
+            displayName: az storage file copy cancel
+          - name: Start
+            uid: ext_storage-preview_az_storage_file_copy_start
+            displayName: az storage file copy start
+          - name: Start-Batch
+            uid: ext_storage-preview_az_storage_file_copy_start_batch
+            displayName: az storage file copy start-batch
+        - name: Metadata
+          uid: ext_storage-preview_az_storage_file_metadata
+          displayName: az storage file metadata
+          items:
+          - name: Show
+            uid: ext_storage-preview_az_storage_file_metadata_show
+            displayName: az storage file metadata show
+          - name: Update
+            uid: ext_storage-preview_az_storage_file_metadata_update
+            displayName: az storage file metadata update
+      - name: Logging
+        uid: ext_storage-preview_az_storage_logging
+        displayName: az storage logging
+        items:
+        - name: Show
+          uid: ext_storage-preview_az_storage_logging_show
+          displayName: az storage logging show
+        - name: Update
+          uid: ext_storage-preview_az_storage_logging_update
+          displayName: az storage logging update
+      - name: Messages
+        uid: ext_storage-preview_az_storage_message
+        displayName: az storage message
+        items:
+        - name: Clear
+          uid: ext_storage-preview_az_storage_message_clear
+          displayName: az storage message clear
+        - name: Delete
+          uid: ext_storage-preview_az_storage_message_delete
+          displayName: az storage message delete
+        - name: Get
+          uid: ext_storage-preview_az_storage_message_get
+          displayName: az storage message get
+        - name: Peek
+          uid: ext_storage-preview_az_storage_message_peek
+          displayName: az storage message peek
+        - name: Put
+          uid: ext_storage-preview_az_storage_message_put
+          displayName: az storage message put
+        - name: Update
+          uid: ext_storage-preview_az_storage_message_update
+          displayName: az storage message update
+      - name: Metrics
+        uid: ext_storage-preview_az_storage_metrics
+        displayName: az storage metrics
+        items:
+        - name: Show
+          uid: ext_storage-preview_az_storage_metrics_show
+          displayName: az storage metrics show
+        - name: Update
+          uid: ext_storage-preview_az_storage_metrics_update
+          displayName: az storage metrics update
+      - name: Queues
+        uid: ext_storage-preview_az_storage_queue
+        displayName: az storage queue
+        items:
+        - name: Create
+          uid: ext_storage-preview_az_storage_queue_create
+          displayName: az storage queue create
+        - name: Delete
+          uid: ext_storage-preview_az_storage_queue_delete
+          displayName: az storage queue delete
+        - name: Exists
+          uid: ext_storage-preview_az_storage_queue_exists
+          displayName: az storage queue exists
+        - name: Generate-Sas
+          uid: ext_storage-preview_az_storage_queue_generate_sas
+          displayName: az storage queue generate-sas
+        - name: List
+          uid: ext_storage-preview_az_storage_queue_list
+          displayName: az storage queue list
+        - name: Stats
+          uid: ext_storage-preview_az_storage_queue_stats
+          displayName: az storage queue stats
+        - name: Metadata
+          uid: ext_storage-preview_az_storage_queue_metadata
+          displayName: az storage queue metadata
+          items:
+          - name: Show
+            uid: ext_storage-preview_az_storage_queue_metadata_show
+            displayName: az storage queue metadata show
+          - name: Update
+            uid: ext_storage-preview_az_storage_queue_metadata_update
+            displayName: az storage queue metadata update
+        - name: Policies
+          uid: ext_storage-preview_az_storage_queue_policy
+          displayName: az storage queue policy
+          items:
+          - name: Create
+            uid: ext_storage-preview_az_storage_queue_policy_create
+            displayName: az storage queue policy create
+          - name: Delete
+            uid: ext_storage-preview_az_storage_queue_policy_delete
+            displayName: az storage queue policy delete
+          - name: List
+            uid: ext_storage-preview_az_storage_queue_policy_list
+            displayName: az storage queue policy list
+          - name: Show
+            uid: ext_storage-preview_az_storage_queue_policy_show
+            displayName: az storage queue policy show
+          - name: Update
+            uid: ext_storage-preview_az_storage_queue_policy_update
+            displayName: az storage queue policy update
+      - name: Table Storage Entities
+        uid: ext_storage-preview_az_storage_entity
+        displayName: az storage entity
+        items:
+        - name: Delete
+          uid: ext_storage-preview_az_storage_entity_delete
+          displayName: az storage entity delete
+        - name: Insert
+          uid: ext_storage-preview_az_storage_entity_insert
+          displayName: az storage entity insert
+        - name: Merge
+          uid: ext_storage-preview_az_storage_entity_merge
+          displayName: az storage entity merge
+        - name: Query
+          uid: ext_storage-preview_az_storage_entity_query
+          displayName: az storage entity query
+        - name: Replace
+          uid: ext_storage-preview_az_storage_entity_replace
+          displayName: az storage entity replace
+        - name: Show
+          uid: ext_storage-preview_az_storage_entity_show
+          displayName: az storage entity show
+      - name: Tables
+        uid: ext_storage-preview_az_storage_table
+        displayName: az storage table
+        items:
+        - name: Create
+          uid: ext_storage-preview_az_storage_table_create
+          displayName: az storage table create
+        - name: Delete
+          uid: ext_storage-preview_az_storage_table_delete
+          displayName: az storage table delete
+        - name: Exists
+          uid: ext_storage-preview_az_storage_table_exists
+          displayName: az storage table exists
+        - name: Generate-Sas
+          uid: ext_storage-preview_az_storage_table_generate_sas
+          displayName: az storage table generate-sas
+        - name: List
+          uid: ext_storage-preview_az_storage_table_list
+          displayName: az storage table list
+        - name: Stats
+          uid: ext_storage-preview_az_storage_table_stats
+          displayName: az storage table stats
+        - name: Policies
+          uid: ext_storage-preview_az_storage_table_policy
+          displayName: az storage table policy
+          items:
+          - name: Create
+            uid: ext_storage-preview_az_storage_table_policy_create
+            displayName: az storage table policy create
+          - name: Delete
+            uid: ext_storage-preview_az_storage_table_policy_delete
+            displayName: az storage table policy delete
+          - name: List
+            uid: ext_storage-preview_az_storage_table_policy_list
+            displayName: az storage table policy list
+          - name: Show
+            uid: ext_storage-preview_az_storage_table_policy_show
+            displayName: az storage table policy show
+          - name: Update
+            uid: ext_storage-preview_az_storage_table_policy_update
+            displayName: az storage table policy update
   - name: subscription
-    uid: _ext_subscription_az
+    uid: ext_subscription_az
     items:
     - name: Subscriptions
-      uid: _ext_subscription_az_account
+      uid: ext_subscription_az_account
       displayName: az account
       items:
       - name: Create
-        uid: _ext_subscription_az_account_create
+        uid: ext_subscription_az_account_create
         displayName: az account create
   - name: webapp
-    uid: _ext_webapp_az
+    uid: ext_webapp_az
     items:
     - name: Web Apps
-      uid: _ext_webapp_az_webapp
+      uid: ext_webapp_az_webapp
       displayName: az webapp
       items:
       - name: Up
-        uid: _ext_webapp_az_webapp_up
+        uid: ext_webapp_az_webapp_up
         displayName: az webapp up
+      - name: Config
+        uid: ext_webapp_az_webapp_config
+        displayName: az webapp config
+        items:
+        - name: Snapshot
+          uid: ext_webapp_az_webapp_config_snapshot
+          displayName: az webapp config snapshot
+          items:
+          - name: List
+            uid: ext_webapp_az_webapp_config_snapshot_list
+            displayName: az webapp config snapshot list
+          - name: Restore
+            uid: ext_webapp_az_webapp_config_snapshot_restore
+            displayName: az webapp config snapshot restore
+      - name: Remote-Connection
+        uid: ext_webapp_az_webapp_remote_connection
+        displayName: az webapp remote-connection
+        items:
+        - name: Create
+          uid: ext_webapp_az_webapp_remote_connection_create
+          displayName: az webapp remote-connection create

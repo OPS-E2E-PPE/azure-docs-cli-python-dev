@@ -7,8 +7,28 @@ items:
   langs:
   - azurecli
   children:
+  - az_ad_sp_create
   - az_ad_sp_create_for_rbac
-  - az_ad_sp_reset_credentials
+  - az_ad_sp_delete
+  - az_ad_sp_list
+  - az_ad_sp_show
+- uid: az_ad_sp_create
+  name: az ad sp create
+  summary: Create a service principal.
+  description: ''
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --id
+    summary: Identifier uri, application id, or object id of the associated application.
+    description: ''
+  source:
+    path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+    remote:
+      branch: dev
+      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+      repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_ad_sp_create_for_rbac
   name: az ad sp create-for-rbac
   summary: Create a service principal and configure its access to Azure resources.
@@ -80,34 +100,55 @@ items:
       branch: dev
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       repo: https://github.com/daxianji007/azure-cli.git
-- uid: az_ad_sp_reset_credentials
-  name: az ad sp reset-credentials
-  summary: (Deprecated, use "az ad sp credential reset").
+- uid: az_ad_sp_delete
+  name: az ad sp delete
+  summary: Delete a service principal and its role assignments.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: ''
+    name: --id
+    summary: Service principal name, or object id.
     description: ''
-  - name: --append
-    summary: Append the new credential instead of overwriting.
+  source:
+    path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+    remote:
+      branch: dev
+      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+      repo: https://github.com/daxianji007/azure-cli.git
+- uid: az_ad_sp_list
+  name: az ad sp list
+  summary: List service principals.
+  description: ''
+  langs:
+  - azurecli
+  parameters:
+  - name: --display-name
+    summary: Object's display name or its prefix.
     description: ''
-  - name: --cert
-    summary: ''
+  - name: --filter
+    summary: OData filter.
     description: ''
-  - name: --create-cert
-    summary: ''
+  - name: --spn
+    summary: Service principal name.
     description: ''
-  - name: --keyvault
-    summary: ''
-    description: ''
-  - name: --password -p
-    summary: ''
-    description: ''
-  - name: --years
-    summary: ''
+  source:
+    path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+    remote:
+      branch: dev
+      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+      repo: https://github.com/daxianji007/azure-cli.git
+- uid: az_ad_sp_show
+  name: az ad sp show
+  summary: Get the details of a service principal.
+  description: ''
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --id
+    summary: Service principal name, or object id.
     description: ''
   source:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
@@ -116,6 +157,9 @@ items:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       repo: https://github.com/daxianji007/azure-cli.git
 commands:
+- uid: az_ad_sp_create
+  name: az ad sp create
+  summary: Create a service principal.
 - uid: az_ad_sp_create_for_rbac
   name: az ad sp create-for-rbac
   summary: Create a service principal and configure its access to Azure resources.
@@ -131,9 +175,15 @@ commands:
 - uid: az_ad_sp_credential_reset
   name: az ad sp credential reset
   summary: Reset a service principal credential.
-- uid: az_ad_sp_reset_credentials
-  name: az ad sp reset-credentials
-  summary: (Deprecated, use "az ad sp credential reset").
+- uid: az_ad_sp_delete
+  name: az ad sp delete
+  summary: Delete a service principal and its role assignments.
+- uid: az_ad_sp_list
+  name: az ad sp list
+  summary: List service principals.
+- uid: az_ad_sp_show
+  name: az ad sp show
+  summary: Get the details of a service principal.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -150,6 +200,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/4c92d1fb317db3e358a06f53ca6f5714a8f4e27d/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-updated_at: 3/21/2018 10:09:19 PM
-ms.date: 3/21/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+updated_at: 6/28/2018 6:01:13 PM
+ms.date: 06/28/2018
+description: Manage Azure Active Directory service principals for automation authentication.

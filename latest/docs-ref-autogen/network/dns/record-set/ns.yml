@@ -76,14 +76,14 @@ items:
     summary: The etag of the record set. Omit this value to always overwrite the current record set. Specify the last-seen etag value to prevent accidentally overwritting any concurrent changes.
     description: ''
   - name: --if-none-match
-    summary: Set to '*' to allow a new record set to be created, but to prevent updating an existing record set. Other values will be ignored.
+    summary: Create the record set only if it does not already exist.
     description: ''
   - name: --metadata
     summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
     description: ''
   - name: --ttl
     defaultValue: "3600"
-    summary: ''
+    summary: Record set TTL (time-to-live).
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
@@ -255,6 +255,9 @@ items:
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
     description: ''
+  - name: --force-string
+    summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
+    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -305,6 +308,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/2e400f4de9b356c7f0813b412ae4b86cc054f7b0/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 3/29/2018 8:49:05 PM
-ms.date: 3/29/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 7/25/2018 10:19:48 PM
+ms.date: 07/25/2018
+description: Manage DNS NS records.

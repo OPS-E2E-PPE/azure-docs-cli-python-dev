@@ -119,6 +119,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/2e400f4de9b356c7f0813b412ae4b86cc054f7b0/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 3/29/2018 8:49:05 PM
-ms.date: 3/29/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 7/25/2018 10:19:48 PM
+ms.date: 07/25/2018
+description: Manage the rules of a URL path map.

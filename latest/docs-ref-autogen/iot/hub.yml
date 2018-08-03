@@ -47,7 +47,7 @@ items:
     description: ''
   - name: --sku
     defaultValue: F1
-    parameterValueGroup: F1, S1, S2, S3
+    parameterValueGroup: B1, B2, B3, F1, S1, S2, S3
     summary: Pricing tier for Azure IoT Hub. Default value is F1, which is free. Note that only one free IoT hub instance is allowed in each subscription. Exception will be thrown if free instances exceed one.
     description: ''
   - name: --unit
@@ -163,13 +163,14 @@ items:
     syntax:
       content: az iot hub show-connection-string
   parameters:
+  - isRequired: true
+    name: --name -n
+    summary: IoT Hub name.
+    description: ''
   - name: --key
     defaultValue: primary
     parameterValueGroup: primary, secondary
     summary: The key to use.
-    description: ''
-  - name: --name -n
-    summary: IoT Hub name.
     description: ''
   - name: --policy-name
     defaultValue: iothubowner
@@ -244,6 +245,9 @@ items:
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --force-string
+    summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
@@ -367,6 +371,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/0c85e56114c43bcef30f0114c597324ab46e69b2/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
-updated_at: 2/6/2018 8:49:04 PM
-ms.date: 2/6/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-iot/azure/cli/command_modules/iot/_help.py
+updated_at: 6/28/2018 6:01:13 PM
+ms.date: 06/28/2018
+description: (PREVIEW) Manage Azure IoT hubs.

@@ -14,9 +14,16 @@ items:
 - uid: az_sql_db_replica_create
   name: az sql db replica create
   summary: Create a database as a readable secondary replica of an existing database.
-  description: ''
+  description: A full list of performance level options can be seen by executing `az sql db list-editions -a -o table -l LOCATION`. The secondary database must have the same edition as the primary database.
   langs:
   - azurecli
+  examples:
+  - summary: Create a database with performance level S0 as a secondary replica of an existing Standard database.
+    syntax:
+      content: az sql db replica create -g mygroup -s myserver -n originalDb --partner-server newDb --service-objective S0
+  - summary: Create a database with GeneralPurpose edition, Gen4 hardware, and 1 vcore as a secondary replica of an existing GeneralPurpose database
+    syntax:
+      content: az sql db replica create -g mygroup -s myserver -n originalDb --partner-server newDb -f Gen4 -c 1
   parameters:
   - isRequired: true
     name: --name -n
@@ -32,10 +39,11 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
-  - name: --elastic-pool
-    summary: Name of elastic pool to create the new replica in.
+  - name: --license-type
+    parameterValueGroup: BasePrice, LicenseIncluded
+    summary: The license type to apply for this database.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -43,11 +51,24 @@ items:
   - name: --partner-resource-group
     summary: Name of the resource group to create the new replica in. If unspecified, defaults to the origin resource group.
     description: ''
-  - name: --service-objective
-    summary: Name of service objective for the new replica.
-    description: ''
   - name: --tags
-    summary: Resource tags.
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --zone-redundant -z
+    parameterValueGroup: false, true
+    summary: Specifies whether to enable zone redundancy.
+    description: ''
+  - name: --capacity -c
+    summary: The capacity component of the sku in integer number of DTUs or vcores.
+    description: ''
+  - name: --family -f
+    summary: 'The compute generation component of the sku (for vcore skus only). Allowed values include: Gen4, Gen5.'
+    description: ''
+  - name: --elastic-pool
+    summary: The name or resource id of the elastic pool to create the database in.
+    description: ''
+  - name: --service-objective
+    summary: 'The service objective for the new database. For example: Basic, S0, P1, GP_Gen4_1, BC_Gen5_2.'
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -76,7 +97,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --partner-resource-group
     summary: Name of the resource group that the other replica is in. If unspecified, defaults to the first database's resource group.
@@ -107,7 +128,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the Azure SQL server.
+    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   source:
     path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
@@ -132,7 +153,7 @@ items:
     description: ''
   - isRequired: true
     name: --server -s
-    summary: Name of the server containing the secondary replica that will become the new primary.
+    summary: Name of the server containing the secondary replica that will become the new primary. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --allow-data-loss
     summary: If specified, the failover operation will allow data loss.
@@ -172,6 +193,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/69d6e0b85855c9f490b3c6d2277d07fa8b22ee91/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
-updated_at: 2/21/2018 6:26:23 PM
-ms.date: 2/21/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+updated_at: 6/28/2018 6:01:13 PM
+ms.date: 06/28/2018
+description: Manage replication between databases.

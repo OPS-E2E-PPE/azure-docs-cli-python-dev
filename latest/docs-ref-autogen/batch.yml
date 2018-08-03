@@ -241,7 +241,7 @@ commands:
   summary: Enables task scheduling on the specified compute node.
 - uid: az_batch_node_service_logs
   name: az batch node service-logs
-  summary: ''
+  summary: Manage the service log files of a Batch compute node.
 - uid: az_batch_node_service_logs_upload
   name: az batch node service-logs upload
   summary: Upload Azure Batch service log files from the specified compute node to Azure Blob Storage.
@@ -298,7 +298,7 @@ commands:
   summary: Lists all node agent SKUs supported by the Azure Batch service.
 - uid: az_batch_pool_node_counts
   name: az batch pool node-counts
-  summary: ''
+  summary: Get node counts for Batch pools.
 - uid: az_batch_pool_node_counts_list
   name: az batch pool node-counts list
   summary: Gets the number of nodes in each state, grouped by pool.
@@ -387,6 +387,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/8346147d0da04063bd9000d1b370b2d65204cda8/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-updated_at: 11/13/2017 7:42:14 PM
-ms.date: 11/13/2017
+gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+updated_at: 6/28/2018 6:01:13 PM
+ms.date: 06/28/2018
+description: Manage Azure Batch.

@@ -318,6 +318,24 @@ commands:
 - uid: az_network_asg_update
   name: az network asg update
   summary: Update an application security group.
+- uid: az_network_ddos_protection
+  name: az network ddos-protection
+  summary: Manage DDoS Protection Plans.
+- uid: az_network_ddos_protection_create
+  name: az network ddos-protection create
+  summary: Create a DDoS protection plan.
+- uid: az_network_ddos_protection_delete
+  name: az network ddos-protection delete
+  summary: Delete a DDoS protection plan.
+- uid: az_network_ddos_protection_list
+  name: az network ddos-protection list
+  summary: List DDoS protection plans.
+- uid: az_network_ddos_protection_show
+  name: az network ddos-protection show
+  summary: Show details of a DDoS protection plan.
+- uid: az_network_ddos_protection_update
+  name: az network ddos-protection update
+  summary: Update a DDoS protection plan.
 - uid: az_network_dns
   name: az network dns
   summary: Manage DNS domains in Azure.
@@ -785,7 +803,7 @@ commands:
   summary: Update a local VPN gateway.
 - uid: az_network_local_gateway_wait
   name: az network local-gateway wait
-  summary: ''
+  summary: Place the CLI in a waiting state until a condition of the local gateway is met.
 - uid: az_network_nic
   name: az network nic
   summary: Manage network interfaces.
@@ -846,6 +864,9 @@ commands:
 - uid: az_network_nic_update
   name: az network nic update
   summary: Update a network interface.
+- uid: az_network_nic_wait
+  name: az network nic wait
+  summary: Place the CLI in a waiting state until a condition of the network interface is met.
 - uid: az_network_nsg
   name: az network nsg
   summary: Manage Azure Network Security Groups (NSGs).
@@ -1285,6 +1306,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/2e400f4de9b356c7f0813b412ae4b86cc054f7b0/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 3/29/2018 8:49:05 PM
-ms.date: 3/29/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 7/25/2018 10:19:48 PM
+ms.date: 07/25/2018
+description: Manage Azure Network resources.

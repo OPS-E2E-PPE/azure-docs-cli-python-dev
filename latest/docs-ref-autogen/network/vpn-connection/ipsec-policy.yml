@@ -35,12 +35,12 @@ items:
     description: ''
   - isRequired: true
     name: --ike-encryption
-    parameterValueGroup: AES128, AES192, AES256, DES, DES3
+    parameterValueGroup: AES128, AES192, AES256, DES, DES3, GCMAES128, GCMAES256
     summary: Required. The IKE encryption algorithm (IKE phase 2).
     description: ''
   - isRequired: true
     name: --ike-integrity
-    parameterValueGroup: MD5, SHA1, SHA256, SHA384
+    parameterValueGroup: GCMAES128, GCMAES256, MD5, SHA1, SHA256, SHA384
     summary: Required. The IKE integrity algorithm (IKE phase 2).
     description: ''
   - isRequired: true
@@ -55,8 +55,8 @@ items:
     description: ''
   - isRequired: true
     name: --pfs-group
-    parameterValueGroup: ECP256, ECP384, None, PFS1, PFS2, PFS2048, PFS24
-    summary: Required. The DH Groups used in IKE Phase 2 for new child SA.
+    parameterValueGroup: ECP256, ECP384, None, PFS1, PFS14, PFS2, PFS2048, PFS24, PFSMM
+    summary: Required. The Pfs Groups used in IKE Phase 2 for new child SA.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -158,6 +158,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/2e400f4de9b356c7f0813b412ae4b86cc054f7b0/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 3/29/2018 8:49:05 PM
-ms.date: 3/29/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/ad5275507bf0d16795ec1e4e7f3e56eea5859f7d/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 7/25/2018 10:19:48 PM
+ms.date: 07/25/2018
+description: Manage VPN connection IPSec policies.

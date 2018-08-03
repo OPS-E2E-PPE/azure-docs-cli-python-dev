@@ -15,7 +15,7 @@ items:
   - az_logout
 - uid: az_configure
   name: az configure
-  summary: Display and manage the Azure CLI 2.0 configuration. This command is interactive.
+  summary: Manage Azure CLI configuration. This command is interactive.
   description: ''
   langs:
   - azurecli
@@ -38,7 +38,7 @@ items:
       repo: https://github.com/daxianji007/azure-cli.git
 - uid: az_feedback
   name: az feedback
-  summary: Loving or hating the CLI?  Let us know!
+  summary: Send feedback to the Azure CLI Team!
   description: ''
   langs:
   - azurecli
@@ -122,14 +122,14 @@ items:
   - name: --tenant -t
     summary: The AAD tenant, must provide when using service principals.
     description: ''
+  - name: --use-device-code
+    summary: Use CLI's old authentication flow based on device code. CLI will also use this if it can't launch a browser in your behalf, e.g. in remote SSH or Cloud Shell.
+    description: ''
   - name: --username -u
     summary: User name, service principal, or managed service identity ID.
     description: ''
   - name: --identity -i
     summary: Log in using the Virtual Machine's identity.
-    description: ''
-  - name: --identity-port
-    summary: 'The port to retrieve tokens for login. Default: 50342.'
     description: ''
   source:
     path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
@@ -159,7 +159,7 @@ commands:
   summary: Manage Azure subscription information.
 - uid: az_acr
   name: az acr
-  summary: Manage Azure Container Registries.
+  summary: Manage Azure Container Registries for private registries within Azure.
 - uid: az_acs
   name: az acs
   summary: Manage Azure Container Services.
@@ -172,18 +172,21 @@ commands:
 - uid: az_aks
   name: az aks
   summary: Manage Azure Kubernetes Services.
+- uid: az_ams
+  name: az ams
+  summary: Manage Azure Media Services resources.
 - uid: az_appservice
   name: az appservice
   summary: Manage App Service plans.
 - uid: az_backup
   name: az backup
-  summary: Commands to manage Azure Backups.
+  summary: Manage Azure Backups.
 - uid: az_batch
   name: az batch
   summary: Manage Azure Batch.
 - uid: az_batchai
   name: az batchai
-  summary: Batch AI.
+  summary: Manage Batch AI resources.
 - uid: az_billing
   name: az billing
   summary: Manage Azure Billing.
@@ -198,7 +201,7 @@ commands:
   summary: Manage Azure Cognitive Services accounts.
 - uid: az_configure
   name: az configure
-  summary: Display and manage the Azure CLI 2.0 configuration. This command is interactive.
+  summary: Manage Azure CLI configuration. This command is interactive.
 - uid: az_consumption
   name: az consumption
   summary: Manage consumption of Azure resources.
@@ -208,6 +211,9 @@ commands:
 - uid: az_cosmosdb
   name: az cosmosdb
   summary: Manage Azure Cosmos DB database accounts.
+- uid: az_deployment
+  name: az deployment
+  summary: Manage Azure Resource Manager deployments at subscription scope.
 - uid: az_disk
   name: az disk
   summary: Manage Azure Managed Disks.
@@ -217,6 +223,9 @@ commands:
 - uid: az_dls
   name: az dls
   summary: (PREVIEW) Manage Data Lake Store accounts and filesystems.
+- uid: az_dms
+  name: az dms
+  summary: Manage Azure Data Migration Service (DMS) instances.
 - uid: az_eventgrid
   name: az eventgrid
   summary: Manage Azure Event Grid topics and subscriptions.
@@ -231,7 +240,7 @@ commands:
   summary: Manage resource provider features.
 - uid: az_feedback
   name: az feedback
-  summary: Loving or hating the CLI?  Let us know!
+  summary: Send feedback to the Azure CLI Team!
 - uid: az_find
   name: az find
   summary: Find Azure CLI commands.
@@ -255,7 +264,7 @@ commands:
   summary: (PREVIEW) Manage Internet of Things (IoT) assets.
 - uid: az_keyvault
   name: az keyvault
-  summary: Safeguard and maintain control of keys, secrets, and certificates.
+  summary: Manage KeyVault keys, secrets, and certificates.
 - uid: az_lab
   name: az lab
   summary: Manage Azure DevTest Labs.
@@ -271,6 +280,9 @@ commands:
 - uid: az_managedapp
   name: az managedapp
   summary: Manage template solutions provided and maintained by Independent Software Vendors (ISVs).
+- uid: az_maps
+  name: az maps
+  summary: Manage Azure Maps.
 - uid: az_monitor
   name: az monitor
   summary: Manage the Azure Monitor Service.
@@ -291,7 +303,7 @@ commands:
   summary: Manage resource providers.
 - uid: az_redis
   name: az redis
-  summary: Access to a secure, dedicated Redis cache for your Azure applications.
+  summary: Manage dedicated Redis caches for your Azure applications.
 - uid: az_reservations
   name: az reservations
   summary: Manage Azure Reservations.
@@ -301,6 +313,9 @@ commands:
 - uid: az_role
   name: az role
   summary: Manage user roles for access control with Azure Active Directory and service principals.
+- uid: az_search
+  name: az search
+  summary: Manage Azure Search services, admin keys and query keys.
 - uid: az_servicebus
   name: az servicebus
   summary: Manage Azure Service Bus namespaces, queues, topics, subscriptions, rules and geo-disaster recovery configuration alias.
@@ -321,7 +336,7 @@ commands:
   summary: Manage resource tags.
 - uid: az_vm
   name: az vm
-  summary: Provision Linux or Windows virtual machines.
+  summary: Manage Linux or Windows virtual machines.
 - uid: az_vmss
   name: az vmss
   summary: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).
@@ -344,6 +359,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/daxianji007/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
 original_content_git_url: https://github.com/daxianji007/azure-cli/blob/dev/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-gitcommit: https://github.com/daxianji007/azure-cli/blob/7cfdc9d5bd3dc6657b857f201ec3c7df8d2ac2c0/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-updated_at: 3/8/2018 4:05:22 AM
-ms.date: 3/8/2018
+gitcommit: https://github.com/daxianji007/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+updated_at: 6/28/2018 6:01:13 PM
+ms.date: 06/28/2018
