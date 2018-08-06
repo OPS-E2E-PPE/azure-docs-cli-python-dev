@@ -5139,6 +5139,157 @@
       - name: Show
         uid: az_redis_patch_schedule_show
         displayName: az redis patch-schedule show
+  - name: Relay
+    uid: az_relay
+    displayName: az relay
+    items:
+    - name: Hyco
+      uid: az_relay_hyco
+      displayName: az relay hyco
+      items:
+      - name: Create
+        uid: az_relay_hyco_create
+        displayName: az relay hyco create
+      - name: Delete
+        uid: az_relay_hyco_delete
+        displayName: az relay hyco delete
+      - name: List
+        uid: az_relay_hyco_list
+        displayName: az relay hyco list
+      - name: Show
+        uid: az_relay_hyco_show
+        displayName: az relay hyco show
+      - name: Update
+        uid: az_relay_hyco_update
+        displayName: az relay hyco update
+      - name: Authorization-Rule
+        uid: az_relay_hyco_authorization_rule
+        displayName: az relay hyco authorization-rule
+        items:
+        - name: Create
+          uid: az_relay_hyco_authorization_rule_create
+          displayName: az relay hyco authorization-rule create
+        - name: Delete
+          uid: az_relay_hyco_authorization_rule_delete
+          displayName: az relay hyco authorization-rule delete
+        - name: List
+          uid: az_relay_hyco_authorization_rule_list
+          displayName: az relay hyco authorization-rule list
+        - name: Show
+          uid: az_relay_hyco_authorization_rule_show
+          displayName: az relay hyco authorization-rule show
+        - name: Update
+          uid: az_relay_hyco_authorization_rule_update
+          displayName: az relay hyco authorization-rule update
+        - name: Keys
+          uid: az_relay_hyco_authorization_rule_keys
+          displayName: az relay hyco authorization-rule keys
+          items:
+          - name: List
+            uid: az_relay_hyco_authorization_rule_keys_list
+            displayName: az relay hyco authorization-rule keys list
+          - name: Renew
+            uid: az_relay_hyco_authorization_rule_keys_renew
+            displayName: az relay hyco authorization-rule keys renew
+    - name: Namespace
+      uid: az_relay_namespace
+      displayName: az relay namespace
+      items:
+      - name: Create
+        uid: az_relay_namespace_create
+        displayName: az relay namespace create
+      - name: Delete
+        uid: az_relay_namespace_delete
+        displayName: az relay namespace delete
+      - name: Exists
+        uid: az_relay_namespace_exists
+        displayName: az relay namespace exists
+      - name: List
+        uid: az_relay_namespace_list
+        displayName: az relay namespace list
+      - name: Show
+        uid: az_relay_namespace_show
+        displayName: az relay namespace show
+      - name: Update
+        uid: az_relay_namespace_update
+        displayName: az relay namespace update
+      - name: Authorization-Rule
+        uid: az_relay_namespace_authorization_rule
+        displayName: az relay namespace authorization-rule
+        items:
+        - name: Create
+          uid: az_relay_namespace_authorization_rule_create
+          displayName: az relay namespace authorization-rule create
+        - name: Delete
+          uid: az_relay_namespace_authorization_rule_delete
+          displayName: az relay namespace authorization-rule delete
+        - name: List
+          uid: az_relay_namespace_authorization_rule_list
+          displayName: az relay namespace authorization-rule list
+        - name: Show
+          uid: az_relay_namespace_authorization_rule_show
+          displayName: az relay namespace authorization-rule show
+        - name: Update
+          uid: az_relay_namespace_authorization_rule_update
+          displayName: az relay namespace authorization-rule update
+        - name: Keys
+          uid: az_relay_namespace_authorization_rule_keys
+          displayName: az relay namespace authorization-rule keys
+          items:
+          - name: List
+            uid: az_relay_namespace_authorization_rule_keys_list
+            displayName: az relay namespace authorization-rule keys list
+          - name: Renew
+            uid: az_relay_namespace_authorization_rule_keys_renew
+            displayName: az relay namespace authorization-rule keys renew
+    - name: Wcfrelay
+      uid: az_relay_wcfrelay
+      displayName: az relay wcfrelay
+      items:
+      - name: Create
+        uid: az_relay_wcfrelay_create
+        displayName: az relay wcfrelay create
+      - name: Delete
+        uid: az_relay_wcfrelay_delete
+        displayName: az relay wcfrelay delete
+      - name: List
+        uid: az_relay_wcfrelay_list
+        displayName: az relay wcfrelay list
+      - name: Show
+        uid: az_relay_wcfrelay_show
+        displayName: az relay wcfrelay show
+      - name: Update
+        uid: az_relay_wcfrelay_update
+        displayName: az relay wcfrelay update
+      - name: Authorization-Rule
+        uid: az_relay_wcfrelay_authorization_rule
+        displayName: az relay wcfrelay authorization-rule
+        items:
+        - name: Create
+          uid: az_relay_wcfrelay_authorization_rule_create
+          displayName: az relay wcfrelay authorization-rule create
+        - name: Delete
+          uid: az_relay_wcfrelay_authorization_rule_delete
+          displayName: az relay wcfrelay authorization-rule delete
+        - name: List
+          uid: az_relay_wcfrelay_authorization_rule_list
+          displayName: az relay wcfrelay authorization-rule list
+        - name: Show
+          uid: az_relay_wcfrelay_authorization_rule_show
+          displayName: az relay wcfrelay authorization-rule show
+        - name: Update
+          uid: az_relay_wcfrelay_authorization_rule_update
+          displayName: az relay wcfrelay authorization-rule update
+        - name: Keys
+          uid: az_relay_wcfrelay_authorization_rule_keys
+          displayName: az relay wcfrelay authorization-rule keys
+          items:
+          - name: List
+            uid: az_relay_wcfrelay_authorization_rule_keys_list
+            displayName: az relay wcfrelay authorization-rule keys list
+          - name: Renew
+            uid: az_relay_wcfrelay_authorization_rule_keys_renew
+            displayName: az relay wcfrelay authorization-rule keys renew
   - name: Reservations
     uid: az_reservations
     displayName: az reservations

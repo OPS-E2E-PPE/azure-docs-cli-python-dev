@@ -304,6 +304,9 @@ commands:
 - uid: az_redis
   name: az redis
   summary: Manage dedicated Redis caches for your Azure applications.
+- uid: az_relay
+  name: az relay
+  summary: Manage Azure Relay Service namespaces, WCF relays, hybrid connections, and rules.
 - uid: az_reservations
   name: az reservations
   summary: Manage Azure Reservations.
