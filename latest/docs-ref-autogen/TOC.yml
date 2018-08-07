@@ -2733,53 +2733,6 @@
     uid: az_iot
     displayName: az iot
     items:
-    - name: Devices
-      uid: az_iot_device
-      displayName: az iot device
-      items:
-      - name: Create
-        uid: az_iot_device_create
-        displayName: az iot device create
-      - name: Delete
-        uid: az_iot_device_delete
-        displayName: az iot device delete
-      - name: Export
-        uid: az_iot_device_export
-        displayName: az iot device export
-      - name: Import
-        uid: az_iot_device_import
-        displayName: az iot device import
-      - name: List
-        uid: az_iot_device_list
-        displayName: az iot device list
-      - name: Show
-        uid: az_iot_device_show
-        displayName: az iot device show
-      - name: Show-Connection-String
-        uid: az_iot_device_show_connection_string
-        displayName: az iot device show-connection-string
-      - name: Update
-        uid: az_iot_device_update
-        displayName: az iot device update
-      - name: Messaging
-        uid: az_iot_device_message
-        displayName: az iot device message
-        items:
-        - name: Abandon
-          uid: az_iot_device_message_abandon
-          displayName: az iot device message abandon
-        - name: Complete
-          uid: az_iot_device_message_complete
-          displayName: az iot device message complete
-        - name: Receive
-          uid: az_iot_device_message_receive
-          displayName: az iot device message receive
-        - name: Reject
-          uid: az_iot_device_message_reject
-          displayName: az iot device message reject
-        - name: Send
-          uid: az_iot_device_message_send
-          displayName: az iot device message send
     - name: Dps
       uid: az_iot_dps
       displayName: az iot dps
@@ -2963,6 +2916,29 @@
         - name: Show
           uid: az_iot_hub_policy_show
           displayName: az iot hub policy show
+  - name: Iotcentral
+    uid: az_iotcentral
+    displayName: az iotcentral
+    items:
+    - name: App
+      uid: az_iotcentral_app
+      displayName: az iotcentral app
+      items:
+      - name: Create
+        uid: az_iotcentral_app_create
+        displayName: az iotcentral app create
+      - name: Delete
+        uid: az_iotcentral_app_delete
+        displayName: az iotcentral app delete
+      - name: List
+        uid: az_iotcentral_app_list
+        displayName: az iotcentral app list
+      - name: Show
+        uid: az_iotcentral_app_show
+        displayName: az iotcentral app show
+      - name: Update
+        uid: az_iotcentral_app_update
+        displayName: az iotcentral app update
   - name: Key Vault
     uid: az_keyvault
     displayName: az keyvault

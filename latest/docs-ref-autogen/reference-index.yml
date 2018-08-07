@@ -261,7 +261,10 @@ commands:
   summary: Start interactive mode.
 - uid: az_iot
   name: az iot
-  summary: (PREVIEW) Manage Internet of Things (IoT) assets.
+  summary: Manage Internet of Things (IoT) assets.
+- uid: az_iotcentral
+  name: az iotcentral
+  summary: (PREVIEW) Manage IoT Central assets.
 - uid: az_keyvault
   name: az keyvault
   summary: Manage KeyVault keys, secrets, and certificates.
