@@ -5832,6 +5832,28 @@
         - name: List
           uid: az_sql_elastic_pool_op_list
           displayName: az sql elastic-pool op list
+    - name: Failover-Group
+      uid: az_sql_failover_group
+      displayName: az sql failover-group
+      items:
+      - name: Create
+        uid: az_sql_failover_group_create
+        displayName: az sql failover-group create
+      - name: Delete
+        uid: az_sql_failover_group_delete
+        displayName: az sql failover-group delete
+      - name: List
+        uid: az_sql_failover_group_list
+        displayName: az sql failover-group list
+      - name: Set-Primary
+        uid: az_sql_failover_group_set_primary
+        displayName: az sql failover-group set-primary
+      - name: Show
+        uid: az_sql_failover_group_show
+        displayName: az sql failover-group show
+      - name: Update
+        uid: az_sql_failover_group_update
+        displayName: az sql failover-group update
     - name: Mi
       uid: az_sql_mi
       displayName: az sql mi
