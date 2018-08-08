@@ -77,7 +77,7 @@ items:
     summary: ''
     description: ''
   - name: --install-location
-    defaultValue: C:\Program Files\kubectl.exe
+    defaultValue: ~/.azure-kubectl/kubectl.exe
     summary: ''
     description: ''
   source:
