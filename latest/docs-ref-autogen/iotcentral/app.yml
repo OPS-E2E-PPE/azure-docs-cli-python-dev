@@ -2,7 +2,7 @@
 items:
 - uid: az_iotcentral_app
   name: az iotcentral app
-  summary: (PREVIEW) Manage IoT Central applications.
+  summary: Manage IoT Central applications.
   description: ''
   langs:
   - azurecli
@@ -185,7 +185,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-iotcentral/azure/cli/command_modules/iotcentral/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-iotcentral/azure/cli/command_modules/iotcentral/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/24d7139e4fcad53cff8ac09255c6096aaced84b9/src/command_modules/azure-cli-iotcentral/azure/cli/command_modules/iotcentral/_help.py
-updated_at: 8/7/2018 9:45:59 PM
-ms.date: 08/07/2018
-description: (PREVIEW) Manage IoT Central applications.
+gitcommit: https://github.com/Azure/azure-cli/blob/cbe6f8a4c8a79d98e39b8ae39b66e10b400ff026/src/command_modules/azure-cli-iotcentral/azure/cli/command_modules/iotcentral/_help.py
+updated_at: 8/8/2018 9:09:28 PM
+ms.date: 08/08/2018
+description: Manage IoT Central applications.
