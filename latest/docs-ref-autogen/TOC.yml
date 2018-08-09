@@ -3117,6 +3117,19 @@
       - name: Show-Deleted
         uid: az_keyvault_key_show_deleted
         displayName: az keyvault key show-deleted
+    - name: Network-Rule
+      uid: az_keyvault_network_rule
+      displayName: az keyvault network-rule
+      items:
+      - name: Add
+        uid: az_keyvault_network_rule_add
+        displayName: az keyvault network-rule add
+      - name: List
+        uid: az_keyvault_network_rule_list
+        displayName: az keyvault network-rule list
+      - name: Remove
+        uid: az_keyvault_network_rule_remove
+        displayName: az keyvault network-rule remove
     - name: Secrets
       uid: az_keyvault_secret
       displayName: az keyvault secret
@@ -3160,6 +3173,74 @@
       - name: Show-Deleted
         uid: az_keyvault_secret_show_deleted
         displayName: az keyvault secret show-deleted
+    - name: Storage
+      uid: az_keyvault_storage
+      displayName: az keyvault storage
+      items:
+      - name: Add
+        uid: az_keyvault_storage_add
+        displayName: az keyvault storage add
+      - name: Backup
+        uid: az_keyvault_storage_backup
+        displayName: az keyvault storage backup
+      - name: List
+        uid: az_keyvault_storage_list
+        displayName: az keyvault storage list
+      - name: List-Deleted
+        uid: az_keyvault_storage_list_deleted
+        displayName: az keyvault storage list-deleted
+      - name: Purge
+        uid: az_keyvault_storage_purge
+        displayName: az keyvault storage purge
+      - name: Recover
+        uid: az_keyvault_storage_recover
+        displayName: az keyvault storage recover
+      - name: Regenerate-Key
+        uid: az_keyvault_storage_regenerate_key
+        displayName: az keyvault storage regenerate-key
+      - name: Remove
+        uid: az_keyvault_storage_remove
+        displayName: az keyvault storage remove
+      - name: Restore
+        uid: az_keyvault_storage_restore
+        displayName: az keyvault storage restore
+      - name: Show
+        uid: az_keyvault_storage_show
+        displayName: az keyvault storage show
+      - name: Show-Deleted
+        uid: az_keyvault_storage_show_deleted
+        displayName: az keyvault storage show-deleted
+      - name: Update
+        uid: az_keyvault_storage_update
+        displayName: az keyvault storage update
+      - name: Sas-Definition
+        uid: az_keyvault_storage_sas_definition
+        displayName: az keyvault storage sas-definition
+        items:
+        - name: Create
+          uid: az_keyvault_storage_sas_definition_create
+          displayName: az keyvault storage sas-definition create
+        - name: Delete
+          uid: az_keyvault_storage_sas_definition_delete
+          displayName: az keyvault storage sas-definition delete
+        - name: List
+          uid: az_keyvault_storage_sas_definition_list
+          displayName: az keyvault storage sas-definition list
+        - name: List-Deleted
+          uid: az_keyvault_storage_sas_definition_list_deleted
+          displayName: az keyvault storage sas-definition list-deleted
+        - name: Recover
+          uid: az_keyvault_storage_sas_definition_recover
+          displayName: az keyvault storage sas-definition recover
+        - name: Show
+          uid: az_keyvault_storage_sas_definition_show
+          displayName: az keyvault storage sas-definition show
+        - name: Show-Deleted
+          uid: az_keyvault_storage_sas_definition_show_deleted
+          displayName: az keyvault storage sas-definition show-deleted
+        - name: Update
+          uid: az_keyvault_storage_sas_definition_update
+          displayName: az keyvault storage sas-definition update
   - name: Locks
     uid: az_lock
     displayName: az lock
