@@ -58,6 +58,9 @@ items:
   - name: --plan -p
     summary: Name or resource id of the function app service plan. Use 'appservice plan create' to get one.
     description: ''
+  - name: --tags
+    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
 - uid: az_functionapp_delete
   name: az functionapp delete
   summary: Delete a function app.
