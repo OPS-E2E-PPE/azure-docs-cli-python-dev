@@ -10,7 +10,7 @@ items:
   - az_cdn_edge_node_list
 - uid: az_cdn_edge_node_list
   name: az cdn edge-node list
-  summary: Lists all the edge nodes of a CDN service.
+  summary: Edgenodes are the global Point of Presence (POP) locations used to deliver CDN content to end users.
   description: ''
   langs:
   - azurecli
@@ -24,7 +24,7 @@ items:
 commands:
 - uid: az_cdn_edge_node_list
   name: az cdn edge-node list
-  summary: Lists all the edge nodes of a CDN service.
+  summary: Edgenodes are the global Point of Presence (POP) locations used to deliver CDN content to end users.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
