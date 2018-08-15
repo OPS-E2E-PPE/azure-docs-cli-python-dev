@@ -2655,6 +2655,19 @@
         - name: Upload
           uid: az_functionapp_config_ssl_upload
           displayName: az functionapp config ssl upload
+    - name: Cors
+      uid: az_functionapp_cors
+      displayName: az functionapp cors
+      items:
+      - name: Add
+        uid: az_functionapp_cors_add
+        displayName: az functionapp cors add
+      - name: Remove
+        uid: az_functionapp_cors_remove
+        displayName: az functionapp cors remove
+      - name: Show
+        uid: az_functionapp_cors_show
+        displayName: az functionapp cors show
     - name: Deployment
       uid: az_functionapp_deployment
       displayName: az functionapp deployment
@@ -7759,6 +7772,19 @@
         - name: Upload
           uid: az_webapp_config_ssl_upload
           displayName: az webapp config ssl upload
+    - name: Cors
+      uid: az_webapp_cors
+      displayName: az webapp cors
+      items:
+      - name: Add
+        uid: az_webapp_cors_add
+        displayName: az webapp cors add
+      - name: Remove
+        uid: az_webapp_cors_remove
+        displayName: az webapp cors remove
+      - name: Show
+        uid: az_webapp_cors_show
+        displayName: az webapp cors show
     - name: Deployment
       uid: az_webapp_deployment
       displayName: az webapp deployment

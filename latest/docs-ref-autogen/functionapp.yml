@@ -236,6 +236,18 @@ commands:
 - uid: az_functionapp_config_ssl_upload
   name: az functionapp config ssl upload
   summary: Upload an SSL certificate to a function app.
+- uid: az_functionapp_cors
+  name: az functionapp cors
+  summary: Manage Cross-Origin Resource Sharing (CORS).
+- uid: az_functionapp_cors_add
+  name: az functionapp cors add
+  summary: Add allowed origins.
+- uid: az_functionapp_cors_remove
+  name: az functionapp cors remove
+  summary: Remove allowed origins.
+- uid: az_functionapp_cors_show
+  name: az functionapp cors show
+  summary: Show allowed origins.
 - uid: az_functionapp_create
   name: az functionapp create
   summary: Create a function app.

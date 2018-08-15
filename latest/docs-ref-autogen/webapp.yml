@@ -386,6 +386,18 @@ commands:
 - uid: az_webapp_config_ssl_upload
   name: az webapp config ssl upload
   summary: Upload an SSL certificate to a web app.
+- uid: az_webapp_cors
+  name: az webapp cors
+  summary: Manage Cross-Origin Resource Sharing (CORS).
+- uid: az_webapp_cors_add
+  name: az webapp cors add
+  summary: Add allowed origins.
+- uid: az_webapp_cors_remove
+  name: az webapp cors remove
+  summary: Remove allowed origins.
+- uid: az_webapp_cors_show
+  name: az webapp cors show
+  summary: Show allowed origins.
 - uid: az_webapp_create
   name: az webapp create
   summary: Create a web app.
