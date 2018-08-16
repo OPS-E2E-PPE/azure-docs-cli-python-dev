@@ -42,10 +42,10 @@ items:
   examples:
   - summary: remove an allowed origin
     syntax:
-      content: az functionapp cors add -g <myRG> -n <myAppName> --allowed-origins https://myapps.com
+      content: az functionapp cors remove -g <myRG> -n <myAppName> --allowed-origins https://myapps.com
   - summary: remove all allowed origins
     syntax:
-      content: az functionapp cors add -g <myRG> -n <myAppName> --allowed-origins
+      content: az functionapp cors remove -g <myRG> -n <myAppName> --allowed-origins *
   parameters:
   - isRequired: true
     name: --allowed-origins -a

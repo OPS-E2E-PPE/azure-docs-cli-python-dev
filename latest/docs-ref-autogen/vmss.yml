@@ -59,7 +59,7 @@ items:
       content: "az keyvault certificate create --vault-name vaultname -n cert1 \\\n                          -p \"$(az keyvault certificate get-default-policy)\"\n                        \n                        secrets=$(az keyvault secret list-versions --vault-name vaultname \\\n                          -n cert1 --query \"[?attributes.enabled].id\" -o tsv)\n                        \n                        vm_secrets=$(az vm secret format -s \"$secrets\") \n                        \n                        az vmss create -g group-name -n vm-name --admin-username deploy  \\\n                          --image debian --secrets \"$vm_secrets\""
   - summary: Create a VM scaleset with system assigned identity. The VM will have a 'Contributor' Role with access to a storage account.
     syntax:
-      content: az vm create -n MyVmss -g MyResourceGroup --image centos --assign-identity --scope /subscriptions/99999999-1bf0-4dda-aec3-cb9272f09590/MyResourceGroup/myRG/providers/Microsoft.Storage/storageAccounts/storage1
+      content: az vmss create -n MyVmss -g MyResourceGroup --image centos --assign-identity --scope /subscriptions/99999999-1bf0-4dda-aec3-cb9272f09590/MyResourceGroup/myRG/providers/Microsoft.Storage/storageAccounts/storage1
   - summary: Create a debian VM scaleset with a user assigned identity.
     syntax:
       content: az vmss create -n MyVmss -g rg1 --image debian --assign-identity  /subscriptions/99999999-1bf0-4dda-aec3-cb9272f09590/resourcegroups/myRG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/myID
@@ -970,7 +970,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/45879fcb3aa29a4e434a1d5b6a1be738db31fa69/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 8/7/2018 12:50:44 AM
-ms.date: 08/07/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/c9fe2efc878a45fdefaec59d42ab7e47912fba24/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 8/16/2018 5:04:10 PM
+ms.date: 08/16/2018
 description: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).
