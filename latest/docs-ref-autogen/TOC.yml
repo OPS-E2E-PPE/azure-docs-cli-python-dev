@@ -3600,6 +3600,25 @@
       - name: List-Definitions
         uid: az_monitor_metrics_list_definitions
         displayName: az monitor metrics list-definitions
+      - name: Alert
+        uid: az_monitor_metrics_alert
+        displayName: az monitor metrics alert
+        items:
+        - name: Create
+          uid: az_monitor_metrics_alert_create
+          displayName: az monitor metrics alert create
+        - name: Delete
+          uid: az_monitor_metrics_alert_delete
+          displayName: az monitor metrics alert delete
+        - name: List
+          uid: az_monitor_metrics_alert_list
+          displayName: az monitor metrics alert list
+        - name: Show
+          uid: az_monitor_metrics_alert_show
+          displayName: az monitor metrics alert show
+        - name: Update
+          uid: az_monitor_metrics_alert_update
+          displayName: az monitor metrics alert update
   - name: Mysql
     uid: az_mysql
     displayName: az mysql
