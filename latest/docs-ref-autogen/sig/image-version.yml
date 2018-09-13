@@ -37,7 +37,7 @@ items:
     description: ''
   - isRequired: true
     name: --managed-image
-    summary: The name or resource id of a managed image.
+    summary: Image name(if in the same resource group) or resource id.
     description: ''
   - isRequired: true
     name: --resource-group -g
