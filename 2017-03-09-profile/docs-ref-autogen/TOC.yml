@@ -983,6 +983,13 @@
         - name: Update
           uid: az_network_express_route_peering_update
           displayName: az network express-route peering update
+        - name: Connection
+          uid: az_network_express_route_peering_connection
+          displayName: az network express-route peering connection
+          items:
+          - name: Create
+            uid: az_network_express_route_peering_connection_create
+            displayName: az network express-route peering connection create
     - name: Interface-Endpoint
       uid: az_network_interface_endpoint
       displayName: az network interface-endpoint

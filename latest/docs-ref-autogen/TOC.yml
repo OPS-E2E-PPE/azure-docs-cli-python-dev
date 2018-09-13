@@ -4671,6 +4671,19 @@
         - name: Update
           uid: az_network_express_route_peering_update
           displayName: az network express-route peering update
+        - name: Connection
+          uid: az_network_express_route_peering_connection
+          displayName: az network express-route peering connection
+          items:
+          - name: Create
+            uid: az_network_express_route_peering_connection_create
+            displayName: az network express-route peering connection create
+          - name: Delete
+            uid: az_network_express_route_peering_connection_delete
+            displayName: az network express-route peering connection delete
+          - name: Show
+            uid: az_network_express_route_peering_connection_show
+            displayName: az network express-route peering connection show
     - name: Interface-Endpoint
       uid: az_network_interface_endpoint
       displayName: az network interface-endpoint
