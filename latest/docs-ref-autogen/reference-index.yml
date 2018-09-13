@@ -159,7 +159,7 @@ commands:
   summary: Manage Azure subscription information.
 - uid: az_acr
   name: az acr
-  summary: Manage Azure Container Registries for private registries within Azure.
+  summary: Manage private registries with Azure Container Registries.
 - uid: az_acs
   name: az acs
   summary: Manage Azure Container Services.

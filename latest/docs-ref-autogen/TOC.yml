@@ -1573,6 +1573,9 @@
     - name: Login
       uid: az_acr_login
       displayName: az acr login
+    - name: Run
+      uid: az_acr_run
+      displayName: az acr run
     - name: Show
       uid: az_acr_show
       displayName: az acr show
@@ -1707,6 +1710,43 @@
       - name: Update
         uid: az_acr_repository_update
         displayName: az acr repository update
+    - name: Task
+      uid: az_acr_task
+      displayName: az acr task
+      items:
+      - name: Cancel-Run
+        uid: az_acr_task_cancel_run
+        displayName: az acr task cancel-run
+      - name: Create
+        uid: az_acr_task_create
+        displayName: az acr task create
+      - name: Delete
+        uid: az_acr_task_delete
+        displayName: az acr task delete
+      - name: List
+        uid: az_acr_task_list
+        displayName: az acr task list
+      - name: List-Runs
+        uid: az_acr_task_list_runs
+        displayName: az acr task list-runs
+      - name: Logs
+        uid: az_acr_task_logs
+        displayName: az acr task logs
+      - name: Run
+        uid: az_acr_task_run
+        displayName: az acr task run
+      - name: Show
+        uid: az_acr_task_show
+        displayName: az acr task show
+      - name: Show-Run
+        uid: az_acr_task_show_run
+        displayName: az acr task show-run
+      - name: Update
+        uid: az_acr_task_update
+        displayName: az acr task update
+      - name: Update-Run
+        uid: az_acr_task_update_run
+        displayName: az acr task update-run
     - name: Webhook
       uid: az_acr_webhook
       displayName: az acr webhook

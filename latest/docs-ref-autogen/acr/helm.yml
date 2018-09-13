@@ -13,15 +13,15 @@ items:
   - az_acr_helm_show
 - uid: az_acr_helm_delete
   name: az acr helm delete
-  summary: Delete a helm chart version in a container registry.
+  summary: Delete a helm chart version in an Azure Container Registry.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Delete all versions of a helm chart in a container registry
+  - summary: Delete all versions of a helm chart in an Azure Container Registry
     syntax:
       content: az acr helm delete -n MyRegistry mychart
-  - summary: Delete a helm chart version in a container registry.
+  - summary: Delete a helm chart version in an Azure Container Registry
     syntax:
       content: az acr helm delete -n MyRegistry mychart --version 0.3.2
   parameters:
@@ -32,11 +32,17 @@ items:
   - name: --password -p
     summary: The password used to log into a container registry.
     description: ''
+  - name: --prov
+    summary: Only delete the provenance file.
+    description: ''
   - name: --username -u
     summary: The username used to log into a container registry.
     description: ''
   - name: --version
     summary: The helm chart version.
+    description: ''
+  - name: --yes -y
+    summary: Do not prompt for confirmation.
     description: ''
   - name: <CHART>
     summary: The helm chart name.
@@ -49,12 +55,12 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_helm_list
   name: az acr helm list
-  summary: List all helm charts in a container registry.
+  summary: List all helm charts in an Azure Container Registry.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: List all helm charts in a container registry
+  - summary: List all helm charts in an Azure Container Registry
     syntax:
       content: az acr helm list -n MyRegistry
   parameters:
@@ -76,15 +82,15 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_helm_push
   name: az acr helm push
-  summary: Push a helm chart package to a container registry.
+  summary: Push a helm chart package to an Azure Container Registry.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Push a chart package to a container registry.
+  - summary: Push a chart package to an Azure Container Registry
     syntax:
       content: az acr helm push -n MyRegistry mychart-0.3.2.tgz
-  - summary: Push a chart package to a container registry, overwriting the existing one.
+  - summary: Push a chart package to an Azure Container Registry, overwriting the existing one.
     syntax:
       content: az acr helm push -n MyRegistry mychart-0.3.2.tgz --force
   parameters:
@@ -112,15 +118,15 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_helm_show
   name: az acr helm show
-  summary: Describe a helm chart in a container registry.
+  summary: Describe a helm chart in an Azure Container Registry.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Show all versions of a helm chart in a container registry
+  - summary: Show all versions of a helm chart in an Azure Container Registry
     syntax:
       content: az acr helm show -n MyRegistry mychart
-  - summary: Show a helm chart version in a container registry.
+  - summary: Show a helm chart version in an Azure Container Registry
     syntax:
       content: az acr helm show -n MyRegistry mychart --version 0.3.2
   parameters:
@@ -149,22 +155,22 @@ items:
 commands:
 - uid: az_acr_helm_delete
   name: az acr helm delete
-  summary: Delete a helm chart version in a container registry.
+  summary: Delete a helm chart version in an Azure Container Registry.
 - uid: az_acr_helm_list
   name: az acr helm list
-  summary: List all helm charts in a container registry.
+  summary: List all helm charts in an Azure Container Registry.
 - uid: az_acr_helm_push
   name: az acr helm push
-  summary: Push a helm chart package to a container registry.
+  summary: Push a helm chart package to an Azure Container Registry.
 - uid: az_acr_helm_repo
   name: az acr helm repo
   summary: Manage helm chart repositories for Azure Container Registries.
 - uid: az_acr_helm_repo_add
   name: az acr helm repo add
-  summary: Add a helm chart repository from a container registry through the Helm CLI.
+  summary: Add a helm chart repository from an Azure Container Registry through the Helm CLI.
 - uid: az_acr_helm_show
   name: az acr helm show
-  summary: Describe a helm chart in a container registry.
+  summary: Describe a helm chart in an Azure Container Registry.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -181,7 +187,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/d71409b9d28ca98d023d64f7365dbc5fcdbbeaee/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-updated_at: 9/12/2018 11:06:37 PM
-ms.date: 09/12/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/d5467e4fdd4916f8c1249ca1ee030d3ff509d999/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+updated_at: 9/13/2018 10:43:56 PM
+ms.date: 09/13/2018
 description: Manage helm charts for Azure Container Registries.
