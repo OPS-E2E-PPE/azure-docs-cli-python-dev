@@ -8488,6 +8488,42 @@
       - name: Show
         uid: az_webapp_traffic_routing_show
         displayName: az webapp traffic-routing show
+    - name: Webjob
+      uid: az_webapp_webjob
+      displayName: az webapp webjob
+      items:
+      - name: Continuous
+        uid: az_webapp_webjob_continuous
+        displayName: az webapp webjob continuous
+        items:
+        - name: List
+          uid: az_webapp_webjob_continuous_list
+          displayName: az webapp webjob continuous list
+        - name: Remove
+          uid: az_webapp_webjob_continuous_remove
+          displayName: az webapp webjob continuous remove
+        - name: Start
+          uid: az_webapp_webjob_continuous_start
+          displayName: az webapp webjob continuous start
+        - name: Stop
+          uid: az_webapp_webjob_continuous_stop
+          displayName: az webapp webjob continuous stop
+      - name: Triggered
+        uid: az_webapp_webjob_triggered
+        displayName: az webapp webjob triggered
+        items:
+        - name: List
+          uid: az_webapp_webjob_triggered_list
+          displayName: az webapp webjob triggered list
+        - name: Log
+          uid: az_webapp_webjob_triggered_log
+          displayName: az webapp webjob triggered log
+        - name: Remove
+          uid: az_webapp_webjob_triggered_remove
+          displayName: az webapp webjob triggered remove
+        - name: Run
+          uid: az_webapp_webjob_triggered_run
+          displayName: az webapp webjob triggered run
 - name: Extensions Reference
   items:
   - name: aem
