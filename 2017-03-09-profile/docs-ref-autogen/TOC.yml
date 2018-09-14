@@ -3731,6 +3731,16 @@
           - name: Update
             uid: ext_rdbms-vnet_az_postgres_server_vnet_rule_update
             displayName: az postgres server vnet-rule update
+  - name: resource-graph
+    uid: ext_resource-graph_az
+    items:
+    - name: Graph
+      uid: ext_resource-graph_az_graph
+      displayName: az graph
+      items:
+      - name: Query
+        uid: ext_resource-graph_az_graph_query
+        displayName: az graph query
   - name: sap-hana
     uid: ext_sap-hana_az
     items:
