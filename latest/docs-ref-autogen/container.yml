@@ -131,9 +131,6 @@ items:
   - name: --name -n
     summary: The name of the container group.
     description: ''
-  - name: --network-profile
-    summary: The network profile name or id.
-    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
@@ -203,6 +200,23 @@ items:
     description: ''
   - name: --log-analytics-workspace-key
     summary: The Log Analytics workspace key.
+    description: ''
+  - name: --network-profile
+    summary: The network profile name or id.
+    description: ''
+  - name: --subnet
+    summary: The name of the subnet when creating a new VNET or referencing an existing one. Can also reference an existing subnet by ID.
+    description: ''
+  - name: --subnet-address-prefix
+    defaultValue: 10.0.0.0/24
+    summary: The subnet IP address prefix to use when creating a new VNET in CIDR format.
+    description: ''
+  - name: --vnet-address-prefix
+    defaultValue: 10.0.0.0/16
+    summary: The IP address prefix to use when creating a new VNET in CIDR format.
+    description: ''
+  - name: --vnet-name
+    summary: The name of the VNET when creating a new one or referencing an existing one.
     description: ''
   source:
     path: src/command_modules/azure-cli-container/azure/cli/command_modules/container/_help.py
