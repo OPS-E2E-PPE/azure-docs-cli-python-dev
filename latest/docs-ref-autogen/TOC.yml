@@ -3678,6 +3678,96 @@
         - name: Renew
           uid: az_maps_account_keys_renew
           displayName: az maps account keys renew
+  - name: Mariadb
+    uid: az_mariadb
+    displayName: az mariadb
+    items:
+    - name: Db
+      uid: az_mariadb_db
+      displayName: az mariadb db
+      items:
+      - name: Create
+        uid: az_mariadb_db_create
+        displayName: az mariadb db create
+      - name: Delete
+        uid: az_mariadb_db_delete
+        displayName: az mariadb db delete
+      - name: List
+        uid: az_mariadb_db_list
+        displayName: az mariadb db list
+      - name: Show
+        uid: az_mariadb_db_show
+        displayName: az mariadb db show
+    - name: Server
+      uid: az_mariadb_server
+      displayName: az mariadb server
+      items:
+      - name: Create
+        uid: az_mariadb_server_create
+        displayName: az mariadb server create
+      - name: Delete
+        uid: az_mariadb_server_delete
+        displayName: az mariadb server delete
+      - name: Georestore
+        uid: az_mariadb_server_georestore
+        displayName: az mariadb server georestore
+      - name: List
+        uid: az_mariadb_server_list
+        displayName: az mariadb server list
+      - name: Restore
+        uid: az_mariadb_server_restore
+        displayName: az mariadb server restore
+      - name: Show
+        uid: az_mariadb_server_show
+        displayName: az mariadb server show
+      - name: Update
+        uid: az_mariadb_server_update
+        displayName: az mariadb server update
+      - name: Wait
+        uid: az_mariadb_server_wait
+        displayName: az mariadb server wait
+      - name: Configuration
+        uid: az_mariadb_server_configuration
+        displayName: az mariadb server configuration
+        items:
+        - name: List
+          uid: az_mariadb_server_configuration_list
+          displayName: az mariadb server configuration list
+        - name: Set
+          uid: az_mariadb_server_configuration_set
+          displayName: az mariadb server configuration set
+        - name: Show
+          uid: az_mariadb_server_configuration_show
+          displayName: az mariadb server configuration show
+      - name: Firewall-Rule
+        uid: az_mariadb_server_firewall_rule
+        displayName: az mariadb server firewall-rule
+        items:
+        - name: Create
+          uid: az_mariadb_server_firewall_rule_create
+          displayName: az mariadb server firewall-rule create
+        - name: Delete
+          uid: az_mariadb_server_firewall_rule_delete
+          displayName: az mariadb server firewall-rule delete
+        - name: List
+          uid: az_mariadb_server_firewall_rule_list
+          displayName: az mariadb server firewall-rule list
+        - name: Show
+          uid: az_mariadb_server_firewall_rule_show
+          displayName: az mariadb server firewall-rule show
+        - name: Update
+          uid: az_mariadb_server_firewall_rule_update
+          displayName: az mariadb server firewall-rule update
+    - name: Server-Logs
+      uid: az_mariadb_server_logs
+      displayName: az mariadb server-logs
+      items:
+      - name: Download
+        uid: az_mariadb_server_logs_download
+        displayName: az mariadb server-logs download
+      - name: List
+        uid: az_mariadb_server_logs_list
+        displayName: az mariadb server-logs list
   - name: Monitoring
     uid: az_monitor
     displayName: az monitor

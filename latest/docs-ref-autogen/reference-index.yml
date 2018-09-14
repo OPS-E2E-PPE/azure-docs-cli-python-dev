@@ -289,6 +289,9 @@ commands:
 - uid: az_maps
   name: az maps
   summary: Manage Azure Maps.
+- uid: az_mariadb
+  name: az mariadb
+  summary: Manage Azure Database for MariaDB servers.
 - uid: az_monitor
   name: az monitor
   summary: Manage the Azure Monitor Service.
