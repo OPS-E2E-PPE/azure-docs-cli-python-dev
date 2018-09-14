@@ -3059,6 +3059,30 @@
     uid: ext_botservice_az
   - name: dev-spaces-preview
     uid: ext_dev-spaces-preview_az
+  - name: dms-preview
+    uid: ext_dms-preview_az
+    items:
+    - name: Dms
+      uid: ext_dms-preview_az_dms
+      displayName: az dms
+      items:
+      - name: Project
+        uid: ext_dms-preview_az_dms_project
+        displayName: az dms project
+        items:
+        - name: Create
+          uid: ext_dms-preview_az_dms_project_create
+          displayName: az dms project create
+        - name: Task
+          uid: ext_dms-preview_az_dms_project_task
+          displayName: az dms project task
+          items:
+          - name: Create
+            uid: ext_dms-preview_az_dms_project_task_create
+            displayName: az dms project task create
+          - name: Cutover
+            uid: ext_dms-preview_az_dms_project_task_cutover
+            displayName: az dms project task cutover
   - name: dns
     uid: ext_dns_az
     items:
