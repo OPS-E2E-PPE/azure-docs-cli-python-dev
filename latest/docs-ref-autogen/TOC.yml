@@ -8465,6 +8465,16 @@
       - name: Show
         uid: az_webapp_cors_show
         displayName: az webapp cors show
+    - name: Deleted
+      uid: az_webapp_deleted
+      displayName: az webapp deleted
+      items:
+      - name: List
+        uid: az_webapp_deleted_list
+        displayName: az webapp deleted list
+      - name: Restore
+        uid: az_webapp_deleted_restore
+        displayName: az webapp deleted restore
     - name: Deployment
       uid: az_webapp_deployment
       displayName: az webapp deployment

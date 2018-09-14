@@ -419,6 +419,15 @@ commands:
 - uid: az_webapp_delete
   name: az webapp delete
   summary: Delete a web app.
+- uid: az_webapp_deleted
+  name: az webapp deleted
+  summary: Manage deleted web apps.
+- uid: az_webapp_deleted_list
+  name: az webapp deleted list
+  summary: List web apps that have been deleted.
+- uid: az_webapp_deleted_restore
+  name: az webapp deleted restore
+  summary: Restore a deleted web app.
 - uid: az_webapp_deployment
   name: az webapp deployment
   summary: Manage web app deployments.
