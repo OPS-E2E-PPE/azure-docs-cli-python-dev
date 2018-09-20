@@ -7088,6 +7088,9 @@
       - name: Update
         uid: az_sig_image_version_update
         displayName: az sig image-version update
+      - name: Wait
+        uid: az_sig_image_version_wait
+        displayName: az sig image-version wait
   - name: Signalr
     uid: az_signalr
     displayName: az signalr

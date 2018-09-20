@@ -84,10 +84,6 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --gallery
-    summary: Parameters supplied to the create or update gallery operation.
-    description: ''
-  - isRequired: true
     name: --gallery-name -r
     summary: Gallery name.
     description: ''
@@ -150,6 +146,9 @@ commands:
 - uid: az_sig_image_version_update
   name: az sig image-version update
   summary: Update a share image version.
+- uid: az_sig_image_version_wait
+  name: az sig image-version wait
+  summary: Wait for image version related operation.
 - uid: az_sig_list
   name: az sig list
   summary: List share image galleries.

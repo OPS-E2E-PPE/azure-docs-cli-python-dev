@@ -12,16 +12,20 @@ items:
   - az_sig_image_version_list
   - az_sig_image_version_show
   - az_sig_image_version_update
+  - az_sig_image_version_wait
 - uid: az_sig_image_version_create
   name: az sig image-version create
   summary: Creat a new image version.
-  description: ''
+  description: This operation might take a long time depending on the replicate region number. Use "--no-wait" is advised.
   langs:
   - azurecli
   examples:
-  - summary: add a new version
+  - summary: add a new image version
     syntax:
       content: az sig image-version create -g MyResourceGroup --gallery-name MyGallery --gallery-image-definition MyImage --gallery-image-version 1.0.0 --managed-image /subscriptions/00000000-0000-0000-0000-00000000xxxx/resourceGroups/imageGroups/providers/images/MyManagedImage
+  - summary: add a new image version and don't wait on it. Later you can invoke "az sig image-version wait" command when ready to create a vm from the gallery image version
+    syntax:
+      content: az sig image-version create --no-wait -g MyResourceGroup --gallery-name MyGallery --gallery-image-definition MyImage --gallery-image-version 1.0.0 --managed-image imageInTheSameResourceGroup
   parameters:
   - isRequired: true
     name: --gallery-image-definition -i
@@ -52,6 +56,9 @@ items:
     description: ''
   - name: --location -l
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --replica-count
     summary: Default replicate count. For region specific, use --target-regions.
@@ -136,14 +143,14 @@ items:
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: replicate to a new region
+    syntax:
+      content: az sig image-version update -g MyResourceGroup --gallery-name MyGallery --gallery-image-definition MyImage --gallery-image-version 1.0.0 --add publishingProfile.targetRegions name=westcentralus
   parameters:
   - isRequired: true
     name: --gallery-image-definition -i
     summary: Gallery image definition.
-    description: ''
-  - isRequired: true
-    name: --gallery-image-version -e
-    summary: Gallery image version.
     description: ''
   - isRequired: true
     name: --gallery-image-version-name
@@ -157,6 +164,9 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
     description: ''
@@ -168,6 +178,59 @@ items:
     description: ''
   - name: --set
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+- uid: az_sig_image_version_wait
+  name: az sig image-version wait
+  summary: Wait for image version related operation.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: wait for an image version gets updated
+    syntax:
+      content: az sig image-version wait --updated -g MyResourceGroup --gallery-name MyGallery --gallery-image-definition MyImage --gallery-image-version 1.0.0
+  parameters:
+  - isRequired: true
+    name: --gallery-image-definition -i
+    summary: Gallery image definition.
+    description: ''
+  - isRequired: true
+    name: --gallery-image-version-name
+    summary: The name of the gallery image version.
+    description: ''
+  - isRequired: true
+    name: --gallery-name -r
+    summary: Gallery name.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --expand
+    summary: The expand expression to apply on the operation.
+    description: ''
+  - name: --created
+    summary: Wait until created with 'provisioningState' at 'Succeeded'.
+    description: ''
+  - name: --custom
+    summary: Wait until the condition satisfies a custom JMESPath query. E.g. provisioningState!='InProgress', instanceView.statuses[?code=='PowerState/running'].
+    description: ''
+  - name: --deleted
+    summary: Wait until deleted.
+    description: ''
+  - name: --exists
+    summary: Wait until the resource exists.
+    description: ''
+  - name: --interval
+    defaultValue: "30"
+    summary: Polling interval in seconds.
+    description: ''
+  - name: --timeout
+    defaultValue: "3600"
+    summary: Maximum wait in seconds.
+    description: ''
+  - name: --updated
+    summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
 commands:
 - uid: az_sig_image_version_create
@@ -185,6 +248,9 @@ commands:
 - uid: az_sig_image_version_update
   name: az sig image-version update
   summary: Update a share image version.
+- uid: az_sig_image_version_wait
+  name: az sig image-version wait
+  summary: Wait for image version related operation.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.

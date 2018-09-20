@@ -158,10 +158,6 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --gallery-image
-    summary: Parameters supplied to the create or update gallery image operation.
-    description: ''
-  - isRequired: true
     name: --gallery-image-definition -i
     summary: Gallery image definition.
     description: ''
