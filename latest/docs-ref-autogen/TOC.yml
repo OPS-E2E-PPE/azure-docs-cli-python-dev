@@ -324,6 +324,13 @@
       - name: Update
         uid: az_ad_app_update
         displayName: az ad app update
+      - name: Owner
+        uid: az_ad_app_owner
+        displayName: az ad app owner
+        items:
+        - name: List
+          uid: az_ad_app_owner_list
+          displayName: az ad app owner list
     - name: Groups
       uid: az_ad_group
       displayName: az ad group
@@ -391,6 +398,13 @@
         - name: Reset
           uid: az_ad_sp_credential_reset
           displayName: az ad sp credential reset
+      - name: Owner
+        uid: az_ad_sp_owner
+        displayName: az ad sp owner
+        items:
+        - name: List
+          uid: az_ad_sp_owner_list
+          displayName: az ad sp owner list
     - name: Users
       uid: az_ad_user
       displayName: az ad user
