@@ -71,7 +71,7 @@ items:
     description: ''
 - uid: az_sig_image_version_delete
   name: az sig image-version delete
-  summary: Delete a gallery image version.
+  summary: Delete a gallery Image Version.
   description: ''
   langs:
   - azurecli
@@ -94,7 +94,7 @@ items:
     description: ''
 - uid: az_sig_image_version_list
   name: az sig image-version list
-  summary: List gallery image versions under a gallery image.
+  summary: List gallery Image Versions in a gallery Image Definition.
   description: ''
   langs:
   - azurecli
@@ -113,7 +113,7 @@ items:
     description: ''
 - uid: az_sig_image_version_show
   name: az sig image-version show
-  summary: Retrieves information about a gallery image version.
+  summary: Retrieves information about a gallery Image Version.
   description: ''
   langs:
   - azurecli
@@ -124,7 +124,7 @@ items:
     description: ''
   - isRequired: true
     name: --gallery-image-version-name
-    summary: The name of the gallery image version.
+    summary: The name of the gallery Image Version to be retrieved.
     description: ''
   - isRequired: true
     name: --gallery-name -r
@@ -154,7 +154,7 @@ items:
     description: ''
   - isRequired: true
     name: --gallery-image-version-name
-    summary: 'The name of the gallery image version. Needs to follow semantic version name pattern: The allowed characters are digit and period. Digits must be within the range of a 32-bit integer. Format: <MajorVersion>.<MinorVersion>.<Patch>.'
+    summary: 'The name of the gallery Image Version to be created. Needs to follow semantic version name pattern: The allowed characters are digit and period. Digits must be within the range of a 32-bit integer. Format: <MajorVersion>.<MinorVersion>.<Patch>.'
     description: ''
   - isRequired: true
     name: --gallery-name -r
@@ -196,7 +196,7 @@ items:
     description: ''
   - isRequired: true
     name: --gallery-image-version-name
-    summary: The name of the gallery image version.
+    summary: The name of the gallery Image Version to be retrieved.
     description: ''
   - isRequired: true
     name: --gallery-name -r
@@ -238,13 +238,13 @@ commands:
   summary: Creat a new image version.
 - uid: az_sig_image_version_delete
   name: az sig image-version delete
-  summary: Delete a gallery image version.
+  summary: Delete a gallery Image Version.
 - uid: az_sig_image_version_list
   name: az sig image-version list
-  summary: List gallery image versions under a gallery image.
+  summary: List gallery Image Versions in a gallery Image Definition.
 - uid: az_sig_image_version_show
   name: az sig image-version show
-  summary: Retrieves information about a gallery image version.
+  summary: Retrieves information about a gallery Image Version.
 - uid: az_sig_image_version_update
   name: az sig image-version update
   summary: Update a share image version.
