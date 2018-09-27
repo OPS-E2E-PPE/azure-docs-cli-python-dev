@@ -26,7 +26,7 @@ items:
   parameters:
   - isRequired: true
     name: --command-id
-    summary: The run command ID.
+    summary: The command id. Use 'az vm run-command list' to get the list.
     description: ''
   - isRequired: true
     name: --name -n
@@ -74,7 +74,7 @@ items:
   parameters:
   - isRequired: true
     name: --command-id
-    summary: The run command ID.
+    summary: The command id. Use 'az vm run-command list' to get the list.
     description: ''
   - isRequired: true
     name: --location -l
