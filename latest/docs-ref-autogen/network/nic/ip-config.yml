@@ -51,7 +51,7 @@ items:
     summary: Set to make this configuration the primary one for the NIC.
     description: ''
   - name: --private-ip-address
-    summary: Static private IP address to use.
+    summary: Static IP address to use or "" to use a dynamic address.
     description: ''
   - name: --private-ip-address-version
     parameterValueGroup: IPv4, IPv6
@@ -201,10 +201,9 @@ items:
     summary: Set to make this configuration the primary one for the NIC.
     description: ''
   - name: --private-ip-address
-    summary: Static private IP address to use.
+    summary: Static IP address to use or "" to use a dynamic address.
     description: ''
   - name: --private-ip-address-version
-    defaultValue: ipv4
     parameterValueGroup: IPv4, IPv6
     summary: ''
     description: ''
