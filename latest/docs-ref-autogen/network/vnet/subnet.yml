@@ -27,8 +27,8 @@ items:
                                     --address-prefix 10.0.0.0/24 --network-security-group MyNsg --route-table MyRouteTable
   parameters:
   - isRequired: true
-    name: --address-prefix
-    summary: The address prefix in CIDR format.
+    name: --address-prefixes
+    summary: Space-separated list of address prefixes in CIDR format.
     description: ''
   - isRequired: true
     name: --name -n
@@ -196,8 +196,8 @@ items:
     name: --vnet-name
     summary: The virtual network (VNet) name.
     description: ''
-  - name: --address-prefix
-    summary: The address prefix in CIDR format.
+  - name: --address-prefixes
+    summary: Space-separated list of address prefixes in CIDR format.
     description: ''
   - name: --delegations
     summary: Space-separated list of services to whom the subnet should be delegated. (e.g. Microsoft.Sql/servers).

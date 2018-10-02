@@ -27,7 +27,7 @@ items:
   parameters:
   - isRequired: true
     name: --address-prefix
-    summary: The address prefix in CIDR format.
+    summary: Address prefix in CIDR format.
     description: ''
   - isRequired: true
     name: --name -n
@@ -163,7 +163,7 @@ items:
     summary: The virtual network (VNet) name.
     description: ''
   - name: --address-prefix
-    summary: The address prefix in CIDR format.
+    summary: Address prefix in CIDR format.
     description: ''
   - name: --network-security-group
     summary: Name or ID of a network security group (NSG). Use empty string "" to detach it.

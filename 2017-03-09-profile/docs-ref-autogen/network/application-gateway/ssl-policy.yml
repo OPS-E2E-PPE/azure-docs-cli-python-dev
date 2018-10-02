@@ -39,6 +39,11 @@ items:
   - name: --clear
     summary: Clear SSL policy.
     description: ''
+  - name: --disabled-ssl-protocols
+    parameterValueGroup: TLSv1_0, TLSv1_1, TLSv1_2
+    summary: Space-separated list of protocols to disable.
+    description: ''
+    valueFrom: az network application-gateway ssl-policy list-options
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
