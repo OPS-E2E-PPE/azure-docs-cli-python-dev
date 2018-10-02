@@ -38,7 +38,7 @@ items:
   - summary: Create a Linux VM scale set with an auto-generated ssh key pair, a public IP address, a DNS entry, an existing load balancer, and an existing virtual network.
     syntax:
       content: >-
-        az vmss create -n MyVmss -g MyResourceGroup --dns-name-for-public-ip MyGloballyUniqueDnsName \
+        az vmss create -n MyVmss -g MyResourceGroup --public-ip-address-dns-name my-globally-dns-name \
                                     --load-balancer MyLoadBalancer --vnet-name MyVnet --subnet MySubnet --image UbuntuLTS \
                                     --generate-ssh-keys
   - summary: Create a Linux VM scale set from a custom image using the default existing public SSH key.
@@ -837,7 +837,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/23ad6add443c5f5f694a38372ce7991be498f6cc/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 9/20/2018 6:47:51 PM
-ms.date: 09/20/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/cf9134b0df3656290db0fd342a02c0a0baebfe56/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 10/2/2018 3:35:17 PM
+ms.date: 10/02/2018
 description: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).

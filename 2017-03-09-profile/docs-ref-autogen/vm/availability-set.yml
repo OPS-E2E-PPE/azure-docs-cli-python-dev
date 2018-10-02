@@ -234,7 +234,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/23ad6add443c5f5f694a38372ce7991be498f6cc/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 9/20/2018 6:47:51 PM
-ms.date: 09/20/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/cf9134b0df3656290db0fd342a02c0a0baebfe56/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 10/2/2018 3:35:17 PM
+ms.date: 10/02/2018
 description: To provide redundancy to an application, it is recommended to group two or more virtual machines in an availability set. This configuration ensures that during either a planned or unplanned maintenance event, at least one virtual machine will be available.

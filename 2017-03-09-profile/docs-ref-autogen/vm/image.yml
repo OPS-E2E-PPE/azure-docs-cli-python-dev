@@ -169,7 +169,7 @@ items:
       content: >-
         latest=$(az vm image list -p OpenLogic -s 7.3 --all --query \
                                     "[?offer=='CentOS'].version" -o tsv | sort -u | tail -n 1)
-                                az vm image show -l westus -f CentOS -p OpenLogic --s 7.3 --version {latest}
+                                az vm image show -l westus -f CentOS -p OpenLogic --sku 7.3 --version {latest}
   parameters:
   - name: --location -l
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
@@ -230,7 +230,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/23ad6add443c5f5f694a38372ce7991be498f6cc/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 9/20/2018 6:47:51 PM
-ms.date: 09/20/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/cf9134b0df3656290db0fd342a02c0a0baebfe56/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 10/2/2018 3:35:17 PM
+ms.date: 10/02/2018
 description: Information on available virtual machine images.
