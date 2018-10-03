@@ -81,8 +81,8 @@ items:
     summary: Gallery image definition.
     description: ''
   - isRequired: true
-    name: --gallery-image-version -e
-    summary: Gallery image version.
+    name: --gallery-image-version-name
+    summary: The name of the gallery Image Version to be deleted.
     description: ''
   - isRequired: true
     name: --gallery-name -r
