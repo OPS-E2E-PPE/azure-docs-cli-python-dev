@@ -3011,6 +3011,28 @@
       - name: Show
         uid: az_functionapp_identity_show
         displayName: az functionapp identity show
+  - name: Hdinsight
+    uid: az_hdinsight
+    displayName: az hdinsight
+    items:
+    - name: Create
+      uid: az_hdinsight_create
+      displayName: az hdinsight create
+    - name: Delete
+      uid: az_hdinsight_delete
+      displayName: az hdinsight delete
+    - name: List
+      uid: az_hdinsight_list
+      displayName: az hdinsight list
+    - name: Resize
+      uid: az_hdinsight_resize
+      displayName: az hdinsight resize
+    - name: Show
+      uid: az_hdinsight_show
+      displayName: az hdinsight show
+    - name: Wait
+      uid: az_hdinsight_wait
+      displayName: az hdinsight wait
   - name: Identity
     uid: az_identity
     displayName: az identity
