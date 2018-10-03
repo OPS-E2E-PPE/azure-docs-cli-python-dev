@@ -208,6 +208,9 @@ items:
   - name: --route-table
     summary: Name or ID of a route table to associate with the subnet.
     description: ''
+  - name: --service-endpoint-policy
+    summary: Space-separated list of names or IDs of service endpoint policies to apply.
+    description: ''
   - name: --service-endpoints
     summary: Space-separated list of services allowed private access to this subnet.
     description: ''
