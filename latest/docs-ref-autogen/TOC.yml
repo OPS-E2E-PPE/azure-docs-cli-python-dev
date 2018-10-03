@@ -7844,6 +7844,9 @@
     - name: Get-Instance-View
       uid: az_vmss_get_instance_view
       displayName: az vmss get-instance-view
+    - name: Get-Os-Upgrade-History
+      uid: az_vmss_get_os_upgrade_history
+      displayName: az vmss get-os-upgrade-history
     - name: List
       uid: az_vmss_list
       displayName: az vmss list

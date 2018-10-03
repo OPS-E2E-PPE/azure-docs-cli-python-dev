@@ -146,7 +146,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/cf9134b0df3656290db0fd342a02c0a0baebfe56/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 10/2/2018 3:35:17 PM
-ms.date: 10/02/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/0dbf5e4ac2f35057bc9b8234b0a59612593552c5/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 10/3/2018 3:10:21 AM
+ms.date: 10/03/2018
 description: Manage user accounts for a VM.

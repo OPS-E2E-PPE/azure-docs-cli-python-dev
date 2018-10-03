@@ -144,7 +144,10 @@ items:
   langs:
   - azurecli
   examples:
-  - summary: replicate to a new region
+  - summary: replicate to a new set of regions
+    syntax:
+      content: az sig image-version update -g MyResourceGroup --gallery-name MyGallery --gallery-image-definition MyImage --gallery-image-version 1.0.0 --target-regions westcentralus=2 eastus2
+  - summary: replicate to one more region
     syntax:
       content: az sig image-version update -g MyResourceGroup --gallery-name MyGallery --gallery-image-definition MyImage --gallery-image-version 1.0.0 --add publishingProfile.targetRegions name=westcentralus
   parameters:
@@ -166,6 +169,9 @@ items:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --target-regions
+    summary: Space separated region list, use "<region>=<replicate count>" to apply region specific replicate count.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
