@@ -199,7 +199,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/ec93aeb47701889d5fcfba94ea3ac074fb0a0b29/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
-updated_at: 9/20/2018 4:44:06 PM
-ms.date: 09/20/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/7368792fc2e64624210c0bbc16694f090b1a0eab/src/command_modules/azure-cli-monitor/azure/cli/command_modules/monitor/_help.py
+updated_at: 10/9/2018 4:49:01 PM
+ms.date: 10/09/2018
 description: 'For more information on autoscaling, visit: <a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-understanding-autoscale-settings">https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-understanding-autoscale-settings</a>.'
