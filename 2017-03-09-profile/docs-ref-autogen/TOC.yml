@@ -2035,6 +2035,9 @@
       - name: Update
         uid: az_storage_share_update
         displayName: az storage share update
+      - name: Url
+        uid: az_storage_share_url
+        displayName: az storage share url
       - name: Metadata
         uid: az_storage_share_metadata
         displayName: az storage share metadata

@@ -282,7 +282,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/978a9c85517ab0c1bce356967fcc9934b0e90ae8/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-updated_at: 9/11/2018 8:34:08 PM
-ms.date: 09/11/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/c0b1e18756e059a6156c5d366edde6051e302ff5/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+updated_at: 10/11/2018 5:55:50 PM
+ms.date: 10/11/2018
 description: Manage queue storage messages.
