@@ -115,7 +115,7 @@ items:
     summary: The container image name.
     description: ''
   - name: --ip-address
-    parameterValueGroup: Public
+    parameterValueGroup: Private, Public
     summary: The IP address type of the container group.
     description: ''
   - name: --location -l
@@ -210,6 +210,9 @@ items:
   - name: --subnet-address-prefix
     defaultValue: 10.0.0.0/24
     summary: The subnet IP address prefix to use when creating a new VNET in CIDR format.
+    description: ''
+  - name: --vnet
+    summary: The name of the VNET when creating a new one or referencing an existing one. Can also reference an existing vnet by ID. This allows using vnets from other resource groups.
     description: ''
   - name: --vnet-address-prefix
     defaultValue: 10.0.0.0/16
