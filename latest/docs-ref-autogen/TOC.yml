@@ -337,6 +337,16 @@
         - name: Remove
           uid: az_ad_app_owner_remove
           displayName: az ad app owner remove
+      - name: Permission
+        uid: az_ad_app_permission
+        displayName: az ad app permission
+        items:
+        - name: Grant
+          uid: az_ad_app_permission_grant
+          displayName: az ad app permission grant
+        - name: List
+          uid: az_ad_app_permission_list
+          displayName: az ad app permission list
     - name: Groups
       uid: az_ad_group
       displayName: az ad group

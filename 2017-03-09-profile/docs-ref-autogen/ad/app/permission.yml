@@ -1,29 +1,36 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_ad_group_owner
-  name: az ad group owner
-  summary: Manage Azure Active Directory group owners.
+- uid: az_ad_app_permission
+  name: az ad app permission
+  summary: Manage an application's OAuth2 permissions.
   description: ''
   langs:
   - azurecli
   children:
-  - az_ad_group_owner_add
-  - az_ad_group_owner_list
-  - az_ad_group_owner_remove
-- uid: az_ad_group_owner_add
-  name: az ad group owner add
-  summary: Add a group owner.
+  - az_ad_app_permission_grant
+  - az_ad_app_permission_list
+- uid: az_ad_app_permission_grant
+  name: az ad app permission grant
+  summary: Grant an app permissions from another app.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Grant a native application with permissions to access an existing API with TTL of 2 years
+    syntax:
+      content: az ad app permission grant --id e042ec79-34cd-498f-9d9f-1234234 --app-id a0322f79-57df-498f-9d9f-12678 --expires 2
   parameters:
   - isRequired: true
-    name: --group -g
-    summary: Group's object id or display name(prefix also works if there is a unique match).
+    name: --app-id
+    summary: ClientId of an existing app from which you want to grant permissions to your app.
     description: ''
   - isRequired: true
-    name: --owner-object-id
-    summary: Owner's object id.
+    name: --id
+    summary: Identifier uri, application id, or object id.
+    description: ''
+  - name: --expires
+    defaultValue: "1"
+    summary: Expiry date for the permissions in years, options include 1, 2 or never.
     description: ''
   source:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
@@ -31,37 +38,20 @@ items:
       branch: dev
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_ad_group_owner_list
-  name: az ad group owner list
-  summary: List group owners.
+- uid: az_ad_app_permission_list
+  name: az ad app permission list
+  summary: List the app permissions.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: List the OAuth2 permissions for an existing AAD app
+    syntax:
+      content: az ad app permission list --id e042ec79-34cd-498f-9d9f-1234234
   parameters:
   - isRequired: true
-    name: --group -g
-    summary: Group's object id or display name(prefix also works if there is a unique match).
-    description: ''
-  source:
-    path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-    remote:
-      branch: dev
-      path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_ad_group_owner_remove
-  name: az ad group owner remove
-  summary: Remove a group owner.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --group -g
-    summary: Group's object id or display name(prefix also works if there is a unique match).
-    description: ''
-  - isRequired: true
-    name: --owner-object-id
-    summary: Owner's object id.
+    name: --id
+    summary: Identifier uri, application id, or object id of the associated application.
     description: ''
   source:
     path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
@@ -70,15 +60,12 @@ items:
       path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_ad_group_owner_add
-  name: az ad group owner add
-  summary: Add a group owner.
-- uid: az_ad_group_owner_list
-  name: az ad group owner list
-  summary: List group owners.
-- uid: az_ad_group_owner_remove
-  name: az ad group owner remove
-  summary: Remove a group owner.
+- uid: az_ad_app_permission_grant
+  name: az ad app permission grant
+  summary: Grant an app permissions from another app.
+- uid: az_ad_app_permission_list
+  name: az ad app permission list
+  summary: List the app permissions.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -98,4 +85,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/comman
 gitcommit: https://github.com/Azure/azure-cli/blob/94aa992df55b1551f9f27c4812eca69ca8b6f4eb/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
 updated_at: 10/18/2018 10:30:57 PM
 ms.date: 10/18/2018
-description: Manage Azure Active Directory group owners.
+description: Manage an application's OAuth2 permissions.
