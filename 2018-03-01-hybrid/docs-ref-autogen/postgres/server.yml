@@ -27,10 +27,10 @@ items:
       content: az postgres server create -l northeurope -g testgroup -n testsvr -u username -p password
   - summary: Create a PostgreSQL server with a Standard performance tier and 2 vcore in North Europe.
     syntax:
-      content: az postgres server create -l northeurope -g testgroup -n testsvr -u username -p password \ --sku-name GP_Gen4_2
+      content: az postgres server create -l northeurope -g testgroup -n testsvr -u username -p password \ --sku-name GP_Gen5_2
   - summary: Create a PostgreSQL server with all paramaters set.
     syntax:
-      content: az postgres server create -l northeurope -g testgroup -n testsvr -u username -p password \ --sku-name B_Gen4_2 --ssl-enforcement Disabled \ --storage-size 51200 --tags "key=value" --version {server-version}
+      content: az postgres server create -l northeurope -g testgroup -n testsvr -u username -p password \ --sku-name B_Gen5_2 --ssl-enforcement Disabled \ --storage-size 51200 --tags "key=value" --version {server-version}
   parameters:
   - isRequired: true
     name: --name -n
@@ -42,7 +42,7 @@ items:
     description: ''
   - isRequired: true
     name: --sku-name
-    summary: The name of the sku, typically, tier + family + cores, e.g. B_Gen4_1, GP_Gen5_8.
+    summary: The name of the sku, typically, tier + family + cores, e.g. B_Gen5_1, GP_Gen5_8.
     description: ''
   - name: --backup-retention
     summary: The number of days a backup is retained.
@@ -134,7 +134,7 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --sku-name
-    summary: The name of the sku, typically, tier + family + cores, e.g. B_Gen4_1, GP_Gen5_8.
+    summary: The name of the sku, typically, tier + family + cores, e.g. B_Gen5_1, GP_Gen5_8.
     description: ''
 - uid: az_postgres_server_list
   name: az postgres server list
@@ -213,7 +213,7 @@ items:
   examples:
   - summary: Update a server's sku.
     syntax:
-      content: az postgres server update -g testgroup -n testsvrnew --sku-name GP_Gen4_4
+      content: az postgres server update -g testgroup -n testsvrnew --sku-name GP_Gen5_4
   - summary: Update a server's tags.
     syntax:
       content: az postgres server update -g testgroup -n testsvrnew --tags "k1=v1" "k2=v2"
@@ -233,7 +233,7 @@ items:
     summary: The number of days a backup is retained.
     description: ''
   - name: --sku-name
-    summary: The name of the sku, typically, tier + family + cores, e.g. B_Gen4_1, GP_Gen5_8.
+    summary: The name of the sku, typically, tier + family + cores, e.g. B_Gen5_1, GP_Gen5_8.
     description: ''
   - name: --ssl-enforcement
     parameterValueGroup: Disabled, Enabled
