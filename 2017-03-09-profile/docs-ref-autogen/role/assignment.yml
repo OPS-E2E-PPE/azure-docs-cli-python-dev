@@ -161,7 +161,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/94aa992df55b1551f9f27c4812eca69ca8b6f4eb/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-updated_at: 10/18/2018 10:30:57 PM
-ms.date: 10/18/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/cefe3f1b9e52b84a9e5d4c3734ee256857c3c9ac/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+updated_at: 10/23/2018 10:58:46 PM
+ms.date: 10/23/2018
 description: Manage role assignments.
