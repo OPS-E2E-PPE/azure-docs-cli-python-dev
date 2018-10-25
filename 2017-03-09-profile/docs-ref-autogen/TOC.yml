@@ -19,6 +19,9 @@
   - name: Logout
     uid: az_logout
     displayName: az logout
+  - name: Self-Test
+    uid: az_self_test
+    displayName: az self-test
   - name: Azure Active Directory
     uid: az_ad
     displayName: az ad

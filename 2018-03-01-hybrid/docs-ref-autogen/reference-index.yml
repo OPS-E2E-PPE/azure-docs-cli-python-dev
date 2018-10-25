@@ -13,6 +13,7 @@ items:
   - az_interactive
   - az_login
   - az_logout
+  - az_self_test
 - uid: az_configure
   name: az configure
   summary: Manage Azure CLI configuration. This command is interactive.
@@ -153,6 +154,13 @@ items:
       branch: dev
       path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
       repo: https://github.com/Azure/azure-cli.git
+- uid: az_self_test
+  name: az self-test
+  summary: Runs a self-test of the CLI.
+  description: ''
+  langs:
+  - azurecli
+  parameters: []
 commands:
 - uid: az_account
   name: az account
@@ -322,6 +330,9 @@ commands:
 - uid: az_search
   name: az search
   summary: Manage Azure Search services, admin keys and query keys.
+- uid: az_self_test
+  name: az self-test
+  summary: Runs a self-test of the CLI.
 - uid: az_servicebus
   name: az servicebus
   summary: Manage Azure Service Bus namespaces, queues, topics, subscriptions, rules and geo-disaster recovery configuration alias.
@@ -368,6 +379,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b3d52ca0e6f11ef377d830612d1131ca24127004/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
-updated_at: 6/28/2018 6:01:13 PM
-ms.date: 06/28/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/250f775d0531e622b4d2486ea3d55aa820675efb/src/command_modules/azure-cli-profile/azure/cli/command_modules/profile/_help.py
+updated_at: 10/25/2018 6:45:26 PM
+ms.date: 10/25/2018
