@@ -44,9 +44,6 @@ items:
   - name: --disable-browser
     summary: Don't launch a web browser after establishing port-forwarding.
     description: Add this argument when launching a web browser manually, or for automated testing.
-  - name: --enable-cloud-console-aks-browse
-    summary: ''
-    description: ''
   - name: --listen-port
     defaultValue: "8001"
     summary: The listening port for the dashboard.
