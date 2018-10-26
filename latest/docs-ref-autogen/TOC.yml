@@ -4179,6 +4179,19 @@
         - name: Update
           uid: az_mysql_server_firewall_rule_update
           displayName: az mysql server firewall-rule update
+      - name: Replica
+        uid: az_mysql_server_replica
+        displayName: az mysql server replica
+        items:
+        - name: Create
+          uid: az_mysql_server_replica_create
+          displayName: az mysql server replica create
+        - name: List
+          uid: az_mysql_server_replica_list
+          displayName: az mysql server replica list
+        - name: Stop
+          uid: az_mysql_server_replica_stop
+          displayName: az mysql server replica stop
       - name: Vnet-Rule
         uid: az_mysql_server_vnet_rule
         displayName: az mysql server vnet-rule
