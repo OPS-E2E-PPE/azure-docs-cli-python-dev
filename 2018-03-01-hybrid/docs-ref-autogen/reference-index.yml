@@ -76,7 +76,7 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_interactive
   name: az interactive
-  summary: Start interactive mode.
+  summary: Start interactive mode. Installs the Interactive extension if not installed already.
   description: 'For more information on interactive mode, see: <a href="https://azure.microsoft.com/en-us/blog/welcome-to-azure-cli-shell/">https://azure.microsoft.com/en-us/blog/welcome-to-azure-cli-shell/</a>.'
   langs:
   - azurecli
@@ -84,6 +84,9 @@ items:
   - name: --style -s
     parameterValueGroup: bg, br, contrast, default, grey, halloween, neon, none, pastel, primary, purple, quiet
     summary: The colors of the shell.
+    description: ''
+  - name: --update
+    summary: Update the Interactive extension to the latest available.
     description: ''
 - uid: az_login
   name: az login
@@ -263,7 +266,7 @@ commands:
   summary: Manage custom virtual machine images.
 - uid: az_interactive
   name: az interactive
-  summary: Start interactive mode.
+  summary: Start interactive mode. Installs the Interactive extension if not installed already.
 - uid: az_iot
   name: az iot
   summary: Manage Internet of Things (IoT) assets.
