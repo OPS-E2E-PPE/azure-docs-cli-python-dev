@@ -121,6 +121,9 @@
       uid: az_ams_account
       displayName: az ams account
       items:
+      - name: Check-Name
+        uid: az_ams_account_check_name
+        displayName: az ams account check-name
       - name: Create
         uid: az_ams_account_create
         displayName: az ams account create
@@ -136,6 +139,16 @@
       - name: Update
         uid: az_ams_account_update
         displayName: az ams account update
+      - name: Mru
+        uid: az_ams_account_mru
+        displayName: az ams account mru
+        items:
+        - name: Set
+          uid: az_ams_account_mru_set
+          displayName: az ams account mru set
+        - name: Show
+          uid: az_ams_account_mru_show
+          displayName: az ams account mru show
       - name: Sp
         uid: az_ams_account_sp
         displayName: az ams account sp
@@ -156,6 +169,28 @@
         - name: Remove
           uid: az_ams_account_storage_remove
           displayName: az ams account storage remove
+        - name: Sync-Storage-Keys
+          uid: az_ams_account_storage_sync_storage_keys
+          displayName: az ams account storage sync-storage-keys
+    - name: Account-Filter
+      uid: az_ams_account_filter
+      displayName: az ams account-filter
+      items:
+      - name: Create
+        uid: az_ams_account_filter_create
+        displayName: az ams account-filter create
+      - name: Delete
+        uid: az_ams_account_filter_delete
+        displayName: az ams account-filter delete
+      - name: List
+        uid: az_ams_account_filter_list
+        displayName: az ams account-filter list
+      - name: Show
+        uid: az_ams_account_filter_show
+        displayName: az ams account-filter show
+      - name: Update
+        uid: az_ams_account_filter_update
+        displayName: az ams account-filter update
     - name: Asset
       uid: az_ams_asset
       displayName: az ams asset
@@ -166,9 +201,15 @@
       - name: Delete
         uid: az_ams_asset_delete
         displayName: az ams asset delete
+      - name: Get-Encryption-Key
+        uid: az_ams_asset_get_encryption_key
+        displayName: az ams asset get-encryption-key
       - name: Get-Sas-Urls
         uid: az_ams_asset_get_sas_urls
         displayName: az ams asset get-sas-urls
+      - name: Get-Streaming-Locators
+        uid: az_ams_asset_get_streaming_locators
+        displayName: az ams asset get-streaming-locators
       - name: List
         uid: az_ams_asset_list
         displayName: az ams asset list
@@ -178,6 +219,57 @@
       - name: Update
         uid: az_ams_asset_update
         displayName: az ams asset update
+    - name: Asset-Filter
+      uid: az_ams_asset_filter
+      displayName: az ams asset-filter
+      items:
+      - name: Create
+        uid: az_ams_asset_filter_create
+        displayName: az ams asset-filter create
+      - name: Delete
+        uid: az_ams_asset_filter_delete
+        displayName: az ams asset-filter delete
+      - name: List
+        uid: az_ams_asset_filter_list
+        displayName: az ams asset-filter list
+      - name: Show
+        uid: az_ams_asset_filter_show
+        displayName: az ams asset-filter show
+      - name: Update
+        uid: az_ams_asset_filter_update
+        displayName: az ams asset-filter update
+    - name: Content-Key-Policy
+      uid: az_ams_content_key_policy
+      displayName: az ams content-key-policy
+      items:
+      - name: Create
+        uid: az_ams_content_key_policy_create
+        displayName: az ams content-key-policy create
+      - name: Delete
+        uid: az_ams_content_key_policy_delete
+        displayName: az ams content-key-policy delete
+      - name: List
+        uid: az_ams_content_key_policy_list
+        displayName: az ams content-key-policy list
+      - name: Show
+        uid: az_ams_content_key_policy_show
+        displayName: az ams content-key-policy show
+      - name: Update
+        uid: az_ams_content_key_policy_update
+        displayName: az ams content-key-policy update
+      - name: Option
+        uid: az_ams_content_key_policy_option
+        displayName: az ams content-key-policy option
+        items:
+        - name: Add
+          uid: az_ams_content_key_policy_option_add
+          displayName: az ams content-key-policy option add
+        - name: Remove
+          uid: az_ams_content_key_policy_option_remove
+          displayName: az ams content-key-policy option remove
+        - name: Update
+          uid: az_ams_content_key_policy_option_update
+          displayName: az ams content-key-policy option update
     - name: Job
       uid: az_ams_job
       displayName: az ams job
@@ -197,58 +289,129 @@
       - name: Start
         uid: az_ams_job_start
         displayName: az ams job start
-    - name: Streaming
-      uid: az_ams_streaming
-      displayName: az ams streaming
+      - name: Update
+        uid: az_ams_job_update
+        displayName: az ams job update
+    - name: Live-Event
+      uid: az_ams_live_event
+      displayName: az ams live-event
       items:
-      - name: Endpoint
-        uid: az_ams_streaming_endpoint
-        displayName: az ams streaming endpoint
+      - name: Create
+        uid: az_ams_live_event_create
+        displayName: az ams live-event create
+      - name: Delete
+        uid: az_ams_live_event_delete
+        displayName: az ams live-event delete
+      - name: List
+        uid: az_ams_live_event_list
+        displayName: az ams live-event list
+      - name: Reset
+        uid: az_ams_live_event_reset
+        displayName: az ams live-event reset
+      - name: Show
+        uid: az_ams_live_event_show
+        displayName: az ams live-event show
+      - name: Start
+        uid: az_ams_live_event_start
+        displayName: az ams live-event start
+      - name: Stop
+        uid: az_ams_live_event_stop
+        displayName: az ams live-event stop
+      - name: Update
+        uid: az_ams_live_event_update
+        displayName: az ams live-event update
+    - name: Live-Output
+      uid: az_ams_live_output
+      displayName: az ams live-output
+      items:
+      - name: Create
+        uid: az_ams_live_output_create
+        displayName: az ams live-output create
+      - name: Delete
+        uid: az_ams_live_output_delete
+        displayName: az ams live-output delete
+      - name: List
+        uid: az_ams_live_output_list
+        displayName: az ams live-output list
+      - name: Show
+        uid: az_ams_live_output_show
+        displayName: az ams live-output show
+    - name: Streaming-Endpoint
+      uid: az_ams_streaming_endpoint
+      displayName: az ams streaming-endpoint
+      items:
+      - name: Create
+        uid: az_ams_streaming_endpoint_create
+        displayName: az ams streaming-endpoint create
+      - name: Delete
+        uid: az_ams_streaming_endpoint_delete
+        displayName: az ams streaming-endpoint delete
+      - name: List
+        uid: az_ams_streaming_endpoint_list
+        displayName: az ams streaming-endpoint list
+      - name: Scale
+        uid: az_ams_streaming_endpoint_scale
+        displayName: az ams streaming-endpoint scale
+      - name: Show
+        uid: az_ams_streaming_endpoint_show
+        displayName: az ams streaming-endpoint show
+      - name: Start
+        uid: az_ams_streaming_endpoint_start
+        displayName: az ams streaming-endpoint start
+      - name: Stop
+        uid: az_ams_streaming_endpoint_stop
+        displayName: az ams streaming-endpoint stop
+      - name: Update
+        uid: az_ams_streaming_endpoint_update
+        displayName: az ams streaming-endpoint update
+      - name: Akamai
+        uid: az_ams_streaming_endpoint_akamai
+        displayName: az ams streaming-endpoint akamai
         items:
-        - name: List
-          uid: az_ams_streaming_endpoint_list
-          displayName: az ams streaming endpoint list
-        - name: Start
-          uid: az_ams_streaming_endpoint_start
-          displayName: az ams streaming endpoint start
-        - name: Stop
-          uid: az_ams_streaming_endpoint_stop
-          displayName: az ams streaming endpoint stop
-      - name: Locator
-        uid: az_ams_streaming_locator
-        displayName: az ams streaming locator
-        items:
-        - name: Create
-          uid: az_ams_streaming_locator_create
-          displayName: az ams streaming locator create
-        - name: Delete
-          uid: az_ams_streaming_locator_delete
-          displayName: az ams streaming locator delete
-        - name: Get-Paths
-          uid: az_ams_streaming_locator_get_paths
-          displayName: az ams streaming locator get-paths
-        - name: List
-          uid: az_ams_streaming_locator_list
-          displayName: az ams streaming locator list
-        - name: Show
-          uid: az_ams_streaming_locator_show
-          displayName: az ams streaming locator show
-      - name: Policy
-        uid: az_ams_streaming_policy
-        displayName: az ams streaming policy
-        items:
-        - name: Create
-          uid: az_ams_streaming_policy_create
-          displayName: az ams streaming policy create
-        - name: Delete
-          uid: az_ams_streaming_policy_delete
-          displayName: az ams streaming policy delete
-        - name: List
-          uid: az_ams_streaming_policy_list
-          displayName: az ams streaming policy list
-        - name: Show
-          uid: az_ams_streaming_policy_show
-          displayName: az ams streaming policy show
+        - name: Add
+          uid: az_ams_streaming_endpoint_akamai_add
+          displayName: az ams streaming-endpoint akamai add
+        - name: Remove
+          uid: az_ams_streaming_endpoint_akamai_remove
+          displayName: az ams streaming-endpoint akamai remove
+    - name: Streaming-Locator
+      uid: az_ams_streaming_locator
+      displayName: az ams streaming-locator
+      items:
+      - name: Create
+        uid: az_ams_streaming_locator_create
+        displayName: az ams streaming-locator create
+      - name: Delete
+        uid: az_ams_streaming_locator_delete
+        displayName: az ams streaming-locator delete
+      - name: Get-Content-Keys
+        uid: az_ams_streaming_locator_get_content_keys
+        displayName: az ams streaming-locator get-content-keys
+      - name: Get-Paths
+        uid: az_ams_streaming_locator_get_paths
+        displayName: az ams streaming-locator get-paths
+      - name: List
+        uid: az_ams_streaming_locator_list
+        displayName: az ams streaming-locator list
+      - name: Show
+        uid: az_ams_streaming_locator_show
+        displayName: az ams streaming-locator show
+    - name: Streaming-Policy
+      uid: az_ams_streaming_policy
+      displayName: az ams streaming-policy
+      items:
+      - name: Create
+        uid: az_ams_streaming_policy_create
+        displayName: az ams streaming-policy create
+      - name: Delete
+        uid: az_ams_streaming_policy_delete
+        displayName: az ams streaming-policy delete
+      - name: List
+        uid: az_ams_streaming_policy_list
+        displayName: az ams streaming-policy list
+      - name: Show
+        uid: az_ams_streaming_policy_show
+        displayName: az ams streaming-policy show
     - name: Transform
       uid: az_ams_transform
       displayName: az ams transform

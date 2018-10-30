@@ -1,113 +1,64 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_ams_job
-  name: az ams job
-  summary: Manage jobs for a transform.
+- uid: az_ams_account_filter
+  name: az ams account-filter
+  summary: Manage account filters for an Azure Media Services account.
   description: ''
   langs:
   - azurecli
   children:
-  - az_ams_job_cancel
-  - az_ams_job_delete
-  - az_ams_job_list
-  - az_ams_job_show
-  - az_ams_job_start
-  - az_ams_job_update
-- uid: az_ams_job_cancel
-  name: az ams job cancel
-  summary: Cancel a job.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --account-name -a
-    summary: The name of the Azure Media Services account.
-    description: ''
-  - isRequired: true
-    name: --name -n
-    summary: The name of the job.
-    description: ''
-  - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - isRequired: true
-    name: --transform-name -t
-    summary: The name of the transform.
-    description: ''
-  - name: --delete
-    summary: Delete the job being cancelled.
-    description: ''
-  source:
-    path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
-    remote:
-      branch: dev
-      path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_ams_job_delete
-  name: az ams job delete
-  summary: Delete a job.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --account-name -a
-    summary: The name of the Azure Media Services account.
-    description: ''
-  - isRequired: true
-    name: --name -n
-    summary: The name of the job.
-    description: ''
-  - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - isRequired: true
-    name: --transform-name -t
-    summary: The name of the transform.
-    description: ''
-  source:
-    path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
-    remote:
-      branch: dev
-      path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_ams_job_list
-  name: az ams job list
-  summary: List all the jobs of a transform within an Azure Media Services account.
+  - az_ams_account_filter_create
+  - az_ams_account_filter_delete
+  - az_ams_account_filter_list
+  - az_ams_account_filter_show
+  - az_ams_account_filter_update
+- uid: az_ams_account_filter_create
+  name: az ams account-filter create
+  summary: Create an account filter.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: List all the jobs of a transform with 'Normal' priority by name.
+  - summary: Create an asset filter with filter track selections.
     syntax:
-      content: az ams job list -a amsAccount -g resourceGroup -t transformName --query [?priority=='Normal'].{jobName:name}
-  - summary: List all the jobs of a transform by name and input.
-    syntax:
-      content: az ams job list -a amsAccount -g resourceGroup -t transformName --query [].{jobName:name,jobInput:input}
+      content: az ams account-filter create -a amsAccount -g resourceGroup -n filterName --force-end-timestamp=False --end-timestamp 200000 --start-timestamp 100000 --live-backoff-duration 60 --presentation-window-duration 600000 --timescale 1000 --bitrate 720 --tracks @C:\tracks.json
   parameters:
   - isRequired: true
     name: --account-name -a
     summary: The name of the Azure Media Services account.
     description: ''
   - isRequired: true
+    name: --name -n
+    summary: The name of the account filter.
+    description: ''
+  - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - isRequired: true
-    name: --transform-name -t
-    summary: The name of the transform.
+  - name: --bitrate
+    summary: The first quality bitrate.
     description: ''
-  - name: --filter
-    summary: Restricts the set of items returned.
+  - name: --tracks
+    summary: The JSON representing the track selections. Use @{file} to load from a file. For further information about the JSON structure please refer to swagger documentation on <a href="https://docs.microsoft.com/en-us/rest/api/media/accountfilters/accountfilters_createorupdate#filtertrackselection">https://docs.microsoft.com/en-us/rest/api/media/accountfilters/accountfilters_createorupdate#filtertrackselection</a>.
     description: ''
-  - name: --skip
-    summary: Specifies a non-negative integer n that excludes the first n items of the queried collection from the result. The service returns items starting at position n+1.
+  - name: --end-timestamp
+    summary: The absolute end time boundary.
     description: ''
-  - name: --top
-    summary: Specifies a non-negative integer n that limits the number of items returned from a collection. The service returns the number of available items up to but not greater than the specified value n.
+  - name: --force-end-timestamp
+    parameterValueGroup: false, true
+    summary: Indicates whether to force the existance of an end timestamp.
+    description: ''
+  - name: --live-backoff-duration
+    summary: The relative to end right edge.
+    description: ''
+  - name: --presentation-window-duration
+    summary: The relative to end sliding window.
+    description: ''
+  - name: --start-timestamp
+    summary: The absolute start time boundary.
+    description: ''
+  - name: --timescale
+    summary: The time scale of time stamps.
     description: ''
   source:
     path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
@@ -115,9 +66,9 @@ items:
       branch: dev
       path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_ams_job_show
-  name: az ams job show
-  summary: Show the details of a job.
+- uid: az_ams_account_filter_delete
+  name: az ams account-filter delete
+  summary: Delete an account filter.
   description: ''
   langs:
   - azurecli
@@ -128,15 +79,11 @@ items:
     description: ''
   - isRequired: true
     name: --name -n
-    summary: The name of the job.
+    summary: The name of the account filter.
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - isRequired: true
-    name: --transform-name -t
-    summary: The name of the transform.
     description: ''
   source:
     path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
@@ -144,9 +91,30 @@ items:
       branch: dev
       path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_ams_job_start
-  name: az ams job start
-  summary: Start a job.
+- uid: az_ams_account_filter_list
+  name: az ams account-filter list
+  summary: List all the account filters of an Azure Media Services account.
+  description: ''
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --account-name -a
+    summary: The name of the Azure Media Services account.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  source:
+    path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
+    remote:
+      branch: dev
+      path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_ams_account_filter_show
+  name: az ams account-filter show
+  summary: Show the details of an account filter.
   description: ''
   langs:
   - azurecli
@@ -157,41 +125,11 @@ items:
     description: ''
   - isRequired: true
     name: --name -n
-    summary: The name of the job.
-    description: ''
-  - isRequired: true
-    name: --output-assets
-    summary: "Space-separated assets in 'assetName=label' format. An asset without label can be sent like this: 'assetName='."
+    summary: The name of the account filter.
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - isRequired: true
-    name: --transform-name -t
-    summary: The name of the transform.
-    description: ''
-  - name: --correlation-data
-    summary: Space-separated correlation data in 'key[=value]' format. This customer provided data will be returned in Job and JobOutput state events.
-    description: ''
-  - name: --description
-    summary: The job description.
-    description: ''
-  - name: --files
-    summary: Space-separated list of files. It can be used to tell the service to only use the files specified from the input asset.
-    description: ''
-  - name: --label
-    summary: A label that is assigned to a Job Input, that is used to satisfy a reference used in the Transform. For example, a Transform can be authored so as to take an image file with the label 'xyz' and apply it as an overlay onto the input video before it is encoded. When submitting a Job, exactly one of the JobInputs should be the image file, and it should have the label 'xyz'.
-    description: ''
-  - name: --priority
-    parameterValueGroup: High, Low, Normal
-    summary: The priority with which the job should be processed.
-    description: ''
-  - name: --input-asset-name
-    summary: The name of the input asset.
-    description: ''
-  - name: --base-uri
-    summary: Base uri for http job input. It will be concatenated with provided file names. If no base uri is given, then the provided file list is assumed to be fully qualified uris.
     description: ''
   source:
     path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
@@ -199,9 +137,9 @@ items:
       branch: dev
       path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_ams_job_update
-  name: az ams job update
-  summary: Update an existing job.
+- uid: az_ams_account_filter_update
+  name: az ams account-filter update
+  summary: Update the details of an account filter.
   description: ''
   langs:
   - azurecli
@@ -212,22 +150,36 @@ items:
     description: ''
   - isRequired: true
     name: --name -n
-    summary: The name of the job.
+    summary: The name of the account filter.
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - isRequired: true
-    name: --transform-name -t
-    summary: The name of the transform.
+  - name: --bitrate
+    summary: The first quality bitrate.
     description: ''
-  - name: --description
-    summary: The job description.
+  - name: --tracks
+    summary: The JSON representing the track selections. Use @{file} to load from a file. For further information about the JSON structure please refer to swagger documentation on <a href="https://docs.microsoft.com/en-us/rest/api/media/accountfilters/accountfilters_createorupdate#filtertrackselection">https://docs.microsoft.com/en-us/rest/api/media/accountfilters/accountfilters_createorupdate#filtertrackselection</a>.
     description: ''
-  - name: --priority
-    parameterValueGroup: High, Low, Normal
-    summary: The priority with which the job should be processed.
+  - name: --end-timestamp
+    summary: The absolute end time boundary.
+    description: ''
+  - name: --force-end-timestamp
+    parameterValueGroup: false, true
+    summary: Indicates whether to force the existance of an end timestamp.
+    description: ''
+  - name: --live-backoff-duration
+    summary: The relative to end right edge.
+    description: ''
+  - name: --presentation-window-duration
+    summary: The relative to end sliding window.
+    description: ''
+  - name: --start-timestamp
+    summary: The absolute start time boundary.
+    description: ''
+  - name: --timescale
+    summary: The time scale of time stamps.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
@@ -248,24 +200,21 @@ items:
       path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_ams_job_cancel
-  name: az ams job cancel
-  summary: Cancel a job.
-- uid: az_ams_job_delete
-  name: az ams job delete
-  summary: Delete a job.
-- uid: az_ams_job_list
-  name: az ams job list
-  summary: List all the jobs of a transform within an Azure Media Services account.
-- uid: az_ams_job_show
-  name: az ams job show
-  summary: Show the details of a job.
-- uid: az_ams_job_start
-  name: az ams job start
-  summary: Start a job.
-- uid: az_ams_job_update
-  name: az ams job update
-  summary: Update an existing job.
+- uid: az_ams_account_filter_create
+  name: az ams account-filter create
+  summary: Create an account filter.
+- uid: az_ams_account_filter_delete
+  name: az ams account-filter delete
+  summary: Delete an account filter.
+- uid: az_ams_account_filter_list
+  name: az ams account-filter list
+  summary: List all the account filters of an Azure Media Services account.
+- uid: az_ams_account_filter_show
+  name: az ams account-filter show
+  summary: Show the details of an account filter.
+- uid: az_ams_account_filter_update
+  name: az ams account-filter update
+  summary: Update the details of an account filter.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -285,4 +234,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/comman
 gitcommit: https://github.com/Azure/azure-cli/blob/c4936533f67fc0d3b3d33b868729bc998071739d/src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
 updated_at: 10/30/2018 9:53:27 PM
 ms.date: 10/30/2018
-description: Manage jobs for a transform.
+description: Manage account filters for an Azure Media Services account.
