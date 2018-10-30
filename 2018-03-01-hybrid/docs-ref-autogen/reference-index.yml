@@ -126,6 +126,9 @@ items:
   - name: --tenant -t
     summary: The AAD tenant, must provide when using service principals.
     description: ''
+  - name: --use-cert-sn-issuer
+    summary: Used with a service principal configured with Subject Name and Issuer Authentication in order to support automatic certificate rolls.
+    description: ''
   - name: --use-device-code
     summary: Use CLI's old authentication flow based on device code. CLI will also use this if it can't launch a browser in your behalf, e.g. in remote SSH or Cloud Shell.
     description: ''
