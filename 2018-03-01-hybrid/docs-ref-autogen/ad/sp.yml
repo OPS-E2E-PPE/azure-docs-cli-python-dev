@@ -206,7 +206,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/cefe3f1b9e52b84a9e5d4c3734ee256857c3c9ac/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-updated_at: 10/23/2018 10:58:46 PM
-ms.date: 10/23/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/7f012d4fb693e59838d2cf5fd04c239a4d7a9513/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+updated_at: 10/30/2018 9:06:22 PM
+ms.date: 10/30/2018
 description: Manage Azure Active Directory service principals for automation authentication.
