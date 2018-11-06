@@ -1307,7 +1307,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/481e23b3f6efd46ccf0314e705ae5efb2c0963ed/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 11/1/2018 8:08:59 PM
-ms.date: 11/01/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/3f48f44208bf246d4100667acf82de3b5d05b1f1/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 11/6/2018 6:47:00 AM
+ms.date: 11/06/2018
 description: Manage Linux or Windows virtual machines.
