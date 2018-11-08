@@ -326,8 +326,7 @@ items:
     summary: 'Only applicable when used with `--use-unmanaged-disk`. Name of the storage container for the VM OS disk. Default: vhds.'
     description: ''
   - name: --storage-sku
-    parameterValueGroup: Premium_LRS, StandardSSD_LRS, Standard_LRS, UltraSSD_LRS
-    summary: The SKU of the storage account with which to persist VM.
+    summary: 'The SKU of the storage account with which to persist VM. Use a singular sku that would be applied across all disks, or specify individual disks. Usage: [--storage-sku SKU | --storage-sku ID=SKU ID=SKU ID=SKU...], where each ID is "os" or a 0-indexed lun. Allowed values: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS.'
     description: ''
   - name: --ultra-ssd-enabled
     parameterValueGroup: false, true
@@ -590,7 +589,7 @@ items:
     description: ''
   - name: --zone -z
     parameterValueGroup: false, true
-    summary: Show all vm size supporting availabilityt zones.
+    summary: Show all vm size supporting availability zones.
     description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py

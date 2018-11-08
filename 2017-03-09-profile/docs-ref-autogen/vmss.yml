@@ -238,8 +238,7 @@ items:
     summary: 'Only applicable when used with `--use-unmanaged-disk`. Name of the storage container for the VM OS disk. Default: vhds.'
     description: ''
   - name: --storage-sku
-    parameterValueGroup: Premium_LRS, Standard_LRS
-    summary: The SKU of the storage account with which to persist VM.
+    summary: 'The SKU of the storage account with which to persist VM. Use a singular sku that would be applied across all disks, or specify individual disks. Usage: [--storage-sku SKU | --storage-sku ID=SKU ID=SKU ID=SKU...], where each ID is "os" or a 0-indexed lun. Allowed values: Premium_LRS, Standard_LRS.'
     description: ''
   - name: --use-unmanaged-disk
     summary: Do not use managed disk to persist VM.
