@@ -116,7 +116,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/c00898ba6c46385696af67eda19b40311dedddb3/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-updated_at: 11/9/2018 2:05:45 AM
+gitcommit: https://github.com/Azure/azure-cli/blob/be222149c2bb79460fddff7319eda2fd7541ff9d/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+updated_at: 11/9/2018 7:47:40 PM
 ms.date: 11/09/2018
 description: Manage container legal holds.
