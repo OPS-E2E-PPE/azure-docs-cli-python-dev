@@ -260,7 +260,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e87d054302a522738ef350f158db927ba13ce4cb/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-updated_at: 11/5/2018 9:51:29 PM
-ms.date: 11/05/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/c00898ba6c46385696af67eda19b40311dedddb3/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+updated_at: 11/9/2018 2:05:45 AM
+ms.date: 11/09/2018
 description: Manage blob storage container leases.
