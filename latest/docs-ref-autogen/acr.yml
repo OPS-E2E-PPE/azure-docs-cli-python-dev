@@ -309,6 +309,9 @@ items:
   - name: --set
     summary: Value in 'name[=value]' format.
     description: ''
+  - name: --set-secret
+    summary: Secret value in 'name[=value]' format.
+    description: ''
   - name: --timeout
     summary: The timeout in seconds.
     description: ''
