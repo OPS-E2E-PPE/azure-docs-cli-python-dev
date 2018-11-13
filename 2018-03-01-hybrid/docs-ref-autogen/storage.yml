@@ -142,7 +142,7 @@ commands:
   summary: Upload files from a local directory to a blob container.
 - uid: az_storage_blob_url
   name: az storage blob url
-  summary: Creates the url to access a blob.
+  summary: Create the url to access a blob.
 - uid: az_storage_container
   name: az storage container
   summary: Manage blob storage containers.
@@ -337,7 +337,7 @@ commands:
   summary: Upload files from a local directory to an Azure Storage File Share in a batch operation.
 - uid: az_storage_file_url
   name: az storage file url
-  summary: Creates the url to access a file.
+  summary: Create the url to access a file.
 - uid: az_storage_logging
   name: az storage logging
   summary: Manage storage service logging information.
@@ -540,7 +540,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/03ecc6d667191843806fc86e3ced30dceecb05b9/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-updated_at: 11/10/2018 12:02:15 AM
-ms.date: 11/10/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/8947b1e11fcc83dce4860d8b0320fd92dbc501dd/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+updated_at: 11/13/2018 5:53:15 PM
+ms.date: 11/13/2018
 description: Manage Azure Cloud Storage resources.
