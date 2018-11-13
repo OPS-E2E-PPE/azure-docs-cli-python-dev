@@ -305,6 +305,10 @@ items:
   - name: --data-disk-sizes-gb
     summary: Space-separated empty managed data disk sizes in GB to create.
     description: ''
+  - name: --ephemeral-os-disk
+    parameterValueGroup: false, true
+    summary: (Preview) Allows you to create an OS disk directly on the host node, providing local disk performance and faster VM/VMSS reimage time.
+    description: ''
   - name: --os-disk-caching
     parameterValueGroup: None, ReadOnly, ReadWrite
     summary: 'Storage caching type for the VM OS disk. Default: ReadWrite.'
@@ -330,7 +334,7 @@ items:
     description: ''
   - name: --ultra-ssd-enabled
     parameterValueGroup: false, true
-    summary: (PREVIEW)Enables or disables the capability to have 1 or more managed data disks with UltraSSD_LRS storage account.
+    summary: (PREVIEW) Enables or disables the capability to have 1 or more managed data disks with UltraSSD_LRS storage account.
     description: ''
   - name: --use-unmanaged-disk
     summary: Do not use managed disk to persist VM.
