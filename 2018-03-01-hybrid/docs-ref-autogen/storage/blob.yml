@@ -409,7 +409,7 @@ items:
     summary: 'Specifies additional datasets to include: (c)opy-info, (m)etadata, (s)napshots, (d)eleted-soft. Can be combined.'
     description: ''
   - name: --num-results
-    summary: Specifies the maximum number of blobs to return. Must be in range [1,5000]. If this parameter is not provided, all blobs will be returned.
+    summary: Specifies the maximum number of blobs to return. If this parameter is not provided, all blobs will be returned.
     description: ''
   - name: --prefix
     summary: Filters the results to return only blobs whose names begin with the specified prefix.

@@ -243,7 +243,7 @@ items:
     summary: Specifies that container metadata be returned in the response.
     description: ''
   - name: --num-results
-    summary: Specifies the maximum number of containers to return. A single list request may return up to 1000 contianers and potentially a continuation token which should be followed to get additional resutls.
+    summary: Specifies the maximum number of containers to return.
     description: ''
   - name: --prefix
     summary: Filters the results to return only containers whose names begin with the specified prefix.

@@ -45,7 +45,6 @@ items:
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
     description: ''
   - name: --min-capacity
-    defaultValue: "2"
     summary: Lower bound on the number of application gateway instances.
     description: ''
   - name: --no-wait
