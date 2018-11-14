@@ -7870,6 +7870,9 @@
     - name: Update
       uid: az_snapshot_update
       displayName: az snapshot update
+    - name: Wait
+      uid: az_snapshot_wait
+      displayName: az snapshot wait
   - name: Virtual Machines
     uid: az_vm
     displayName: az vm
