@@ -83,6 +83,9 @@ items:
     name: --vmss-name
     summary: Scale set name. You can configure the default using `az configure --defaults vmss=&lt;name&gt;`.
     description: ''
+  - name: --extension-instance-name
+    summary: 'Instance name of the extension. Default: name of the extension.'
+    description: ''
   - name: --force-update
     summary: Force to update even if the extension configuration has not changed.
     description: ''

@@ -127,6 +127,9 @@ items:
   - name: --version
     summary: The version of the extension.
     description: ''
+  - name: --extension-instance-name
+    summary: 'Instance name of the extension. Default: name of the extension.'
+    description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
     remote:
