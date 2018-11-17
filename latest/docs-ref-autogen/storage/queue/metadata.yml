@@ -17,8 +17,8 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: The queue name.
+    name: --queue-name
+    summary: The name of an existing queue.
     description: ''
   - name: --auth-mode
     parameterValueGroup: key, login
@@ -53,8 +53,8 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: The queue name.
+    name: --queue-name
+    summary: The name of an existing queue.
     description: ''
   - name: --auth-mode
     parameterValueGroup: key, login

@@ -20,22 +20,22 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
+    name: --application-gateway-name
+    summary: ''
     description: ''
   - isRequired: true
-    name: --name -n
-    summary: The name of the trusted root certificate.
+    name: --item-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - name: --cert-file
-    summary: Certificate file path.
+  - name: --cert-data
+    summary: ''
     description: ''
   - name: --keyvault-secret
-    summary: KeyVault secret ID.
+    summary: ''
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -58,16 +58,16 @@ items:
       content: az network application-gateway root-cert delete -g MyResourceGroup --gateway-name MyAppGateway -n MyRootCert
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
-    description: ''
-  - isRequired: true
-    name: --name -n
-    summary: The name of the trusted root certificate.
+    name: --item-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - isRequired: true
+    name: --resource-name
+    summary: ''
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -90,12 +90,12 @@ items:
       content: az network application-gateway root-cert list -g MyResourceGroup --gateway-name MyAppGateway
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
-    description: ''
-  - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - isRequired: true
+    name: --resource-name
+    summary: ''
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
@@ -115,16 +115,16 @@ items:
       content: az network application-gateway root-cert show -g MyResourceGroup --gateway-name MyAppGateway -n MyRootCert
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
-    description: ''
-  - isRequired: true
-    name: --name -n
-    summary: The name of the trusted root certificate.
+    name: --item-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - isRequired: true
+    name: --resource-name
+    summary: ''
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
@@ -140,22 +140,22 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --gateway-name
+    name: --application-gateway-name
     summary: The name of the application gateway.
     description: ''
   - isRequired: true
-    name: --name -n
-    summary: The name of the trusted root certificate.
+    name: --item-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - name: --cert-file
-    summary: Certificate file path.
+  - name: --cert-data
+    summary: ''
     description: ''
   - name: --keyvault-secret
-    summary: KeyVault secret ID.
+    summary: ''
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.

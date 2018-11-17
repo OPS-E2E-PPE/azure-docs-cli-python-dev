@@ -20,8 +20,8 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --blob-name -b
-    summary: The blob name.
+    name: --blob-name
+    summary: Name of existing blob.
     description: ''
   - isRequired: true
     name: --container-name -c
@@ -75,8 +75,8 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --blob-name -b
-    summary: The blob name.
+    name: --blob-name
+    summary: Name of existing blob.
     description: ''
   - isRequired: true
     name: --container-name -c
@@ -126,8 +126,8 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --blob-name -b
-    summary: The blob name.
+    name: --blob-name
+    summary: Name of existing blob.
     description: ''
   - isRequired: true
     name: --container-name -c
@@ -182,8 +182,8 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --blob-name -b
-    summary: The blob name.
+    name: --blob-name
+    summary: Name of existing blob.
     description: ''
   - isRequired: true
     name: --container-name -c
@@ -234,8 +234,8 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --blob-name -b
-    summary: The blob name.
+    name: --blob-name
+    summary: Name of existing blob.
     description: ''
   - isRequired: true
     name: --container-name -c

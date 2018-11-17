@@ -17,8 +17,12 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --path -p
-    summary: The path to the file within the file share.
+    name: --directory-name -d
+    summary: The directory name.
+    description: ''
+  - isRequired: true
+    name: --file-name
+    summary: Name of existing file.
     description: ''
   - isRequired: true
     name: --share-name -s
@@ -56,8 +60,12 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --path -p
-    summary: The path to the file within the file share.
+    name: --directory-name -d
+    summary: The directory name.
+    description: ''
+  - isRequired: true
+    name: --file-name
+    summary: Name of existing file.
     description: ''
   - isRequired: true
     name: --share-name -s

@@ -16,10 +16,6 @@ items:
   langs:
   - azurecli
   parameters:
-  - name: --services
-    defaultValue: bqt
-    summary: 'The storage services from which to retrieve logging info: (b)lob (q)ueue (t)able. Can be combined.'
-    description: ''
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
@@ -55,10 +51,6 @@ items:
   - isRequired: true
     name: --retention
     summary: Number of days for which to retain logs. 0 to disable.
-    description: ''
-  - isRequired: true
-    name: --services
-    summary: 'The storage service(s) for which to update logging info: (b)lob (q)ueue (t)able. Can be combined.'
     description: ''
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.

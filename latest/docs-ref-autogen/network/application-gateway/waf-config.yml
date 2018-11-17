@@ -30,11 +30,11 @@ items:
     syntax:
       content: az network application-gateway waf-config list-rule-sets -o table
   parameters:
+  - name: '---type'
+    summary: ''
+    description: ''
   - name: --group
     summary: List rules for the specified rule group. Use `*` to list rules for all groups. Omit to suppress listing individual rules.
-    description: ''
-  - name: --type
-    summary: Rule set type to list. Omit to list all types.
     description: ''
   - name: --version
     summary: Rule set version to list. Omit to list all versions.
@@ -65,13 +65,12 @@ items:
                                     --disabled-rules 920130 920140 --disabled-rule-groups REQUEST-942-APPLICATION-ATTACK-SQLI
   parameters:
   - isRequired: true
-    name: --enabled
-    parameterValueGroup: false, true
-    summary: Specify whether the application firewall is enabled.
+    name: --application-gateway-name
+    summary: ''
     description: ''
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
+    name: --enabled
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -86,22 +85,19 @@ items:
     description: ''
     valueFrom: az network application-gateway waf-config list-rule-sets
   - name: --file-upload-limit
-    summary: File upload size limit in MB.
+    summary: ''
     description: ''
   - name: --firewall-mode
-    defaultValue: Detection
-    parameterValueGroup: Detection, Prevention
-    summary: Web application firewall mode.
+    summary: ''
     description: ''
   - name: --max-request-body-size
-    summary: Max request body size in KB.
+    summary: ''
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --request-body-check
-    parameterValueGroup: false, true
-    summary: Allow WAF to check the request body.
+    summary: ''
     description: ''
   - name: --rule-set-type
     defaultValue: OWASP
@@ -130,8 +126,8 @@ items:
       content: az network application-gateway waf-config show -g MyResourceGroup --gateway-name MyAppGateway
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
+    name: --application-gateway-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g

@@ -47,8 +47,8 @@ items:
                                     --cipher-suites TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_128_GCM_SHA256
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
+    name: --application-gateway-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -59,18 +59,18 @@ items:
     description: ''
     valueFrom: az network application-gateway ssl-policy list-options
   - name: --disabled-ssl-protocols
-    summary: Space-separated list of protocols to disable.
+    summary: Ssl protocols to be disabled on application gateway.
     description: ''
     valueFrom: az network application-gateway ssl-policy list-options
   - name: --min-protocol-version
     summary: Minimum version of Ssl protocol to be supported on application gateway.
     description: ''
     valueFrom: az network application-gateway ssl-policy list-options
-  - name: --name -n
-    summary: Name of Ssl predefined policy.
-    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --policy-name
+    summary: Name of Ssl predefined policy.
     description: ''
   - name: --policy-type
     summary: Type of Ssl Policy.
@@ -93,8 +93,8 @@ items:
       content: az network application-gateway ssl-policy show -g MyResourceGroup --gateway-name MyAppGateway
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
+    name: --application-gateway-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g

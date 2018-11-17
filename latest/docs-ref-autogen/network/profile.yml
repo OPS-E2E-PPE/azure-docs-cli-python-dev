@@ -18,8 +18,8 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: The network profile name.
+    name: --network-profile-name
+    summary: The name of the NetworkProfile.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -58,8 +58,8 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: The network profile name.
+    name: --network-profile-name
+    summary: The name of the PublicIPPrefx.
     description: ''
   - isRequired: true
     name: --resource-group -g

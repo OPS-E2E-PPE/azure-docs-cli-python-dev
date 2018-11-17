@@ -24,8 +24,8 @@ items:
       content: az network nsg create -g MyResourceGroup -n MyNsg --tags super_secure no_80 no_22
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: Name of the network security group.
+    name: --network-security-group-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -35,7 +35,7 @@ items:
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: ''
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
@@ -55,8 +55,8 @@ items:
       content: az network nsg delete -g MyResourceGroup -n MyNsg
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: Name of the network security group.
+    name: --network-security-group-name
+    summary: The name of the network security group.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -106,8 +106,8 @@ items:
       content: az network nsg show -g MyResourceGroup -n MyNsg --query "defaultSecurityRules[?access=='Allow']" -o table
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: Name of the network security group.
+    name: --network-security-group-name
+    summary: The name of the network security group.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -134,8 +134,8 @@ items:
       content: az network nsg update -g MyResourceGroup -n MyNsg --remove tags.no_80
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: Name of the network security group.
+    name: --network-security-group-name
+    summary: The name of the network security group.
     description: ''
   - isRequired: true
     name: --resource-group -g

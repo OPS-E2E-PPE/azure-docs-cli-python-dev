@@ -20,7 +20,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --directory-name -d
     summary: The directory name.
     description: ''
   - isRequired: true
@@ -62,7 +62,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --directory-name -d
     summary: The directory name.
     description: ''
   - isRequired: true
@@ -101,12 +101,14 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: The directory name.
-    description: ''
-  - isRequired: true
     name: --share-name -s
     summary: The file share name.
+    description: ''
+  - name: --directory-name -d
+    summary: The directory name.
+    description: ''
+  - name: --file-name
+    summary: Name of a file.
     description: ''
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
@@ -140,7 +142,7 @@ items:
     name: --share-name -s
     summary: The file share name.
     description: ''
-  - name: --name -n
+  - name: --directory-name -d
     summary: The directory name.
     description: ''
   - name: --timeout
@@ -172,7 +174,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --directory-name -d
     summary: The directory name.
     description: ''
   - isRequired: true

@@ -17,12 +17,12 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --length
-    summary: Length of the prefix (i.e. XX.XX.XX.XX/<Length>).
+    name: --prefix-length
+    summary: ''
     description: ''
   - isRequired: true
-    name: --name -n
-    summary: The name of the public IP prefix.
+    name: --public-ip-prefix-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -32,7 +32,7 @@ items:
     summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: ''
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py

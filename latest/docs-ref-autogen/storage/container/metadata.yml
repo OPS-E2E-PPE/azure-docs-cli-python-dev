@@ -17,7 +17,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --container-name -c
     summary: The container name.
     description: ''
   - name: --auth-mode
@@ -56,7 +56,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --container-name -c
     summary: The container name.
     description: ''
   - name: --auth-mode

@@ -17,7 +17,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --container-name -c
     summary: The container name.
     description: ''
   - name: --lease-id
@@ -52,7 +52,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --container-name -c
     summary: The container name.
     description: ''
   - name: --lease-id

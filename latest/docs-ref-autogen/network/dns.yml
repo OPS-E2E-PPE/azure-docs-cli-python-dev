@@ -16,7 +16,7 @@ items:
   - azurecli
   parameters:
   - name: --target-resources
-    summary: Space-separated list of resource IDs you wish to query.
+    summary: A list of references to azure resources for which referencing dns records need to be queried.
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py

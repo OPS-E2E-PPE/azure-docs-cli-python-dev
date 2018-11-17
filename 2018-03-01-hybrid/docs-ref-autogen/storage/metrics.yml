@@ -18,12 +18,7 @@ items:
   parameters:
   - name: --interval
     defaultValue: both
-    parameterValueGroup: both, hour, minute
     summary: Filter the set of metrics to retrieve by time interval.
-    description: ''
-  - name: --services
-    defaultValue: bfqt
-    summary: 'The storage services from which to retrieve metrics info: (b)lob (q)ueue (t)able. Can be combined.'
     description: ''
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
@@ -57,20 +52,13 @@ items:
     name: --retention
     summary: Number of days for which to retain metrics. 0 to disable. Applies to both hour and minute metrics if both are specified.
     description: ''
-  - isRequired: true
-    name: --services
-    summary: 'The storage services from which to retrieve metrics info: (b)lob (q)ueue (t)able. Can be combined.'
-    description: ''
   - name: --api
-    parameterValueGroup: false, true
     summary: Specify whether to include API in metrics. Applies to both hour and minute metrics if both are specified. Must be specified if hour or minute metrics are enabled and being updated.
     description: ''
   - name: --hour
-    parameterValueGroup: false, true
     summary: Update the hourly metrics.
     description: ''
   - name: --minute
-    parameterValueGroup: false, true
     summary: Update the by-minute metrics.
     description: ''
   - name: --timeout

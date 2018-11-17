@@ -23,16 +23,16 @@ items:
                                     --gateway-name MyVnetGateway --public-cert-data MyCertificateData
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: Virtual network gateway name.
+    name: --cert-name
+    summary: ''
     description: ''
   - isRequired: true
-    name: --name -n
-    summary: Root certificate name.
+    name: --gateway-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --public-cert-data
-    summary: Base64 contents of the root certificate file or file path.
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -56,12 +56,12 @@ items:
       content: az network vnet-gateway root-cert delete -g MyResourceGroup -n MyRootCertificate --gateway-name MyVnetGateway
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: Virtual network gateway name.
+    name: --cert-name
+    summary: ''
     description: ''
   - isRequired: true
-    name: --name -n
-    summary: Root certificate name.
+    name: --gateway-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g

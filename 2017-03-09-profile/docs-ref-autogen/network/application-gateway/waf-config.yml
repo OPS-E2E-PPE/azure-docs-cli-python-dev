@@ -29,17 +29,19 @@ items:
                                     --disabled-rules 920130 920140 --disabled-rule-groups REQUEST-942-APPLICATION-ATTACK-SQLI
   parameters:
   - isRequired: true
-    name: --enabled
-    parameterValueGroup: false, true
-    summary: Specify whether the application firewall is enabled.
+    name: --application-gateway-name
+    summary: ''
     description: ''
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
+    name: --enabled
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --firewall-mode
+    summary: ''
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -62,8 +64,8 @@ items:
       content: az network application-gateway waf-config show -g MyResourceGroup --gateway-name MyAppGateway
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: The name of the application gateway.
+    name: --application-gateway-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g

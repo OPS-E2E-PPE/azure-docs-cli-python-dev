@@ -17,7 +17,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --share-name -s
     summary: The file share name.
     description: ''
   - name: --timeout
@@ -49,7 +49,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --share-name -s
     summary: The file share name.
     description: ''
   - name: --metadata

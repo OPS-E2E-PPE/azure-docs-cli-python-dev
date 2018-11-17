@@ -38,7 +38,7 @@ items:
       content: az network application-gateway ssl-policy predefined show -n AppGwSslPolicy20170401
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --predefined-policy-name
     summary: Name of Ssl predefined policy.
     description: ''
   source:

@@ -23,12 +23,12 @@ items:
                                     --gateway-name MyVnetGateway --thumbprint abc123
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: Virtual network gateway name.
+    name: --cert-name
+    summary: ''
     description: ''
   - isRequired: true
-    name: --name -n
-    summary: Root certificate name.
+    name: --gateway-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -36,7 +36,7 @@ items:
     description: ''
   - isRequired: true
     name: --thumbprint
-    summary: Certificate thumbprint.
+    summary: ''
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
@@ -56,12 +56,12 @@ items:
       content: az network vnet-gateway revoked-cert delete -g MyResourceGroup -n MyRootCertificate --gateway-name MyVnetGateway
   parameters:
   - isRequired: true
-    name: --gateway-name
-    summary: Virtual network gateway name.
+    name: --cert-name
+    summary: ''
     description: ''
   - isRequired: true
-    name: --name -n
-    summary: Root certificate name.
+    name: --gateway-name
+    summary: ''
     description: ''
   - isRequired: true
     name: --resource-group -g

@@ -17,7 +17,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --directory-name -d
     summary: The directory name.
     description: ''
   - isRequired: true
@@ -53,7 +53,7 @@ items:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --directory-name -d
     summary: The directory name.
     description: ''
   - isRequired: true
