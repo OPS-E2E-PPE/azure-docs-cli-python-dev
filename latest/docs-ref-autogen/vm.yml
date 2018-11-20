@@ -827,7 +827,10 @@ items:
     description: ''
   - isRequired: true
     name: --vm-name
-    summary: The name of the virtual machine.
+    summary: ''
+    description: ''
+  - name: --force
+    summary: ''
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
