@@ -151,6 +151,10 @@ items:
   - name: --code-dir
     summary: ''
     description: ''
+  - name: --version
+    defaultValue: v3
+    summary: ''
+    description: ''
   source:
     path: src/command_modules/azure-cli-botservice/azure/cli/command_modules/botservice/_help.py
     remote:
@@ -179,6 +183,13 @@ items:
   - name: --code-dir
     summary: ''
     description: ''
+  - name: --proj-name
+    summary: ''
+    description: ''
+  - name: --version
+    defaultValue: v3
+    summary: ''
+    description: ''
   source:
     path: src/command_modules/azure-cli-botservice/azure/cli/command_modules/botservice/_help.py
     remote:
@@ -198,7 +209,10 @@ items:
     description: ''
   - isRequired: true
     name: --resource-name
-    summary: The name of the Bot resource.
+    summary: ''
+    description: ''
+  - name: --bot-json
+    summary: ''
     description: ''
   source:
     path: src/command_modules/azure-cli-botservice/azure/cli/command_modules/botservice/_help.py
@@ -224,6 +238,24 @@ items:
   - isRequired: true
     name: --resource-name
     summary: The name of the Bot resource.
+    description: ''
+  - name: --etag
+    summary: Entity Tag.
+    description: ''
+  - name: --kind
+    summary: Required. Gets or sets the Kind of the resource.
+    description: ''
+  - name: --location -l
+    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    description: ''
+  - name: --properties
+    summary: The set of properties specific to bot resource.
+    description: ''
+  - name: --sku
+    summary: Gets or sets the SKU of the resource.
+    description: ''
+  - name: --tags
+    summary: Contains resource tags defined as key/value pairs.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
