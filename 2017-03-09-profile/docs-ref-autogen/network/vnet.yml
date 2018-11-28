@@ -251,7 +251,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/8698ea9900688a2d74b1a5cf0f3b29e5b22aee98/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-updated_at: 11/13/2018 6:34:14 PM
-ms.date: 11/13/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/bb2981ecb726ece561f4aa1501f107aaf322f0eb/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+updated_at: 11/28/2018 6:41:38 PM
+ms.date: 11/28/2018
 description: To learn more about Virtual Networks visit <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-network">https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-network</a>.
