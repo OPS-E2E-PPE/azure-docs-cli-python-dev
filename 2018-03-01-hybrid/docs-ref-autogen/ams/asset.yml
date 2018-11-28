@@ -122,7 +122,7 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --expiry-time
-    defaultValue: 2018-11-28 06:29:57.490847
+    defaultValue: 2018-11-29 16:49:49.578212
     summary: ''
     description: ''
   - name: --permissions
