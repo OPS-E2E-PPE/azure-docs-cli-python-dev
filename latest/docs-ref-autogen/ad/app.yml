@@ -41,6 +41,9 @@ items:
   - name: --available-to-other-tenants
     summary: ''
     description: ''
+  - name: --credential-description
+    summary: ''
+    description: ''
   - name: --end-date
     summary: ''
     description: ''

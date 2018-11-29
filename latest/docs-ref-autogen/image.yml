@@ -60,6 +60,9 @@ items:
   - name: --os-disk
     summary: ''
     description: ''
+  - name: --os-disk-caching
+    summary: ''
+    description: ''
   - name: --os-snapshot
     summary: ''
     description: ''
