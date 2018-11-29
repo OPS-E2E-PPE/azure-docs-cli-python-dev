@@ -16,6 +16,7 @@ items:
   - az_webapp_show
   - az_webapp_start
   - az_webapp_stop
+  - az_webapp_up
   - az_webapp_update
 - uid: az_webapp_browse
   name: az webapp browse
@@ -219,6 +220,39 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --slot
+    summary: ''
+    description: ''
+- uid: az_webapp_up
+  name: az webapp up
+  summary: (Preview) Create and deploy existing local code to the webapp, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows webapp is created.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: View the details of the app that will be created, without actually running the operation
+    syntax:
+      content: az webapp up -n MyUniqueAppName --dryrun
+  - summary: Create a web app with the default configuration, by running the command from the folder where the code to deployed exists.
+    syntax:
+      content: az webapp up -n MyUniqueAppName
+  - summary: Create a web app in a sepcific region, by running the command from the folder where the code to deployed exists.
+    syntax:
+      content: az webapp up -n MyUniqueAppName -l locationName
+  - summary: Deploy new code to an app that was originally created using the same command
+    syntax:
+      content: az webapp up -n MyUniqueAppName -l locationName
+  parameters:
+  - isRequired: true
+    name: --name
+    summary: ''
+    description: ''
+  - name: --dryrun
+    summary: ''
+    description: ''
+  - name: --location -l
+    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    description: ''
+  - name: --sku
     summary: ''
     description: ''
 - uid: az_webapp_update
@@ -547,6 +581,9 @@ commands:
 - uid: az_webapp_traffic_routing_show
   name: az webapp traffic-routing show
   summary: Display the current distribution of traffic across slots.
+- uid: az_webapp_up
+  name: az webapp up
+  summary: (Preview) Create and deploy existing local code to the webapp, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows webapp is created.
 - uid: az_webapp_update
   name: az webapp update
   summary: Update a web app.
