@@ -69,7 +69,7 @@ items:
     summary: Indicates whether HTTPS traffic is allowed on the endpoint. Default value is true. At least one protocol (HTTP or HTTPS) must be allowed.
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --origin-host-header
     summary: The host header value sent to the origin with each request. If you leave this blank, the request hostname determines this value. Azure CDN origins, such as Web Apps, Blob Storage, and Cloud Services require this host header value to match the origin hostname by default.

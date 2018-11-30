@@ -127,7 +127,7 @@ items:
     summary: ''
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --max-pods
     summary: ''
@@ -333,7 +333,7 @@ items:
   parameters:
   - isRequired: true
     name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   source:
     path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
@@ -478,7 +478,7 @@ items:
     summary: Use a "cordon and drain" strategy to evict pods safely before removing the ACI node.
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --os-type
     defaultValue: Linux

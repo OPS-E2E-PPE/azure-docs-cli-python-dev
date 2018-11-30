@@ -229,7 +229,7 @@ items:
     summary: ''
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --nic-type
     summary: ''
@@ -576,7 +576,7 @@ items:
   parameters:
   - isRequired: true
     name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
@@ -605,7 +605,7 @@ items:
       content: az vm list-skus -l westus --resource-type availabilitySets
   parameters:
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --resource-type
     summary: ''
@@ -638,7 +638,7 @@ items:
   parameters:
   - isRequired: true
     name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   source:
     path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py

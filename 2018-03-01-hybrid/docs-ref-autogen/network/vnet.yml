@@ -76,7 +76,7 @@ items:
     summary: ''
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --subnet-name
     summary: ''
@@ -164,7 +164,7 @@ items:
   parameters:
   - isRequired: true
     name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   source:
     path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py

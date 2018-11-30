@@ -83,7 +83,7 @@ items:
     summary: JSON encoded list of packet filters. Use `@{path}` to load from file.
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --storage-account
     summary: Name or ID of a storage account to save the packet capture to.

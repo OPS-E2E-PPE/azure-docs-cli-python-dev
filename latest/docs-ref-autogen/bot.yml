@@ -52,7 +52,7 @@ items:
     description: ''
   - name: --location -l
     defaultValue: Central US
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --msa-app-id
     summary: ''
@@ -246,7 +246,7 @@ items:
     summary: Required. Gets or sets the Kind of the resource.
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --properties
     summary: The set of properties specific to bot resource.

@@ -24,7 +24,7 @@ items:
     summary: Id of the subscription to get the catalog for.
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   source:
     path: src/command_modules/azure-cli-reservations/azure/cli/command_modules/reservations/_help.py

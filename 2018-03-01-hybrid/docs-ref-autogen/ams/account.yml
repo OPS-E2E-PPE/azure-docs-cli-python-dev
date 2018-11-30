@@ -26,7 +26,7 @@ items:
     description: ''
   - isRequired: true
     name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   source:
     path: src/command_modules/azure-cli-ams/azure/cli/command_modules/ams/_help.py
@@ -54,7 +54,7 @@ items:
     summary: ''
     description: ''
   - name: --location -l
-    summary: Location. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
   - name: --tags
     summary: ''
