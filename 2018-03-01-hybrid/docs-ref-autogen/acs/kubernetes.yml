@@ -114,7 +114,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
 doc_source_url_path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/dev/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/caddd72beba89a0a531612032c976a8791f1ff60/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
-updated_at: 11/30/2018 8:08:44 PM
-ms.date: 11/30/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/96363b394635d2cf5e635554bc41cbeb6e9f488d/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
+updated_at: 12/4/2018 10:21:04 PM
+ms.date: 12/04/2018
 description: Commands to manage a Kubernetes-orchestrated Azure Container Service.
