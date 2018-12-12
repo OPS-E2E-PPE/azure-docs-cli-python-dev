@@ -6192,6 +6192,9 @@
     - name: Update
       uid: az_resource_update
       displayName: az resource update
+    - name: Wait
+      uid: az_resource_wait
+      displayName: az resource wait
     - name: Links
       uid: az_resource_link
       displayName: az resource link
