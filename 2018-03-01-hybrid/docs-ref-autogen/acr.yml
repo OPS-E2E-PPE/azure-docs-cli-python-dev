@@ -20,23 +20,26 @@ items:
   - az_acr_update
 - uid: az_acr_build
   name: az acr build
-  summary: Queues a quick build, providing streamed logs for an Azure Container Registry.
+  summary: Queues a quick build, providing streaming logs for an Azure Container Registry.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Queue a local context (folder), pushed to ACR when complete, with streaming logs.
+  - summary: Queue a local context as a Linux build, tag it, and push it to the registry.
     syntax:
       content: az acr build -t sample/hello-world:{{.Run.ID}} -r MyRegistry .
-  - summary: Queue a local context, pushed to ACR without streaming logs.
+  - summary: Queue a local context as a Linux build, tag it, and push it to the registry without streaming logs.
     syntax:
       content: az acr build -t sample/hello-world:{{.Run.ID}} -r MyRegistry --no-logs .
-  - summary: Queue a local context to validate a build is successful, without pushing to the registry using the --no-push parameter.
+  - summary: Queue a local context as a Linux build without pushing it to the registry.
     syntax:
       content: az acr build -t sample/hello-world:{{.Run.ID}} -r MyRegistry --no-push .
-  - summary: Queue a local context to validate a build is successful, without pushing to the registry. Removing the -t parameter defaults to --no-push
+  - summary: Queue a local context as a Linux build without pushing it to the registry.
     syntax:
       content: az acr build -r MyRegistry .
+  - summary: Queue a remote GitHub context as a Windows build, tag it, and push it to the registry.
+    syntax:
+      content: az acr build -r MyRegistry https://github.com/Azure/acr-builder.git -f Windows.Dockerfile --os Windows
   parameters:
   - isRequired: true
     name: --registry -r
@@ -467,7 +470,7 @@ items:
 commands:
 - uid: az_acr_build
   name: az acr build
-  summary: Queues a quick build, providing streamed logs for an Azure Container Registry.
+  summary: Queues a quick build, providing streaming logs for an Azure Container Registry.
 - uid: az_acr_build_task
   name: az acr build-task
   summary: Manage build definitions, which can be triggered by git commits or base image updates for OS & Framework Patching.
@@ -694,7 +697,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/6d1ed376000fc9070eba5ba177b75c944f01bf55/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-updated_at: 11/15/2018 4:35:00 PM
-ms.date: 11/15/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/b844187cdac6a6a36e37004d39bfef3e836922c7/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+updated_at: 12/13/2018 12:16:27 AM
+ms.date: 12/13/2018
 description: Manage private registries with Azure Container Registries.
