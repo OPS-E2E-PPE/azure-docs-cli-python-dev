@@ -597,7 +597,6 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --nodepool-name
-    defaultValue: nodepool1
     summary: Node pool name, upto 12 alphanumeric characters.
     description: ''
   - name: --subscription
