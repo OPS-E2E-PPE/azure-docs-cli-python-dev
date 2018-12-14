@@ -285,6 +285,9 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --subnet-name -s
+    summary: ''
+    description: ''
   - name: --workspace-resource-id
     summary: The resource ID of an existing Log Analytics Workspace to use for storing monitoring data.
     description: ''
