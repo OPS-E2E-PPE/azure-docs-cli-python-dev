@@ -48,7 +48,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/7f012d4fb693e59838d2cf5fd04c239a4d7a9513/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-updated_at: 10/30/2018 9:06:22 PM
-ms.date: 10/30/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/df768fc18a96a51f74cbdb29f693d4de7eb79b25/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+updated_at: 12/15/2018 4:52:46 AM
+ms.date: 12/15/2018
 description: Manage service principal owners.
