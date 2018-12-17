@@ -8292,6 +8292,16 @@
         - name: List
           uid: az_webapp_config_hostname_list
           displayName: az webapp config hostname list
+      - name: Snapshot
+        uid: az_webapp_config_snapshot
+        displayName: az webapp config snapshot
+        items:
+        - name: List
+          uid: az_webapp_config_snapshot_list
+          displayName: az webapp config snapshot list
+        - name: Restore
+          uid: az_webapp_config_snapshot_restore
+          displayName: az webapp config snapshot restore
       - name: Ssl
         uid: az_webapp_config_ssl
         displayName: az webapp config ssl
