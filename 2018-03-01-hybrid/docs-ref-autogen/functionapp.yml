@@ -63,8 +63,8 @@ items:
     summary: Name or resource id of the function app service plan. Use 'appservice plan create' to get one.
     description: ''
   - name: --runtime
-    parameterValueGroup: dotnet, node, python
-    summary: The function runtime stack. Currently supported for Linux apps only.
+    parameterValueGroup: dotnet, java, node, python
+    summary: The functions runtime stack.
     description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
