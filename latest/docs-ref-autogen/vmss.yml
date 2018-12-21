@@ -147,7 +147,7 @@ items:
     summary: Password for the VM if authentication type is 'Password'.
     description: ''
   - name: --admin-username
-    defaultValue: VssAdministrator
+    defaultValue: your_system_user_login_name
     summary: Username for the VM.
     description: ''
   - name: --authentication-type
@@ -752,7 +752,7 @@ items:
 - uid: az_vmss_stop
   name: az vmss stop
   summary: Power off (stop) VMs within a VMSS.
-  description: ''
+  description: The VMs will continue to be billed. To avoid this, you can deallocate VM instances within a VMSS through "az vmss deallocate".
   langs:
   - azurecli
   parameters:
@@ -1078,7 +1078,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e8dd069e222ea8d44652282a521943990af47aca/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 12/13/2018 10:18:52 PM
-ms.date: 12/13/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/7364ed1e59370c635c35a5e0b1c82d86865f6c9e/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 12/21/2018 1:33:29 AM
+ms.date: 12/21/2018
 description: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).

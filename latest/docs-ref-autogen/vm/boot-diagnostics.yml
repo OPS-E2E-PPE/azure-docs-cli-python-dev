@@ -127,7 +127,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e8dd069e222ea8d44652282a521943990af47aca/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 12/13/2018 10:18:52 PM
-ms.date: 12/13/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/7364ed1e59370c635c35a5e0b1c82d86865f6c9e/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 12/21/2018 1:33:29 AM
+ms.date: 12/21/2018
 description: Use this feature to troubleshoot boot failures for custom or platform images.

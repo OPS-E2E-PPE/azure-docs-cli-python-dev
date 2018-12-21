@@ -56,6 +56,9 @@ items:
   - name: --capacity -c
     summary: The capacity of the managed instance in vcores.
     description: ''
+  - name: --collation
+    summary: The collation of the managed instance.
+    description: ''
   - name: --license-type
     parameterValueGroup: BasePrice, LicenseIncluded
     summary: The license type to apply for this managed instance.

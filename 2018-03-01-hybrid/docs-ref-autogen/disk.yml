@@ -49,6 +49,10 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --os-type
+    parameterValueGroup: Linux, Windows
+    summary: The Operating System type of the Disk.
+    description: ''
   - name: --size-gb -z
     summary: Size in GB.
     description: ''
