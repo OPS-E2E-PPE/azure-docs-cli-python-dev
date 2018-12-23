@@ -347,6 +347,13 @@ items:
   - name: --exclude-dir
     summary: List only files in the given share.
     description: ''
+  - name: --marker
+    summary: An opaque continuation token. This value can be retrieved from the next_marker field of a previous generator object if num_results was specified and that generator has finished enumerating results. If specified, this generator will begin returning results from the point where the previous generator stopped.
+    description: ''
+  - name: --num-results
+    defaultValue: "5000"
+    summary: Specifies the maximum number of results to return. Provide "*" to return all.
+    description: ''
   - name: --path -p
     summary: The directory path within the file share.
     description: ''
