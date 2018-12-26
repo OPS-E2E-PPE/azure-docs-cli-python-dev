@@ -290,7 +290,7 @@ commands:
   summary: Manage resource groups and template deployments.
 - uid: az_hdinsight
   name: az hdinsight
-  summary: Manage HDInsight clusters.
+  summary: Manage HDInsight resources.
 - uid: az_identity
   name: az identity
   summary: Managed Service Identities.

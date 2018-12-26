@@ -215,7 +215,7 @@ commands:
   summary: Manage resource groups and template deployments.
 - uid: az_hdinsight
   name: az hdinsight
-  summary: Manage HDInsight clusters.
+  summary: Manage HDInsight resources.
 - uid: az_interactive
   name: az interactive
   summary: Start interactive mode. Installs the Interactive extension if not installed already.

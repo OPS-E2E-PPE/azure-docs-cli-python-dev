@@ -263,6 +263,9 @@
     - name: List
       uid: az_hdinsight_list
       displayName: az hdinsight list
+    - name: List-Usage
+      uid: az_hdinsight_list_usage
+      displayName: az hdinsight list-usage
     - name: Resize
       uid: az_hdinsight_resize
       displayName: az hdinsight resize
@@ -272,6 +275,57 @@
     - name: Wait
       uid: az_hdinsight_wait
       displayName: az hdinsight wait
+    - name: Application
+      uid: az_hdinsight_application
+      displayName: az hdinsight application
+      items:
+      - name: Create
+        uid: az_hdinsight_application_create
+        displayName: az hdinsight application create
+      - name: Delete
+        uid: az_hdinsight_application_delete
+        displayName: az hdinsight application delete
+      - name: List
+        uid: az_hdinsight_application_list
+        displayName: az hdinsight application list
+      - name: Show
+        uid: az_hdinsight_application_show
+        displayName: az hdinsight application show
+      - name: Wait
+        uid: az_hdinsight_application_wait
+        displayName: az hdinsight application wait
+    - name: Oms
+      uid: az_hdinsight_oms
+      displayName: az hdinsight oms
+      items:
+      - name: Disable
+        uid: az_hdinsight_oms_disable
+        displayName: az hdinsight oms disable
+      - name: Enable
+        uid: az_hdinsight_oms_enable
+        displayName: az hdinsight oms enable
+      - name: Show
+        uid: az_hdinsight_oms_show
+        displayName: az hdinsight oms show
+    - name: Script-Action
+      uid: az_hdinsight_script_action
+      displayName: az hdinsight script-action
+      items:
+      - name: Delete
+        uid: az_hdinsight_script_action_delete
+        displayName: az hdinsight script-action delete
+      - name: Execute
+        uid: az_hdinsight_script_action_execute
+        displayName: az hdinsight script-action execute
+      - name: List
+        uid: az_hdinsight_script_action_list
+        displayName: az hdinsight script-action list
+      - name: Promote
+        uid: az_hdinsight_script_action_promote
+        displayName: az hdinsight script-action promote
+      - name: Show
+        uid: az_hdinsight_script_action_show
+        displayName: az hdinsight script-action show
   - name: Key Vault
     uid: az_keyvault
     displayName: az keyvault
