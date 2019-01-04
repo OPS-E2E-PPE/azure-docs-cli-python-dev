@@ -8704,6 +8704,9 @@
     - name: Show
       uid: az_webapp_show
       displayName: az webapp show
+    - name: Ssh
+      uid: az_webapp_ssh
+      displayName: az webapp ssh
     - name: Start
       uid: az_webapp_start
       displayName: az webapp start
