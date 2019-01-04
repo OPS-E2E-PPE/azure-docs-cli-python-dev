@@ -58,12 +58,12 @@ items:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  - name: --days-retained
-    summary: Number of days that soft-deleted blob will be retained. Must be in range [1,365].
-    description: ''
   - name: --delete-retention
     parameterValueGroup: false, true
     summary: Enables soft-delete.
+    description: ''
+  - name: --delete-retention-period
+    summary: Number of days that soft-deleted blob will be retained. Must be in range [1,365].
     description: ''
   - name: --404-document
     summary: Represents the path to the error document that should be shown when an error 404 is issued, in other words, when a browser requests a page that does not exist.
