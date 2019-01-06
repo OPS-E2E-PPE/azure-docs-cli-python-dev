@@ -246,6 +246,9 @@ commands:
 - uid: az_role
   name: az role
   summary: Manage user roles for access control with Azure Active Directory and service principals.
+- uid: az_security
+  name: az security
+  summary: Manage your security posture with Azure Security Center.
 - uid: az_self_test
   name: az self-test
   summary: Runs a self-test of the CLI.
