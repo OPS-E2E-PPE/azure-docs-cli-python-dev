@@ -147,7 +147,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/7364ed1e59370c635c35a5e0b1c82d86865f6c9e/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 12/21/2018 1:33:29 AM
-ms.date: 12/21/2018
+gitcommit: https://github.com/Azure/azure-cli/blob/b57f945adeb2690bce0800dc097aff6951676765/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 1/7/2019 6:38:54 PM
+ms.date: 01/07/2019
 description: (PREVIEW) Manage encryption of VMSS.
