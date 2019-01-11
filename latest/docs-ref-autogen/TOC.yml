@@ -207,12 +207,12 @@
       - name: Get-Sas-Urls
         uid: az_ams_asset_get_sas_urls
         displayName: az ams asset get-sas-urls
-      - name: Get-Streaming-Locators
-        uid: az_ams_asset_get_streaming_locators
-        displayName: az ams asset get-streaming-locators
       - name: List
         uid: az_ams_asset_list
         displayName: az ams asset list
+      - name: List-Streaming-Locators
+        uid: az_ams_asset_list_streaming_locators
+        displayName: az ams asset list-streaming-locators
       - name: Show
         uid: az_ams_asset_show
         displayName: az ams asset show
@@ -384,15 +384,15 @@
       - name: Delete
         uid: az_ams_streaming_locator_delete
         displayName: az ams streaming-locator delete
-      - name: Get-Content-Keys
-        uid: az_ams_streaming_locator_get_content_keys
-        displayName: az ams streaming-locator get-content-keys
       - name: Get-Paths
         uid: az_ams_streaming_locator_get_paths
         displayName: az ams streaming-locator get-paths
       - name: List
         uid: az_ams_streaming_locator_list
         displayName: az ams streaming-locator list
+      - name: List-Content-Keys
+        uid: az_ams_streaming_locator_list_content_keys
+        displayName: az ams streaming-locator list-content-keys
       - name: Show
         uid: az_ams_streaming_locator_show
         displayName: az ams streaming-locator show
