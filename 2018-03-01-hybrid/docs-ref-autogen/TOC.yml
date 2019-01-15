@@ -3434,6 +3434,13 @@
         - name: Show
           uid: az_iot_hub_consumer_group_show
           displayName: az iot hub consumer-group show
+      - name: Devicestream
+        uid: az_iot_hub_devicestream
+        displayName: az iot hub devicestream
+        items:
+        - name: Show
+          uid: az_iot_hub_devicestream_show
+          displayName: az iot hub devicestream show
       - name: Jobs
         uid: az_iot_hub_job
         displayName: az iot hub job
