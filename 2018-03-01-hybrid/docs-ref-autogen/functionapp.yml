@@ -39,6 +39,12 @@ items:
     name: --storage-account -s
     summary: Provide a string value of a Storage Account in the provided Resource Group. Or Resource ID of a Storage Account in a different Resource Group.
     description: ''
+  - name: --app-insights
+    summary: Name of the existing App Insights project to be added to the Function app. Must be in the same resource group.
+    description: ''
+  - name: --app-insights-key
+    summary: Instrumentation key of App Insights to be added.
+    description: ''
   - name: --consumption-plan-location -c
     summary: Geographic location where Function App will be hosted. Use 'functionapp list-consumption-locations' to view available locations.
     description: ''
@@ -443,7 +449,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/113533c32e9f117e17b9cb2fbec6dd0a02c327fb/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-updated_at: 1/4/2019 12:04:41 AM
-ms.date: 01/04/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/d04b9ff3af1eff6145cd11a46642bf46bcf9190c/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+updated_at: 1/16/2019 10:21:30 PM
+ms.date: 01/16/2019
 description: Manage function apps.
