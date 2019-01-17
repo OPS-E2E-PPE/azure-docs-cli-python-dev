@@ -7062,6 +7062,69 @@
         - name: Update
           uid: az_sql_server_vnet_rule_update
           displayName: az sql server vnet-rule update
+    - name: Vm
+      uid: az_sql_vm
+      displayName: az sql vm
+      items:
+      - name: Add-To-Group
+        uid: az_sql_vm_add_to_group
+        displayName: az sql vm add-to-group
+      - name: Create
+        uid: az_sql_vm_create
+        displayName: az sql vm create
+      - name: Delete
+        uid: az_sql_vm_delete
+        displayName: az sql vm delete
+      - name: List
+        uid: az_sql_vm_list
+        displayName: az sql vm list
+      - name: Remove-From-Group
+        uid: az_sql_vm_remove_from_group
+        displayName: az sql vm remove-from-group
+      - name: Show
+        uid: az_sql_vm_show
+        displayName: az sql vm show
+      - name: Update
+        uid: az_sql_vm_update
+        displayName: az sql vm update
+      - name: Group
+        uid: az_sql_vm_group
+        displayName: az sql vm group
+        items:
+        - name: Create
+          uid: az_sql_vm_group_create
+          displayName: az sql vm group create
+        - name: Delete
+          uid: az_sql_vm_group_delete
+          displayName: az sql vm group delete
+        - name: List
+          uid: az_sql_vm_group_list
+          displayName: az sql vm group list
+        - name: Show
+          uid: az_sql_vm_group_show
+          displayName: az sql vm group show
+        - name: Update
+          uid: az_sql_vm_group_update
+          displayName: az sql vm group update
+        - name: Ag-Listener
+          uid: az_sql_vm_group_ag_listener
+          displayName: az sql vm group ag-listener
+          items:
+          - name: Create
+            uid: az_sql_vm_group_ag_listener_create
+            displayName: az sql vm group ag-listener create
+          - name: Delete
+            uid: az_sql_vm_group_ag_listener_delete
+            displayName: az sql vm group ag-listener delete
+          - name: List
+            uid: az_sql_vm_group_ag_listener_list
+            displayName: az sql vm group ag-listener list
+          - name: Show
+            uid: az_sql_vm_group_ag_listener_show
+            displayName: az sql vm group ag-listener show
+          - name: Update
+            uid: az_sql_vm_group_ag_listener_update
+            displayName: az sql vm group ag-listener update
   - name: Search
     uid: az_search
     displayName: az search

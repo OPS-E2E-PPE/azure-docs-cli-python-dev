@@ -396,6 +396,66 @@ commands:
 - uid: az_sql_show_usage
   name: az sql show-usage
   summary: Gets a subscription usage metric.
+- uid: az_sql_vm
+  name: az sql vm
+  summary: Manage SQL virtual machines.
+- uid: az_sql_vm_add_to_group
+  name: az sql vm add-to-group
+  summary: Adds SQL virtual machine to a SQL virtual machine group.
+- uid: az_sql_vm_create
+  name: az sql vm create
+  summary: Creates a SQL virtual machine.
+- uid: az_sql_vm_delete
+  name: az sql vm delete
+  summary: Deletes a SQL virtual machine.
+- uid: az_sql_vm_group
+  name: az sql vm group
+  summary: Manage SQL virtual machine groups.
+- uid: az_sql_vm_group_ag_listener
+  name: az sql vm group ag-listener
+  summary: Manage SQL availability group listeners.
+- uid: az_sql_vm_group_ag_listener_create
+  name: az sql vm group ag-listener create
+  summary: Creates an availability group listener.
+- uid: az_sql_vm_group_ag_listener_delete
+  name: az sql vm group ag-listener delete
+  summary: Deletes an availability group listener.
+- uid: az_sql_vm_group_ag_listener_list
+  name: az sql vm group ag-listener list
+  summary: Lists all availability group listeners in a SQL virtual machine group.
+- uid: az_sql_vm_group_ag_listener_show
+  name: az sql vm group ag-listener show
+  summary: Gets an availability group listener.
+- uid: az_sql_vm_group_ag_listener_update
+  name: az sql vm group ag-listener update
+  summary: Updates an availability group listener.
+- uid: az_sql_vm_group_create
+  name: az sql vm group create
+  summary: Creates a SQL virtual machine group.
+- uid: az_sql_vm_group_delete
+  name: az sql vm group delete
+  summary: Deletes a SQL virtual machine group.
+- uid: az_sql_vm_group_list
+  name: az sql vm group list
+  summary: Lists all SQL virtual machine groups in a resource group or subscription.
+- uid: az_sql_vm_group_show
+  name: az sql vm group show
+  summary: Gets a SQL virtual machine group.
+- uid: az_sql_vm_group_update
+  name: az sql vm group update
+  summary: Updates a SQL virtual machine group if there are not SQL virtual machines attached to the group.
+- uid: az_sql_vm_list
+  name: az sql vm list
+  summary: Lists all SQL virtual machines in a resource group or subscription.
+- uid: az_sql_vm_remove_from_group
+  name: az sql vm remove-from-group
+  summary: Remove SQL virtual machine from its current SQL virtual machine group.
+- uid: az_sql_vm_show
+  name: az sql vm show
+  summary: Gets a SQL virtual machine.
+- uid: az_sql_vm_update
+  name: az sql vm update
+  summary: Updates the properties of a SQL virtual machine.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
