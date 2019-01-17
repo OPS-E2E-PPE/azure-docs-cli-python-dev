@@ -1904,6 +1904,19 @@
         - name: Add
           uid: az_acr_helm_repo_add
           displayName: az acr helm repo add
+    - name: Network-Rule
+      uid: az_acr_network_rule
+      displayName: az acr network-rule
+      items:
+      - name: Add
+        uid: az_acr_network_rule_add
+        displayName: az acr network-rule add
+      - name: List
+        uid: az_acr_network_rule_list
+        displayName: az acr network-rule list
+      - name: Remove
+        uid: az_acr_network_rule_remove
+        displayName: az acr network-rule remove
     - name: Replication
       uid: az_acr_replication
       displayName: az acr replication
