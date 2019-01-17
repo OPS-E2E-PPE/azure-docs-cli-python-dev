@@ -65,6 +65,9 @@ items:
   - name: --encrypt-format-all
     summary: Encrypts-formats data disks instead of encrypting them. Encrypt-formatting is a lot faster than in-place encryption but wipes out the partition getting encrypt-formatted.
     description: ''
+  - name: --force
+    summary: Continue by ignoring client side validation errors.
+    description: ''
   - name: --key-encryption-algorithm
     defaultValue: RSA-OAEP
     summary: ''
