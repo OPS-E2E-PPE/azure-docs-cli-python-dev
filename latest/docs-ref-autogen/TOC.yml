@@ -5975,6 +5975,28 @@
         - name: Start
           uid: az_network_watcher_troubleshooting_start
           displayName: az network watcher troubleshooting start
+  - name: Openshift
+    uid: az_openshift
+    displayName: az openshift
+    items:
+    - name: Create
+      uid: az_openshift_create
+      displayName: az openshift create
+    - name: Delete
+      uid: az_openshift_delete
+      displayName: az openshift delete
+    - name: List
+      uid: az_openshift_list
+      displayName: az openshift list
+    - name: Scale
+      uid: az_openshift_scale
+      displayName: az openshift scale
+    - name: Show
+      uid: az_openshift_show
+      displayName: az openshift show
+    - name: Wait
+      uid: az_openshift_wait
+      displayName: az openshift wait
   - name: Postgresql
     uid: az_postgres
     displayName: az postgres
