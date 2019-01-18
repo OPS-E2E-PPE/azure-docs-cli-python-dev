@@ -80,7 +80,7 @@ items:
     summary: Target resource parent path, if applicable.
     description: ''
   - name: --target-type
-    summary: "Target resource type. Can also accept namespace/type format (Ex: 'Microsoft.Compute/virtualMachines)')."
+    summary: "Target resource type. Can also accept namespace/type format (Ex: 'Microsoft.Compute/virtualMachines')."
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -290,7 +290,7 @@ items:
     summary: Target resource parent path, if applicable.
     description: ''
   - name: --resource-type
-    summary: "Target resource type. Can also accept namespace/type format (Ex: 'Microsoft.Compute/virtualMachines)')."
+    summary: "Target resource type. Can also accept namespace/type format (Ex: 'Microsoft.Compute/virtualMachines')."
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
