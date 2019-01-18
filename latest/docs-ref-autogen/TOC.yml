@@ -101,6 +101,9 @@
     - name: Show
       uid: az_aks_show
       displayName: az aks show
+    - name: Update-Credentials
+      uid: az_aks_update_credentials
+      displayName: az aks update-credentials
     - name: Upgrade
       uid: az_aks_upgrade
       displayName: az aks upgrade
