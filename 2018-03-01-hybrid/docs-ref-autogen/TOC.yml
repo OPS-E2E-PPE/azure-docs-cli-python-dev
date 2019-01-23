@@ -9288,6 +9288,28 @@
         - name: Show
           uid: ext_azure-devops_az_devops_service_endpoint_show
           displayName: az devops service-endpoint show
+      - name: Team
+        uid: ext_azure-devops_az_devops_team
+        displayName: az devops team
+        items:
+        - name: Create
+          uid: ext_azure-devops_az_devops_team_create
+          displayName: az devops team create
+        - name: Delete
+          uid: ext_azure-devops_az_devops_team_delete
+          displayName: az devops team delete
+        - name: List
+          uid: ext_azure-devops_az_devops_team_list
+          displayName: az devops team list
+        - name: List-Member
+          uid: ext_azure-devops_az_devops_team_list_member
+          displayName: az devops team list-member
+        - name: Show
+          uid: ext_azure-devops_az_devops_team_show
+          displayName: az devops team show
+        - name: Update
+          uid: ext_azure-devops_az_devops_team_update
+          displayName: az devops team update
     - name: Pipelines
       uid: ext_azure-devops_az_pipelines
       displayName: az pipelines
