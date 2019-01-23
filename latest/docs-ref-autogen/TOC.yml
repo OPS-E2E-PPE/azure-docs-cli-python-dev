@@ -3270,9 +3270,15 @@
     - name: Resize
       uid: az_hdinsight_resize
       displayName: az hdinsight resize
+    - name: Rotate-Disk-Encryption-Key
+      uid: az_hdinsight_rotate_disk_encryption_key
+      displayName: az hdinsight rotate-disk-encryption-key
     - name: Show
       uid: az_hdinsight_show
       displayName: az hdinsight show
+    - name: Update
+      uid: az_hdinsight_update
+      displayName: az hdinsight update
     - name: Wait
       uid: az_hdinsight_wait
       displayName: az hdinsight wait
@@ -6481,6 +6487,19 @@
       - name: Show
         uid: az_policy_assignment_show
         displayName: az policy assignment show
+      - name: Identity
+        uid: az_policy_assignment_identity
+        displayName: az policy assignment identity
+        items:
+        - name: Assign
+          uid: az_policy_assignment_identity_assign
+          displayName: az policy assignment identity assign
+        - name: Remove
+          uid: az_policy_assignment_identity_remove
+          displayName: az policy assignment identity remove
+        - name: Show
+          uid: az_policy_assignment_identity_show
+          displayName: az policy assignment identity show
     - name: Definitions
       uid: az_policy_definition
       displayName: az policy definition

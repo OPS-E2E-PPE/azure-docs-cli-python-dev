@@ -1,29 +1,45 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_provider
-  name: az provider
-  summary: Manage resource providers.
+- uid: az_policy_assignment_identity
+  name: az policy assignment identity
+  summary: Manage a policy assignment's managed identity.
   description: ''
   langs:
   - azurecli
   children:
-  - az_provider_list
-  - az_provider_register
-  - az_provider_show
-  - az_provider_unregister
-- uid: az_provider_list
-  name: az provider list
-  summary: Gets all resource providers for a subscription.
+  - az_policy_assignment_identity_assign
+  - az_policy_assignment_identity_remove
+  - az_policy_assignment_identity_show
+- uid: az_policy_assignment_identity_assign
+  name: az policy assignment identity assign
+  summary: Add a system assigned identity to a policy assignment.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Display all resource types for the network resource provider.
+  - summary: Add a system assigned managed identity to a policy assignment.
     syntax:
-      content: az provider list --query [?namespace=='Microsoft.Network'].resourceTypes[].resourceType
+      content: az policy assignment identity assign -g MyResourceGroup -n MyPolicyAssignment
+  - summary: Add a system assigned managed identity to a policy assignment and grant it the 'Contributor' role for the current resource group.
+    syntax:
+      content: az policy assignment identity assign -g MyResourceGroup -n MyPolicyAssignment --role Contributor --identity-scope /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/MyResourceGroup
   parameters:
-  - name: --expand
-    summary: The properties to include in the results. For example, use &$expand=metadata in the query string to retrieve resource provider metadata. To include property aliases in response, use $expand=resourceTypes/aliases.
+  - isRequired: true
+    name: --name -n
+    summary: Name of the policy assignment.
+    description: ''
+  - name: --identity-scope
+    summary: Scope that the system assigned identity can access.
+    description: ''
+  - name: --resource-group -g
+    summary: The resource group where the policy will be applied.
+    description: ''
+  - name: --role
+    defaultValue: Contributor
+    summary: Role name or id that will be assigned to the managed identity.
+    description: ''
+  - name: --scope
+    summary: Scope to which this policy assignment applies.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -34,19 +50,22 @@ items:
       branch: master
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_provider_register
-  name: az provider register
-  summary: Register a provider.
+- uid: az_policy_assignment_identity_remove
+  name: az policy assignment identity remove
+  summary: Remove a managed identity from a policy assignment.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --namespace -n
-    summary: The resource namespace, aka 'provider'.
+    name: --name -n
+    summary: Name of the policy assignment.
     description: ''
-  - name: --wait
-    summary: Wait for the registration to finish.
+  - name: --resource-group -g
+    summary: The resource group where the policy will be applied.
+    description: ''
+  - name: --scope
+    summary: Scope to which this policy assignment applies.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -57,42 +76,22 @@ items:
       branch: master
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_provider_show
-  name: az provider show
-  summary: Gets the specified resource provider.
+- uid: az_policy_assignment_identity_show
+  name: az policy assignment identity show
+  summary: Show a policy assignment's managed identity.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --namespace -n
-    summary: The resource namespace, aka 'provider'.
+    name: --name -n
+    summary: Name of the policy assignment.
     description: ''
-  - name: --expand
-    summary: The $expand query parameter. For example, to include property aliases in response, use $expand=resourceTypes/aliases.
+  - name: --resource-group -g
+    summary: The resource group where the policy will be applied.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-    remote:
-      branch: master
-      path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_provider_unregister
-  name: az provider unregister
-  summary: Unregister a provider.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --namespace -n
-    summary: The resource namespace, aka 'provider'.
-    description: ''
-  - name: --wait
-    summary: Wait for unregistration to finish.
+  - name: --scope
+    summary: Scope to which this policy assignment applies.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -104,27 +103,15 @@ items:
       path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_provider_list
-  name: az provider list
-  summary: Gets all resource providers for a subscription.
-- uid: az_provider_operation
-  name: az provider operation
-  summary: Get provider operations metadatas.
-- uid: az_provider_operation_list
-  name: az provider operation list
-  summary: Get operations from all providers.
-- uid: az_provider_operation_show
-  name: az provider operation show
-  summary: Get an individual provider's operations.
-- uid: az_provider_register
-  name: az provider register
-  summary: Register a provider.
-- uid: az_provider_show
-  name: az provider show
-  summary: Gets the specified resource provider.
-- uid: az_provider_unregister
-  name: az provider unregister
-  summary: Unregister a provider.
+- uid: az_policy_assignment_identity_assign
+  name: az policy assignment identity assign
+  summary: Add a system assigned identity to a policy assignment.
+- uid: az_policy_assignment_identity_remove
+  name: az policy assignment identity remove
+  summary: Remove a managed identity from a policy assignment.
+- uid: az_policy_assignment_identity_show
+  name: az policy assignment identity show
+  summary: Show a policy assignment's managed identity.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -144,4 +131,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/com
 gitcommit: https://github.com/Azure/azure-cli/blob/c6d991478d5f3a4165fa2ba5a33679ffb60ea202/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
 updated_at: 1/23/2019 3:00:46 AM
 ms.date: 01/23/2019
-description: Manage resource providers.
+description: Manage a policy assignment's managed identity.
