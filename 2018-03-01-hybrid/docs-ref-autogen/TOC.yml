@@ -3777,6 +3777,60 @@
       - name: Show-Deleted
         uid: az_keyvault_secret_show_deleted
         displayName: az keyvault secret show-deleted
+  - name: Kusto
+    uid: az_kusto
+    displayName: az kusto
+    items:
+    - name: Cluster
+      uid: az_kusto_cluster
+      displayName: az kusto cluster
+      items:
+      - name: Create
+        uid: az_kusto_cluster_create
+        displayName: az kusto cluster create
+      - name: Delete
+        uid: az_kusto_cluster_delete
+        displayName: az kusto cluster delete
+      - name: List
+        uid: az_kusto_cluster_list
+        displayName: az kusto cluster list
+      - name: Show
+        uid: az_kusto_cluster_show
+        displayName: az kusto cluster show
+      - name: Start
+        uid: az_kusto_cluster_start
+        displayName: az kusto cluster start
+      - name: Stop
+        uid: az_kusto_cluster_stop
+        displayName: az kusto cluster stop
+      - name: Update
+        uid: az_kusto_cluster_update
+        displayName: az kusto cluster update
+      - name: Wait
+        uid: az_kusto_cluster_wait
+        displayName: az kusto cluster wait
+    - name: Database
+      uid: az_kusto_database
+      displayName: az kusto database
+      items:
+      - name: Create
+        uid: az_kusto_database_create
+        displayName: az kusto database create
+      - name: Delete
+        uid: az_kusto_database_delete
+        displayName: az kusto database delete
+      - name: List
+        uid: az_kusto_database_list
+        displayName: az kusto database list
+      - name: Show
+        uid: az_kusto_database_show
+        displayName: az kusto database show
+      - name: Update
+        uid: az_kusto_database_update
+        displayName: az kusto database update
+      - name: Wait
+        uid: az_kusto_database_wait
+        displayName: az kusto database wait
   - name: Locks
     uid: az_lock
     displayName: az lock

@@ -300,6 +300,9 @@ commands:
 - uid: az_keyvault
   name: az keyvault
   summary: Manage KeyVault keys, secrets, and certificates.
+- uid: az_kusto
+  name: az kusto
+  summary: Manage Azure Kusto resources.
 - uid: az_lab
   name: az lab
   summary: Manage Azure DevTest Labs.
