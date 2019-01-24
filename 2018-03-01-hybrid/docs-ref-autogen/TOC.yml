@@ -1786,6 +1786,9 @@
     - name: Show
       uid: az_container_show
       displayName: az container show
+    - name: Start
+      uid: az_container_start
+      displayName: az container start
     - name: Stop
       uid: az_container_stop
       displayName: az container stop
