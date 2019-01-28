@@ -59,8 +59,15 @@ items:
     parameterValueGroup: false, true
     summary: Receive bidirectional TCP reset on TCP flow idle timeout or unexpected connection termination. Only used when protocol is set to TCP.
     description: ''
+  - name: --floating-ip
+    parameterValueGroup: false, true
+    summary: Enable floating IP.
+    description: ''
   - name: --frontend-ip-name
     summary: The name of the frontend IP configuration. If only one exists, omit to use as default.
+    description: ''
+  - name: --idle-timeout
+    summary: Idle timeout in minutes.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -183,6 +190,10 @@ items:
     parameterValueGroup: false, true
     summary: Receive bidirectional TCP reset on TCP flow idle timeout or unexpected connection termination. Only used when protocol is set to TCP.
     description: ''
+  - name: --floating-ip
+    parameterValueGroup: false, true
+    summary: Enable floating IP.
+    description: ''
   - name: --frontend-ip-name
     summary: The name of the frontend IP configuration.
     description: ''
@@ -191,6 +202,9 @@ items:
     description: ''
   - name: --frontend-port-range-start
     summary: Port number.
+    description: ''
+  - name: --idle-timeout
+    summary: Idle timeout in minutes.
     description: ''
   - name: --protocol
     parameterValueGroup: All, Tcp, Udp

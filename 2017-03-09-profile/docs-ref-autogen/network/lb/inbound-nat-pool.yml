@@ -55,8 +55,15 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --floating-ip
+    parameterValueGroup: false, true
+    summary: Enable floating IP.
+    description: ''
   - name: --frontend-ip-name
     summary: The name of the frontend IP configuration. If only one exists, omit to use as default.
+    description: ''
+  - name: --idle-timeout
+    summary: Idle timeout in minutes.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -175,6 +182,10 @@ items:
   - name: --backend-port
     summary: Port number.
     description: ''
+  - name: --floating-ip
+    parameterValueGroup: false, true
+    summary: Enable floating IP.
+    description: ''
   - name: --frontend-ip-name
     summary: The name of the frontend IP configuration.
     description: ''
@@ -183,6 +194,9 @@ items:
     description: ''
   - name: --frontend-port-range-start
     summary: Port number.
+    description: ''
+  - name: --idle-timeout
+    summary: Idle timeout in minutes.
     description: ''
   - name: --protocol
     parameterValueGroup: Tcp, Udp
