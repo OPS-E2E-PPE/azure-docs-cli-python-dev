@@ -36,7 +36,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -60,7 +60,7 @@ items:
   parameters:
   - isRequired: true
     name: --name -n
-    summary: Name of the new webapp.
+    summary: Name of the new web app.
     description: ''
   - isRequired: true
     name: --plan -p
@@ -125,7 +125,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -161,7 +161,7 @@ items:
   - azurecli
   parameters:
   - name: --linux
-    summary: List runtime stacks for linux based webapps.
+    summary: List runtime stacks for linux based web apps.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -180,7 +180,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -202,7 +202,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -217,7 +217,7 @@ items:
   langs:
   - azurecli
   examples:
-  - summary: ssh into a webapp
+  - summary: ssh into a web app
     syntax:
       content: az webapp ssh -n MyUniqueAppName -g MyResourceGroup
   parameters:
@@ -228,7 +228,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -250,7 +250,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -272,7 +272,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -282,7 +282,7 @@ items:
     description: ''
 - uid: az_webapp_up
   name: az webapp up
-  summary: (Preview) Create and deploy existing local code to the webapp, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows webapp is created.
+  summary: (Preview) Create and deploy existing local code to the web app, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows web app is created.
   description: ''
   langs:
   - azurecli
@@ -314,7 +314,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -361,7 +361,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -585,7 +585,7 @@ commands:
   summary: Get a URL for a git repository endpoint to clone and push to for web app deployment.
 - uid: az_webapp_deployment_source_config_zip
   name: az webapp deployment source config-zip
-  summary: Perform deployment using the kudu zip push deployment for a webapp.
+  summary: Perform deployment using the kudu zip push deployment for a web app.
 - uid: az_webapp_deployment_source_delete
   name: az webapp deployment source delete
   summary: Delete a source control deployment configuration.
@@ -609,16 +609,16 @@ commands:
   summary: Gets publishing user.
 - uid: az_webapp_identity
   name: az webapp identity
-  summary: Manage webapp's managed service identity.
+  summary: Manage web app's managed service identity.
 - uid: az_webapp_identity_assign
   name: az webapp identity assign
-  summary: Assign or disable managed service identity to the webapp.
+  summary: Assign or disable managed service identity to the web app.
 - uid: az_webapp_identity_remove
   name: az webapp identity remove
-  summary: Disable webapp's managed service identity.
+  summary: Disable web app's managed service identity.
 - uid: az_webapp_identity_show
   name: az webapp identity show
-  summary: Display webapp's managed service identity.
+  summary: Display web app's managed service identity.
 - uid: az_webapp_list
   name: az webapp list
   summary: List web apps.
@@ -669,43 +669,43 @@ commands:
   summary: Display the current distribution of traffic across slots.
 - uid: az_webapp_up
   name: az webapp up
-  summary: (Preview) Create and deploy existing local code to the webapp, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows webapp is created.
+  summary: (Preview) Create and deploy existing local code to the web app, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows web app is created.
 - uid: az_webapp_update
   name: az webapp update
   summary: Update a web app.
 - uid: az_webapp_webjob
   name: az webapp webjob
-  summary: Allows management operations for webjobs on a webapp.
+  summary: Allows management operations for webjobs on a web app.
 - uid: az_webapp_webjob_continuous
   name: az webapp webjob continuous
-  summary: Allows management operations of continuous webjobs on a webapp.
+  summary: Allows management operations of continuous webjobs on a web app.
 - uid: az_webapp_webjob_continuous_list
   name: az webapp webjob continuous list
-  summary: List all continuous webjobs on a selected webapp.
+  summary: List all continuous webjobs on a selected web app.
 - uid: az_webapp_webjob_continuous_remove
   name: az webapp webjob continuous remove
   summary: Delete a specific continuous webjob.
 - uid: az_webapp_webjob_continuous_start
   name: az webapp webjob continuous start
-  summary: Start a specific continuous webjob on a selected webapp.
+  summary: Start a specific continuous webjob on a selected web app.
 - uid: az_webapp_webjob_continuous_stop
   name: az webapp webjob continuous stop
   summary: Stop a specific continuous webjob.
 - uid: az_webapp_webjob_triggered
   name: az webapp webjob triggered
-  summary: Allows management operations of triggered webjobs on a webapp.
+  summary: Allows management operations of triggered webjobs on a web app.
 - uid: az_webapp_webjob_triggered_list
   name: az webapp webjob triggered list
-  summary: List all triggered webjobs hosted on a webapp.
+  summary: List all triggered webjobs hosted on a web app.
 - uid: az_webapp_webjob_triggered_log
   name: az webapp webjob triggered log
-  summary: Get history of a specific triggered webjob hosted on a webapp.
+  summary: Get history of a specific triggered webjob hosted on a web app.
 - uid: az_webapp_webjob_triggered_remove
   name: az webapp webjob triggered remove
-  summary: Delete a specific triggered webjob hosted on a webapp.
+  summary: Delete a specific triggered webjob hosted on a web app.
 - uid: az_webapp_webjob_triggered_run
   name: az webapp webjob triggered run
-  summary: Run a specific triggered webjob hosted on a webapp.
+  summary: Run a specific triggered webjob hosted on a web app.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.

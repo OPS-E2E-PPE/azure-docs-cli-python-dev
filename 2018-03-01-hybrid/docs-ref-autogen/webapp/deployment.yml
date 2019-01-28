@@ -22,7 +22,7 @@ items:
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
-    summary: Name of the webapp. You can configure the default using 'az configure --defaults web=<name>'.
+    summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -72,7 +72,7 @@ commands:
   summary: Get a URL for a git repository endpoint to clone and push to for web app deployment.
 - uid: az_webapp_deployment_source_config_zip
   name: az webapp deployment source config-zip
-  summary: Perform deployment using the kudu zip push deployment for a webapp.
+  summary: Perform deployment using the kudu zip push deployment for a web app.
 - uid: az_webapp_deployment_source_delete
   name: az webapp deployment source delete
   summary: Delete a source control deployment configuration.

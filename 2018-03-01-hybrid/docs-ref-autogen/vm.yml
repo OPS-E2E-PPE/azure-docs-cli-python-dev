@@ -611,6 +611,7 @@ items:
       content: az vm list-skus -l westus --resource-type availabilitySets
   parameters:
   - name: --all
+    parameterValueGroup: false, true
     summary: Show all information including vm sizes not available under the current subscription.
     description: ''
   - name: --location -l
