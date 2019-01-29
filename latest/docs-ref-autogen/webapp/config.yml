@@ -28,6 +28,9 @@ items:
     parameterValueGroup: AllAllowed, Disabled, FtpsOnly
     summary: Set the Ftps state value for an app. Default value is 'AllAllowed'.
     description: ''
+  - name: --generic-configurations
+    summary: Provide site configuration list in a format of either "key=value" pair or "@<json_file>".
+    description: ''
   - name: --http20-enabled
     parameterValueGroup: false, true
     summary: Configures a web site to allow clients to connect over http2.0.

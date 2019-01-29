@@ -67,6 +67,9 @@ items:
   - summary: Set the default NodeJS version to 6.9.1 for a web app.
     syntax:
       content: az webapp config appsettings set -g MyResourceGroup -n MyUniqueApp --settings WEBSITE_NODE_DEFAULT_VERSION=6.9.1
+  - summary: Set using both key-value pair and a json file with more settings.
+    syntax:
+      content: az webapp config appsettings set -g MyResourceGroup -n MyUniqueApp --settings mySetting=value @moreSettings.json
   parameters:
   - name: --settings
     summary: Space-separated appsettings in a format of <name>=<value>.
@@ -75,7 +78,7 @@ items:
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --slot-settings
-    summary: Space-separated slot appsettings in a format of <name>=<value>.
+    summary: Space-separated slot appsettings in a format of either <name>=<value> or @<json_file>.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
