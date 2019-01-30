@@ -6271,6 +6271,32 @@
       - name: List
         uid: az_policy_event_list
         displayName: az policy event list
+    - name: Remediation
+      uid: az_policy_remediation
+      displayName: az policy remediation
+      items:
+      - name: Cancel
+        uid: az_policy_remediation_cancel
+        displayName: az policy remediation cancel
+      - name: Create
+        uid: az_policy_remediation_create
+        displayName: az policy remediation create
+      - name: Delete
+        uid: az_policy_remediation_delete
+        displayName: az policy remediation delete
+      - name: List
+        uid: az_policy_remediation_list
+        displayName: az policy remediation list
+      - name: Show
+        uid: az_policy_remediation_show
+        displayName: az policy remediation show
+      - name: Deployment
+        uid: az_policy_remediation_deployment
+        displayName: az policy remediation deployment
+        items:
+        - name: List
+          uid: az_policy_remediation_deployment_list
+          displayName: az policy remediation deployment list
     - name: State
       uid: az_policy_state
       displayName: az policy state

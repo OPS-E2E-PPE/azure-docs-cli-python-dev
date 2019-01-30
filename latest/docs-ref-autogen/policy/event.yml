@@ -92,13 +92,13 @@ items:
     summary: 'Provider namespace (Ex: Microsoft.Provider).'
     description: ''
   - name: --parent
-    summary: 'The parent path (Ex: resA/myA/resB/myB).'
+    summary: 'The parent path (Ex: resourceTypeA/nameA/resourceTypeB/nameB).'
     description: ''
   - name: --resource
     summary: Resource ID or resource name. If a name is given, please provide the resource group and other relevant resource id arguments.
     description: ''
   - name: --resource-type
-    summary: 'Resource type (Ex: resC).'
+    summary: 'Resource type (Ex: resourceTypeC).'
     description: ''
   - name: --management-group -m
     summary: Name of management group.
