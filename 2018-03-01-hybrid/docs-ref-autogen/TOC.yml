@@ -323,6 +323,9 @@
       - name: Update
         uid: az_ams_live_event_update
         displayName: az ams live-event update
+      - name: Wait
+        uid: az_ams_live_event_wait
+        displayName: az ams live-event wait
     - name: Live-Output
       uid: az_ams_live_output
       displayName: az ams live-output
@@ -367,6 +370,9 @@
       - name: Update
         uid: az_ams_streaming_endpoint_update
         displayName: az ams streaming-endpoint update
+      - name: Wait
+        uid: az_ams_streaming_endpoint_wait
+        displayName: az ams streaming-endpoint wait
       - name: Akamai
         uid: az_ams_streaming_endpoint_akamai
         displayName: az ams streaming-endpoint akamai
