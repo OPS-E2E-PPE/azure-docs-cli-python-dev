@@ -145,7 +145,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/75ae075873672a3c04e2f12ee87a4ddfa36a22fd/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-updated_at: 1/29/2019 2:58:49 AM
-ms.date: 01/29/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/130fd7e3cd17234cb0e6f07c560572059bcd07ec/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+updated_at: 2/1/2019 12:39:18 AM
+ms.date: 02/01/2019
 description: Configure hostnames for a function app.

@@ -3225,6 +3225,13 @@
       - name: Show
         uid: az_functionapp_identity_show
         displayName: az functionapp identity show
+    - name: Plan
+      uid: az_functionapp_plan
+      displayName: az functionapp plan
+      items:
+      - name: Create
+        uid: az_functionapp_plan_create
+        displayName: az functionapp plan create
   - name: Hdinsight
     uid: az_hdinsight
     displayName: az hdinsight
