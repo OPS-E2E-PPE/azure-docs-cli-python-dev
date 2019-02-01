@@ -216,7 +216,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/bd417ea165f8f1f528a10fbc6d33c81fd7fa5f17/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-updated_at: 1/29/2019 3:56:06 PM
-ms.date: 01/29/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/8459ef3fd3c76d9f99defd95d4c980923891fa6d/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+updated_at: 2/1/2019 1:34:49 AM
+ms.date: 02/01/2019
 description: Manage geo-replicated regions of Azure Container Registries.

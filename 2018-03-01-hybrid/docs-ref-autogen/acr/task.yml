@@ -134,7 +134,7 @@ items:
     summary: The operating system type required for the build.
     description: ''
   - name: --platform
-    summary: The platform of the resulting image in the format of 'os/arch/variant'. E.g. linux/arm/v7. The 'arch' and 'variant' parts are optional.
+    summary: The platform where build/task is run, Eg, 'windows' and 'linux'. When it's used in build commands, it also can be specified in 'os/arch/variant' format for the resulting image. Eg, linux/arm/v7. The 'arch' and 'variant' parts are optional.
     description: ''
   - name: --pull-request-trigger-enabled
     defaultValue: "1"
@@ -452,6 +452,9 @@ items:
   - summary: Update base image updates to trigger on all dependent images of a multi-stage dockerfile, and status of a task in an Azure Container Registry.
     syntax:
       content: az acr task update -n MyTask -r MyRegistry --base-image-trigger-type All --status Disabled
+  - summary: Update platform for the Build step of your Task to Windows (prev Linux).
+    syntax:
+      content: az acr task update -n MyTask -r MyRegistry --platform Windows
   parameters:
   - isRequired: true
     name: --name -n
@@ -507,7 +510,7 @@ items:
     summary: The operating system type required for the build.
     description: ''
   - name: --platform
-    summary: The platform of the resulting image in the format of 'os/arch/variant'. E.g. linux/arm/v7. The 'arch' and 'variant' parts are optional.
+    summary: The platform where build/task is run, Eg, 'windows' and 'linux'. When it's used in build commands, it also can be specified in 'os/arch/variant' format for the resulting image. Eg, linux/arm/v7. The 'arch' and 'variant' parts are optional.
     description: ''
   - name: --pull-request-trigger-enabled
     parameterValueGroup: false, true
@@ -629,7 +632,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/bd417ea165f8f1f528a10fbc6d33c81fd7fa5f17/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-updated_at: 1/29/2019 3:56:06 PM
-ms.date: 01/29/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/8459ef3fd3c76d9f99defd95d4c980923891fa6d/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+updated_at: 2/1/2019 1:34:49 AM
+ms.date: 02/01/2019
 description: Manage a collection of steps for building, testing and OS & Framework patching container images using Azure Container Registries.
