@@ -119,7 +119,7 @@ items:
   - azurecli
   parameters:
   - name: --expiry
-    defaultValue: 2019-02-02 23:09:19.614181
+    defaultValue: 2019-02-05 18:10:30.151528
     summary: Specifies the UTC datetime (Y-m-d'T'H:M:S'Z') at which the SAS becomes invalid.
     description: ''
   - name: --permissions
