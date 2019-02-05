@@ -67,7 +67,6 @@ items:
     summary: The name of the backend address pool. If only one exists, omit to use as default.
     description: ''
   - name: --floating-ip
-    defaultValue: "false"
     parameterValueGroup: false, true
     summary: Enable floating IP.
     description: ''

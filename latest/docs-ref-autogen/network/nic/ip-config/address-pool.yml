@@ -26,8 +26,11 @@ items:
     name: --address-pool
     summary: The name or ID of an existing backend address pool.
     description: ''
+  - name: --gateway-name
+    summary: The name of an application gateway containing the address pool (Omit if suppying an address pool ID).
+    description: ''
   - name: --lb-name
-    summary: The name of the load balancer associated with the address pool (Omit if suppying an address pool ID).
+    summary: The name of the load balancer containing the address pool (Omit if suppying an address pool ID).
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
@@ -79,8 +82,11 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --gateway-name
+    summary: The name of an application gateway containing the address pool (Omit if suppying an address pool ID).
+    description: ''
   - name: --lb-name
-    summary: The name of the load balancer associated with the address pool (Omit if suppying an address pool ID).
+    summary: The name of the load balancer containing the address pool (Omit if suppying an address pool ID).
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
