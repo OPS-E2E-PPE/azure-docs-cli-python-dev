@@ -120,7 +120,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/130fd7e3cd17234cb0e6f07c560572059bcd07ec/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
-updated_at: 2/1/2019 12:39:18 AM
-ms.date: 02/01/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/b5c10e5236923473a4cc71f298e2d28e1a241af0/src/command_modules/azure-cli-appservice/azure/cli/command_modules/appservice/_help.py
+updated_at: 2/5/2019 9:08:33 PM
+ms.date: 02/05/2019
 description: Configure function app settings.

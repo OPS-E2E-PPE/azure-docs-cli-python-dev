@@ -3123,6 +3123,19 @@
         - name: Set
           uid: az_functionapp_config_appsettings_set
           displayName: az functionapp config appsettings set
+      - name: Container
+        uid: az_functionapp_config_container
+        displayName: az functionapp config container
+        items:
+        - name: Delete
+          uid: az_functionapp_config_container_delete
+          displayName: az functionapp config container delete
+        - name: Set
+          uid: az_functionapp_config_container_set
+          displayName: az functionapp config container set
+        - name: Show
+          uid: az_functionapp_config_container_show
+          displayName: az functionapp config container show
       - name: Hostname
         uid: az_functionapp_config_hostname
         displayName: az functionapp config hostname
@@ -3178,6 +3191,16 @@
       - name: List-Publishing-Profiles
         uid: az_functionapp_deployment_list_publishing_profiles
         displayName: az functionapp deployment list-publishing-profiles
+      - name: Container
+        uid: az_functionapp_deployment_container
+        displayName: az functionapp deployment container
+        items:
+        - name: Config
+          uid: az_functionapp_deployment_container_config
+          displayName: az functionapp deployment container config
+        - name: Show-Cd-Url
+          uid: az_functionapp_deployment_container_show_cd_url
+          displayName: az functionapp deployment container show-cd-url
       - name: Source
         uid: az_functionapp_deployment_source
         displayName: az functionapp deployment source
