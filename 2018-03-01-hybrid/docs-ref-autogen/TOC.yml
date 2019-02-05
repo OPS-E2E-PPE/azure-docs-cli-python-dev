@@ -1835,40 +1835,6 @@
     - name: Update
       uid: az_acr_update
       displayName: az acr update
-    - name: Build-Task
-      uid: az_acr_build_task
-      displayName: az acr build-task
-      items:
-      - name: Create
-        uid: az_acr_build_task_create
-        displayName: az acr build-task create
-      - name: Delete
-        uid: az_acr_build_task_delete
-        displayName: az acr build-task delete
-      - name: List
-        uid: az_acr_build_task_list
-        displayName: az acr build-task list
-      - name: List-Builds
-        uid: az_acr_build_task_list_builds
-        displayName: az acr build-task list-builds
-      - name: Logs
-        uid: az_acr_build_task_logs
-        displayName: az acr build-task logs
-      - name: Run
-        uid: az_acr_build_task_run
-        displayName: az acr build-task run
-      - name: Show
-        uid: az_acr_build_task_show
-        displayName: az acr build-task show
-      - name: Show-Build
-        uid: az_acr_build_task_show_build
-        displayName: az acr build-task show-build
-      - name: Update
-        uid: az_acr_build_task_update
-        displayName: az acr build-task update
-      - name: Update-Build
-        uid: az_acr_build_task_update_build
-        displayName: az acr build-task update-build
     - name: Config
       uid: az_acr_config
       displayName: az acr config
