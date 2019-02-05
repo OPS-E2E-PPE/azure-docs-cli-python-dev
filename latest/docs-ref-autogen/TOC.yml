@@ -8734,6 +8734,19 @@
       - name: Start
         uid: az_vmss_rolling_upgrade_start
         displayName: az vmss rolling-upgrade start
+    - name: Run-Command
+      uid: az_vmss_run_command
+      displayName: az vmss run-command
+      items:
+      - name: Invoke
+        uid: az_vmss_run_command_invoke
+        displayName: az vmss run-command invoke
+      - name: List
+        uid: az_vmss_run_command_list
+        displayName: az vmss run-command list
+      - name: Show
+        uid: az_vmss_run_command_show
+        displayName: az vmss run-command show
   - name: VM Snapshots
     uid: az_snapshot
     displayName: az snapshot

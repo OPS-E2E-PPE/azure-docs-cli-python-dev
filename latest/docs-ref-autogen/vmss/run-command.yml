@@ -1,34 +1,40 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_vm_run_command
-  name: az vm run-command
-  summary: Manage run commands on a Virtual Machine.
+- uid: az_vmss_run_command
+  name: az vmss run-command
+  summary: Manage run commands on a Virtual Machine Scale Set.
   description: For more information, see <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/run-command">https://docs.microsoft.com/en-us/azure/virtual-machines/windows/run-command</a> or <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/run-command">https://docs.microsoft.com/en-us/azure/virtual-machines/linux/run-command</a>.
   langs:
   - azurecli
   children:
-  - az_vm_run_command_invoke
-  - az_vm_run_command_list
-  - az_vm_run_command_show
-- uid: az_vm_run_command_invoke
-  name: az vm run-command invoke
-  summary: Execute a specific run command on a vm.
+  - az_vmss_run_command_invoke
+  - az_vmss_run_command_list
+  - az_vmss_run_command_show
+- uid: az_vmss_run_command_invoke
+  name: az vmss run-command invoke
+  summary: Execute a specific run command on a Virtual Machine Scale Set instance.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: install nginx on a vm
+  - summary: install nginx on a VMSS instance
     syntax:
-      content: az vm run-command invoke -g MyResourceGroup -n MyVm --command-id RunShellScript --scripts "sudo apt-get update && sudo apt-get install -y nginx"
-  - summary: invoke command with parameters
+      content: az vmss run-command invoke -g MyResourceGroup -n MyVMSS --command-id RunShellScript \ --instance-id 0 --scripts "sudo apt-get update && sudo apt-get install -y nginx"
+  - summary: invoke a run-command with parameters on a VMSS instance
     syntax:
-      content: az vm run-command invoke -g MyResourceGroup -n MyVm --command-id RunShellScript --scripts 'echo $1 $2' --parameters hello world
+      content: az vmss run-command invoke -g MyResourceGroup -n MyVMSS --command-id RunShellScript \ --instance-id 4 --scripts 'echo $1 $2' --parameters hello world
+  - summary: 'invoke command on all VMSS instances using the VMSS instance resource IDs. Note: "@-" expands to stdin.'
+    syntax:
+      content: >-
+        az vmss list-instances -n MyVMSS -g ova-test --query "[].id" --output tsv | \
+                                az vmss run-command invoke --scripts 'echo $1 $2' --parameters hello world  \
+                                    --command-id RunShellScript --ids @-
   parameters:
   - isRequired: true
     name: --command-id
     summary: The command id.
     description: ''
-    valueFrom: az vm run-command list
+    valueFrom: az vmss run-command list
   - name: --parameters
     summary: Space-separated parameters in the format of '[name=]value'.
     description: ''
@@ -38,8 +44,11 @@ items:
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
+  - name: --instance-id
+    summary: Scale set VM instance id.
+    description: ''
   - name: --name -n
-    summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=&lt;name&gt;`.
+    summary: Scale set name. You can configure the default using `az configure --defaults vmss=&lt;name&gt;`.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -53,8 +62,8 @@ items:
       branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_vm_run_command_list
-  name: az vm run-command list
+- uid: az_vmss_run_command_list
+  name: az vmss run-command list
   summary: Lists all available run commands for a subscription in a location.
   description: ''
   langs:
@@ -73,8 +82,8 @@ items:
       branch: master
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_vm_run_command_show
-  name: az vm run-command show
+- uid: az_vmss_run_command_show
+  name: az vmss run-command show
   summary: Gets specific run command for a subscription in a location.
   description: ''
   langs:
@@ -84,7 +93,7 @@ items:
     name: --command-id
     summary: The command id.
     description: ''
-    valueFrom: az vm run-command list
+    valueFrom: az vmss run-command list
   - isRequired: true
     name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
@@ -99,14 +108,14 @@ items:
       path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_vm_run_command_invoke
-  name: az vm run-command invoke
-  summary: Execute a specific run command on a vm.
-- uid: az_vm_run_command_list
-  name: az vm run-command list
+- uid: az_vmss_run_command_invoke
+  name: az vmss run-command invoke
+  summary: Execute a specific run command on a Virtual Machine Scale Set instance.
+- uid: az_vmss_run_command_list
+  name: az vmss run-command list
   summary: Lists all available run commands for a subscription in a location.
-- uid: az_vm_run_command_show
-  name: az vm run-command show
+- uid: az_vmss_run_command_show
+  name: az vmss run-command show
   summary: Gets specific run command for a subscription in a location.
 globalParameters:
 - name: --debug
