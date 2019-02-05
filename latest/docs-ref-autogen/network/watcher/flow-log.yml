@@ -47,6 +47,13 @@ items:
   - name: --log-version
     summary: Version (revision) of the flow log.
     description: ''
+  - name: --traffic-analytics
+    parameterValueGroup: false, true
+    summary: Enable traffic analytics. Defaults to true if `--workspace` is provided.
+    description: ''
+  - name: --workspace
+    summary: Name or ID of a Log Analytics workspace.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
