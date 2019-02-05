@@ -201,6 +201,10 @@ items:
   - name: --code-dir
     summary: The directory to upload bot code from.
     description: ''
+  - name: --keep-node-modules
+    parameterValueGroup: false, true
+    summary: Keep node_modules folder and do not run `npm install` on the App Service. This can greatly speed up publish commands for Node.js SDK bots.
+    description: ''
   - name: --proj-file-path
     summary: Path to the start up project file name. (E.g. "./EchoBotWithCounter.csproj").
     description: ''
