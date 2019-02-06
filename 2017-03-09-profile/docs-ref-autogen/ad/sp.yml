@@ -80,7 +80,7 @@ items:
     description: ''
   - name: --skip-assignment
     parameterValueGroup: false, true
-    summary: Do not create default assignment.
+    summary: Skip creating the default assignment, which allows the service principal to access resources under the current subscription.
     description: ''
   - name: --cert
     summary: Certificate to use for credentials.
