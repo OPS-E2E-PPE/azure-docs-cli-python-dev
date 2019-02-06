@@ -5913,9 +5913,6 @@
     - name: List
       uid: az_redis_list
       displayName: az redis list
-    - name: List-All
-      uid: az_redis_list_all
-      displayName: az redis list-all
     - name: List-Keys
       uid: az_redis_list_keys
       displayName: az redis list-keys
@@ -5928,22 +5925,57 @@
     - name: Update
       uid: az_redis_update
       displayName: az redis update
-    - name: Update-Settings
-      uid: az_redis_update_settings
-      displayName: az redis update-settings
+    - name: Firewall-Rules
+      uid: az_redis_firewall_rules
+      displayName: az redis firewall-rules
+      items:
+      - name: Create
+        uid: az_redis_firewall_rules_create
+        displayName: az redis firewall-rules create
+      - name: Delete
+        uid: az_redis_firewall_rules_delete
+        displayName: az redis firewall-rules delete
+      - name: List
+        uid: az_redis_firewall_rules_list
+        displayName: az redis firewall-rules list
+      - name: Show
+        uid: az_redis_firewall_rules_show
+        displayName: az redis firewall-rules show
+      - name: Update
+        uid: az_redis_firewall_rules_update
+        displayName: az redis firewall-rules update
     - name: Patch Schedules
       uid: az_redis_patch_schedule
       displayName: az redis patch-schedule
       items:
+      - name: Create
+        uid: az_redis_patch_schedule_create
+        displayName: az redis patch-schedule create
       - name: Delete
         uid: az_redis_patch_schedule_delete
         displayName: az redis patch-schedule delete
-      - name: Set
-        uid: az_redis_patch_schedule_set
-        displayName: az redis patch-schedule set
       - name: Show
         uid: az_redis_patch_schedule_show
         displayName: az redis patch-schedule show
+      - name: Update
+        uid: az_redis_patch_schedule_update
+        displayName: az redis patch-schedule update
+    - name: Server-Link
+      uid: az_redis_server_link
+      displayName: az redis server-link
+      items:
+      - name: Create
+        uid: az_redis_server_link_create
+        displayName: az redis server-link create
+      - name: Delete
+        uid: az_redis_server_link_delete
+        displayName: az redis server-link delete
+      - name: List
+        uid: az_redis_server_link_list
+        displayName: az redis server-link list
+      - name: Show
+        uid: az_redis_server_link_show
+        displayName: az redis server-link show
   - name: Relay
     uid: az_relay
     displayName: az relay

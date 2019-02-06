@@ -1,23 +1,28 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_redis_patch_schedule
-  name: az redis patch-schedule
-  summary: Manage Redis patch schedules.
+- uid: az_redis_firewall_rules
+  name: az redis firewall-rules
+  summary: Manage Redis firewall rules.
   description: ''
   langs:
   - azurecli
   children:
-  - az_redis_patch_schedule_create
-  - az_redis_patch_schedule_delete
-  - az_redis_patch_schedule_show
-  - az_redis_patch_schedule_update
-- uid: az_redis_patch_schedule_create
-  name: az redis patch-schedule create
-  summary: Create patching schedule for Redis cache.
-  description: Usage example - az redis patch-schedule create --name testCacheName --resource-group testResourceGroup --schedule-entries '[{"dayOfWeek":"Tuesday","startHourUtc":"00","maintenanceWindow":"PT5H"}]'.
+  - az_redis_firewall_rules_create
+  - az_redis_firewall_rules_delete
+  - az_redis_firewall_rules_list
+  - az_redis_firewall_rules_show
+  - az_redis_firewall_rules_update
+- uid: az_redis_firewall_rules_create
+  name: az redis firewall-rules create
+  summary: Create a redis cache firewall rule.
+  description: Usage example - az redis firewall-rules create --name testCacheName --resource-group testResourceGroup  --start-ip 10.10.10.10 --end-ip 20.20.20.20 --rule-name 10to20.
   langs:
   - azurecli
   parameters:
+  - isRequired: true
+    name: --end-ip
+    summary: Highest IP address included in the range.
+    description: ''
   - isRequired: true
     name: --name -n
     summary: Name of the Redis cache.
@@ -27,8 +32,12 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - isRequired: true
-    name: --schedule-entries
-    summary: List of Patch schedule entries. Example Value:[{"dayOfWeek":"Monday","startHourUtc":"00","maintenanceWindow":"PT5H"}].
+    name: --rule-name
+    summary: The name of the firewall rule.
+    description: ''
+  - isRequired: true
+    name: --start-ip
+    summary: Lowest IP address included in the range.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -39,9 +48,38 @@ items:
       branch: master
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_redis_patch_schedule_delete
-  name: az redis patch-schedule delete
-  summary: Deletes the patching schedule of a redis cache (requires Premium SKU).
+- uid: az_redis_firewall_rules_delete
+  name: az redis firewall-rules delete
+  summary: Deletes a single firewall rule in a specified redis cache.
+  description: ''
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --rule-name
+    summary: The name of the firewall rule.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Name of the Redis cache.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
+    remote:
+      branch: master
+      path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_redis_firewall_rules_list
+  name: az redis firewall-rules list
+  summary: Gets all firewall rules in the specified redis cache.
   description: ''
   langs:
   - azurecli
@@ -63,19 +101,24 @@ items:
       branch: master
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_redis_patch_schedule_show
-  name: az redis patch-schedule show
-  summary: Gets the patching schedule of a redis cache (requires Premium SKU).
+- uid: az_redis_firewall_rules_show
+  name: az redis firewall-rules show
+  summary: Gets a single firewall rule in a specified redis cache.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --rule-name
+    summary: The name of the firewall rule.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
     summary: Name of the Redis cache.
     description: ''
-  - isRequired: true
-    name: --resource-group -g
+  - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --subscription
@@ -87,24 +130,33 @@ items:
       branch: master
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_redis_patch_schedule_update
-  name: az redis patch-schedule update
-  summary: Update the patching schedule for Redis cache.
-  description: Usage example - az redis patch-schedule update --name testCacheName --resource-group testResourceGroup --schedule-entries '[{"dayOfWeek":"Tuesday","startHourUtc":"00","maintenanceWindow":"PT5H"}]'.
+- uid: az_redis_firewall_rules_update
+  name: az redis firewall-rules update
+  summary: Update a redis cache firewall rule.
+  description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
+    name: --end-ip
+    summary: Highest IP address included in the range.
+    description: ''
+  - isRequired: true
+    name: --rule-name
+    summary: The name of the firewall rule.
+    description: ''
+  - isRequired: true
+    name: --start-ip
+    summary: Lowest IP address included in the range.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
     summary: Name of the Redis cache.
     description: ''
-  - isRequired: true
-    name: --resource-group -g
+  - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - isRequired: true
-    name: --schedule-entries
-    summary: List of Patch schedule entries. Example Value:[{"dayOfWeek":"Monday","startHourUtc":"00","maintenanceWindow":"PT5H"}].
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -116,18 +168,21 @@ items:
       path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_redis_patch_schedule_create
-  name: az redis patch-schedule create
-  summary: Create patching schedule for Redis cache.
-- uid: az_redis_patch_schedule_delete
-  name: az redis patch-schedule delete
-  summary: Deletes the patching schedule of a redis cache (requires Premium SKU).
-- uid: az_redis_patch_schedule_show
-  name: az redis patch-schedule show
-  summary: Gets the patching schedule of a redis cache (requires Premium SKU).
-- uid: az_redis_patch_schedule_update
-  name: az redis patch-schedule update
-  summary: Update the patching schedule for Redis cache.
+- uid: az_redis_firewall_rules_create
+  name: az redis firewall-rules create
+  summary: Create a redis cache firewall rule.
+- uid: az_redis_firewall_rules_delete
+  name: az redis firewall-rules delete
+  summary: Deletes a single firewall rule in a specified redis cache.
+- uid: az_redis_firewall_rules_list
+  name: az redis firewall-rules list
+  summary: Gets all firewall rules in the specified redis cache.
+- uid: az_redis_firewall_rules_show
+  name: az redis firewall-rules show
+  summary: Gets a single firewall rule in a specified redis cache.
+- uid: az_redis_firewall_rules_update
+  name: az redis firewall-rules update
+  summary: Update a redis cache firewall rule.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -147,4 +202,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/com
 gitcommit: https://github.com/Azure/azure-cli/blob/3ba5b6dda266a17563bad4004548cc932cec3381/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
 updated_at: 2/6/2019 10:30:14 PM
 ms.date: 02/06/2019
-description: Manage Redis patch schedules.
+description: Manage Redis firewall rules.
