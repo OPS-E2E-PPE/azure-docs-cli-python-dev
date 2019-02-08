@@ -3201,6 +3201,13 @@
         - name: Show
           uid: az_functionapp_deployment_user_show
           displayName: az functionapp deployment user show
+    - name: Devops-Build
+      uid: az_functionapp_devops_build
+      displayName: az functionapp devops-build
+      items:
+      - name: Create
+        uid: az_functionapp_devops_build_create
+        displayName: az functionapp devops-build create
     - name: Identity
       uid: az_functionapp_identity
       displayName: az functionapp identity
