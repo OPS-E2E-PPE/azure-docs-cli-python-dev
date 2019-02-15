@@ -5041,6 +5041,23 @@
         - name: Show
           uid: az_network_express_route_auth_show
           displayName: az network express-route auth show
+      - name: Gateway
+        uid: az_network_express_route_gateway
+        displayName: az network express-route gateway
+        items:
+        - name: Create
+          uid: az_network_express_route_gateway_create
+          displayName: az network express-route gateway create
+        - name: List
+          uid: az_network_express_route_gateway_list
+          displayName: az network express-route gateway list
+        - name: Connection
+          uid: az_network_express_route_gateway_connection
+          displayName: az network express-route gateway connection
+          items:
+          - name: Create
+            uid: az_network_express_route_gateway_connection_create
+            displayName: az network express-route gateway connection create
       - name: Peering
         uid: az_network_express_route_peering
         displayName: az network express-route peering
@@ -5067,6 +5084,16 @@
           - name: Create
             uid: az_network_express_route_peering_connection_create
             displayName: az network express-route peering connection create
+      - name: Port
+        uid: az_network_express_route_port
+        displayName: az network express-route port
+        items:
+        - name: Create
+          uid: az_network_express_route_port_create
+          displayName: az network express-route port create
+        - name: List
+          uid: az_network_express_route_port_list
+          displayName: az network express-route port list
     - name: Interface-Endpoint
       uid: az_network_interface_endpoint
       displayName: az network interface-endpoint
