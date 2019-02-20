@@ -47,6 +47,9 @@ items:
   - name: --log-version
     summary: Version (revision) of the flow log.
     description: ''
+  - name: --interval
+    summary: Interval in minutes at which to conduct flow analytics.
+    description: ''
   - name: --traffic-analytics
     parameterValueGroup: false, true
     summary: Enable traffic analytics. Defaults to true if `--workspace` is provided.
