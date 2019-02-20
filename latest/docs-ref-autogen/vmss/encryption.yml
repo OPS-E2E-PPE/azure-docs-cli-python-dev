@@ -59,7 +59,7 @@ items:
   parameters:
   - isRequired: true
     name: --disk-encryption-keyvault
-    summary: The key vault where the generated encryption key will be placed.
+    summary: Name or ID of the key vault where the generated encryption key will be placed.
     description: ''
   - name: --force
     summary: Continue by ignoring client side validation errors.
@@ -72,7 +72,7 @@ items:
     summary: Key vault key name or URL used to encrypt the disk encryption key.
     description: ''
   - name: --key-encryption-keyvault
-    summary: The key vault containing the key encryption key used to encrypt the disk encryption key. If missing, CLI will use `--disk-encryption-keyvault`.
+    summary: Name or ID of the key vault containing the key encryption key used to encrypt the disk encryption key. If missing, CLI will use `--disk-encryption-keyvault`.
     description: ''
   - name: --volume-type
     parameterValueGroup: ALL, DATA, OS

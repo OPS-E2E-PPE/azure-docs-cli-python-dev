@@ -103,7 +103,7 @@ items:
     description: ''
   - name: --license-type
     parameterValueGroup: None, Windows_Client, Windows_Server
-    summary: License type if the Windows image or disk used was licensed on-premises.
+    summary: Specifies that the Windows image or disk was licensed on-premises. To enable Azure Hybrid Benefit for Windows Server, use 'Windows_Server'. To enable Multitenant Hosting Rights for Windows 10, use 'Windows_Client'. For more information see the Azure Windows VM online docs.
     description: ''
   - name: --location -l
     summary: Location in which to create VM and related resources. If default location is not configured, will default to the resource group's location.
@@ -788,7 +788,7 @@ items:
   parameters:
   - name: --license-type
     parameterValueGroup: None, Windows_Client, Windows_Server
-    summary: License type if the Windows image or disk used was licensed on-premises.
+    summary: Specifies that the Windows image or disk was licensed on-premises. To enable Azure Hybrid Benefit for Windows Server, use 'Windows_Server'. To enable Multitenant Hosting Rights for Windows 10, use 'Windows_Client'. For more information see the Azure Windows VM online docs.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
