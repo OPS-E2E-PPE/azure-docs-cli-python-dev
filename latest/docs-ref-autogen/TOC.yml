@@ -866,6 +866,9 @@
         - name: Delete
           uid: az_batch_application_package_delete
           displayName: az batch application package delete
+        - name: List
+          uid: az_batch_application_package_list
+          displayName: az batch application package list
         - name: Show
           uid: az_batch_application_package_show
           displayName: az batch application package show
@@ -1120,13 +1123,6 @@
         - name: List
           uid: az_batch_pool_node_counts_list
           displayName: az batch pool node-counts list
-      - name: Operating Systems
-        uid: az_batch_pool_os
-        displayName: az batch pool os
-        items:
-        - name: Upgrade
-          uid: az_batch_pool_os_upgrade
-          displayName: az batch pool os upgrade
       - name: Statistics
         uid: az_batch_pool_all_statistics
         displayName: az batch pool all-statistics
