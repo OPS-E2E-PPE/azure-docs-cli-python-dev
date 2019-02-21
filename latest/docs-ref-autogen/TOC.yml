@@ -2133,6 +2133,19 @@
       - name: Show
         uid: az_cosmosdb_database_show
         displayName: az cosmosdb database show
+    - name: Network-Rule
+      uid: az_cosmosdb_network_rule
+      displayName: az cosmosdb network-rule
+      items:
+      - name: Add
+        uid: az_cosmosdb_network_rule_add
+        displayName: az cosmosdb network-rule add
+      - name: List
+        uid: az_cosmosdb_network_rule_list
+        displayName: az cosmosdb network-rule list
+      - name: Remove
+        uid: az_cosmosdb_network_rule_remove
+        displayName: az cosmosdb network-rule remove
   - name: Data Lake Analytics
     uid: az_dla
     displayName: az dla
