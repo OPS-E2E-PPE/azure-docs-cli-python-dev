@@ -6024,6 +6024,19 @@
       - name: Wait
         uid: az_network_vnet_gateway_wait
         displayName: az network vnet-gateway wait
+      - name: Ipsec-Policy
+        uid: az_network_vnet_gateway_ipsec_policy
+        displayName: az network vnet-gateway ipsec-policy
+        items:
+        - name: Add
+          uid: az_network_vnet_gateway_ipsec_policy_add
+          displayName: az network vnet-gateway ipsec-policy add
+        - name: Clear
+          uid: az_network_vnet_gateway_ipsec_policy_clear
+          displayName: az network vnet-gateway ipsec-policy clear
+        - name: List
+          uid: az_network_vnet_gateway_ipsec_policy_list
+          displayName: az network vnet-gateway ipsec-policy list
       - name: Revoked Certificates
         uid: az_network_vnet_gateway_revoked_cert
         displayName: az network vnet-gateway revoked-cert

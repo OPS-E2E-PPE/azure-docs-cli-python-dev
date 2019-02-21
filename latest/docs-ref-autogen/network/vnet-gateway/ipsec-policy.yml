@@ -1,46 +1,46 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_network_vpn_connection_ipsec_policy
-  name: az network vpn-connection ipsec-policy
-  summary: Manage VPN connection IPSec policies.
+- uid: az_network_vnet_gateway_ipsec_policy
+  name: az network vnet-gateway ipsec-policy
+  summary: Manage virtual network gateway IPSec policies.
   description: ''
   langs:
   - azurecli
   children:
-  - az_network_vpn_connection_ipsec_policy_add
-  - az_network_vpn_connection_ipsec_policy_clear
-  - az_network_vpn_connection_ipsec_policy_list
-- uid: az_network_vpn_connection_ipsec_policy_add
-  name: az network vpn-connection ipsec-policy add
-  summary: Add a VPN connection IPSec policy.
-  description: Set all IPsec policies of a VPN connection. If you want to set any IPsec policy, you must set them all.
+  - az_network_vnet_gateway_ipsec_policy_add
+  - az_network_vnet_gateway_ipsec_policy_clear
+  - az_network_vnet_gateway_ipsec_policy_list
+- uid: az_network_vnet_gateway_ipsec_policy_add
+  name: az network vnet-gateway ipsec-policy add
+  summary: Add a virtual network gateway IPSec policy.
+  description: Set all IPsec policies of a virtual network gateway. If you want to set any IPsec policy, you must set them all.
   langs:
   - azurecli
   examples:
-  - summary: Add specified IPsec policies to a connection instead of relying on defaults.
+  - summary: Add specified IPsec policies to a gateway instead of relying on defaults.
     syntax:
       content: >-
-        az network vpn-connection ipsec-policy add -g MyResourceGroup --connection-name MyConnection \
+        az network vnet-gateway ipsec-policy add -g MyResourceGroup --gateway-name MyGateway \
                                     --dh-group DHGroup14 --ike-encryption AES256 --ike-integrity SHA384 --ipsec-encryption DES3 \
                                     --ipsec-integrity GCMAES256 --pfs-group PFS2048 --sa-lifetime 600 --sa-max-size 1024
   parameters:
-  - isRequired: true
-    name: --connection-name
-    summary: Connection name.
-    description: ''
   - isRequired: true
     name: --dh-group
     parameterValueGroup: DHGroup1, DHGroup14, DHGroup2, DHGroup2048, DHGroup24, ECP256, ECP384, None
     summary: Required. The DH Groups used in IKE Phase 1 for initial SA.
     description: ''
   - isRequired: true
+    name: --gateway-name
+    summary: Virtual network gateway name.
+    description: ''
+  - isRequired: true
     name: --ike-encryption
-    parameterValueGroup: AES128, AES192, AES256, DES, DES3
+    parameterValueGroup: AES128, AES192, AES256, DES, DES3, GCMAES128, GCMAES256
     summary: Required. The IKE encryption algorithm (IKE phase 2).
     description: ''
   - isRequired: true
     name: --ike-integrity
-    parameterValueGroup: MD5, SHA1, SHA256, SHA384
+    parameterValueGroup: GCMAES128, GCMAES256, MD5, SHA1, SHA256, SHA384
     summary: Required. The IKE integrity algorithm (IKE phase 2).
     description: ''
   - isRequired: true
@@ -55,8 +55,8 @@ items:
     description: ''
   - isRequired: true
     name: --pfs-group
-    parameterValueGroup: ECP256, ECP384, None, PFS1, PFS2, PFS2048, PFS24
-    summary: Required. The DH Groups used in IKE Phase 2 for new child SA.
+    parameterValueGroup: ECP256, ECP384, None, PFS1, PFS14, PFS2, PFS2048, PFS24, PFSMM
+    summary: Required. The Pfs Groups used in IKE Phase 2 for new child SA.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -82,20 +82,20 @@ items:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_network_vpn_connection_ipsec_policy_clear
-  name: az network vpn-connection ipsec-policy clear
-  summary: Delete all IPsec policies on a VPN connection.
+- uid: az_network_vnet_gateway_ipsec_policy_clear
+  name: az network vnet-gateway ipsec-policy clear
+  summary: Delete all IPsec policies on a virtual network gateway.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Remove all previously specified IPsec policies from a connection.
+  - summary: Remove all previously specified IPsec policies from a gateway.
     syntax:
-      content: az network vpn-connection ipsec-policy clear -g MyResourceGroup --connection-name MyConnection
+      content: az network vnet-gateway ipsec-policy clear -g MyResourceGroup --gateway-name MyConnection
   parameters:
   - isRequired: true
-    name: --connection-name
-    summary: Connection name.
+    name: --gateway-name
+    summary: Virtual network gateway name.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -113,20 +113,20 @@ items:
       branch: master
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_network_vpn_connection_ipsec_policy_list
-  name: az network vpn-connection ipsec-policy list
-  summary: List IPSec policies associated with a VPN connection.
+- uid: az_network_vnet_gateway_ipsec_policy_list
+  name: az network vnet-gateway ipsec-policy list
+  summary: List IPSec policies associated with a virtual network gateway.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: List the IPsec policies set on a connection.
+  - summary: List the IPsec policies set on a gateway.
     syntax:
-      content: az network vpn-connection ipsec-policy list -g MyResourceGroup --connection-name MyConnection
+      content: az network vnet-gateway ipsec-policy list -g MyResourceGroup --gateway-name MyConnection
   parameters:
   - isRequired: true
-    name: --connection-name
-    summary: Connection name.
+    name: --gateway-name
+    summary: Virtual network gateway name.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -142,15 +142,15 @@ items:
       path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_network_vpn_connection_ipsec_policy_add
-  name: az network vpn-connection ipsec-policy add
-  summary: Add a VPN connection IPSec policy.
-- uid: az_network_vpn_connection_ipsec_policy_clear
-  name: az network vpn-connection ipsec-policy clear
-  summary: Delete all IPsec policies on a VPN connection.
-- uid: az_network_vpn_connection_ipsec_policy_list
-  name: az network vpn-connection ipsec-policy list
-  summary: List IPSec policies associated with a VPN connection.
+- uid: az_network_vnet_gateway_ipsec_policy_add
+  name: az network vnet-gateway ipsec-policy add
+  summary: Add a virtual network gateway IPSec policy.
+- uid: az_network_vnet_gateway_ipsec_policy_clear
+  name: az network vnet-gateway ipsec-policy clear
+  summary: Delete all IPsec policies on a virtual network gateway.
+- uid: az_network_vnet_gateway_ipsec_policy_list
+  name: az network vnet-gateway ipsec-policy list
+  summary: List IPSec policies associated with a virtual network gateway.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -170,4 +170,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/com
 gitcommit: https://github.com/Azure/azure-cli/blob/f3a351fb04a22187f3cdd7fbee0e74bf9f2f4b2b/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
 updated_at: 2/21/2019 6:16:51 PM
 ms.date: 02/21/2019
-description: Manage VPN connection IPSec policies.
+description: Manage virtual network gateway IPSec policies.
