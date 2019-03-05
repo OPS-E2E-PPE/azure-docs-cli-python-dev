@@ -89,7 +89,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/6aa14eeaa592814f21a2d5dd0dbd93430a0e30e1/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 2/8/2019 1:38:02 AM
-ms.date: 02/08/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/76200356cab0eb2d690ece4ec77ef7a9a8ff177f/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 3/5/2019 8:43:29 PM
+ms.date: 03/05/2019
 description: Configure the Azure Virtual Machine Scale Set diagnostics extension.
