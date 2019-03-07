@@ -306,7 +306,7 @@ items:
     description: ''
 - uid: az_webapp_up
   name: az webapp up
-  summary: (Preview) Create and deploy existing local code to the web app, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows web app is created.
+  summary: Create and deploy existing local code to the web app, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows web app is created.
   description: ''
   langs:
   - azurecli
@@ -696,7 +696,7 @@ commands:
   summary: Display the current distribution of traffic across slots.
 - uid: az_webapp_up
   name: az webapp up
-  summary: (Preview) Create and deploy existing local code to the web app, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows web app is created.
+  summary: Create and deploy existing local code to the web app, by running the command from the folder where the code is present. Supports running the command in preview mode using --dryrun parameter. Current supports includes Node, Python,.NET Core, ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows web app is created.
 - uid: az_webapp_update
   name: az webapp update
   summary: Update a web app.
