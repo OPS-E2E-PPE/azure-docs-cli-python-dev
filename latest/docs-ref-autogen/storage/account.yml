@@ -392,7 +392,6 @@ items:
     summary: The name of the KeyVault key.
     description: ''
   - name: --encryption-key-source
-    defaultValue: Microsoft.Storage
     parameterValueGroup: Microsoft.Keyvault, Microsoft.Storage
     summary: The default encryption service.
     description: ''
