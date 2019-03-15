@@ -541,6 +541,9 @@
         - name: List
           uid: az_ad_app_permission_list
           displayName: az ad app permission list
+        - name: List-Grants
+          uid: az_ad_app_permission_list_grants
+          displayName: az ad app permission list-grants
     - name: Groups
       uid: az_ad_group
       displayName: az ad group
@@ -608,6 +611,9 @@
       - name: Show
         uid: az_ad_sp_show
         displayName: az ad sp show
+      - name: Update
+        uid: az_ad_sp_update
+        displayName: az ad sp update
       - name: Credential
         uid: az_ad_sp_credential
         displayName: az ad sp credential
@@ -1972,6 +1978,22 @@
       - name: Update-Run
         uid: az_acr_task_update_run
         displayName: az acr task update-run
+      - name: Credential
+        uid: az_acr_task_credential
+        displayName: az acr task credential
+        items:
+        - name: Add
+          uid: az_acr_task_credential_add
+          displayName: az acr task credential add
+        - name: List
+          uid: az_acr_task_credential_list
+          displayName: az acr task credential list
+        - name: Remove
+          uid: az_acr_task_credential_remove
+          displayName: az acr task credential remove
+        - name: Update
+          uid: az_acr_task_credential_update
+          displayName: az acr task credential update
     - name: Webhook
       uid: az_acr_webhook
       displayName: az acr webhook

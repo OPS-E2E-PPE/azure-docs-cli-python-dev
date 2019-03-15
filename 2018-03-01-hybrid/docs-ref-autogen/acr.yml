@@ -48,6 +48,10 @@ items:
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
+  - name: --auth-mode
+    parameterValueGroup: Default, None
+    summary: Auth mode of the source registry.
+    description: ''
   - name: --build-arg
     summary: Build argument in 'name[=value]' format.
     description: ''
@@ -334,6 +338,10 @@ items:
   - isRequired: true
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
+    description: ''
+  - name: --auth-mode
+    parameterValueGroup: Default, None
+    summary: Auth mode of the source registry.
     description: ''
   - name: --file -f
     defaultValue: acb.yaml
@@ -634,6 +642,21 @@ commands:
 - uid: az_acr_task_create
   name: az acr task create
   summary: Creates a series of steps for building, testing and OS & Framework patching containers. Tasks support triggers from git commits and base image updates.
+- uid: az_acr_task_credential
+  name: az acr task credential
+  summary: Manage credentials for a task.
+- uid: az_acr_task_credential_add
+  name: az acr task credential add
+  summary: Add a custom registry login credential to the task.
+- uid: az_acr_task_credential_list
+  name: az acr task credential list
+  summary: List all the custom registry credentials for task.
+- uid: az_acr_task_credential_remove
+  name: az acr task credential remove
+  summary: Remove credential for a task.
+- uid: az_acr_task_credential_update
+  name: az acr task credential update
+  summary: Update the registry login credential for a task.
 - uid: az_acr_task_delete
   name: az acr task delete
   summary: Delete a task from an Azure Container Registry.
@@ -707,7 +730,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/5d9d5f6f6e891eace04393e64b9f0b3dffa3625a/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
-updated_at: 3/5/2019 6:41:36 PM
-ms.date: 03/05/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/a5d880d18241d22797d6689a2c46d54f58e8fa97/src/command_modules/azure-cli-acr/azure/cli/command_modules/acr/_help.py
+updated_at: 3/15/2019 3:42:06 PM
+ms.date: 03/15/2019
 description: Manage private registries with Azure Container Registries.

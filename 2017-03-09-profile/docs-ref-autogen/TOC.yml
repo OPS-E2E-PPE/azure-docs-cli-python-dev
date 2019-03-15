@@ -87,6 +87,9 @@
         - name: List
           uid: az_ad_app_permission_list
           displayName: az ad app permission list
+        - name: List-Grants
+          uid: az_ad_app_permission_list_grants
+          displayName: az ad app permission list-grants
     - name: Groups
       uid: az_ad_group
       displayName: az ad group
@@ -154,6 +157,9 @@
       - name: Show
         uid: az_ad_sp_show
         displayName: az ad sp show
+      - name: Update
+        uid: az_ad_sp_update
+        displayName: az ad sp update
       - name: Credential
         uid: az_ad_sp_credential
         displayName: az ad sp credential
