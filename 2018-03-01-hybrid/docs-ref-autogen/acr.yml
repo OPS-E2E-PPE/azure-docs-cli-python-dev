@@ -70,6 +70,9 @@ items:
   - name: --no-push
     summary: Indicates whether the image built should be pushed to the registry.
     description: ''
+  - name: --no-wait
+    summary: Do not wait for the build to complete and return immediately after queuing the build.
+    description: ''
   - name: --os
     summary: The operating system type required for the build.
     description: ''
