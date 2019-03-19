@@ -532,6 +532,9 @@
         - name: Add
           uid: az_ad_app_permission_add
           displayName: az ad app permission add
+        - name: Admin-Consent
+          uid: az_ad_app_permission_admin_consent
+          displayName: az ad app permission admin-consent
         - name: Delete
           uid: az_ad_app_permission_delete
           displayName: az ad app permission delete
