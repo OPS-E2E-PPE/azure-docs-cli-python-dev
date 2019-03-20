@@ -8718,6 +8718,9 @@
     - name: Show
       uid: az_image_show
       displayName: az image show
+    - name: Update
+      uid: az_image_update
+      displayName: az image update
   - name: VM Scale Sets
     uid: az_vmss
     displayName: az vmss
