@@ -4028,6 +4028,9 @@
       - name: List
         uid: az_mariadb_server_list
         displayName: az mariadb server list
+      - name: Restart
+        uid: az_mariadb_server_restart
+        displayName: az mariadb server restart
       - name: Restore
         uid: az_mariadb_server_restore
         displayName: az mariadb server restore
@@ -4400,6 +4403,9 @@
       - name: List
         uid: az_mysql_server_list
         displayName: az mysql server list
+      - name: Restart
+        uid: az_mysql_server_restart
+        displayName: az mysql server restart
       - name: Restore
         uid: az_mysql_server_restore
         displayName: az mysql server restore
@@ -5922,6 +5928,9 @@
       - name: List
         uid: az_postgres_server_list
         displayName: az postgres server list
+      - name: Restart
+        uid: az_postgres_server_restart
+        displayName: az postgres server restart
       - name: Restore
         uid: az_postgres_server_restore
         displayName: az postgres server restore
@@ -5966,6 +5975,19 @@
         - name: Update
           uid: az_postgres_server_firewall_rule_update
           displayName: az postgres server firewall-rule update
+      - name: Replica
+        uid: az_postgres_server_replica
+        displayName: az postgres server replica
+        items:
+        - name: Create
+          uid: az_postgres_server_replica_create
+          displayName: az postgres server replica create
+        - name: List
+          uid: az_postgres_server_replica_list
+          displayName: az postgres server replica list
+        - name: Stop
+          uid: az_postgres_server_replica_stop
+          displayName: az postgres server replica stop
       - name: Vnet-Rule
         uid: az_postgres_server_vnet_rule
         displayName: az postgres server vnet-rule

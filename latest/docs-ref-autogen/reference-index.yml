@@ -388,7 +388,7 @@ commands:
   summary: Manage and administer Azure Service Fabric clusters.
 - uid: az_sig
   name: az sig
-  summary: Manage shared image galleries.
+  summary: Manage shared image gallery.
 - uid: az_signalr
   name: az signalr
   summary: Manage Azure SignalR Service.
