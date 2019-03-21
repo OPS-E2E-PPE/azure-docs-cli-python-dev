@@ -1377,6 +1377,9 @@
     - name: Download
       uid: az_bot_download
       displayName: az bot download
+    - name: Prepare-Deploy
+      uid: az_bot_prepare_deploy
+      displayName: az bot prepare-deploy
     - name: Prepare-Publish
       uid: az_bot_prepare_publish
       displayName: az bot prepare-publish
