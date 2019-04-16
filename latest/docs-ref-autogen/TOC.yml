@@ -10181,6 +10181,38 @@
         - name: Query
           uid: ext_application-insights_az_monitor_app_insights_query
           displayName: az monitor app-insights query
+        - name: Api-Key
+          uid: ext_application-insights_az_monitor_app_insights_api_key
+          displayName: az monitor app-insights api-key
+          items:
+          - name: Create
+            uid: ext_application-insights_az_monitor_app_insights_api_key_create
+            displayName: az monitor app-insights api-key create
+          - name: Delete
+            uid: ext_application-insights_az_monitor_app_insights_api_key_delete
+            displayName: az monitor app-insights api-key delete
+          - name: Show
+            uid: ext_application-insights_az_monitor_app_insights_api_key_show
+            displayName: az monitor app-insights api-key show
+        - name: Component
+          uid: ext_application-insights_az_monitor_app_insights_component
+          displayName: az monitor app-insights component
+          items:
+          - name: Create
+            uid: ext_application-insights_az_monitor_app_insights_component_create
+            displayName: az monitor app-insights component create
+          - name: Delete
+            uid: ext_application-insights_az_monitor_app_insights_component_delete
+            displayName: az monitor app-insights component delete
+          - name: Show
+            uid: ext_application-insights_az_monitor_app_insights_component_show
+            displayName: az monitor app-insights component show
+          - name: Update
+            uid: ext_application-insights_az_monitor_app_insights_component_update
+            displayName: az monitor app-insights component update
+          - name: Update-Tags
+            uid: ext_application-insights_az_monitor_app_insights_component_update_tags
+            displayName: az monitor app-insights component update-tags
         - name: Events
           uid: ext_application-insights_az_monitor_app_insights_events
           displayName: az monitor app-insights events
