@@ -1640,6 +1640,19 @@
       - name: Usage
         uid: az_cdn_profile_usage
         displayName: az cdn profile usage
+  - name: Cache
+    uid: az_cache
+    displayName: az cache
+    items:
+    - name: Delete
+      uid: az_cache_delete
+      displayName: az cache delete
+    - name: List
+      uid: az_cache_list
+      displayName: az cache list
+    - name: Show
+      uid: az_cache_show
+      displayName: az cache show
   - name: Cloud Management
     uid: az_cloud
     displayName: az cloud
@@ -2634,6 +2647,106 @@
       - name: Show
         uid: az_deployment_operation_show
         displayName: az deployment operation show
+  - name: Deploymentmanager
+    uid: az_deploymentmanager
+    displayName: az deploymentmanager
+    items:
+    - name: Artifact-Source
+      uid: az_deploymentmanager_artifact_source
+      displayName: az deploymentmanager artifact-source
+      items:
+      - name: Create
+        uid: az_deploymentmanager_artifact_source_create
+        displayName: az deploymentmanager artifact-source create
+      - name: Delete
+        uid: az_deploymentmanager_artifact_source_delete
+        displayName: az deploymentmanager artifact-source delete
+      - name: Show
+        uid: az_deploymentmanager_artifact_source_show
+        displayName: az deploymentmanager artifact-source show
+      - name: Update
+        uid: az_deploymentmanager_artifact_source_update
+        displayName: az deploymentmanager artifact-source update
+    - name: Rollout
+      uid: az_deploymentmanager_rollout
+      displayName: az deploymentmanager rollout
+      items:
+      - name: Delete
+        uid: az_deploymentmanager_rollout_delete
+        displayName: az deploymentmanager rollout delete
+      - name: Restart
+        uid: az_deploymentmanager_rollout_restart
+        displayName: az deploymentmanager rollout restart
+      - name: Show
+        uid: az_deploymentmanager_rollout_show
+        displayName: az deploymentmanager rollout show
+      - name: Stop
+        uid: az_deploymentmanager_rollout_stop
+        displayName: az deploymentmanager rollout stop
+    - name: Service
+      uid: az_deploymentmanager_service
+      displayName: az deploymentmanager service
+      items:
+      - name: Create
+        uid: az_deploymentmanager_service_create
+        displayName: az deploymentmanager service create
+      - name: Delete
+        uid: az_deploymentmanager_service_delete
+        displayName: az deploymentmanager service delete
+      - name: Show
+        uid: az_deploymentmanager_service_show
+        displayName: az deploymentmanager service show
+      - name: Update
+        uid: az_deploymentmanager_service_update
+        displayName: az deploymentmanager service update
+    - name: Service-Topology
+      uid: az_deploymentmanager_service_topology
+      displayName: az deploymentmanager service-topology
+      items:
+      - name: Create
+        uid: az_deploymentmanager_service_topology_create
+        displayName: az deploymentmanager service-topology create
+      - name: Delete
+        uid: az_deploymentmanager_service_topology_delete
+        displayName: az deploymentmanager service-topology delete
+      - name: Show
+        uid: az_deploymentmanager_service_topology_show
+        displayName: az deploymentmanager service-topology show
+      - name: Update
+        uid: az_deploymentmanager_service_topology_update
+        displayName: az deploymentmanager service-topology update
+    - name: Service-Unit
+      uid: az_deploymentmanager_service_unit
+      displayName: az deploymentmanager service-unit
+      items:
+      - name: Create
+        uid: az_deploymentmanager_service_unit_create
+        displayName: az deploymentmanager service-unit create
+      - name: Delete
+        uid: az_deploymentmanager_service_unit_delete
+        displayName: az deploymentmanager service-unit delete
+      - name: Show
+        uid: az_deploymentmanager_service_unit_show
+        displayName: az deploymentmanager service-unit show
+      - name: Update
+        uid: az_deploymentmanager_service_unit_update
+        displayName: az deploymentmanager service-unit update
+    - name: Step
+      uid: az_deploymentmanager_step
+      displayName: az deploymentmanager step
+      items:
+      - name: Create
+        uid: az_deploymentmanager_step_create
+        displayName: az deploymentmanager step create
+      - name: Delete
+        uid: az_deploymentmanager_step_delete
+        displayName: az deploymentmanager step delete
+      - name: Show
+        uid: az_deploymentmanager_step_show
+        displayName: az deploymentmanager step show
+      - name: Update
+        uid: az_deploymentmanager_step_update
+        displayName: az deploymentmanager step update
   - name: Devtest Lab
     uid: az_lab
     displayName: az lab
@@ -10019,93 +10132,6 @@
       - name: Remove-All
         uid: ext_alias_az_alias_remove_all
         displayName: az alias remove-all
-  - name: anf-preview
-    uid: ext_anf-preview_az
-    items:
-    - name: Anf
-      uid: ext_anf-preview_az_anf
-      displayName: az anf
-      items:
-      - name: Account
-        uid: ext_anf-preview_az_anf_account
-        displayName: az anf account
-        items:
-        - name: Create
-          uid: ext_anf-preview_az_anf_account_create
-          displayName: az anf account create
-        - name: Delete
-          uid: ext_anf-preview_az_anf_account_delete
-          displayName: az anf account delete
-        - name: List
-          uid: ext_anf-preview_az_anf_account_list
-          displayName: az anf account list
-        - name: Show
-          uid: ext_anf-preview_az_anf_account_show
-          displayName: az anf account show
-        - name: Update
-          uid: ext_anf-preview_az_anf_account_update
-          displayName: az anf account update
-      - name: Mount-Target
-        uid: ext_anf-preview_az_anf_mount_target
-        displayName: az anf mount-target
-        items:
-        - name: List
-          uid: ext_anf-preview_az_anf_mount_target_list
-          displayName: az anf mount-target list
-      - name: Pool
-        uid: ext_anf-preview_az_anf_pool
-        displayName: az anf pool
-        items:
-        - name: Create
-          uid: ext_anf-preview_az_anf_pool_create
-          displayName: az anf pool create
-        - name: Delete
-          uid: ext_anf-preview_az_anf_pool_delete
-          displayName: az anf pool delete
-        - name: List
-          uid: ext_anf-preview_az_anf_pool_list
-          displayName: az anf pool list
-        - name: Show
-          uid: ext_anf-preview_az_anf_pool_show
-          displayName: az anf pool show
-        - name: Update
-          uid: ext_anf-preview_az_anf_pool_update
-          displayName: az anf pool update
-      - name: Snapshot
-        uid: ext_anf-preview_az_anf_snapshot
-        displayName: az anf snapshot
-        items:
-        - name: Create
-          uid: ext_anf-preview_az_anf_snapshot_create
-          displayName: az anf snapshot create
-        - name: Delete
-          uid: ext_anf-preview_az_anf_snapshot_delete
-          displayName: az anf snapshot delete
-        - name: List
-          uid: ext_anf-preview_az_anf_snapshot_list
-          displayName: az anf snapshot list
-        - name: Show
-          uid: ext_anf-preview_az_anf_snapshot_show
-          displayName: az anf snapshot show
-      - name: Volume
-        uid: ext_anf-preview_az_anf_volume
-        displayName: az anf volume
-        items:
-        - name: Create
-          uid: ext_anf-preview_az_anf_volume_create
-          displayName: az anf volume create
-        - name: Delete
-          uid: ext_anf-preview_az_anf_volume_delete
-          displayName: az anf volume delete
-        - name: List
-          uid: ext_anf-preview_az_anf_volume_list
-          displayName: az anf volume list
-        - name: Show
-          uid: ext_anf-preview_az_anf_volume_show
-          displayName: az anf volume show
-        - name: Update
-          uid: ext_anf-preview_az_anf_volume_update
-          displayName: az anf volume update
   - name: appconfig
     uid: ext_appconfig_az
     items:
@@ -11165,14 +11191,11 @@
       - name: Down
         uid: ext_db-up_az_sql_down
         displayName: az sql down
-      - name: Show-Connection-String
-        uid: ext_db-up_az_sql_show_connection_string
-        displayName: az sql show-connection-string
       - name: Up
         uid: ext_db-up_az_sql_up
         displayName: az sql up
-  - name: dev-spaces-preview
-    uid: ext_dev-spaces-preview_az
+  - name: dev-spaces
+    uid: ext_dev-spaces_az
   - name: dms-preview
     uid: ext_dms-preview_az
     items:
@@ -12216,6 +12239,96 @@
         - name: Show
           uid: ext_mixed-reality_az_spatial_anchors_account_key_show
           displayName: az spatial-anchors-account key show
+  - name: netappfiles-preview
+    uid: ext_netappfiles-preview_az
+    items:
+    - name: Netappfiles
+      uid: ext_netappfiles-preview_az_netappfiles
+      displayName: az netappfiles
+      items:
+      - name: Account
+        uid: ext_netappfiles-preview_az_netappfiles_account
+        displayName: az netappfiles account
+        items:
+        - name: Create
+          uid: ext_netappfiles-preview_az_netappfiles_account_create
+          displayName: az netappfiles account create
+        - name: Delete
+          uid: ext_netappfiles-preview_az_netappfiles_account_delete
+          displayName: az netappfiles account delete
+        - name: List
+          uid: ext_netappfiles-preview_az_netappfiles_account_list
+          displayName: az netappfiles account list
+        - name: Set
+          uid: ext_netappfiles-preview_az_netappfiles_account_set
+          displayName: az netappfiles account set
+        - name: Show
+          uid: ext_netappfiles-preview_az_netappfiles_account_show
+          displayName: az netappfiles account show
+        - name: Update
+          uid: ext_netappfiles-preview_az_netappfiles_account_update
+          displayName: az netappfiles account update
+      - name: Mount-Target
+        uid: ext_netappfiles-preview_az_netappfiles_mount_target
+        displayName: az netappfiles mount-target
+        items:
+        - name: List
+          uid: ext_netappfiles-preview_az_netappfiles_mount_target_list
+          displayName: az netappfiles mount-target list
+      - name: Pool
+        uid: ext_netappfiles-preview_az_netappfiles_pool
+        displayName: az netappfiles pool
+        items:
+        - name: Create
+          uid: ext_netappfiles-preview_az_netappfiles_pool_create
+          displayName: az netappfiles pool create
+        - name: Delete
+          uid: ext_netappfiles-preview_az_netappfiles_pool_delete
+          displayName: az netappfiles pool delete
+        - name: List
+          uid: ext_netappfiles-preview_az_netappfiles_pool_list
+          displayName: az netappfiles pool list
+        - name: Show
+          uid: ext_netappfiles-preview_az_netappfiles_pool_show
+          displayName: az netappfiles pool show
+        - name: Update
+          uid: ext_netappfiles-preview_az_netappfiles_pool_update
+          displayName: az netappfiles pool update
+      - name: Snapshot
+        uid: ext_netappfiles-preview_az_netappfiles_snapshot
+        displayName: az netappfiles snapshot
+        items:
+        - name: Create
+          uid: ext_netappfiles-preview_az_netappfiles_snapshot_create
+          displayName: az netappfiles snapshot create
+        - name: Delete
+          uid: ext_netappfiles-preview_az_netappfiles_snapshot_delete
+          displayName: az netappfiles snapshot delete
+        - name: List
+          uid: ext_netappfiles-preview_az_netappfiles_snapshot_list
+          displayName: az netappfiles snapshot list
+        - name: Show
+          uid: ext_netappfiles-preview_az_netappfiles_snapshot_show
+          displayName: az netappfiles snapshot show
+      - name: Volume
+        uid: ext_netappfiles-preview_az_netappfiles_volume
+        displayName: az netappfiles volume
+        items:
+        - name: Create
+          uid: ext_netappfiles-preview_az_netappfiles_volume_create
+          displayName: az netappfiles volume create
+        - name: Delete
+          uid: ext_netappfiles-preview_az_netappfiles_volume_delete
+          displayName: az netappfiles volume delete
+        - name: List
+          uid: ext_netappfiles-preview_az_netappfiles_volume_list
+          displayName: az netappfiles volume list
+        - name: Show
+          uid: ext_netappfiles-preview_az_netappfiles_volume_show
+          displayName: az netappfiles volume show
+        - name: Update
+          uid: ext_netappfiles-preview_az_netappfiles_volume_update
+          displayName: az netappfiles volume update
   - name: privatedns
     uid: ext_privatedns_az
     items:

@@ -95,6 +95,10 @@ items:
     parameterValueGroup: false, true
     summary: Enable VM protection for all subnets in the VNet.
     description: ''
+  - name: --cache
+    parameterValueGroup: read, write, write-through
+    summary: Space-separated list of caching directives.
+    description: ''
   - name: --subnet-name
     summary: Name of a new subnet to create within the VNet.
     description: ''
@@ -263,6 +267,10 @@ items:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --cache
+    parameterValueGroup: read, write, write-through
+    summary: Space-separated list of caching directives.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'

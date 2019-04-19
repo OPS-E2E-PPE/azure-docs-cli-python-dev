@@ -47,6 +47,10 @@ items:
   - name: --route-table
     summary: Name or ID of a route table to associate with the subnet.
     description: ''
+  - name: --cache
+    parameterValueGroup: read, write, write-through
+    summary: Space-separated list of caching directives.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
