@@ -363,10 +363,6 @@
 		"TocTitle": "Managed Disks",
 		"PageTitle": "Managed Disks"
 	},
-	"az documentdb": {
-		"TocTitle": "DocumentDB",
-		"PageTitle": "DocumentDB"
-	},
 	"az feature": {
 		"TocTitle": "Resource provider features",
 		"PageTitle": "Resource provider features"
@@ -386,6 +382,10 @@
 	"az group deployment operation": {
 		"TocTitle": "Operations",
 		"PageTitle": "Deployment operations"
+	},
+	"az hdinsight": {
+		"TocTitle": "HDInsight",
+		"PageTitle": "HDInsight"
 	},
 	"az image": {
 		"TocTitle": "VM Images",
@@ -964,8 +964,8 @@
 		"PageTitle": "Storage container policies"
 	},
 	"az storage cors": {
-		"TocTitle": "Cross-origin resorce sharing",
-		"PageTitle": "Cross-origin resorce sharing"
+		"TocTitle": "Cross-origin resource sharing",
+		"PageTitle": "Cross-origin resource sharing"
 	},
 	"az storage directory": {
 		"TocTitle": "Directories",
@@ -1122,5 +1122,9 @@
 	"az webapp": {
 		"TocTitle": "Web Apps",
 		"PageTitle": "Web Apps"
-	}
+	},
+	"az ams": {
+		"TocTitle": "Azure Media Services",
+		"PageTitle": "Azure Media Services (AMS)"
+	}	
 }
