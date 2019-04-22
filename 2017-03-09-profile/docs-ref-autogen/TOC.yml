@@ -237,6 +237,88 @@
     - name: update
       uid: az_cloud_update
       displayName: az cloud update
+  - name: HDInsight
+    uid: az_hdinsight
+    displayName: az hdinsight
+    items:
+    - name: create
+      uid: az_hdinsight_create
+      displayName: az hdinsight create
+    - name: delete
+      uid: az_hdinsight_delete
+      displayName: az hdinsight delete
+    - name: list
+      uid: az_hdinsight_list
+      displayName: az hdinsight list
+    - name: list-usage
+      uid: az_hdinsight_list_usage
+      displayName: az hdinsight list-usage
+    - name: resize
+      uid: az_hdinsight_resize
+      displayName: az hdinsight resize
+    - name: rotate-disk-encryption-key
+      uid: az_hdinsight_rotate_disk_encryption_key
+      displayName: az hdinsight rotate-disk-encryption-key
+    - name: show
+      uid: az_hdinsight_show
+      displayName: az hdinsight show
+    - name: update
+      uid: az_hdinsight_update
+      displayName: az hdinsight update
+    - name: wait
+      uid: az_hdinsight_wait
+      displayName: az hdinsight wait
+    - name: application
+      uid: az_hdinsight_application
+      displayName: az hdinsight application
+      items:
+      - name: create
+        uid: az_hdinsight_application_create
+        displayName: az hdinsight application create
+      - name: delete
+        uid: az_hdinsight_application_delete
+        displayName: az hdinsight application delete
+      - name: list
+        uid: az_hdinsight_application_list
+        displayName: az hdinsight application list
+      - name: show
+        uid: az_hdinsight_application_show
+        displayName: az hdinsight application show
+      - name: wait
+        uid: az_hdinsight_application_wait
+        displayName: az hdinsight application wait
+    - name: oms
+      uid: az_hdinsight_oms
+      displayName: az hdinsight oms
+      items:
+      - name: disable
+        uid: az_hdinsight_oms_disable
+        displayName: az hdinsight oms disable
+      - name: enable
+        uid: az_hdinsight_oms_enable
+        displayName: az hdinsight oms enable
+      - name: show
+        uid: az_hdinsight_oms_show
+        displayName: az hdinsight oms show
+    - name: script-action
+      uid: az_hdinsight_script_action
+      displayName: az hdinsight script-action
+      items:
+      - name: delete
+        uid: az_hdinsight_script_action_delete
+        displayName: az hdinsight script-action delete
+      - name: execute
+        uid: az_hdinsight_script_action_execute
+        displayName: az hdinsight script-action execute
+      - name: list
+        uid: az_hdinsight_script_action_list
+        displayName: az hdinsight script-action list
+      - name: promote
+        uid: az_hdinsight_script_action_promote
+        displayName: az hdinsight script-action promote
+      - name: show
+        uid: az_hdinsight_script_action_show
+        displayName: az hdinsight script-action show
   - name: Key Vault
     uid: az_keyvault
     displayName: az keyvault
@@ -2298,7 +2380,7 @@
         - name: show
           uid: az_storage_container_policy_show
           displayName: az storage container policy show
-    - name: Cross-origin resorce sharing
+    - name: Cross-origin resource sharing
       uid: az_storage_cors
       displayName: az storage cors
       items:
@@ -3094,88 +3176,6 @@
     - name: update
       uid: az_extension_update
       displayName: az extension update
-  - name: hdinsight
-    uid: az_hdinsight
-    displayName: az hdinsight
-    items:
-    - name: create
-      uid: az_hdinsight_create
-      displayName: az hdinsight create
-    - name: delete
-      uid: az_hdinsight_delete
-      displayName: az hdinsight delete
-    - name: list
-      uid: az_hdinsight_list
-      displayName: az hdinsight list
-    - name: list-usage
-      uid: az_hdinsight_list_usage
-      displayName: az hdinsight list-usage
-    - name: resize
-      uid: az_hdinsight_resize
-      displayName: az hdinsight resize
-    - name: rotate-disk-encryption-key
-      uid: az_hdinsight_rotate_disk_encryption_key
-      displayName: az hdinsight rotate-disk-encryption-key
-    - name: show
-      uid: az_hdinsight_show
-      displayName: az hdinsight show
-    - name: update
-      uid: az_hdinsight_update
-      displayName: az hdinsight update
-    - name: wait
-      uid: az_hdinsight_wait
-      displayName: az hdinsight wait
-    - name: application
-      uid: az_hdinsight_application
-      displayName: az hdinsight application
-      items:
-      - name: create
-        uid: az_hdinsight_application_create
-        displayName: az hdinsight application create
-      - name: delete
-        uid: az_hdinsight_application_delete
-        displayName: az hdinsight application delete
-      - name: list
-        uid: az_hdinsight_application_list
-        displayName: az hdinsight application list
-      - name: show
-        uid: az_hdinsight_application_show
-        displayName: az hdinsight application show
-      - name: wait
-        uid: az_hdinsight_application_wait
-        displayName: az hdinsight application wait
-    - name: oms
-      uid: az_hdinsight_oms
-      displayName: az hdinsight oms
-      items:
-      - name: disable
-        uid: az_hdinsight_oms_disable
-        displayName: az hdinsight oms disable
-      - name: enable
-        uid: az_hdinsight_oms_enable
-        displayName: az hdinsight oms enable
-      - name: show
-        uid: az_hdinsight_oms_show
-        displayName: az hdinsight oms show
-    - name: script-action
-      uid: az_hdinsight_script_action
-      displayName: az hdinsight script-action
-      items:
-      - name: delete
-        uid: az_hdinsight_script_action_delete
-        displayName: az hdinsight script-action delete
-      - name: execute
-        uid: az_hdinsight_script_action_execute
-        displayName: az hdinsight script-action execute
-      - name: list
-        uid: az_hdinsight_script_action_list
-        displayName: az hdinsight script-action list
-      - name: promote
-        uid: az_hdinsight_script_action_promote
-        displayName: az hdinsight script-action promote
-      - name: show
-        uid: az_hdinsight_script_action_show
-        displayName: az hdinsight script-action show
   - name: security
     uid: az_security
     displayName: az security
