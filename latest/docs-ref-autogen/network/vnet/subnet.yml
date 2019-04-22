@@ -58,6 +58,10 @@ items:
     summary: Space-separated list of services allowed private access to this subnet.
     description: ''
     valueFrom: az network vnet list-endpoint-services
+  - name: --cache
+    parameterValueGroup: read, write, write-through
+    summary: Space-separated list of caching directives.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

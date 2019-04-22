@@ -48,7 +48,7 @@ items:
     summary: Allows gateway link to be used in the remote VNet.
     description: ''
   - name: --allow-vnet-access
-    summary: Allows VMs in the remote VNet to access all VMs in the local VNet.
+    summary: Allows VMs in the local VNet to access all VMs in the remov VNet.
     description: ''
   - name: --use-remote-gateways
     summary: Allows VNet to use the remote VNet's gateway. Remote VNet gateway must have --allow-gateway-transit enabled for remote peering. Only 1 peering can have this flag enabled. Cannot be set if the VNet already has a gateway.

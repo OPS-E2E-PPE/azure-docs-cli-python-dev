@@ -17,10 +17,16 @@ items:
   parameters:
   - name: --allow-force-push
     parameterValueGroup: false, true
-    summary: If Azure Devops repository is not clean, should it overwrite remote content?
+    summary: If Azure DevOps repository is not clean, should it overwrite remote content?
     description: ''
   - name: --functionapp-name
-    summary: Name of the Azure Function App that you want to use.
+    summary: Name of the Azure function app that you want to use.
+    description: ''
+  - name: --github-pat
+    summary: Github personal access token for creating pipeline from Github repository.
+    description: ''
+  - name: --github-repository
+    summary: Fullname of your Github repository (e.g. Azure/azure-cli).
     description: ''
   - name: --organization-name
     summary: Name of the Azure DevOps organization that you want to use.
@@ -33,7 +39,7 @@ items:
     summary: Name of the Azure DevOps project that you want to use.
     description: ''
   - name: --repository-name
-    summary: Name of the Azure Devops repository that you want to use.
+    summary: Name of the Azure DevOps repository that you want to use.
     description: ''
   - name: --use-local-settings
     parameterValueGroup: false, true
