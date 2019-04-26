@@ -31,6 +31,10 @@ items:
   - name: --defaults -d
     summary: Space-separated 'name=value' pairs for common argument defaults.
     description: ''
+  - name: --list-defaults
+    parameterValueGroup: global, local
+    summary: List all applicable defaults.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
