@@ -5836,6 +5836,19 @@
       - name: show
         uid: az_sql_midb_show
         displayName: az sql midb show
+    - name: virtual-cluster
+      uid: az_sql_virtual_cluster
+      displayName: az sql virtual-cluster
+      items:
+      - name: delete
+        uid: az_sql_virtual_cluster_delete
+        displayName: az sql virtual-cluster delete
+      - name: list
+        uid: az_sql_virtual_cluster_list
+        displayName: az sql virtual-cluster list
+      - name: show
+        uid: az_sql_virtual_cluster_show
+        displayName: az sql virtual-cluster show
     - name: vm
       uid: az_sql_vm
       displayName: az sql vm
@@ -9282,6 +9295,19 @@
           - name: renew
             uid: az_servicebus_namespace_authorization_rule_keys_renew
             displayName: az servicebus namespace authorization-rule keys renew
+      - name: network-rule
+        uid: az_servicebus_namespace_network_rule
+        displayName: az servicebus namespace network-rule
+        items:
+        - name: add
+          uid: az_servicebus_namespace_network_rule_add
+          displayName: az servicebus namespace network-rule add
+        - name: list
+          uid: az_servicebus_namespace_network_rule_list
+          displayName: az servicebus namespace network-rule list
+        - name: remove
+          uid: az_servicebus_namespace_network_rule_remove
+          displayName: az servicebus namespace network-rule remove
     - name: queue
       uid: az_servicebus_queue
       displayName: az servicebus queue

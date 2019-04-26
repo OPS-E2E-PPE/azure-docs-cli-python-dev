@@ -1,37 +1,37 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_sql_server_tde_key
-  name: az sql server tde-key
-  summary: Manage a server's encryption protector.
+- uid: az_sql_virtual_cluster
+  name: az sql virtual-cluster
+  summary: Manage SQL virtual clusters.
   description: ''
   langs:
   - azurecli
   children:
-  - az_sql_server_tde_key_set
-  - az_sql_server_tde_key_show
-- uid: az_sql_server_tde_key_set
-  name: az sql server tde-key set
-  summary: Sets the server's encryption protector.
+  - az_sql_virtual_cluster_delete
+  - az_sql_virtual_cluster_list
+  - az_sql_virtual_cluster_show
+- uid: az_sql_virtual_cluster_delete
+  name: az sql virtual-cluster delete
+  summary: Delete a virtual cluster.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Delete a virtual cluster
+    syntax:
+      content: az sql virtual-cluster delete -g mygroup -n mycluster
   parameters:
-  - isRequired: true
-    name: --server-key-type -t
-    parameterValueGroup: AzureKeyVault, ServiceManaged
-    summary: The type of the server key.
-    description: ''
-  - name: --kid -k
-    summary: The Azure Key Vault key identifier of the server key to be made encryption protector.An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
+  - name: --name -n
+    summary: The virtual cluster name.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -42,21 +42,51 @@ items:
       branch: master
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_server_tde_key_show
-  name: az sql server tde-key show
-  summary: Gets a server encryption protector.
+- uid: az_sql_virtual_cluster_list
+  name: az sql virtual-cluster list
+  summary: List available virtual clusters.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: List all virtual clusters in the current subscription.
+    syntax:
+      content: az sql virtual-cluster list
+  - summary: List all virtual clusters in a resource group.
+    syntax:
+      content: az sql virtual-cluster list -g mygroup
+  parameters:
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+    remote:
+      branch: master
+      path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_sql_virtual_cluster_show
+  name: az sql virtual-cluster show
+  summary: Get the details for a virtual cluster.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Get the details for a virtual cluster
+    syntax:
+      content: az sql virtual-cluster show -g mygroup -n mycluster
   parameters:
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
+  - name: --name -n
+    summary: The virtual cluster name.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -68,12 +98,15 @@ items:
       path: src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_sql_server_tde_key_set
-  name: az sql server tde-key set
-  summary: Sets the server's encryption protector.
-- uid: az_sql_server_tde_key_show
-  name: az sql server tde-key show
-  summary: Gets a server encryption protector.
+- uid: az_sql_virtual_cluster_delete
+  name: az sql virtual-cluster delete
+  summary: Delete a virtual cluster.
+- uid: az_sql_virtual_cluster_list
+  name: az sql virtual-cluster list
+  summary: List available virtual clusters.
+- uid: az_sql_virtual_cluster_show
+  name: az sql virtual-cluster show
+  summary: Get the details for a virtual cluster.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -93,4 +126,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/com
 gitcommit: https://github.com/Azure/azure-cli/blob/924e6e5d58fda2a0d7dba60793180b6d2b60f180/src/command_modules/azure-cli-sql/azure/cli/command_modules/sql/_help.py
 updated_at: 4/26/2019 7:57:30 PM
 ms.date: 04/26/2019
-description: Manage a server's encryption protector.
+description: Manage SQL virtual clusters.
