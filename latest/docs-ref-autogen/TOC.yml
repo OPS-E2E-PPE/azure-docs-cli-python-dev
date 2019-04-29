@@ -7624,6 +7624,9 @@
     - name: create
       uid: az_webapp_create
       displayName: az webapp create
+    - name: create-remote-connection
+      uid: az_webapp_create_remote_connection
+      displayName: az webapp create-remote-connection
     - name: delete
       uid: az_webapp_delete
       displayName: az webapp delete
