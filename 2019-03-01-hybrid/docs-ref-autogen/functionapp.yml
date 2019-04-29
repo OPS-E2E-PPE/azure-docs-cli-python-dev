@@ -72,7 +72,7 @@ items:
     summary: Name or resource id of the function app service plan. Use 'appservice plan create' to get one.
     description: ''
   - name: --runtime
-    parameterValueGroup: dotnet, java, node, python
+    parameterValueGroup: dotnet, java, node, powershell, python
     summary: The functions runtime stack.
     description: ''
   - name: --tags
