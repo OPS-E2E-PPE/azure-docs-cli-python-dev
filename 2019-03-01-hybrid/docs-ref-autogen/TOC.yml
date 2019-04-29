@@ -2294,6 +2294,13 @@
       - name: create
         uid: az_functionapp_devops_build_create
         displayName: az functionapp devops-build create
+    - name: devops-pipeline
+      uid: az_functionapp_devops_pipeline
+      displayName: az functionapp devops-pipeline
+      items:
+      - name: create
+        uid: az_functionapp_devops_pipeline_create
+        displayName: az functionapp devops-pipeline create
     - name: identity
       uid: az_functionapp_identity
       displayName: az functionapp identity
