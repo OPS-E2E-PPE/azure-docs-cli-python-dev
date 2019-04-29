@@ -236,7 +236,7 @@ commands:
   summary: Manage Microsoft Bot Services.
 - uid: az_cache
   name: az cache
-  summary: Commands to manage the CLI's on-disk object cache.
+  summary: Commands to manage CLI objects cached using the `--defer` argument.
 - uid: az_cdn
   name: az cdn
   summary: Manage Azure Content Delivery Networks (CDNs).

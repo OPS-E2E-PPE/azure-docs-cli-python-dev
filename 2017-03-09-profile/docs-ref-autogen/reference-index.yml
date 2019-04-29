@@ -203,7 +203,7 @@ commands:
   summary: Manage Azure Active Directory Graph entities needed for Role Based Access Control.
 - uid: az_cache
   name: az cache
-  summary: Commands to manage the CLI's on-disk object cache.
+  summary: Commands to manage CLI objects cached using the `--defer` argument.
 - uid: az_cloud
   name: az cloud
   summary: Manage registered Azure clouds.
