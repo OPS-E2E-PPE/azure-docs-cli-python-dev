@@ -9586,6 +9586,12 @@
       - name: create
         uid: ext_aks-preview_az_aks_create
         displayName: az aks create
+      - name: disable-addons
+        uid: ext_aks-preview_az_aks_disable_addons
+        displayName: az aks disable-addons
+      - name: enable-addons
+        uid: ext_aks-preview_az_aks_enable_addons
+        displayName: az aks enable-addons
       - name: scale
         uid: ext_aks-preview_az_aks_scale
         displayName: az aks scale

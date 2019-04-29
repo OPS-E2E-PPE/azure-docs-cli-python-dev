@@ -37,7 +37,7 @@ items:
     description: ''
   - isRequired: true
     name: --password -p
-    summary: The Microsoft account (MSA) password for the bot.
+    summary: The Microsoft account (MSA) password for the bot. Used to authorize messages being sent to the bot.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -64,12 +64,17 @@ items:
     parameterValueGroup: F0, S1
     summary: The Sku of the bot.
     description: ''
+  - name: --echo
+    parameterValueGroup: false, true
+    summary: Deploy an Echo Bot template to the newly created v4 Web App Bot.
+    description: ''
   - name: --insights-location
     parameterValueGroup: Australia East, Canada Central, Central India, East Asia, East US, East US 2, France Central, Japan East, Korea Central, North Europe, South Central US, Southeast Asia, UK South, West Europe, West US 2
     summary: 'WARNING: Not used in V4 bot creation. The location for the app insights to be used with the bot.  Default: South Central US.'
     description: ''
   - name: --lang
-    summary: 'The language to be used to create the bot.  Allowed values: Csharp, Javascript.'
+    parameterValueGroup: Csharp, Javascript
+    summary: The language to be used to create the bot.
     description: ''
   - name: --storage -s
     summary: 'WARNING: Not used in V4 bot creation. Storage account name to be used with the bot. If not provided, a new account will be created.'
@@ -141,18 +146,22 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_bot_prepare_deploy
   name: az bot prepare-deploy
-  summary: Add scripts and configuration files to your local source code directory to be able to publish back using `az webapp deployment source`.
-  description: ''
+  summary: Add scripts/config files for publishing with `az webapp deployment`.
+  description: Add scripts or configuration files to the root of your local source code directory to be able to publish using `az webapp deployment`. When your code is deployed to your App Service, the generated scripts or configuration files should be appear in D:homesitewwwroot on App Service's Kudu web page.
   langs:
   - azurecli
   examples:
-  - summary: Prepare to use `az webapp` to deploy a Javascript bot by fetching a necessary file.
+  - summary: Prepare to use `az webapp` to deploy a Javascript bot by fetching a Node.js IIS web.config file.
     syntax:
       content: az bot prepare-deploy --lang Javascript --code-dir "MyBotCode"
+  - summary: Prepare to use `az webapp` to deploy a Csharp bot by creating a .deployment file.
+    syntax:
+      content: az bot prepare-deploy --lang Csharp --code-dir "." --proj-file-path "MyBot.csproj"
   parameters:
   - isRequired: true
     name: --lang
-    summary: 'The language or runtime of the bot.  Allowed values: Csharp, Javascript, Typescript.'
+    parameterValueGroup: Csharp, Javascript, Typescript
+    summary: The language or runtime of the bot.
     description: ''
   - name: --code-dir
     summary: The directory to place the generated deployment files in. Defaults to the current directory the command is called from.
@@ -212,7 +221,7 @@ items:
 - uid: az_bot_publish
   name: az bot publish
   summary: Publish to a bot's associated app service.
-  description: Publish your source code to your bot's associated app service.
+  description: Publish your source code to your bot's associated app service. This is DEPRECATED for v4 bots and no longer recommended for publishing v4 bots to Azure. Instead use `az bot prepare-deploy` and `az webapp deployment` to deploy your v4 bot. For more information see <a href="https://aka.ms/deploy-your-bot">https://aka.ms/deploy-your-bot</a>.
   langs:
   - azurecli
   examples:
@@ -429,7 +438,7 @@ commands:
   summary: Get details of the Microsoft Teams Channel on a bot.
 - uid: az_bot_prepare_deploy
   name: az bot prepare-deploy
-  summary: Add scripts and configuration files to your local source code directory to be able to publish back using `az webapp deployment source`.
+  summary: Add scripts/config files for publishing with `az webapp deployment`.
 - uid: az_bot_prepare_publish
   name: az bot prepare-publish
   summary: Add scripts to your local source code directory to be able to publish back using `az bot publish`.
@@ -512,7 +521,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-botservice/azure/cli/command_modules/botservice/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-botservice/azure/cli/command_modules/botservice/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/93f81dd751aba201dc4030431dac1654bb70ef67/src/command_modules/azure-cli-botservice/azure/cli/command_modules/botservice/_help.py
-updated_at: 4/24/2019 4:28:40 PM
-ms.date: 04/24/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/5c55e8807245b5649abbfcf847067083980cf9d7/src/command_modules/azure-cli-botservice/azure/cli/command_modules/botservice/_help.py
+updated_at: 4/29/2019 10:23:10 PM
+ms.date: 04/29/2019
 description: Manage Microsoft Bot Services.
