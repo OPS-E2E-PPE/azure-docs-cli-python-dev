@@ -94,7 +94,7 @@ items:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
   - name: --arg
-    summary: Build argument in 'name[=value]' format.
+    summary: Build argument in '--arg name[=value]' format. Multiples supported by passing '--arg` multiple times.
     description: ''
   - name: --auth-mode
     parameterValueGroup: Default, None
@@ -137,7 +137,7 @@ items:
     summary: The access token used to access the source control provider.
     description: ''
   - name: --image -t
-    summary: The name of the image. May include a tag in the format 'name:tag'.
+    summary: "The name and tag of the image using the format: '-t repo/image:tag'. Multiple tags are supported by passing -t multiple times."
     description: ''
   - name: --no-cache
     parameterValueGroup: false, true
@@ -162,13 +162,13 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --secret-arg
-    summary: Secret build argument in 'name[=value]' format.
+    summary: Secret build argument in '--secret-arg name[=value]' format. Multiples supported by passing --secret-arg multiple times.
     description: ''
   - name: --set
-    summary: Task value in 'name[=value]' format.
+    summary: Task value in '--set name[=value]' format. Multiples supported by passing --set multiple times.
     description: ''
   - name: --set-secret
-    summary: Secret task value in 'name[=value]' format.
+    summary: Secret task value in '--set-secret name[=value]' format. Multiples supported by passing --set-secret multiple times.
     description: ''
   - name: --source-trigger-name
     defaultValue: defaultSourceTriggerName
@@ -380,10 +380,10 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --set
-    summary: Task value in 'name[=value]' format.
+    summary: Task value in '--set name[=value]' format. Multiples supported by passing --set multiple times.
     description: ''
   - name: --set-secret
-    summary: Secret task value in 'name[=value]' format.
+    summary: Secret task value in '--set-secret name[=value]' format. Multiples supported by passing --set-secret multiple times.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -488,7 +488,7 @@ items:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
   - name: --arg
-    summary: Build argument in 'name[=value]' format.
+    summary: Build argument in '--arg name[=value]' format. Multiples supported by passing '--arg` multiple times.
     description: ''
   - name: --auth-mode
     parameterValueGroup: Default, None
@@ -522,7 +522,7 @@ items:
     summary: The access token used to access the source control provider.
     description: ''
   - name: --image -t
-    summary: The name of the image. May include a tag in the format 'name:tag'.
+    summary: "The name and tag of the image using the format: '-t repo/image:tag'. Multiple tags are supported by passing -t multiple times."
     description: ''
   - name: --no-cache
     parameterValueGroup: false, true
@@ -546,13 +546,13 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --secret-arg
-    summary: Secret build argument in 'name[=value]' format.
+    summary: Secret build argument in '--secret-arg name[=value]' format. Multiples supported by passing --secret-arg multiple times.
     description: ''
   - name: --set
-    summary: Task value in 'name[=value]' format.
+    summary: Task value in '--set name[=value]' format. Multiples supported by passing --set multiple times.
     description: ''
   - name: --set-secret
-    summary: Secret task value in 'name[=value]' format.
+    summary: Secret task value in '--set-secret name[=value]' format. Multiples supported by passing --set-secret multiple times.
     description: ''
   - name: --status
     parameterValueGroup: Disabled, Enabled

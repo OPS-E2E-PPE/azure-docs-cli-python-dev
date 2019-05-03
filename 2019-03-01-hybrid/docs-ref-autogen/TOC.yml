@@ -8446,170 +8446,6 @@
       - name: show
         uid: az_eventgrid_topic_type_show
         displayName: az eventgrid topic-type show
-  - name: eventhubs
-    uid: az_eventhubs
-    displayName: az eventhubs
-    items:
-    - name: eventhub
-      uid: az_eventhubs_eventhub
-      displayName: az eventhubs eventhub
-      items:
-      - name: create
-        uid: az_eventhubs_eventhub_create
-        displayName: az eventhubs eventhub create
-      - name: delete
-        uid: az_eventhubs_eventhub_delete
-        displayName: az eventhubs eventhub delete
-      - name: list
-        uid: az_eventhubs_eventhub_list
-        displayName: az eventhubs eventhub list
-      - name: show
-        uid: az_eventhubs_eventhub_show
-        displayName: az eventhubs eventhub show
-      - name: update
-        uid: az_eventhubs_eventhub_update
-        displayName: az eventhubs eventhub update
-      - name: authorization-rule
-        uid: az_eventhubs_eventhub_authorization_rule
-        displayName: az eventhubs eventhub authorization-rule
-        items:
-        - name: create
-          uid: az_eventhubs_eventhub_authorization_rule_create
-          displayName: az eventhubs eventhub authorization-rule create
-        - name: delete
-          uid: az_eventhubs_eventhub_authorization_rule_delete
-          displayName: az eventhubs eventhub authorization-rule delete
-        - name: list
-          uid: az_eventhubs_eventhub_authorization_rule_list
-          displayName: az eventhubs eventhub authorization-rule list
-        - name: show
-          uid: az_eventhubs_eventhub_authorization_rule_show
-          displayName: az eventhubs eventhub authorization-rule show
-        - name: update
-          uid: az_eventhubs_eventhub_authorization_rule_update
-          displayName: az eventhubs eventhub authorization-rule update
-        - name: keys
-          uid: az_eventhubs_eventhub_authorization_rule_keys
-          displayName: az eventhubs eventhub authorization-rule keys
-          items:
-          - name: list
-            uid: az_eventhubs_eventhub_authorization_rule_keys_list
-            displayName: az eventhubs eventhub authorization-rule keys list
-          - name: renew
-            uid: az_eventhubs_eventhub_authorization_rule_keys_renew
-            displayName: az eventhubs eventhub authorization-rule keys renew
-      - name: consumer-group
-        uid: az_eventhubs_eventhub_consumer_group
-        displayName: az eventhubs eventhub consumer-group
-        items:
-        - name: create
-          uid: az_eventhubs_eventhub_consumer_group_create
-          displayName: az eventhubs eventhub consumer-group create
-        - name: delete
-          uid: az_eventhubs_eventhub_consumer_group_delete
-          displayName: az eventhubs eventhub consumer-group delete
-        - name: list
-          uid: az_eventhubs_eventhub_consumer_group_list
-          displayName: az eventhubs eventhub consumer-group list
-        - name: show
-          uid: az_eventhubs_eventhub_consumer_group_show
-          displayName: az eventhubs eventhub consumer-group show
-        - name: update
-          uid: az_eventhubs_eventhub_consumer_group_update
-          displayName: az eventhubs eventhub consumer-group update
-    - name: georecovery-alias
-      uid: az_eventhubs_georecovery_alias
-      displayName: az eventhubs georecovery-alias
-      items:
-      - name: break-pair
-        uid: az_eventhubs_georecovery_alias_break_pair
-        displayName: az eventhubs georecovery-alias break-pair
-      - name: delete
-        uid: az_eventhubs_georecovery_alias_delete
-        displayName: az eventhubs georecovery-alias delete
-      - name: exists
-        uid: az_eventhubs_georecovery_alias_exists
-        displayName: az eventhubs georecovery-alias exists
-      - name: fail-over
-        uid: az_eventhubs_georecovery_alias_fail_over
-        displayName: az eventhubs georecovery-alias fail-over
-      - name: list
-        uid: az_eventhubs_georecovery_alias_list
-        displayName: az eventhubs georecovery-alias list
-      - name: set
-        uid: az_eventhubs_georecovery_alias_set
-        displayName: az eventhubs georecovery-alias set
-      - name: show
-        uid: az_eventhubs_georecovery_alias_show
-        displayName: az eventhubs georecovery-alias show
-      - name: authorization-rule
-        uid: az_eventhubs_georecovery_alias_authorization_rule
-        displayName: az eventhubs georecovery-alias authorization-rule
-        items:
-        - name: list
-          uid: az_eventhubs_georecovery_alias_authorization_rule_list
-          displayName: az eventhubs georecovery-alias authorization-rule list
-        - name: show
-          uid: az_eventhubs_georecovery_alias_authorization_rule_show
-          displayName: az eventhubs georecovery-alias authorization-rule show
-        - name: keys
-          uid: az_eventhubs_georecovery_alias_authorization_rule_keys
-          displayName: az eventhubs georecovery-alias authorization-rule keys
-          items:
-          - name: list
-            uid: az_eventhubs_georecovery_alias_authorization_rule_keys_list
-            displayName: az eventhubs georecovery-alias authorization-rule keys list
-    - name: namespace
-      uid: az_eventhubs_namespace
-      displayName: az eventhubs namespace
-      items:
-      - name: create
-        uid: az_eventhubs_namespace_create
-        displayName: az eventhubs namespace create
-      - name: delete
-        uid: az_eventhubs_namespace_delete
-        displayName: az eventhubs namespace delete
-      - name: exists
-        uid: az_eventhubs_namespace_exists
-        displayName: az eventhubs namespace exists
-      - name: list
-        uid: az_eventhubs_namespace_list
-        displayName: az eventhubs namespace list
-      - name: show
-        uid: az_eventhubs_namespace_show
-        displayName: az eventhubs namespace show
-      - name: update
-        uid: az_eventhubs_namespace_update
-        displayName: az eventhubs namespace update
-      - name: authorization-rule
-        uid: az_eventhubs_namespace_authorization_rule
-        displayName: az eventhubs namespace authorization-rule
-        items:
-        - name: create
-          uid: az_eventhubs_namespace_authorization_rule_create
-          displayName: az eventhubs namespace authorization-rule create
-        - name: delete
-          uid: az_eventhubs_namespace_authorization_rule_delete
-          displayName: az eventhubs namespace authorization-rule delete
-        - name: list
-          uid: az_eventhubs_namespace_authorization_rule_list
-          displayName: az eventhubs namespace authorization-rule list
-        - name: show
-          uid: az_eventhubs_namespace_authorization_rule_show
-          displayName: az eventhubs namespace authorization-rule show
-        - name: update
-          uid: az_eventhubs_namespace_authorization_rule_update
-          displayName: az eventhubs namespace authorization-rule update
-        - name: keys
-          uid: az_eventhubs_namespace_authorization_rule_keys
-          displayName: az eventhubs namespace authorization-rule keys
-          items:
-          - name: list
-            uid: az_eventhubs_namespace_authorization_rule_keys_list
-            displayName: az eventhubs namespace authorization-rule keys list
-          - name: renew
-            uid: az_eventhubs_namespace_authorization_rule_keys_renew
-            displayName: az eventhubs namespace authorization-rule keys renew
   - name: extension
     uid: az_extension
     displayName: az extension
@@ -9693,6 +9529,12 @@
         - name: delete
           uid: ext_appconfig_az_appconfig_kv_delete
           displayName: az appconfig kv delete
+        - name: export
+          uid: ext_appconfig_az_appconfig_kv_export
+          displayName: az appconfig kv export
+        - name: import
+          uid: ext_appconfig_az_appconfig_kv_import
+          displayName: az appconfig kv import
         - name: list
           uid: ext_appconfig_az_appconfig_kv_list
           displayName: az appconfig kv list
@@ -10456,6 +10298,42 @@
         - name: show
           uid: ext_azure-devops_az_devops_project_show
           displayName: az devops project show
+      - name: security
+        uid: ext_azure-devops_az_devops_security
+        displayName: az devops security
+        items:
+        - name: group
+          uid: ext_azure-devops_az_devops_security_group
+          displayName: az devops security group
+          items:
+          - name: create
+            uid: ext_azure-devops_az_devops_security_group_create
+            displayName: az devops security group create
+          - name: delete
+            uid: ext_azure-devops_az_devops_security_group_delete
+            displayName: az devops security group delete
+          - name: list
+            uid: ext_azure-devops_az_devops_security_group_list
+            displayName: az devops security group list
+          - name: show
+            uid: ext_azure-devops_az_devops_security_group_show
+            displayName: az devops security group show
+          - name: update
+            uid: ext_azure-devops_az_devops_security_group_update
+            displayName: az devops security group update
+          - name: membership
+            uid: ext_azure-devops_az_devops_security_group_membership
+            displayName: az devops security group membership
+            items:
+            - name: add
+              uid: ext_azure-devops_az_devops_security_group_membership_add
+              displayName: az devops security group membership add
+            - name: list
+              uid: ext_azure-devops_az_devops_security_group_membership_list
+              displayName: az devops security group membership list
+            - name: remove
+              uid: ext_azure-devops_az_devops_security_group_membership_remove
+              displayName: az devops security group membership remove
       - name: service-endpoint
         uid: ext_azure-devops_az_devops_service_endpoint
         displayName: az devops service-endpoint
@@ -10546,6 +10424,9 @@
       uid: ext_azure-devops_az_pipelines
       displayName: az pipelines
       items:
+      - name: create
+        uid: ext_azure-devops_az_pipelines_create
+        displayName: az pipelines create
       - name: delete
         uid: ext_azure-devops_az_pipelines_delete
         displayName: az pipelines delete
@@ -10558,6 +10439,9 @@
       - name: show
         uid: ext_azure-devops_az_pipelines_show
         displayName: az pipelines show
+      - name: update
+        uid: ext_azure-devops_az_pipelines_update
+        displayName: az pipelines update
       - name: build
         uid: ext_azure-devops_az_pipelines_build
         displayName: az pipelines build

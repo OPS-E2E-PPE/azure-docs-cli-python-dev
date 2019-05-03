@@ -53,13 +53,13 @@ items:
     summary: Auth mode of the source registry.
     description: ''
   - name: --build-arg
-    summary: Build argument in 'name[=value]' format.
+    summary: Build argument in '--build-arg name[=value]' format. Multiples supported by passing --build-arg multiple times.
     description: ''
   - name: --file -f
     summary: The relative path of the the docker file to the source code root folder. Default to 'Dockerfile'.
     description: ''
   - name: --image -t
-    summary: The name of the image. May include a tag in the format 'name:tag'.
+    summary: "The name and tag of the image using the format: '-t repo/image:tag'. Multiple tags are supported by passing -t multiple times."
     description: ''
   - name: --no-format
     summary: Indicates whether the logs should be displayed in raw format.
@@ -83,7 +83,7 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --secret-build-arg
-    summary: Secret build argument in 'name[=value]' format.
+    summary: Secret build argument in '--secret-build-arg name[=value]' format. Multiples supported by passing '--secret-build-arg name[=value]' multiple times.
     description: ''
   - name: --target
     summary: The name of the target build stage.
@@ -233,7 +233,7 @@ items:
     summary: Overwrite the existing tag of the image to be imported.
     description: ''
   - name: --image -t
-    summary: The name of the image. May include a tag in the format 'name:tag'.
+    summary: "The name and tag of the image using the format: '-t repo/image:tag'. Multiple tags are supported by passing -t multiple times."
     description: ''
   - name: --password -p
     summary: The password of source container registry.
@@ -242,7 +242,7 @@ items:
     summary: The source container registry can be name, login server or resource ID of the source registry.
     description: ''
   - name: --repository
-    summary: The repository name to do a manifest-only copy for images.
+    summary: The repository name for a manifest-only copy of images. Multiple copies supported by passing --repository multiple times.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -380,10 +380,10 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --set
-    summary: Value in 'name[=value]' format.
+    summary: Value in 'name[=value]' format. Multiples supported by passing --set multiple times.
     description: ''
   - name: --set-secret
-    summary: Secret value in 'name[=value]' format.
+    summary: Secret value in '--set name[=value]' format. Multiples supported by passing --set multiple times.
     description: ''
   - name: --timeout
     summary: The timeout in seconds.

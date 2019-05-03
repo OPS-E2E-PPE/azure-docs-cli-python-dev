@@ -78,6 +78,9 @@ items:
   - name: --platform-update-domain-count
     summary: Update Domain count. If unspecified, the server will pick the most optimal number like 5.
     description: ''
+  - name: --ppg
+    summary: The name or ID of the proximity placement group the availability set should be associated with.
+    description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
@@ -291,7 +294,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/d13ea5a3170b3f675449542e1d2d5ccc79a9c2b2/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
-updated_at: 4/29/2019 11:39:48 PM
-ms.date: 04/29/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/d5835c51a0b868345e11f52cb3921305af959a27/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+updated_at: 4/30/2019 5:37:55 PM
+ms.date: 04/30/2019
 description: To provide redundancy to an application, it is recommended to group two or more virtual machines in an availability set. This configuration ensures that during either a planned or unplanned maintenance event, at least one virtual machine will be available.
