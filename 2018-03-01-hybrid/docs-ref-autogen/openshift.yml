@@ -2,7 +2,7 @@
 items:
 - uid: az_openshift
   name: az openshift
-  summary: (PREVIEW) Manage Azure OpenShift Services.
+  summary: Manage Azure Red Hat OpenShift Services.
   description: ''
   langs:
   - azurecli
@@ -15,7 +15,7 @@ items:
   - az_openshift_wait
 - uid: az_openshift_create
   name: az openshift create
-  summary: (PREVIEW) Create a new managed OpenShift cluster.
+  summary: Create a new managed OpenShift cluster.
   description: ''
   langs:
   - azurecli
@@ -86,7 +86,7 @@ items:
     description: ''
 - uid: az_openshift_delete
   name: az openshift delete
-  summary: (PREVIEW) Delete a managed OpenShift cluster.
+  summary: Delete a managed OpenShift cluster.
   description: ''
   langs:
   - azurecli
@@ -114,7 +114,7 @@ items:
     description: ''
 - uid: az_openshift_list
   name: az openshift list
-  summary: (PREVIEW) List managed OpenShift clusters.
+  summary: List managed OpenShift clusters.
   description: ''
   langs:
   - azurecli
@@ -127,7 +127,7 @@ items:
     description: ''
 - uid: az_openshift_scale
   name: az openshift scale
-  summary: (PREVIEW) Scale the compute pool in a managed OpenShift cluster.
+  summary: Scale the compute pool in a managed OpenShift cluster.
   description: ''
   langs:
   - azurecli
@@ -157,7 +157,7 @@ items:
     description: ''
 - uid: az_openshift_show
   name: az openshift show
-  summary: (PREVIEW) Show the details for a managed OpenShift cluster.
+  summary: Show the details for a managed OpenShift cluster.
   description: ''
   langs:
   - azurecli
@@ -179,7 +179,7 @@ items:
     description: ''
 - uid: az_openshift_wait
   name: az openshift wait
-  summary: (PREVIEW) Wait for a managed OpenShift cluster to reach a desired state.
+  summary: Wait for a managed OpenShift cluster to reach a desired state.
   description: If an operation on a cluster was interrupted or was started with `--no-wait`, use this command to wait for it to complete.
   langs:
   - azurecli
@@ -225,22 +225,22 @@ items:
 commands:
 - uid: az_openshift_create
   name: az openshift create
-  summary: (PREVIEW) Create a new managed OpenShift cluster.
+  summary: Create a new managed OpenShift cluster.
 - uid: az_openshift_delete
   name: az openshift delete
-  summary: (PREVIEW) Delete a managed OpenShift cluster.
+  summary: Delete a managed OpenShift cluster.
 - uid: az_openshift_list
   name: az openshift list
-  summary: (PREVIEW) List managed OpenShift clusters.
+  summary: List managed OpenShift clusters.
 - uid: az_openshift_scale
   name: az openshift scale
-  summary: (PREVIEW) Scale the compute pool in a managed OpenShift cluster.
+  summary: Scale the compute pool in a managed OpenShift cluster.
 - uid: az_openshift_show
   name: az openshift show
-  summary: (PREVIEW) Show the details for a managed OpenShift cluster.
+  summary: Show the details for a managed OpenShift cluster.
 - uid: az_openshift_wait
   name: az openshift wait
-  summary: (PREVIEW) Wait for a managed OpenShift cluster to reach a desired state.
+  summary: Wait for a managed OpenShift cluster to reach a desired state.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -254,4 +254,4 @@ globalParameters:
   summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
-description: (PREVIEW) Manage Azure OpenShift Services.
+description: Manage Azure Red Hat OpenShift Services.

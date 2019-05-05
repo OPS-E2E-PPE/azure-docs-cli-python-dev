@@ -9054,6 +9054,19 @@
           - name: renew
             uid: az_eventhubs_namespace_authorization_rule_keys_renew
             displayName: az eventhubs namespace authorization-rule keys renew
+      - name: network-rule
+        uid: az_eventhubs_namespace_network_rule
+        displayName: az eventhubs namespace network-rule
+        items:
+        - name: add
+          uid: az_eventhubs_namespace_network_rule_add
+          displayName: az eventhubs namespace network-rule add
+        - name: list
+          uid: az_eventhubs_namespace_network_rule_list
+          displayName: az eventhubs namespace network-rule list
+        - name: remove
+          uid: az_eventhubs_namespace_network_rule_remove
+          displayName: az eventhubs namespace network-rule remove
   - name: extension
     uid: az_extension
     displayName: az extension
@@ -9339,6 +9352,25 @@
     - name: wait
       uid: az_openshift_wait
       displayName: az openshift wait
+  - name: ppg
+    uid: az_ppg
+    displayName: az ppg
+    items:
+    - name: create
+      uid: az_ppg_create
+      displayName: az ppg create
+    - name: delete
+      uid: az_ppg_delete
+      displayName: az ppg delete
+    - name: list
+      uid: az_ppg_list
+      displayName: az ppg list
+    - name: show
+      uid: az_ppg_show
+      displayName: az ppg show
+    - name: update
+      uid: az_ppg_update
+      displayName: az ppg update
   - name: relay
     uid: az_relay
     displayName: az relay
@@ -10216,6 +10248,12 @@
         - name: delete
           uid: ext_appconfig_az_appconfig_kv_delete
           displayName: az appconfig kv delete
+        - name: export
+          uid: ext_appconfig_az_appconfig_kv_export
+          displayName: az appconfig kv export
+        - name: import
+          uid: ext_appconfig_az_appconfig_kv_import
+          displayName: az appconfig kv import
         - name: list
           uid: ext_appconfig_az_appconfig_kv_list
           displayName: az appconfig kv list
@@ -10979,6 +11017,42 @@
         - name: show
           uid: ext_azure-devops_az_devops_project_show
           displayName: az devops project show
+      - name: security
+        uid: ext_azure-devops_az_devops_security
+        displayName: az devops security
+        items:
+        - name: group
+          uid: ext_azure-devops_az_devops_security_group
+          displayName: az devops security group
+          items:
+          - name: create
+            uid: ext_azure-devops_az_devops_security_group_create
+            displayName: az devops security group create
+          - name: delete
+            uid: ext_azure-devops_az_devops_security_group_delete
+            displayName: az devops security group delete
+          - name: list
+            uid: ext_azure-devops_az_devops_security_group_list
+            displayName: az devops security group list
+          - name: show
+            uid: ext_azure-devops_az_devops_security_group_show
+            displayName: az devops security group show
+          - name: update
+            uid: ext_azure-devops_az_devops_security_group_update
+            displayName: az devops security group update
+          - name: membership
+            uid: ext_azure-devops_az_devops_security_group_membership
+            displayName: az devops security group membership
+            items:
+            - name: add
+              uid: ext_azure-devops_az_devops_security_group_membership_add
+              displayName: az devops security group membership add
+            - name: list
+              uid: ext_azure-devops_az_devops_security_group_membership_list
+              displayName: az devops security group membership list
+            - name: remove
+              uid: ext_azure-devops_az_devops_security_group_membership_remove
+              displayName: az devops security group membership remove
       - name: service-endpoint
         uid: ext_azure-devops_az_devops_service_endpoint
         displayName: az devops service-endpoint
@@ -11069,6 +11143,9 @@
       uid: ext_azure-devops_az_pipelines
       displayName: az pipelines
       items:
+      - name: create
+        uid: ext_azure-devops_az_pipelines_create
+        displayName: az pipelines create
       - name: delete
         uid: ext_azure-devops_az_pipelines_delete
         displayName: az pipelines delete
@@ -11081,6 +11158,9 @@
       - name: show
         uid: ext_azure-devops_az_pipelines_show
         displayName: az pipelines show
+      - name: update
+        uid: ext_azure-devops_az_pipelines_update
+        displayName: az pipelines update
       - name: build
         uid: ext_azure-devops_az_pipelines_build
         displayName: az pipelines build
