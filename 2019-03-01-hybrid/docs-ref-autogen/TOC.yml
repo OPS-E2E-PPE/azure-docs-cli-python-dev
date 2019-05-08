@@ -6107,6 +6107,9 @@
       - name: snapshot
         uid: az_storage_blob_snapshot
         displayName: az storage blob snapshot
+      - name: sync
+        uid: az_storage_blob_sync
+        displayName: az storage blob sync
       - name: undelete
         uid: az_storage_blob_undelete
         displayName: az storage blob undelete

@@ -6091,6 +6091,9 @@
       - name: snapshot
         uid: az_storage_blob_snapshot
         displayName: az storage blob snapshot
+      - name: sync
+        uid: az_storage_blob_sync
+        displayName: az storage blob sync
       - name: update
         uid: az_storage_blob_update
         displayName: az storage blob update
