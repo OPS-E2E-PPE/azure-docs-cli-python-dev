@@ -51,10 +51,6 @@ items:
   - name: --repository-name
     summary: Name of the Azure DevOps repository that you want to use.
     description: ''
-  - name: --use-local-settings
-    parameterValueGroup: false, true
-    summary: Use your local settings in your functionapp settings?
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
