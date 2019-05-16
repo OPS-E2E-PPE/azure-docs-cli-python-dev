@@ -1372,6 +1372,19 @@
         - name: update
           uid: az_acr_task_credential_update
           displayName: az acr task credential update
+      - name: identity
+        uid: az_acr_task_identity
+        displayName: az acr task identity
+        items:
+        - name: assign
+          uid: az_acr_task_identity_assign
+          displayName: az acr task identity assign
+        - name: remove
+          uid: az_acr_task_identity_remove
+          displayName: az acr task identity remove
+        - name: show
+          uid: az_acr_task_identity_show
+          displayName: az acr task identity show
     - name: webhook
       uid: az_acr_webhook
       displayName: az acr webhook
@@ -4840,16 +4853,32 @@
       - name: update
         uid: az_network_ddos_protection_update
         displayName: az network ddos-protection update
-    - name: interface-endpoint
-      uid: az_network_interface_endpoint
-      displayName: az network interface-endpoint
+    - name: nat
+      uid: az_network_nat
+      displayName: az network nat
       items:
-      - name: list
-        uid: az_network_interface_endpoint_list
-        displayName: az network interface-endpoint list
-      - name: show
-        uid: az_network_interface_endpoint_show
-        displayName: az network interface-endpoint show
+      - name: gateway
+        uid: az_network_nat_gateway
+        displayName: az network nat gateway
+        items:
+        - name: create
+          uid: az_network_nat_gateway_create
+          displayName: az network nat gateway create
+        - name: delete
+          uid: az_network_nat_gateway_delete
+          displayName: az network nat gateway delete
+        - name: list
+          uid: az_network_nat_gateway_list
+          displayName: az network nat gateway list
+        - name: show
+          uid: az_network_nat_gateway_show
+          displayName: az network nat gateway show
+        - name: update
+          uid: az_network_nat_gateway_update
+          displayName: az network nat gateway update
+        - name: wait
+          uid: az_network_nat_gateway_wait
+          displayName: az network nat gateway wait
     - name: private-dns
       uid: az_network_private_dns
       displayName: az network private-dns
