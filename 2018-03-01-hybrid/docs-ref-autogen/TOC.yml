@@ -1203,6 +1203,9 @@
     - name: login
       uid: az_acr_login
       displayName: az acr login
+    - name: pack
+      uid: az_acr_pack
+      displayName: az acr pack
     - name: run
       uid: az_acr_run
       displayName: az acr run
