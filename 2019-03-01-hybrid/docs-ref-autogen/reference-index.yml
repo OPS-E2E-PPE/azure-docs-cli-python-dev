@@ -274,10 +274,10 @@ commands:
   summary: Manage Azure Managed Disks.
 - uid: az_dla
   name: az dla
-  summary: (PREVIEW) Manage Data Lake Analytics accounts, jobs, and catalogs.
+  summary: Manage Data Lake Analytics accounts, jobs, and catalogs.
 - uid: az_dls
   name: az dls
-  summary: (PREVIEW) Manage Data Lake Store accounts and filesystems.
+  summary: Manage Data Lake Store accounts and filesystems.
 - uid: az_dms
   name: az dms
   summary: Manage Azure Data Migration Service (DMS) instances.
