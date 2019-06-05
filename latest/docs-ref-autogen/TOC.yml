@@ -1185,6 +1185,9 @@
     - name: build
       uid: az_acr_build
       displayName: az acr build
+    - name: check-health
+      uid: az_acr_check_health
+      displayName: az acr check-health
     - name: check-name
       uid: az_acr_check_name
       displayName: az acr check-name
