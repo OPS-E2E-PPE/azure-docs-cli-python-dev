@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_eventgrid_topic_key
-  name: az eventgrid topic key
-  summary: Manage shared access keys of a topic.
+- uid: az_eventgrid_domain_key
+  name: az eventgrid domain key
+  summary: Manage shared access keys of a domain.
   description: ''
   langs:
   - azurecli
   children:
-  - az_eventgrid_topic_key_list
-  - az_eventgrid_topic_key_regenerate
-- uid: az_eventgrid_topic_key_list
-  name: az eventgrid topic key list
-  summary: List shared access keys of a topic.
+  - az_eventgrid_domain_key_list
+  - az_eventgrid_domain_key_regenerate
+- uid: az_eventgrid_domain_key_list
+  name: az eventgrid domain key list
+  summary: List shared access keys of a domain.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --name -n
-    summary: Name of the topic.
+    summary: Name of the domain.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -33,9 +33,9 @@ items:
       branch: master
       path: src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_eventgrid_topic_key_regenerate
-  name: az eventgrid topic key regenerate
-  summary: Regenerate a shared access key of a topic.
+- uid: az_eventgrid_domain_key_regenerate
+  name: az eventgrid domain key regenerate
+  summary: Regenerate a shared access key of a domain.
   description: ''
   langs:
   - azurecli
@@ -46,7 +46,7 @@ items:
     description: ''
   - isRequired: true
     name: --name -n
-    summary: Name of the topic.
+    summary: Name of the domain.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -62,12 +62,12 @@ items:
       path: src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_eventgrid_topic_key_list
-  name: az eventgrid topic key list
-  summary: List shared access keys of a topic.
-- uid: az_eventgrid_topic_key_regenerate
-  name: az eventgrid topic key regenerate
-  summary: Regenerate a shared access key of a topic.
+- uid: az_eventgrid_domain_key_list
+  name: az eventgrid domain key list
+  summary: List shared access keys of a domain.
+- uid: az_eventgrid_domain_key_regenerate
+  name: az eventgrid domain key regenerate
+  summary: Regenerate a shared access key of a domain.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -87,4 +87,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/com
 gitcommit: https://github.com/Azure/azure-cli/blob/2954c3a0cd56ca042d9219936e316b9635911863/src/command_modules/azure-cli-eventgrid/azure/cli/command_modules/eventgrid/_help.py
 updated_at: 6/5/2019 2:32:05 PM
 ms.date: 06/05/2019
-description: Manage shared access keys of a topic.
+description: Manage shared access keys of a domain.

@@ -283,7 +283,7 @@ commands:
   summary: Manage Azure Data Migration Service (DMS) instances.
 - uid: az_eventgrid
   name: az eventgrid
-  summary: Manage Azure Event Grid topics and subscriptions.
+  summary: Manage Azure Event Grid topics, event subscriptions, domains and domain topics.
 - uid: az_eventhubs
   name: az eventhubs
   summary: Manage Azure Event Hubs namespaces, eventhubs, consumergroups and geo recovery configurations - Alias.
