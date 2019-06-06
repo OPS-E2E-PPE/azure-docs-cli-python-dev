@@ -1206,9 +1206,6 @@
     - name: login
       uid: az_acr_login
       displayName: az acr login
-    - name: pack
-      uid: az_acr_pack
-      displayName: az acr pack
     - name: run
       uid: az_acr_run
       displayName: az acr run
@@ -1306,6 +1303,13 @@
       - name: remove
         uid: az_acr_network_rule_remove
         displayName: az acr network-rule remove
+    - name: pack
+      uid: az_acr_pack
+      displayName: az acr pack
+      items:
+      - name: build
+        uid: az_acr_pack_build
+        displayName: az acr pack build
     - name: replication
       uid: az_acr_replication
       displayName: az acr replication
