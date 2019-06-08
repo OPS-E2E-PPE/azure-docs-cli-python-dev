@@ -2275,6 +2275,25 @@
         - name: show-cd-url
           uid: az_functionapp_deployment_container_show_cd_url
           displayName: az functionapp deployment container show-cd-url
+      - name: slot
+        uid: az_functionapp_deployment_slot
+        displayName: az functionapp deployment slot
+        items:
+        - name: auto-swap
+          uid: az_functionapp_deployment_slot_auto_swap
+          displayName: az functionapp deployment slot auto-swap
+        - name: create
+          uid: az_functionapp_deployment_slot_create
+          displayName: az functionapp deployment slot create
+        - name: delete
+          uid: az_functionapp_deployment_slot_delete
+          displayName: az functionapp deployment slot delete
+        - name: list
+          uid: az_functionapp_deployment_slot_list
+          displayName: az functionapp deployment slot list
+        - name: swap
+          uid: az_functionapp_deployment_slot_swap
+          displayName: az functionapp deployment slot swap
       - name: source
         uid: az_functionapp_deployment_source
         displayName: az functionapp deployment source
