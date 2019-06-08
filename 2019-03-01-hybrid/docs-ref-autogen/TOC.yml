@@ -19,6 +19,9 @@
   - name: logout
     uid: az_logout
     displayName: az logout
+  - name: rest
+    uid: az_rest
+    displayName: az rest
   - name: self-test
     uid: az_self_test
     displayName: az self-test
