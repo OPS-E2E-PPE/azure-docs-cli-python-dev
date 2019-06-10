@@ -2540,9 +2540,9 @@
         - name: list
           uid: az_iot_hub_policy_list
           displayName: az iot hub policy list
-        - name: regenerate-key
-          uid: az_iot_hub_policy_regenerate_key
-          displayName: az iot hub policy regenerate-key
+        - name: renew-key
+          uid: az_iot_hub_policy_renew_key
+          displayName: az iot hub policy renew-key
         - name: show
           uid: az_iot_hub_policy_show
           displayName: az iot hub policy show
