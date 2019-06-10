@@ -22,64 +22,64 @@ items:
   - summary: Create a read-only policy.
     syntax:
       content: >-
-        az policy definition create --name readOnlyStorage --rules '{ \
-                                    "if": \
-                                    { \
-                                        "field": "type", \
-                                        "equals": "Microsoft.Storage/storageAccounts/write" \
-                                    }, \
-                                    "then": \
-                                    { \
-                                        "effect": "deny" \
-                                    } \
+        az policy definition create --name readOnlyStorage --rules '{
+                                    "if":
+                                    {
+                                        "field": "type",
+                                        "equals": "Microsoft.Storage/storageAccounts/write"
+                                    },
+                                    "then":
+                                    {
+                                        "effect": "deny"
+                                    }
                                 }'
   - summary: Create a policy parameter definition.
     syntax:
       content: >-
-        az policy definition create --name allowedLocations --rules '{ \
-                                    "if": { \
-                                        "allOf": [ \
-                                            { \
-                                                "field": "location", \
-                                                "notIn": "[parameters('listOfAllowedLocations')]" \
-                                            }, \
-                                            { \
-                                                "field": "location", \
-                                                "notEquals": "global" \
-                                            }, \
-                                            { \
-                                                "field": "type", \
-                                                "notEquals": "Microsoft.AzureActiveDirectory/b2cDirectories" \
-                                            } \
-                                        ] \
-                                    }, \
-                                    "then": { \
-                                        "effect": "deny" \
-                                    } \
+        az policy definition create --name allowedLocations --rules '{
+                                    "if": {
+                                        "allOf": [
+                                            {
+                                                "field": "location",
+                                                "notIn": "[parameters('listOfAllowedLocations')]"
+                                            },
+                                            {
+                                                "field": "location",
+                                                "notEquals": "global"
+                                            },
+                                            {
+                                                "field": "type",
+                                                "notEquals": "Microsoft.AzureActiveDirectory/b2cDirectories"
+                                            }
+                                        ]
+                                    },
+                                    "then": {
+                                        "effect": "deny"
+                                    }
                                 }' \
-                                --params '{ \
-                                    "allowedLocations": { \
-                                        "type": "array", \
-                                        "metadata": { \
-                                            "description": "The list of locations that can be specified when deploying resources", \
-                                            "strongType": "location", \
-                                            "displayName": "Allowed locations" \
-                                        } \
-                                    } \
+                                --params '{
+                                    "allowedLocations": {
+                                        "type": "array",
+                                        "metadata": {
+                                            "description": "The list of locations that can be specified when deploying resources",
+                                            "strongType": "location",
+                                            "displayName": "Allowed locations"
+                                        }
+                                    }
                                 }'
   - summary: Create a read-only policy that can be applied within a management group.
     syntax:
       content: >-
-        az policy definition create -n readOnlyStorage --management-group 'MyManagementGroup' --rules '{ \
-                                    "if": \
-                                    { \
-                                        "field": "type", \
-                                        "equals": "Microsoft.Storage/storageAccounts/write" \
-                                    }, \
-                                    "then": \
-                                    { \
-                                        "effect": "deny" \
-                                    } \
+        az policy definition create -n readOnlyStorage --management-group 'MyManagementGroup' --rules '{
+                                    "if":
+                                    {
+                                        "field": "type",
+                                        "equals": "Microsoft.Storage/storageAccounts/write"
+                                    },
+                                    "then":
+                                    {
+                                        "effect": "deny"
+                                    }
                                 }'
   parameters:
   - isRequired: true
@@ -247,7 +247,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/24119559d134d9e6bd2317c3af4c28847b20de9f/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-updated_at: 6/8/2019 4:02:35 AM
-ms.date: 06/08/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/e783116addbe98075665e560001b8bef8aab5f31/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+updated_at: 6/10/2019 4:36:36 PM
+ms.date: 06/10/2019
 description: Manage resource policy definitions.
