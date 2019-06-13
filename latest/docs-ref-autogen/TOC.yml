@@ -1555,6 +1555,13 @@
       - name: show
         uid: az_cosmosdb_database_show
         displayName: az cosmosdb database show
+    - name: keys
+      uid: az_cosmosdb_keys
+      displayName: az cosmosdb keys
+      items:
+      - name: list
+        uid: az_cosmosdb_keys_list
+        displayName: az cosmosdb keys list
     - name: network-rule
       uid: az_cosmosdb_network_rule
       displayName: az cosmosdb network-rule
@@ -7302,6 +7309,60 @@
     - name: update
       uid: az_image_update
       displayName: az image update
+    - name: template
+      uid: az_image_template
+      displayName: az image template
+      items:
+      - name: create
+        uid: az_image_template_create
+        displayName: az image template create
+      - name: delete
+        uid: az_image_template_delete
+        displayName: az image template delete
+      - name: list
+        uid: az_image_template_list
+        displayName: az image template list
+      - name: run
+        uid: az_image_template_run
+        displayName: az image template run
+      - name: show
+        uid: az_image_template_show
+        displayName: az image template show
+      - name: show-runs
+        uid: az_image_template_show_runs
+        displayName: az image template show-runs
+      - name: update
+        uid: az_image_template_update
+        displayName: az image template update
+      - name: wait
+        uid: az_image_template_wait
+        displayName: az image template wait
+      - name: customizer
+        uid: az_image_template_customizer
+        displayName: az image template customizer
+        items:
+        - name: add
+          uid: az_image_template_customizer_add
+          displayName: az image template customizer add
+        - name: clear
+          uid: az_image_template_customizer_clear
+          displayName: az image template customizer clear
+        - name: remove
+          uid: az_image_template_customizer_remove
+          displayName: az image template customizer remove
+      - name: output
+        uid: az_image_template_output
+        displayName: az image template output
+        items:
+        - name: add
+          uid: az_image_template_output_add
+          displayName: az image template output add
+        - name: clear
+          uid: az_image_template_output_clear
+          displayName: az image template output clear
+        - name: remove
+          uid: az_image_template_output_remove
+          displayName: az image template output remove
   - name: VM Scale Sets
     uid: az_vmss
     displayName: az vmss

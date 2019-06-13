@@ -46,7 +46,7 @@ items:
   - isRequired: true
     name: --lock-level
     parameterValueGroup: CanNotDelete, None, ReadOnly
-    summary: ''
+    summary: The type of lock restriction.
     description: ''
   - isRequired: true
     name: --name -n

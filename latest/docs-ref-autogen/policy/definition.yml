@@ -100,7 +100,7 @@ items:
     description: ''
   - name: --mode -m
     parameterValueGroup: All, Indexed, NotSpecified
-    summary: Mode of the new policy definition.
+    summary: Mode of the policy definition.
     description: ''
   - name: --params
     summary: JSON formatted string or a path to a file or uri with parameter definitions.
@@ -213,8 +213,9 @@ items:
   - name: --metadata
     summary: Metadata in space-separated key=value pairs.
     description: ''
-  - name: --mode
-    summary: ''
+  - name: --mode -m
+    parameterValueGroup: All, Indexed, NotSpecified
+    summary: Mode of the policy definition.
     description: ''
   - name: --params
     summary: JSON formatted string or a path to a file or uri with parameter definitions.

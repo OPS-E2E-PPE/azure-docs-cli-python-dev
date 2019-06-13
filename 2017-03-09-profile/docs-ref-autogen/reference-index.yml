@@ -276,6 +276,9 @@ commands:
 - uid: az_hdinsight
   name: az hdinsight
   summary: Manage HDInsight resources.
+- uid: az_image
+  name: az image
+  summary: Manage custom virtual machine images.
 - uid: az_interactive
   name: az interactive
   summary: Start interactive mode. Installs the Interactive extension if not installed already.

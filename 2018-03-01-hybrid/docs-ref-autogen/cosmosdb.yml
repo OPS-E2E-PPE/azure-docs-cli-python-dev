@@ -479,6 +479,12 @@ commands:
 - uid: az_cosmosdb_failover_priority_change
   name: az cosmosdb failover-priority-change
   summary: Changes the failover priority for the Azure Cosmos DB database account.
+- uid: az_cosmosdb_keys
+  name: az cosmosdb keys
+  summary: Manage Azure Comsos DB keys.
+- uid: az_cosmosdb_keys_list
+  name: az cosmosdb keys list
+  summary: List the access keys for a Azure Cosmos DB database account.
 - uid: az_cosmosdb_list
   name: az cosmosdb list
   summary: List Azure Cosmos DB database accounts.
@@ -528,7 +534,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/command_modules/azure-cli-cosmosdb/azure/cli/command_modules/cosmosdb/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-cosmosdb/azure/cli/command_modules/cosmosdb/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e49d034f2fdc8a719e25673fd550f6a2ef534f3c/src/command_modules/azure-cli-cosmosdb/azure/cli/command_modules/cosmosdb/_help.py
-updated_at: 6/13/2019 12:05:40 AM
+gitcommit: https://github.com/Azure/azure-cli/blob/7d52277237cc7bd5d70aa0e5168eaf8b3b795acf/src/command_modules/azure-cli-cosmosdb/azure/cli/command_modules/cosmosdb/_help.py
+updated_at: 6/13/2019 5:27:34 PM
 ms.date: 06/13/2019
 description: Manage Azure Cosmos DB database accounts.

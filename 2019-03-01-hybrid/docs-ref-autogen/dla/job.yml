@@ -143,26 +143,26 @@ items:
     summary: The degree of parallelism for the job.
     description: Higher values equate to more parallelism and will usually yield faster running jobs, at the cost of more AUs.
   - name: --pipeline-id
-    summary: ''
+    summary: Job relationship pipeline GUID.
     description: ''
   - name: --pipeline-name
-    summary: ''
+    summary: Friendly name of the job relationship pipeline.
     description: ''
   - name: --pipeline-uri
-    summary: ''
+    summary: Unique pipeline URI which links to the originating service for this pipeline.
     description: ''
   - name: --priority
     defaultValue: "1000"
     summary: The priority of the job.
     description: Lower values increase the priority, with the lowest value being 1. This determines the order jobs are run in.
   - name: --recurrence-id
-    summary: ''
+    summary: Recurrence GUID, unique per activity/script, regardless of iteration. Links different occurrences of the same job together.
     description: ''
   - name: --recurrence-name
-    summary: ''
+    summary: Friendly recurrence nae for the correlation between jobs.
     description: ''
   - name: --run-id
-    summary: ''
+    summary: GUID of the iteration of this pipeline.
     description: ''
   - name: --runtime-version
     summary: The runtime version to use.

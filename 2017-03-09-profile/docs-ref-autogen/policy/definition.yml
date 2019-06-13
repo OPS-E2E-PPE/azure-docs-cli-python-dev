@@ -200,9 +200,6 @@ items:
   - name: --management-group
     summary: The name of the management group of the policy [set] definition.
     description: ''
-  - name: --mode
-    summary: ''
-    description: ''
   - name: --rules
     summary: JSON formatted string or a path to a file with such content.
     description: ''
