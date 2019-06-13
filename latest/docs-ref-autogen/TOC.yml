@@ -2616,6 +2616,51 @@
         - name: show
           uid: az_iot_hub_routing_endpoint_show
           displayName: az iot hub routing-endpoint show
+    - name: digitaltwin
+      uid: az_iot_digitaltwin
+      displayName: az iot digitaltwin
+      items:
+      - name: key
+        uid: az_iot_digitaltwin_key
+        displayName: az iot digitaltwin key
+        items:
+        - name: create
+          uid: az_iot_digitaltwin_key_create
+          displayName: az iot digitaltwin key create
+        - name: delete
+          uid: az_iot_digitaltwin_key_delete
+          displayName: az iot digitaltwin key delete
+        - name: list
+          uid: az_iot_digitaltwin_key_list
+          displayName: az iot digitaltwin key list
+        - name: show
+          uid: az_iot_digitaltwin_key_show
+          displayName: az iot digitaltwin key show
+        - name: update
+          uid: az_iot_digitaltwin_key_update
+          displayName: az iot digitaltwin key update
+      - name: repository
+        uid: az_iot_digitaltwin_repository
+        displayName: az iot digitaltwin repository
+        items:
+        - name: create
+          uid: az_iot_digitaltwin_repository_create
+          displayName: az iot digitaltwin repository create
+        - name: delete
+          uid: az_iot_digitaltwin_repository_delete
+          displayName: az iot digitaltwin repository delete
+        - name: get-provision-status
+          uid: az_iot_digitaltwin_repository_get_provision_status
+          displayName: az iot digitaltwin repository get-provision-status
+        - name: list
+          uid: az_iot_digitaltwin_repository_list
+          displayName: az iot digitaltwin repository list
+        - name: show
+          uid: az_iot_digitaltwin_repository_show
+          displayName: az iot digitaltwin repository show
+        - name: update
+          uid: az_iot_digitaltwin_repository_update
+          displayName: az iot digitaltwin repository update
     - name: dps
       uid: az_iot_dps
       displayName: az iot dps
