@@ -85,10 +85,10 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/azure-cli/azure/cli/command_modules/batch/_help.py
     remote:
       branch: master
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_batch_job_schedule_delete
   name: az batch job-schedule delete
@@ -129,10 +129,10 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/azure-cli/azure/cli/command_modules/batch/_help.py
     remote:
       branch: master
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_batch_job_schedule_disable
   name: az batch job-schedule disable
@@ -170,10 +170,10 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/azure-cli/azure/cli/command_modules/batch/_help.py
     remote:
       branch: master
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_batch_job_schedule_enable
   name: az batch job-schedule enable
@@ -211,10 +211,10 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/azure-cli/azure/cli/command_modules/batch/_help.py
     remote:
       branch: master
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_batch_job_schedule_list
   name: az batch job-schedule list
@@ -245,10 +245,10 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/azure-cli/azure/cli/command_modules/batch/_help.py
     remote:
       branch: master
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_batch_job_schedule_reset
   name: az batch job-schedule reset
@@ -335,10 +335,10 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/azure-cli/azure/cli/command_modules/batch/_help.py
     remote:
       branch: master
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_batch_job_schedule_set
   name: az batch job-schedule set
@@ -425,10 +425,10 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/azure-cli/azure/cli/command_modules/batch/_help.py
     remote:
       branch: master
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_batch_job_schedule_show
   name: az batch job-schedule show
@@ -472,10 +472,10 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/azure-cli/azure/cli/command_modules/batch/_help.py
     remote:
       branch: master
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_batch_job_schedule_stop
   name: az batch job-schedule stop
@@ -513,10 +513,10 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
-    path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+    path: src/azure-cli/azure/cli/command_modules/batch/_help.py
     remote:
       branch: master
-      path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
+      path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_batch_job_schedule_create
@@ -560,9 +560,9 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-doc_source_url_path: src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/5e2a7917bb3751921a333f8262b8a815faa966f9/src/command_modules/azure-cli-batch/azure/cli/command_modules/batch/_help.py
-updated_at: 2/21/2019 3:22:52 PM
-ms.date: 02/21/2019
+doc_source_url_path: src/azure-cli/azure/cli/command_modules/batch/_help.py
+original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+gitcommit: https://github.com/Azure/azure-cli/blob/f010ccfae1d140839e592120f8cfa2c3bfb9578b/src/azure-cli/azure/cli/command_modules/batch/_help.py
+updated_at: 6/12/2019 8:37:27 PM
+ms.date: 06/12/2019
 description: Manage Batch job schedules.
