@@ -29,7 +29,7 @@ items:
     summary: Database Name.
     description: ''
   - name: --default-ttl
-    summary: Default TTL.
+    summary: Default TTL. Provide 0 to disable.
     description: ''
   - name: --indexing-policy
     defaultValue: >-
@@ -239,7 +239,7 @@ items:
     summary: Database Name.
     description: ''
   - name: --default-ttl
-    summary: Default TTL.
+    summary: Default TTL. Provide 0 to disable.
     description: ''
   - name: --indexing-policy
     summary: Indexing Policy, you can enter it as a string or as a file, e.g., --indexing-policy @policy-file.json).
