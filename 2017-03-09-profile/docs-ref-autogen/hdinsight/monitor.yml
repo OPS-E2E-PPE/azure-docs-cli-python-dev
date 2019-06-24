@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_hdinsight_oms
-  name: az hdinsight oms
-  summary: Manage HDInsight Operations Management Suite (OMS).
+- uid: az_hdinsight_monitor
+  name: az hdinsight monitor
+  summary: Manage Azure Monitor logs integration on the HDInsight cluster.
   description: ''
   langs:
   - azurecli
   children:
-  - az_hdinsight_oms_disable
-  - az_hdinsight_oms_enable
-  - az_hdinsight_oms_show
-- uid: az_hdinsight_oms_disable
-  name: az hdinsight oms disable
-  summary: Disables the Operations Management Suite (OMS) on the HDInsight cluster.
+  - az_hdinsight_monitor_disable
+  - az_hdinsight_monitor_enable
+  - az_hdinsight_monitor_show
+- uid: az_hdinsight_monitor_disable
+  name: az hdinsight monitor disable
+  summary: Disables the Azure Monitor logs integration on the HDInsight cluster.
   description: ''
   langs:
   - azurecli
@@ -34,9 +34,9 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_hdinsight_oms_enable
-  name: az hdinsight oms enable
-  summary: Enables the Operations Management Suite (OMS) on the HDInsight cluster.
+- uid: az_hdinsight_monitor_enable
+  name: az hdinsight monitor enable
+  summary: Enables the Azure Monitor logs integration on the HDInsight cluster.
   description: ''
   langs:
   - azurecli
@@ -49,12 +49,13 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - isRequired: true
-    name: --workspace-id
-    summary: The Operations Management Suite (OMS) workspace ID.
+  - name: --no-validation-timeout
+    parameterValueGroup: false, true
+    summary: Do not report timeout error during argument validation phase.
     description: ''
-  - name: --primary-key
-    summary: The Operations Management Suite (OMS) workspace key.
+  - isRequired: true
+    name: --workspace
+    summary: The name or resource ID of Log Analytics workspace.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -65,9 +66,9 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_hdinsight_oms_show
-  name: az hdinsight oms show
-  summary: Gets the status of Operations Management Suite (OMS) on the HDInsight cluster.
+- uid: az_hdinsight_monitor_show
+  name: az hdinsight monitor show
+  summary: Gets the status of Azure Monitor logs integration on the HDInsight cluster.
   description: ''
   langs:
   - azurecli
@@ -90,15 +91,15 @@ items:
       path: src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_hdinsight_oms_disable
-  name: az hdinsight oms disable
-  summary: Disables the Operations Management Suite (OMS) on the HDInsight cluster.
-- uid: az_hdinsight_oms_enable
-  name: az hdinsight oms enable
-  summary: Enables the Operations Management Suite (OMS) on the HDInsight cluster.
-- uid: az_hdinsight_oms_show
-  name: az hdinsight oms show
-  summary: Gets the status of Operations Management Suite (OMS) on the HDInsight cluster.
+- uid: az_hdinsight_monitor_disable
+  name: az hdinsight monitor disable
+  summary: Disables the Azure Monitor logs integration on the HDInsight cluster.
+- uid: az_hdinsight_monitor_enable
+  name: az hdinsight monitor enable
+  summary: Enables the Azure Monitor logs integration on the HDInsight cluster.
+- uid: az_hdinsight_monitor_show
+  name: az hdinsight monitor show
+  summary: Gets the status of Azure Monitor logs integration on the HDInsight cluster.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -115,7 +116,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/3749b5ca97f7624c4b6b9e8bc561eea60b424875/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-updated_at: 6/12/2019 9:37:21 PM
-ms.date: 06/12/2019
-description: Manage HDInsight Operations Management Suite (OMS).
+gitcommit: https://github.com/Azure/azure-cli/blob/b37a3aed3ae73ee9cbb20d6151ecc12d0575fe0c/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+updated_at: 6/24/2019 7:10:07 PM
+ms.date: 06/24/2019
+description: Manage Azure Monitor logs integration on the HDInsight cluster.

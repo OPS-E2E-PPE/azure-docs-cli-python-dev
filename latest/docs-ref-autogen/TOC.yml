@@ -2444,19 +2444,19 @@
       - name: wait
         uid: az_hdinsight_application_wait
         displayName: az hdinsight application wait
-    - name: oms
-      uid: az_hdinsight_oms
-      displayName: az hdinsight oms
+    - name: monitor
+      uid: az_hdinsight_monitor
+      displayName: az hdinsight monitor
       items:
       - name: disable
-        uid: az_hdinsight_oms_disable
-        displayName: az hdinsight oms disable
+        uid: az_hdinsight_monitor_disable
+        displayName: az hdinsight monitor disable
       - name: enable
-        uid: az_hdinsight_oms_enable
-        displayName: az hdinsight oms enable
+        uid: az_hdinsight_monitor_enable
+        displayName: az hdinsight monitor enable
       - name: show
-        uid: az_hdinsight_oms_show
-        displayName: az hdinsight oms show
+        uid: az_hdinsight_monitor_show
+        displayName: az hdinsight monitor show
     - name: script-action
       uid: az_hdinsight_script_action
       displayName: az hdinsight script-action
