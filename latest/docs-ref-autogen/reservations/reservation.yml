@@ -165,7 +165,7 @@ items:
     summary: Subscription that the benefit will be applied. Do not specify if AppliedScopeType is Shared.
     description: ''
   - name: --instance-flexibility -i
-    parameterValueGroup: Off, On
+    parameterValueGroup: NotSupported, Off, On
     summary: Type of the Instance Flexibility to update the reservation with.
     description: ''
   - name: --subscription

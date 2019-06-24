@@ -33,7 +33,8 @@ items:
     summary: Use this parameter instead of '--assignee' to bypass graph permission issues. This parameter only works with object ids for users, groups, service principals, and managed identities. For managed identities use the principal id. For service principals, use the object id and not the app id.
     description: ''
   - name: --assignee-principal-type
-    summary: ''
+    parameterValueGroup: Application, DirectoryObjectOrGroup, DirectoryRoleTemplate, Everyone, ForeignGroup, Group, MSI, ServicePrincipal, Unknown, User
+    summary: Use with --assignee-object-id to avoid errors caused by propagation latency in AAD Graph.
     description: ''
   - name: --resource-group -g
     summary: Use it only if the role or assignment was added at the level of a resource group.
