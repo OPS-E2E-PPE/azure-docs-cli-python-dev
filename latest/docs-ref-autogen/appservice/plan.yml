@@ -231,7 +231,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/appservice/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/a563295a23fc12ed121e44e75ee62b5f9574f8e3/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-updated_at: 6/19/2019 7:27:58 PM
-ms.date: 06/19/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/4db72e1b28829e7288073944851fbae3498b86ea/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+updated_at: 6/24/2019 4:36:28 PM
+ms.date: 06/24/2019
 description: Manage app service plans.
