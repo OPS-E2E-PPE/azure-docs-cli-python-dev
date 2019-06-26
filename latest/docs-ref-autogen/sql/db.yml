@@ -149,6 +149,7 @@ items:
     summary: The collation of the database.
     description: ''
   - name: --sample-name
+    parameterValueGroup: AdventureWorksLT, WideWorldImportersFull, WideWorldImportersStd
     summary: The name of the sample schema to apply when creating this database.
     description: ''
   - name: --capacity -c
