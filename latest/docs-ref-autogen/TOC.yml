@@ -9488,6 +9488,42 @@
       - name: wait
         uid: az_kusto_database_wait
         displayName: az kusto database wait
+  - name: managedservices
+    uid: az_managedservices
+    displayName: az managedservices
+    items:
+    - name: assignment
+      uid: az_managedservices_assignment
+      displayName: az managedservices assignment
+      items:
+      - name: create
+        uid: az_managedservices_assignment_create
+        displayName: az managedservices assignment create
+      - name: delete
+        uid: az_managedservices_assignment_delete
+        displayName: az managedservices assignment delete
+      - name: list
+        uid: az_managedservices_assignment_list
+        displayName: az managedservices assignment list
+      - name: show
+        uid: az_managedservices_assignment_show
+        displayName: az managedservices assignment show
+    - name: definition
+      uid: az_managedservices_definition
+      displayName: az managedservices definition
+      items:
+      - name: create
+        uid: az_managedservices_definition_create
+        displayName: az managedservices definition create
+      - name: delete
+        uid: az_managedservices_definition_delete
+        displayName: az managedservices definition delete
+      - name: list
+        uid: az_managedservices_definition_list
+        displayName: az managedservices definition list
+      - name: show
+        uid: az_managedservices_definition_show
+        displayName: az managedservices definition show
   - name: maps
     uid: az_maps
     displayName: az maps

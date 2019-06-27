@@ -390,6 +390,9 @@ commands:
 - uid: az_managedapp
   name: az managedapp
   summary: Manage template solutions provided and maintained by Independent Software Vendors (ISVs).
+- uid: az_managedservices
+  name: az managedservices
+  summary: Manage the registration assignments and definitions in Azure.
 - uid: az_maps
   name: az maps
   summary: Manage Azure Maps.
