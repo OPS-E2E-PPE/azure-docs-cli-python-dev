@@ -38,7 +38,7 @@ items:
     summary: The container lease ID.
     description: ''
   - name: --permissions
-    summary: 'Allowed values: (d)elete (l)ist (r)ead (w)rite. Can be combined.'
+    summary: 'Allowed values: (a)dd (c)reate (d)elete (l)ist (r)ead (w)rite. Can be combined.'
     description: ''
   - name: --start
     summary: Start UTC datetime (Y-m-d'T'H:M:S'Z'). Defaults to time of request.
@@ -215,7 +215,7 @@ items:
     summary: The container lease ID.
     description: ''
   - name: --permissions
-    summary: 'Allowed values: (d)elete (l)ist (r)ead (w)rite. Can be combined.'
+    summary: 'Allowed values: (a)dd (c)reate (d)elete (l)ist (r)ead (w)rite. Can be combined.'
     description: ''
   - name: --start
     summary: Start UTC datetime (Y-m-d'T'H:M:S'Z'). Defaults to time of request.

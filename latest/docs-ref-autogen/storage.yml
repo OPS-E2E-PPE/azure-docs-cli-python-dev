@@ -205,7 +205,7 @@ commands:
   summary: Check for the existence of a storage container.
 - uid: az_storage_container_generate_sas
   name: az storage container generate-sas
-  summary: Generates a shared access signature for the container.
+  summary: ''
 - uid: az_storage_container_immutability_policy
   name: az storage container immutability-policy
   summary: Manage container immutability policies.

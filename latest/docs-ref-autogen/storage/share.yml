@@ -353,7 +353,7 @@ items:
 - uid: az_storage_share_stats
   name: az storage share stats
   summary: Gets the approximate size of the data stored on the share, rounded up to the nearest gigabyte.
-  description: Note that this value may not include all recently created or recently resized files.
+  description: Note that this value may not include all recently created or recently re-sized files.
   langs:
   - azurecli
   parameters:

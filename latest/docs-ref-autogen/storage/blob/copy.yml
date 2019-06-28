@@ -89,6 +89,9 @@ items:
   - name: --metadata
     summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
     description: ''
+  - name: --requires-sync
+    summary: Enforces that the service will not return a response until the copy is complete.
+    description: ''
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
