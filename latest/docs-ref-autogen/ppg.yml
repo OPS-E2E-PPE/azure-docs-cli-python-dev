@@ -38,8 +38,7 @@ items:
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --type -t
-    parameterValueGroup: Standard, Ultra
-    summary: The type of the proximity placement group.
+    summary: 'The type of the proximity placement group. Allowed values: Standard.'
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
