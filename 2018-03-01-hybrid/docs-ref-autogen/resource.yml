@@ -74,7 +74,7 @@ items:
   - name: --resource-type
     summary: "The resource type (Ex: 'resC'). Can also accept namespace/type format (Ex: 'Microsoft.Provider/resC')."
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -121,7 +121,7 @@ items:
   - name: --resource-type
     summary: "The resource type (Ex: 'resC'). Can also accept namespace/type format (Ex: 'Microsoft.Provider/resC')."
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -184,7 +184,7 @@ items:
   - name: --resource-type
     summary: "The resource type (Ex: 'resC'). Can also accept namespace/type format (Ex: 'Microsoft.Provider/resC')."
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -234,7 +234,7 @@ items:
   - name: --resource-type
     summary: "The resource type (Ex: 'resC'). Can also accept namespace/type format (Ex: 'Microsoft.Provider/resC')."
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -261,7 +261,7 @@ items:
   - name: --destination-subscription-id
     summary: The destination subscription identifier.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -318,7 +318,7 @@ items:
   - name: --resource-type
     summary: "The resource type (Ex: 'resC'). Can also accept namespace/type format (Ex: 'Microsoft.Provider/resC')."
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -369,7 +369,7 @@ items:
   - name: --resource-type
     summary: "The resource type (Ex: 'resC'). Can also accept namespace/type format (Ex: 'Microsoft.Provider/resC')."
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -426,7 +426,7 @@ items:
   - name: --set
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -490,7 +490,7 @@ items:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

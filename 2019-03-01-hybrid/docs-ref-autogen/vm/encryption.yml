@@ -32,6 +32,9 @@ items:
     parameterValueGroup: ALL, DATA, OS
     summary: Type of volume that the encryption operation is performed on.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -40,9 +43,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
@@ -91,6 +91,9 @@ items:
     parameterValueGroup: ALL, DATA, OS
     summary: Type of volume that the encryption operation is performed on.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -99,9 +102,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --aad-client-cert-thumbprint
     summary: Thumbprint of the AAD app certificate with permissions to write secrets to the key vault.
@@ -129,6 +129,9 @@ items:
     syntax:
       content: az vm encryption show --name MyVirtualMachine --resource-group MyResourceGroup
   parameters:
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -137,9 +140,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py

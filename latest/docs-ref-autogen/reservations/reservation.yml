@@ -24,7 +24,7 @@ items:
     name: --reservation-order-id
     summary: Id of container reservation order.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -48,7 +48,7 @@ items:
     name: --reservation-order-id
     summary: Order id of the reservation.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -76,7 +76,7 @@ items:
     name: --reservation-order-id
     summary: Reservation order id of the reservations to merge.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -100,7 +100,7 @@ items:
     name: --reservation-order-id
     summary: Order id of reservation to look up.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -132,7 +132,7 @@ items:
     name: --reservation-order-id
     summary: Reservation order id of the reservation to split.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -168,7 +168,7 @@ items:
     parameterValueGroup: NotSupported, Off, On
     summary: Type of the Instance Flexibility to update the reservation with.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

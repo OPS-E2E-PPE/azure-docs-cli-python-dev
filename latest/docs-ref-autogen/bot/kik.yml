@@ -47,7 +47,7 @@ items:
     parameterValueGroup: false, true
     summary: Whether or not the Kik account has been validated for use with the bot.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -71,7 +71,7 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -99,7 +99,7 @@ items:
     parameterValueGroup: false, true
     summary: Show secrets in response for the channel.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

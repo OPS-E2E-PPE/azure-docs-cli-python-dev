@@ -24,6 +24,9 @@ items:
   - name: --key-length
     summary: The virtual network connection reset shared key length.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --connection-name
     summary: Connection name.
     description: ''
@@ -32,9 +35,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py
@@ -56,6 +56,9 @@ items:
     syntax:
       content: az network vpn-connection shared-key show --connection-name MyConnection --resource-group MyResourceGroup --subscription MySubscription
   parameters:
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --connection-name
     summary: Connection name.
     description: ''
@@ -64,9 +67,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py
@@ -88,6 +88,9 @@ items:
   - name: --value
     summary: The virtual network connection shared key value.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --connection-name
     summary: Connection name.
     description: ''
@@ -96,9 +99,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'

@@ -46,7 +46,7 @@ items:
   - name: --version
     summary: Extension version.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -70,7 +70,7 @@ items:
     name: --publisher -p
     summary: Image publisher name.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -107,7 +107,7 @@ items:
   - name: --top
     summary: The $top odata query option.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -139,7 +139,7 @@ items:
     name: --version
     summary: Extension version.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

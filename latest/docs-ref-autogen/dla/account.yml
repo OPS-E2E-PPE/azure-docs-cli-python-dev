@@ -52,7 +52,7 @@ items:
     parameterValueGroup: Commitment_100000AUHours, Commitment_10000AUHours, Commitment_1000AUHours, Commitment_100AUHours, Commitment_500000AUHours, Commitment_50000AUHours, Commitment_5000AUHours, Commitment_500AUHours, Consumption
     summary: The desired commitment tier for this account to use.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -71,14 +71,14 @@ items:
   - name: --resource-group -g
     summary: If not specified, will attempt to discover the resource group for the specified Data Lake Analytics account.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --account -n
     summary: Name of the Data Lake Analytics account.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/dla/_help.py
@@ -96,7 +96,7 @@ items:
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -115,14 +115,14 @@ items:
   - name: --resource-group -g
     summary: If not specified, will attempt to discover the resource group for the specified Data Lake Analytics account.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --account -n
     summary: Name of the Data Lake Analytics account.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/dla/_help.py
@@ -164,14 +164,14 @@ items:
     parameterValueGroup: Commitment_100000AUHours, Commitment_10000AUHours, Commitment_1000AUHours, Commitment_100AUHours, Commitment_500000AUHours, Commitment_50000AUHours, Commitment_5000AUHours, Commitment_500AUHours, Consumption
     summary: The desired commitment tier for this account to use.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --account -n
     summary: Name of the Data Lake Analytics account.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/dla/_help.py

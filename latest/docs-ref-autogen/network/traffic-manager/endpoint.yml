@@ -78,7 +78,7 @@ items:
   - name: --weight
     summary: Weight of the endpoint when using the 'Weighted' traffic routing method. Values range from 1 to 1000.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -101,6 +101,9 @@ items:
     syntax:
       content: az network traffic-manager endpoint delete --name MyEndpoint --profile-name MyTmProfile --resource-group MyResourceGroup --subscription MySubscription --type azureEndpoints
   parameters:
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -112,9 +115,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --type -t
     parameterValueGroup: azureEndpoints, externalEndpoints, nestedEndpoints
@@ -149,7 +149,7 @@ items:
     parameterValueGroup: azureEndpoints, externalEndpoints, nestedEndpoints
     summary: Endpoint type.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -171,6 +171,9 @@ items:
         az network traffic-manager endpoint show -g MyResourceGroup \
                                     --profile-name MyTmProfile -n MyEndpoint --type azureEndpoints
   parameters:
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -182,9 +185,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --type -t
     parameterValueGroup: azureEndpoints, externalEndpoints, nestedEndpoints
@@ -207,7 +207,7 @@ items:
     syntax:
       content: az network traffic-manager endpoint show-geographic-hierarchy
   parameters:
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -264,6 +264,9 @@ items:
   - name: --weight
     summary: Weight of the endpoint when using the 'Weighted' traffic routing method. Values range from 1 to 1000.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -275,9 +278,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --type -t
     parameterValueGroup: azureEndpoints, externalEndpoints, nestedEndpoints

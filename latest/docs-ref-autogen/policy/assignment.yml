@@ -95,9 +95,6 @@ items:
     defaultValue: Contributor
     summary: Role name or id that will be assigned to the managed identity.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py
     remote:
@@ -125,9 +122,6 @@ items:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py
     remote:
@@ -149,9 +143,6 @@ items:
     description: ''
   - name: --scope
     summary: Scope to which this policy assignment applies.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py
@@ -179,9 +170,6 @@ items:
     description: ''
   - name: --scope
     summary: Scope to which this policy assignment applies.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py

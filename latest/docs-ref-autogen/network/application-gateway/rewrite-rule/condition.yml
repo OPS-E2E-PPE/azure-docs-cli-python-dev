@@ -55,7 +55,7 @@ items:
   - name: --pattern
     summary: The pattern, either fixed string or regular expression, that evaluates the truthfulness of the condition.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -78,6 +78,9 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --gateway-name
     summary: Name of the application gateway.
     description: ''
@@ -92,9 +95,6 @@ items:
     description: ''
   - name: --rule-set-name
     summary: Name of the rewrite rule set.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py
@@ -125,7 +125,7 @@ items:
     name: --rule-set-name
     summary: Name of the rewrite rule set.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -141,7 +141,7 @@ items:
   langs:
   - azurecli
   parameters:
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -161,6 +161,9 @@ items:
     name: --variable
     summary: The variable whose value is being evaluated.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --gateway-name
     summary: Name of the application gateway.
     description: ''
@@ -175,9 +178,6 @@ items:
     description: ''
   - name: --rule-set-name
     summary: Name of the rewrite rule set.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py
@@ -211,6 +211,9 @@ items:
   - name: --pattern
     summary: The pattern, either fixed string or regular expression, that evaluates the truthfulness of the condition.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --gateway-name
     summary: Name of the application gateway.
     description: ''
@@ -225,9 +228,6 @@ items:
     description: ''
   - name: --rule-set-name
     summary: Name of the rewrite rule set.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'

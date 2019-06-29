@@ -36,7 +36,7 @@ items:
     parameterValueGroup: admin, contributer, reader
     summary: User role of the access key for the given DigitalTwin repository.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -68,7 +68,7 @@ items:
     name: --repo-id -r
     summary: DigitalTwin repository Id.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -96,7 +96,7 @@ items:
     name: --repo-id -r
     summary: DigitalTwin repository Id.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -128,7 +128,7 @@ items:
     name: --repo-id -r
     summary: DigitalTwin repository Id.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -165,7 +165,7 @@ items:
     parameterValueGroup: admin, contributer, reader
     summary: User role of the access key for the given DigitalTwin repository.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

@@ -43,7 +43,7 @@ items:
   - name: --mail-nickname
     summary: Mail alias. Defaults to user principal name.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -63,7 +63,7 @@ items:
     name: --upn-or-object-id
     summary: The object ID or principal name of the user to delete.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -90,7 +90,7 @@ items:
   - name: --security-enabled-only
     summary: If true, only membership in security-enabled groups should be checked. Otherwise, membership in all groups should be checked.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -115,7 +115,7 @@ items:
   - name: --upn
     summary: User principal name, e.g. john.doe@contoso.com.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -135,7 +135,7 @@ items:
     name: --upn-or-object-id
     summary: The object ID or principal name of the user for which to get information.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

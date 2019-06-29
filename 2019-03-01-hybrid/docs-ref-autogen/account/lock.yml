@@ -35,9 +35,6 @@ items:
   - name: --notes
     summary: Notes about this lock.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
     remote:
@@ -61,9 +58,6 @@ items:
   - name: --name -n
     summary: Name of the lock.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
     remote:
@@ -83,9 +77,6 @@ items:
   parameters:
   - name: --filter-string
     summary: A query filter to use to restrict the results.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
@@ -109,9 +100,6 @@ items:
     description: ''
   - name: --name -n
     summary: Name of the lock.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
@@ -142,9 +130,6 @@ items:
     description: ''
   - name: --notes
     summary: Notes about this lock.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py

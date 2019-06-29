@@ -59,7 +59,7 @@ items:
   - name: --ssh-private-key -k
     summary: Optional SSH private key path to establish SSH connection. If omitted, the default SSH private key will be used.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -93,7 +93,7 @@ items:
     name: --workspace -w
     summary: Name of workspace.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

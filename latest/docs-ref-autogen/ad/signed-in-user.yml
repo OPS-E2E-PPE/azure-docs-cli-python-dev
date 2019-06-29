@@ -19,7 +19,7 @@ items:
   - name: --type -t
     summary: Object type filter, e.g. "application", "servicePrincipal"  "group", etc.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -35,7 +35,7 @@ items:
   langs:
   - azurecli
   parameters:
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

@@ -56,7 +56,7 @@ items:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -95,7 +95,7 @@ items:
   - name: --username -u
     summary: The username used to log into a container registry.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -143,7 +143,7 @@ items:
   - name: --username -u
     summary: The username used to log into a container registry.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -199,7 +199,7 @@ items:
   - name: --username -u
     summary: The username used to log into a container registry.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -255,7 +255,7 @@ items:
   - name: --username -u
     summary: The username used to log into a container registry.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -295,7 +295,7 @@ items:
   - name: --username -u
     summary: The username used to log into a container registry.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -359,7 +359,7 @@ items:
     parameterValueGroup: false, true
     summary: Indicates whether write or delete operation is allowed.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

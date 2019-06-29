@@ -36,7 +36,7 @@ items:
     name: --service-name
     summary: The name of the Service.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -68,7 +68,7 @@ items:
     name: --service-name
     summary: The name of the Service.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -155,7 +155,7 @@ items:
   - name: --enable-schema-validation
     summary: Whether to compare the schema information between source and target.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -193,7 +193,7 @@ items:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -231,7 +231,7 @@ items:
   - name: --task-type
     summary: Filters the list by the type of task. For the list of possible types see "az dms check-status".
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -266,7 +266,7 @@ items:
   - name: --expand
     summary: Expand the response to provide more details. Use with "command" to see more details of the Task. Use with "output" to see the results of the Task's migration.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

@@ -48,9 +48,6 @@ items:
   - name: --pip-proxy
     summary: Proxy for pip to use for extension dependencies in the form of [user:passwd@]proxy.server:port.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/extension/_help.py
     remote:
@@ -63,10 +60,7 @@ items:
   description: ''
   langs:
   - azurecli
-  parameters:
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
+  parameters: []
   source:
     path: src/azure-cli/azure/cli/command_modules/extension/_help.py
     remote:
@@ -90,9 +84,6 @@ items:
   - name: --show-details -d
     summary: Show the raw data from the extension index.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/extension/_help.py
     remote:
@@ -110,9 +101,6 @@ items:
     name: --name -n
     summary: Name of extension.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/extension/_help.py
     remote:
@@ -129,9 +117,6 @@ items:
   - isRequired: true
     name: --name -n
     summary: Name of extension.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/extension/_help.py
@@ -162,9 +147,6 @@ items:
     description: ''
   - name: --pip-proxy
     summary: Proxy for pip to use for extension dependencies in the form of [user:passwd@]proxy.server:port.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/extension/_help.py

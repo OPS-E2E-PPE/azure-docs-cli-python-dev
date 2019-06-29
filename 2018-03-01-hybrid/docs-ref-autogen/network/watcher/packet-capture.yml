@@ -83,7 +83,7 @@ items:
   - name: --storage-path
     summary: Fully qualified URI of an existing storage container in which to store the capture file.
     description: If not specified, the container 'network-watcher-logs' will be created if it does not exist and the capture file will be stored there.
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -111,7 +111,7 @@ items:
     name: --name -n
     summary: The name of the packet capture session.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -135,7 +135,7 @@ items:
     name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -163,7 +163,7 @@ items:
     name: --name -n
     summary: The name of the packet capture session.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -191,7 +191,7 @@ items:
     name: --name -n
     summary: The name given to the packet capture session.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -219,7 +219,7 @@ items:
     name: --name -n
     summary: The name of the packet capture session.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

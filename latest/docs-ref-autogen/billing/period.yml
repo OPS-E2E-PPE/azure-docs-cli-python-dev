@@ -25,7 +25,7 @@ items:
   - name: --top
     summary: May be used to limit the number of results to the most recent N billing periods.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -45,7 +45,7 @@ items:
     name: --name -n
     summary: Name of the billing period.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

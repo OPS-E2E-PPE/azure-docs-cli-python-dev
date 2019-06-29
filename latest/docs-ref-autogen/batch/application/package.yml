@@ -39,7 +39,7 @@ items:
     name: --version-name
     summary: The version of the application.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -75,7 +75,7 @@ items:
     name: --version-name
     summary: The version name of the application.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -110,7 +110,7 @@ items:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -141,7 +141,7 @@ items:
   - name: --maxresults
     summary: The maximum number of items to return in the response.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -173,7 +173,7 @@ items:
     name: --version-name
     summary: The version of the application.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

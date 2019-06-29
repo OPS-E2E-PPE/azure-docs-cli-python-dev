@@ -19,7 +19,7 @@ items:
     name: --subscription-id
     summary: Id of the subscription to look up applied reservations.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

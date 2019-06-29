@@ -25,7 +25,7 @@ items:
   - name: --expand
     summary: The $expand query parameter. e.g. To include property aliases in response, use $expand=resourceTypes/aliases.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -52,7 +52,7 @@ items:
   - name: --wait
     summary: Wait for the registration to finish.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -75,7 +75,7 @@ items:
   - name: --expand
     summary: The $expand query parameter. e.g. To include property aliases in response, use $expand=resourceTypes/aliases.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -102,7 +102,7 @@ items:
   - name: --wait
     summary: Wait for unregistration to finish.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

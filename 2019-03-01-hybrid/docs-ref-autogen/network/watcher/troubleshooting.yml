@@ -31,7 +31,7 @@ items:
     parameterValueGroup: vnetGateway, vpnConnection
     summary: The resource type.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -76,7 +76,7 @@ items:
     parameterValueGroup: vnetGateway, vpnConnection
     summary: The type of target resource to troubleshoot, if resource ID is not specified.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

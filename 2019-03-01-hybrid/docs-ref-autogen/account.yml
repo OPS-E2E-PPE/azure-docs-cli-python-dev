@@ -19,10 +19,7 @@ items:
   description: To clear the current subscription, use 'az logout'.
   langs:
   - azurecli
-  parameters:
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
+  parameters: []
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
     remote:
@@ -61,9 +58,6 @@ items:
   - name: --refresh
     summary: Retrieve up-to-date subscriptions from server.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
     remote:
@@ -76,10 +70,7 @@ items:
   description: ''
   langs:
   - azurecli
-  parameters:
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
+  parameters: []
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
     remote:

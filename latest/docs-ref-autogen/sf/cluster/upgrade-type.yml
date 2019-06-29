@@ -35,7 +35,7 @@ items:
   - name: --version
     summary: Cluster code version.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 commands:

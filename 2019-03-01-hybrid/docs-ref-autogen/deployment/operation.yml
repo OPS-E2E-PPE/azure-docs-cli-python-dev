@@ -23,7 +23,7 @@ items:
   - name: --top
     summary: The number of results to return.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -47,7 +47,7 @@ items:
     name: --operation-ids
     summary: A list of operation ids to show.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

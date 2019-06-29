@@ -39,7 +39,7 @@ items:
   - name: --phone
     summary: Phone of the security contact.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -63,7 +63,7 @@ items:
     name: --name -n
     summary: Name of the resource to be fetched.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -83,7 +83,7 @@ items:
     syntax:
       content: az security contact list
   parameters:
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -107,7 +107,7 @@ items:
     name: --name -n
     summary: Name of the resource to be fetched.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

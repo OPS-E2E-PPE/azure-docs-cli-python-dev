@@ -21,6 +21,9 @@ items:
     name: --policy-option-name
     summary: The content key policy option name.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --account-name -a
     summary: The name of the Azure Media Services account.
     description: ''
@@ -32,9 +35,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --clear-key-configuration
     summary: Use Clear Key configuration, a.k.a AES encryption. It's intended for non-DRM keys.
@@ -110,6 +110,9 @@ items:
     name: --policy-option-id
     summary: The content key policy option identifier. This value can be obtained from "policyOptionId" property by running a show operation on a content key policy resource.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --account-name -a
     summary: The name of the Azure Media Services account.
     description: ''
@@ -121,9 +124,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/ams/_help.py
@@ -149,6 +149,9 @@ items:
   - name: --policy-option-name
     summary: The content key policy option name.
     description: ''
+  - name: '---subscription'
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
   - name: --account-name -a
     summary: The name of the Azure Media Services account.
     description: ''
@@ -160,9 +163,6 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --ask
     summary: The key that must be used as FairPlay Application Secret Key.

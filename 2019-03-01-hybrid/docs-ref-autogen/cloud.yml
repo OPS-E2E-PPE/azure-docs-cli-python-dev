@@ -20,10 +20,7 @@ items:
   description: ''
   langs:
   - azurecli
-  parameters:
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
+  parameters: []
   source:
     path: src/azure-cli/azure/cli/command_modules/cloud/_help.py
     remote:
@@ -43,9 +40,6 @@ items:
     description: ''
   - name: --show-all
     summary: Show all available profiles supported in the CLI.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/cloud/_help.py
@@ -116,9 +110,6 @@ items:
   - name: --suffix-storage-endpoint
     summary: The endpoint suffix for storage accounts.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/cloud/_help.py
     remote:
@@ -140,9 +131,6 @@ items:
     parameterValueGroup: 2017-03-09-profile, 2018-03-01-hybrid, 2019-03-01-hybrid, latest
     summary: Profile to use for this cloud.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/cloud/_help.py
     remote:
@@ -160,9 +148,6 @@ items:
     defaultValue: AzureCloud
     summary: Name of a registered cloud.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/cloud/_help.py
     remote:
@@ -179,9 +164,6 @@ items:
   - isRequired: true
     name: --name -n
     summary: Name of a registered cloud.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/cloud/_help.py
@@ -251,9 +233,6 @@ items:
     description: ''
   - name: --suffix-storage-endpoint
     summary: The endpoint suffix for storage accounts.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/cloud/_help.py

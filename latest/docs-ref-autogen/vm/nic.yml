@@ -38,7 +38,7 @@ items:
   - name: --primary-nic
     summary: Name or ID of the primary NIC. If missing, the first NIC in the list will be the primary.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -66,7 +66,7 @@ items:
     name: --vm-name
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=&lt;name&gt;`.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -101,7 +101,7 @@ items:
   - name: --primary-nic
     summary: Name or ID of the primary NIC. If missing, the first NIC in the list will be the primary.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -139,7 +139,7 @@ items:
   - name: --primary-nic
     summary: Name or ID of the primary NIC. If missing, the first NIC in the list will be the primary.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -171,7 +171,7 @@ items:
     name: --vm-name
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=&lt;name&gt;`.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

@@ -41,9 +41,6 @@ items:
     parameterValueGroup: global, local
     summary: Scope of defaults. Using "local" for settings only effective under current folder.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/configure/_help.py
     remote:
@@ -56,10 +53,7 @@ items:
   description: ''
   langs:
   - azurecli
-  parameters:
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
+  parameters: []
   source:
     path: src/azure-cli/azure/cli/command_modules/feedback/_help.py
     remote:
@@ -86,9 +80,6 @@ items:
   - name: <CLI_TERM>
     summary: An Azure CLI command or group for which you need an example.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/find/_help.py
     remote:
@@ -108,9 +99,6 @@ items:
     description: ''
   - name: --update
     summary: Update the Interactive extension to the latest available.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_login
   name: az login
@@ -162,9 +150,6 @@ items:
   - name: --identity -i
     summary: Log in using the Virtual Machine's identity.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
     remote:
@@ -180,9 +165,6 @@ items:
   parameters:
   - name: --username
     summary: Account user, if missing, logout the current active account.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
@@ -232,7 +214,7 @@ items:
   - name: --uri-parameters
     summary: Space-separated queries in KEY=VALUE format or JSON string. Use @{file} to load from a file.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_self_test
@@ -242,7 +224,7 @@ items:
   langs:
   - azurecli
   parameters:
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 commands:

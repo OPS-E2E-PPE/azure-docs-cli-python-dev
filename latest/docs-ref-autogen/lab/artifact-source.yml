@@ -36,7 +36,7 @@ items:
   - name: --top
     summary: The maximum number of resources to return from the operation.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -67,7 +67,7 @@ items:
   - name: --expand
     summary: "Specify the $expand query. Example: 'properties($select=displayName)'."
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

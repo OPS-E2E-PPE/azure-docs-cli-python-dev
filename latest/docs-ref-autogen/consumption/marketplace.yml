@@ -27,7 +27,7 @@ items:
   - name: --top -t
     summary: 'Maximum number of items to return. Value range: 1-1000.'
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

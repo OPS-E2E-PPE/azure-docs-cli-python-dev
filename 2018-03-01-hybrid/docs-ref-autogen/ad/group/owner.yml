@@ -29,7 +29,7 @@ items:
     name: --owner-object-id
     summary: Owner's object id.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -53,7 +53,7 @@ items:
     name: --group -g
     summary: Group's object id or display name(prefix also works if there is a unique match).
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -77,7 +77,7 @@ items:
     name: --owner-object-id
     summary: Owner's object id.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

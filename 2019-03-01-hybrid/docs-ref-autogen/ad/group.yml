@@ -35,7 +35,7 @@ items:
     parameterValueGroup: false, true
     summary: Always create a new group instead of updating the one with same display and mail nickname.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -55,7 +55,7 @@ items:
     name: --group -g
     summary: Group's object id or display name(prefix also works if there is a unique match).
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -82,7 +82,7 @@ items:
     parameterValueGroup: false, true
     summary: If true, only membership in security-enabled groups should be checked. Otherwise, membership in all groups should be checked.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -104,7 +104,7 @@ items:
   - name: --filter
     summary: OData filter.
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -124,7 +124,7 @@ items:
     name: --group -g
     summary: Group's object id or display name(prefix also works if there is a unique match).
     description: ''
-  - name: --subscription
+  - name: '---subscription'
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
