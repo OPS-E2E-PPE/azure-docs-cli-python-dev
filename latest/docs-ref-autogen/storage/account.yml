@@ -371,6 +371,10 @@ items:
   - name: --custom-domain
     summary: User domain assigned to the storage account. Name is the CNAME source. Use "" to clear existing value.
     description: ''
+  - name: --enable-files-aadds
+    parameterValueGroup: false, true
+    summary: Enable the identity based authentication settings for Azure Files.
+    description: ''
   - name: --encryption-services
     parameterValueGroup: blob, file, queue, table
     summary: Specifies which service(s) to encrypt.
