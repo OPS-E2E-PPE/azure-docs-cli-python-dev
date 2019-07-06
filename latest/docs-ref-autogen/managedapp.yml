@@ -71,7 +71,7 @@ items:
   - name: --tags
     summary: Tags in 'a=b c' format.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -91,9 +91,6 @@ items:
     syntax:
       content: az managedapp delete --name MyManagedApplication --resource-group MyResourceGroup
   parameters:
-  - name: '---subscription'
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -102,6 +99,9 @@ items:
     description: ''
   - name: --resource-group -g
     summary: The resource group of the managed application.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py
@@ -123,7 +123,7 @@ items:
   - name: --resource-group -g
     summary: The resource group of the managed application.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -139,9 +139,6 @@ items:
   langs:
   - azurecli
   parameters:
-  - name: '---subscription'
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -150,6 +147,9 @@ items:
     description: ''
   - name: --resource-group -g
     summary: The resource group of the managed application.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py

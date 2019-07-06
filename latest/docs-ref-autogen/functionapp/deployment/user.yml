@@ -27,7 +27,7 @@ items:
   - name: --password
     summary: Password, will prompt if not specified.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -43,7 +43,7 @@ items:
   langs:
   - azurecli
   parameters:
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

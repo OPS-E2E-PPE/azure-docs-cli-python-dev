@@ -36,7 +36,7 @@ items:
   - name: --urn
     summary: URN, in format of 'publisher:offer:sku:version'. If specified, other argument values can be omitted.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -77,7 +77,7 @@ items:
   - name: --sku -s
     summary: Image sku name, partial name is accepted.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -109,7 +109,7 @@ items:
     summary: A valid image publisher.
     description: ''
     valueFrom: az vm list-publishers
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -136,7 +136,7 @@ items:
     name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -169,7 +169,7 @@ items:
     summary: A valid image publisher.
     description: ''
     valueFrom: az vm image list-publishers
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -213,7 +213,7 @@ items:
   - name: --version
     summary: Image sku's version.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

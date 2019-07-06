@@ -51,7 +51,7 @@ items:
     parameterValueGroup: LocalMySql, MySql, PostgreSql, SqlAzure
     summary: Type of database in the backup.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_webapp_config_backup_list
@@ -76,7 +76,7 @@ items:
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_webapp_config_backup_restore
@@ -124,7 +124,7 @@ items:
     parameterValueGroup: LocalMySql, MySql, PostgreSql, SqlAzure
     summary: Type of database in the backup.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_webapp_config_backup_show
@@ -145,7 +145,7 @@ items:
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_webapp_config_backup_update
@@ -192,7 +192,7 @@ items:
     parameterValueGroup: LocalMySql, MySql, PostgreSql, SqlAzure
     summary: Type of database in the backup.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 commands:

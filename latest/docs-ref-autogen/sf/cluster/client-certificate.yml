@@ -49,7 +49,7 @@ items:
   - name: --thumbprint
     summary: Client certificate thumbprint.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_sf_cluster_client_certificate_remove
@@ -83,7 +83,7 @@ items:
   - name: --thumbprints
     summary: A single or Space-separated list of client certificate thumbprint(s) to be remove.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 commands:

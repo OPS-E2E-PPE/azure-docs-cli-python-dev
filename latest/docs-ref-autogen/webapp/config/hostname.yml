@@ -25,9 +25,6 @@ items:
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
-  - name: '---subscription'
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   - name: --hostname
     summary: Hostname assigned to the site, such as custom domains.
     description: ''
@@ -36,6 +33,9 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --webapp-name
     summary: Webapp name. You can configure the default using 'az configure --defaults web=<name>'.
@@ -50,9 +50,6 @@ items:
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
-  - name: '---subscription'
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   - name: --hostname
     summary: Hostname assigned to the site, such as custom domains.
     description: ''
@@ -61,6 +58,9 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --webapp-name
     summary: Webapp name. You can configure the default using 'az configure --defaults web=<name>'.
@@ -76,14 +76,14 @@ items:
     syntax:
       content: az webapp config hostname get-external-ip --resource-group MyResourceGroup --webapp-name MyWebapp
   parameters:
-  - name: '---subscription'
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --webapp-name
     summary: Webapp name. You can configure the default using 'az configure --defaults web=<name>'.
@@ -110,7 +110,7 @@ items:
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 commands:

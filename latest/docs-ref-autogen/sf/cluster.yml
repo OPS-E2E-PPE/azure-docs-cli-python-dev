@@ -81,7 +81,7 @@ items:
   - name: --vm-user-name
     summary: The user name for logging to Vm. Default will be adminuser.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_sf_cluster_list
@@ -94,7 +94,7 @@ items:
   - name: --resource-group -g
     summary: The resource group name.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_sf_cluster_show
@@ -112,7 +112,7 @@ items:
     name: --resource-group -g
     summary: The resource group name.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 commands:

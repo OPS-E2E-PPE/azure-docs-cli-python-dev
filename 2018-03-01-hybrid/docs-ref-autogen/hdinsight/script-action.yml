@@ -31,7 +31,7 @@ items:
     name: --script-action-name
     summary: The name of the script action.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -73,7 +73,7 @@ items:
   - name: --script-parameters
     summary: The parameters for the script.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -107,7 +107,7 @@ items:
   - name: --persisted
     summary: If only list persisted script actions.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -135,7 +135,7 @@ items:
     name: --script-execution-id
     summary: The script execution Id.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -163,7 +163,7 @@ items:
     name: --script-execution-id
     summary: The script execution Id.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

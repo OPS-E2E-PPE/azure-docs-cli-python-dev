@@ -24,9 +24,6 @@ items:
     name: --name -n
     summary: The unique name of the operation to cancel.
     description: ''
-  - name: '---subscription'
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   - name: --database -d
     summary: Name of the Azure SQL Database.
     description: ''
@@ -38,6 +35,9 @@ items:
     description: ''
   - name: --server -s
     summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/sql/_help.py
@@ -52,9 +52,6 @@ items:
   langs:
   - azurecli
   parameters:
-  - name: '---subscription'
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
   - name: --database -d
     summary: Name of the Azure SQL Database.
     description: ''
@@ -66,6 +63,9 @@ items:
     description: ''
   - name: --server -s
     summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/sql/_help.py

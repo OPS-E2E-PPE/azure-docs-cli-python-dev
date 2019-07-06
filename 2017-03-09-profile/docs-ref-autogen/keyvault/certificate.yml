@@ -53,7 +53,7 @@ items:
     name: --vault-name
     summary: Name of the key vault.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -78,7 +78,7 @@ items:
   - name: --vault-name
     summary: Name of the key vault. Required if --id is not specified.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -126,7 +126,7 @@ items:
   - name: --version -v
     summary: The certificate version. If omitted, uses the latest version.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -151,7 +151,7 @@ items:
   - name: --scaffold
     summary: Create a fully formed policy structure with default values.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -196,7 +196,7 @@ items:
     name: --vault-name
     summary: Name of the key vault.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -219,7 +219,7 @@ items:
     name: --vault-name
     summary: Name of the key vault.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -242,7 +242,7 @@ items:
     name: --vault-name
     summary: Name of the key vault.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -269,7 +269,7 @@ items:
     name: --vault-name
     summary: Name of the key vault.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -294,7 +294,7 @@ items:
   - name: --vault-name
     summary: Name of the key vault. Required if --id is not specified.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -319,7 +319,7 @@ items:
   - name: --vault-name
     summary: Name of the key vault. Required if --id is not specified.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -357,7 +357,7 @@ items:
   - name: --version -v
     summary: The certificate version. If omitted, uses the latest version.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -385,7 +385,7 @@ items:
   - name: --version -v
     summary: The certificate version. If omitted, uses the latest version.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -410,7 +410,7 @@ items:
   - name: --vault-name
     summary: Name of the key vault. Required if --id is not specified.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

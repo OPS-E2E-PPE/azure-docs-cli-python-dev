@@ -214,7 +214,7 @@ items:
   - name: --uri-parameters
     summary: Space-separated queries in KEY=VALUE format or JSON string. Use @{file} to load from a file.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 - uid: az_self_test
@@ -224,7 +224,7 @@ items:
   langs:
   - azurecli
   parameters:
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
 commands:

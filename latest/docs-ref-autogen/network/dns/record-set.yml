@@ -27,7 +27,7 @@ items:
     name: --zone-name -z
     summary: The name of the zone.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:

@@ -24,7 +24,7 @@ items:
   - name: --namespace
     summary: The resource namespace, aka 'provider'.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -52,7 +52,7 @@ items:
     name: --namespace
     summary: The resource namespace, aka 'provider'.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
@@ -76,7 +76,7 @@ items:
     name: --namespace
     summary: The resource namespace, aka 'provider'.
     description: ''
-  - name: '---subscription'
+  - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   source:
