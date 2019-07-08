@@ -893,13 +893,6 @@
         - name: evaluate
           uid: az_batch_pool_autoscale_evaluate
           displayName: az batch pool autoscale evaluate
-      - name: Node agent SKUs
-        uid: az_batch_pool_node_agent_skus
-        displayName: az batch pool node-agent-skus
-        items:
-        - name: list
-          uid: az_batch_pool_node_agent_skus_list
-          displayName: az batch pool node-agent-skus list
       - name: Statistics
         uid: az_batch_pool_all_statistics
         displayName: az batch pool all-statistics
@@ -921,6 +914,13 @@
         - name: list
           uid: az_batch_pool_node_counts_list
           displayName: az batch pool node-counts list
+      - name: supported-images
+        uid: az_batch_pool_supported_images
+        displayName: az batch pool supported-images
+        items:
+        - name: list
+          uid: az_batch_pool_supported_images_list
+          displayName: az batch pool supported-images list
     - name: Tasks
       uid: az_batch_task
       displayName: az batch task

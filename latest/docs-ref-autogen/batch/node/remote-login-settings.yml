@@ -10,18 +10,18 @@ items:
   - az_batch_node_remote_login_settings_show
 - uid: az_batch_node_remote_login_settings_show
   name: az batch node remote-login-settings show
-  summary: Gets the settings required for remote login to a compute node.
-  description: Before you can remotely login to a node using the remote login settings, you must create a user account on the node. This API can be invoked only on pools created with the virtual machine configuration property. For pools created with a cloud service configuration, see the GetRemoteDesktop API.
+  summary: Gets the settings required for remote login to a Compute Node.
+  description: Before you can remotely login to a Compute Node using the remote login settings, you must create a user Account on the Compute Node. This API can be invoked only on Pools created with the virtual machine configuration property. For Pools created with a cloud service configuration, see the GetRemoteDesktop API.
   langs:
   - azurecli
   parameters:
   - isRequired: true
     name: --node-id
-    summary: The ID of the compute node for which to obtain the remote login settings.
+    summary: The ID of the Compute Node for which to obtain the remote login settings.
     description: ''
   - isRequired: true
     name: --pool-id
-    summary: The ID of the pool that contains the compute node.
+    summary: The ID of the Pool that contains the Compute Node.
     description: ''
   - name: --account-endpoint
     summary: 'Batch service endpoint. Alternatively, set by environment variable: AZURE_BATCH_ENDPOINT.'
@@ -44,7 +44,7 @@ items:
 commands:
 - uid: az_batch_node_remote_login_settings_show
   name: az batch node remote-login-settings show
-  summary: Gets the settings required for remote login to a compute node.
+  summary: Gets the settings required for remote login to a Compute Node.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -61,7 +61,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/batch/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/f010ccfae1d140839e592120f8cfa2c3bfb9578b/src/azure-cli/azure/cli/command_modules/batch/_help.py
-updated_at: 6/12/2019 8:37:27 PM
-ms.date: 06/12/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/7c9db0bcabd8cb9735c5fb73cdd9419c5929b71c/src/azure-cli/azure/cli/command_modules/batch/_help.py
+updated_at: 7/8/2019 3:48:42 PM
+ms.date: 07/08/2019
 description: Retrieve the remote login settings for a Batch compute node.

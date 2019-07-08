@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_batch_pool_node_agent_skus
-  name: az batch pool node-agent-skus
-  summary: Retrieve node agent SKUs of Batch pools using a Virtual Machine Configuration.
+- uid: az_batch_pool_supported_images
+  name: az batch pool supported-images
+  summary: ''
   description: ''
   langs:
   - azurecli
   children:
-  - az_batch_pool_node_agent_skus_list
-- uid: az_batch_pool_node_agent_skus_list
-  name: az batch pool node-agent-skus list
-  summary: Lists all node agent SKUs supported by the Azure Batch service.
+  - az_batch_pool_supported_images_list
+- uid: az_batch_pool_supported_images_list
+  name: az batch pool supported-images list
+  summary: Lists all Virtual Machine Images supported by the Azure Batch service.
   description: ''
   langs:
   - azurecli
@@ -25,7 +25,7 @@ items:
     summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
     description: ''
   - name: --filter
-    summary: An OData $filter clause. For more information on constructing this filter, see <a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-node-agent-skus">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-node-agent-skus</a>.
+    summary: An OData $filter clause. For more information on constructing this filter, see <a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-support-images">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-support-images</a>.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -37,9 +37,9 @@ items:
       path: src/azure-cli/azure/cli/command_modules/batch/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_batch_pool_node_agent_skus_list
-  name: az batch pool node-agent-skus list
-  summary: Lists all node agent SKUs supported by the Azure Batch service.
+- uid: az_batch_pool_supported_images_list
+  name: az batch pool supported-images list
+  summary: Lists all Virtual Machine Images supported by the Azure Batch service.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -56,7 +56,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/batch/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/f010ccfae1d140839e592120f8cfa2c3bfb9578b/src/azure-cli/azure/cli/command_modules/batch/_help.py
-updated_at: 6/12/2019 8:37:27 PM
-ms.date: 06/12/2019
-description: Retrieve node agent SKUs of Batch pools using a Virtual Machine Configuration.
+gitcommit: https://github.com/Azure/azure-cli/blob/7c9db0bcabd8cb9735c5fb73cdd9419c5929b71c/src/azure-cli/azure/cli/command_modules/batch/_help.py
+updated_at: 7/8/2019 3:48:42 PM
+ms.date: 07/08/2019
