@@ -24,10 +24,6 @@ items:
       content: az sql vm group create -n sqlvmgroup -l eastus -g myresourcegroup --image-offer SQL2016-WS2016 --image-sku Enterprise --domain-fqdn Domain.com --operator-acc testop --service-acc testservice --sa-key {PublicKey} --storage-account 'https://storacc.blob.core.windows.net/'
   parameters:
   - isRequired: true
-    name: --image-offer -i
-    summary: SQL image offer. Examples may include SQL2016-WS2016, SQL2017-WS2016.
-    description: ''
-  - isRequired: true
     name: --name -n
     summary: Name of the SQL virtual machine group.
     description: ''
@@ -40,6 +36,10 @@ items:
     description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - isRequired: true
+    name: --image-offer -i
+    summary: SQL image offer. Examples may include SQL2016-WS2016, SQL2017-WS2016.
     description: ''
   - isRequired: true
     name: --image-sku -s

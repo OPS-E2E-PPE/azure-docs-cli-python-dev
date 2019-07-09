@@ -41,9 +41,6 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  - name: --boostrap-acc-pwd
-    summary: Password for the cluster bootstrap account if provided in the SQL virtual machine group.
-    description: ''
   - name: --bootstrap-acc-pwd -b
     summary: Password for the cluster bootstrap account if provided in the SQL virtual machine group.
     description: ''
@@ -72,18 +69,21 @@ items:
   - summary: Create a SQL virtual machine with specific sku type and license type.
     syntax:
       content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --image-sku Enterprise --license-type AHUB
+  - summary: Create a SQL virtual machine with NoAgent type, only valid for EOS SQL 2008 and SQL 2008 R2.
+    syntax:
+      content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --license-type AHUB --sql-mgmt-type NoAgent --image-sku Enterprise --image-offer SQL2008-WS2008R2
   - summary: Enable R services in SQL2016 onwards.
     syntax:
-      content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --license-type PAYG --enable-r-services true
+      content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --license-type PAYG --sql-mgmt-type Full --enable-r-services true
   - summary: Create SQL virtual machine and configure auto backup settings.
     syntax:
-      content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --license-type PAYG --backup-schedule-type manual --full-backup-frequency Weekly --full-backup-start-hour 2 --full-backup-duration 2 --sa-key {storageKey} --storage-account 'https://storageacc.blob.core.windows.net/' --retention-period 30 --log-backup-frequency 60
+      content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --license-type PAYG --sql-mgmt-type Full --backup-schedule-type manual --full-backup-frequency Weekly --full-backup-start-hour 2 --full-backup-duration 2 --sa-key {storageKey} --storage-account 'https://storageacc.blob.core.windows.net/' --retention-period 30 --log-backup-frequency 60
   - summary: Create SQL virtual machine and configure auto patching settings.
     syntax:
-      content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --license-type PAYG --day-of-week sunday --maintenance-window-duration 60 --maintenance-window-start-hour 2
+      content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --license-type PAYG --sql-mgmt-type Full --day-of-week sunday --maintenance-window-duration 60 --maintenance-window-start-hour 2
   - summary: Create SQL virtual machine and configure SQL connectivity settings.
     syntax:
-      content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --license-type PAYG --connectivity-type private --port 1433 --sql-auth-update-username {newlogin} --sql-auth-update-pwd {sqlpassword}
+      content: az sql vm create -n sqlvm -g myresourcegroup -l eastus --license-type PAYG --sql-mgmt-type Full --connectivity-type private --port 1433 --sql-auth-update-username {newlogin} --sql-auth-update-pwd {sqlpassword}
   parameters:
   - isRequired: true
     name: --name -n
@@ -95,6 +95,11 @@ items:
     description: ''
   - name: --location -l
     summary: Location. If not provided, virtual machine should be in the same region of resource group.You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
+    description: ''
+  - name: --sql-mgmt-type
+    defaultValue: LightWeight
+    parameterValueGroup: Full, LightWeight, NoAgent
+    summary: SQL Server management type. If NoAgent selected, please provide --image-sku and --offer-type.
     description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
@@ -191,6 +196,9 @@ items:
     name: --license-type -i
     parameterValueGroup: AHUB, PAYG
     summary: SQL Server license type.
+    description: ''
+  - name: --image-offer
+    summary: SQL image offer. Examples include SQL2008R2-WS2008, SQL2008-WS2008.
     description: ''
   - name: --image-sku
     parameterValueGroup: Developer, Enterprise, Express, Standard, Web
@@ -330,6 +338,9 @@ items:
   - summary: Update a SQL virtual machine with specific sku type.
     syntax:
       content: az sql vm update -n sqlvm -g myresourcegroup --image-sku Enterprise
+  - summary: Update a SQL virtual machine manageability from LightWeight to Full.
+    syntax:
+      content: az sql vm update -n sqlvm -g myresourcegroup --sql-mgmt-type Full --yes
   - summary: Update SQL virtual machine auto backup settings.
     syntax:
       content: az sql vm update -n sqlvm -g myresourcegroup --backup-schedule-type manual --full-backup-frequency Weekly --full-backup-start-hour 2 --full-backup-duration 2 --sa-key {storageKey} --storage-account 'https://storageacc.blob.core.windows.net/' --retention-period 30 --log-backup-frequency 60
@@ -346,8 +357,16 @@ items:
     syntax:
       content: az sql vm update -n sqlvm -g myresourcegroup --license-type AHUB
   parameters:
+  - name: --sql-mgmt-type
+    parameterValueGroup: Full
+    summary: SQL Server management type. Updates from LightWeight to Full.
+    description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --yes -y
+    defaultValue: "1"
+    summary: Do not prompt for confirmation. Requires --sql-mgmt-type.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
