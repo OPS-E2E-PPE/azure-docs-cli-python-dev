@@ -9682,6 +9682,112 @@
       - name: list
         uid: az_mariadb_server_logs_list
         displayName: az mariadb server-logs list
+  - name: netappfiles
+    uid: az_netappfiles
+    displayName: az netappfiles
+    items:
+    - name: list-mount-targets
+      uid: az_netappfiles_list_mount_targets
+      displayName: az netappfiles list-mount-targets
+    - name: account
+      uid: az_netappfiles_account
+      displayName: az netappfiles account
+      items:
+      - name: create
+        uid: az_netappfiles_account_create
+        displayName: az netappfiles account create
+      - name: delete
+        uid: az_netappfiles_account_delete
+        displayName: az netappfiles account delete
+      - name: list
+        uid: az_netappfiles_account_list
+        displayName: az netappfiles account list
+      - name: show
+        uid: az_netappfiles_account_show
+        displayName: az netappfiles account show
+      - name: update
+        uid: az_netappfiles_account_update
+        displayName: az netappfiles account update
+      - name: ad
+        uid: az_netappfiles_account_ad
+        displayName: az netappfiles account ad
+        items:
+        - name: add
+          uid: az_netappfiles_account_ad_add
+          displayName: az netappfiles account ad add
+        - name: list
+          uid: az_netappfiles_account_ad_list
+          displayName: az netappfiles account ad list
+        - name: remove
+          uid: az_netappfiles_account_ad_remove
+          displayName: az netappfiles account ad remove
+    - name: pool
+      uid: az_netappfiles_pool
+      displayName: az netappfiles pool
+      items:
+      - name: create
+        uid: az_netappfiles_pool_create
+        displayName: az netappfiles pool create
+      - name: delete
+        uid: az_netappfiles_pool_delete
+        displayName: az netappfiles pool delete
+      - name: list
+        uid: az_netappfiles_pool_list
+        displayName: az netappfiles pool list
+      - name: show
+        uid: az_netappfiles_pool_show
+        displayName: az netappfiles pool show
+      - name: update
+        uid: az_netappfiles_pool_update
+        displayName: az netappfiles pool update
+    - name: snapshot
+      uid: az_netappfiles_snapshot
+      displayName: az netappfiles snapshot
+      items:
+      - name: create
+        uid: az_netappfiles_snapshot_create
+        displayName: az netappfiles snapshot create
+      - name: delete
+        uid: az_netappfiles_snapshot_delete
+        displayName: az netappfiles snapshot delete
+      - name: list
+        uid: az_netappfiles_snapshot_list
+        displayName: az netappfiles snapshot list
+      - name: show
+        uid: az_netappfiles_snapshot_show
+        displayName: az netappfiles snapshot show
+    - name: volume
+      uid: az_netappfiles_volume
+      displayName: az netappfiles volume
+      items:
+      - name: create
+        uid: az_netappfiles_volume_create
+        displayName: az netappfiles volume create
+      - name: delete
+        uid: az_netappfiles_volume_delete
+        displayName: az netappfiles volume delete
+      - name: list
+        uid: az_netappfiles_volume_list
+        displayName: az netappfiles volume list
+      - name: show
+        uid: az_netappfiles_volume_show
+        displayName: az netappfiles volume show
+      - name: update
+        uid: az_netappfiles_volume_update
+        displayName: az netappfiles volume update
+      - name: export-policy
+        uid: az_netappfiles_volume_export_policy
+        displayName: az netappfiles volume export-policy
+        items:
+        - name: add
+          uid: az_netappfiles_volume_export_policy_add
+          displayName: az netappfiles volume export-policy add
+        - name: list
+          uid: az_netappfiles_volume_export_policy_list
+          displayName: az netappfiles volume export-policy list
+        - name: remove
+          uid: az_netappfiles_volume_export_policy_remove
+          displayName: az netappfiles volume export-policy remove
   - name: openshift
     uid: az_openshift
     displayName: az openshift

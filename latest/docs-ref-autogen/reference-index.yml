@@ -387,6 +387,9 @@ commands:
 - uid: az_mysql
   name: az mysql
   summary: Manage Azure Database for MySQL servers.
+- uid: az_netappfiles
+  name: az netappfiles
+  summary: Manage Azure NetApp Files (ANF) Resources.
 - uid: az_network
   name: az network
   summary: Manage Azure Network resources.
