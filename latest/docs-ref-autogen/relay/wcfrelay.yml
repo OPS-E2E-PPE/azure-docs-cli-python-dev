@@ -45,6 +45,10 @@ items:
     parameterValueGroup: false, true
     summary: Indicates whether client authorization is required.
     description: ''
+  - name: --requires-transport-security
+    parameterValueGroup: false, true
+    summary: Indicates whether transport security is required.
+    description: ''
   - name: --user-metadata
     summary: Endpoint metadata.
     description: ''
@@ -164,10 +168,6 @@ items:
     defaultValue: NetTcp
     parameterValueGroup: Http, NetTcp
     summary: Relay type.
-    description: ''
-  - name: --requires-client-authorization
-    parameterValueGroup: false, true
-    summary: Indicates whether client authorization is required.
     description: ''
   - name: --status
     parameterValueGroup: Active, Disabled, ReceiveDisabled, SendDisabled
