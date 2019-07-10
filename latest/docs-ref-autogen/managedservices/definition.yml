@@ -21,9 +21,6 @@ items:
   - summary: Creates a registration definition under the default subscription scope with the required parameters.
     syntax:
       content: az managedservices definition create --name mydef --tenant-id dab3375b-6197-4a15-a44b-16c41faa91d7 --principal-id b6f6c88a-5b7a-455e-ba40-ce146d4d3671 --role-definition-id ccdd72a7-3385-48ef-bd42-f606fba81ae7
-  - summary: Creates a registration definition under the given subscription scope with the required parameters.
-    syntax:
-      content: az managedservices definition create --name mydef --tenant-id dab3375b-6197-4a15-a44b-16c41faa91d7 --principal-id b6f6c88a-5b7a-455e-ba40-ce146d4d3671 --role-definition-id ccdd72a7-3385-48ef-bd42-f606fba81ae7 --subscription e716db1e-393d-4f2a-81fe-2577e92c9200
   parameters:
   - isRequired: true
     name: --name
@@ -78,9 +75,6 @@ items:
   - summary: Deletes the registration definition given its identifier under the default subscription scope.
     syntax:
       content: az managedservices definition delete --definition af8772a0-fd9c-4ddc-8ad0-7d4b3913d7dd
-  - summary: Deletes the registration definition given its identifier and subscription id.
-    syntax:
-      content: az managedservices definition delete --definition af8772a0-fd9c-4ddc-8ad0-7d4b3913d7dd --subscription 39033314-9b39-4c7b-84fd-0e26e55f15dc
   - summary: Deletes the registration definition given its fully qualified resource id.
     syntax:
       content: az managedservices definition delete --definition /subscriptions/39033314-9b39-4c7b-84fd-0e26e55f15dc/providers/Microsoft.ManagedServices/registrationDefinitions/1d693e4f-9e79-433a-b3a2-afce1f8b61ec
@@ -108,9 +102,6 @@ items:
   - summary: Lists all the registration definitions under the default subscription scope.
     syntax:
       content: az managedservices definition list
-  - summary: Lists all the registration definitions under the given subscription scope.
-    syntax:
-      content: az managedservices definition list --subscription 0c3e9687-b461-4615-b6e4-74d54998d6e4
   parameters:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -131,9 +122,6 @@ items:
   - summary: Gets the registration definition given its identifier under the default subscription scope.
     syntax:
       content: az managedservices definition show --definition af8772a0-fd9c-4ddc-8ad0-7d4b3913d7dd
-  - summary: Gets the registration definition given its identifier and subscription id.
-    syntax:
-      content: az managedservices definition show --definition af8772a0-fd9c-4ddc-8ad0-7d4b3913d7dd --subscription 39033314-9b39-4c7b-84fd-0e26e55f15dc
   - summary: Gets the registration definition given its fully qualified resource id.
     syntax:
       content: az managedservices definition show --definition /subscriptions/39033314-9b39-4c7b-84fd-0e26e55f15dc/providers/Microsoft.ManagedServices/registrationDefinitions/1d693e4f-9e79-433a-b3a2-afce1f8b61ec
@@ -180,7 +168,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/managedservices/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/managedservices/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/fe6b817a9ead60cd7a78f51c6725ab23430d3211/src/azure-cli/azure/cli/command_modules/managedservices/_help.py
-updated_at: 6/27/2019 6:40:42 PM
-ms.date: 06/27/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/fcfb9f6ef23d587c0c6bd0a62a1a665096a52809/src/azure-cli/azure/cli/command_modules/managedservices/_help.py
+updated_at: 7/10/2019 6:40:19 PM
+ms.date: 07/10/2019
 description: Manage the registration definitions in Azure.
