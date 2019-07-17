@@ -1,40 +1,37 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_sql_db_op
-  name: az sql db op
-  summary: Manage operations on a database.
+- uid: az_sql_mi_tde_key
+  name: az sql mi tde-key
+  summary: Manage a SQL Instance's encryption protector.
   description: ''
   langs:
   - azurecli
   children:
-  - az_sql_db_op_cancel
-  - az_sql_db_op_list
-- uid: az_sql_db_op_cancel
-  name: az sql db op cancel
-  summary: Cancels the asynchronous operation on the database.
+  - az_sql_mi_tde_key_set
+  - az_sql_mi_tde_key_show
+- uid: az_sql_mi_tde_key_set
+  name: az sql mi tde-key set
+  summary: Sets the SQL Instance's encryption protector.
   description: ''
   langs:
   - azurecli
-  examples:
-  - summary: Cancel an operation.
-    syntax:
-      content: az sql db op cancel -g mygroup -s myserver -d mydb -n d2896mydb-2ba8-4c84-bac1-387c430cce40
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: The unique name of the operation to cancel.
+    name: --server-key-type -t
+    parameterValueGroup: AzureKeyVault, ServiceManaged
+    summary: The type of the server key.
     description: ''
-  - name: --database -d
-    summary: Name of the Azure SQL Database.
+  - name: --kid -k
+    summary: The Azure Key Vault key identifier of the server key to be made encryption protector.An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
+  - name: --managed-instance --mi
+    summary: Name of the Azure SQL managed instance.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -45,24 +42,21 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_db_op_list
-  name: az sql db op list
-  summary: Gets a list of operations performed on the database.
+- uid: az_sql_mi_tde_key_show
+  name: az sql mi tde-key show
+  summary: Gets a managed instance encryption protector.
   description: ''
   langs:
   - azurecli
   parameters:
-  - name: --database -d
-    summary: Name of the Azure SQL Database.
-    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
+  - name: --managed-instance --mi
+    summary: Name of the Azure SQL managed instance.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -74,12 +68,12 @@ items:
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_sql_db_op_cancel
-  name: az sql db op cancel
-  summary: Cancels the asynchronous operation on the database.
-- uid: az_sql_db_op_list
-  name: az sql db op list
-  summary: Gets a list of operations performed on the database.
+- uid: az_sql_mi_tde_key_set
+  name: az sql mi tde-key set
+  summary: Sets the SQL Instance's encryption protector.
+- uid: az_sql_mi_tde_key_show
+  name: az sql mi tde-key show
+  summary: Gets a managed instance encryption protector.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -99,4 +93,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/1b80e0dcfebb2e7f37293686d580baf62e64ce17/src/azure-cli/azure/cli/command_modules/sql/_help.py
 updated_at: 7/17/2019 4:36:02 PM
 ms.date: 07/17/2019
-description: Manage operations on a database.
+description: Manage a SQL Instance's encryption protector.

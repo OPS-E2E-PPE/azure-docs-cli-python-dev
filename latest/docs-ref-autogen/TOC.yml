@@ -6408,6 +6408,32 @@
       - name: update
         uid: az_sql_mi_update
         displayName: az sql mi update
+      - name: key
+        uid: az_sql_mi_key
+        displayName: az sql mi key
+        items:
+        - name: create
+          uid: az_sql_mi_key_create
+          displayName: az sql mi key create
+        - name: delete
+          uid: az_sql_mi_key_delete
+          displayName: az sql mi key delete
+        - name: list
+          uid: az_sql_mi_key_list
+          displayName: az sql mi key list
+        - name: show
+          uid: az_sql_mi_key_show
+          displayName: az sql mi key show
+      - name: tde-key
+        uid: az_sql_mi_tde_key
+        displayName: az sql mi tde-key
+        items:
+        - name: set
+          uid: az_sql_mi_tde_key_set
+          displayName: az sql mi tde-key set
+        - name: show
+          uid: az_sql_mi_tde_key_show
+          displayName: az sql mi tde-key show
     - name: midb
       uid: az_sql_midb
       displayName: az sql midb
@@ -12319,6 +12345,39 @@
         displayName: az sql up
   - name: dev-spaces
     uid: ext_dev-spaces_az
+  - name: dms-preview
+    uid: ext_dms-preview_az
+    items:
+    - name: dms
+      uid: ext_dms-preview_az_dms
+      displayName: az dms
+      items:
+      - name: project
+        uid: ext_dms-preview_az_dms_project
+        displayName: az dms project
+        items:
+        - name: create
+          uid: ext_dms-preview_az_dms_project_create
+          displayName: az dms project create
+        - name: task
+          uid: ext_dms-preview_az_dms_project_task
+          displayName: az dms project task
+          items:
+          - name: cancel
+            uid: ext_dms-preview_az_dms_project_task_cancel
+            displayName: az dms project task cancel
+          - name: create
+            uid: ext_dms-preview_az_dms_project_task_create
+            displayName: az dms project task create
+          - name: cutover
+            uid: ext_dms-preview_az_dms_project_task_cutover
+            displayName: az dms project task cutover
+          - name: restart
+            uid: ext_dms-preview_az_dms_project_task_restart
+            displayName: az dms project task restart
+          - name: stop
+            uid: ext_dms-preview_az_dms_project_task_stop
+            displayName: az dms project task stop
   - name: dns
     uid: ext_dns_az
     items:

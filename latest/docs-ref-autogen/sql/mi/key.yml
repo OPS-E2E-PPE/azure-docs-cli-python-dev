@@ -1,35 +1,63 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_sql_server_dns_alias
-  name: az sql server dns-alias
-  summary: Manage a server's DNS aliases.
+- uid: az_sql_mi_key
+  name: az sql mi key
+  summary: Manage a SQL Instance's keys.
   description: ''
   langs:
   - azurecli
   children:
-  - az_sql_server_dns_alias_create
-  - az_sql_server_dns_alias_delete
-  - az_sql_server_dns_alias_list
-  - az_sql_server_dns_alias_set
-  - az_sql_server_dns_alias_show
-- uid: az_sql_server_dns_alias_create
-  name: az sql server dns-alias create
-  summary: Creates a server dns alias.
+  - az_sql_mi_key_create
+  - az_sql_mi_key_delete
+  - az_sql_mi_key_list
+  - az_sql_mi_key_show
+- uid: az_sql_mi_key_create
+  name: az sql mi key create
+  summary: Creates a SQL Instance key.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: Name of the DNS alias.
+    name: --kid -k
+    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
+    description: ''
+  - isRequired: true
+    name: --managed-instance --mi
+    summary: Name of the Azure SQL managed instance.
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/sql/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/sql/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_sql_mi_key_delete
+  name: az sql mi key delete
+  summary: Deletes a SQL Instance key.
+  description: ''
+  langs:
+  - azurecli
+  parameters:
   - isRequired: true
-    name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
+    name: --kid -k
+    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --managed-instance --mi
+    summary: Name of the Azure SQL managed instance.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -40,25 +68,24 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_server_dns_alias_delete
-  name: az sql server dns-alias delete
-  summary: Deletes the server DNS alias with the given name.
+- uid: az_sql_mi_key_list
+  name: az sql mi key list
+  summary: Gets a list of managed instance keys.
   description: ''
   langs:
   - azurecli
   parameters:
-  - isRequired: true
-    name: --name -n
-    summary: Name of the DNS alias.
+  - name: --filter
+    summary: An OData filter expression that filters elements in the collection.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
+  - name: --managed-instance --mi
+    summary: Name of the Azure SQL managed instance.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -69,89 +96,25 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_server_dns_alias_list
-  name: az sql server dns-alias list
-  summary: Gets a list of server DNS aliases for a server.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_server_dns_alias_set
-  name: az sql server dns-alias set
-  summary: Sets a server to which DNS alias should point.
+- uid: az_sql_mi_key_show
+  name: az sql mi key show
+  summary: Shows a SQL Instance key.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: Name of the DNS alias.
-    description: ''
-  - isRequired: true
-    name: --original-server
-    summary: The name of the server to which alias is currently pointing.
-    description: ''
-  - name: --original-resource-group
-    summary: Name of the original resource group.
-    description: ''
-  - name: --original-subscription-id
-    summary: ID of the original subscription.
+    name: --kid -k
+    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_server_dns_alias_show
-  name: az sql server dns-alias show
-  summary: Gets a server DNS alias.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --name -n
-    summary: Name of the DNS alias.
-    description: ''
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+  - name: --managed-instance --mi
+    summary: Name of the Azure SQL managed instance.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -163,21 +126,18 @@ items:
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_sql_server_dns_alias_create
-  name: az sql server dns-alias create
-  summary: Creates a server dns alias.
-- uid: az_sql_server_dns_alias_delete
-  name: az sql server dns-alias delete
-  summary: Deletes the server DNS alias with the given name.
-- uid: az_sql_server_dns_alias_list
-  name: az sql server dns-alias list
-  summary: Gets a list of server DNS aliases for a server.
-- uid: az_sql_server_dns_alias_set
-  name: az sql server dns-alias set
-  summary: Sets a server to which DNS alias should point.
-- uid: az_sql_server_dns_alias_show
-  name: az sql server dns-alias show
-  summary: Gets a server DNS alias.
+- uid: az_sql_mi_key_create
+  name: az sql mi key create
+  summary: Creates a SQL Instance key.
+- uid: az_sql_mi_key_delete
+  name: az sql mi key delete
+  summary: Deletes a SQL Instance key.
+- uid: az_sql_mi_key_list
+  name: az sql mi key list
+  summary: Gets a list of managed instance keys.
+- uid: az_sql_mi_key_show
+  name: az sql mi key show
+  summary: Shows a SQL Instance key.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -197,4 +157,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/1b80e0dcfebb2e7f37293686d580baf62e64ce17/src/azure-cli/azure/cli/command_modules/sql/_help.py
 updated_at: 7/17/2019 4:36:02 PM
 ms.date: 07/17/2019
-description: Manage a server's DNS aliases.
+description: Manage a SQL Instance's keys.
