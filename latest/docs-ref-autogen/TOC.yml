@@ -6629,6 +6629,9 @@
     uid: az_storage
     displayName: az storage
     items:
+    - name: remove
+      uid: az_storage_remove
+      displayName: az storage remove
     - name: Accounts
       uid: az_storage_account
       displayName: az storage account
