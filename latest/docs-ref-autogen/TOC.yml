@@ -7862,6 +7862,47 @@
       - name: update
         uid: az_vm_user_update
         displayName: az vm user update
+    - name: host
+      uid: az_vm_host
+      displayName: az vm host
+      items:
+      - name: create
+        uid: az_vm_host_create
+        displayName: az vm host create
+      - name: delete
+        uid: az_vm_host_delete
+        displayName: az vm host delete
+      - name: get-instance-view
+        uid: az_vm_host_get_instance_view
+        displayName: az vm host get-instance-view
+      - name: list
+        uid: az_vm_host_list
+        displayName: az vm host list
+      - name: show
+        uid: az_vm_host_show
+        displayName: az vm host show
+      - name: update
+        uid: az_vm_host_update
+        displayName: az vm host update
+      - name: group
+        uid: az_vm_host_group
+        displayName: az vm host group
+        items:
+        - name: create
+          uid: az_vm_host_group_create
+          displayName: az vm host group create
+        - name: delete
+          uid: az_vm_host_group_delete
+          displayName: az vm host group delete
+        - name: list
+          uid: az_vm_host_group_list
+          displayName: az vm host group list
+        - name: show
+          uid: az_vm_host_group_show
+          displayName: az vm host group show
+        - name: update
+          uid: az_vm_host_group_update
+          displayName: az vm host group update
     - name: identity
       uid: az_vm_identity
       displayName: az vm identity
