@@ -5337,6 +5337,25 @@
           - name: amlcompute
             uid: ext_azure-cli-ml_az_ml_computetarget_update_amlcompute
             displayName: az ml computetarget update amlcompute
+      - name: dataset
+        uid: ext_azure-cli-ml_az_ml_dataset
+        displayName: az ml dataset
+        items:
+        - name: archive
+          uid: ext_azure-cli-ml_az_ml_dataset_archive
+          displayName: az ml dataset archive
+        - name: deprecate
+          uid: ext_azure-cli-ml_az_ml_dataset_deprecate
+          displayName: az ml dataset deprecate
+        - name: list
+          uid: ext_azure-cli-ml_az_ml_dataset_list
+          displayName: az ml dataset list
+        - name: reactivate
+          uid: ext_azure-cli-ml_az_ml_dataset_reactivate
+          displayName: az ml dataset reactivate
+        - name: show
+          uid: ext_azure-cli-ml_az_ml_dataset_show
+          displayName: az ml dataset show
       - name: datastore
         uid: ext_azure-cli-ml_az_ml_datastore
         displayName: az ml datastore
@@ -5380,6 +5399,16 @@
         - name: upload
           uid: ext_azure-cli-ml_az_ml_datastore_upload
           displayName: az ml datastore upload
+      - name: environment
+        uid: ext_azure-cli-ml_az_ml_environment
+        displayName: az ml environment
+        items:
+        - name: list
+          uid: ext_azure-cli-ml_az_ml_environment_list
+          displayName: az ml environment list
+        - name: show
+          uid: ext_azure-cli-ml_az_ml_environment_show
+          displayName: az ml environment show
       - name: experiment
         uid: ext_azure-cli-ml_az_ml_experiment
         displayName: az ml experiment
@@ -5500,6 +5529,9 @@
         - name: delete
           uid: ext_azure-cli-ml_az_ml_service_delete
           displayName: az ml service delete
+        - name: get-access-token
+          uid: ext_azure-cli-ml_az_ml_service_get_access_token
+          displayName: az ml service get-access-token
         - name: get-keys
           uid: ext_azure-cli-ml_az_ml_service_get_keys
           displayName: az ml service get-keys
