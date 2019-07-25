@@ -801,6 +801,10 @@ items:
     parameterValueGroup: key, login
     summary: 'The mode in which to run the command. "login" mode will directly use your login credentials for the authentication. The legacy "key" mode will attempt to query for an account key if no authentication parameters for the account are provided. Environment variable: AZURE_STORAGE_AUTH_MODE.'
     description: ''
+  - name: --clear-content-settings
+    parameterValueGroup: false, true
+    summary: If this flag is set, then if any one or more of the following properties (--content-cache-control, --content-disposition, --content-encoding, --content-language, --content-md5, --content-type) is set, then all of these properties are set together. If a value is not provided for a given property when at least one of the properties listed below is set, then that property will be cleared.
+    description: ''
   - name: --content-cache-control
     summary: The cache control string.
     description: ''

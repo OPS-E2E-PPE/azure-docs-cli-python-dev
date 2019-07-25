@@ -504,6 +504,10 @@ items:
     name: --share-name -s
     summary: The file share name.
     description: ''
+  - name: --clear-content-settings
+    parameterValueGroup: false, true
+    summary: If this flag is set, then if any one or more of the following properties (--content-cache-control, --content-disposition, --content-encoding, --content-language, --content-md5, --content-type) is set, then all of these properties are set together. If a value is not provided for a given property when at least one of the properties listed below is set, then that property will be cleared.
+    description: ''
   - name: --content-cache-control
     summary: The cache control string.
     description: ''
