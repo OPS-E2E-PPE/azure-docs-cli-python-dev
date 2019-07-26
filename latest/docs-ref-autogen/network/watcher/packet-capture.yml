@@ -56,7 +56,7 @@ items:
     description: ''
   - isRequired: true
     name: --resource-group -g
-    summary: Name of the resource group the target VM is in. Do not use when supplying VM ID.
+    summary: Name of the resource group the target VM is in.
     description: ''
   - isRequired: true
     name: --vm
