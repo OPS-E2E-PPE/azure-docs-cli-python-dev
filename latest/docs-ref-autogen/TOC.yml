@@ -1147,6 +1147,19 @@
         - name: regenerate
           uid: az_cognitiveservices_account_keys_regenerate
           displayName: az cognitiveservices account keys regenerate
+      - name: network-rule
+        uid: az_cognitiveservices_account_network_rule
+        displayName: az cognitiveservices account network-rule
+        items:
+        - name: add
+          uid: az_cognitiveservices_account_network_rule_add
+          displayName: az cognitiveservices account network-rule add
+        - name: list
+          uid: az_cognitiveservices_account_network_rule_list
+          displayName: az cognitiveservices account network-rule list
+        - name: remove
+          uid: az_cognitiveservices_account_network_rule_remove
+          displayName: az cognitiveservices account network-rule remove
   - name: Container
     uid: az_container
     displayName: az container
