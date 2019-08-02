@@ -2486,12 +2486,15 @@
       - name: list
         uid: az_hdinsight_script_action_list
         displayName: az hdinsight script-action list
+      - name: list-execution-history
+        uid: az_hdinsight_script_action_list_execution_history
+        displayName: az hdinsight script-action list-execution-history
       - name: promote
         uid: az_hdinsight_script_action_promote
         displayName: az hdinsight script-action promote
-      - name: show
-        uid: az_hdinsight_script_action_show
-        displayName: az hdinsight script-action show
+      - name: show-execution-details
+        uid: az_hdinsight_script_action_show_execution_details
+        displayName: az hdinsight script-action show-execution-details
   - name: IoT
     uid: az_iot
     displayName: az iot
