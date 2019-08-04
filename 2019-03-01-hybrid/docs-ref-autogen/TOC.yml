@@ -2518,6 +2518,9 @@
     uid: az_storage
     displayName: az storage
     items:
+    - name: copy
+      uid: az_storage_copy
+      displayName: az storage copy
     - name: remove
       uid: az_storage_remove
       displayName: az storage remove
