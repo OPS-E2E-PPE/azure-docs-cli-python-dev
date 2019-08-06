@@ -1,41 +1,37 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_cosmosdb_network_rule
-  name: az cosmosdb network-rule
-  summary: Manage Azure Comsos DB network rules.
+- uid: az_cosmosdb_table
+  name: az cosmosdb table
+  summary: Manage Table resources of Azure Cosmos DB account.
   description: ''
   langs:
   - azurecli
   children:
-  - az_cosmosdb_network_rule_add
-  - az_cosmosdb_network_rule_list
-  - az_cosmosdb_network_rule_remove
-- uid: az_cosmosdb_network_rule_add
-  name: az cosmosdb network-rule add
-  summary: Adds a virtual network rule to an existing Cosmos DB database account.
+  - az_cosmosdb_table_create
+  - az_cosmosdb_table_delete
+  - az_cosmosdb_table_list
+  - az_cosmosdb_table_show
+- uid: az_cosmosdb_table_create
+  name: az cosmosdb table create
+  summary: Create an Table under an Azure Cosmos DB account.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --subnet
-    summary: Name or ID of the subnet.
+    name: --account-name -a
+    summary: Cosmosdb account name.
     description: ''
-  - name: --ignore-missing-vnet-service-endpoint
-    parameterValueGroup: false, true
-    summary: Create firewall rule before the virtual network has vnet service endpoint enabled.
+  - isRequired: true
+    name: --name -n
+    summary: Table name.
     description: ''
-  - name: --virtual-network
-    summary: The name of the VNET, which must be provided in conjunction with the name of the subnet.
-    description: ''
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    summary: Name of the Cosmos DB database account.
-    description: ''
-  - name: --resource-group -g
+  - isRequired: true
+    name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --throughput
+    summary: The throughput of Table (RU/s). Default value is 400.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -46,16 +42,20 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_cosmosdb_network_rule_list
-  name: az cosmosdb network-rule list
-  summary: Lists the virtual network accounts associated with a Cosmos DB account.
+- uid: az_cosmosdb_table_delete
+  name: az cosmosdb table delete
+  summary: Delete the Table under an Azure Cosmos DB account.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
+    name: --account-name -a
+    summary: Cosmosdb account name.
+    description: ''
+  - isRequired: true
     name: --name -n
-    summary: Name of the Cosmos DB database account.
+    summary: Table name.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -70,27 +70,47 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_cosmosdb_network_rule_remove
-  name: az cosmosdb network-rule remove
-  summary: Adds a virtual network rule to an existing Cosmos DB database account.
+- uid: az_cosmosdb_table_list
+  name: az cosmosdb table list
+  summary: List the Tables under an Azure Cosmos DB account.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --subnet
-    summary: Name or ID of the subnet.
+    name: --account-name -a
+    summary: Cosmosdb account name.
     description: ''
-  - name: --virtual-network
-    summary: The name of the VNET, which must be provided in conjunction with the name of the subnet.
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  - name: --name -n
-    summary: Name of the Cosmos DB database account.
+  source:
+    path: src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_cosmosdb_table_show
+  name: az cosmosdb table show
+  summary: Show the details of a Table under an Azure Cosmos DB account.
+  description: ''
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --account-name -a
+    summary: Cosmosdb account name.
     description: ''
-  - name: --resource-group -g
+  - isRequired: true
+    name: --name -n
+    summary: Table name.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --subscription
@@ -103,15 +123,27 @@ items:
       path: src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_cosmosdb_network_rule_add
-  name: az cosmosdb network-rule add
-  summary: Adds a virtual network rule to an existing Cosmos DB database account.
-- uid: az_cosmosdb_network_rule_list
-  name: az cosmosdb network-rule list
-  summary: Lists the virtual network accounts associated with a Cosmos DB account.
-- uid: az_cosmosdb_network_rule_remove
-  name: az cosmosdb network-rule remove
-  summary: Adds a virtual network rule to an existing Cosmos DB database account.
+- uid: az_cosmosdb_table_create
+  name: az cosmosdb table create
+  summary: Create an Table under an Azure Cosmos DB account.
+- uid: az_cosmosdb_table_delete
+  name: az cosmosdb table delete
+  summary: Delete the Table under an Azure Cosmos DB account.
+- uid: az_cosmosdb_table_list
+  name: az cosmosdb table list
+  summary: List the Tables under an Azure Cosmos DB account.
+- uid: az_cosmosdb_table_show
+  name: az cosmosdb table show
+  summary: Show the details of a Table under an Azure Cosmos DB account.
+- uid: az_cosmosdb_table_throughput
+  name: az cosmosdb table throughput
+  summary: Manage throughput of Table under an Azure Cosmos DB account.
+- uid: az_cosmosdb_table_throughput_show
+  name: az cosmosdb table throughput show
+  summary: Get the throughput of the Table under an Azure Cosmos DB account.
+- uid: az_cosmosdb_table_throughput_update
+  name: az cosmosdb table throughput update
+  summary: Update the throughput of the Table under an Azure Cosmos DB account.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -131,4 +163,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/035f0a9524b6fafbd988e0950d8026229dcaf350/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 updated_at: 8/6/2019 7:04:56 AM
 ms.date: 08/06/2019
-description: Manage Azure Comsos DB network rules.
+description: Manage Table resources of Azure Cosmos DB account.
