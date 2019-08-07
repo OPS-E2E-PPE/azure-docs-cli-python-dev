@@ -659,7 +659,7 @@ items:
 - uid: az_storage_blob_sync
   name: az storage blob sync
   summary: Sync blobs recursively to a storage blob container.
-  description: ''
+  description: Sync command depends on Azcopy, which only works for 64-bit Operating System now. We will support 32-bit Operating System soon.
   langs:
   - azurecli
   examples:
@@ -1144,7 +1144,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/2c903798ce1709a40c02a7ccf12fc250c7bea4e9/src/azure-cli/azure/cli/command_modules/storage/_help.py
-updated_at: 8/6/2019 4:39:44 PM
-ms.date: 08/06/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/e158bcf7c3971f18ed22e3c0122fc35dafe7cdf1/src/azure-cli/azure/cli/command_modules/storage/_help.py
+updated_at: 8/7/2019 9:30:09 PM
+ms.date: 08/07/2019
 description: Manage object storage for unstructured data (blobs).

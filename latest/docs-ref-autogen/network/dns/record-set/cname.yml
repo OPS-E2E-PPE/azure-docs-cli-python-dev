@@ -87,6 +87,9 @@ items:
   - name: --if-match
     summary: The etag of the record set. Omit this value to always delete the current record set. Specify the last-seen etag value to prevent accidentally deleting any concurrent changes.
     description: ''
+  - name: --yes -y
+    summary: Do not prompt for confirmation.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
