@@ -220,7 +220,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/appservice/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/6be86c144e37214e2fbe2d25aec3bd10bfd61bf6/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-updated_at: 7/10/2019 1:27:38 AM
-ms.date: 07/10/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/c76310fb323850c8040d082be0e8a71afef6ea72/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+updated_at: 8/7/2019 8:15:42 PM
+ms.date: 08/07/2019
 description: Manage function app deployment slots.
