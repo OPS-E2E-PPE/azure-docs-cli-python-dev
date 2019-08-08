@@ -1,48 +1,32 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_functionapp_deployment_user
-  name: az functionapp deployment user
-  summary: Manage user credentials for deployment.
+- uid: az_appservice_vnet_integration
+  name: az appservice vnet-integration
+  summary: A method that lists the virtual network integrations used in an appservice plan.
   description: ''
   langs:
   - azurecli
   children:
-  - az_functionapp_deployment_user_set
-  - az_functionapp_deployment_user_show
-- uid: az_functionapp_deployment_user_set
-  name: az functionapp deployment user set
-  summary: Update deployment credentials.
-  description: All function and web apps in the subscription will be impacted since they share the same deployment credentials.
+  - az_appservice_vnet_integration_list
+- uid: az_appservice_vnet_integration_list
+  name: az appservice vnet-integration list
+  summary: List the virtual network integrations used in an appservice plan.
+  description: ''
   langs:
   - azurecli
   examples:
-  - summary: Set FTP and git deployment credentials for all apps.
+  - summary: list the virtual network integrations used in an appservice plan
     syntax:
-      content: az functionapp deployment user set --user-name MyUserName
+      content: az appservice vnet-integration list -g MyResourceGroup --plan MyAppServicePlan
   parameters:
   - isRequired: true
-    name: --user-name
-    summary: User name.
+    name: --plan
+    summary: AppService plan.
     description: ''
-  - name: --password
-    summary: Password, will prompt if not specified.
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/appservice/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/appservice/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_functionapp_deployment_user_show
-  name: az functionapp deployment user show
-  summary: Gets publishing user.
-  description: Gets publishing user.
-  langs:
-  - azurecli
-  parameters:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -53,12 +37,9 @@ items:
       path: src/azure-cli/azure/cli/command_modules/appservice/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_functionapp_deployment_user_set
-  name: az functionapp deployment user set
-  summary: Update deployment credentials.
-- uid: az_functionapp_deployment_user_show
-  name: az functionapp deployment user show
-  summary: Gets publishing user.
+- uid: az_appservice_vnet_integration_list
+  name: az appservice vnet-integration list
+  summary: List the virtual network integrations used in an appservice plan.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -78,4 +59,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/621845684635297cdfbcba80a8bc4c437cb04684/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 updated_at: 8/8/2019 12:06:04 AM
 ms.date: 08/08/2019
-description: Manage user credentials for deployment.
+description: A method that lists the virtual network integrations used in an appservice plan.

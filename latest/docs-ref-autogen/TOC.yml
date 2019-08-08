@@ -51,6 +51,20 @@
       - name: update
         uid: az_appservice_plan_update
         displayName: az appservice plan update
+    - name: hybrid-connection
+      uid: az_appservice_hybrid_connection
+      displayName: az appservice hybrid-connection
+      items:
+      - name: set-key
+        uid: az_appservice_hybrid_connection_set_key
+        displayName: az appservice hybrid-connection set-key
+    - name: vnet-integration
+      uid: az_appservice_vnet_integration
+      displayName: az appservice vnet-integration
+      items:
+      - name: list
+        uid: az_appservice_vnet_integration_list
+        displayName: az appservice vnet-integration list
   - name: Azure Active Directory
     uid: az_ad
     displayName: az ad
@@ -2640,6 +2654,19 @@
       - name: create
         uid: az_functionapp_devops_pipeline_create
         displayName: az functionapp devops-pipeline create
+    - name: hybrid-connection
+      uid: az_functionapp_hybrid_connection
+      displayName: az functionapp hybrid-connection
+      items:
+      - name: add
+        uid: az_functionapp_hybrid_connection_add
+        displayName: az functionapp hybrid-connection add
+      - name: list
+        uid: az_functionapp_hybrid_connection_list
+        displayName: az functionapp hybrid-connection list
+      - name: remove
+        uid: az_functionapp_hybrid_connection_remove
+        displayName: az functionapp hybrid-connection remove
     - name: identity
       uid: az_functionapp_identity
       displayName: az functionapp identity
@@ -2672,6 +2699,19 @@
       - name: update
         uid: az_functionapp_plan_update
         displayName: az functionapp plan update
+    - name: vnet-integration
+      uid: az_functionapp_vnet_integration
+      displayName: az functionapp vnet-integration
+      items:
+      - name: add
+        uid: az_functionapp_vnet_integration_add
+        displayName: az functionapp vnet-integration add
+      - name: list
+        uid: az_functionapp_vnet_integration_list
+        displayName: az functionapp vnet-integration list
+      - name: remove
+        uid: az_functionapp_vnet_integration_remove
+        displayName: az functionapp vnet-integration remove
   - name: HDInsight
     uid: az_hdinsight
     displayName: az hdinsight
@@ -8521,6 +8561,19 @@
         - name: show
           uid: az_webapp_deployment_user_show
           displayName: az webapp deployment user show
+    - name: hybrid-connection
+      uid: az_webapp_hybrid_connection
+      displayName: az webapp hybrid-connection
+      items:
+      - name: add
+        uid: az_webapp_hybrid_connection_add
+        displayName: az webapp hybrid-connection add
+      - name: list
+        uid: az_webapp_hybrid_connection_list
+        displayName: az webapp hybrid-connection list
+      - name: remove
+        uid: az_webapp_hybrid_connection_remove
+        displayName: az webapp hybrid-connection remove
     - name: identity
       uid: az_webapp_identity
       displayName: az webapp identity
@@ -8563,6 +8616,19 @@
       - name: show
         uid: az_webapp_traffic_routing_show
         displayName: az webapp traffic-routing show
+    - name: vnet-integration
+      uid: az_webapp_vnet_integration
+      displayName: az webapp vnet-integration
+      items:
+      - name: add
+        uid: az_webapp_vnet_integration_add
+        displayName: az webapp vnet-integration add
+      - name: list
+        uid: az_webapp_vnet_integration_list
+        displayName: az webapp vnet-integration list
+      - name: remove
+        uid: az_webapp_vnet_integration_remove
+        displayName: az webapp vnet-integration remove
     - name: webjob
       uid: az_webapp_webjob
       displayName: az webapp webjob
