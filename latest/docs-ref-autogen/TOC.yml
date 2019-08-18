@@ -6988,6 +6988,9 @@
       - name: list
         uid: az_storage_account_list
         displayName: az storage account list
+      - name: revoke-delegation-keys
+        uid: az_storage_account_revoke_delegation_keys
+        displayName: az storage account revoke-delegation-keys
       - name: show
         uid: az_storage_account_show
         displayName: az storage account show
