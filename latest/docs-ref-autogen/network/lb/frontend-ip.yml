@@ -43,6 +43,11 @@ items:
   - name: --private-ip-address
     summary: Static private IP address to associate with the configuration.
     description: ''
+  - name: --private-ip-address-version
+    defaultValue: IPv4
+    parameterValueGroup: IPv4, IPv6
+    summary: The private IP address version to use.
+    description: ''
   - name: --public-ip-address
     summary: Name or ID of the existing public IP to associate with the configuration.
     description: ''

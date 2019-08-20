@@ -63,6 +63,11 @@ items:
   - name: --private-ip-address
     summary: Static private IP address to use.
     description: ''
+  - name: --private-ip-address-version
+    defaultValue: IPv4
+    parameterValueGroup: IPv4, IPv6
+    summary: The private IP address version to use.
+    description: ''
   - name: --sku
     defaultValue: Basic
     parameterValueGroup: Basic, Standard
