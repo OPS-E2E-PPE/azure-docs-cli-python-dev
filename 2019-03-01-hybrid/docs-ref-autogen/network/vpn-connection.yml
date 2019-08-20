@@ -3,7 +3,7 @@ items:
 - uid: az_network_vpn_connection
   name: az network vpn-connection
   summary: Manage VPN connections.
-  description: For more information on site-to-site connections, visit <a href="https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli">https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli</a>. For more information on Vnet-to-Vnet connections, visit <a href="https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-cli">https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-cli</a>.
+  description: For more information on site-to-site connections, visit <a href="https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli">https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli</a>. For more information on Vnet-to-Vnet connections, visit <a href="https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-cli">https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-cli</a>.
   langs:
   - azurecli
   children:
@@ -281,7 +281,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/87fd8b9a6d204cabe1bf0511803dece064b63829/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 7/26/2019 2:24:39 PM
-ms.date: 07/26/2019
-description: For more information on site-to-site connections, visit <a href="https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli">https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli</a>. For more information on Vnet-to-Vnet connections, visit <a href="https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-cli">https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-cli</a>.
+gitcommit: https://github.com/Azure/azure-cli/blob/844005a08d19ab7a5544aa9147869e101426ea67/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 8/20/2019 5:09:19 AM
+ms.date: 08/20/2019
+description: For more information on site-to-site connections, visit <a href="https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli">https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli</a>. For more information on Vnet-to-Vnet connections, visit <a href="https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-cli">https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-cli</a>.

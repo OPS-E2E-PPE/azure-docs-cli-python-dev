@@ -3,7 +3,7 @@ items:
 - uid: az_network_application_gateway
   name: az network application-gateway
   summary: Manage application-level routing and load balancing services.
-  description: To learn more about Application Gateway, visit <a href="https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-create-gateway-cli">https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-create-gateway-cli</a>.
+  description: To learn more about Application Gateway, visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli</a>.
   langs:
   - azurecli
   children:
@@ -647,7 +647,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/87fd8b9a6d204cabe1bf0511803dece064b63829/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 7/26/2019 2:24:39 PM
-ms.date: 07/26/2019
-description: To learn more about Application Gateway, visit <a href="https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-create-gateway-cli">https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-create-gateway-cli</a>.
+gitcommit: https://github.com/Azure/azure-cli/blob/844005a08d19ab7a5544aa9147869e101426ea67/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 8/20/2019 5:09:19 AM
+ms.date: 08/20/2019
+description: To learn more about Application Gateway, visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli</a>.
