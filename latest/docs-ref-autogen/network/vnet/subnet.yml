@@ -228,11 +228,11 @@ items:
     summary: Space-separated list of services to whom the subnet should be delegated. (e.g. Microsoft.Sql/servers).
     description: ''
   - name: --disable-private-endpoint-network-policies
-    parameterValueGroup: Disabled, Enabled
+    parameterValueGroup: false, true
     summary: Disable private endpoint network policies on the subnet.
     description: ''
   - name: --disable-private-link-service-network-policies
-    parameterValueGroup: Disabled, Enabled
+    parameterValueGroup: false, true
     summary: Disable private link service network policies on the subnet.
     description: ''
   - name: --nat-gateway
