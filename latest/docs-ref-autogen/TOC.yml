@@ -11889,9 +11889,28 @@
     - name: list
       uid: az_signalr_list
       displayName: az signalr list
+    - name: restart
+      uid: az_signalr_restart
+      displayName: az signalr restart
     - name: show
       uid: az_signalr_show
       displayName: az signalr show
+    - name: update
+      uid: az_signalr_update
+      displayName: az signalr update
+    - name: cors
+      uid: az_signalr_cors
+      displayName: az signalr cors
+      items:
+      - name: add
+        uid: az_signalr_cors_add
+        displayName: az signalr cors add
+      - name: list
+        uid: az_signalr_cors_list
+        displayName: az signalr cors list
+      - name: remove
+        uid: az_signalr_cors_remove
+        displayName: az signalr cors remove
     - name: key
       uid: az_signalr_key
       displayName: az signalr key
