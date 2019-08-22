@@ -8803,6 +8803,34 @@
     - name: wait
       uid: az_aks_wait
       displayName: az aks wait
+  - name: apim
+    uid: az_apim
+    displayName: az apim
+    items:
+    - name: apply-network-updates
+      uid: az_apim_apply_network_updates
+      displayName: az apim apply-network-updates
+    - name: backup
+      uid: az_apim_backup
+      displayName: az apim backup
+    - name: check-name
+      uid: az_apim_check_name
+      displayName: az apim check-name
+    - name: create
+      uid: az_apim_create
+      displayName: az apim create
+    - name: delete
+      uid: az_apim_delete
+      displayName: az apim delete
+    - name: list
+      uid: az_apim_list
+      displayName: az apim list
+    - name: show
+      uid: az_apim_show
+      displayName: az apim show
+    - name: update
+      uid: az_apim_update
+      displayName: az apim update
   - name: appconfig
     uid: az_appconfig
     displayName: az appconfig

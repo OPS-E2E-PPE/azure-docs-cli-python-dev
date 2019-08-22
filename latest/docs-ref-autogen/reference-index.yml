@@ -249,6 +249,9 @@ commands:
 - uid: az_ams
   name: az ams
   summary: Manage Azure Media Services resources.
+- uid: az_apim
+  name: az apim
+  summary: Manage Azure API Management services.
 - uid: az_appconfig
   name: az appconfig
   summary: Manage App Configurations.
