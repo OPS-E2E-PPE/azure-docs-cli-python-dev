@@ -8788,6 +8788,9 @@
     - name: show
       uid: az_aks_show
       displayName: az aks show
+    - name: update
+      uid: az_aks_update
+      displayName: az aks update
     - name: update-credentials
       uid: az_aks_update_credentials
       displayName: az aks update-credentials
