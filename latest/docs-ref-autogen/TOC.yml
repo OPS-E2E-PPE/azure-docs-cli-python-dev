@@ -4666,6 +4666,16 @@
           - name: show
             uid: az_network_express_route_peering_connection_show
             displayName: az network express-route peering connection show
+        - name: peer-connection
+          uid: az_network_express_route_peering_peer_connection
+          displayName: az network express-route peering peer-connection
+          items:
+          - name: list
+            uid: az_network_express_route_peering_peer_connection_list
+            displayName: az network express-route peering peer-connection list
+          - name: show
+            uid: az_network_express_route_peering_peer_connection_show
+            displayName: az network express-route peering peer-connection show
       - name: gateway
         uid: az_network_express_route_gateway
         displayName: az network express-route gateway
