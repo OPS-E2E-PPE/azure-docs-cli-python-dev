@@ -1300,6 +1300,16 @@
         - name: update
           uid: az_acr_config_content_trust_update
           displayName: az acr config content-trust update
+      - name: retention
+        uid: az_acr_config_retention
+        displayName: az acr config retention
+        items:
+        - name: show
+          uid: az_acr_config_retention_show
+          displayName: az acr config retention show
+        - name: update
+          uid: az_acr_config_retention_update
+          displayName: az acr config retention update
     - name: helm
       uid: az_acr_helm
       displayName: az acr helm
