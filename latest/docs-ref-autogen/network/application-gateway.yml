@@ -103,6 +103,9 @@ items:
     parameterValueGroup: Disabled, Enabled
     summary: Use HTTP2 for the application gateway.
     description: ''
+  - name: --key-vault-secret-id
+    summary: Secret Id of (base-64 encoded unencrypted pfx) 'Secret' or 'Certificate' object stored in Azure KeyVault. You need enable soft delete for keyvault to use this feature.
+    description: ''
   - name: --routing-rule-type
     defaultValue: Basic
     parameterValueGroup: Basic, PathBasedRouting
@@ -115,6 +118,9 @@ items:
     defaultValue: Standard_Medium
     parameterValueGroup: Standard_Large, Standard_Medium, Standard_Small, Standard_v2, WAF_Large, WAF_Medium, WAF_v2
     summary: The name of the SKU.
+    description: ''
+  - name: --identity
+    summary: Name or ID of the ManagedIdentity Resource.
     description: ''
   - name: --private-ip-address
     summary: Static private IP address to use.
@@ -558,6 +564,18 @@ commands:
 - uid: az_network_application_gateway_http_settings_update
   name: az network application-gateway http-settings update
   summary: Update HTTP settings.
+- uid: az_network_application_gateway_identity
+  name: az network application-gateway identity
+  summary: Manage the managed service identity of an application gateway.
+- uid: az_network_application_gateway_identity_assign
+  name: az network application-gateway identity assign
+  summary: Assign a managed service identity to an application-gateway.
+- uid: az_network_application_gateway_identity_remove
+  name: az network application-gateway identity remove
+  summary: Remove the managed service identity of an application-gateway.
+- uid: az_network_application_gateway_identity_show
+  name: az network application-gateway identity show
+  summary: Show the managed service identity of an application-gateway.
 - uid: az_network_application_gateway_list
   name: az network application-gateway list
   summary: List application gateways.
@@ -859,7 +877,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/59d97aa067dcc47923bb727941ff536904811653/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 9/3/2019 1:58:37 AM
-ms.date: 09/03/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/cc1a6f441621d33b0eb51bf64a07a530bb83bdb8/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 9/4/2019 3:16:53 AM
+ms.date: 09/04/2019
 description: To learn more about Application Gateway, visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli</a>.

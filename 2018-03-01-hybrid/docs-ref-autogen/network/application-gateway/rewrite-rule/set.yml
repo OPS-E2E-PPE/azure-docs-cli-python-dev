@@ -202,7 +202,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/59d97aa067dcc47923bb727941ff536904811653/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 9/3/2019 1:58:37 AM
-ms.date: 09/03/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/cc1a6f441621d33b0eb51bf64a07a530bb83bdb8/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 9/4/2019 3:16:53 AM
+ms.date: 09/04/2019
 description: Manage rewrite rule sets of an application gateway.
