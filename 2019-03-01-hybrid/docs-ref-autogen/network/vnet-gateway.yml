@@ -92,7 +92,7 @@ items:
     summary: Weight (0-100) added to routes learned through BGP peering.
     description: ''
   - name: --address-prefixes
-    summary: Space-separated list of CIDR prefixes representing the address space for the P2S client.
+    summary: Space-separated list of CIDR prefixes representing the address space for the P2S Vpnclient.
     description: ''
   - name: --client-protocol
     parameterValueGroup: IkeV2, SSTP
@@ -398,7 +398,7 @@ items:
     summary: Weight (0-100) added to routes learned through BGP peering.
     description: ''
   - name: --address-prefixes
-    summary: Space-separated list of CIDR prefixes representing the address space for the P2S client.
+    summary: Space-separated list of CIDR prefixes representing the address space for the P2S Vpnclient.
     description: ''
   - name: --client-protocol
     parameterValueGroup: IkeV2, SSTP

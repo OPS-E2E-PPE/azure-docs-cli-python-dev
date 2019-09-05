@@ -92,11 +92,14 @@ items:
     summary: Weight (0-100) added to routes learned through BGP peering.
     description: ''
   - name: --address-prefixes
-    summary: Space-separated list of CIDR prefixes representing the address space for the P2S client.
+    summary: Space-separated list of CIDR prefixes representing the address space for the P2S Vpnclient.
     description: ''
   - name: --client-protocol
     parameterValueGroup: IkeV2, OpenVPN, SSTP
     summary: Protocols to use for connecting.
+    description: ''
+  - name: --custom-routes
+    summary: Space-separated list of CIDR prefixes representing the custom routes address space specified by the customer for VpnClient.
     description: ''
   - name: --radius-secret
     summary: Radius secret to use for authentication.
@@ -398,11 +401,14 @@ items:
     summary: Weight (0-100) added to routes learned through BGP peering.
     description: ''
   - name: --address-prefixes
-    summary: Space-separated list of CIDR prefixes representing the address space for the P2S client.
+    summary: Space-separated list of CIDR prefixes representing the address space for the P2S Vpnclient.
     description: ''
   - name: --client-protocol
     parameterValueGroup: IkeV2, OpenVPN, SSTP
     summary: Protocols to use for connecting.
+    description: ''
+  - name: --custom-routes
+    summary: Space-separated list of CIDR prefixes representing the custom routes address space specified by the customer for VpnClient.
     description: ''
   - name: --radius-secret
     summary: Radius secret to use for authentication.
