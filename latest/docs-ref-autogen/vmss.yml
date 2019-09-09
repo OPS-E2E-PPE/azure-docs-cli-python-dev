@@ -142,6 +142,9 @@ items:
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
+  - name: --terminate-notification-time
+    summary: Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted.
+    description: ''
   - name: --upgrade-policy-mode
     defaultValue: manual
     parameterValueGroup: Automatic, Manual, Rolling
@@ -863,12 +866,19 @@ items:
     syntax:
       content: az vmss update --name MyScaleSet --resource-group MyResourceGroup --instance-id 4             --set protectionPolicy.protectFromScaleIn=True protectionPolicy.protectFromScaleSetActions=False
   parameters:
+  - name: --enable-terminate-notification
+    parameterValueGroup: false, true
+    summary: Enable terminate notification.
+    description: ''
   - name: --license-type
     parameterValueGroup: None, Windows_Client, Windows_Server
     summary: Specifies that the Windows image or disk was licensed on-premises. To enable Azure Hybrid Benefit for Windows Server, use 'Windows_Server'. To enable Multitenant Hosting Rights for Windows 10, use 'Windows_Client'. For more information see the Azure Windows VM online docs.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --terminate-notification-time
+    summary: Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
