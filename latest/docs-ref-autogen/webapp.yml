@@ -62,6 +62,15 @@ items:
   - summary: Create a web app with a NodeJS 6.2 runtime and deployed from a local git repository.
     syntax:
       content: az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName --runtime "node|6.2" --deployment-local-git
+  - summary: Create a web app with an image from DockerHub.
+    syntax:
+      content: az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName -i nginx
+  - summary: Create a web app with an image from a private DockerHub registry.
+    syntax:
+      content: az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName -i MyImageName -s username -w password
+  - summary: Create a web app with an image from a private Azure Container Registry.
+    syntax:
+      content: az webapp create -g MyResourceGroup -p MyPlan -n MyUniqueAppName -i myregistry.azurecr.io/docker-image:tag
   parameters:
   - isRequired: true
     name: --name -n
@@ -87,6 +96,12 @@ items:
     description: ''
   - name: --deployment-source-url -u
     summary: Git repository URL to link with manual integration.
+    description: ''
+  - name: --docker-registry-server-password -w
+    summary: The container registry server password. Required for private registries.
+    description: ''
+  - name: --docker-registry-server-user -s
+    summary: The container registry server username.
     description: ''
   - name: --multicontainer-config-file
     summary: Linux only. Config file for multicontainer apps. (local or remote).
