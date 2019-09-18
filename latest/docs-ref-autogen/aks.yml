@@ -750,13 +750,13 @@ items:
     summary: Disable the 'acrpull' role assignment to the ACR specified by name or resource ID.
     description: ''
   - name: --load-balancer-managed-outbound-ip-count
-    summary: ''
+    summary: Desired number of managed outbound IPs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
     description: ''
   - name: --load-balancer-outbound-ip-prefixes
-    summary: ''
+    summary: Comma-separated public IP prefix resource IDs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
     description: ''
   - name: --load-balancer-outbound-ips
-    summary: ''
+    summary: Comma-separated public IP resource IDs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
