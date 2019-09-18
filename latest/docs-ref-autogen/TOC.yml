@@ -2509,6 +2509,22 @@
       - name: show
         uid: az_functionapp_config_show
         displayName: az functionapp config show
+      - name: access-restriction
+        uid: az_functionapp_config_access_restriction
+        displayName: az functionapp config access-restriction
+        items:
+        - name: add
+          uid: az_functionapp_config_access_restriction_add
+          displayName: az functionapp config access-restriction add
+        - name: remove
+          uid: az_functionapp_config_access_restriction_remove
+          displayName: az functionapp config access-restriction remove
+        - name: set
+          uid: az_functionapp_config_access_restriction_set
+          displayName: az functionapp config access-restriction set
+        - name: show
+          uid: az_functionapp_config_access_restriction_show
+          displayName: az functionapp config access-restriction show
       - name: appsettings
         uid: az_functionapp_config_appsettings
         displayName: az functionapp config appsettings
@@ -8422,6 +8438,22 @@
       - name: show
         uid: az_webapp_config_show
         displayName: az webapp config show
+      - name: access-restriction
+        uid: az_webapp_config_access_restriction
+        displayName: az webapp config access-restriction
+        items:
+        - name: add
+          uid: az_webapp_config_access_restriction_add
+          displayName: az webapp config access-restriction add
+        - name: remove
+          uid: az_webapp_config_access_restriction_remove
+          displayName: az webapp config access-restriction remove
+        - name: set
+          uid: az_webapp_config_access_restriction_set
+          displayName: az webapp config access-restriction set
+        - name: show
+          uid: az_webapp_config_access_restriction_show
+          displayName: az webapp config access-restriction show
       - name: appsettings
         uid: az_webapp_config_appsettings
         displayName: az webapp config appsettings
