@@ -202,6 +202,10 @@ items:
   - name: --custom-data
     summary: Custom init script file or text (cloud-init, cloud-config, etc..).
     description: ''
+  - name: --eviction-policy
+    parameterValueGroup: Deallocate, Delete
+    summary: The eviction policy for the low priority virtual machine.
+    description: ''
   - name: --image
     summary: 'The name of the operating system image as a URN alias, URN, custom image name or ID, or VHD blob URI. This parameter is required unless using `--attach-os-disk.` Valid URN format: "Publisher:Offer:Sku:Version".'
     description: ''
@@ -213,11 +217,18 @@ items:
   - name: --location -l
     summary: Location in which to create VM and related resources. If default location is not configured, will default to the resource group's location.
     description: ''
+  - name: --max-billing
+    summary: The maximum price (in US Dollars) you are willing to pay for a low priority VM/VMSS. -1 indicates that the low priority VM/VMSS should not be evicted for price reasons.
+    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --ppg
     summary: The name or ID of the proximity placement group the VM should be associated with.
+    description: ''
+  - name: --priority
+    parameterValueGroup: Low, Regular
+    summary: Priority. Use 'Low' to run short-lived workloads in a cost-effective way.
     description: ''
   - name: --secrets
     summary: 'One or many Key Vault secrets as JSON strings or files via `@{path}` containing `[{ "sourceVault": { "id": "value" }, "vaultCertificates": [{ "certificateUrl": "value", "certificateStore": "cert store name (only on windows)"}] }]`.'

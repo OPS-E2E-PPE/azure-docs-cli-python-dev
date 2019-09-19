@@ -164,6 +164,9 @@ items:
   - name: --custom-data
     summary: Custom init script file or text (cloud-init, cloud-config, etc..).
     description: ''
+  - name: --eviction-policy
+    summary: ''
+    description: ''
   - name: --image
     summary: 'The name of the operating system image as a URN alias, URN, custom image name or ID, or VHD blob URI. This parameter is required unless using `--attach-os-disk.` Valid URN format: "Publisher:Offer:Sku:Version".'
     description: ''
@@ -177,6 +180,9 @@ items:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --priority
+    summary: ''
     description: ''
   - name: --public-ip-sku
     summary: ''
