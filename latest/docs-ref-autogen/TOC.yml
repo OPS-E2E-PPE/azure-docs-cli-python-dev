@@ -6816,6 +6816,25 @@
       - name: update
         uid: az_sql_failover_group_update
         displayName: az sql failover-group update
+    - name: instance-failover-group
+      uid: az_sql_instance_failover_group
+      displayName: az sql instance-failover-group
+      items:
+      - name: create
+        uid: az_sql_instance_failover_group_create
+        displayName: az sql instance-failover-group create
+      - name: delete
+        uid: az_sql_instance_failover_group_delete
+        displayName: az sql instance-failover-group delete
+      - name: set-primary
+        uid: az_sql_instance_failover_group_set_primary
+        displayName: az sql instance-failover-group set-primary
+      - name: show
+        uid: az_sql_instance_failover_group_show
+        displayName: az sql instance-failover-group show
+      - name: update
+        uid: az_sql_instance_failover_group_update
+        displayName: az sql instance-failover-group update
     - name: mi
       uid: az_sql_mi
       displayName: az sql mi
