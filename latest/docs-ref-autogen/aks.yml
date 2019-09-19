@@ -726,11 +726,20 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_aks_update
   name: az aks update
-  summary: Update a managed Kubernetes cluster to attach or detach ACR.
+  summary: Update a managed Kubernetes cluster.
   description: ''
   langs:
   - azurecli
   examples:
+  - summary: Update a kubernetes cluster with standard SKU load balancer to use two AKS created IPs for the load balancer outbound connection usage.
+    syntax:
+      content: az aks update -g MyResourceGroup -n MyManagedCluster --load-balancer-managed-outbound-ip-count 2
+  - summary: Update a kubernetes cluster with standard SKU load balancer to use the provided public IPs for the load balancer outbound connection usage.
+    syntax:
+      content: az aks update -g MyResourceGroup -n MyManagedCluster --load-balancer-outbound-ips <ip-resource-id-1,ip-resource-id-2>
+  - summary: Update a kubernetes cluster with standard SKU load balancer to use the provided public IP prefixes for the load balancer outbound connection usage.
+    syntax:
+      content: az aks update -g MyResourceGroup -n MyManagedCluster --load-balancer-outbound-ip-prefixes <ip-prefix-resource-id-1,ip-prefix-resource-id-2>
   - summary: Attach AKS cluster to ACR by name "acrName"
     syntax:
       content: az aks update -g MyResourceGroup -n MyManagedCluster --attach-acr acrName
@@ -750,14 +759,14 @@ items:
     summary: Disable the 'acrpull' role assignment to the ACR specified by name or resource ID.
     description: ''
   - name: --load-balancer-managed-outbound-ip-count
-    summary: Desired number of managed outbound IPs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
-    description: ''
+    summary: Load balancer managed outbound IP count.
+    description: Desired number of managed outbound IPs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
   - name: --load-balancer-outbound-ip-prefixes
-    summary: Comma-separated public IP prefix resource IDs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
-    description: ''
+    summary: Load balancer outbound IP prefix resource IDs.
+    description: Comma-separated public IP prefix resource IDs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
   - name: --load-balancer-outbound-ips
-    summary: Comma-separated public IP resource IDs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
-    description: ''
+    summary: Load balancer outbound IP resource IDs.
+    description: Comma-separated public IP resource IDs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
@@ -1094,7 +1103,7 @@ commands:
   summary: Show the details for a managed Kubernetes cluster.
 - uid: az_aks_update
   name: az aks update
-  summary: Update a managed Kubernetes cluster to attach or detach ACR.
+  summary: Update a managed Kubernetes cluster.
 - uid: az_aks_update_credentials
   name: az aks update-credentials
   summary: Update credentials for a managed Kubernetes cluster, like service principal.
@@ -1126,7 +1135,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/0250ba88053ed1cb5d4b2aa72f515a28b0baceb2/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 9/18/2019 5:33:41 AM
-ms.date: 09/18/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/7764aad5a6586ff9f847e0c21c97915fec2411aa/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 9/19/2019 1:57:41 AM
+ms.date: 09/19/2019
 description: Manage Azure Kubernetes Services.
