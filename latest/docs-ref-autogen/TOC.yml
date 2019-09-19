@@ -1736,6 +1736,9 @@
       - name: list
         uid: az_cosmosdb_keys_list
         displayName: az cosmosdb keys list
+      - name: regenerate
+        uid: az_cosmosdb_keys_regenerate
+        displayName: az cosmosdb keys regenerate
     - name: mongodb
       uid: az_cosmosdb_mongodb
       displayName: az cosmosdb mongodb
