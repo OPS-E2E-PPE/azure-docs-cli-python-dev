@@ -15,7 +15,7 @@ items:
 - uid: az_sql_instance_failover_group_create
   name: az sql instance-failover-group create
   summary: Creates an instance failover group between two connected managed instances.
-  description: If an outage occurs on the primary server, the grace period indicates that Azure SQL Managed Database will not initiate automatic failover before the grace period expires. Please note that failover operation with AllowDataLoss option might cause data loss due to the nature of asynchronous synchronization.
+  description: If an outage occurs on the primary server, the grace period indicates that Azure SQL Managed Database will not initiate automatic failover before the grace period expires. Please note that failover operation with --allow-data-loss option might cause data loss due to the nature of asynchronous synchronization.
   langs:
   - azurecli
   parameters:
@@ -46,7 +46,7 @@ items:
     description: ''
   - name: --grace-period
     defaultValue: "1"
-    summary: Interval in hours before automatic failover is initiated if an outage occurs on the primary server. This indicates that Azure SQL Database will not initiate automatic failover before the grace period expires. Please note that failover operation with AllowDataLoss option might cause data loss due to the nature of asynchronous synchronization.
+    summary: Interval in hours before automatic failover is initiated if an outage occurs on the primary server. This indicates that Azure SQL Database will not initiate automatic failover before the grace period expires. Please note that failover operation with --allow-data-loss option might cause data loss due to the nature of asynchronous synchronization.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -105,7 +105,7 @@ items:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --allow-data-loss
-    summary: If specified, the failover operation will allow data loss.
+    summary: Complete the failover even if doing so may result in data loss. This will allow the failover to proceed even if a primary database is unavailable.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -168,7 +168,7 @@ items:
     summary: The failover policy of the Instance Failover Group.
     description: ''
   - name: --grace-period
-    summary: Interval in hours before automatic failover is initiated if an outage occurs on the primary server. This indicates that Azure SQL Database will not initiate automatic failover before the grace period expires. Please note that failover operation with AllowDataLoss option might cause data loss due to the nature of asynchronous synchronization.
+    summary: Interval in hours before automatic failover is initiated if an outage occurs on the primary server. This indicates that Azure SQL Database will not initiate automatic failover before the grace period expires. Please note that failover operation with --allow-data-loss option might cause data loss due to the nature of asynchronous synchronization.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
@@ -223,7 +223,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/sql/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/4d707759df1a18427021d231e484fc16ce3eb6a1/src/azure-cli/azure/cli/command_modules/sql/_help.py
-updated_at: 9/19/2019 9:42:57 AM
-ms.date: 09/19/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/c8512f303968867cbe2b0060af90cddef3a0a6e3/src/azure-cli/azure/cli/command_modules/sql/_help.py
+updated_at: 9/20/2019 4:14:57 AM
+ms.date: 09/20/2019
 description: Manage SQL Instance Failover Groups.
