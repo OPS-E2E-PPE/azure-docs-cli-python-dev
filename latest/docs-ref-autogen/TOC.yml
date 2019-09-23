@@ -422,6 +422,9 @@
       - name: cancel
         uid: az_ams_job_cancel
         displayName: az ams job cancel
+      - name: create
+        uid: az_ams_job_create
+        displayName: az ams job create
       - name: delete
         uid: az_ams_job_delete
         displayName: az ams job delete
@@ -431,9 +434,6 @@
       - name: show
         uid: az_ams_job_show
         displayName: az ams job show
-      - name: start
-        uid: az_ams_job_start
-        displayName: az ams job start
       - name: update
         uid: az_ams_job_update
         displayName: az ams job update

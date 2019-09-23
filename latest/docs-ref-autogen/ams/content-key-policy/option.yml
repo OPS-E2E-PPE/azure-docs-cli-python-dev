@@ -244,7 +244,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/ams/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/5b557991c099d173ba25a4706290edd69ac87d51/src/azure-cli/azure/cli/command_modules/ams/_help.py
-updated_at: 6/12/2019 8:12:48 PM
-ms.date: 06/12/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/49a47c5ba19e345e4e859f147fde5fcced48507e/src/azure-cli/azure/cli/command_modules/ams/_help.py
+updated_at: 9/23/2019 8:01:45 AM
+ms.date: 09/23/2019
 description: Manage options for an existing content key policy.
