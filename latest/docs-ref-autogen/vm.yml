@@ -202,6 +202,10 @@ items:
   - name: --custom-data
     summary: Custom init script file or text (cloud-init, cloud-config, etc..).
     description: ''
+  - name: --enable-agent
+    parameterValueGroup: false, true
+    summary: Indicates whether virtual machine agent should be provisioned on the virtual machine. When this property is not specified, default behavior is to set it to true. This will ensure that VM Agent is installed on the VM so that extensions can be added to the VM later.
+    description: ''
   - name: --eviction-policy
     parameterValueGroup: Deallocate, Delete
     summary: The eviction policy for the low priority virtual machine.
