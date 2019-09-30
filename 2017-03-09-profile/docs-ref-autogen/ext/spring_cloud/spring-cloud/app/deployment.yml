@@ -66,6 +66,7 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --runtime-version
+    parameterValueGroup: Java_11, Java_8
     summary: Runtime version of used language.
     description: ''
   - name: --skip-clone-settings

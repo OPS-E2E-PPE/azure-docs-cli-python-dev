@@ -79,7 +79,8 @@ items:
     description: ''
   - isRequired: true
     name: --type
-    summary: Type of test-endpoint key, only accepts "Primary" or "Secondary".
+    parameterValueGroup: Primary, Secondary
+    summary: Type of test-endpoint key.
     description: ''
 commands:
 - uid: ext_spring_cloud_az_spring_cloud_test_endpoint_disable

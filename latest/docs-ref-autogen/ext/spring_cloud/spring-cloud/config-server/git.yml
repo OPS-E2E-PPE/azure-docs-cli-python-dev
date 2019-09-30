@@ -28,10 +28,10 @@ items:
     summary: Uri of the added config.
     description: ''
   - name: --host-key
-    summary: ''
+    summary: Host key of the added config.
     description: ''
   - name: --host-key-algorithm
-    summary: ''
+    summary: Host key algorithm of the added config.
     description: ''
   - name: --label
     summary: Label of the added config.
