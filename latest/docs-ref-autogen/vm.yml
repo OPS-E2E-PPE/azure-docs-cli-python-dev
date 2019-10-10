@@ -332,7 +332,7 @@ items:
     description: ''
   - name: --public-ip-sku
     parameterValueGroup: Basic, Standard
-    summary: Sku.
+    summary: Public IP SKU. It is set to Basic by default.
     description: ''
   - name: --subnet
     summary: The name of the subnet when creating a new VNet or referencing an existing one. Can also reference an existing subnet by ID. If omitted, an appropriate VNet and subnet will be selected automatically, or a new one will be created.
