@@ -3759,6 +3759,54 @@
         - name: list
           uid: az_monitor_autoscale_rule_list
           displayName: az monitor autoscale rule list
+    - name: log-analytics
+      uid: az_monitor_log_analytics
+      displayName: az monitor log-analytics
+      items:
+      - name: workspace
+        uid: az_monitor_log_analytics_workspace
+        displayName: az monitor log-analytics workspace
+        items:
+        - name: create
+          uid: az_monitor_log_analytics_workspace_create
+          displayName: az monitor log-analytics workspace create
+        - name: delete
+          uid: az_monitor_log_analytics_workspace_delete
+          displayName: az monitor log-analytics workspace delete
+        - name: get-schema
+          uid: az_monitor_log_analytics_workspace_get_schema
+          displayName: az monitor log-analytics workspace get-schema
+        - name: get-shared-keys
+          uid: az_monitor_log_analytics_workspace_get_shared_keys
+          displayName: az monitor log-analytics workspace get-shared-keys
+        - name: list
+          uid: az_monitor_log_analytics_workspace_list
+          displayName: az monitor log-analytics workspace list
+        - name: list-management-groups
+          uid: az_monitor_log_analytics_workspace_list_management_groups
+          displayName: az monitor log-analytics workspace list-management-groups
+        - name: list-usages
+          uid: az_monitor_log_analytics_workspace_list_usages
+          displayName: az monitor log-analytics workspace list-usages
+        - name: show
+          uid: az_monitor_log_analytics_workspace_show
+          displayName: az monitor log-analytics workspace show
+        - name: update
+          uid: az_monitor_log_analytics_workspace_update
+          displayName: az monitor log-analytics workspace update
+        - name: pack
+          uid: az_monitor_log_analytics_workspace_pack
+          displayName: az monitor log-analytics workspace pack
+          items:
+          - name: disable
+            uid: az_monitor_log_analytics_workspace_pack_disable
+            displayName: az monitor log-analytics workspace pack disable
+          - name: enable
+            uid: az_monitor_log_analytics_workspace_pack_enable
+            displayName: az monitor log-analytics workspace pack enable
+          - name: list
+            uid: az_monitor_log_analytics_workspace_pack_list
+            displayName: az monitor log-analytics workspace pack list
   - name: MySQL
     uid: az_mysql
     displayName: az mysql
