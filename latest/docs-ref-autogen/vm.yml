@@ -300,6 +300,9 @@ items:
   - name: --plan-publisher
     summary: Plan publisher.
     description: ''
+  - name: --workspace
+    summary: Name or ID of Log Analytics Workspace. If you specify the workspace through its name, the workspace should be in the same resource group with the vm, otherwise a new workspace will be created.
+    description: ''
   - name: --accelerated-networking
     parameterValueGroup: false, true
     summary: Enable accelerated networking. Unless specified, CLI will enable it based on machine image and size.
