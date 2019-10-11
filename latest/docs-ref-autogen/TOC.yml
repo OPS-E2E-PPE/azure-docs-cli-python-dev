@@ -6854,6 +6854,22 @@
       - name: update
         uid: az_sql_mi_update
         displayName: az sql mi update
+      - name: ad-admin
+        uid: az_sql_mi_ad_admin
+        displayName: az sql mi ad-admin
+        items:
+        - name: create
+          uid: az_sql_mi_ad_admin_create
+          displayName: az sql mi ad-admin create
+        - name: delete
+          uid: az_sql_mi_ad_admin_delete
+          displayName: az sql mi ad-admin delete
+        - name: list
+          uid: az_sql_mi_ad_admin_list
+          displayName: az sql mi ad-admin list
+        - name: update
+          uid: az_sql_mi_ad_admin_update
+          displayName: az sql mi ad-admin update
       - name: key
         uid: az_sql_mi_key
         displayName: az sql mi key
