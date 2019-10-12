@@ -41,7 +41,7 @@ items:
     description: ''
   - isRequired: true
     name: --source --source-type --type -s
-    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, invalid, twinchangeevents
+    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents
     summary: Source of the route.
     description: ''
   - name: --condition -c
@@ -84,7 +84,7 @@ items:
     summary: Name of the Route.
     description: ''
   - name: --source --source-type --type -s
-    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, invalid, twinchangeevents
+    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents
     summary: Source of the route.
     description: ''
   - name: --hub-name
@@ -120,7 +120,7 @@ items:
       content: az iot hub route list -g MyResourceGroup --hub-name MyIotHub --source-type DeviceMessages
   parameters:
   - name: --source --source-type --type -s
-    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, invalid, twinchangeevents
+    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents
     summary: Source of the route.
     description: ''
   - name: --hub-name
@@ -198,7 +198,7 @@ items:
     summary: Name of the Route.
     description: ''
   - name: --source --source-type --type -s
-    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, invalid, twinchangeevents
+    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents
     summary: Source of the route.
     description: ''
   - name: --sp --system-properties
@@ -248,7 +248,7 @@ items:
     summary: A boolean indicating whether to enable route to the Iot hub.
     description: ''
   - name: --source --source-type --type -s
-    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, invalid, twinchangeevents
+    parameterValueGroup: devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents
     summary: Source of the route.
     description: ''
   - name: --hub-name
