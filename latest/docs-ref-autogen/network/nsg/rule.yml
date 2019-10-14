@@ -73,7 +73,7 @@ items:
     description: ''
   - name: --protocol
     defaultValue: ''
-    parameterValueGroup: '*, Esp, Icmp, Tcp, Udp'
+    parameterValueGroup: '*, Ah, Esp, Icmp, Tcp, Udp'
     summary: Network protocol this rule applies to.
     description: ''
   - name: --destination-address-prefixes
@@ -231,7 +231,7 @@ items:
     summary: Rule priority, between 100 (highest priority) and 4096 (lowest priority). Must be unique for each rule in the collection.
     description: ''
   - name: --protocol
-    parameterValueGroup: '*, Esp, Icmp, Tcp, Udp'
+    parameterValueGroup: '*, Ah, Esp, Icmp, Tcp, Udp'
     summary: Network protocol this rule applies to.
     description: ''
   - name: --ids
