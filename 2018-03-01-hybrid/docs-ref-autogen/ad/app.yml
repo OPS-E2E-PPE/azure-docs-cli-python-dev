@@ -380,7 +380,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/role/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/763d0a0d5187467b9584172f2c14d8aec8c23579/src/azure-cli/azure/cli/command_modules/role/_help.py
-updated_at: 9/16/2019 10:20:26 AM
-ms.date: 09/16/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/1ddecdf0f67123bc73592a86f4178eed41a5f349/src/azure-cli/azure/cli/command_modules/role/_help.py
+updated_at: 10/14/2019 4:26:46 AM
+ms.date: 10/14/2019
 description: Manage applications with AAD Graph.
