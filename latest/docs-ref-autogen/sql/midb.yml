@@ -90,7 +90,7 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_sql_midb_list
   name: az sql midb list
-  summary: List maanged databases on a managed instance.
+  summary: List managed databases on a managed instance.
   description: ''
   langs:
   - azurecli
@@ -206,7 +206,7 @@ commands:
   summary: Delete a managed database.
 - uid: az_sql_midb_list
   name: az sql midb list
-  summary: List maanged databases on a managed instance.
+  summary: List managed databases on a managed instance.
 - uid: az_sql_midb_restore
   name: az sql midb restore
   summary: Restore a managed database.
@@ -229,7 +229,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/sql/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/0970d1ca58bf3e7bcac782e518e17aaa78c7688c/src/azure-cli/azure/cli/command_modules/sql/_help.py
-updated_at: 10/11/2019 2:30:25 AM
-ms.date: 10/11/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/d4e17f0179e52ae28a7fdb13882d56a475265edb/src/azure-cli/azure/cli/command_modules/sql/_help.py
+updated_at: 10/14/2019 1:42:35 AM
+ms.date: 10/14/2019
 description: Manage SQL managed instance databases.
