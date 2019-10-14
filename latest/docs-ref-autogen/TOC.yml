@@ -8957,6 +8957,31 @@
     - name: wait
       uid: az_aks_wait
       displayName: az aks wait
+    - name: nodepool
+      uid: az_aks_nodepool
+      displayName: az aks nodepool
+      items:
+      - name: add
+        uid: az_aks_nodepool_add
+        displayName: az aks nodepool add
+      - name: delete
+        uid: az_aks_nodepool_delete
+        displayName: az aks nodepool delete
+      - name: list
+        uid: az_aks_nodepool_list
+        displayName: az aks nodepool list
+      - name: scale
+        uid: az_aks_nodepool_scale
+        displayName: az aks nodepool scale
+      - name: show
+        uid: az_aks_nodepool_show
+        displayName: az aks nodepool show
+      - name: update
+        uid: az_aks_nodepool_update
+        displayName: az aks nodepool update
+      - name: upgrade
+        uid: az_aks_nodepool_upgrade
+        displayName: az aks nodepool upgrade
   - name: apim
     uid: az_apim
     displayName: az apim
