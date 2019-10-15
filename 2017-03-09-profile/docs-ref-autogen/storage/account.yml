@@ -63,7 +63,7 @@ items:
     description: ''
   - name: --https-only
     parameterValueGroup: false, true
-    summary: Allows https traffic only to storage service.
+    summary: Allow https traffic only to storage service if set to true. The default value is false.
     description: ''
   - name: --kind
     defaultValue: Storage
