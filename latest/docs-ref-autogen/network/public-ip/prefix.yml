@@ -41,6 +41,11 @@ items:
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
+  - name: --version
+    defaultValue: IPv4
+    parameterValueGroup: IPv4, IPv6
+    summary: IP address type.
+    description: ''
   - name: --zone -z
     parameterValueGroup: 1, 2, 3
     summary: Availability zone into which to provision the resource.
