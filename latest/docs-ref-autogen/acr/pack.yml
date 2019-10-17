@@ -47,6 +47,10 @@ items:
   - name: --no-wait
     summary: Do not wait for the run to complete and return immediately after queuing the run.
     description: ''
+  - name: --pack-image-tag
+    defaultValue: stable
+    summary: The tag of the 'pack' runner image ('mcr.microsoft.com/oryx/pack').
+    description: ''
   - name: --platform
     summary: The platform where build/task is run, Eg, 'windows' and 'linux'. When it's used in build commands, it also can be specified in 'os/arch/variant' format for the resulting image. Eg, linux/arm/v7. The 'arch' and 'variant' parts are optional.
     description: ''
