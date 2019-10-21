@@ -19,7 +19,16 @@ items:
   langs:
   - azurecli
   examples:
-  - summary: Create a token associated with the scope map 'MyScopeMap' in the 'disabled' status.
+  - summary: Create a token with repository permissions defined in the scope map 'MyScopeMap'.
+    syntax:
+      content: az acr token create -n MyToken -r MyRegistry --scope-map MyScopeMap
+  - summary: Create a token which has read permissions on hello-world repository.
+    syntax:
+      content: az acr token create -n myToken -r MyRegistry --repository hello-world content/read metadata/read
+  - summary: Create a token without credentials.
+    syntax:
+      content: az acr token create -n myToken -r MyRegistry --repository hello-world content/read --no-passwords
+  - summary: Create a token in disabled status.
     syntax:
       content: az acr token create -n MyToken -r MyRegistry --scope-map MyScopeMap --status disabled
   parameters:
@@ -31,16 +40,23 @@ items:
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
-  - isRequired: true
-    name: --scope-map
-    summary: The name of the scope map associated with the token.
+  - name: --no-passwords
+    parameterValueGroup: false, true
+    summary: Do not generate passwords, instead use "az acr token credentials regenerate".
+    description: ''
+  - name: --repository
+    summary: Repository permissions. Use the format "--repository REPO [ACTION1 ACTION2 ...]" per flag. Valid actions are metadata/read, metadata/write, content/read, content/write and content/delete.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --scope-map
+    summary: The name of the scope map with pre-configured repository permissions. Use "--repository" if you would like CLI to configure one for you.
+    description: ''
   - name: --status
     defaultValue: enabled
-    summary: The status of the token. Allowed values are "enabled" or "disabled".
+    parameterValueGroup: disabled, enabled
+    summary: The status of the token.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -170,7 +186,8 @@ items:
     description: ''
   - name: --status
     defaultValue: enabled
-    summary: The status of the token. Allowed values are "enabled" or "disabled".
+    parameterValueGroup: disabled, enabled
+    summary: The status of the token.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -222,7 +239,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/12e332bfd3319f97cf0dd45a63b902634febb6ce/src/azure-cli/azure/cli/command_modules/acr/_help.py
-updated_at: 10/19/2019 11:54:54 AM
-ms.date: 10/19/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/77b494cb9b467c3583c013824091eabd75f07cbe/src/azure-cli/azure/cli/command_modules/acr/_help.py
+updated_at: 10/21/2019 4:11:51 AM
+ms.date: 10/21/2019
 description: Manage tokens for an Azure Container Registry.

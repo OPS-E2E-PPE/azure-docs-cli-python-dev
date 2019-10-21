@@ -88,6 +88,9 @@ items:
     parameterValueGroup: dotnet, java, node, powershell, python
     summary: The functions runtime stack.
     description: ''
+  - name: --runtime-version
+    summary: 'The version of the functions runtime stack. Allowed values for each --runtime are: node -> [8, 10], python -> [3.6, 3.7], dotnet -> [2].'
+    description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''

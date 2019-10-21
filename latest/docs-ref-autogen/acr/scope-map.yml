@@ -21,12 +21,8 @@ items:
   examples:
   - summary: Create a scope map that allows content/write and metadata/read actions for `hello-world` repository, and content/read action for `hello-world-again`.
     syntax:
-      content: az acr scope-map create -n MyScopeMap -r MyRegistry --add hello-world content/write metadata/read --add hello-world-again content/read --description "Sample scope map."
+      content: az acr scope-map create -n MyScopeMap -r MyRegistry --repository hello-world content/write metadata/read --repository hello-world-again content/read --description "Sample scope map."
   parameters:
-  - isRequired: true
-    name: --add
-    summary: Actions to be added. Use the format "--add REPO [ACTION1 ACTION2 ...]" per flag. Valid actions are metadata/read, metadata/write, content/read, content/write and content/delete.
-    description: ''
   - isRequired: true
     name: --name -n
     summary: The name of the scope map.
@@ -34,6 +30,10 @@ items:
   - isRequired: true
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
+    description: ''
+  - isRequired: true
+    name: --repository
+    summary: Repository permissions. Use the format "--repository REPO [ACTION1 ACTION2 ...]" per flag. Valid actions are metadata/read, metadata/write, content/read, content/write and content/delete.
     description: ''
   - name: --description
     summary: Description for the scope map. Maximum 256 characters are allowed.
@@ -162,13 +162,13 @@ items:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
   - name: --add
-    summary: Actions to be added. Use the format "--add REPO [ACTION1 ACTION2 ...]" per flag. Valid actions are metadata/read, metadata/write, content/read, content/write and content/delete.
+    summary: Repository permissions to be added. Use the format "--add REPO [ACTION1 ACTION2 ...]" per flag. Valid actions are metadata/read, metadata/write, content/read, content/write and content/delete.
     description: ''
   - name: --description
     summary: Description for the scope map. Maximum 256 characters are allowed.
     description: ''
   - name: --remove
-    summary: Actions to be removed. Use the format "--remove REPO [ACTION1 ACTION2 ...]" per flag. Valid actions are metadata/read, metadata/write, content/read, content/write and content/delete.
+    summary: Respsitory permissions to be removed. Use the format "--remove REPO [ACTION1 ACTION2 ...]" per flag. Valid actions are metadata/read, metadata/write, content/read, content/write and content/delete.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -214,7 +214,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/12e332bfd3319f97cf0dd45a63b902634febb6ce/src/azure-cli/azure/cli/command_modules/acr/_help.py
-updated_at: 10/19/2019 11:54:54 AM
-ms.date: 10/19/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/77b494cb9b467c3583c013824091eabd75f07cbe/src/azure-cli/azure/cli/command_modules/acr/_help.py
+updated_at: 10/21/2019 4:11:51 AM
+ms.date: 10/21/2019
 description: Manage scope access maps for Azure Container Registries.

@@ -56,7 +56,7 @@ items:
     summary: If provided, deploy jar, otherwise deploy current folder as tar.
     description: ''
   - name: --jvm-options
-    summary: "A string containing jvm options, use '=' instead of ' ' for this argument to avoid bash prase error, eg: --jvm-options='-Xms1024m -Xmx2048m'."
+    summary: "A string containing jvm options, use '=' instead of ' ' for this argument to avoid bash parse error, eg: --jvm-options='-Xms1024m -Xmx2048m'."
     description: ''
   - name: --memory
     defaultValue: "1"
