@@ -120,6 +120,10 @@ items:
     summary: The e-mail address to receive all system notifications.
     description: ''
   - isRequired: true
+    name: --publisher-name
+    summary: The name of your organization for use in the developer portal and e-mail notifications.
+    description: ''
+  - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
@@ -136,9 +140,6 @@ items:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --publisher-name
-    summary: The name of your organization for use in the developer portal and e-mail notifications.
     description: ''
   - name: --sku-capacity
     defaultValue: "1"
