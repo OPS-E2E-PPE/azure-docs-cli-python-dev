@@ -8371,6 +8371,19 @@
       - name: show
         uid: az_vm_image_show
         displayName: az vm image show
+      - name: terms
+        uid: az_vm_image_terms
+        displayName: az vm image terms
+        items:
+        - name: accept
+          uid: az_vm_image_terms_accept
+          displayName: az vm image terms accept
+        - name: cancel
+          uid: az_vm_image_terms_cancel
+          displayName: az vm image terms cancel
+        - name: show
+          uid: az_vm_image_terms_show
+          displayName: az vm image terms show
     - name: Network interfaces
       uid: az_vm_nic
       displayName: az vm nic

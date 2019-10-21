@@ -1,29 +1,37 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_vmss_nic
-  name: az vmss nic
-  summary: Manage network interfaces of a VMSS.
+- uid: az_vm_image_terms
+  name: az vm image terms
+  summary: Manage Azure Marketplace image terms.
   description: ''
   langs:
   - azurecli
   children:
-  - az_vmss_nic_list
-  - az_vmss_nic_list_vm_nics
-  - az_vmss_nic_show
-- uid: az_vmss_nic_list
-  name: az vmss nic list
-  summary: Gets all network interfaces in a virtual machine scale set.
+  - az_vm_image_terms_accept
+  - az_vm_image_terms_cancel
+  - az_vm_image_terms_show
+- uid: az_vm_image_terms_accept
+  name: az vm image terms accept
+  summary: Accept Azure Marketplace image terms so that the image can be used to create VMs.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Accept Azure Marketplace image terms so that the image can be used to create VMs.
+    syntax:
+      content: az vm image terms accept --urn publisher:offer:sku:version
   parameters:
-  - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+  - name: --offer -f
+    summary: Image offer.
     description: ''
-  - isRequired: true
-    name: --vmss-name
-    summary: Scale set name. You can configure the default using `az configure --defaults vmss=&lt;name&gt;`.
+  - name: --plan
+    summary: Image billing plan.
+    description: ''
+  - name: --publisher -p
+    summary: Image publisher.
+    description: ''
+  - name: --urn
+    summary: URN, in the format of 'publisher:offer:sku:version'. If specified, other argument values can be omitted.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -34,27 +42,31 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_vmss_nic_list_vm_nics
-  name: az vmss nic list-vm-nics
-  summary: Gets information about all network interfaces in a virtual machine in a virtual machine scale set.
+- uid: az_vm_image_terms_cancel
+  name: az vm image terms cancel
+  summary: Cancel Azure Marketplace image terms.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Cancel Azure Marketplace image terms.
+    syntax:
+      content: az vm image terms cancel --urn publisher:offer:sku:version
   parameters:
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+  - name: --offer -f
+    summary: Image offer.
     description: ''
-  - name: --instance-id
-    summary: The virtual machine index.
+  - name: --plan
+    summary: Image billing plan.
     description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+  - name: --publisher -p
+    summary: Image publisher.
+    description: ''
+  - name: --urn
+    summary: URN, in the format of 'publisher:offer:sku:version'. If specified, other argument values can be omitted.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  - name: --vmss-name
-    summary: Scale set name.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
@@ -62,33 +74,31 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_vmss_nic_show
-  name: az vmss nic show
-  summary: Get the specified network interface in a virtual machine scale set.
+- uid: az_vm_image_terms_show
+  name: az vm image terms show
+  summary: Get the details of Azure Marketplace image terms.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Get the details of Azure Marketplace image terms.
+    syntax:
+      content: az vm image terms show --urn publisher:offer:sku:version
   parameters:
-  - name: --expand
-    summary: Expands referenced resources.
+  - name: --offer -f
+    summary: Image offer.
     description: ''
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+  - name: --plan
+    summary: Image billing plan.
     description: ''
-  - name: --instance-id
-    summary: The virtual machine index.
+  - name: --publisher -p
+    summary: Image publisher.
     description: ''
-  - name: --name -n
-    summary: The network interface (NIC).
-    description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+  - name: --urn
+    summary: URN, in the format of 'publisher:offer:sku:version'. If specified, other argument values can be omitted.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  - name: --vmss-name
-    summary: Scale set name.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
@@ -97,15 +107,15 @@ items:
       path: src/azure-cli/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_vmss_nic_list
-  name: az vmss nic list
-  summary: Gets all network interfaces in a virtual machine scale set.
-- uid: az_vmss_nic_list_vm_nics
-  name: az vmss nic list-vm-nics
-  summary: Gets information about all network interfaces in a virtual machine in a virtual machine scale set.
-- uid: az_vmss_nic_show
-  name: az vmss nic show
-  summary: Get the specified network interface in a virtual machine scale set.
+- uid: az_vm_image_terms_accept
+  name: az vm image terms accept
+  summary: Accept Azure Marketplace image terms so that the image can be used to create VMs.
+- uid: az_vm_image_terms_cancel
+  name: az vm image terms cancel
+  summary: Cancel Azure Marketplace image terms.
+- uid: az_vm_image_terms_show
+  name: az vm image terms show
+  summary: Get the details of Azure Marketplace image terms.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -125,4 +135,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/d372260984271a850c3452dc79fa7116cd2157ce/src/azure-cli/azure/cli/command_modules/vm/_help.py
 updated_at: 10/21/2019 3:00:35 AM
 ms.date: 10/21/2019
-description: Manage network interfaces of a VMSS.
+description: Manage Azure Marketplace image terms.
