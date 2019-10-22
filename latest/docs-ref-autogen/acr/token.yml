@@ -42,7 +42,7 @@ items:
     description: ''
   - name: --no-passwords
     parameterValueGroup: false, true
-    summary: Do not generate passwords, instead use "az acr token credentials regenerate".
+    summary: Do not generate passwords, instead use "az acr token credential generate".
     description: ''
   - name: --repository
     summary: Repository permissions. Use the format "--repository REPO [ACTION1 ACTION2 ...]" per flag. Valid actions are metadata/read, metadata/write, content/read, content/write and content/delete.
