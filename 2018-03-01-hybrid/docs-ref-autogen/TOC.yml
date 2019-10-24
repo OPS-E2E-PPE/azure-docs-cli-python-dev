@@ -3753,6 +3753,50 @@
       - name: regenerate
         uid: az_appconfig_credential_regenerate
         displayName: az appconfig credential regenerate
+    - name: feature
+      uid: az_appconfig_feature
+      displayName: az appconfig feature
+      items:
+      - name: delete
+        uid: az_appconfig_feature_delete
+        displayName: az appconfig feature delete
+      - name: disable
+        uid: az_appconfig_feature_disable
+        displayName: az appconfig feature disable
+      - name: enable
+        uid: az_appconfig_feature_enable
+        displayName: az appconfig feature enable
+      - name: list
+        uid: az_appconfig_feature_list
+        displayName: az appconfig feature list
+      - name: lock
+        uid: az_appconfig_feature_lock
+        displayName: az appconfig feature lock
+      - name: set
+        uid: az_appconfig_feature_set
+        displayName: az appconfig feature set
+      - name: show
+        uid: az_appconfig_feature_show
+        displayName: az appconfig feature show
+      - name: unlock
+        uid: az_appconfig_feature_unlock
+        displayName: az appconfig feature unlock
+      - name: filter
+        uid: az_appconfig_feature_filter
+        displayName: az appconfig feature filter
+        items:
+        - name: add
+          uid: az_appconfig_feature_filter_add
+          displayName: az appconfig feature filter add
+        - name: delete
+          uid: az_appconfig_feature_filter_delete
+          displayName: az appconfig feature filter delete
+        - name: list
+          uid: az_appconfig_feature_filter_list
+          displayName: az appconfig feature filter list
+        - name: show
+          uid: az_appconfig_feature_filter_show
+          displayName: az appconfig feature filter show
     - name: kv
       uid: az_appconfig_kv
       displayName: az appconfig kv
