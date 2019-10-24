@@ -101,6 +101,9 @@ items:
   - summary: Create a kubernetes cluster with basic SKU load balancer and AvailabilitySet vm set type.
     syntax:
       content: az aks create -g MyResourceGroup -n MyManagedCluster --load-balancer-sku basic --vm-set-type AvailabilitySet
+  - summary: Create a kubernetes cluster with authorized apiserver IP ranges.
+    syntax:
+      content: az aks create -g MyResourceGroup -n MyManagedCluster --api-server-authorized-ip-ranges 193.168.1.0/24,194.168.1.0/24,195.168.1.0
   parameters:
   - isRequired: true
     name: --name -n
@@ -125,6 +128,9 @@ items:
   - name: --admin-username -u
     defaultValue: azureuser
     summary: User account to create on node VMs for SSH access.
+    description: ''
+  - name: --api-server-authorized-ip-ranges
+    summary: Comma seperated list of authorized apiserver IP ranges. Set to 0.0.0.0/32 to restrict apiserver traffic to node pools.
     description: ''
   - name: --attach-acr
     summary: Grant the 'acrpull' role assignment to the ACR specified by name or resource ID.
@@ -746,6 +752,15 @@ items:
   - summary: Attach AKS cluster to ACR by name "acrName"
     syntax:
       content: az aks update -g MyResourceGroup -n MyManagedCluster --attach-acr acrName
+  - summary: Update a kubernetes cluster with authorized apiserver ip ranges.
+    syntax:
+      content: az aks update -g MyResourceGroup -n MyManagedCluster --api-server-authorized-ip-ranges 193.168.1.0/24,194.168.1.0/24
+  - summary: Disable authorized apiserver ip ranges feature for a kubernetes cluster.
+    syntax:
+      content: az aks update -g MyResourceGroup -n MyManagedCluster --api-server-authorized-ip-ranges ""
+  - summary: Restrict apiserver traffic in a kubernetes cluster to agentpool nodes.
+    syntax:
+      content: az aks update -g MyResourceGroup -n MyManagedCluster --api-server-authorized-ip-ranges 0.0.0.0/32
   parameters:
   - isRequired: true
     name: --name -n
@@ -754,6 +769,9 @@ items:
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --api-server-authorized-ip-ranges
+    summary: Comma seperated list of authorized apiserver IP ranges. Set to "" to allow all traffic on a previously restricted cluster. Set to 0.0.0.0/32 to restrict apiserver traffic to node pools.
     description: ''
   - name: --attach-acr
     summary: Grant the 'acrpull' role assignment to the ACR specified by name or resource ID.
@@ -1162,7 +1180,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/12e332bfd3319f97cf0dd45a63b902634febb6ce/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 10/19/2019 11:54:54 AM
-ms.date: 10/19/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/1a93baf856925a1d7bffd7375ad77b85b93f9547/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 10/24/2019 5:08:18 AM
+ms.date: 10/24/2019
 description: Manage Azure Kubernetes Services.
