@@ -23,7 +23,7 @@ items:
     description: ''
   - isRequired: true
     name: --operator
-    parameterValueGroup: BeginsWith, Contains, EndsWith, Equal, GreaterThan, GreaterThanOrEqual, IPMatch, LessThan, LessThanOrEqual, Regex
+    parameterValueGroup: BeginsWith, Contains, EndsWith, Equal, GeoMatch, GreaterThan, GreaterThanOrEqual, IPMatch, LessThan, LessThanOrEqual, Regex
     summary: Operator for matching.
     description: ''
   - isRequired: true
