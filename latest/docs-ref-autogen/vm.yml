@@ -1100,6 +1100,10 @@ items:
   - name: --os-disk
     summary: Managed OS disk ID or name to swap to.
     description: ''
+  - name: --ultra-ssd-enabled
+    parameterValueGroup: false, true
+    summary: Enables or disables the capability to have 1 or more managed data disks with UltraSSD_LRS storage account.
+    description: ''
   - name: --write-accelerator
     summary: Enable/disable disk write accelerator. Use singular value 'true/false' to apply across, or specify individual disks, e.g.'os=true 1=true 2=true' for os disk and data disks with lun of 1 & 2.
     description: ''

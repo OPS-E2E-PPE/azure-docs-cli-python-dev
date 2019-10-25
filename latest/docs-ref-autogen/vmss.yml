@@ -886,6 +886,10 @@ items:
   - name: --terminate-notification-time
     summary: Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted.
     description: ''
+  - name: --ultra-ssd-enabled
+    parameterValueGroup: false, true
+    summary: Enables or disables the capability to have 1 or more managed data disks with UltraSSD_LRS storage account.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
     description: ''
