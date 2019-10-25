@@ -87,6 +87,7 @@ items:
     summary: The name of the target build stage.
     description: ''
   - name: --timeout
+    defaultValue: "3600"
     summary: The timeout in seconds.
     description: ''
   - name: <SOURCE_LOCATION>
@@ -412,6 +413,7 @@ items:
     summary: Secret value in '--set name[=value]' format. Multiples supported by passing --set multiple times.
     description: ''
   - name: --timeout
+    defaultValue: "3600"
     summary: The timeout in seconds.
     description: ''
   - name: --values
