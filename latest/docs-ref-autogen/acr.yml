@@ -192,6 +192,9 @@ items:
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
+  - name: --workspace
+    summary: Name or ID of the Log Analytics workspace to send registry diagnostic logs to. All events will be enabled. You can use "az monitor log-analytics workspace create" to create one. Extra billing may apply.
+    description: ''
   - name: --default-action
     parameterValueGroup: Allow, Deny
     summary: Default action to apply when no rule matches. Only applicable to Premium SKU.
