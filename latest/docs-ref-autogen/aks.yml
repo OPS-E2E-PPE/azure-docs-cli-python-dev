@@ -157,6 +157,9 @@ items:
           http_application_routing - configure ingress with automatic public DNS name creation.
           monitoring - turn on Log Analytics monitoring. Uses the Log Analytics Default Workspace if it exists, else creates one. Specify "--workspace-resource-id" to use an existing workspace.
           virtual-node - enable AKS Virtual Node (PREVIEW). Requires --subnet-name to provide the name of an existing subnet for the Virtual Node to use.
+  - name: --enable-cluster-autoscaler
+    summary: Enable cluster autoscaler, default value is false.
+    description: If specified, please make sure the kubernetes version is larger than 1.10.6.
   - name: --enable-rbac -r
     summary: 'Enable Kubernetes Role-Based Access Control. Default: enabled.'
     description: ''
@@ -182,9 +185,15 @@ items:
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
+  - name: --max-count
+    summary: Maximum nodes count used for autoscaler, when "--enable-cluster-autoscaler" specified. Please specify the value in the range of [1, 100].
+    description: ''
   - name: --max-pods -m
     summary: The maximum number of pods deployable to a node.
     description: If not specified, defaults to 110, or 30 for advanced networking configurations.
+  - name: --min-count
+    summary: Minimum nodes count used for autoscaler, when "--enable-cluster-autoscaler" specified. Please specify the value in the range of [1, 100].
+    description: ''
   - name: --network-plugin
     summary: The Kubernetes network plugin to use.
     description: Specify "azure" for advanced networking configurations. Defaults to "kubenet".
@@ -779,6 +788,12 @@ items:
   - name: --detach-acr
     summary: Disable the 'acrpull' role assignment to the ACR specified by name or resource ID.
     description: ''
+  - name: --disable-cluster-autoscaler -d
+    summary: Disable cluster autoscaler.
+    description: ''
+  - name: --enable-cluster-autoscaler -e
+    summary: Enable cluster autoscaler.
+    description: ''
   - name: --load-balancer-managed-outbound-ip-count
     summary: Load balancer managed outbound IP count.
     description: Desired number of managed outbound IPs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
@@ -788,8 +803,17 @@ items:
   - name: --load-balancer-outbound-ips
     summary: Load balancer outbound IP resource IDs.
     description: Comma-separated public IP resource IDs for load balancer outbound connection. Valid for Standard SKU load balancer cluster only.
+  - name: --max-count
+    summary: Maximum nodes count used for autoscaler, when "--enable-cluster-autoscaler" specified. Please specify the value in the range of [1, 100].
+    description: ''
+  - name: --min-count
+    summary: Minimum nodes count used for autoscaler, when "--enable-cluster-autoscaler" specified. Please specify the value in the range of [1, 100].
+    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --update-cluster-autoscaler -u
+    summary: Update min-count or max-count for cluster autoscaler.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -1180,7 +1204,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/1a93baf856925a1d7bffd7375ad77b85b93f9547/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 10/24/2019 5:08:18 AM
-ms.date: 10/24/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/39227821de0195e52279844a9a8b6b135ca4b347/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 10/28/2019 2:31:04 AM
+ms.date: 10/28/2019
 description: Manage Azure Kubernetes Services.

@@ -248,6 +248,9 @@ items:
   - name: --validate
     summary: Generate and validate the ARM template without creating any resources.
     description: ''
+  - name: --vmss
+    summary: Name or ID of an existing virtual machine scale set that the virtual machine should be assigned to. None by default.
+    description: ''
   - name: --zone -z
     parameterValueGroup: 1, 2, 3
     summary: Availability zone into which to provision the resource.

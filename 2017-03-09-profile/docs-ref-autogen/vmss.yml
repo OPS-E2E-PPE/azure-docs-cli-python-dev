@@ -77,11 +77,6 @@ items:
       content: az vmss create -n MyVmss -g rg1 --image debian --assign-identity  [system] /subscriptions/99999999-1bf0-4dda-aec3-cb9272f09590/resourcegroups/myRG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/myID
   parameters:
   - isRequired: true
-    name: --image
-    summary: 'The name of the operating system image as a URN alias, URN, custom image name or ID, or VHD blob URI. Valid URN format: "Publisher:Offer:Sku:Version".'
-    description: ''
-    valueFrom: az vm image list, az vm image show
-  - isRequired: true
     name: --name -n
     summary: Name of the virtual machine scale set.
     description: ''
@@ -101,6 +96,10 @@ items:
   - name: --health-probe
     summary: Probe name from the existing load balancer, mainly used for rolling upgrade.
     description: ''
+  - name: --image
+    summary: 'The name of the operating system image as a URN alias, URN, custom image name or ID, or VHD blob URI. Valid URN format: "Publisher:Offer:Sku:Version".'
+    description: ''
+    valueFrom: az vm image list, az vm image show
   - name: --instance-count
     defaultValue: "2"
     summary: Number of VMs in the scale set.
@@ -114,6 +113,11 @@ items:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --orchestrator
+    defaultValue: ScaleSet
+    parameterValueGroup: ScaleSet, VM
+    summary: Choose how virtual machines are managed by the scale set. In VM mode, you manually create and add a virtual machine of any configuration to the scale set. In ScaleSet mode, you define a virtual machine model and Azure will generate identical instances based on that model.
     description: ''
   - name: --secrets
     summary: 'One or many Key Vault secrets as JSON strings or files via `@{path}` containing `[{ "sourceVault": { "id": "value" }, "vaultCertificates": [{ "certificateUrl": "value", "certificateStore": "cert store name (only on windows)"}] }]`.'
