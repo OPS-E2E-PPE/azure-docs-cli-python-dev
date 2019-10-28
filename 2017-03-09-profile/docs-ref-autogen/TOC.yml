@@ -1915,6 +1915,23 @@
         - name: create
           uid: az_network_service_endpoint_policy_definition_create
           displayName: az network service-endpoint policy-definition create
+    - name: vrouter
+      uid: az_network_vrouter
+      displayName: az network vrouter
+      items:
+      - name: create
+        uid: az_network_vrouter_create
+        displayName: az network vrouter create
+      - name: list
+        uid: az_network_vrouter_list
+        displayName: az network vrouter list
+      - name: peering
+        uid: az_network_vrouter_peering
+        displayName: az network vrouter peering
+        items:
+        - name: create
+          uid: az_network_vrouter_peering_create
+          displayName: az network vrouter peering create
   - name: Resource groups
     uid: az_group
     displayName: az group
