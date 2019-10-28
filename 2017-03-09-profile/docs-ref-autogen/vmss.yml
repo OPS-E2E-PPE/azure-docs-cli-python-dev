@@ -114,10 +114,10 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --orchestrator
-    defaultValue: ScaleSet
-    parameterValueGroup: ScaleSet, VM
-    summary: Choose how virtual machines are managed by the scale set. In VM mode, you manually create and add a virtual machine of any configuration to the scale set. In ScaleSet mode, you define a virtual machine model and Azure will generate identical instances based on that model.
+  - name: --orchestration-mode
+    defaultValue: ScaleSetVM
+    parameterValueGroup: ScaleSetVM, VM
+    summary: Choose how virtual machines are managed by the scale set. In VM mode, you manually create and add a virtual machine of any configuration to the scale set. In ScaleSetVM mode, you define a virtual machine model and Azure will generate identical instances based on that model.
     description: ''
   - name: --secrets
     summary: 'One or many Key Vault secrets as JSON strings or files via `@{path}` containing `[{ "sourceVault": { "id": "value" }, "vaultCertificates": [{ "certificateUrl": "value", "certificateStore": "cert store name (only on windows)"}] }]`.'
