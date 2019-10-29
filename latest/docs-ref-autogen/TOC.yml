@@ -9261,6 +9261,9 @@
       - name: show
         uid: az_backup_container_show
         displayName: az backup container show
+      - name: unregister
+        uid: az_backup_container_unregister
+        displayName: az backup container unregister
     - name: item
       uid: az_backup_item
       displayName: az backup item
@@ -9294,6 +9297,9 @@
       uid: az_backup_policy
       displayName: az backup policy
       items:
+      - name: create
+        uid: az_backup_policy_create
+        displayName: az backup policy create
       - name: delete
         uid: az_backup_policy_delete
         displayName: az backup policy delete
@@ -9325,6 +9331,9 @@
       - name: disable
         uid: az_backup_protection_disable
         displayName: az backup protection disable
+      - name: enable-for-azurefileshare
+        uid: az_backup_protection_enable_for_azurefileshare
+        displayName: az backup protection enable-for-azurefileshare
       - name: enable-for-vm
         uid: az_backup_protection_enable_for_vm
         displayName: az backup protection enable-for-vm
@@ -9342,6 +9351,12 @@
       uid: az_backup_restore
       displayName: az backup restore
       items:
+      - name: restore-azurefiles
+        uid: az_backup_restore_restore_azurefiles
+        displayName: az backup restore restore-azurefiles
+      - name: restore-azurefileshare
+        uid: az_backup_restore_restore_azurefileshare
+        displayName: az backup restore restore-azurefileshare
       - name: restore-disks
         uid: az_backup_restore_restore_disks
         displayName: az backup restore restore-disks
