@@ -34,6 +34,10 @@ items:
   - name: --authorization-key
     summary: Authorization key to establish the connection.
     description: ''
+  - name: --internet-security
+    parameterValueGroup: false, true
+    summary: Enable internet security. A virtual hub can have the ability to propagate a learned default route to this ExpressRoute connection. This ref <a href="https://review.docs.microsoft.com/en-us/azure/virtual-wan/effective-routes-virtual-hub?branch=pr-en-us-91866#aboutdefaultroute">https://review.docs.microsoft.com/en-us/azure/virtual-wan/effective-routes-virtual-hub?branch=pr-en-us-91866#aboutdefaultroute</a> might be helpful.
+    description: ''
   - name: --routing-weight
     summary: Routing weight associated with the connection.
     description: ''
@@ -154,6 +158,10 @@ items:
   parameters:
   - name: --authorization-key
     summary: Authorization key to establish the connection.
+    description: ''
+  - name: --internet-security
+    parameterValueGroup: false, true
+    summary: Enable internet security. A virtual hub can have the ability to propagate a learned default route to this ExpressRoute connection. This ref <a href="https://review.docs.microsoft.com/en-us/azure/virtual-wan/effective-routes-virtual-hub?branch=pr-en-us-91866#aboutdefaultroute">https://review.docs.microsoft.com/en-us/azure/virtual-wan/effective-routes-virtual-hub?branch=pr-en-us-91866#aboutdefaultroute</a> might be helpful.
     description: ''
   - name: --routing-weight
     summary: Routing weight associated with the connection.
