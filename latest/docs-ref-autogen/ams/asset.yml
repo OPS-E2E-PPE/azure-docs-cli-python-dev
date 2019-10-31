@@ -131,7 +131,7 @@ items:
       content: az ams asset get-sas-urls --account-name MyAccount --expiry 2019-02-01T12:20:00Z --name MyAsset --permissions Read
   parameters:
   - name: --expiry
-    defaultValue: 2019-10-31 21:42:02.798446
+    defaultValue: 2019-11-01 01:18:05.475956
     summary: Specifies the UTC datetime (Y-m-d'T'H:M:S'Z') at which the SAS becomes invalid.
     description: ''
   - name: --permissions
