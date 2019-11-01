@@ -20,6 +20,7 @@ items:
   - az_aks_list
   - az_aks_remove_connector
   - az_aks_remove_dev_spaces
+  - az_aks_rotate_certs
   - az_aks_scale
   - az_aks_show
   - az_aks_update
@@ -676,6 +677,36 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/acs/_help.py
       repo: https://github.com/Azure/azure-cli.git
+- uid: az_aks_rotate_certs
+  name: az aks rotate-certs
+  summary: Rotate certificates and keys on a managed Kubernetes cluster.
+  description: Kubernetes will be unavailable during cluster certificate rotation.
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --name -n
+    summary: Name of the managed cluster.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --yes -y
+    summary: Do not prompt for confirmation.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/acs/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/acs/_help.py
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_aks_scale
   name: az aks scale
   summary: Scale the node pool in a managed Kubernetes cluster.
@@ -1164,6 +1195,9 @@ commands:
 - uid: az_aks_remove_dev_spaces
   name: az aks remove-dev-spaces
   summary: Remove Azure Dev Spaces from a managed Kubernetes cluster.
+- uid: az_aks_rotate_certs
+  name: az aks rotate-certs
+  summary: Rotate certificates and keys on a managed Kubernetes cluster.
 - uid: az_aks_scale
   name: az aks scale
   summary: Scale the node pool in a managed Kubernetes cluster.
@@ -1204,7 +1238,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/78a36e9a81f22b2902644f8b1d08aad9c3975d2b/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 10/30/2019 7:55:42 AM
-ms.date: 10/30/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/6b99d837423f20a29f5a2aeff5d75ac8c31ba51e/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 11/1/2019 4:54:41 AM
+ms.date: 11/01/2019
 description: Manage Azure Kubernetes Services.

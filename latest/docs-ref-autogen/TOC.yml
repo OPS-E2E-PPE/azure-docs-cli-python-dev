@@ -9048,6 +9048,9 @@
     - name: remove-dev-spaces
       uid: az_aks_remove_dev_spaces
       displayName: az aks remove-dev-spaces
+    - name: rotate-certs
+      uid: az_aks_rotate_certs
+      displayName: az aks rotate-certs
     - name: scale
       uid: az_aks_scale
       displayName: az aks scale
