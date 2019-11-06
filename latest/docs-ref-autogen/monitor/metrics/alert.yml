@@ -40,7 +40,7 @@ items:
     name: --condition
     summary: The condition which triggers the rule.
     description: >-
-      Usage:  --conditon {avg,min,max,total,count} [NAMESPACE.]METRIC {=,!=,&gt;,&gt;=,&lt;,&lt;=} THRESHOLD
+      Usage:  --condition {avg,min,max,total,count} [NAMESPACE.]METRIC {=,!=,&gt;,&gt;=,&lt;,&lt;=} THRESHOLD
                          [where DIMENSION {includes,excludes} VALUE [or VALUE ...]
                          [and   DIMENSION {includes,excludes} VALUE [or VALUE ...] ...]]
 
@@ -50,7 +50,7 @@ items:
       Values for METRIC, DIMENSION and appropriate THRESHOLD values can be obtained from `az monitor metrics list-definitions` command.
 
 
-      Multiple conditons can be specified by using more than one `--condition` argument.
+      Multiple conditions can be specified by using more than one `--condition` argument.
   - isRequired: true
     name: --description
     summary: Free-text description of the rule.
@@ -249,7 +249,7 @@ items:
   - name: --add-condition
     summary: Add a condition which triggers the rule.
     description: >-
-      Usage:  --add-conditon {avg,min,max,total,count} [NAMESPACE.]METRIC {=,!=,&gt;,&gt;=,&lt;,&lt;=} THRESHOLD
+      Usage:  --add-condition {avg,min,max,total,count} [NAMESPACE.]METRIC {=,!=,&gt;,&gt;=,&lt;,&lt;=} THRESHOLD
                              [where DIMENSION {includes,excludes} VALUE [or VALUE ...]
                              [and   DIMENSION {includes,excludes} VALUE [or VALUE ...] ...]]
 
@@ -259,7 +259,7 @@ items:
       Values for METRIC, DIMENSION and appropriate THRESHOLD values can be obtained from `az monitor metrics list-definitions` command.
 
 
-      Multiple conditons can be specified by using more than one `--condition` argument.
+      Multiple conditions can be specified by using more than one `--condition` argument.
   - name: --remove-conditions
     summary: Space-separated list of condition names to remove.
     description: ''
@@ -313,7 +313,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b028e7a80eaaba8419e54e38f03a98a38710c271/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-updated_at: 10/19/2019 1:30:06 PM
-ms.date: 10/19/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/a7c6cf5478f6a041f4bd5e874591fcd3d3bd740b/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+updated_at: 11/6/2019 1:24:29 AM
+ms.date: 11/06/2019
 description: Manage near-realtime metric alert rules.
