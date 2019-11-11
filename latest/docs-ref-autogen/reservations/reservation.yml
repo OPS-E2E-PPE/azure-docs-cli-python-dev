@@ -100,6 +100,9 @@ items:
     name: --reservation-order-id
     summary: Order id of reservation to look up.
     description: ''
+  - name: --expand
+    summary: Supported value of this query is renewProperties.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -165,7 +168,7 @@ items:
     summary: Subscription that the benefit will be applied. Do not specify if AppliedScopeType is Shared.
     description: ''
   - name: --instance-flexibility -i
-    parameterValueGroup: NotSupported, Off, On
+    parameterValueGroup: Off, On
     summary: Type of the Instance Flexibility to update the reservation with.
     description: ''
   - name: --subscription

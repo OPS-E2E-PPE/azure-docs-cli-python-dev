@@ -36,6 +36,9 @@ items:
     name: --reservation-order-id
     summary: Id of reservation order to look up.
     description: ''
+  - name: --expand
+    summary: May be used to expand the planInformation.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
