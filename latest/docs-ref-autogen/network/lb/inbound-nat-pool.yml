@@ -280,7 +280,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b605fddf23386d99559ca3e096e60970d4a7b0f2/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 10/28/2019 1:33:17 AM
-ms.date: 10/28/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/fc4514a6386f73e9c97c2250605ec389e6f434b2/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 11/12/2019 2:08:38 AM
+ms.date: 11/12/2019
 description: Manage inbound NAT address pools of a load balancer.
