@@ -356,7 +356,7 @@ items:
     description: ''
 - uid: az_webapp_up
   name: az webapp up
-  summary: Create a webapp and deploy code from a local workspace to the app. The command is required to run from the folder where the code is present. Current support includes Node, Python, .NET Core and ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows web app is created.
+  summary: Create a webapp and deploy code from a local workspace to the app. The command is required to run from the folder where the code is present. Current support includes Node, Python, .NET Core and ASP.NET. Node, Python apps are created as Linux apps. .Net Core, ASP.NET apps are created as Windows apps.
   description: ''
   langs:
   - azurecli
@@ -366,7 +366,7 @@ items:
       content: az webapp up -n MyUniqueAppName --dryrun
   - summary: Create a web app with the default configuration, by running the command from the folder where the code to deployed exists.
     syntax:
-      content: az webapp up -n MyUniqueAppName
+      content: az webapp up -n MyUniqueAppName -l locationName
   - summary: Create a web app in a specific region, by running the command from the folder where the code to deployed exists.
     syntax:
       content: az webapp up -n MyUniqueAppName -l locationName
@@ -794,7 +794,7 @@ commands:
   summary: Display the current distribution of traffic across slots.
 - uid: az_webapp_up
   name: az webapp up
-  summary: Create a webapp and deploy code from a local workspace to the app. The command is required to run from the folder where the code is present. Current support includes Node, Python, .NET Core and ASP.NET, staticHtml. Node, Python apps are created as Linux apps. .Net Core, ASP.NET and static HTML apps are created as Windows apps. If command is run from an empty folder, an empty windows web app is created.
+  summary: Create a webapp and deploy code from a local workspace to the app. The command is required to run from the folder where the code is present. Current support includes Node, Python, .NET Core and ASP.NET. Node, Python apps are created as Linux apps. .Net Core, ASP.NET apps are created as Windows apps.
 - uid: az_webapp_update
   name: az webapp update
   summary: Update a web app.

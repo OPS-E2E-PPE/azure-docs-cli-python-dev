@@ -157,6 +157,57 @@ items:
     parameterValueGroup: Default, None
     summary: Auth mode of the source registry.
     description: ''
+  - name: --cmd
+    summary: Commands to execute.
+    description: ''
+  - name: --cpu
+    defaultValue: "2"
+    summary: The CPU configuration in terms of number of cores required for the run.
+    description: ''
+  - name: --file -f
+    summary: Relative path of the the task/docker file to the source code root folder. Task files must be suffixed with '.yaml' or piped from the standard input using '-'.
+    description: ''
+  - name: --image -t
+    summary: "The name and tag of the image using the format: '-t repo/image:tag'. Multiple tags are supported by passing -t multiple times."
+    description: ''
+  - name: --no-cache
+    parameterValueGroup: false, true
+    summary: Indicates whether the image cache is enabled.
+    description: ''
+  - name: --no-push
+    parameterValueGroup: false, true
+    summary: Indicates whether the image built should be pushed to the registry.
+    description: ''
+  - name: --platform
+    summary: The platform where build/task is run, Eg, 'windows' and 'linux'. When it's used in build commands, it also can be specified in 'os/arch/variant' format for the resulting image. Eg, linux/arm/v7. The 'arch' and 'variant' parts are optional.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --secret-arg
+    summary: Secret build argument in '--secret-arg name[=value]' format. Multiples supported by passing --secret-arg multiple times.
+    description: ''
+  - name: --set
+    summary: Task value in '--set name[=value]' format. Multiples supported by passing --set multiple times.
+    description: ''
+  - name: --set-secret
+    summary: Secret task value in '--set-secret name[=value]' format. Multiples supported by passing --set-secret multiple times.
+    description: ''
+  - name: --status
+    defaultValue: Enabled
+    parameterValueGroup: Disabled, Enabled
+    summary: The current status of task.
+    description: ''
+  - name: --target
+    summary: The name of the target build stage.
+    description: ''
+  - name: --timeout
+    defaultValue: "3600"
+    summary: The timeout in seconds.
+    description: ''
+  - name: --values
+    summary: The task values/parameters file path relative to the source context.
+    description: ''
   - name: --base-image-trigger-enabled
     defaultValue: "1"
     parameterValueGroup: false, true
@@ -175,72 +226,24 @@ items:
     defaultValue: master
     summary: The source control branch name.
     description: ''
-  - name: --cmd
-    summary: Commands to execute.
-    description: ''
   - name: --commit-trigger-enabled
     defaultValue: "1"
     parameterValueGroup: false, true
     summary: Indicates whether the source control commit trigger is enabled.
     description: ''
-  - name: --cpu
-    defaultValue: "2"
-    summary: The CPU configuration in terms of number of cores required for the run.
-    description: ''
-  - name: --file -f
-    summary: The relative path of the the task/docker file to the source code root folder. Task files must be suffixed with '.yaml' or piped from the standard input using '-'.
-    description: ''
   - name: --git-access-token
     summary: The access token used to access the source control provider.
-    description: ''
-  - name: --image -t
-    summary: "The name and tag of the image using the format: '-t repo/image:tag'. Multiple tags are supported by passing -t multiple times."
-    description: ''
-  - name: --no-cache
-    parameterValueGroup: false, true
-    summary: Indicates whether the image cache is enabled.
-    description: ''
-  - name: --no-push
-    parameterValueGroup: false, true
-    summary: Indicates whether the image built should be pushed to the registry.
-    description: ''
-  - name: --platform
-    summary: The platform where build/task is run, Eg, 'windows' and 'linux'. When it's used in build commands, it also can be specified in 'os/arch/variant' format for the resulting image. Eg, linux/arm/v7. The 'arch' and 'variant' parts are optional.
     description: ''
   - name: --pull-request-trigger-enabled
     parameterValueGroup: false, true
     summary: Indicates whether the source control pull request trigger is enabled. The trigger is disabled by default.
     description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
   - name: --schedule
     summary: Schedule for a timer trigger represented as a cron expression. An optional trigger name can be specified using `--schedule name:schedule` format. Multiples supported by passing --schedule multiple times.
-    description: ''
-  - name: --secret-arg
-    summary: Secret build argument in '--secret-arg name[=value]' format. Multiples supported by passing --secret-arg multiple times.
-    description: ''
-  - name: --set
-    summary: Task value in '--set name[=value]' format. Multiples supported by passing --set multiple times.
-    description: ''
-  - name: --set-secret
-    summary: Secret task value in '--set-secret name[=value]' format. Multiples supported by passing --set-secret multiple times.
     description: ''
   - name: --source-trigger-name
     defaultValue: defaultSourceTriggerName
     summary: The name of the source trigger.
-    description: ''
-  - name: --status
-    defaultValue: Enabled
-    parameterValueGroup: Disabled, Enabled
-    summary: The current status of task.
-    description: ''
-  - name: --target
-    summary: The name of the target build stage.
-    description: ''
-  - name: --timeout
-    defaultValue: "3600"
-    summary: The timeout in seconds.
     description: ''
   - name: --update-trigger-endpoint
     summary: The full URL of the endpoint to receive base image update trigger notifications.
@@ -249,9 +252,6 @@ items:
     defaultValue: Default
     parameterValueGroup: Default, Token
     summary: Indicates whether to include metadata about the base image trigger in the payload alongwith the update trigger token, when a notification is sent.
-    description: ''
-  - name: --values
-    summary: The task values/parameters file path relative to the source context.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -447,7 +447,7 @@ items:
     summary: The full URL to the source code repository (Requires '.git' suffix for a github repo). If '/dev/null' is specified, the value will be set to None and ignored.
     description: ''
   - name: --file -f
-    summary: The relative path of the the task/docker file to the source code root folder. Task files must be suffixed with '.yaml' or piped from the standard input using '-'.
+    summary: Relative path of the the task/docker file to the source code root folder. Task files must be suffixed with '.yaml' or piped from the standard input using '-'.
     description: ''
   - name: --no-logs
     summary: Do not show logs after successfully queuing the build.
@@ -582,21 +582,6 @@ items:
     parameterValueGroup: Default, None
     summary: Auth mode of the source registry.
     description: ''
-  - name: --base-image-trigger-enabled
-    parameterValueGroup: false, true
-    summary: Indicates whether the base image trigger is enabled.
-    description: ''
-  - name: --base-image-trigger-type
-    parameterValueGroup: All, Runtime
-    summary: The type of the auto trigger for base image dependency updates.
-    description: ''
-  - name: --branch
-    summary: The source control branch name.
-    description: ''
-  - name: --commit-trigger-enabled
-    parameterValueGroup: false, true
-    summary: Indicates whether the source control commit trigger is enabled.
-    description: ''
   - name: --context -c
     summary: The full URL to the source code repository (Requires '.git' suffix for a github repo). If '/dev/null' is specified, the value will be set to None and ignored.
     description: ''
@@ -604,10 +589,7 @@ items:
     summary: The CPU configuration in terms of number of cores required for the run.
     description: ''
   - name: --file -f
-    summary: The relative path of the the task/docker file to the source code root folder. Task files must be suffixed with '.yaml' or piped from the standard input using '-'.
-    description: ''
-  - name: --git-access-token
-    summary: The access token used to access the source control provider.
+    summary: Relative path of the the task/docker file to the source code root folder. Task files must be suffixed with '.yaml' or piped from the standard input using '-'.
     description: ''
   - name: --image -t
     summary: "The name and tag of the image using the format: '-t repo/image:tag'. Multiple tags are supported by passing -t multiple times."
@@ -622,10 +604,6 @@ items:
     description: ''
   - name: --platform
     summary: The platform where build/task is run, Eg, 'windows' and 'linux'. When it's used in build commands, it also can be specified in 'os/arch/variant' format for the resulting image. Eg, linux/arm/v7. The 'arch' and 'variant' parts are optional.
-    description: ''
-  - name: --pull-request-trigger-enabled
-    parameterValueGroup: false, true
-    summary: Indicates whether the source control pull request trigger is enabled. The trigger is disabled by default.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -649,15 +627,37 @@ items:
   - name: --timeout
     summary: The timeout in seconds.
     description: ''
+  - name: --values
+    summary: The task values/parameters file path relative to the source context.
+    description: ''
+  - name: --base-image-trigger-enabled
+    parameterValueGroup: false, true
+    summary: Indicates whether the base image trigger is enabled.
+    description: ''
+  - name: --base-image-trigger-type
+    parameterValueGroup: All, Runtime
+    summary: The type of the auto trigger for base image dependency updates.
+    description: ''
+  - name: --branch
+    summary: The source control branch name.
+    description: ''
+  - name: --commit-trigger-enabled
+    parameterValueGroup: false, true
+    summary: Indicates whether the source control commit trigger is enabled.
+    description: ''
+  - name: --git-access-token
+    summary: The access token used to access the source control provider.
+    description: ''
+  - name: --pull-request-trigger-enabled
+    parameterValueGroup: false, true
+    summary: Indicates whether the source control pull request trigger is enabled. The trigger is disabled by default.
+    description: ''
   - name: --update-trigger-endpoint
     summary: The full URL of the endpoint to receive base image update trigger notifications.
     description: ''
   - name: --update-trigger-payload-type
     parameterValueGroup: Default, Token
     summary: Indicates whether to include metadata about the base image trigger in the payload alongwith the update trigger token, when a notification is sent.
-    description: ''
-  - name: --values
-    summary: The task values/parameters file path relative to the source context.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
