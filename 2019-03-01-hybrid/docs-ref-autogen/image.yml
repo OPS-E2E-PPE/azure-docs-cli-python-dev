@@ -40,6 +40,10 @@ items:
     name: --source
     summary: OS disk source from the same region, including a virtual machine ID or name, OS disk blob URI, managed OS disk ID or name, or OS snapshot ID or name.
     description: ''
+  - name: --data-disk-caching
+    parameterValueGroup: None, ReadOnly, ReadWrite
+    summary: Storage caching type for the image's data disk.
+    description: ''
   - name: --data-disk-sources
     summary: Space-separated list of data disk sources, including unmanaged blob URI, managed disk ID or name, or snapshot ID or name.
     description: ''
