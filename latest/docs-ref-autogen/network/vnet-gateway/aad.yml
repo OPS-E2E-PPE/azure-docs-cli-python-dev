@@ -1,80 +1,59 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_network_express_route_port_identity
-  name: az network express-route port identity
-  summary: Manage the managed service identity of an ExpressRoute Port.
+- uid: az_network_vnet_gateway_aad
+  name: az network vnet-gateway aad
+  summary: Manage AAD(Azure Active Directory) authentication of a virtual network gateway.
   description: ''
   langs:
   - azurecli
   children:
-  - az_network_express_route_port_identity_assign
-  - az_network_express_route_port_identity_remove
-  - az_network_express_route_port_identity_show
-- uid: az_network_express_route_port_identity_assign
-  name: az network express-route port identity assign
-  summary: Assign a managed service identity to an ExpressRoute Port.
+  - az_network_vnet_gateway_aad_assign
+  - az_network_vnet_gateway_aad_remove
+  - az_network_vnet_gateway_aad_show
+- uid: az_network_vnet_gateway_aad_assign
+  name: az network vnet-gateway aad assign
+  summary: Assign/Update AAD(Azure Active Directory) authentication to a virtual network gateway.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Assign an identity to the ExpressRoute Port
+  - summary: Assign AAD authentication to a virtual network gateway
     syntax:
       content: >-
-        az network express-route port identity assign \
+        az network vnet-gateway aad assign \
 
-        --resource-group MyResourceGroupg \
+        --resource-group MyResourceGroup \
 
-        --name MyExpressRoutePort \
+        --gateway-name MyVnetGateway \
 
-        --identity MyUserAssignedManagedServiceIdentity
+        --tenant MyAADTenantURI \
+
+        --audience MyAADAudienceId \
+
+        --issuer MyAADIssuerURI
   parameters:
-  - name: --no-wait
-    summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    summary: ExpressRoute port name.
-    description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+  - isRequired: true
+    name: --audience
+    summary: The AADAudience ID of the VirtualNetworkGateway.
     description: ''
   - isRequired: true
-    name: --identity
-    summary: Name or ID of the ManagedIdentity Resource.
+    name: --gateway-name
+    summary: Virtual network gateway name.
     description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/network/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/network/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_network_express_route_port_identity_remove
-  name: az network express-route port identity remove
-  summary: Remove the managed service identity of an ExpressRoute Port.
-  description: ''
-  langs:
-  - azurecli
-  examples:
-  - summary: Remove an identity of the ExpressRoute Port
-    syntax:
-      content: az network express-route port identity remove -g MyResourceGroup --name MyExpressRoutePort
-  parameters:
+  - isRequired: true
+    name: --issuer
+    summary: The AADIssuer URI of the VirtualNetworkGateway.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - isRequired: true
+    name: --tenant
+    summary: The AADTenant URI of the VirtualNetworkGateway.
+    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name -n
-    summary: ExpressRoute port name.
-    description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -85,24 +64,54 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_network_express_route_port_identity_show
-  name: az network express-route port identity show
-  summary: Show the managed service identity of an ExpressRoute Port.
+- uid: az_network_vnet_gateway_aad_remove
+  name: az network vnet-gateway aad remove
+  summary: Remove AAD(Azure Active Directory) authentication from a virtual network gateway.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Show an identity of the ExpressRoute Port
+  - summary: Remove AAD information
     syntax:
-      content: az network express-route port identity show -g MyResourceGroup --name MyExpressRoutePort
+      content: az network vnet-gateway aad remove --resource-group MyResourceGroup --gateway-name MyVnetGateway
   parameters:
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+  - isRequired: true
+    name: --gateway-name
+    summary: Virtual network gateway name.
     description: ''
-  - name: --name -n
-    summary: ExpressRoute port name.
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - name: --resource-group -g
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/network/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/network/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_network_vnet_gateway_aad_show
+  name: az network vnet-gateway aad show
+  summary: Show AAD(Azure Active Directory) authentication of a virtual network gateway.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Show AAD information
+    syntax:
+      content: az network vnet-gateway aad show --resource-group MyResourceGroup --gateway-name MyVnetGateway
+  parameters:
+  - isRequired: true
+    name: --gateway-name
+    summary: Virtual network gateway name.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - name: --subscription
@@ -115,15 +124,15 @@ items:
       path: src/azure-cli/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_network_express_route_port_identity_assign
-  name: az network express-route port identity assign
-  summary: Assign a managed service identity to an ExpressRoute Port.
-- uid: az_network_express_route_port_identity_remove
-  name: az network express-route port identity remove
-  summary: Remove the managed service identity of an ExpressRoute Port.
-- uid: az_network_express_route_port_identity_show
-  name: az network express-route port identity show
-  summary: Show the managed service identity of an ExpressRoute Port.
+- uid: az_network_vnet_gateway_aad_assign
+  name: az network vnet-gateway aad assign
+  summary: Assign/Update AAD(Azure Active Directory) authentication to a virtual network gateway.
+- uid: az_network_vnet_gateway_aad_remove
+  name: az network vnet-gateway aad remove
+  summary: Remove AAD(Azure Active Directory) authentication from a virtual network gateway.
+- uid: az_network_vnet_gateway_aad_show
+  name: az network vnet-gateway aad show
+  summary: Show AAD(Azure Active Directory) authentication of a virtual network gateway.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -143,4 +152,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/167dead83c016845471684601b1aed4dbcaa238f/src/azure-cli/azure/cli/command_modules/network/_help.py
 updated_at: 11/18/2019 8:03:30 AM
 ms.date: 11/18/2019
-description: Manage the managed service identity of an ExpressRoute Port.
+description: Manage AAD(Azure Active Directory) authentication of a virtual network gateway.

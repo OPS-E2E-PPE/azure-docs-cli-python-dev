@@ -5449,6 +5449,19 @@
         - name: delete
           uid: az_network_vnet_gateway_root_cert_delete
           displayName: az network vnet-gateway root-cert delete
+      - name: aad
+        uid: az_network_vnet_gateway_aad
+        displayName: az network vnet-gateway aad
+        items:
+        - name: assign
+          uid: az_network_vnet_gateway_aad_assign
+          displayName: az network vnet-gateway aad assign
+        - name: remove
+          uid: az_network_vnet_gateway_aad_remove
+          displayName: az network vnet-gateway aad remove
+        - name: show
+          uid: az_network_vnet_gateway_aad_show
+          displayName: az network vnet-gateway aad show
       - name: ipsec-policy
         uid: az_network_vnet_gateway_ipsec_policy
         displayName: az network vnet-gateway ipsec-policy
