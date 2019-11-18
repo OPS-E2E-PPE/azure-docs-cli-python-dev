@@ -64,8 +64,18 @@ items:
   - name: --eula
     summary: The Eula agreement for the gallery image.
     description: ''
+  - name: --hyper-v-generation
+    defaultValue: V1
+    parameterValueGroup: V1, V2
+    summary: The hypervisor generation of the Virtual Machine. Applicable to OS disks only.
+    description: ''
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
+    description: ''
+  - name: --os-state
+    defaultValue: Generalized
+    parameterValueGroup: Generalized, Specialized
+    summary: This property allows the user to specify whether the virtual machines created under this image are 'Generalized' or 'Specialized'.
     description: ''
   - name: --privacy-statement-uri
     summary: The privacy statement uri.
