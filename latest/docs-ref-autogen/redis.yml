@@ -68,7 +68,7 @@ items:
     summary: Specify a static ip if required for the VNET. If you do not specify a static IP then an IP address is chosen automatically.
     description: ''
   - name: --subnet-id
-    summary: The full resource ID of a subnet in a virtual network to deploy the redis cache in. Example format /subscriptions/{subid}/resourceGroups/{resourceGroupName}/Microsoft.{Network|ClassicNetwork}/VirtualNetworks/vnet1/subnets/subnet1.
+    summary: The full resource ID of a subnet in a virtual network to deploy the redis cache in. Example format /subscriptions/{subid}/resourceGroups/{resourceGroupName}/providers/Microsoft.{Network|ClassicNetwork}/virtualNetworks/vnet1/subnets/subnet1.
     description: ''
   - name: --tags
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
