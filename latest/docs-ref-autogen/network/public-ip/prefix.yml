@@ -71,7 +71,7 @@ items:
       content: az network public-ip prefix delete --name MyPublicIPPrefix --resource-group MyResourceGroup
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: The name of the public IP prefix.
@@ -122,7 +122,7 @@ items:
     summary: Expands referenced resources.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: The name of the public IP prefix.
@@ -154,7 +154,7 @@ items:
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: The name of the public IP prefix.

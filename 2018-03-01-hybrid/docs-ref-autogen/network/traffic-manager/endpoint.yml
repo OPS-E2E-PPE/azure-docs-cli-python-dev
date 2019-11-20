@@ -102,7 +102,7 @@ items:
       content: az network traffic-manager endpoint delete --name MyEndpoint --profile-name MyTmProfile --resource-group MyResourceGroup --subscription MySubscription --type azureEndpoints
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Endpoint name.
@@ -172,7 +172,7 @@ items:
             --profile-name MyTmProfile -n MyEndpoint --type azureEndpoints
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Endpoint name.
@@ -268,7 +268,7 @@ items:
     summary: Weight of the endpoint when using the 'Weighted' traffic routing method. Values range from 1 to 1000.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Endpoint name.

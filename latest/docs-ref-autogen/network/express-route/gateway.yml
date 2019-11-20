@@ -64,7 +64,7 @@ items:
       content: az network express-route gateway delete --name MyExpressRouteGateway --resource-group MyResourceGroup
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: ExpressRoute gateway name.
@@ -112,7 +112,7 @@ items:
       content: az network express-route gateway show --name MyExpressRouteGateway --resource-group MyResourceGroup
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: ExpressRoute gateway name.
@@ -140,7 +140,7 @@ items:
     summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: ExpressRoute gateway name.

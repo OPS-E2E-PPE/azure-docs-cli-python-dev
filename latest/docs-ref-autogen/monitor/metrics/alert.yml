@@ -118,7 +118,7 @@ items:
       content: az monitor metrics alert delete --name MyAlertRule --resource-group MyResourceGroup
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the alert rule.
@@ -170,7 +170,7 @@ items:
       content: az monitor metrics alert show --name MyAlertRule --resource-group MyResourceGroup
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the alert rule.
@@ -225,7 +225,7 @@ items:
     summary: Time over which to aggregate metrics in "##h##m##s" format.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the alert rule.

@@ -38,7 +38,7 @@ items:
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
@@ -139,7 +139,7 @@ items:
     summary: Timeout in seconds. Defaults to none.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
@@ -174,7 +174,7 @@ items:
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
@@ -233,7 +233,7 @@ items:
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
@@ -259,7 +259,7 @@ items:
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
@@ -291,7 +291,7 @@ items:
     summary: Timeout in seconds. Defaults to none.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
@@ -317,7 +317,7 @@ items:
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
@@ -343,7 +343,7 @@ items:
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
@@ -397,7 +397,7 @@ items:
     summary: The pricing tiers, e.g., F1(Free), D1(Shared), B1(Basic Small), B2(Basic Medium), B3(Basic Large), S1(Standard Small), P1V2(Premium V2 Small), PC2 (Premium Container Small), PC3 (Premium Container Medium), PC4 (Premium Container Large).
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
@@ -450,7 +450,7 @@ items:
     summary: Time to live in seconds for web app's default domain name.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using 'az configure --defaults web=<name>'.
