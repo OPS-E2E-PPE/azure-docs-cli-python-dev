@@ -320,7 +320,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/167dead83c016845471684601b1aed4dbcaa238f/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 11/18/2019 8:03:30 AM
-ms.date: 11/18/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/8da8497ad0478c0954bd71d513047db70a8044fe/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 11/19/2019 10:11:53 AM
+ms.date: 11/19/2019
 description: Manage Private DNS CNAME records.

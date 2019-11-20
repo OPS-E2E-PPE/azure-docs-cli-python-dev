@@ -121,7 +121,7 @@ items:
   - name: --location -l
     summary: Location in which to create VM and related resources. If default location is not configured, will default to the resource group's location.
     description: ''
-  - name: --max-billing
+  - name: --max-price
     summary: The maximum price (in US Dollars) you are willing to pay for a low priority VM/VMSS. -1 indicates that the low priority VM/VMSS should not be evicted for price reasons.
     description: ''
   - name: --no-wait
@@ -139,7 +139,7 @@ items:
     summary: The name or ID of the proximity placement group the VMSS should be associated with.
     description: ''
   - name: --priority
-    parameterValueGroup: Low, Regular
+    parameterValueGroup: Low, Regular, Spot
     summary: Priority. Use 'Low' to run short-lived workloads in a cost-effective way.
     description: ''
   - name: --secrets
