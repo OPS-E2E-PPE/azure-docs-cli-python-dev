@@ -51,6 +51,31 @@
       - name: update
         uid: az_appservice_plan_update
         displayName: az appservice plan update
+    - name: ase
+      uid: az_appservice_ase
+      displayName: az appservice ase
+      items:
+      - name: create
+        uid: az_appservice_ase_create
+        displayName: az appservice ase create
+      - name: delete
+        uid: az_appservice_ase_delete
+        displayName: az appservice ase delete
+      - name: list
+        uid: az_appservice_ase_list
+        displayName: az appservice ase list
+      - name: list-addresses
+        uid: az_appservice_ase_list_addresses
+        displayName: az appservice ase list-addresses
+      - name: list-plans
+        uid: az_appservice_ase_list_plans
+        displayName: az appservice ase list-plans
+      - name: show
+        uid: az_appservice_ase_show
+        displayName: az appservice ase show
+      - name: update
+        uid: az_appservice_ase_update
+        displayName: az appservice ase update
     - name: hybrid-connection
       uid: az_appservice_hybrid_connection
       displayName: az appservice hybrid-connection
