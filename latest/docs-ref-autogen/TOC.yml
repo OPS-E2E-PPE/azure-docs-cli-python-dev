@@ -11847,9 +11847,15 @@
       uid: az_reservations_reservation_order
       displayName: az reservations reservation-order
       items:
+      - name: calculate
+        uid: az_reservations_reservation_order_calculate
+        displayName: az reservations reservation-order calculate
       - name: list
         uid: az_reservations_reservation_order_list
         displayName: az reservations reservation-order list
+      - name: purchase
+        uid: az_reservations_reservation_order_purchase
+        displayName: az reservations reservation-order purchase
       - name: show
         uid: az_reservations_reservation_order_show
         displayName: az reservations reservation-order show
