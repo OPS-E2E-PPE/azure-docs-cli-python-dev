@@ -3873,6 +3873,9 @@
       - name: export
         uid: az_appconfig_kv_export
         displayName: az appconfig kv export
+      - name: import
+        uid: az_appconfig_kv_import
+        displayName: az appconfig kv import
       - name: list
         uid: az_appconfig_kv_list
         displayName: az appconfig kv list
