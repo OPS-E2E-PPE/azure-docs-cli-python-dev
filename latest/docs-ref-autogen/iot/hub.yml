@@ -85,7 +85,7 @@ items:
     summary: Location of your IoT Hub. Default is the location of target resource group.
     description: ''
   - name: --partition-count
-    defaultValue: "2"
+    defaultValue: "4"
     summary: The number of partitions of the backing Event Hub for device-to-cloud messages.
     description: ''
   - name: --rd --retention-day
