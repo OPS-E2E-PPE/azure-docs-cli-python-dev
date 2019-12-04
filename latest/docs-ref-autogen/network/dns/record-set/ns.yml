@@ -46,6 +46,9 @@ items:
   - name: --subscriptionid -s
     summary: Subscription id to add name server record.
     description: ''
+  - name: --ttl
+    summary: Record set TTL (time-to-live).
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py
     remote:

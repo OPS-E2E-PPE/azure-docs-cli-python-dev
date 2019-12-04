@@ -29,7 +29,7 @@ items:
   parameters:
   - isRequired: true
     name: --ipv6-address -a
-    summary: IPV6 address in string notation.
+    summary: IPv6 address in string notation.
     description: ''
   - isRequired: true
     name: --record-set-name -n
@@ -42,6 +42,9 @@ items:
   - isRequired: true
     name: --zone-name -z
     summary: The name of the zone.
+    description: ''
+  - name: --ttl
+    summary: Record set TTL (time-to-live).
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -184,7 +187,7 @@ items:
   parameters:
   - isRequired: true
     name: --ipv6-address -a
-    summary: IPV6 address in string notation.
+    summary: IPv6 address in string notation.
     description: ''
   - isRequired: true
     name: --record-set-name -n
