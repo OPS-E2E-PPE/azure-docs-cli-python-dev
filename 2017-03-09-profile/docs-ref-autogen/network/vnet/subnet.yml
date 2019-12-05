@@ -184,7 +184,7 @@ items:
     summary: Name or ID of a network security group (NSG). Use empty string "" to detach it.
     description: ''
   - name: --route-table
-    summary: Name or ID of a route table to associate with the subnet.
+    summary: Name or ID of a route table to associate with the subnet. Use empty string "" to detach it. You can also append "--remove routeTable" in "az network vnet subnet update" to detach it.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.

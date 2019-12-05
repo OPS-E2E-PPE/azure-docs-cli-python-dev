@@ -194,7 +194,7 @@ items:
     summary: Name or ID of a network security group (NSG). Use empty string "" to detach it.
     description: ''
   - name: --route-table
-    summary: Name or ID of a route table to associate with the subnet.
+    summary: Name or ID of a route table to associate with the subnet. Use empty string "" to detach it. You can also append "--remove routeTable" in "az network vnet subnet update" to detach it.
     description: ''
   - name: --service-endpoints
     summary: Space-separated list of services allowed private access to this subnet.
