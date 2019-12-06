@@ -189,7 +189,7 @@ items:
     summary: Name or ID of an existing Network Security Group.
     description: ''
   - name: --public-ip-address
-    summary: Name of the public IP address when creating one (default) or referencing an existing one. Can also reference an existing public IP by ID or specify "" for None.
+    summary: Name of the public IP address when creating one (default) or referencing an existing one. Can also reference an existing public IP by ID or specify "" for None ('""' in Azure CLI using PowerShell or --% operator).
     description: ''
   - name: --public-ip-address-allocation
     parameterValueGroup: dynamic, static

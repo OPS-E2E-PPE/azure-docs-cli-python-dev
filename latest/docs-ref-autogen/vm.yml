@@ -317,7 +317,7 @@ items:
     summary: Names or IDs of existing NICs to attach to the VM. The first NIC will be designated as primary. If omitted, a new NIC will be created. If an existing NIC is specified, do not specify subnet, VNet, public IP or NSG.
     description: ''
   - name: --nsg
-    summary: The name to use when creating a new Network Security Group (default) or referencing an existing one. Can also reference an existing NSG by ID or specify "" for none.
+    summary: The name to use when creating a new Network Security Group (default) or referencing an existing one. Can also reference an existing NSG by ID or specify "" for none ('""' in Azure CLI using PowerShell or --% operator).
     description: ''
   - name: --nsg-rule
     parameterValueGroup: RDP, SSH
@@ -327,7 +327,7 @@ items:
     summary: Static private IP address (e.g. 10.0.0.5).
     description: ''
   - name: --public-ip-address
-    summary: Name of the public IP address when creating one (default) or referencing an existing one. Can also reference an existing public IP by ID or specify "" for None.
+    summary: Name of the public IP address when creating one (default) or referencing an existing one. Can also reference an existing public IP by ID or specify "" for None ('""' in Azure CLI using PowerShell or --% operator).
     description: ''
   - name: --public-ip-address-allocation
     parameterValueGroup: dynamic, static
