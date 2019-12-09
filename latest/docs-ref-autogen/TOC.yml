@@ -4009,6 +4009,9 @@
     uid: az_network
     displayName: az network
     items:
+    - name: list-service-aliases
+      uid: az_network_list_service_aliases
+      displayName: az network list-service-aliases
     - name: list-service-tags
       uid: az_network_list_service_tags
       displayName: az network list-service-tags
