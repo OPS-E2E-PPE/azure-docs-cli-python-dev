@@ -69,6 +69,9 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --port
+    summary: Custom port which will be used for probing the backend servers. The valid value ranges from 1 to 65535. In case not set, port from http settings will be used. This property is valid for Standard_v2 and WAF_v2 only.
+    description: ''
   - name: --threshold
     defaultValue: "8"
     summary: The number of failed probes after which the back end server is marked down.
@@ -218,6 +221,9 @@ items:
     description: ''
   - name: --path
     summary: The relative path of the probe. Valid paths start from "/".
+    description: ''
+  - name: --port
+    summary: Custom port which will be used for probing the backend servers. The valid value ranges from 1 to 65535. In case not set, port from http settings will be used. This property is valid for Standard_v2 and WAF_v2 only.
     description: ''
   - name: --protocol
     parameterValueGroup: Http, Https

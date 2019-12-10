@@ -134,7 +134,7 @@ commands:
   summary: Methods that show, set, add, and remove access restrictions on a webapp.
 - uid: az_webapp_config_access_restriction_add
   name: az webapp config access-restriction add
-  summary: Adds an Access Restriction to the webapp, or updates if the Action of the Ip-Address or Subnet already exists.
+  summary: Adds an Access Restriction to the webapp.
 - uid: az_webapp_config_access_restriction_remove
   name: az webapp config access-restriction remove
   summary: Removes an Access Restriction from the webapp.
