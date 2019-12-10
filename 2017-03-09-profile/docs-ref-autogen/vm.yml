@@ -181,9 +181,6 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --priority
-    summary: ''
-    description: ''
   - name: --public-ip-sku
     summary: ''
     description: ''
