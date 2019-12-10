@@ -7375,6 +7375,16 @@
         - name: renew
           uid: az_storage_account_keys_renew
           displayName: az storage account keys renew
+      - name: blob-service-properties
+        uid: az_storage_account_blob_service_properties
+        displayName: az storage account blob-service-properties
+        items:
+        - name: show
+          uid: az_storage_account_blob_service_properties_show
+          displayName: az storage account blob-service-properties show
+        - name: update
+          uid: az_storage_account_blob_service_properties_update
+          displayName: az storage account blob-service-properties update
       - name: management-policy
         uid: az_storage_account_management_policy
         displayName: az storage account management-policy
