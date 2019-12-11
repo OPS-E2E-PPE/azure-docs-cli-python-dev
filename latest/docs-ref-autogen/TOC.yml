@@ -9866,6 +9866,9 @@
       - name: show
         uid: az_bot_directline_show
         displayName: az bot directline show
+      - name: update
+        uid: az_bot_directline_update
+        displayName: az bot directline update
     - name: email
       uid: az_bot_email
       displayName: az bot email
