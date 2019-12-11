@@ -55,6 +55,9 @@ items:
   - name: --redirect-config
     summary: The name or ID of the redirect configuration to use with the created rule.
     description: ''
+  - name: --rewrite-rule-set
+    summary: The name or ID of the rewrite rule set. If not specified, the default for the map will be used.
+    description: ''
   - name: --waf-policy
     summary: Name or ID of a Firewall Policy resource.
     description: ''

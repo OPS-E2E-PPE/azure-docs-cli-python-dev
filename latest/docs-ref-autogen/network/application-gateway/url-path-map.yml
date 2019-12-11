@@ -47,6 +47,9 @@ items:
   - name: --default-redirect-config
     summary: The name or ID of the default redirect configuration.
     description: ''
+  - name: --default-rewrite-rule-set
+    summary: The name or ID of the default rewrite rule set, if different from --rewrite-rule-set.
+    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
@@ -63,9 +66,15 @@ items:
   - name: --redirect-config
     summary: The name or ID of the redirect configuration to use with the created rule.
     description: ''
+  - name: --rewrite-rule-set
+    summary: The name or ID of the rewrite rule set. If not specified, the default for the map will be used.
+    description: ''
   - name: --rule-name
     defaultValue: default
     summary: The name of the url-path-map rule.
+    description: ''
+  - name: --waf-policy
+    summary: Name or ID of a Firewall Policy resource.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -195,6 +204,9 @@ items:
     description: ''
   - name: --default-redirect-config
     summary: The name or ID of the default redirect configuration.
+    description: ''
+  - name: --default-rewrite-rule-set
+    summary: The name or ID of the default rewrite rule set.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.

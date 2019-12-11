@@ -52,6 +52,9 @@ items:
   - name: --redirect-config
     summary: The name or ID of the redirect configuration to use with the created rule.
     description: ''
+  - name: --rewrite-rule-set
+    summary: The name or ID of the rewrite rule set.
+    description: ''
   - name: --rule-type
     defaultValue: Basic
     summary: The rule type (Basic, PathBasedRouting).
@@ -193,6 +196,9 @@ items:
     description: ''
   - name: --redirect-config
     summary: The name or ID of the redirect configuration to use with the created rule.
+    description: ''
+  - name: --rewrite-rule-set
+    summary: The name or ID of the rewrite rule set.
     description: ''
   - name: --rule-type
     summary: The rule type (Basic, PathBasedRouting).
