@@ -10441,6 +10441,25 @@
         - name: update
           uid: az_devops_wiki_page_update
           displayName: az devops wiki page update
+  - name: disk-encryption-set
+    uid: az_disk_encryption_set
+    displayName: az disk-encryption-set
+    items:
+    - name: create
+      uid: az_disk_encryption_set_create
+      displayName: az disk-encryption-set create
+    - name: delete
+      uid: az_disk_encryption_set_delete
+      displayName: az disk-encryption-set delete
+    - name: list
+      uid: az_disk_encryption_set_list
+      displayName: az disk-encryption-set list
+    - name: show
+      uid: az_disk_encryption_set_show
+      displayName: az disk-encryption-set show
+    - name: update
+      uid: az_disk_encryption_set_update
+      displayName: az disk-encryption-set update
   - name: dms
     uid: az_dms
     displayName: az dms
