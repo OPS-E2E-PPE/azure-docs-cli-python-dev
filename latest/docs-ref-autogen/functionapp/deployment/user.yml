@@ -75,7 +75,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/appservice/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/3aee4f82621175ef4ddfb9c8bb22134cd4535032/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-updated_at: 12/10/2019 4:56:30 AM
-ms.date: 12/10/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/4f499ebddae9e8e984eb37b81dfbf81aaf64e0bd/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+updated_at: 12/11/2019 6:32:23 PM
+ms.date: 12/11/2019
 description: Manage user credentials for deployment.

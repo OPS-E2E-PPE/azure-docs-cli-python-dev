@@ -237,6 +237,9 @@ commands:
 - uid: az_webapp_config_ssl_delete
   name: az webapp config ssl delete
   summary: Delete an SSL certificate from a web app.
+- uid: az_webapp_config_ssl_import
+  name: az webapp config ssl import
+  summary: Import an SSL certificate to a web app from Key Vault.
 - uid: az_webapp_config_ssl_list
   name: az webapp config ssl list
   summary: List SSL certificates for a web app.

@@ -2653,6 +2653,9 @@
         - name: delete
           uid: az_functionapp_config_ssl_delete
           displayName: az functionapp config ssl delete
+        - name: import
+          uid: az_functionapp_config_ssl_import
+          displayName: az functionapp config ssl import
         - name: list
           uid: az_functionapp_config_ssl_list
           displayName: az functionapp config ssl list
@@ -8854,6 +8857,9 @@
         - name: delete
           uid: az_webapp_config_ssl_delete
           displayName: az webapp config ssl delete
+        - name: import
+          uid: az_webapp_config_ssl_import
+          displayName: az webapp config ssl import
         - name: list
           uid: az_webapp_config_ssl_list
           displayName: az webapp config ssl list
@@ -10398,6 +10404,9 @@
       - name: show
         uid: az_devops_service_endpoint_show
         displayName: az devops service-endpoint show
+      - name: update
+        uid: az_devops_service_endpoint_update
+        displayName: az devops service-endpoint update
       - name: azurerm
         uid: az_devops_service_endpoint_azurerm
         displayName: az devops service-endpoint azurerm
