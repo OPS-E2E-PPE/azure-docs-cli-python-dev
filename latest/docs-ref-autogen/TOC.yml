@@ -9369,6 +9369,12 @@
       - name: list
         uid: az_backup_container_list
         displayName: az backup container list
+      - name: re-register
+        uid: az_backup_container_re_register
+        displayName: az backup container re-register
+      - name: register
+        uid: az_backup_container_register
+        displayName: az backup container register
       - name: show
         uid: az_backup_container_show
         displayName: az backup container show
@@ -9429,10 +9435,29 @@
       - name: show
         uid: az_backup_policy_show
         displayName: az backup policy show
+    - name: protectable-item
+      uid: az_backup_protectable_item
+      displayName: az backup protectable-item
+      items:
+      - name: initialize
+        uid: az_backup_protectable_item_initialize
+        displayName: az backup protectable-item initialize
+      - name: list
+        uid: az_backup_protectable_item_list
+        displayName: az backup protectable-item list
+      - name: show
+        uid: az_backup_protectable_item_show
+        displayName: az backup protectable-item show
     - name: protection
       uid: az_backup_protection
       displayName: az backup protection
       items:
+      - name: auto-disable-for-azurewl
+        uid: az_backup_protection_auto_disable_for_azurewl
+        displayName: az backup protection auto-disable-for-azurewl
+      - name: auto-enable-for-azurewl
+        uid: az_backup_protection_auto_enable_for_azurewl
+        displayName: az backup protection auto-enable-for-azurewl
       - name: backup-now
         uid: az_backup_protection_backup_now
         displayName: az backup protection backup-now
@@ -9445,9 +9470,22 @@
       - name: enable-for-azurefileshare
         uid: az_backup_protection_enable_for_azurefileshare
         displayName: az backup protection enable-for-azurefileshare
+      - name: enable-for-azurewl
+        uid: az_backup_protection_enable_for_azurewl
+        displayName: az backup protection enable-for-azurewl
       - name: enable-for-vm
         uid: az_backup_protection_enable_for_vm
         displayName: az backup protection enable-for-vm
+      - name: resume
+        uid: az_backup_protection_resume
+        displayName: az backup protection resume
+    - name: recoveryconfig
+      uid: az_backup_recoveryconfig
+      displayName: az backup recoveryconfig
+      items:
+      - name: show
+        uid: az_backup_recoveryconfig_show
+        displayName: az backup recoveryconfig show
     - name: recoverypoint
       uid: az_backup_recoverypoint
       displayName: az backup recoverypoint
@@ -9458,6 +9496,9 @@
       - name: show
         uid: az_backup_recoverypoint_show
         displayName: az backup recoverypoint show
+      - name: show-log-chain
+        uid: az_backup_recoverypoint_show_log_chain
+        displayName: az backup recoverypoint show-log-chain
     - name: restore
       uid: az_backup_restore
       displayName: az backup restore
@@ -9468,6 +9509,9 @@
       - name: restore-azurefileshare
         uid: az_backup_restore_restore_azurefileshare
         displayName: az backup restore restore-azurefileshare
+      - name: restore-azurewl
+        uid: az_backup_restore_restore_azurewl
+        displayName: az backup restore restore-azurewl
       - name: restore-disks
         uid: az_backup_restore_restore_disks
         displayName: az backup restore restore-disks
