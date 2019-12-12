@@ -131,7 +131,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/f7bb85d6a294491eb37773d0746465ae25b59a38/src/azure-cli/azure/cli/command_modules/storage/_help.py
-updated_at: 12/12/2019 2:59:05 AM
+gitcommit: https://github.com/Azure/azure-cli/blob/f5321e292a77c2f74f0af39dd72bdf98b7509669/src/azure-cli/azure/cli/command_modules/storage/_help.py
+updated_at: 12/12/2019 4:32:56 AM
 ms.date: 12/12/2019
 description: Manage storage service metrics.
