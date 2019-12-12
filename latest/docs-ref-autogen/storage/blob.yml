@@ -1276,7 +1276,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/495a6f6118c7ce41e060c45341e4033c15d243ff/src/azure-cli/azure/cli/command_modules/storage/_help.py
-updated_at: 12/10/2019 7:40:51 AM
-ms.date: 12/10/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/f7bb85d6a294491eb37773d0746465ae25b59a38/src/azure-cli/azure/cli/command_modules/storage/_help.py
+updated_at: 12/12/2019 2:59:05 AM
+ms.date: 12/12/2019
 description: Manage object storage for unstructured data (blobs).

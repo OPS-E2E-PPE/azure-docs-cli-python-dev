@@ -42,6 +42,9 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --aux-subs
+    summary: Auxiliary subscriptions which will be used during deployment across tenants.
+    description: ''
   - name: --handle-extended-json-format -j
     summary: Support to handle extended template content including multiline and comments in deployment.
     description: ''
@@ -63,10 +66,10 @@ items:
     summary: The name of a deployment to roll back to on error, or use as a flag to roll back to the last successful deployment.
     description: ''
   - name: --template-file
-    summary: A template file path in the file system.
+    summary: The template file path in the file system.
     description: ''
   - name: --template-uri
-    summary: A uri to a remote template file.
+    summary: The URI to a remote template file.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -217,10 +220,10 @@ items:
     summary: The name of a deployment to roll back to on error, or use as a flag to roll back to the last successful deployment.
     description: ''
   - name: --template-file
-    summary: A template file path in the file system.
+    summary: The template file path in the file system.
     description: ''
   - name: --template-uri
-    summary: A uri to a remote template file.
+    summary: The URI to a remote template file.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

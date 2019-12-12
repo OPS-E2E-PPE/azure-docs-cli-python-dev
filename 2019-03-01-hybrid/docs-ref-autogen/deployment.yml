@@ -55,10 +55,10 @@ items:
     summary: Supply deployment parameter values.
     description: Parameters may be supplied from a file using the `@{path}` syntax, a JSON string, or as &lt;KEY=VALUE&gt; pairs. Parameters are evaluated in order, so when a value is assigned twice, the latter value will be used. It is recommended that you supply your parameters file first, and then override selectively using KEY=VALUE syntax.
   - name: --template-file
-    summary: A template file path in the file system.
+    summary: The template file path in the file system.
     description: ''
   - name: --template-uri
-    summary: A uri to a remote template file.
+    summary: The URI to a remote template file.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -186,10 +186,10 @@ items:
     summary: Supply deployment parameter values.
     description: Parameters may be supplied from a file using the `@{path}` syntax, a JSON string, or as &lt;KEY=VALUE&gt; pairs. Parameters are evaluated in order, so when a value is assigned twice, the latter value will be used. It is recommended that you supply your parameters file first, and then override selectively using KEY=VALUE syntax.
   - name: --template-file
-    summary: A template file path in the file system.
+    summary: The template file path in the file system.
     description: ''
   - name: --template-uri
-    summary: A uri to a remote template file.
+    summary: The URI to a remote template file.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
