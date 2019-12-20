@@ -240,18 +240,12 @@ items:
   - name: --data-disk-caching
     summary: Storage caching type for data disk(s), including 'None', 'ReadOnly', 'ReadWrite', etc. Use a singular value to apply on all disks, or use '<lun>=<vaule1> <lun>=<value2>' to configure individual disk.
     description: ''
-  - name: --data-disk-encryption-sets
-    summary: Names or IDs (space delimited) of disk encryption sets for data disks.
-    description: ''
   - name: --data-disk-sizes-gb
     summary: Space-separated empty managed data disk sizes in GB to create.
     description: ''
   - name: --os-disk-caching
     parameterValueGroup: None, ReadOnly, ReadWrite
     summary: 'Storage caching type for the VM OS disk. Default: ReadWrite.'
-    description: ''
-  - name: --os-disk-encryption-set
-    summary: Name or ID of disk encryption set for OS disk.
     description: ''
   - name: --os-disk-name
     summary: The name of the new VM OS disk.
