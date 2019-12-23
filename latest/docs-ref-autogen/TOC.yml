@@ -9485,6 +9485,9 @@
       - name: resume
         uid: az_backup_protection_resume
         displayName: az backup protection resume
+      - name: undelete
+        uid: az_backup_protection_undelete
+        displayName: az backup protection undelete
     - name: recoveryconfig
       uid: az_backup_recoveryconfig
       displayName: az backup recoveryconfig
