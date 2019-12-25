@@ -8655,6 +8655,16 @@
         - name: show
           uid: az_vm_monitor_log_show
           displayName: az vm monitor log show
+      - name: metrics
+        uid: az_vm_monitor_metrics
+        displayName: az vm monitor metrics
+        items:
+        - name: list-definitions
+          uid: az_vm_monitor_metrics_list_definitions
+          displayName: az vm monitor metrics list-definitions
+        - name: tail
+          uid: az_vm_monitor_metrics_tail
+          displayName: az vm monitor metrics tail
     - name: run-command
       uid: az_vm_run_command
       displayName: az vm run-command
