@@ -9498,6 +9498,9 @@
       - name: undelete
         uid: az_backup_protection_undelete
         displayName: az backup protection undelete
+      - name: update-for-vm
+        uid: az_backup_protection_update_for_vm
+        displayName: az backup protection update-for-vm
     - name: recoveryconfig
       uid: az_backup_recoveryconfig
       displayName: az backup recoveryconfig

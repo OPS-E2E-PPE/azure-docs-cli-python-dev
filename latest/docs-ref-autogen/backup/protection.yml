@@ -17,6 +17,7 @@ items:
   - az_backup_protection_enable_for_vm
   - az_backup_protection_resume
   - az_backup_protection_undelete
+  - az_backup_protection_update_for_vm
 - uid: az_backup_protection_auto_disable_for_azurewl
   name: az backup protection auto-disable-for-azurewl
   summary: Disable auto-protection for the specified item.
@@ -342,6 +343,13 @@ items:
     name: --vm
     summary: Name or ID of the Virtual Machine to be protected.
     description: ''
+  - name: --disk-list-setting
+    parameterValueGroup: exclude, include
+    summary: Option to decide whether to include or exclude the disk or reset any previous settings to default behavior.
+    description: ''
+  - name: --diskslist
+    summary: List of disks to be excluded or included.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -455,6 +463,52 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/backup/_help.py
       repo: https://github.com/Azure/azure-cli.git
+- uid: az_backup_protection_update_for_vm
+  name: az backup protection update-for-vm
+  summary: Update disk exclusion settings associated with a backed up VM item.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Update disk exclusion settings associated with a backed up VM item.
+    syntax:
+      content: az backup protection update-for-vm --vault-name MyVault --resource-group MyResourceGroup --container-name MyContainer --item-name MyItem --disk-list-setting exclude --diskslist 1
+  parameters:
+  - isRequired: true
+    name: --container-name -c
+    summary: Name of the backup container. Accepts 'Name' or 'FriendlyName' from the output of az backup container list command. If 'FriendlyName' is passed then BackupManagementType is required.
+    description: ''
+  - isRequired: true
+    name: --disk-list-setting
+    parameterValueGroup: exclude, include, resetexclusionsettings
+    summary: Option to decide whether to include or exclude the disk or reset any previous settings to default behavior.
+    description: ''
+  - isRequired: true
+    name: --diskslist
+    summary: List of disks to be excluded or included.
+    description: ''
+  - isRequired: true
+    name: --item-name -i
+    summary: Name of the backed up item.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --vault-name -v
+    summary: Name of the Recovery services vault.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/backup/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/backup/_help.py
+      repo: https://github.com/Azure/azure-cli.git
 commands:
 - uid: az_backup_protection_auto_disable_for_azurewl
   name: az backup protection auto-disable-for-azurewl
@@ -486,6 +540,9 @@ commands:
 - uid: az_backup_protection_undelete
   name: az backup protection undelete
   summary: Rehydrate an item from softdeleted state to stop protection with retained data state.
+- uid: az_backup_protection_update_for_vm
+  name: az backup protection update-for-vm
+  summary: Update disk exclusion settings associated with a backed up VM item.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -502,7 +559,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/backup/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/d45efa937f6d7b93f496b8ff2481fe692229a38c/src/azure-cli/azure/cli/command_modules/backup/_help.py
-updated_at: 12/23/2019 3:29:49 AM
-ms.date: 12/23/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/1c885925afbd80618dda5c592e45f806cccfcf36/src/azure-cli/azure/cli/command_modules/backup/_help.py
+updated_at: 1/2/2020 2:13:21 AM
+ms.date: 01/02/2020
 description: Manage protection of your items, enable protection or disable it, or take on-demand backups.
