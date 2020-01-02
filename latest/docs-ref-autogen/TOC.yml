@@ -9347,6 +9347,9 @@
       - name: set
         uid: az_appconfig_kv_set
         displayName: az appconfig kv set
+      - name: set-keyvault
+        uid: az_appconfig_kv_set_keyvault
+        displayName: az appconfig kv set-keyvault
       - name: show
         uid: az_appconfig_kv_show
         displayName: az appconfig kv show
