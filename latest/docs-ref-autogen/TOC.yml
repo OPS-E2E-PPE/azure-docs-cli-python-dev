@@ -8380,6 +8380,9 @@
     - name: perform-maintenance
       uid: az_vm_perform_maintenance
       displayName: az vm perform-maintenance
+    - name: reapply
+      uid: az_vm_reapply
+      displayName: az vm reapply
     - name: redeploy
       uid: az_vm_redeploy
       displayName: az vm redeploy
