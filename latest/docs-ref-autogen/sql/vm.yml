@@ -105,7 +105,7 @@ items:
     summary: SQL Server management type. If NoAgent selected, please provide --image-sku and --offer-type.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --enable-r-services
     parameterValueGroup: false, true
@@ -368,7 +368,7 @@ items:
     summary: SQL Server management type. Updates from LightWeight to Full.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --yes -y
     defaultValue: "1"

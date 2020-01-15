@@ -63,7 +63,7 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --zone-redundant -z
     parameterValueGroup: false, true

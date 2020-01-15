@@ -389,7 +389,7 @@ items:
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=&lt;name&gt;`.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --value
     summary: Value of the keyvalue to be set.
@@ -438,7 +438,7 @@ items:
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=&lt;name&gt;`.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --yes -y
     summary: Do not prompt for confirmation.

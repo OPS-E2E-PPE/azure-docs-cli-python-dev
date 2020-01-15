@@ -194,12 +194,6 @@ items:
       content: az rest --method put --uri https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/publicIPAddresses/{publicIpAddressName}?api-version=2019-09-01 --body @body.json
   parameters:
   - isRequired: true
-    name: --method -m
-    defaultValue: get
-    parameterValueGroup: delete, get, head, options, patch, post, put
-    summary: HTTP request method.
-    description: ''
-  - isRequired: true
     name: --uri -u
     summary: Request uri. For uri without host, CLI will assume "<a href="https://management.azure.com/">https://management.azure.com/</a>". Common token '{subscriptionId}' will be replaced with the current subscription ID specified by 'az account set'.
     description: ''
@@ -208,6 +202,11 @@ items:
     description: ''
   - name: --headers
     summary: Space-separated headers in KEY=VALUE format or JSON string. Use @{file} to load from a file.
+    description: ''
+  - name: --method -m
+    defaultValue: get
+    parameterValueGroup: delete, get, head, options, patch, post, put
+    summary: HTTP request method.
     description: ''
   - name: --output-file
     summary: Save response payload to a file.

@@ -86,7 +86,7 @@ items:
     summary: 'The key size in bits. For example: 2048, 3072, or 4096 for RSA.'
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - isRequired: true
     name: --name -n
@@ -156,7 +156,7 @@ items:
     summary: Specifies the type of key protection.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - isRequired: true
     name: --name -n
@@ -353,7 +353,7 @@ items:
     summary: Space-separated list of permitted JSON web key operations.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --id
     summary: Id of the key.  If specified all other 'Id' arguments should be omitted.

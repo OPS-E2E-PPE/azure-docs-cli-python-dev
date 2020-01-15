@@ -35,7 +35,7 @@ items:
     summary: Location. If not provided, group will be created in the same reosurce group location.You can configure the default location using `az configure --defaults location=&lt;location&gt;`.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - isRequired: true
     name: --image-offer -i
@@ -170,7 +170,7 @@ items:
       content: az sql vm group update -n sqlvmgroup -g myresourcegroup --sa-key {PublicKey} --storage-account 'https://newstoracc.blob.core.windows.net/'
   parameters:
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.

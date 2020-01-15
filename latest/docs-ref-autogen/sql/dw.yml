@@ -50,7 +50,7 @@ items:
     summary: The number of readonly secondary replicas associated with the database to which readonly application intent connections may be routed. This property is only settable for Hyperscale edition databases.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --zone-redundant
     summary: Whether or not this database is zone redundant, which means the replicas of this database will be spread across multiple availability zones.
