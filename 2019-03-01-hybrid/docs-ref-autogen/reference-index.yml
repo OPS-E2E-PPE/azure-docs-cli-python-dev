@@ -253,6 +253,9 @@ commands:
 - uid: az_appconfig
   name: az appconfig
   summary: Manage App Configurations.
+- uid: az_appservice
+  name: az appservice
+  summary: Manage App Service plans.
 - uid: az_artifacts
   name: az artifacts
   summary: Manage Azure Artifacts.
@@ -286,6 +289,9 @@ commands:
 - uid: az_find
   name: az find
   summary: I'm an AI robot, my advice is based on our Azure documentation as well as the usage patterns of Azure CLI and Azure ARM users. Using me improves Azure products and documentation.
+- uid: az_functionapp
+  name: az functionapp
+  summary: Manage function apps. To install the Azure Functions Core tools see <a href="https://github.com/Azure/azure-functions-core-tools">https://github.com/Azure/azure-functions-core-tools</a>.
 - uid: az_group
   name: az group
   summary: Manage resource groups and template deployments.
@@ -361,6 +367,9 @@ commands:
 - uid: az_vmss
   name: az vmss
   summary: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).
+- uid: az_webapp
+  name: az webapp
+  summary: Manage web apps.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
