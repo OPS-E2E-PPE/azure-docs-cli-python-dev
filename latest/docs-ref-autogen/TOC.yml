@@ -7979,6 +7979,28 @@
         - name: update
           uid: az_storage_table_policy_update
           displayName: az storage table policy update
+    - name: share-rm
+      uid: az_storage_share_rm
+      displayName: az storage share-rm
+      items:
+      - name: create
+        uid: az_storage_share_rm_create
+        displayName: az storage share-rm create
+      - name: delete
+        uid: az_storage_share_rm_delete
+        displayName: az storage share-rm delete
+      - name: exists
+        uid: az_storage_share_rm_exists
+        displayName: az storage share-rm exists
+      - name: list
+        uid: az_storage_share_rm_list
+        displayName: az storage share-rm list
+      - name: show
+        uid: az_storage_share_rm_show
+        displayName: az storage share-rm show
+      - name: update
+        uid: az_storage_share_rm_update
+        displayName: az storage share-rm update
   - name: Subscriptions
     uid: az_account
     displayName: az account

@@ -820,6 +820,27 @@ commands:
 - uid: az_storage_share_url
   name: az storage share url
   summary: Create a URI to access a file share.
+- uid: az_storage_share_rm
+  name: az storage share-rm
+  summary: Manage Azure file shares using the Microsoft.Storage resource provider.
+- uid: az_storage_share_rm_create
+  name: az storage share-rm create
+  summary: Create a new Azure file share under the specified storage account.
+- uid: az_storage_share_rm_delete
+  name: az storage share-rm delete
+  summary: Delete the specified Azure file share.
+- uid: az_storage_share_rm_exists
+  name: az storage share-rm exists
+  summary: Check for the existence of an Azure file share.
+- uid: az_storage_share_rm_list
+  name: az storage share-rm list
+  summary: List the Azure file shares under the specified storage account.
+- uid: az_storage_share_rm_show
+  name: az storage share-rm show
+  summary: Show the properties for a specified Azure file share.
+- uid: az_storage_share_rm_update
+  name: az storage share-rm update
+  summary: Update the properties for an Azure file share.
 - uid: az_storage_table
   name: az storage table
   summary: Manage NoSQL key-value storage.
@@ -875,7 +896,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/bd78e5fe51e07e39e0626def09cdaa0d5bef1425/src/azure-cli/azure/cli/command_modules/storage/_help.py
-updated_at: 1/19/2020 8:32:10 AM
+gitcommit: https://github.com/Azure/azure-cli/blob/4051a36b26a79f552402d965e01196255bbd7275/src/azure-cli/azure/cli/command_modules/storage/_help.py
+updated_at: 1/19/2020 11:03:00 AM
 ms.date: 01/19/2020
 description: Manage Azure Cloud Storage resources.
