@@ -632,10 +632,10 @@ items:
     summary: 'The service objective for the new database. For example: Basic, S0, P1, GP_Gen4_1, BC_Gen5_2, GP_Gen5_S_8.'
     description: ''
   - name: --deleted-time
-    summary: If specified, restore from a deleted database instead of from an existing database. Must match the deleted time of a deleted database in the same server. Either --time or --deleted-time (or both) must be specified.
+    summary: 'If specified, restore from a deleted database instead of from an existing database. Must match the deleted time of a deleted database in the same server. Either --time or --deleted-time (or both) must be specified. Time should be in following format: "YYYY-MM-DDTHH:MM:SS".'
     description: ''
   - name: --time -t
-    summary: The point in time of the source database that will be restored to create the new database. Must be greater than or equal to the source database's earliestRestoreDate value. Either --time or --deleted-time (or both) must be specified.
+    summary: "The point in time of the source database that will be restored to create the new database. Must be greater than or equal to the source database's earliestRestoreDate value. Either --time or --deleted-time (or both) must be specified. Time should be in following format: \"YYYY-MM-DDTHH:MM:SS\"."
     description: ''
   - name: --auto-pause-delay
     summary: Time in minutes after which database is automatically paused. A value of -1 means that automatic pause is disabled.
