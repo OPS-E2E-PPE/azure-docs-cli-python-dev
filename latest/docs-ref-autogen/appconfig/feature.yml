@@ -405,7 +405,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/594f6a09b33ece5d70f1452304a14c6477e0a2a2/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
-updated_at: 1/2/2020 12:19:29 PM
-ms.date: 01/02/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/f4c94dcacd15bb1763f99891ee96969b5132e2e4/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+updated_at: 1/21/2020 1:12:41 AM
+ms.date: 01/21/2020
 description: Manage feature flags stored in an App Configuration.
