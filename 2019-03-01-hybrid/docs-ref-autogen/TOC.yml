@@ -4609,6 +4609,19 @@
         - name: show
           uid: az_appconfig_feature_filter_show
           displayName: az appconfig feature filter show
+    - name: identity
+      uid: az_appconfig_identity
+      displayName: az appconfig identity
+      items:
+      - name: assign
+        uid: az_appconfig_identity_assign
+        displayName: az appconfig identity assign
+      - name: remove
+        uid: az_appconfig_identity_remove
+        displayName: az appconfig identity remove
+      - name: show
+        uid: az_appconfig_identity_show
+        displayName: az appconfig identity show
     - name: kv
       uid: az_appconfig_kv
       displayName: az appconfig kv
