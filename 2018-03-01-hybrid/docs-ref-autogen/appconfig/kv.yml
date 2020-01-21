@@ -388,7 +388,7 @@ items:
   parameters:
   - isRequired: true
     name: --key
-    summary: Key to be set.
+    summary: Key to be set. Key cannot be a '.' or '..', or contain the '%' character.
     description: ''
   - name: --connection-string
     summary: Combination of access key and endpoint of App Configuration. Can be found using 'az appconfig credential list'. Users can preset it using `az configure --defaults appconfig_connection_string=&lt;connection_string&gt;` or environment variable with the name AZURE_APPCONFIG_CONNECTION_STRING.
@@ -436,7 +436,7 @@ items:
   parameters:
   - isRequired: true
     name: --key
-    summary: Key to be set.
+    summary: Key to be set. Key cannot be a '.' or '..', or contain the '%' character.
     description: ''
   - isRequired: true
     name: --secret-identifier
