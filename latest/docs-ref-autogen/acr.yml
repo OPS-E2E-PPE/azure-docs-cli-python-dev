@@ -790,6 +790,21 @@ commands:
 - uid: az_acr_task_update_run
   name: az acr task update-run
   summary: Patch the run properties of an Azure Container Registry Task.
+- uid: az_acr_taskrun
+  name: az acr taskrun
+  summary: Manage taskruns using Azure Container Registries.
+- uid: az_acr_taskrun_delete
+  name: az acr taskrun delete
+  summary: Delete a taskrun from an Azure Container Registry.
+- uid: az_acr_taskrun_list
+  name: az acr taskrun list
+  summary: List the taskruns for an Azure Container Registry.
+- uid: az_acr_taskrun_logs
+  name: az acr taskrun logs
+  summary: Show run logs for a particular taskrun.
+- uid: az_acr_taskrun_show
+  name: az acr taskrun show
+  summary: Get the properties of a named taskrun for an Azure Container Registry.
 - uid: az_acr_token
   name: az acr token
   summary: Manage tokens for an Azure Container Registry.
@@ -863,7 +878,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e4042783ccd03300c528fdfd25945a1af9be76ed/src/azure-cli/azure/cli/command_modules/acr/_help.py
-updated_at: 12/6/2019 7:19:56 AM
-ms.date: 12/06/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/3b133db329ea0061ae12bcb95ac79ea6ea97e0a9/src/azure-cli/azure/cli/command_modules/acr/_help.py
+updated_at: 1/24/2020 7:56:14 PM
+ms.date: 01/24/2020
 description: Manage private registries with Azure Container Registries.

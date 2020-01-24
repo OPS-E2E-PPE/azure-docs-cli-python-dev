@@ -1501,6 +1501,22 @@
         - name: update
           uid: az_acr_task_timer_update
           displayName: az acr task timer update
+    - name: taskrun
+      uid: az_acr_taskrun
+      displayName: az acr taskrun
+      items:
+      - name: delete
+        uid: az_acr_taskrun_delete
+        displayName: az acr taskrun delete
+      - name: list
+        uid: az_acr_taskrun_list
+        displayName: az acr taskrun list
+      - name: logs
+        uid: az_acr_taskrun_logs
+        displayName: az acr taskrun logs
+      - name: show
+        uid: az_acr_taskrun_show
+        displayName: az acr taskrun show
     - name: token
       uid: az_acr_token
       displayName: az acr token
