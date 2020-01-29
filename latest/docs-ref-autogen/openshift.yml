@@ -238,6 +238,15 @@ commands:
 - uid: az_openshift_list
   name: az openshift list
   summary: List managed OpenShift clusters.
+- uid: az_openshift_monitor
+  name: az openshift monitor
+  summary: Commands to manage Log Analytics monitoring. Requires "--workspace-id".
+- uid: az_openshift_monitor_disable
+  name: az openshift monitor disable
+  summary: Disable Log Analytics monitoring.
+- uid: az_openshift_monitor_enable
+  name: az openshift monitor enable
+  summary: Enable Log Analytics monitoring. Requires "--workspace-id".
 - uid: az_openshift_scale
   name: az openshift scale
   summary: Scale the compute pool in a managed OpenShift cluster.

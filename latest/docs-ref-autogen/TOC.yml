@@ -11391,6 +11391,16 @@
     - name: wait
       uid: az_openshift_wait
       displayName: az openshift wait
+    - name: monitor
+      uid: az_openshift_monitor
+      displayName: az openshift monitor
+      items:
+      - name: disable
+        uid: az_openshift_monitor_disable
+        displayName: az openshift monitor disable
+      - name: enable
+        uid: az_openshift_monitor_enable
+        displayName: az openshift monitor enable
   - name: pipelines
     uid: az_pipelines
     displayName: az pipelines
