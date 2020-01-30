@@ -1087,6 +1087,45 @@
       - name: validate-custom-domain
         uid: az_cdn_endpoint_validate_custom_domain
         displayName: az cdn endpoint validate-custom-domain
+      - name: rule
+        uid: az_cdn_endpoint_rule
+        displayName: az cdn endpoint rule
+        items:
+        - name: add
+          uid: az_cdn_endpoint_rule_add
+          displayName: az cdn endpoint rule add
+        - name: remove
+          uid: az_cdn_endpoint_rule_remove
+          displayName: az cdn endpoint rule remove
+        - name: show
+          uid: az_cdn_endpoint_rule_show
+          displayName: az cdn endpoint rule show
+        - name: action
+          uid: az_cdn_endpoint_rule_action
+          displayName: az cdn endpoint rule action
+          items:
+          - name: add
+            uid: az_cdn_endpoint_rule_action_add
+            displayName: az cdn endpoint rule action add
+          - name: remove
+            uid: az_cdn_endpoint_rule_action_remove
+            displayName: az cdn endpoint rule action remove
+          - name: show
+            uid: az_cdn_endpoint_rule_action_show
+            displayName: az cdn endpoint rule action show
+        - name: condition
+          uid: az_cdn_endpoint_rule_condition
+          displayName: az cdn endpoint rule condition
+          items:
+          - name: add
+            uid: az_cdn_endpoint_rule_condition_add
+            displayName: az cdn endpoint rule condition add
+          - name: remove
+            uid: az_cdn_endpoint_rule_condition_remove
+            displayName: az cdn endpoint rule condition remove
+          - name: show
+            uid: az_cdn_endpoint_rule_condition_show
+            displayName: az cdn endpoint rule condition show
     - name: origin
       uid: az_cdn_origin
       displayName: az cdn origin
