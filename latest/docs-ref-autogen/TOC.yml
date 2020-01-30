@@ -6874,6 +6874,35 @@
         - name: update
           uid: az_sql_db_audit_policy_update
           displayName: az sql db audit-policy update
+      - name: classification
+        uid: az_sql_db_classification
+        displayName: az sql db classification
+        items:
+        - name: delete
+          uid: az_sql_db_classification_delete
+          displayName: az sql db classification delete
+        - name: list
+          uid: az_sql_db_classification_list
+          displayName: az sql db classification list
+        - name: show
+          uid: az_sql_db_classification_show
+          displayName: az sql db classification show
+        - name: update
+          uid: az_sql_db_classification_update
+          displayName: az sql db classification update
+        - name: recommendation
+          uid: az_sql_db_classification_recommendation
+          displayName: az sql db classification recommendation
+          items:
+          - name: disable
+            uid: az_sql_db_classification_recommendation_disable
+            displayName: az sql db classification recommendation disable
+          - name: enable
+            uid: az_sql_db_classification_recommendation_enable
+            displayName: az sql db classification recommendation enable
+          - name: list
+            uid: az_sql_db_classification_recommendation_list
+            displayName: az sql db classification recommendation list
       - name: op
         uid: az_sql_db_op
         displayName: az sql db op

@@ -1,58 +1,43 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_sql_server_dns_alias
-  name: az sql server dns-alias
-  summary: Manage a server's DNS aliases.
+- uid: az_sql_db_classification_recommendation
+  name: az sql db classification recommendation
+  summary: Manage sensitivity classification recommendations.
   description: ''
   langs:
   - azurecli
   children:
-  - az_sql_server_dns_alias_create
-  - az_sql_server_dns_alias_delete
-  - az_sql_server_dns_alias_list
-  - az_sql_server_dns_alias_set
-  - az_sql_server_dns_alias_show
-- uid: az_sql_server_dns_alias_create
-  name: az sql server dns-alias create
-  summary: Creates a server dns alias.
+  - az_sql_db_classification_recommendation_disable
+  - az_sql_db_classification_recommendation_enable
+  - az_sql_db_classification_recommendation_list
+- uid: az_sql_db_classification_recommendation_disable
+  name: az sql db classification recommendation disable
+  summary: Disable sensitivity recommendations for a given column (recommendations are enabled by default on all columns).
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Disable sensitivity recommendations for a given column.
+    syntax:
+      content: az sql db classification recommendation disable -g mygroup -s myserver -n mydb --schema dbo --table mytable --column mycolumn
   parameters:
   - isRequired: true
-    name: --name -n
-    summary: Name of the DNS alias.
+    name: --column
+    summary: The name of the column.
     description: ''
   - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    name: --schema
+    summary: The name of the schema.
     description: ''
   - isRequired: true
-    name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_server_dns_alias_delete
-  name: az sql server dns-alias delete
-  summary: Deletes the server DNS alias with the given name.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --name -n
-    summary: Name of the DNS alias.
+    name: --table
+    summary: The name of the table.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Name of the Azure SQL Database.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -69,15 +54,34 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_server_dns_alias_list
-  name: az sql server dns-alias list
-  summary: Gets a list of server DNS aliases for a server.
+- uid: az_sql_db_classification_recommendation_enable
+  name: az sql db classification recommendation enable
+  summary: Enable sensitivity recommendations for a given column (recommendations are enabled by default on all columns).
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Enable sensitivity recommendations for a given column.
+    syntax:
+      content: az sql db classification recommendation enable -g mygroup -s myserver -n mydb --schema dbo --table mytable --column mycolumn
   parameters:
+  - isRequired: true
+    name: --column
+    summary: The name of the column.
+    description: ''
+  - isRequired: true
+    name: --schema
+    summary: The name of the schema.
+    description: ''
+  - isRequired: true
+    name: --table
+    summary: The name of the table.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Name of the Azure SQL Database.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -94,58 +98,28 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_server_dns_alias_set
-  name: az sql server dns-alias set
-  summary: Sets a server to which DNS alias should point.
+- uid: az_sql_db_classification_recommendation_list
+  name: az sql db classification recommendation list
+  summary: List the recommended sensitivity classifications of a given database.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: List the recommended sensitivity classifications of a given database.
+    syntax:
+      content: az sql db classification recommendation list -g mygroup -s myserver -n mydb
   parameters:
-  - isRequired: true
-    name: --name -n
-    summary: Name of the DNS alias.
+  - name: --filter
+    summary: An OData filter expression that filters elements in the collection.
     description: ''
-  - isRequired: true
-    name: --original-server
-    summary: The name of the server to which alias is currently pointing.
-    description: ''
-  - name: --original-resource-group
-    summary: Name of the original resource group.
-    description: ''
-  - name: --original-subscription-id
-    summary: ID of the original subscription.
+  - name: --include-disabled-recommendations
+    summary: Specifies whether to include disabled recommendations or not.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --server -s
-    summary: Name of the Azure SQL server. You can configure the default using `az configure --defaults sql-server=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_server_dns_alias_show
-  name: az sql server dns-alias show
-  summary: Gets a server DNS alias.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --name -n
-    summary: Name of the DNS alias.
-    description: ''
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+  - name: --name -n
+    summary: Name of the Azure SQL Database.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -163,21 +137,15 @@ items:
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_sql_server_dns_alias_create
-  name: az sql server dns-alias create
-  summary: Creates a server dns alias.
-- uid: az_sql_server_dns_alias_delete
-  name: az sql server dns-alias delete
-  summary: Deletes the server DNS alias with the given name.
-- uid: az_sql_server_dns_alias_list
-  name: az sql server dns-alias list
-  summary: Gets a list of server DNS aliases for a server.
-- uid: az_sql_server_dns_alias_set
-  name: az sql server dns-alias set
-  summary: Sets a server to which DNS alias should point.
-- uid: az_sql_server_dns_alias_show
-  name: az sql server dns-alias show
-  summary: Gets a server DNS alias.
+- uid: az_sql_db_classification_recommendation_disable
+  name: az sql db classification recommendation disable
+  summary: Disable sensitivity recommendations for a given column (recommendations are enabled by default on all columns).
+- uid: az_sql_db_classification_recommendation_enable
+  name: az sql db classification recommendation enable
+  summary: Enable sensitivity recommendations for a given column (recommendations are enabled by default on all columns).
+- uid: az_sql_db_classification_recommendation_list
+  name: az sql db classification recommendation list
+  summary: List the recommended sensitivity classifications of a given database.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -197,4 +165,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/5aaf4e4946ca14ecec6f4fe823ba3098c7397db6/src/azure-cli/azure/cli/command_modules/sql/_help.py
 updated_at: 1/30/2020 1:40:36 PM
 ms.date: 01/30/2020
-description: Manage a server's DNS aliases.
+description: Manage sensitivity classification recommendations.
