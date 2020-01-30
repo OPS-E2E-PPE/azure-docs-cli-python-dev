@@ -10272,6 +10272,9 @@
       - name: delete
         uid: az_deploymentmanager_artifact_source_delete
         displayName: az deploymentmanager artifact-source delete
+      - name: list
+        uid: az_deploymentmanager_artifact_source_list
+        displayName: az deploymentmanager artifact-source list
       - name: show
         uid: az_deploymentmanager_artifact_source_show
         displayName: az deploymentmanager artifact-source show
@@ -10285,6 +10288,9 @@
       - name: delete
         uid: az_deploymentmanager_rollout_delete
         displayName: az deploymentmanager rollout delete
+      - name: list
+        uid: az_deploymentmanager_rollout_list
+        displayName: az deploymentmanager rollout list
       - name: restart
         uid: az_deploymentmanager_rollout_restart
         displayName: az deploymentmanager rollout restart
@@ -10304,6 +10310,9 @@
       - name: delete
         uid: az_deploymentmanager_service_delete
         displayName: az deploymentmanager service delete
+      - name: list
+        uid: az_deploymentmanager_service_list
+        displayName: az deploymentmanager service list
       - name: show
         uid: az_deploymentmanager_service_show
         displayName: az deploymentmanager service show
@@ -10320,6 +10329,9 @@
       - name: delete
         uid: az_deploymentmanager_service_topology_delete
         displayName: az deploymentmanager service-topology delete
+      - name: list
+        uid: az_deploymentmanager_service_topology_list
+        displayName: az deploymentmanager service-topology list
       - name: show
         uid: az_deploymentmanager_service_topology_show
         displayName: az deploymentmanager service-topology show
@@ -10336,6 +10348,9 @@
       - name: delete
         uid: az_deploymentmanager_service_unit_delete
         displayName: az deploymentmanager service-unit delete
+      - name: list
+        uid: az_deploymentmanager_service_unit_list
+        displayName: az deploymentmanager service-unit list
       - name: show
         uid: az_deploymentmanager_service_unit_show
         displayName: az deploymentmanager service-unit show
@@ -10352,6 +10367,9 @@
       - name: delete
         uid: az_deploymentmanager_step_delete
         displayName: az deploymentmanager step delete
+      - name: list
+        uid: az_deploymentmanager_step_list
+        displayName: az deploymentmanager step list
       - name: show
         uid: az_deploymentmanager_step_show
         displayName: az deploymentmanager step show

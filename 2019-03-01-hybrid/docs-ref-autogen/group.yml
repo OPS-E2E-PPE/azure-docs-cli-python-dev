@@ -34,6 +34,9 @@ items:
     name: --name --resource-group -g -n
     summary: Name of the new resource group.
     description: ''
+  - name: --managed-by
+    summary: The ID of the resource that manages this resource group.
+    description: ''
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
