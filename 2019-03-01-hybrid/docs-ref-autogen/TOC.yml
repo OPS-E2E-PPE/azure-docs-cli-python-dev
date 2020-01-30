@@ -817,6 +817,9 @@
       - name: delete
         uid: az_keyvault_key_delete
         displayName: az keyvault key delete
+      - name: download
+        uid: az_keyvault_key_download
+        displayName: az keyvault key download
       - name: import
         uid: az_keyvault_key_import
         displayName: az keyvault key import

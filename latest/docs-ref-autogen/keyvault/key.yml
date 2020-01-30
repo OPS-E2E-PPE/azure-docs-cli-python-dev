@@ -10,6 +10,7 @@ items:
   - az_keyvault_key_backup
   - az_keyvault_key_create
   - az_keyvault_key_delete
+  - az_keyvault_key_download
   - az_keyvault_key_import
   - az_keyvault_key_list
   - az_keyvault_key_list_deleted
@@ -120,6 +121,43 @@ items:
     description: ''
   - name: --vault-name
     summary: Name of the key vault. Required if --id is not specified.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_keyvault_key_download
+  name: az keyvault key download
+  summary: Download a key from a KeyVault.
+  description: ''
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --file -f
+    summary: File to receive the key contents.
+    description: ''
+  - name: --encoding -e
+    defaultValue: PEM
+    parameterValueGroup: DER, PEM
+    summary: 'Encoding of the key, default: PEM.'
+    description: ''
+  - name: --id
+    summary: Id of the key.  If specified all other 'Id' arguments should be omitted.
+    description: ''
+  - name: --name -n
+    summary: Name of the key. Required if --id is not specified.
+    description: ''
+  - name: --vault-name
+    summary: Name of the key vault. Required if --id is not specified.
+    description: ''
+  - name: --version -v
+    summary: The key version. If omitted, uses the latest version.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -439,6 +477,9 @@ commands:
 - uid: az_keyvault_key_delete
   name: az keyvault key delete
   summary: Deletes a key of any type from storage in Azure Key Vault.
+- uid: az_keyvault_key_download
+  name: az keyvault key download
+  summary: Download a key from a KeyVault.
 - uid: az_keyvault_key_import
   name: az keyvault key import
   summary: Import a private key.
