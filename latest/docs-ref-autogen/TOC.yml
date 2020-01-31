@@ -7326,6 +7326,21 @@
       uid: az_sf_application
       displayName: az sf application
       items:
+      - name: create
+        uid: az_sf_application_create
+        displayName: az sf application create
+      - name: delete
+        uid: az_sf_application_delete
+        displayName: az sf application delete
+      - name: list
+        uid: az_sf_application_list
+        displayName: az sf application list
+      - name: show
+        uid: az_sf_application_show
+        displayName: az sf application show
+      - name: update
+        uid: az_sf_application_update
+        displayName: az sf application update
       - name: certificate
         uid: az_sf_application_certificate
         displayName: az sf application certificate
@@ -7333,6 +7348,38 @@
         - name: add
           uid: az_sf_application_certificate_add
           displayName: az sf application certificate add
+    - name: application-type
+      uid: az_sf_application_type
+      displayName: az sf application-type
+      items:
+      - name: create
+        uid: az_sf_application_type_create
+        displayName: az sf application-type create
+      - name: delete
+        uid: az_sf_application_type_delete
+        displayName: az sf application-type delete
+      - name: list
+        uid: az_sf_application_type_list
+        displayName: az sf application-type list
+      - name: show
+        uid: az_sf_application_type_show
+        displayName: az sf application-type show
+      - name: version
+        uid: az_sf_application_type_version
+        displayName: az sf application-type version
+        items:
+        - name: create
+          uid: az_sf_application_type_version_create
+          displayName: az sf application-type version create
+        - name: delete
+          uid: az_sf_application_type_version_delete
+          displayName: az sf application-type version delete
+        - name: list
+          uid: az_sf_application_type_version_list
+          displayName: az sf application-type version list
+        - name: show
+          uid: az_sf_application_type_version_show
+          displayName: az sf application-type version show
     - name: cluster
       uid: az_sf_cluster
       displayName: az sf cluster
@@ -7414,6 +7461,22 @@
         - name: set
           uid: az_sf_cluster_upgrade_type_set
           displayName: az sf cluster upgrade-type set
+    - name: service
+      uid: az_sf_service
+      displayName: az sf service
+      items:
+      - name: create
+        uid: az_sf_service_create
+        displayName: az sf service create
+      - name: delete
+        uid: az_sf_service_delete
+        displayName: az sf service delete
+      - name: list
+        uid: az_sf_service_list
+        displayName: az sf service list
+      - name: show
+        uid: az_sf_service_show
+        displayName: az sf service show
   - name: Storage
     uid: az_storage
     displayName: az storage
