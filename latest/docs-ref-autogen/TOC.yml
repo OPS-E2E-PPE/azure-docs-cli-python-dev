@@ -6565,6 +6565,16 @@
       - name: list
         uid: az_policy_event_list
         displayName: az policy event list
+    - name: metadata
+      uid: az_policy_metadata
+      displayName: az policy metadata
+      items:
+      - name: list
+        uid: az_policy_metadata_list
+        displayName: az policy metadata list
+      - name: show
+        uid: az_policy_metadata_show
+        displayName: az policy metadata show
     - name: remediation
       uid: az_policy_remediation
       displayName: az policy remediation

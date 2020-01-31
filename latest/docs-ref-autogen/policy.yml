@@ -59,6 +59,15 @@ commands:
 - uid: az_policy_event_list
   name: az policy event list
   summary: List policy events.
+- uid: az_policy_metadata
+  name: az policy metadata
+  summary: Get policy metadata resources.
+- uid: az_policy_metadata_list
+  name: az policy metadata list
+  summary: List policy metadata resources.
+- uid: az_policy_metadata_show
+  name: az policy metadata show
+  summary: Get a single policy metadata resource.
 - uid: az_policy_remediation
   name: az policy remediation
   summary: Manage resource policy remediations.
