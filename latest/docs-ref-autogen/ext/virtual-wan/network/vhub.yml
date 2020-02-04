@@ -42,7 +42,7 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
 - uid: ext_virtual-wan_az_network_vhub_delete
   name: az network vhub delete
@@ -106,7 +106,7 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --tags
-    summary: Space-separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --vwan
     summary: Name or ID of the virtual WAN.
