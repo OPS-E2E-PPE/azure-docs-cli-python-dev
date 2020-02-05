@@ -900,6 +900,9 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --ppg
+    summary: The name or ID of the proximity placement group the VMSS should be associated with.
+    description: ''
   - name: --priority
     parameterValueGroup: Low, Regular, Spot
     summary: Priority. Use 'Spot' to run short-lived workloads in a cost-effective way. 'Low' enum will be deprecated in the future. Please use 'Spot' to deploy Azure spot VM and/or VMSS.
