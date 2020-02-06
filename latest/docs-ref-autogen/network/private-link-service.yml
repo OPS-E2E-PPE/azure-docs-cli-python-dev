@@ -38,6 +38,10 @@ items:
   - name: --auto-approval
     summary: Space-separated list of subscription IDs to auto-approve.
     description: ''
+  - name: --enable-proxy-protocol
+    parameterValueGroup: false, true
+    summary: Enable proxy protocol for private link service.
+    description: ''
   - name: --fqdns
     summary: Space-separated list of FQDNs.
     description: ''
@@ -169,6 +173,10 @@ items:
   parameters:
   - name: --auto-approval
     summary: Space-separated list of subscription IDs to auto-approve.
+    description: ''
+  - name: --enable-proxy-protocol
+    parameterValueGroup: false, true
+    summary: Enable proxy protocol for private link service.
     description: ''
   - name: --fqdns
     summary: Space-separated list of FQDNs.

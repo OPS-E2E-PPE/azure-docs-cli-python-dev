@@ -45,7 +45,7 @@ items:
     summary: Name or ID of an existing subnet. If name is specified, also specify --vnet-name.
     description: ''
   - name: --group-ids
-    summary: The ID(s) of the group(s) obtained from the remote resource that this private endpoint should connect to. You can use "az network private-resource show to obtain the list of group ids.".
+    summary: The ID(s) of the group(s) obtained from the remote resource that this private endpoint should connect to. You can use "az keyvault(storage/etc) private-endpoint show" to obtain the list of group ids.
     description: ''
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
