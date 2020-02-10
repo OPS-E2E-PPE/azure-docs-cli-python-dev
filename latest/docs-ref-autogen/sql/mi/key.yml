@@ -154,7 +154,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/sql/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/fd39d4b55ba06db903f4642e879825d2fa21f25a/src/azure-cli/azure/cli/command_modules/sql/_help.py
-updated_at: 2/9/2020 1:20:15 PM
+gitcommit: https://github.com/Azure/azure-cli/blob/64085510f767a8e2c62864c7992677cfcf170fd7/src/azure-cli/azure/cli/command_modules/sql/_help.py
+updated_at: 2/9/2020 1:22:19 PM
 ms.date: 02/09/2020
 description: Manage a SQL Instance's keys.
