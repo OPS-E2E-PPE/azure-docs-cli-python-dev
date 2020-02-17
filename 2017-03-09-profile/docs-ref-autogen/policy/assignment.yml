@@ -26,27 +26,15 @@ items:
            subscription:      /subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333
            resource group:    /subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup
            resource:          /subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup/providers/Microsoft.Compute/virtualMachines/myVM
-             az policy assignment create --scope '/providers/Microsoft.Management/managementGroups/MyManagementGroup' --policy {PolicyName} -p '{
-                 "allowedLocations": {
-                     "value": [
-                         "australiaeast",
-                         "eastus",
-                         "japaneast"
-                     ]
-                 }
-             }'
+             az policy assignment create --scope \
+                "/providers/Microsoft.Management/managementGroups/MyManagementGroup" \
+                    --policy {PolicyName} -p "{ \"allowedLocations\": \
+                        { \"value\": [ \"australiaeast\", \"eastus\", \"japaneast\" ] } }"
   - summary: Create a resource policy assignment and provide rule parameter values.
     syntax:
       content: >-
-        az policy assignment create --policy {PolicyName} -p '{
-            "allowedLocations": {
-                "value": [
-                    "australiaeast",
-                    "eastus",
-                    "japaneast"
-                ]
-            }
-        }'
+        az policy assignment create --policy {PolicyName} -p "{ \"allowedLocations\": \
+            { \"value\": [ \"australiaeast\", \"eastus\", \"japaneast\" ] } }"
   - summary: Create a resource policy assignment with a system assigned identity.
     syntax:
       content: az policy assignment create --name myPolicy --policy {PolicyName} --assign-identity
@@ -186,7 +174,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/resource/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/71b52e3ab920e946d8c93e1e0d486077c0ca43c7/src/azure-cli/azure/cli/command_modules/resource/_help.py
-updated_at: 1/30/2020 11:03:25 AM
-ms.date: 01/30/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/fe295a096d3218192cc6ef4e56842674334bfa2b/src/azure-cli/azure/cli/command_modules/resource/_help.py
+updated_at: 2/14/2020 7:49:46 AM
+ms.date: 02/14/2020
 description: Manage resource policy assignments.

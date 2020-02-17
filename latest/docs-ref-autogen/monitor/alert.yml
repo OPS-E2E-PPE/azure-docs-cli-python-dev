@@ -381,7 +381,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/c8876098b3db6866c0d03e78bae315461d525551/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-updated_at: 12/6/2019 6:44:19 AM
-ms.date: 12/06/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/14906a459bcf1360c3956d7c92f3b772698aebe6/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+updated_at: 2/15/2020 9:42:21 AM
+ms.date: 02/15/2020
 description: Manage classic metric-based alert rules.

@@ -214,7 +214,7 @@ items:
     summary: Each VM instance will have a public ip. For security, you can use '--nsg' to apply appropriate rules.
     description: ''
   - name: --subnet
-    summary: The name of the subnet when creating a new VNet or referencing an existing one. Can also reference an existing subnet by ID. If omitted, an appropriate VNet and subnet will be selected automatically, or a new one will be created.
+    summary: The name of the subnet when creating a new VNet or referencing an existing one. Can also reference an existing subnet by ID. If both vnet-name and subnet are omitted, an appropriate VNet and subnet will be selected automatically, or a new one will be created.
     description: ''
   - name: --subnet-address-prefix
     summary: The subnet IP address prefix to use when creating a new VNet in CIDR format.
@@ -1099,7 +1099,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/24b472c3462a3ee65a562a19bd3d33ba9480dfd0/src/azure-cli/azure/cli/command_modules/vm/_help.py
-updated_at: 2/5/2020 2:56:11 PM
-ms.date: 02/05/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/6957c33f4f8cf5cf2ba420ec06db75a0524caa1d/src/azure-cli/azure/cli/command_modules/vm/_help.py
+updated_at: 2/13/2020 7:24:54 AM
+ms.date: 02/13/2020
 description: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).
