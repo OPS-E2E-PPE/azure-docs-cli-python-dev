@@ -51,6 +51,16 @@ items:
   - name: --sequence
     summary: Determines the execution order of the rule in the rule set.
     description: ''
+  - name: --enable-reroute
+    parameterValueGroup: false, true
+    summary: If set as true, it will re-evaluate the url path map provided in path based request routing rules using modified path.
+    description: ''
+  - name: --modified-path
+    summary: Url path for url rewrite.
+    description: ''
+  - name: --modified-query-string
+    summary: Query string for url rewrite.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -231,6 +241,16 @@ items:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --enable-reroute
+    parameterValueGroup: false, true
+    summary: If set as true, it will re-evaluate the url path map provided in path based request routing rules using modified path.
+    description: ''
+  - name: --modified-path
+    summary: Url path for url rewrite.
+    description: ''
+  - name: --modified-query-string
+    summary: Query string for url rewrite.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
