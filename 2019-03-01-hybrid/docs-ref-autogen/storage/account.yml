@@ -77,7 +77,7 @@ items:
     summary: Allow https traffic only to storage service if set to true. The default value is false.
     description: ''
   - name: --kind
-    defaultValue: StorageV2
+    defaultValue: Storage
     parameterValueGroup: BlobStorage, Storage, StorageV2
     summary: Indicates the type of storage account.
     description: ''

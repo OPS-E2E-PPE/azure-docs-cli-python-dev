@@ -50,6 +50,7 @@ items:
     description: ''
   - name: --zone-type
     defaultValue: Public
+    parameterValueGroup: Private, Public
     summary: Type of DNS zone to create.
     description: ''
   - name: --registration-vnets
@@ -241,6 +242,7 @@ items:
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --zone-type
+    parameterValueGroup: Private, Public
     summary: Type of DNS zone to create.
     description: ''
   - name: --registration-vnets

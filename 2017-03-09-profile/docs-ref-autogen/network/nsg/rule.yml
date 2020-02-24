@@ -78,7 +78,7 @@ items:
     description: ''
   - name: --destination-address-prefix
     defaultValue: ''
-    summary: CIDR prefix or IP range. Use '\*' to match all IPs. Can also use 'VirtualNetwork', 'AzureLoadBalancer', and 'Internet'.
+    summary: Space-separated list of CIDR prefixes or IP ranges. Alternatively, specify ONE of 'VirtualNetwork', 'AzureLoadBalancer', 'Internet' or '\*' to match all IPs. Besides, it also supports all available Service Tags like 'ApiManagement', 'SqlManagement', 'AzureMonitor', etc.
     description: ''
   - name: --destination-port-range
     defaultValue: "80"
@@ -86,7 +86,7 @@ items:
     description: ''
   - name: --source-address-prefix
     defaultValue: ''
-    summary: CIDR prefix or IP range. Use '\*' to match all IPs. Can also use 'VirtualNetwork', 'AzureLoadBalancer', and 'Internet'.
+    summary: Space-separated list of CIDR prefixes or IP ranges. Alternatively, specify ONE of 'VirtualNetwork', 'AzureLoadBalancer', 'Internet' or '\*' to match all IPs. Besides, it also supports all available Service Tags like 'ApiManagement', 'SqlManagement', 'AzureMonitor', etc.
     description: ''
   - name: --source-port-range
     defaultValue: ''
@@ -244,13 +244,13 @@ items:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --destination-address-prefix
-    summary: CIDR prefix or IP range. Use '\*' to match all IPs. Can also use 'VirtualNetwork', 'AzureLoadBalancer', and 'Internet'.
+    summary: Space-separated list of CIDR prefixes or IP ranges. Alternatively, specify ONE of 'VirtualNetwork', 'AzureLoadBalancer', 'Internet' or '\*' to match all IPs. Besides, it also supports all available Service Tags like 'ApiManagement', 'SqlManagement', 'AzureMonitor', etc.
     description: ''
   - name: --destination-port-range
     summary: Port or port range between 0-65535. Use '\*' to match all ports.
     description: ''
   - name: --source-address-prefix
-    summary: CIDR prefix or IP range. Use '\*' to match all IPs. Can also use 'VirtualNetwork', 'AzureLoadBalancer', and 'Internet'.
+    summary: Space-separated list of CIDR prefixes or IP ranges. Alternatively, specify ONE of 'VirtualNetwork', 'AzureLoadBalancer', 'Internet' or '\*' to match all IPs. Besides, it also supports all available Service Tags like 'ApiManagement', 'SqlManagement', 'AzureMonitor', etc.
     description: ''
   - name: --source-port-range
     summary: Port or port range between 0-65535. Use '\*' to match all ports.

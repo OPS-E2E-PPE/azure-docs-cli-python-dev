@@ -19,9 +19,6 @@ items:
   - summary: List the access keys for a storage account.
     syntax:
       content: az storage account keys list -g MyResourceGroup -n MyStorageAccount
-  - summary: List the access keys and Kerberos keys (if active directory enabled) for a storage account.
-    syntax:
-      content: az storage account keys list -g MyResourceGroup -n MyStorageAccount --expand-key-type kerb
   parameters:
   - isRequired: true
     name: --account-name -n

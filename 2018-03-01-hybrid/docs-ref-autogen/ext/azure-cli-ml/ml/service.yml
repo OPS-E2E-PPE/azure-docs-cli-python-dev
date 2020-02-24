@@ -122,6 +122,9 @@ items:
   - name: --compute-type -c
     summary: If provided, will only show services that have the specified compute type. (Options are 'ACI', 'AKS').
     description: ''
+  - name: --image-digest
+    summary: If provided, will only show services that have the specified image digest.
+    description: ''
   - name: --model-id
     summary: If provided, will only show services that have the specified model id.
     description: ''
@@ -132,13 +135,13 @@ items:
     summary: 'Path to a project folder. Default: current directory.'
     description: ''
   - name: --property
-    summary: Key/value property to add (e.g. key=value ). Multiple properties can be specified with multiple --property options.
+    summary: If provided, will filter based on the provided key/value (e.g. key, or key=value). Multiple properties can be specified with multiple --property options.
     description: ''
   - name: --resource-group -g
     summary: Resource group corresponding to the provided workspace.
     description: ''
   - name: --tag
-    summary: Key/value tag to add (e.g. key=value ). Multiple tags can be specified with multiple --tag options.
+    summary: If provided, will filter based on the provided key/value (e.g. key, or key=value). Multiple tags can be specified with multiple --tag options.
     description: ''
   - name: --workspace-name -w
     summary: Name of the workspace containing the services to list.
@@ -290,11 +293,20 @@ items:
   - name: --ds --extra-docker-file-steps
     summary: Path to local file containing additional Docker steps to run when setting up image.
     description: ''
+  - name: --ed --environment-directory
+    summary: Directory for Azure Machine Learning Environment for deployment. It is the same directory path as provided in 'az ml environment scaffold' command.
+    description: ''
   - name: --eg --enable-gpu
     summary: Whether or not to enable GPU support in the image. The GPU image must be used on Microsoft Azure Services such as Azure Container Instances, Azure Machine Learning Compute, Azure Virtual Machines, and Azure Kubernetes Service. Defaults to False.
     description: ''
   - name: --entry-script --es
     summary: Path to local file that contains the code to run for service (relative path from source_directory if one is provided).
+    description: ''
+  - name: --environment-name -e
+    summary: Name of Azure Machine Learning Environment for deployment.
+    description: ''
+  - name: --environment-version --ev
+    summary: Version of an existing Azure Machine Learning Environment for deployment.
     description: ''
   - name: --failure-threshold --ft
     summary: When a Pod starts and the liveness probe fails, Kubernetes will try --failure-threshold times before giving up. Defaults to 3. Minimum value is 1.

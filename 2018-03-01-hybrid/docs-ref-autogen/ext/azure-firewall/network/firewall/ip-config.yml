@@ -34,12 +34,20 @@ items:
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
-  - isRequired: true
-    name: --vnet-name
-    summary: The virtual network (VNet) name.
-    description: ''
   - name: --private-ip-address
     summary: IP address used by the Firewall ILB as the next hop in User Defined Routes.
+    description: ''
+  - name: --vnet-name
+    summary: The virtual network (VNet) name. It should contain one subnet called "AzureFirewallSubnet".
+    description: ''
+  - name: --m-name
+    summary: Name of the management IP configuration.
+    description: ''
+  - name: --m-public-ip-address
+    summary: Name or ID of the public IP to use for management ip configuation.
+    description: ''
+  - name: --m-vnet-name
+    summary: The virtual network (VNet) name for management ip configuation. It should contain one subnet called "AzureFirewallManagementSubnet".
     description: ''
 - uid: ext_azure-firewall_az_network_firewall_ip_config_delete
   name: az network firewall ip-config delete

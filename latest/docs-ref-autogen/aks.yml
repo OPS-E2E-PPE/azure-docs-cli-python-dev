@@ -159,7 +159,9 @@ items:
     description: >-
       These addons are available:
           http_application_routing - configure ingress with automatic public DNS name creation.
-          monitoring - turn on Log Analytics monitoring. Uses the Log Analytics Default Workspace if it exists, else creates one. Specify "--workspace-resource-id" to use an existing workspace.
+          monitoring - turn on Log Analytics monitoring. Uses the Log Analytics Default Workspace if it exists, else creates one.
+                       Specify "--workspace-resource-id" to use an existing workspace.
+                       If monitoring addon is enabled --no-wait argument will have no effect
           virtual-node - enable AKS Virtual Node (PREVIEW). Requires --subnet-name to provide the name of an existing subnet for the Virtual Node to use.
   - name: --enable-cluster-autoscaler
     summary: Enable cluster autoscaler, default value is false.
@@ -353,6 +355,7 @@ items:
     These addons are available:
         http_application_routing - configure ingress with automatic public DNS name creation.
         monitoring - turn on Log Analytics monitoring. Requires "--workspace-resource-id".
+                     If monitoring addon is enabled --no-wait argument will have no effect
         virtual-node - enable AKS Virtual Node (PREVIEW). Requires --subnet-name to provide the name of an existing subnet for the Virtual Node to use.
   langs:
   - azurecli
@@ -1256,7 +1259,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b81192b5d7f7fd42ba29297db882193fc66e72ff/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 1/31/2020 8:57:27 AM
-ms.date: 01/31/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/8effd10209e9f6f24c52b0728b85a5afa1f8d490/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 2/24/2020 3:56:04 AM
+ms.date: 02/24/2020
 description: Manage Azure Kubernetes Services.

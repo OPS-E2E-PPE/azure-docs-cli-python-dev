@@ -49,10 +49,25 @@ commands:
   summary: Send a cloud-to-device message.
 - uid: ext_azure-cli-iot-ext_az_iot_device_send_d2c_message
   name: az iot device send-d2c-message
-  summary: Send an mqtt device-to-cloud message.
+  summary: Send an mqtt device-to-cloud message. The command supports sending messages with application and system properties.
 - uid: ext_azure-cli-iot-ext_az_iot_device_simulate
   name: az iot device simulate
-  summary: Simulate a device in an Azure IoT Hub.
+  summary: >-
+    Simulate a device in an Azure IoT Hub.
+
+
+    While the device simulation is running, the device will automatically receive
+
+    and acknowledge cloud-to-device (c2d) messages. For mqtt simulation, all c2d messages will
+
+    be acknowledged with completion. For http simulation c2d acknowledgement is based on user
+
+    selection which can be complete, reject or abandon.
+
+
+    Note: The command by default will set content-type to application/json and content-encoding
+
+    to utf-8. This can be overriden.
 - uid: ext_azure-cli-iot-ext_az_iot_device_upload_file
   name: az iot device upload-file
   summary: Upload a local file as a device to a pre-configured blob storage container.
@@ -124,7 +139,7 @@ commands:
   summary: List properties of a target IoT Plug and Play device interface(s).
 - uid: ext_azure-cli-iot-ext_az_iot_dt_monitor_events
   name: az iot dt monitor-events
-  summary: Monitor digital twin events.
+  summary: Monitor Digital Twin events.
 - uid: ext_azure-cli-iot-ext_az_iot_dt_update_property
   name: az iot dt update-property
   summary: Update an IoT Plug and Play device interfaces writable property.
@@ -136,7 +151,7 @@ commands:
   summary: Manage IoT Edge deployments at scale.
 - uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_create
   name: az iot edge deployment create
-  summary: Create an IoT Edge deployment in the target IoT Hub.
+  summary: Create an IoT Edge deployment in a target IoT Hub.
 - uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_delete
   name: az iot edge deployment delete
   summary: Delete an IoT Edge deployment.
@@ -151,37 +166,52 @@ commands:
   summary: Evaluate a target system metric defined in an IoT Edge deployment.
 - uid: ext_azure-cli-iot-ext_az_iot_edge_deployment_update
   name: az iot edge deployment update
-  summary: Update an IoT Edge deployment with the specified properties.
+  summary: >-
+    Update specified properties of an IoT Edge deployment.
+
+
+    Use --set followed by property assignments for updating a deployment.
+
+
+    Note: IoT Edge deployment content is immutable. Deployment properties that can be
+
+    updated are 'labels', 'metrics', 'priority' and 'targetCondition'.
 - uid: ext_azure-cli-iot-ext_az_iot_edge_set_modules
   name: az iot edge set-modules
   summary: Set edge modules on a single device.
 - uid: ext_azure-cli-iot-ext_az_iot_hub
   name: az iot hub
   summary: Manage entities in an Azure IoT Hub.
-- uid: ext_azure-cli-iot-ext_az_iot_hub_apply_configuration
-  name: az iot hub apply-configuration
-  summary: Apply a deployment manifest to a single device.
 - uid: ext_azure-cli-iot-ext_az_iot_hub_configuration
   name: az iot hub configuration
-  summary: Manage IoT device configurations at scale.
+  summary: Manage IoT automatic device management configuration at scale.
 - uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_create
   name: az iot hub configuration create
-  summary: Create an IoT device configuration in the target IoT Hub.
+  summary: Create an IoT automatic device management configuration in a target IoT Hub.
 - uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_delete
   name: az iot hub configuration delete
   summary: Delete an IoT device configuration.
 - uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_list
   name: az iot hub configuration list
-  summary: List IoT device configurations in an IoT Hub.
+  summary: List IoT automatic device management configurations in an IoT Hub.
 - uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_show
   name: az iot hub configuration show
-  summary: Get the details of an IoT device configuration.
+  summary: Get the details of an IoT automatic device management configuration.
 - uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_show_metric
   name: az iot hub configuration show-metric
   summary: Evaluate a target user or system metric defined in an IoT device configuration.
 - uid: ext_azure-cli-iot-ext_az_iot_hub_configuration_update
   name: az iot hub configuration update
-  summary: Update an IoT device configuration with the specified properties.
+  summary: >-
+    Update specified properties of an IoT automatic device management configuration.
+
+
+    Use --set followed by property assignments for updating a configuration.
+
+
+    Note: Configuration content is immutable. Configuration properties that can be
+
+    updated are 'labels', 'metrics', 'priority' and 'targetCondition'.
 - uid: ext_azure-cli-iot-ext_az_iot_hub_device_identity
   name: az iot hub device-identity
   summary: Manage IoT devices.
@@ -254,6 +284,21 @@ commands:
 - uid: ext_azure-cli-iot-ext_az_iot_hub_invoke_module_method
   name: az iot hub invoke-module-method
   summary: Invoke an Edge module method.
+- uid: ext_azure-cli-iot-ext_az_iot_hub_job
+  name: az iot hub job
+  summary: Manage IoT Hub jobs (v2).
+- uid: ext_azure-cli-iot-ext_az_iot_hub_job_cancel
+  name: az iot hub job cancel
+  summary: Cancel an IoT Hub job.
+- uid: ext_azure-cli-iot-ext_az_iot_hub_job_create
+  name: az iot hub job create
+  summary: Create and schedule an IoT Hub job for execution.
+- uid: ext_azure-cli-iot-ext_az_iot_hub_job_list
+  name: az iot hub job list
+  summary: List the historical jobs of an IoT Hub.
+- uid: ext_azure-cli-iot-ext_az_iot_hub_job_show
+  name: az iot hub job show
+  summary: Show details of an existing IoT Hub job.
 - uid: ext_azure-cli-iot-ext_az_iot_hub_module_identity
   name: az iot hub module-identity
   summary: Manage IoT device modules.

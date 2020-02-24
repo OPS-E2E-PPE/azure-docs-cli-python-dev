@@ -33,6 +33,12 @@ items:
   - name: --docker-bridge-cidr
     summary: A CIDR notation IP for Docker bridge.
     description: ''
+  - name: --load-balancer-subnet
+    summary: You can specify subnet for the AKS cluster when Internal Load Balancer is used as load balancer type. Default is "aks-subnet".
+    description: ''
+  - name: --load-balancer-type
+    summary: You can create an AKS cluster with either Public IP or Internal Load Balancer. Accepted values are "PublicIp" and "InternalLoadBalancer". Default is "PublicIp".
+    description: ''
   - name: --location -l
     summary: Location to provision cluster in. If not specified, will default to workspace location.
     description: ''
@@ -123,6 +129,9 @@ items:
     description: ''
   - name: --path
     summary: 'Path to a project folder. Default: current directory.'
+    description: ''
+  - name: --remote-login-port-public-access
+    summary: 'State of the public SSH port. Possible values are: Enabled or Disabled.'
     description: ''
   - name: --resource-group -g
     summary: Resource group corresponding to the provided workspace.
