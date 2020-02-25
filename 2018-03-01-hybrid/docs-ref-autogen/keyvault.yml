@@ -42,7 +42,7 @@ items:
     description: ''
   - name: --enable-soft-delete
     parameterValueGroup: false, true
-    summary: Enable vault deletion recovery for the vault, and all contained entities.
+    summary: Enable vault deletion recovery for the vault, and all contained entities. If omitted, assume true as default value.
     description: ''
   - name: --enabled-for-deployment
     parameterValueGroup: false, true
