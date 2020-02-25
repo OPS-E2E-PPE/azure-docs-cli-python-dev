@@ -2203,6 +2203,16 @@
       - name: update
         uid: az_network_asg_update
         displayName: az network asg update
+    - name: bastion
+      uid: az_network_bastion
+      displayName: az network bastion
+      items:
+      - name: create
+        uid: az_network_bastion_create
+        displayName: az network bastion create
+      - name: list
+        uid: az_network_bastion_list
+        displayName: az network bastion list
     - name: private-dns
       uid: az_network_private_dns
       displayName: az network private-dns

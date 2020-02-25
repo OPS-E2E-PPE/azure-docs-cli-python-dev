@@ -1065,12 +1065,15 @@ items:
   - summary: Use Azure Dev Spaces with a managed Kubernetes cluster, interactively selecting a dev space.
     syntax:
       content: az aks use-dev-spaces -g my-aks-group -n my-aks
-  - summary: Use Azure Dev Spaces with a managed Kubernetes cluster, updating to the latest Azure Dev Spaces  client components and selecting a new or existing dev space 'my-space'.
+  - summary: Use Azure Dev Spaces with a managed Kubernetes cluster, updating to the latest Azure Dev Spaces             client components and selecting a new or existing dev space 'my-space'.
     syntax:
       content: az aks use-dev-spaces -g my-aks-group -n my-aks --update --space my-space
-  - summary: Use Azure Dev Spaces with a managed Kubernetes cluster, selecting a new or existing dev space  'develop/my-space' without prompting for confirmation.
+  - summary: Use Azure Dev Spaces with a managed Kubernetes cluster, selecting a new or existing dev space             'develop/my-space' without prompting for confirmation.
     syntax:
       content: az aks use-dev-spaces -g my-aks-group -n my-aks -s develop/my-space -y
+  - summary: Use Azure Dev Spaces with a managed Kubernetes cluster with a private endpoint.
+    syntax:
+      content: az aks use-dev-spaces -g my-aks-group -n my-aks -e private
   parameters:
   - isRequired: true
     name: --name -n
@@ -1079,6 +1082,11 @@ items:
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --endpoint -e
+    defaultValue: Public
+    parameterValueGroup: None, Private, Public
+    summary: The endpoint type to be used for a Azure Dev Spaces controller. See <a href="https://aka.ms/azds-networking">https://aka.ms/azds-networking</a> for more information.
     description: ''
   - name: --space -s
     summary: Name of the new or existing dev space to select. Defaults to an interactive selection experience.
@@ -1259,7 +1267,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/8effd10209e9f6f24c52b0728b85a5afa1f8d490/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 2/24/2020 3:56:04 AM
-ms.date: 02/24/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/e5a1c43f2347edbfa0dd666467273b85d9927010/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 2/25/2020 8:30:36 AM
+ms.date: 02/25/2020
 description: Manage Azure Kubernetes Services.

@@ -5722,6 +5722,22 @@
       - name: update
         uid: az_network_asg_update
         displayName: az network asg update
+    - name: bastion
+      uid: az_network_bastion
+      displayName: az network bastion
+      items:
+      - name: create
+        uid: az_network_bastion_create
+        displayName: az network bastion create
+      - name: delete
+        uid: az_network_bastion_delete
+        displayName: az network bastion delete
+      - name: list
+        uid: az_network_bastion_list
+        displayName: az network bastion list
+      - name: show
+        uid: az_network_bastion_show
+        displayName: az network bastion show
     - name: ddos-protection
       uid: az_network_ddos_protection
       displayName: az network ddos-protection
