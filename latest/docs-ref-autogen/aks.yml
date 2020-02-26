@@ -238,6 +238,9 @@ items:
     defaultValue: nodepool1
     summary: Node pool name, upto 12 alphanumeric characters.
     description: ''
+  - name: --nodepool-tags
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
+    description: ''
   - name: --pod-cidr
     summary: A CIDR notation IP range from which to assign pod IPs when kubenet is used.
     description: This range must not overlap with any Subnet IP ranges. For example, 172.244.0.0/16.
