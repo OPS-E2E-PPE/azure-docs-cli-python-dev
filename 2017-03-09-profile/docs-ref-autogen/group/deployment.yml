@@ -56,17 +56,17 @@ items:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --parameters
+  - name: --parameters -p
     summary: Supply deployment parameter values.
     description: Parameters may be supplied from a file using the `@{path}` syntax, a JSON string, or as &lt;KEY=VALUE&gt; pairs. Parameters are evaluated in order, so when a value is assigned twice, the latter value will be used. It is recommended that you supply your parameters file first, and then override selectively using KEY=VALUE syntax.
   - name: --rollback-on-error
     summary: The name of a deployment to roll back to on error, or use as a flag to roll back to the last successful deployment.
     description: ''
-  - name: --template-file
-    summary: The template file path in the file system.
+  - name: --template-file -f
+    summary: A template file path in the file system.
     description: ''
-  - name: --template-uri
-    summary: The URI to a remote template file.
+  - name: --template-uri -u
+    summary: A uri to a remote template file.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -207,17 +207,17 @@ items:
     parameterValueGroup: Complete, Incremental
     summary: Incremental (only add resources to resource group) or Complete (remove extra resources from resource group).
     description: ''
-  - name: --parameters
+  - name: --parameters -p
     summary: Supply deployment parameter values.
     description: Parameters may be supplied from a file using the `@{path}` syntax, a JSON string, or as &lt;KEY=VALUE&gt; pairs. Parameters are evaluated in order, so when a value is assigned twice, the latter value will be used. It is recommended that you supply your parameters file first, and then override selectively using KEY=VALUE syntax.
   - name: --rollback-on-error
     summary: The name of a deployment to roll back to on error, or use as a flag to roll back to the last successful deployment.
     description: ''
-  - name: --template-file
-    summary: The template file path in the file system.
+  - name: --template-file -f
+    summary: A template file path in the file system.
     description: ''
-  - name: --template-uri
-    summary: The URI to a remote template file.
+  - name: --template-uri -u
+    summary: A uri to a remote template file.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -329,7 +329,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/resource/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/fe295a096d3218192cc6ef4e56842674334bfa2b/src/azure-cli/azure/cli/command_modules/resource/_help.py
-updated_at: 2/14/2020 7:49:46 AM
-ms.date: 02/14/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/991cb7cc7c9e577d8bec3b78e0316dfb5d39fe10/src/azure-cli/azure/cli/command_modules/resource/_help.py
+updated_at: 2/27/2020 6:58:05 AM
+ms.date: 02/27/2020
 description: Manage Azure Resource Manager deployments.

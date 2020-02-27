@@ -4866,6 +4866,31 @@
     - name: wait
       uid: az_deployment_wait
       displayName: az deployment wait
+    - name: group
+      uid: az_deployment_group
+      displayName: az deployment group
+      items:
+      - name: create
+        uid: az_deployment_group_create
+        displayName: az deployment group create
+      - name: delete
+        uid: az_deployment_group_delete
+        displayName: az deployment group delete
+      - name: export
+        uid: az_deployment_group_export
+        displayName: az deployment group export
+      - name: list
+        uid: az_deployment_group_list
+        displayName: az deployment group list
+      - name: show
+        uid: az_deployment_group_show
+        displayName: az deployment group show
+      - name: validate
+        uid: az_deployment_group_validate
+        displayName: az deployment group validate
+      - name: wait
+        uid: az_deployment_group_wait
+        displayName: az deployment group wait
     - name: operation
       uid: az_deployment_operation
       displayName: az deployment operation
@@ -4876,6 +4901,51 @@
       - name: show
         uid: az_deployment_operation_show
         displayName: az deployment operation show
+      - name: group
+        uid: az_deployment_operation_group
+        displayName: az deployment operation group
+        items:
+        - name: list
+          uid: az_deployment_operation_group_list
+          displayName: az deployment operation group list
+        - name: show
+          uid: az_deployment_operation_group_show
+          displayName: az deployment operation group show
+      - name: sub
+        uid: az_deployment_operation_sub
+        displayName: az deployment operation sub
+        items:
+        - name: list
+          uid: az_deployment_operation_sub_list
+          displayName: az deployment operation sub list
+        - name: show
+          uid: az_deployment_operation_sub_show
+          displayName: az deployment operation sub show
+    - name: sub
+      uid: az_deployment_sub
+      displayName: az deployment sub
+      items:
+      - name: create
+        uid: az_deployment_sub_create
+        displayName: az deployment sub create
+      - name: delete
+        uid: az_deployment_sub_delete
+        displayName: az deployment sub delete
+      - name: export
+        uid: az_deployment_sub_export
+        displayName: az deployment sub export
+      - name: list
+        uid: az_deployment_sub_list
+        displayName: az deployment sub list
+      - name: show
+        uid: az_deployment_sub_show
+        displayName: az deployment sub show
+      - name: validate
+        uid: az_deployment_sub_validate
+        displayName: az deployment sub validate
+      - name: wait
+        uid: az_deployment_sub_wait
+        displayName: az deployment sub wait
   - name: devops
     uid: az_devops
     displayName: az devops

@@ -4057,6 +4057,49 @@
     - name: show
       uid: az_cache_show
       displayName: az cache show
+  - name: deployment
+    uid: az_deployment
+    displayName: az deployment
+    items:
+    - name: group
+      uid: az_deployment_group
+      displayName: az deployment group
+      items:
+      - name: create
+        uid: az_deployment_group_create
+        displayName: az deployment group create
+      - name: delete
+        uid: az_deployment_group_delete
+        displayName: az deployment group delete
+      - name: export
+        uid: az_deployment_group_export
+        displayName: az deployment group export
+      - name: list
+        uid: az_deployment_group_list
+        displayName: az deployment group list
+      - name: show
+        uid: az_deployment_group_show
+        displayName: az deployment group show
+      - name: validate
+        uid: az_deployment_group_validate
+        displayName: az deployment group validate
+      - name: wait
+        uid: az_deployment_group_wait
+        displayName: az deployment group wait
+    - name: operation
+      uid: az_deployment_operation
+      displayName: az deployment operation
+      items:
+      - name: group
+        uid: az_deployment_operation_group
+        displayName: az deployment operation group
+        items:
+        - name: list
+          uid: az_deployment_operation_group_list
+          displayName: az deployment operation group list
+        - name: show
+          uid: az_deployment_operation_group_show
+          displayName: az deployment operation group show
   - name: devops
     uid: az_devops
     displayName: az devops
