@@ -1384,6 +1384,9 @@
       - name: delete
         uid: az_acr_helm_delete
         displayName: az acr helm delete
+      - name: install-cli
+        uid: az_acr_helm_install_cli
+        displayName: az acr helm install-cli
       - name: list
         uid: az_acr_helm_list
         displayName: az acr helm list
