@@ -2073,6 +2073,9 @@
       - name: list
         uid: az_network_vnet_list
         displayName: az network vnet list
+      - name: list-available-ips
+        uid: az_network_vnet_list_available_ips
+        displayName: az network vnet list-available-ips
       - name: list-endpoint-services
         uid: az_network_vnet_list_endpoint_services
         displayName: az network vnet list-endpoint-services
