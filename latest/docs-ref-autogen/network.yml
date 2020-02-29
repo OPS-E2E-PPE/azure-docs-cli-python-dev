@@ -2122,9 +2122,21 @@ commands:
 - uid: az_network_watcher_flow_log_configure
   name: az network watcher flow-log configure
   summary: Configure flow logging on a network security group.
+- uid: az_network_watcher_flow_log_create
+  name: az network watcher flow-log create
+  summary: Create a flow log on a network security group.
+- uid: az_network_watcher_flow_log_delete
+  name: az network watcher flow-log delete
+  summary: Delete the specified flow log resource.
+- uid: az_network_watcher_flow_log_list
+  name: az network watcher flow-log list
+  summary: List all flow log resources for the specified Network Watcher.
 - uid: az_network_watcher_flow_log_show
   name: az network watcher flow-log show
   summary: Get the flow log configuration of a network security group.
+- uid: az_network_watcher_flow_log_update
+  name: az network watcher flow-log update
+  summary: Update the flow log configuration of a network security group.
 - uid: az_network_watcher_list
   name: az network watcher list
   summary: List Network Watchers.
@@ -2192,7 +2204,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/77fcc2b071bd448e858807946e4f2ef66db9ae4e/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 2/28/2020 2:28:37 AM
-ms.date: 02/28/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/03a82343405844a0b4b24599594a9b76bfc9870c/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 2/29/2020 12:32:04 PM
+ms.date: 02/29/2020
 description: Manage Azure Network resources.

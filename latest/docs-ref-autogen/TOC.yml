@@ -6342,9 +6342,21 @@
         - name: configure
           uid: az_network_watcher_flow_log_configure
           displayName: az network watcher flow-log configure
+        - name: create
+          uid: az_network_watcher_flow_log_create
+          displayName: az network watcher flow-log create
+        - name: delete
+          uid: az_network_watcher_flow_log_delete
+          displayName: az network watcher flow-log delete
+        - name: list
+          uid: az_network_watcher_flow_log_list
+          displayName: az network watcher flow-log list
         - name: show
           uid: az_network_watcher_flow_log_show
           displayName: az network watcher flow-log show
+        - name: update
+          uid: az_network_watcher_flow_log_update
+          displayName: az network watcher flow-log update
       - name: packet-capture
         uid: az_network_watcher_packet_capture
         displayName: az network watcher packet-capture
