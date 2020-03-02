@@ -348,9 +348,21 @@ commands:
 - uid: az_sql_midb_list
   name: az sql midb list
   summary: List managed databases on a managed instance.
+- uid: az_sql_midb_list_deleted
+  name: az sql midb list-deleted
+  summary: List restorable deleted managed databases.
 - uid: az_sql_midb_restore
   name: az sql midb restore
   summary: Restore a managed database.
+- uid: az_sql_midb_short_term_retention_policy
+  name: az sql midb short-term-retention-policy
+  summary: Manage SQL managed instance database backup short term retention policy.
+- uid: az_sql_midb_short_term_retention_policy_set
+  name: az sql midb short-term-retention-policy set
+  summary: Update short term retention for automated backups on a single database.
+- uid: az_sql_midb_short_term_retention_policy_show
+  name: az sql midb short-term-retention-policy show
+  summary: Show short term retention for automated backups on a single database.
 - uid: az_sql_midb_show
   name: az sql midb show
   summary: Get the details for a managed database.
@@ -571,7 +583,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/sql/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/64085510f767a8e2c62864c7992677cfcf170fd7/src/azure-cli/azure/cli/command_modules/sql/_help.py
-updated_at: 2/9/2020 1:22:19 PM
-ms.date: 02/09/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/b520017569d55afe409c0717bc94f79f5fa58451/src/azure-cli/azure/cli/command_modules/sql/_help.py
+updated_at: 3/2/2020 1:10:26 PM
+ms.date: 03/02/2020
 description: Manage Azure SQL Databases and Data Warehouses.

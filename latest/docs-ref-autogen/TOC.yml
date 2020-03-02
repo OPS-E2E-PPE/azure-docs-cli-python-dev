@@ -7424,12 +7424,25 @@
       - name: list
         uid: az_sql_midb_list
         displayName: az sql midb list
+      - name: list-deleted
+        uid: az_sql_midb_list_deleted
+        displayName: az sql midb list-deleted
       - name: restore
         uid: az_sql_midb_restore
         displayName: az sql midb restore
       - name: show
         uid: az_sql_midb_show
         displayName: az sql midb show
+      - name: short-term-retention-policy
+        uid: az_sql_midb_short_term_retention_policy
+        displayName: az sql midb short-term-retention-policy
+        items:
+        - name: set
+          uid: az_sql_midb_short_term_retention_policy_set
+          displayName: az sql midb short-term-retention-policy set
+        - name: show
+          uid: az_sql_midb_short_term_retention_policy_show
+          displayName: az sql midb short-term-retention-policy show
     - name: virtual-cluster
       uid: az_sql_virtual_cluster
       displayName: az sql virtual-cluster
