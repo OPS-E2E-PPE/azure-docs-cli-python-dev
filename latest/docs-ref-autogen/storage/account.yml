@@ -142,6 +142,18 @@ items:
     parameterValueGroup: Allow, Deny
     summary: Default action to apply when no rule matches.
     description: ''
+  - name: --publish-internet-endpoints
+    parameterValueGroup: false, true
+    summary: A boolean flag which indicates whether internet routing storage endpoints are to be published.
+    description: ''
+  - name: --publish-microsoft-endpoints
+    parameterValueGroup: false, true
+    summary: A boolean flag which indicates whether microsoft routing storage endpoints are to be published.
+    description: ''
+  - name: --routing-choice
+    parameterValueGroup: InternetRouting, MicrosoftRouting
+    summary: Routing Choice defines the kind of network routing opted by the user.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -530,6 +542,18 @@ items:
   - name: --default-action
     parameterValueGroup: Allow, Deny
     summary: Default action to apply when no rule matches.
+    description: ''
+  - name: --publish-internet-endpoints
+    parameterValueGroup: false, true
+    summary: A boolean flag which indicates whether internet routing storage endpoints are to be published.
+    description: ''
+  - name: --publish-microsoft-endpoints
+    parameterValueGroup: false, true
+    summary: A boolean flag which indicates whether microsoft routing storage endpoints are to be published.
+    description: ''
+  - name: --routing-choice
+    parameterValueGroup: InternetRouting, MicrosoftRouting
+    summary: Routing Choice defines the kind of network routing opted by the user.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
