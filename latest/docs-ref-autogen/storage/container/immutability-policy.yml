@@ -27,7 +27,8 @@ items:
     name: --container-name -c
     summary: The container name.
     description: ''
-  - name: --allow-protected-append-writes
+  - name: --allow-protected-append-writes -w
+    parameterValueGroup: false, true
     summary: This property can only be changed for unlocked time-based retention policies. When enabled, new blocks can be written to an append blob while maintaining immutability protection and compliance. Only new blocks can be added and any existing blocks cannot be modified or deleted. This property cannot be changed with ExtendImmutabilityPolicy API.
     description: ''
   - name: --period
@@ -94,7 +95,8 @@ items:
     name: --container-name -c
     summary: The container name.
     description: ''
-  - name: --allow-protected-append-writes
+  - name: --allow-protected-append-writes -w
+    parameterValueGroup: false, true
     summary: This property can only be changed for unlocked time-based retention policies. When enabled, new blocks can be written to an append blob while maintaining immutability protection and compliance. Only new blocks can be added and any existing blocks cannot be modified or deleted. This property cannot be changed with ExtendImmutabilityPolicy API.
     description: ''
   - name: --period
@@ -209,7 +211,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/29d381ebe509026140fa9890ad03a7c194492528/src/azure-cli/azure/cli/command_modules/storage/_help.py
-updated_at: 3/3/2020 2:13:40 PM
-ms.date: 03/03/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/d08a69c33e438978baf6232ce2ee315c9d45aae2/src/azure-cli/azure/cli/command_modules/storage/_help.py
+updated_at: 3/6/2020 2:47:20 AM
+ms.date: 03/06/2020
 description: Manage container immutability policies.

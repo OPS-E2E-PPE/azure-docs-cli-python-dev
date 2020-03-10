@@ -42,6 +42,9 @@ items:
   - name: --aux-subs
     summary: Auxiliary subscriptions which will be used during deployment across tenants.
     description: ''
+  - name: --aux-tenants
+    summary: Auxiliary tenants which will be used during deployment across tenants.
+    description: ''
   - name: --handle-extended-json-format -j
     summary: Support to handle extended template content including multiline and comments in deployment.
     description: ''

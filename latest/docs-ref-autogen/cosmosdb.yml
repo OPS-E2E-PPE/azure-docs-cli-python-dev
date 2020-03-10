@@ -92,6 +92,9 @@ items:
   - name: --ip-range-filter
     summary: Firewall support. Specifies the set of IP addresses or IP address ranges in CIDR form to be included as the allowed list of client IPs for a given database account. IP addresses/ranges must be comma-separated and must not contain any spaces.
     description: ''
+  - name: --key-uri
+    summary: The URI of the key vault.
+    description: ''
   - name: --kind
     defaultValue: GlobalDocumentDB
     parameterValueGroup: GlobalDocumentDB, MongoDB, Parse

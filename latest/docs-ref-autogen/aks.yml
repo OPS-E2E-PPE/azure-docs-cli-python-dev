@@ -108,6 +108,9 @@ items:
   - summary: Create a kubernetes cluster with authorized apiserver IP ranges.
     syntax:
       content: az aks create -g MyResourceGroup -n MyManagedCluster --api-server-authorized-ip-ranges 193.168.1.0/24,194.168.1.0/24,195.168.1.0
+  - summary: Create a kubernetes cluster which enables managed identity.
+    syntax:
+      content: az aks create -g MyResourceGroup -n MyManagedCluster --enable-managed-identity
   parameters:
   - isRequired: true
     name: --name -n
@@ -166,6 +169,9 @@ items:
   - name: --enable-cluster-autoscaler
     summary: Enable cluster autoscaler, default value is false.
     description: If specified, please make sure the kubernetes version is larger than 1.10.6.
+  - name: --enable-managed-identity
+    summary: Using a system assigned managed identity to manage cluster resource group.
+    description: ''
   - name: --enable-private-cluster
     summary: Enable private cluster.
     description: ''
@@ -210,6 +216,7 @@ items:
     summary: Minimum nodes count used for autoscaler, when "--enable-cluster-autoscaler" specified. Please specify the value in the range of [1, 100].
     description: ''
   - name: --network-plugin
+    parameterValueGroup: azure, kubenet
     summary: The Kubernetes network plugin to use.
     description: Specify "azure" for advanced networking configurations. Defaults to "kubenet".
   - name: --network-policy
@@ -1276,7 +1283,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e42d9f7e65e14e44be3f4840659dd1991c98cdc3/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 3/4/2020 2:04:34 AM
-ms.date: 03/04/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/fef1731e83dcccba400742131dd1e6375eea0267/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 3/5/2020 9:39:07 AM
+ms.date: 03/05/2020
 description: Manage Azure Kubernetes Services.
