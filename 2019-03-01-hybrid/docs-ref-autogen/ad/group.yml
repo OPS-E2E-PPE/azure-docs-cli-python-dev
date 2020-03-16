@@ -93,7 +93,7 @@ items:
     summary: Object's display name or its prefix.
     description: ''
   - name: --filter
-    summary: OData filter.
+    summary: OData filter, e.g. --filter "displayname eq 'test' and servicePrincipalType eq 'Application'".
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/role/_help.py

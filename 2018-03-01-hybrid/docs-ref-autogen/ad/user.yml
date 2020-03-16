@@ -100,7 +100,7 @@ items:
     summary: Object's display name or its prefix.
     description: ''
   - name: --filter
-    summary: OData filter.
+    summary: OData filter, e.g. --filter "displayname eq 'test' and servicePrincipalType eq 'Application'".
     description: ''
   - name: --upn
     summary: User principal name, e.g. john.doe@contoso.com.

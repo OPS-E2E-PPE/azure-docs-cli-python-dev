@@ -162,7 +162,7 @@ items:
       content: az ad app permission list-grants --id e042ec79-34cd-498f-9d9f-1234234123456
   parameters:
   - name: --filter
-    summary: OData filter.
+    summary: OData filter, e.g. --filter "displayname eq 'test' and servicePrincipalType eq 'Application'".
     description: ''
   - name: --id
     summary: Identifier uri, application id, or object id.

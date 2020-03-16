@@ -111,10 +111,10 @@ items:
   - summary: Log in interactively.
     syntax:
       content: az login
-  - summary: Log in with user name and password. This doesn't work with Microsoft accounts or accounts that have two-factor authentication enabled.
+  - summary: Log in with user name and password. This doesn't work with Microsoft accounts or accounts that have two-factor authentication enabled. Use -p=secret if the first character of the password is '-'.
     syntax:
       content: az login -u johndoe@contoso.com -p VerySecret
-  - summary: Log in with a service principal using client secret.
+  - summary: Log in with a service principal using client secret. Use -p=secret if the first character of the password is '-'.
     syntax:
       content: az login --service-principal -u http://azure-cli-2016-08-05-14-31-15 -p VerySecret --tenant contoso.onmicrosoft.com
   - summary: Log in with a service principal using client certificate.
@@ -377,6 +377,6 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/profile/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/944c0c3b1f30530a280bfaa6b7c7d799e3248f28/src/azure-cli/azure/cli/command_modules/profile/_help.py
-updated_at: 1/30/2020 12:05:40 PM
-ms.date: 01/30/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/10b5e966121d2b7fda114bcbdfad5b6f6aa0aae8/src/azure-cli/azure/cli/command_modules/profile/_help.py
+updated_at: 3/16/2020 9:14:21 AM
+ms.date: 03/16/2020

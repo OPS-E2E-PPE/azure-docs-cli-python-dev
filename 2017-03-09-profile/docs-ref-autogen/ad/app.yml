@@ -152,7 +152,7 @@ items:
     summary: The display name of the application.
     description: ''
   - name: --filter
-    summary: OData filter.
+    summary: OData filter, e.g. --filter "displayname eq 'test' and servicePrincipalType eq 'Application'".
     description: ''
   - name: --identifier-uri
     summary: Graph application identifier, must be in uri format.
