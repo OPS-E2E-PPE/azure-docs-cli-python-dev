@@ -321,8 +321,8 @@ items:
     summary: The name to use when creating a new Network Security Group (default) or referencing an existing one. Can also reference an existing NSG by ID or specify "" for none ('""' in Azure CLI using PowerShell or --% operator).
     description: ''
   - name: --nsg-rule
-    parameterValueGroup: RDP, SSH
-    summary: NSG rule to create when creating a new NSG. Defaults to open ports for allowing RDP on Windows and allowing SSH on Linux.
+    parameterValueGroup: NONE, RDP, SSH
+    summary: NSG rule to create when creating a new NSG. Defaults to open ports for allowing RDP on Windows and allowing SSH on Linux. NONE represents no NSG rule.
     description: ''
   - name: --private-ip-address
     summary: Static private IP address (e.g. 10.0.0.5).

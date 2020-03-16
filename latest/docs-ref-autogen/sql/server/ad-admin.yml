@@ -100,10 +100,6 @@ items:
   langs:
   - azurecli
   parameters:
-  - isRequired: true
-    name: --parameters
-    summary: The required parameters for creating or updating an Active Directory Administrator.
-    description: ''
   - name: --display-name -u
     summary: Display name of the Azure AD administrator user or group.
     description: ''
