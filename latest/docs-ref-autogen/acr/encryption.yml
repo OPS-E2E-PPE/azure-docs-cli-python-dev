@@ -84,7 +84,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/253058ec13b82ff30dd215d5d8ef0bead7e9ee7a/src/azure-cli/azure/cli/command_modules/acr/_help.py
-updated_at: 3/5/2020 8:29:08 AM
-ms.date: 03/05/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/f64c2a0aa19a217bb37c9c6f3231b88d08f4863e/src/azure-cli/azure/cli/command_modules/acr/_help.py
+updated_at: 3/17/2020 3:09:52 AM
+ms.date: 03/17/2020
 description: For more information, see <a href="http://aka.ms/acr/cmk">http://aka.ms/acr/cmk</a>.

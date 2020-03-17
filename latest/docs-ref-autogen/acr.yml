@@ -250,17 +250,20 @@ items:
   langs:
   - azurecli
   examples:
-  - summary: Import an image to the target registry and inherits sourcerepository:sourcetag from the source registry.
+  - summary: Import an image from 'sourceregistry' to 'MyRegistry'. The image inherits its source repository and tag names.
     syntax:
       content: az acr import -n MyRegistry --source sourceregistry.azurecr.io/sourcerepository:sourcetag
-  - summary: Import an image from a registry in a different subscription.
+  - summary: Import an image from a public repository on Docker Hub. The image uses the specified repository and tag names.
+    syntax:
+      content: az acr import -n MyRegistry --source docker.io/library/hello-world:latest -t targetrepository:targettag
+  - summary: Import an image from a private repository using its username and password. This also applies to registries outside Azure.
+    syntax:
+      content: az acr import -n MyRegistry --source myprivateregistry.azurecr.io/hello-world:latest -u username -p password
+  - summary: Import an image from an Azure container registry in a different subscription.
     syntax:
       content: >-
         az acr import -n MyRegistry --source sourcerepository:sourcetag -t targetrepository:targettag \
             -r /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/sourceResourceGroup/providers/Microsoft.ContainerRegistry/registries/sourceRegistry
-  - summary: Import an image from a public repository in Docker Hub
-    syntax:
-      content: az acr import -n MyRegistry --source docker.io/library/hello-world:latest -t targetrepository:targettag
   parameters:
   - isRequired: true
     name: --name -n
@@ -268,7 +271,7 @@ items:
     description: ''
   - isRequired: true
     name: --source
-    summary: The source identifier will be either a source image name or a fully qualified source.
+    summary: Source image name or fully qualified source containing the registry login server. If `--registry` is used, `--source` will always be interpreted as a source image, even if it contains the login server.
     description: ''
   - name: --force
     summary: Overwrite the existing tag of the image to be imported.
@@ -280,7 +283,7 @@ items:
     summary: The password of source container registry.
     description: ''
   - name: --registry -r
-    summary: The source container registry can be name, login server or resource ID of the source registry.
+    summary: The source Azure container registry. This can be name, login server or resource ID of the source registry.
     description: ''
   - name: --repository
     summary: The repository name for a manifest-only copy of images. Multiple copies supported by passing --repository multiple times.
@@ -938,7 +941,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/253058ec13b82ff30dd215d5d8ef0bead7e9ee7a/src/azure-cli/azure/cli/command_modules/acr/_help.py
-updated_at: 3/5/2020 8:29:08 AM
-ms.date: 03/05/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/f64c2a0aa19a217bb37c9c6f3231b88d08f4863e/src/azure-cli/azure/cli/command_modules/acr/_help.py
+updated_at: 3/17/2020 3:09:52 AM
+ms.date: 03/17/2020
 description: Manage private registries with Azure Container Registries.
