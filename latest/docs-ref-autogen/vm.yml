@@ -209,7 +209,7 @@ items:
     description: ''
   - name: --eviction-policy
     parameterValueGroup: Deallocate, Delete
-    summary: The eviction policy for the low priority virtual machine.
+    summary: The eviction policy for the Spot priority virtual machine. Default eviction policy is Deallocate for a Spot priority virtual machine.
     description: ''
   - name: --image
     summary: 'The name of the operating system image as a URN alias, URN, custom image name or ID, or VHD blob URI. This parameter is required unless using `--attach-os-disk.` Valid URN format: "Publisher:Offer:Sku:Version".'
@@ -233,7 +233,7 @@ items:
     description: ''
   - name: --priority
     parameterValueGroup: Low, Regular, Spot
-    summary: Priority. Use 'Spot' to run short-lived workloads in a cost-effective way. 'Low' enum will be deprecated in the future. Please use 'Spot' to deploy Azure spot VM and/or VMSS.
+    summary: Priority. Use 'Spot' to run short-lived workloads in a cost-effective way. 'Low' enum will be deprecated in the future. Please use 'Spot' to deploy Azure spot VM and/or VMSS. Default to Regular.
     description: ''
   - name: --secrets
     summary: 'One or many Key Vault secrets as JSON strings or files via `@{path}` containing `[{ "sourceVault": { "id": "value" }, "vaultCertificates": [{ "certificateUrl": "value", "certificateStore": "cert store name (only on windows)"}] }]`.'
@@ -1153,7 +1153,7 @@ items:
     description: ''
   - name: --priority
     parameterValueGroup: Low, Regular, Spot
-    summary: Priority. Use 'Spot' to run short-lived workloads in a cost-effective way. 'Low' enum will be deprecated in the future. Please use 'Spot' to deploy Azure spot VM and/or VMSS.
+    summary: Priority. Use 'Spot' to run short-lived workloads in a cost-effective way. 'Low' enum will be deprecated in the future. Please use 'Spot' to deploy Azure spot VM and/or VMSS. Default to Regular.
     description: ''
   - name: --ultra-ssd-enabled
     parameterValueGroup: false, true

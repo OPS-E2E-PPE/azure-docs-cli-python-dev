@@ -104,7 +104,7 @@ items:
     description: ''
   - name: --eviction-policy
     parameterValueGroup: Deallocate, Delete
-    summary: The eviction policy for virtual machines in a low priority scale set.
+    summary: The eviction policy for virtual machines in a Spot priority scale set. Default eviction policy is Deallocate for a Spot priority scale set.
     description: ''
   - name: --health-probe
     summary: Probe name from the existing load balancer, mainly used for rolling upgrade or automatic repairs.
@@ -143,7 +143,7 @@ items:
     description: ''
   - name: --priority
     parameterValueGroup: Low, Regular, Spot
-    summary: Priority. Use 'Spot' to run short-lived workloads in a cost-effective way. 'Low' enum will be deprecated in the future. Please use 'Spot' to deploy Azure spot VM and/or VMSS.
+    summary: Priority. Use 'Spot' to run short-lived workloads in a cost-effective way. 'Low' enum will be deprecated in the future. Please use 'Spot' to deploy Azure spot VM and/or VMSS. Default to Regular.
     description: ''
   - name: --scale-in-policy
     parameterValueGroup: Default, NewestVM, OldestVM
@@ -920,7 +920,7 @@ items:
     description: ''
   - name: --priority
     parameterValueGroup: Low, Regular, Spot
-    summary: Priority. Use 'Spot' to run short-lived workloads in a cost-effective way. 'Low' enum will be deprecated in the future. Please use 'Spot' to deploy Azure spot VM and/or VMSS.
+    summary: Priority. Use 'Spot' to run short-lived workloads in a cost-effective way. 'Low' enum will be deprecated in the future. Please use 'Spot' to deploy Azure spot VM and/or VMSS. Default to Regular.
     description: ''
   - name: --scale-in-policy
     parameterValueGroup: Default, NewestVM, OldestVM
