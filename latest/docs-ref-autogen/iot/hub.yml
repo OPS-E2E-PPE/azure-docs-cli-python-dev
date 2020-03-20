@@ -26,10 +26,10 @@ items:
   examples:
   - summary: Create an IoT Hub with the free pricing tier F1, in the region of the resource group.
     syntax:
-      content: az iot hub create --resource-group MyResourceGroup --name MyIotHub
+      content: az iot hub create --resource-group MyResourceGroup --name MyIotHub --sku F1 --partition-count 2
   - summary: Create an IoT Hub with the standard pricing tier S1 and 4 partitions, in the 'westus' region.
     syntax:
-      content: az iot hub create --resource-group MyResourceGroup --name MyIotHub --sku S1 --location westus --partition-count 4
+      content: az iot hub create --resource-group MyResourceGroup --name MyIotHub --location westus
   parameters:
   - isRequired: true
     name: --name -n
@@ -93,9 +93,9 @@ items:
     summary: Specifies how long this IoT hub will maintain device-to-cloud events, between 1 and 7 days.
     description: ''
   - name: --sku
-    defaultValue: F1
+    defaultValue: S1
     parameterValueGroup: B1, B2, B3, F1, S1, S2, S3
-    summary: Pricing tier for Azure IoT Hub. Default value is F1, which is free. Note that only one free IoT hub instance is allowed in each subscription. Exception will be thrown if free instances exceed one.
+    summary: Pricing tier for Azure IoT Hub. Note that only one free IoT hub instance (F1) is allowed in each subscription. Exception will be thrown if free instances exceed one.
     description: ''
   - name: --unit
     defaultValue: "1"
@@ -425,7 +425,7 @@ items:
     description: ''
   - name: --sku
     parameterValueGroup: B1, B2, B3, F1, S1, S2, S3
-    summary: Pricing tier for Azure IoT Hub. Default value is F1, which is free. Note that only one free IoT hub instance is allowed in each subscription. Exception will be thrown if free instances exceed one.
+    summary: Pricing tier for Azure IoT Hub. Note that only one free IoT hub instance (F1) is allowed in each subscription. Exception will be thrown if free instances exceed one.
     description: ''
   - name: --unit
     summary: Units in your IoT Hub.
@@ -633,7 +633,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/iot/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/a221f49b9af6cf889cde20bbe4b42956900acd37/src/azure-cli/azure/cli/command_modules/iot/_help.py
-updated_at: 3/12/2020 9:36:12 AM
-ms.date: 03/12/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/8e1a9c1c370d95f06d727af801f4676445e8c523/src/azure-cli/azure/cli/command_modules/iot/_help.py
+updated_at: 3/20/2020 2:17:04 AM
+ms.date: 03/20/2020
 description: Manage Azure IoT hubs.
