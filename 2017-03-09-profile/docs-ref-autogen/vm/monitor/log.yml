@@ -60,7 +60,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/7d01a9a2172347b8a312a8bd339eba21659a063d/src/azure-cli/azure/cli/command_modules/vm/_help.py
-updated_at: 3/16/2020 9:06:25 AM
-ms.date: 03/16/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/450f7511788f02f2a44eac252e58e4dfa1dfef6e/src/azure-cli/azure/cli/command_modules/vm/_help.py
+updated_at: 3/20/2020 8:53:19 AM
+ms.date: 03/20/2020
 description: Manage log analytics workspace for a vm.
