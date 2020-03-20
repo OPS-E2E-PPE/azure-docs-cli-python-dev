@@ -26,6 +26,9 @@ items:
   - name: --top
     summary: Maximum number of records to return.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -49,6 +52,9 @@ items:
   - isRequired: true
     name: --name -n
     summary: The name of the metadata resource.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

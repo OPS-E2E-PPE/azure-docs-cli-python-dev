@@ -46,6 +46,9 @@ items:
   - name: --vm-name
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=&lt;name&gt;`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -70,6 +73,9 @@ items:
   - isRequired: true
     name: --vm-name
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=&lt;name&gt;`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -140,6 +146,9 @@ items:
   - name: --vm-name
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=&lt;name&gt;`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -174,6 +183,9 @@ items:
     description: ''
   - name: --vm-name
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=&lt;name&gt;`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
@@ -238,6 +250,9 @@ items:
     description: ''
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py

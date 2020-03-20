@@ -77,6 +77,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -321,6 +324,9 @@ items:
   - name: --use-unmanaged-disk
     summary: Do not use managed disk to persist VM.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -374,6 +380,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -411,6 +420,9 @@ items:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
@@ -459,6 +471,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -491,6 +506,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -519,6 +537,9 @@ items:
     description: ''
   - name: --show-details -d
     summary: Show public ip address, FQDN, and power states. command will run slow.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -555,6 +576,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -575,6 +599,9 @@ items:
   - isRequired: true
     name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -599,6 +626,9 @@ items:
   - isRequired: true
     name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -634,6 +664,9 @@ items:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
@@ -684,6 +717,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -718,6 +754,9 @@ items:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
@@ -759,6 +798,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -797,6 +839,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -831,6 +876,9 @@ items:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
@@ -870,6 +918,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -907,6 +958,9 @@ items:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
@@ -974,6 +1028,9 @@ items:
   - name: --set
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py
     remote:
@@ -1028,6 +1085,9 @@ items:
     description: ''
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/vm/_help.py

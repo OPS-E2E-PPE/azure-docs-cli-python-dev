@@ -44,6 +44,9 @@ items:
   - name: --lb-name
     summary: The name of the load balancer associated with the NAT rule (Omit if suppying a NAT rule ID).
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -87,6 +90,9 @@ items:
     description: ''
   - name: --lb-name
     summary: The name of the load balancer associated with the NAT rule (Omit if suppying a NAT rule ID).
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

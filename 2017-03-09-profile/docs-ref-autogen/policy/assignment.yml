@@ -63,6 +63,9 @@ items:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py
     remote:
@@ -90,6 +93,9 @@ items:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py
     remote:
@@ -111,6 +117,9 @@ items:
     description: ''
   - name: --scope
     summary: Scope to which this policy assignment applies.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py
@@ -138,6 +147,9 @@ items:
     description: ''
   - name: --scope
     summary: Scope to which this policy assignment applies.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/resource/_help.py

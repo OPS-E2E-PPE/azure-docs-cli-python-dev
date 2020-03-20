@@ -49,6 +49,9 @@ items:
   - name: --next-hop-ip-address
     summary: The IP address packets should be forwarded to when using the VirtualAppliance hop type.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -84,6 +87,9 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py
     remote:
@@ -108,6 +114,9 @@ items:
   - isRequired: true
     name: --route-table-name
     summary: Route table name.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -143,6 +152,9 @@ items:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py
@@ -200,6 +212,9 @@ items:
     description: ''
   - name: --set
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py

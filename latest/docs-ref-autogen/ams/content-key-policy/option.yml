@@ -93,6 +93,9 @@ items:
   - name: --widevine-template
     summary: JSON Widevine license template. Use @{file} to load from a file.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/ams/_help.py
     remote:
@@ -124,6 +127,9 @@ items:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/ams/_help.py
@@ -211,6 +217,9 @@ items:
     description: ''
   - name: --widevine-template
     summary: JSON Widevine license template. Use @{file} to load from a file.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/ams/_help.py

@@ -28,6 +28,9 @@ items:
     name: --subscription -s
     summary: Subscription Id or Name.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py
     remote:
@@ -52,6 +55,9 @@ items:
   - isRequired: true
     name: --subscription -s
     summary: Subscription Id or Name.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/profile/_help.py

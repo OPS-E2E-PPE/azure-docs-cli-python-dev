@@ -78,6 +78,9 @@ items:
   - name: --weight
     summary: Weight of the endpoint when using the 'Weighted' traffic routing method. Values range from 1 to 1000.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -120,6 +123,9 @@ items:
     parameterValueGroup: azureEndpoints, externalEndpoints, nestedEndpoints
     summary: Endpoint type.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py
     remote:
@@ -148,6 +154,9 @@ items:
   - name: --type -t
     parameterValueGroup: azureEndpoints, externalEndpoints, nestedEndpoints
     summary: Endpoint type.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -190,6 +199,9 @@ items:
     parameterValueGroup: azureEndpoints, externalEndpoints, nestedEndpoints
     summary: Endpoint type.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py
     remote:
@@ -207,6 +219,9 @@ items:
     syntax:
       content: az network traffic-manager endpoint show-geographic-hierarchy
   parameters:
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -297,6 +312,9 @@ items:
     description: ''
   - name: --set
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/network/_help.py

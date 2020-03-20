@@ -41,6 +41,9 @@ items:
   - name: --transform-name -t
     summary: The name of the transform.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/ams/_help.py
     remote:
@@ -71,6 +74,9 @@ items:
     description: ''
   - name: --transform-name -t
     summary: The name of the transform.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/ams/_help.py
@@ -110,6 +116,9 @@ items:
   - name: --orderby
     summary: Specifies the the key by which the result collection should be ordered.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -143,6 +152,9 @@ items:
     description: ''
   - name: --transform-name -t
     summary: The name of the transform.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/ams/_help.py
@@ -201,6 +213,9 @@ items:
   - name: --base-uri
     summary: Base uri for http job input. It will be concatenated with provided file names. If no base uri is given, then the provided file list is assumed to be fully qualified uris.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/ams/_help.py
     remote:
@@ -250,6 +265,9 @@ items:
     description: ''
   - name: --set
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/ams/_help.py

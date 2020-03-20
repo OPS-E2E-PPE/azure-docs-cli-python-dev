@@ -37,6 +37,9 @@ items:
   - name: --volume-name -v
     summary: The name of the ANF pool.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
     remote:

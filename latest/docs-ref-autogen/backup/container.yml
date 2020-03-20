@@ -36,6 +36,9 @@ items:
     name: --vault-name -v
     summary: Name of the Recovery services vault.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -85,6 +88,9 @@ items:
   - name: --vault-name -v
     summary: Name of the Recovery services vault.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/backup/_help.py
     remote:
@@ -128,6 +134,9 @@ items:
   - name: --vault-name -v
     summary: Name of the Recovery services vault.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/backup/_help.py
     remote:
@@ -164,6 +173,9 @@ items:
     description: ''
   - name: --vault-name -v
     summary: Name of the Recovery services vault.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/backup/_help.py
@@ -204,6 +216,9 @@ items:
     description: ''
   - name: --vault-name -v
     summary: Name of the Recovery services vault.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/backup/_help.py

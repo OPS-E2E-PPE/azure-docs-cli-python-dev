@@ -108,6 +108,9 @@ items:
   - name: --start-date
     summary: Date or datetime at which credentials become valid(e.g. '2017-01-01T01:00:00+00:00' or '2017-01-01'). Default value is current time.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/role/_help.py
     remote:
@@ -128,6 +131,9 @@ items:
   - isRequired: true
     name: --id
     summary: Identifier uri, application id, or object id.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/role/_help.py
@@ -160,6 +166,9 @@ items:
   - name: --show-mine
     summary: List entities owned by the current user.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/role/_help.py
     remote:
@@ -180,6 +189,9 @@ items:
   - isRequired: true
     name: --id
     summary: Identifier uri, application id, or object id.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/role/_help.py
@@ -296,6 +308,9 @@ items:
     description: ''
   - name: --set
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/role/_help.py

@@ -36,6 +36,9 @@ items:
     defaultValue: <a href="https://provider.azureiotrepository.com">https://provider.azureiotrepository.com</a>
     summary: IoT Plug and Play endpoint.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -68,6 +71,9 @@ items:
     defaultValue: <a href="https://provider.azureiotrepository.com">https://provider.azureiotrepository.com</a>
     summary: IoT Plug and Play endpoint.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -95,6 +101,9 @@ items:
   - name: --endpoint -e
     defaultValue: <a href="https://provider.azureiotrepository.com">https://provider.azureiotrepository.com</a>
     summary: IoT Plug and Play endpoint.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -127,6 +136,9 @@ items:
   - name: --endpoint -e
     defaultValue: <a href="https://provider.azureiotrepository.com">https://provider.azureiotrepository.com</a>
     summary: IoT Plug and Play endpoint.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -164,6 +176,9 @@ items:
   - name: --endpoint -e
     defaultValue: <a href="https://provider.azureiotrepository.com">https://provider.azureiotrepository.com</a>
     summary: IoT Plug and Play endpoint.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

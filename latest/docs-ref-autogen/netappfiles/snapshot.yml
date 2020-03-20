@@ -49,6 +49,9 @@ items:
   - name: --file-system-id
     summary: The uuid of the volume.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -90,6 +93,9 @@ items:
   - name: --volume-name -v
     summary: The name of the ANF volume.
     description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
     remote:
@@ -122,6 +128,9 @@ items:
   - isRequired: true
     name: --volume-name -v
     summary: The name of the ANF volume.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -163,6 +172,9 @@ items:
     description: ''
   - name: --volume-name -v
     summary: The name of the ANF volume.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
   source:
     path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
