@@ -47,6 +47,9 @@ items:
   - name: --host-name
     summary: Host name to use for multisite gateways.
     description: ''
+  - name: --host-names
+    summary: List of host names that allows special wildcard characters as well.
+    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
@@ -193,6 +196,9 @@ items:
     description: ''
   - name: --host-name
     summary: Host name to use for multisite gateways.
+    description: ''
+  - name: --host-names
+    summary: List of host names that allows special wildcard characters as well.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
