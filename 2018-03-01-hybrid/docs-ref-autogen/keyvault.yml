@@ -42,7 +42,7 @@ items:
     description: ''
   - name: --enable-soft-delete
     parameterValueGroup: false, true
-    summary: Enable vault deletion recovery for the vault, and all contained entities. If omitted, assume true as default value.
+    summary: Enable 'soft delete' functionality for this key vault and all contained entities. If omitted, it will be set to true by default. Once set to true, it cannot be reverted to false.
     description: ''
   - name: --enabled-for-deployment
     parameterValueGroup: false, true
@@ -62,6 +62,10 @@ items:
   - name: --no-self-perms
     parameterValueGroup: false, true
     summary: Don't add permissions for the current user/service principal in the new vault.
+    description: ''
+  - name: --retention-days
+    defaultValue: "90"
+    summary: Soft delete data retention days. It accepts >=7 and <=90.
     description: ''
   - name: --sku
     defaultValue: standard
@@ -350,7 +354,7 @@ items:
     description: ''
   - name: --enable-soft-delete
     parameterValueGroup: false, true
-    summary: Enable vault deletion recovery for the vault, and all contained entities.
+    summary: Enable 'soft delete' functionality for this key vault and all contained entities. Once set to true, it cannot be reverted to false.
     description: ''
   - name: --enabled-for-deployment
     parameterValueGroup: false, true
@@ -366,6 +370,9 @@ items:
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
+    description: ''
+  - name: --retention-days
+    summary: Soft delete data retention days. It accepts >=7 and <=90.
     description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'

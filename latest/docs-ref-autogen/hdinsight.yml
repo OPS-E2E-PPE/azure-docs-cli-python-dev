@@ -31,6 +31,14 @@ items:
         -p "HttpPassword1234!" \
 
         --storage-account MyStorageAccount
+  - summary: Create a cluster with minimal tls version.
+    syntax:
+      content: >-
+        az hdinsight create -t spark -g MyResourceGroup -n MyCluster \
+
+        -p "HttpPassword1234!" \
+
+        --storage-account MyStorageAccount --minimal-tls-version 1.2
   - summary: Create a cluster with the Enterprise Security Package (ESP).
     syntax:
       content: >-
@@ -148,6 +156,10 @@ items:
     description: ''
   - name: --esp
     summary: Specify to create cluster with Enterprise Security Package. If omitted, creating cluster with Enterprise Security Package will not not allowed.
+    description: ''
+  - name: --minimal-tls-version
+    parameterValueGroup: 1.0, 1.1, 1.2
+    summary: The minimal supported TLS version.
     description: ''
   - name: --version -v
     defaultValue: default
@@ -634,7 +646,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/5b8878e7498186d488105bf29b7e7b5724e53098/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-updated_at: 12/23/2019 2:18:59 AM
-ms.date: 12/23/2019
+gitcommit: https://github.com/Azure/azure-cli/blob/f55047618be302f17adc2cfe6c0953637d70ef2c/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+updated_at: 3/23/2020 8:14:59 AM
+ms.date: 03/23/2020
 description: Manage HDInsight resources.
