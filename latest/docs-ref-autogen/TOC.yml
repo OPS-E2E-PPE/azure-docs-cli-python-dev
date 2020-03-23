@@ -3516,6 +3516,9 @@
       uid: az_keyvault_certificate
       displayName: az keyvault certificate
       items:
+      - name: backup
+        uid: az_keyvault_certificate_backup
+        displayName: az keyvault certificate backup
       - name: create
         uid: az_keyvault_certificate_create
         displayName: az keyvault certificate create
@@ -3546,6 +3549,9 @@
       - name: recover
         uid: az_keyvault_certificate_recover
         displayName: az keyvault certificate recover
+      - name: restore
+        uid: az_keyvault_certificate_restore
+        displayName: az keyvault certificate restore
       - name: set-attributes
         uid: az_keyvault_certificate_set_attributes
         displayName: az keyvault certificate set-attributes

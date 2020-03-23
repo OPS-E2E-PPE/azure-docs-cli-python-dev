@@ -7,6 +7,7 @@ items:
   langs:
   - azurecli
   children:
+  - az_keyvault_certificate_backup
   - az_keyvault_certificate_create
   - az_keyvault_certificate_delete
   - az_keyvault_certificate_download
@@ -17,9 +18,42 @@ items:
   - az_keyvault_certificate_list_versions
   - az_keyvault_certificate_purge
   - az_keyvault_certificate_recover
+  - az_keyvault_certificate_restore
   - az_keyvault_certificate_set_attributes
   - az_keyvault_certificate_show
   - az_keyvault_certificate_show_deleted
+- uid: az_keyvault_certificate_backup
+  name: az keyvault certificate backup
+  summary: Backs up the specified certificate.
+  description: Requests that a backup of the specified certificate be downloaded to the client. All versions of the certificate will be downloaded. This operation requires the certificates/backup permission.
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --file -f
+    summary: Local file path in which to store certificate backup.
+    description: ''
+  - name: --id
+    summary: Id of the certificate.  If specified all other 'Id' arguments should be omitted.
+    description: ''
+  - name: --name -n
+    summary: Name of the certificate. Required if --id is not specified.
+    description: ''
+  - name: --vault-name
+    summary: Name of the key vault. Required if --id is not specified.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_keyvault_certificate_create
   name: az keyvault certificate create
   summary: Create a Key Vault certificate.
@@ -406,6 +440,33 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/keyvault/_help.py
       repo: https://github.com/Azure/azure-cli.git
+- uid: az_keyvault_certificate_restore
+  name: az keyvault certificate restore
+  summary: Restores a backed up certificate to a vault.
+  description: Restores a backed up certificate, and all its versions, to a vault. This operation requires the certificates/restore permission.
+  langs:
+  - azurecli
+  parameters:
+  - isRequired: true
+    name: --file -f
+    summary: Local certificate backup from which to restore certificate.
+    description: ''
+  - isRequired: true
+    name: --vault-name
+    summary: Name of the key vault.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_keyvault_certificate_set_attributes
   name: az keyvault certificate set-attributes
   summary: Updates the specified attributes associated with the given certificate.
@@ -507,6 +568,9 @@ items:
       path: src/azure-cli/azure/cli/command_modules/keyvault/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
+- uid: az_keyvault_certificate_backup
+  name: az keyvault certificate backup
+  summary: Backs up the specified certificate.
 - uid: az_keyvault_certificate_contact
   name: az keyvault certificate contact
   summary: Manage contacts for certificate management.
@@ -591,6 +655,9 @@ commands:
 - uid: az_keyvault_certificate_recover
   name: az keyvault certificate recover
   summary: Recovers the deleted certificate back to its current version under /certificates.
+- uid: az_keyvault_certificate_restore
+  name: az keyvault certificate restore
+  summary: Restores a backed up certificate to a vault.
 - uid: az_keyvault_certificate_set_attributes
   name: az keyvault certificate set-attributes
   summary: Updates the specified attributes associated with the given certificate.

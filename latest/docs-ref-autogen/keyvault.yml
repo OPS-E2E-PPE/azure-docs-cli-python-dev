@@ -411,6 +411,9 @@ commands:
 - uid: az_keyvault_certificate
   name: az keyvault certificate
   summary: Manage certificates.
+- uid: az_keyvault_certificate_backup
+  name: az keyvault certificate backup
+  summary: Backs up the specified certificate.
 - uid: az_keyvault_certificate_contact
   name: az keyvault certificate contact
   summary: Manage contacts for certificate management.
@@ -495,6 +498,9 @@ commands:
 - uid: az_keyvault_certificate_recover
   name: az keyvault certificate recover
   summary: Recovers the deleted certificate back to its current version under /certificates.
+- uid: az_keyvault_certificate_restore
+  name: az keyvault certificate restore
+  summary: Restores a backed up certificate to a vault.
 - uid: az_keyvault_certificate_set_attributes
   name: az keyvault certificate set-attributes
   summary: Updates the specified attributes associated with the given certificate.

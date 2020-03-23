@@ -93,7 +93,7 @@ items:
     summary: The functions runtime stack.
     description: ''
   - name: --runtime-version
-    summary: 'The version of the functions runtime stack. Allowed values for each --runtime are: node -> [8, 10, 12], python -> [3.6, 3.7, 3.8], dotnet -> [2, 3], java -> [8].'
+    summary: 'The version of the functions runtime stack. Allowed values for each --runtime are: node -> [8, 10, 12], python -> [3.6, 3.7, 3.8], java -> [8].'
     description: ''
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
