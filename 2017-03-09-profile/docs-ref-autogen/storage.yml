@@ -117,6 +117,9 @@ items:
     parameterValueGroup: AppendBlob, BlockBlob, PageBlob
     summary: The type of blob at the destination.
     description: ''
+  - name: --content-type
+    summary: Specify content type of the file.
+    description: ''
   - name: --exclude-path
     summary: 'Exclude these paths. This option does not support wildcard characters (\*). Checks relative path prefix. For example: myFolder;myFolder/subDirName/file.pdf.'
     description: ''
