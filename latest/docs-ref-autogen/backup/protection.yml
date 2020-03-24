@@ -371,6 +371,10 @@ items:
   - name: --diskslist
     summary: List of disks to be excluded or included.
     description: ''
+  - name: --exclude-all-data-disks
+    parameterValueGroup: false, true
+    summary: Option to specify to backup OS disk only.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
@@ -509,17 +513,19 @@ items:
     summary: Name of the backup container. Accepts 'Name' or 'FriendlyName' from the output of az backup container list command. If 'FriendlyName' is passed then BackupManagementType is required.
     description: ''
   - isRequired: true
-    name: --disk-list-setting
+    name: --item-name -i
+    summary: Name of the backed up item.
+    description: ''
+  - name: --disk-list-setting
     parameterValueGroup: exclude, include, resetexclusionsettings
     summary: Option to decide whether to include or exclude the disk or reset any previous settings to default behavior.
     description: ''
-  - isRequired: true
-    name: --diskslist
+  - name: --diskslist
     summary: List of disks to be excluded or included.
     description: ''
-  - isRequired: true
-    name: --item-name -i
-    summary: Name of the backed up item.
+  - name: --exclude-all-data-disks
+    parameterValueGroup: false, true
+    summary: Option to specify to backup OS disk only.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
