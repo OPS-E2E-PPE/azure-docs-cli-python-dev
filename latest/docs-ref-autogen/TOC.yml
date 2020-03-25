@@ -3898,6 +3898,9 @@
     uid: az_monitor
     displayName: az monitor
     items:
+    - name: clone
+      uid: az_monitor_clone
+      displayName: az monitor clone
     - name: Activity log
       uid: az_monitor_activity_log
       displayName: az monitor activity-log
