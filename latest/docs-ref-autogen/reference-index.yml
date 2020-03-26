@@ -421,6 +421,9 @@ commands:
 - uid: az_lab
   name: az lab
   summary: Manage Azure DevTest Labs.
+- uid: az_local_context
+  name: az local-context
+  summary: Manage Local Context.
 - uid: az_lock
   name: az lock
   summary: Manage Azure locks.

@@ -4379,6 +4379,16 @@
     - name: update
       uid: az_extension_update
       displayName: az extension update
+  - name: local-context
+    uid: az_local_context
+    displayName: az local-context
+    items:
+    - name: off
+      uid: az_local_context_off
+      displayName: az local-context off
+    - name: on
+      uid: az_local_context_on
+      displayName: az local-context on
   - name: pipelines
     uid: az_pipelines
     displayName: az pipelines

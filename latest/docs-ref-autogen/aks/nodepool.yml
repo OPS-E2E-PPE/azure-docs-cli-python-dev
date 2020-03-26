@@ -52,6 +52,11 @@ items:
   - name: --min-count
     summary: Minimum nodes count used for autoscaler, when "--enable-cluster-autoscaler" specified. Please specify the value in the range of [1, 100].
     description: ''
+  - name: --mode
+    defaultValue: User
+    parameterValueGroup: System, User
+    summary: The mode for a node pool which defines a node pool's primary function. If set as "System", AKS prefers system pods scheduling to node pools with mode `System`. Learn more at <a href="https://aka.ms/aks/nodepool/mode">https://aka.ms/aks/nodepool/mode</a>.
+    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
@@ -265,6 +270,10 @@ items:
   - name: --min-count
     summary: Minimum nodes count used for autoscaler, when "--enable-cluster-autoscaler" specified. Please specify the value in the range of [1, 100].
     description: ''
+  - name: --mode
+    parameterValueGroup: System, User
+    summary: The mode for a node pool which defines a node pool's primary function. If set as "System", AKS prefers system pods scheduling to node pools with mode `System`. Learn more at <a href="https://aka.ms/aks/nodepool/mode">https://aka.ms/aks/nodepool/mode</a>.
+    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
@@ -362,7 +371,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/7a5fab8bacce9516d9bbbc45ea167967297f6317/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 3/26/2020 4:51:04 AM
+gitcommit: https://github.com/Azure/azure-cli/blob/51141839f7585e68c800002dc2608e44b5f8c5d3/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 3/26/2020 8:02:37 AM
 ms.date: 03/26/2020
 description: Commands to manage node pools in Kubernetes kubernetes cluster.

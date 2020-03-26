@@ -325,6 +325,9 @@ commands:
 - uid: az_keyvault
   name: az keyvault
   summary: Manage KeyVault keys, secrets, and certificates.
+- uid: az_local_context
+  name: az local-context
+  summary: Manage Local Context.
 - uid: az_lock
   name: az lock
   summary: Manage Azure locks.

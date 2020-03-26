@@ -11837,6 +11837,16 @@
       - name: wait
         uid: az_kusto_database_wait
         displayName: az kusto database wait
+  - name: local-context
+    uid: az_local_context
+    displayName: az local-context
+    items:
+    - name: off
+      uid: az_local_context_off
+      displayName: az local-context off
+    - name: on
+      uid: az_local_context_on
+      displayName: az local-context on
   - name: managedservices
     uid: az_managedservices
     displayName: az managedservices
