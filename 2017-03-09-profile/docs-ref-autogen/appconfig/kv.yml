@@ -104,7 +104,11 @@ items:
     description: ''
   - name: --skip-features
     parameterValueGroup: false, true
-    summary: Export only key values and exclude all feature flags. By default, all features with the specified label will be exported to file or appconfig. Not applicable for appservice.
+    summary: Export items excluding all feature flags. By default, all features with the specified label will be exported to file or appconfig. Not applicable for appservice.
+    description: ''
+  - name: --skip-keyvault
+    parameterValueGroup: false, true
+    summary: Export items excluding all key vault references. By default, all key vault references with the specified label will be exported.
     description: ''
   - name: --yes -y
     summary: Do not prompt for preview.
