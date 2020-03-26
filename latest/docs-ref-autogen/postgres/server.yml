@@ -42,6 +42,9 @@ items:
     name: --sku-name
     summary: 'The name of the sku. Follows the convention {pricing tier}_{compute generation}_{vCores} in shorthand. Examples: B_Gen5_1, GP_Gen5_4, MO_Gen5_16.'
     description: ''
+  - name: --assign-identity
+    summary: Generate and assign an Azure Active Directory Identity for this server for use with key management services like Azure KeyVault.
+    description: ''
   - name: --auto-grow
     defaultValue: Enabled
     parameterValueGroup: Disabled, Enabled
@@ -306,6 +309,9 @@ items:
   - name: --admin-password -p
     summary: 'The password of the administrator. Minimum 8 characters and maximum 128 characters. Password must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters.'
     description: ''
+  - name: --assign-identity
+    summary: Generate and assign an Azure Active Directory Identity for this server for use with key management services like Azure KeyVault.
+    description: ''
   - name: --auto-grow
     parameterValueGroup: Disabled, Enabled
     summary: Enable or disable autogrow of the storage. Default value is Enabled.
@@ -429,6 +435,21 @@ commands:
 - uid: az_postgres_server_georestore
   name: az postgres server georestore
   summary: Geo-restore a server from backup.
+- uid: az_postgres_server_key
+  name: az postgres server key
+  summary: Manage PostgreSQL server keys.
+- uid: az_postgres_server_key_create
+  name: az postgres server key create
+  summary: Create server key.
+- uid: az_postgres_server_key_delete
+  name: az postgres server key delete
+  summary: Delete server key.
+- uid: az_postgres_server_key_list
+  name: az postgres server key list
+  summary: Gets a list of  Server keys.
+- uid: az_postgres_server_key_show
+  name: az postgres server key show
+  summary: Show server key.
 - uid: az_postgres_server_list
   name: az postgres server list
   summary: List available servers.

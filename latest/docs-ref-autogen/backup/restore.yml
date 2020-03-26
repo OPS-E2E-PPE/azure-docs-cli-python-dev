@@ -210,6 +210,10 @@ items:
   - name: --diskslist
     summary: List of disks to be excluded or included.
     description: ''
+  - name: --restore-as-unmanaged-disks
+    parameterValueGroup: false, true
+    summary: Use this flag to specify to restore as unmanaged disks.
+    description: ''
   - name: --restore-only-osdisk
     parameterValueGroup: false, true
     summary: Use this flag to restore only OS disks of a backed up VM.

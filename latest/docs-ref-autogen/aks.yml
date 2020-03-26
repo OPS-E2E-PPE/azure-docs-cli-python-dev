@@ -114,6 +114,9 @@ items:
   - summary: Create a kubernetes cluster which enables managed identity.
     syntax:
       content: az aks create -g MyResourceGroup -n MyManagedCluster --enable-managed-identity
+  - summary: Create a kubernetes cluster with userDefinedRouting, standard load balancer SKU and a custom subnet preconfigured with a route table
+    syntax:
+      content: az aks create -g MyResourceGroup -n MyManagedCluster --outbound-type userDefinedRouting --load-balancer-sku standard --vnet-subnet-id customUserSubnetVnetID
   parameters:
   - isRequired: true
     name: --name -n
@@ -257,6 +260,10 @@ items:
   - name: --nodepool-tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
+  - name: --outbound-type
+    parameterValueGroup: loadBalancer, userDefinedRouting
+    summary: How outbound traffic will be configured for a cluster.
+    description: Select between loadBalancer and userDefinedRouting. If not set, defaults to type loadBalancer. Requires --vnet-subnet-id to be provided with a preconfigured route table and --load-balancer-sku to be Standard.
   - name: --pod-cidr
     summary: A CIDR notation IP range from which to assign pod IPs when kubenet is used.
     description: This range must not overlap with any Subnet IP ranges. For example, 172.244.0.0/16.
@@ -1349,7 +1356,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/aa589091861360e8ed3bd454ee29a23208df66d1/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 3/19/2020 2:00:20 AM
-ms.date: 03/19/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/7a5fab8bacce9516d9bbbc45ea167967297f6317/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 3/26/2020 4:51:04 AM
+ms.date: 03/26/2020
 description: Manage Azure Kubernetes Services.

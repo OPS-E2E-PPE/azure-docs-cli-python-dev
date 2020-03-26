@@ -4291,6 +4291,22 @@
         - name: update
           uid: az_mysql_server_firewall_rule_update
           displayName: az mysql server firewall-rule update
+      - name: key
+        uid: az_mysql_server_key
+        displayName: az mysql server key
+        items:
+        - name: create
+          uid: az_mysql_server_key_create
+          displayName: az mysql server key create
+        - name: delete
+          uid: az_mysql_server_key_delete
+          displayName: az mysql server key delete
+        - name: list
+          uid: az_mysql_server_key_list
+          displayName: az mysql server key list
+        - name: show
+          uid: az_mysql_server_key_show
+          displayName: az mysql server key show
       - name: private-endpoint-connection
         uid: az_mysql_server_private_endpoint_connection
         displayName: az mysql server private-endpoint-connection
@@ -6673,6 +6689,22 @@
         - name: update
           uid: az_postgres_server_firewall_rule_update
           displayName: az postgres server firewall-rule update
+      - name: key
+        uid: az_postgres_server_key
+        displayName: az postgres server key
+        items:
+        - name: create
+          uid: az_postgres_server_key_create
+          displayName: az postgres server key create
+        - name: delete
+          uid: az_postgres_server_key_delete
+          displayName: az postgres server key delete
+        - name: list
+          uid: az_postgres_server_key_list
+          displayName: az postgres server key list
+        - name: show
+          uid: az_postgres_server_key_show
+          displayName: az postgres server key show
       - name: private-endpoint-connection
         uid: az_postgres_server_private_endpoint_connection
         displayName: az postgres server private-endpoint-connection
