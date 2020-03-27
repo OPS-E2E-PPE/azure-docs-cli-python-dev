@@ -188,9 +188,6 @@ items:
     parameterValueGroup: All, Runtime
     summary: The type of the auto trigger for base image dependency updates.
     description: ''
-  - name: --branch
-    summary: The source control branch name. Please specify your source branch in the context parameter e.g. <a href="https://github.com/Azure-Samples/acr-build-helloworld-node.git#mybranch">https://github.com/Azure-Samples/acr-build-helloworld-node.git#mybranch</a>.
-    description: ''
   - name: --commit-trigger-enabled
     defaultValue: "1"
     parameterValueGroup: false, true
@@ -640,9 +637,6 @@ items:
   - name: --base-image-trigger-type
     parameterValueGroup: All, Runtime
     summary: The type of the auto trigger for base image dependency updates.
-    description: ''
-  - name: --branch
-    summary: The source control branch name. Please specify your source branch in the context parameter e.g. <a href="https://github.com/Azure-Samples/acr-build-helloworld-node.git#mybranch">https://github.com/Azure-Samples/acr-build-helloworld-node.git#mybranch</a>.
     description: ''
   - name: --commit-trigger-enabled
     parameterValueGroup: false, true

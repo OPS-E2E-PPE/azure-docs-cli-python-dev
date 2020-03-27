@@ -13,7 +13,7 @@ items:
 - uid: az_vm_user_delete
   name: az vm user delete
   summary: Delete a user account from a VM.
-  description: ''
+  description: Also deletes the user home directory on Linux VMs.
   langs:
   - azurecli
   examples:
@@ -167,7 +167,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/38ed3f964c1a7b47ac09b5363a83ff51eb5692b9/src/azure-cli/azure/cli/command_modules/vm/_help.py
-updated_at: 3/25/2020 9:18:21 AM
-ms.date: 03/25/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/d8debb3209d0f0ead4fbff14922c1f5e476f5474/src/azure-cli/azure/cli/command_modules/vm/_help.py
+updated_at: 3/27/2020 1:43:00 AM
+ms.date: 03/27/2020
 description: Manage user accounts for a VM.
