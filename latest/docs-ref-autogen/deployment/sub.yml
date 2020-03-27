@@ -140,6 +140,9 @@ items:
     syntax:
       content: az deployment sub list
   parameters:
+  - name: --filter
+    summary: Filter expression using OData notation. You can use --filter "provisioningState eq '{state}'" to filter provisioningState. To get more information, please visit <a href="https://docs.microsoft.com/en-us/rest/api/resources/deployments/listatsubscriptionscope#uri-parameters">https://docs.microsoft.com/en-us/rest/api/resources/deployments/listatsubscriptionscope#uri-parameters</a>.
+    description: ''
   - name: --only-show-errors
     summary: Only show errors, suppressing warnings.
     description: ''
