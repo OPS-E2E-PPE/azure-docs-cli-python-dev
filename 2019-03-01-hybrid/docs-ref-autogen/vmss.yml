@@ -21,6 +21,7 @@ items:
   - az_vmss_reimage
   - az_vmss_restart
   - az_vmss_scale
+  - az_vmss_set_orchestration_service_state
   - az_vmss_show
   - az_vmss_start
   - az_vmss_stop
@@ -747,6 +748,49 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
+- uid: az_vmss_set_orchestration_service_state
+  name: az vmss set-orchestration-service-state
+  summary: Change ServiceState property for a given service within a VMSS.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Change ServiceState property for AutomaticRepairs
+    syntax:
+      content: az vmss set-orchestration-service-state --service-name AutomaticRepairs --action Resume --name MyScaleSet --resource-group MyResourceGroup
+  parameters:
+  - isRequired: true
+    name: --action
+    summary: The action to be performed.
+    description: ''
+  - isRequired: true
+    name: --service-name
+    summary: The name of the orchestration service.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Scale set name. You can configure the default using `az configure --defaults vmss=&lt;name&gt;`.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/vm/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/vm/_help.py
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vmss_show
   name: az vmss show
   summary: Get details on VMs within a VMSS.
@@ -1171,6 +1215,9 @@ commands:
 - uid: az_vmss_scale
   name: az vmss scale
   summary: Change the number of VMs within a VMSS.
+- uid: az_vmss_set_orchestration_service_state
+  name: az vmss set-orchestration-service-state
+  summary: Change ServiceState property for a given service within a VMSS.
 - uid: az_vmss_show
   name: az vmss show
   summary: Get details on VMs within a VMSS.
@@ -1205,7 +1252,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/d8debb3209d0f0ead4fbff14922c1f5e476f5474/src/azure-cli/azure/cli/command_modules/vm/_help.py
-updated_at: 3/27/2020 1:43:00 AM
+gitcommit: https://github.com/Azure/azure-cli/blob/8b855ecd6debdc7ef141bfc5e02a5b8b6f5fad10/src/azure-cli/azure/cli/command_modules/vm/_help.py
+updated_at: 3/27/2020 8:14:13 AM
 ms.date: 03/27/2020
 description: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).

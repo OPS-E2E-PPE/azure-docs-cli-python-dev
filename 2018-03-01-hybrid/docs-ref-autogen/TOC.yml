@@ -3318,6 +3318,9 @@
     - name: scale
       uid: az_vmss_scale
       displayName: az vmss scale
+    - name: set-orchestration-service-state
+      uid: az_vmss_set_orchestration_service_state
+      displayName: az vmss set-orchestration-service-state
     - name: show
       uid: az_vmss_show
       displayName: az vmss show

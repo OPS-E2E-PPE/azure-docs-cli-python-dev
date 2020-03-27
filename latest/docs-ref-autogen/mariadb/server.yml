@@ -60,6 +60,10 @@ items:
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
+  - name: --public-network-access
+    parameterValueGroup: Disabled, Enabled
+    summary: Set whether public network access to server is allowed or not. When false, only connections made through Private Links can reach this server.
+    description: ''
   - name: --ssl-enforcement
     parameterValueGroup: Disabled, Enabled
     summary: Enable or disable ssl enforcement for connections to server. Default is Enabled.
@@ -321,6 +325,10 @@ items:
     description: ''
   - name: --backup-retention
     summary: The number of days a backup is retained. Range of 7 to 35 days. Default is 7 days.
+    description: ''
+  - name: --public-network-access
+    parameterValueGroup: Disabled, Enabled
+    summary: Set whether public network access to server is allowed or not. When false, only connections made through Private Links can reach this server.
     description: ''
   - name: --sku-name
     summary: 'The name of the sku. Follows the convention {pricing tier}_{compute generation}_{vCores} in shorthand. Examples: B_Gen5_1, GP_Gen5_4, MO_Gen5_16.'

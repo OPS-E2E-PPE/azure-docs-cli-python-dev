@@ -179,8 +179,8 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/d8debb3209d0f0ead4fbff14922c1f5e476f5474/src/azure-cli/azure/cli/command_modules/vm/_help.py
-updated_at: 3/27/2020 1:43:00 AM
+gitcommit: https://github.com/Azure/azure-cli/blob/8b855ecd6debdc7ef141bfc5e02a5b8b6f5fad10/src/azure-cli/azure/cli/command_modules/vm/_help.py
+updated_at: 3/27/2020 8:14:13 AM
 ms.date: 03/27/2020
 description: >-
   Azure Virtual Machines use disks as a place to store an operating system, applications, and data. All Azure virtual machines have at least two disks: An operating system disk, and a temporary disk. The operating system disk is created from an image, and both the operating system disk and the image are actually virtual hard disks (VHDs) stored in an Azure storage account. Virtual machines also can have one or more data disks, that are also stored as VHDs.
