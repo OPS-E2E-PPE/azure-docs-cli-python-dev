@@ -70,6 +70,9 @@ items:
   - name: --host -t
     summary: Host name.
     description: ''
+  - name: --if-none-match
+    summary: Create the record set only if it does not already exist.
+    description: ''
   - name: --minimum-ttl -m
     summary: Minimum TTL (time-to-live, seconds).
     description: ''

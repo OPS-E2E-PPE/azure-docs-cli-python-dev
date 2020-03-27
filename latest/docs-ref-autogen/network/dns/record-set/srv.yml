@@ -55,6 +55,9 @@ items:
     name: --zone-name -z
     summary: The name of the zone.
     description: ''
+  - name: --if-none-match
+    summary: Create the record set only if it does not already exist.
+    description: ''
   - name: --only-show-errors
     summary: Only show errors, suppressing warnings.
     description: ''
