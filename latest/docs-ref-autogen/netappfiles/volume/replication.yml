@@ -1,117 +1,43 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_netappfiles_pool
-  name: az netappfiles pool
-  summary: Manage Azure NetApp Files (ANF) Pool Resources.
+- uid: az_netappfiles_volume_replication
+  name: az netappfiles volume replication
+  summary: Manage Azure NetApp Files (ANF) Volume replication operations.
   description: ''
   langs:
   - azurecli
   children:
-  - az_netappfiles_pool_create
-  - az_netappfiles_pool_delete
-  - az_netappfiles_pool_list
-  - az_netappfiles_pool_show
-  - az_netappfiles_pool_update
-- uid: az_netappfiles_pool_create
-  name: az netappfiles pool create
-  summary: Create a new Azure NetApp Files (ANF) pool.
+  - az_netappfiles_volume_replication_approve
+  - az_netappfiles_volume_replication_remove
+  - az_netappfiles_volume_replication_resume
+  - az_netappfiles_volume_replication_status
+  - az_netappfiles_volume_replication_suspend
+- uid: az_netappfiles_volume_replication_approve
+  name: az netappfiles volume replication approve
+  summary: Authorize a volume as a replication destination for a specified source.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Create an ANF pool
+  - summary: Authorize the volume as the replication destination for the source
     syntax:
-      content: az netappfiles pool create -g mygroup --account-name myaccountname --name mypoolname -l westus2 --size 8 --service-level premium
+      content: az netappfiles volume replication approve -g mygroup --account-name myaccname --pool-name mypoolname --name mysourcevolname --remote-volume-resource-id /subscriptions/69a75bda-882e-44d5-8431-63421204131c/resourceGroups/mygroup1/providers/Microsoft.NetApp/netAppAccounts/myaccount1/capacityPools/mypool1/volumes/mydestinationvolume
   parameters:
   - isRequired: true
     name: --account-name -a
     summary: The name of the ANF account.
     description: ''
   - isRequired: true
-    name: --location -l
-    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
+    name: --name --volume-name -n -v
+    summary: The name of the replication source volume.
     description: ''
   - isRequired: true
-    name: --name --pool-name -n -p
+    name: --pool-name -p
     summary: The name of the ANF pool.
     description: ''
   - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - isRequired: true
-    name: --service-level
-    parameterValueGroup: Premium, Standard, Ultra
-    summary: The service level for the ANF pool.
-    description: ''
-  - isRequired: true
-    name: --size
-    summary: The size for the ANF pool. Must be an integer number of tebibytes in multiples of 4.
-    description: ''
-  - name: --tags
-    summary: Space-separated tags in `key[=value]` format.
-    description: ''
-  - name: --only-show-errors
-    summary: Only show errors, suppressing warnings.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_netappfiles_pool_delete
-  name: az netappfiles pool delete
-  summary: Delete the specified ANF pool.
-  description: ''
-  langs:
-  - azurecli
-  examples:
-  - summary: Delete an ANF pool
-    syntax:
-      content: az netappfiles pool delete -g mygroup --account-name myaccname --name mypoolname
-  parameters:
-  - name: --account-name -a
-    summary: The name of the ANF account.
-    description: ''
-  - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
-    description: ''
-  - name: --name --pool-name -n -p
-    summary: The name of the ANF pool.
-    description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  - name: --only-show-errors
-    summary: Only show errors, suppressing warnings.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_netappfiles_pool_list
-  name: az netappfiles pool list
-  summary: L:ist the ANF pools for the specified account.
-  description: ''
-  langs:
-  - azurecli
-  examples:
-  - summary: List the pools for the ANF account
-    syntax:
-      content: az netappfiles pool list -g mygroup --account-name myname
-  parameters:
-  - isRequired: true
-    name: --account-name -a
-    summary: The name of the ANF account.
+    name: --remote-volume-resource-id -d
+    summary: The resource id of the destination replication volume.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -129,16 +55,16 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_netappfiles_pool_show
-  name: az netappfiles pool show
-  summary: Get the specified ANF pool.
+- uid: az_netappfiles_volume_replication_remove
+  name: az netappfiles volume replication remove
+  summary: Delete a volume replication for the specified destination volume. The data replication objects of source and destination volumes will be removed.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Get an ANF pool
+  - summary: Delete the replication objects of the paired volumes
     syntax:
-      content: az netappfiles pool show -g mygroup --account-name myaccname --name mypoolname
+      content: az netappfiles volume replication remove -g mygroup --account-name myaccname --pool-name mypoolname --name mydestinationvolname
   parameters:
   - name: --account-name -a
     summary: The name of the ANF account.
@@ -146,7 +72,10 @@ items:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
-  - name: --name --pool-name -n -p
+  - name: --name --volume-name -n -v
+    summary: The name of the replication destination volume.
+    description: ''
+  - name: --pool-name -p
     summary: The name of the ANF pool.
     description: ''
   - name: --resource-group -g
@@ -164,34 +93,27 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_netappfiles_pool_update
-  name: az netappfiles pool update
-  summary: Update the tags of the specified ANF pool.
+- uid: az_netappfiles_volume_replication_resume
+  name: az netappfiles volume replication resume
+  summary: Resync a volume replication for the specified destination volume. The replication process is resumed from source to destination.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Update specific values for an ANF pool
+  - summary: Resume the replication process
     syntax:
-      content: az netappfiles pool update -g mygroup --account-name myaccname --name mypoolname --service-level ultra --tags mytag1=abcd mytag2=efgh
+      content: az netappfiles volume replication resume -g mygroup --account-name myaccname --pool-name mypoolname --name mydestinationvolname
   parameters:
-  - name: --service-level
-    parameterValueGroup: Premium, Standard, Ultra
-    summary: The service level for the ANF pool.
-    description: ''
-  - name: --size
-    summary: The size for the ANF pool. Must be an integer number of tebibytes in multiples of 4.
-    description: ''
-  - name: --tags
-    summary: Space-separated tags in `key[=value]` format.
-    description: ''
   - name: --account-name -a
     summary: The name of the ANF account.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
-  - name: --name --pool-name -n -p
+  - name: --name --volume-name -n -v
+    summary: The name of the replication destination volume.
+    description: ''
+  - name: --pool-name -p
     summary: The name of the ANF pool.
     description: ''
   - name: --resource-group -g
@@ -200,17 +122,81 @@ items:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  - name: --add
-    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
     description: ''
-  - name: --force-string
-    summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
+  source:
+    path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_netappfiles_volume_replication_status
+  name: az netappfiles volume replication status
+  summary: Get the replication status for the specified replication volume.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Get the replication status for the volume. Returns whether the replication is healthy, the replication schedule and the mirror state (whether replication is suspened/broken or synced/mirrored)
+    syntax:
+      content: az netappfiles volume replication status -g mygroup --account-name myaccname --pool-name mypoolname --name mydestinationvolname
+  parameters:
+  - name: --account-name -a
+    summary: The name of the ANF account.
     description: ''
-  - name: --remove
-    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
-  - name: --set
-    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+  - name: --name --volume-name -n -v
+    summary: The name of the replication destination volume.
+    description: ''
+  - name: --pool-name -p
+    summary: The name of the ANF pool.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_netappfiles_volume_replication_suspend
+  name: az netappfiles volume replication suspend
+  summary: Suspend/break a volume replication for the specified destination volume. The replication process is suspended until resumed or deleted.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Suspend the replication process
+    syntax:
+      content: az netappfiles volume replication suspend -g mygroup --account-name myaccname --pool-name mypoolname --name mydestinationvolname
+  parameters:
+  - name: --account-name -a
+    summary: The name of the ANF account.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name --volume-name -n -v
+    summary: The name of the replication destination volume.
+    description: ''
+  - name: --pool-name -p
+    summary: The name of the ANF pool.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --only-show-errors
     summary: Only show errors, suppressing warnings.
@@ -222,21 +208,21 @@ items:
       path: src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_netappfiles_pool_create
-  name: az netappfiles pool create
-  summary: Create a new Azure NetApp Files (ANF) pool.
-- uid: az_netappfiles_pool_delete
-  name: az netappfiles pool delete
-  summary: Delete the specified ANF pool.
-- uid: az_netappfiles_pool_list
-  name: az netappfiles pool list
-  summary: L:ist the ANF pools for the specified account.
-- uid: az_netappfiles_pool_show
-  name: az netappfiles pool show
-  summary: Get the specified ANF pool.
-- uid: az_netappfiles_pool_update
-  name: az netappfiles pool update
-  summary: Update the tags of the specified ANF pool.
+- uid: az_netappfiles_volume_replication_approve
+  name: az netappfiles volume replication approve
+  summary: Authorize a volume as a replication destination for a specified source.
+- uid: az_netappfiles_volume_replication_remove
+  name: az netappfiles volume replication remove
+  summary: Delete a volume replication for the specified destination volume. The data replication objects of source and destination volumes will be removed.
+- uid: az_netappfiles_volume_replication_resume
+  name: az netappfiles volume replication resume
+  summary: Resync a volume replication for the specified destination volume. The replication process is resumed from source to destination.
+- uid: az_netappfiles_volume_replication_status
+  name: az netappfiles volume replication status
+  summary: Get the replication status for the specified replication volume.
+- uid: az_netappfiles_volume_replication_suspend
+  name: az netappfiles volume replication suspend
+  summary: Suspend/break a volume replication for the specified destination volume. The replication process is suspended until resumed or deleted.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -256,4 +242,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/f0ac9c57d71c7937f2559698515312bec268cdf7/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 updated_at: 3/29/2020 2:41:28 PM
 ms.date: 03/29/2020
-description: Manage Azure NetApp Files (ANF) Pool Resources.
+description: Manage Azure NetApp Files (ANF) Volume replication operations.

@@ -12173,6 +12173,25 @@
         - name: remove
           uid: az_netappfiles_volume_export_policy_remove
           displayName: az netappfiles volume export-policy remove
+      - name: replication
+        uid: az_netappfiles_volume_replication
+        displayName: az netappfiles volume replication
+        items:
+        - name: approve
+          uid: az_netappfiles_volume_replication_approve
+          displayName: az netappfiles volume replication approve
+        - name: remove
+          uid: az_netappfiles_volume_replication_remove
+          displayName: az netappfiles volume replication remove
+        - name: resume
+          uid: az_netappfiles_volume_replication_resume
+          displayName: az netappfiles volume replication resume
+        - name: status
+          uid: az_netappfiles_volume_replication_status
+          displayName: az netappfiles volume replication status
+        - name: suspend
+          uid: az_netappfiles_volume_replication_suspend
+          displayName: az netappfiles volume replication suspend
   - name: openshift
     uid: az_openshift
     displayName: az openshift
