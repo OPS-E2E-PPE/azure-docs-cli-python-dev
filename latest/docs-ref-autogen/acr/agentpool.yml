@@ -1,34 +1,129 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_acr_private_endpoint_connection
-  name: az acr private-endpoint-connection
-  summary: Manage container registry private endpoint connections.
-  description: To create a private endpoint connection use "az network private-endpoint create". For more information see <a href="https://aka.ms/acr/private-link">https://aka.ms/acr/private-link</a>.
+- uid: az_acr_agentpool
+  name: az acr agentpool
+  summary: Manage private Tasks agent pools with Azure Container Registries.
+  description: ''
   langs:
   - azurecli
   children:
-  - az_acr_private_endpoint_connection_approve
-  - az_acr_private_endpoint_connection_delete
-  - az_acr_private_endpoint_connection_list
-  - az_acr_private_endpoint_connection_reject
-  - az_acr_private_endpoint_connection_show
-- uid: az_acr_private_endpoint_connection_approve
-  name: az acr private-endpoint-connection approve
-  summary: Approve a private endpoint connection request for a container registry.
-  description: To create a private endpoint connection use "az network private-endpoint create". For more information see <a href="https://aka.ms/acr/private-link">https://aka.ms/acr/private-link</a>.
+  - az_acr_agentpool_create
+  - az_acr_agentpool_delete
+  - az_acr_agentpool_list
+  - az_acr_agentpool_show
+  - az_acr_agentpool_update
+- uid: az_acr_agentpool_create
+  name: az acr agentpool create
+  summary: Create an agent pool for an Azure Container Registry.
+  description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Create the agent pool 'MyAgentName' associated with the registry 'MyRegistry'.
+    syntax:
+      content: az acr agentpool create -n MyAgentName -r MyRegistry
+  - summary: Create the agent pool 'MyAgentName' with 2 agent count.
+    syntax:
+      content: az acr agentpool create -n MyAgentName -r MyRegistry --count 2
+  - summary: Create the agent pool 'MyAgentName' associated with the registry 'MyRegistry' in VNET subnet.
+    syntax:
+      content: az acr agentpool create -n MyAgentName -r MyRegistry --subnet-id /subscriptions/<SubscriptionId>/resourceGroups/<ResourceGroupName>/providers/Microsoft.ClassicNetwork/virtualNetworks/<myNetwork>/subnets/<subNet>
   parameters:
   - isRequired: true
     name: --name -n
-    summary: The name of the private endpoint connection.
+    summary: The name of the agent pool.
     description: ''
   - isRequired: true
-    name: --registry-name -r
+    name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
-  - name: --description
-    summary: Approval description. For example, the reason for approval.
+  - name: --count -c
+    defaultValue: "1"
+    summary: The count of the agent pool.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the Agent Pool to complete action and return immediately after queuing the request.
+    description: ''
+  - name: --os
+    defaultValue: Linux
+    summary: The os of the agent pool.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subnet-id
+    summary: The Virtual Network Subnet Resource Id of the agent machine.
+    description: ''
+  - name: --tier
+    defaultValue: S1
+    summary: 'Sets the VM your agent pool will run on. Valid values are: S1(2 vCPUs, 3 MiB RAM), S2(4 vCPUs, 8 MiB RAM) or S3(8 vCPUs, 16 MiB RAM).'
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/acr/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/acr/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_acr_agentpool_delete
+  name: az acr agentpool delete
+  summary: Delete an agent pool.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Delete the agent pool 'MyAgentName'.
+    syntax:
+      content: az acr agentpool delete -n MyAgentName -r MyRegistry
+  parameters:
+  - isRequired: true
+    name: --name -n
+    summary: The name of the agent pool.
+    description: ''
+  - isRequired: true
+    name: --registry -r
+    summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the Agent Pool to complete action and return immediately after queuing the request.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --yes -y
+    summary: Do not prompt for confirmation.
+    description: ''
+  - name: --only-show-errors
+    summary: Only show errors, suppressing warnings.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/acr/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/acr/_help.py
+      repo: https://github.com/Azure/azure-cli.git
+- uid: az_acr_agentpool_list
+  name: az acr agentpool list
+  summary: List the agent pools for an Azure Container Registry.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: List agent pools and show the result in a table.
+    syntax:
+      content: az acr agentpool list -r MyRegistry -o table
+  parameters:
+  - isRequired: true
+    name: --registry -r
+    summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -45,20 +140,27 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/acr/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_acr_private_endpoint_connection_delete
-  name: az acr private-endpoint-connection delete
-  summary: Delete a private endpoint connection request for a container registry.
-  description: To create a private endpoint connection use "az network private-endpoint create". For more information see <a href="https://aka.ms/acr/private-link">https://aka.ms/acr/private-link</a>.
+- uid: az_acr_agentpool_show
+  name: az acr agentpool show
+  summary: Get the properties of a specified agent pool for an Azure Container Registry.
+  description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Get the properties of an agent pool, displaying the results in a table.
+    syntax:
+      content: az acr agentpool show -n MyAgentName -r MyRegistry -o table
   parameters:
   - isRequired: true
     name: --name -n
-    summary: The name of the private endpoint connection.
+    summary: The name of the agent pool.
     description: ''
   - isRequired: true
-    name: --registry-name -r
+    name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
+    description: ''
+  - name: --queue-count
+    summary: Get only the queue count.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -75,79 +177,30 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/acr/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_acr_private_endpoint_connection_list
-  name: az acr private-endpoint-connection list
-  summary: List all private endpoint connections to a container registry.
-  description: To create a private endpoint connection use "az network private-endpoint create". For more information see <a href="https://aka.ms/acr/private-link">https://aka.ms/acr/private-link</a>.
+- uid: az_acr_agentpool_update
+  name: az acr agentpool update
+  summary: Update an agent pool for an Azure Container Registry.
+  description: ''
   langs:
   - azurecli
-  parameters:
-  - isRequired: true
-    name: --registry-name -r
-    summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
-    description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --only-show-errors
-    summary: Only show errors, suppressing warnings.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/acr/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_acr_private_endpoint_connection_reject
-  name: az acr private-endpoint-connection reject
-  summary: Reject a private endpoint connection request for a container registry.
-  description: To create a private endpoint connection use "az network private-endpoint create". For more information see <a href="https://aka.ms/acr/private-link">https://aka.ms/acr/private-link</a>.
-  langs:
-  - azurecli
+  examples:
+  - summary: Update the agent pool 'MyAgentName' count to 5
+    syntax:
+      content: az acr agentpool update -n MyAgentName -r MyRegistry --count 5
   parameters:
   - isRequired: true
     name: --name -n
-    summary: The name of the private endpoint connection.
+    summary: The name of the agent pool.
     description: ''
   - isRequired: true
-    name: --registry-name -r
+    name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
-  - name: --description
-    summary: Rejection description. For example, the reason for rejection.
+  - name: --count -c
+    summary: The count of the agent pool.
     description: ''
-  - name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --only-show-errors
-    summary: Only show errors, suppressing warnings.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/acr/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/acr/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_acr_private_endpoint_connection_show
-  name: az acr private-endpoint-connection show
-  summary: Show details of a container registry's private endpoint connection.
-  description: To create a private endpoint connection use "az network private-endpoint create". For more information see <a href="https://aka.ms/acr/private-link">https://aka.ms/acr/private-link</a>.
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --name -n
-    summary: The name of the private endpoint connection.
-    description: ''
-  - isRequired: true
-    name: --registry-name -r
-    summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
+  - name: --no-wait
+    summary: Do not wait for the Agent Pool to complete action and return immediately after queuing the request.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -165,21 +218,21 @@ items:
       path: src/azure-cli/azure/cli/command_modules/acr/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_acr_private_endpoint_connection_approve
-  name: az acr private-endpoint-connection approve
-  summary: Approve a private endpoint connection request for a container registry.
-- uid: az_acr_private_endpoint_connection_delete
-  name: az acr private-endpoint-connection delete
-  summary: Delete a private endpoint connection request for a container registry.
-- uid: az_acr_private_endpoint_connection_list
-  name: az acr private-endpoint-connection list
-  summary: List all private endpoint connections to a container registry.
-- uid: az_acr_private_endpoint_connection_reject
-  name: az acr private-endpoint-connection reject
-  summary: Reject a private endpoint connection request for a container registry.
-- uid: az_acr_private_endpoint_connection_show
-  name: az acr private-endpoint-connection show
-  summary: Show details of a container registry's private endpoint connection.
+- uid: az_acr_agentpool_create
+  name: az acr agentpool create
+  summary: Create an agent pool for an Azure Container Registry.
+- uid: az_acr_agentpool_delete
+  name: az acr agentpool delete
+  summary: Delete an agent pool.
+- uid: az_acr_agentpool_list
+  name: az acr agentpool list
+  summary: List the agent pools for an Azure Container Registry.
+- uid: az_acr_agentpool_show
+  name: az acr agentpool show
+  summary: Get the properties of a specified agent pool for an Azure Container Registry.
+- uid: az_acr_agentpool_update
+  name: az acr agentpool update
+  summary: Update an agent pool for an Azure Container Registry.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -199,4 +252,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/460d4ab2d7177ee7a868791f10cae7b186201fef/src/azure-cli/azure/cli/command_modules/acr/_help.py
 updated_at: 3/30/2020 6:07:50 AM
 ms.date: 03/30/2020
-description: To create a private endpoint connection use "az network private-endpoint create". For more information see <a href="https://aka.ms/acr/private-link">https://aka.ms/acr/private-link</a>.
+description: Manage private Tasks agent pools with Azure Container Registries.

@@ -49,6 +49,9 @@ items:
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
+  - name: --agent-pool
+    summary: The name of the agent pool.
+    description: ''
   - name: --auth-mode
     parameterValueGroup: Default, None
     summary: Auth mode of the source registry.
@@ -168,7 +171,7 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_create
   name: az acr create
-  summary: Creates an Azure Container Registry.
+  summary: Create an Azure Container Registry.
   description: ''
   langs:
   - azurecli
@@ -425,6 +428,9 @@ items:
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
+  - name: --agent-pool
+    summary: The name of the agent pool.
+    description: ''
   - name: --auth-mode
     parameterValueGroup: Default, None
     summary: Auth mode of the source registry.
@@ -601,6 +607,24 @@ items:
       path: src/azure-cli/azure/cli/command_modules/acr/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
+- uid: az_acr_agentpool
+  name: az acr agentpool
+  summary: Manage private Tasks agent pools with Azure Container Registries.
+- uid: az_acr_agentpool_create
+  name: az acr agentpool create
+  summary: Create an agent pool for an Azure Container Registry.
+- uid: az_acr_agentpool_delete
+  name: az acr agentpool delete
+  summary: Delete an agent pool.
+- uid: az_acr_agentpool_list
+  name: az acr agentpool list
+  summary: List the agent pools for an Azure Container Registry.
+- uid: az_acr_agentpool_show
+  name: az acr agentpool show
+  summary: Get the properties of a specified agent pool for an Azure Container Registry.
+- uid: az_acr_agentpool_update
+  name: az acr agentpool update
+  summary: Update an agent pool for an Azure Container Registry.
 - uid: az_acr_build
   name: az acr build
   summary: Queues a quick build, providing streaming logs for an Azure Container Registry.
@@ -633,7 +657,7 @@ commands:
   summary: Update retention policy for an Azure Container Registry.
 - uid: az_acr_create
   name: az acr create
-  summary: Creates an Azure Container Registry.
+  summary: Create an Azure Container Registry.
 - uid: az_acr_credential
   name: az acr credential
   summary: Manage login credentials for Azure Container Registries.
@@ -819,7 +843,7 @@ commands:
   summary: Cancel a specified run of an Azure Container Registry.
 - uid: az_acr_task_create
   name: az acr task create
-  summary: Creates a series of steps for building, testing and OS & Framework patching containers. Tasks support triggers from git commits and base image updates.
+  summary: Create a series of steps for building, testing and OS & Framework patching containers. Tasks support triggers from git commits and base image updates.
 - uid: az_acr_task_credential
   name: az acr task credential
   summary: Manage credentials for a task. Please see <a href="https://aka.ms/acr/tasks/cross-registry-authentication">https://aka.ms/acr/tasks/cross-registry-authentication</a> for more information.
@@ -977,7 +1001,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/f64c2a0aa19a217bb37c9c6f3231b88d08f4863e/src/azure-cli/azure/cli/command_modules/acr/_help.py
-updated_at: 3/17/2020 3:09:52 AM
-ms.date: 03/17/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/460d4ab2d7177ee7a868791f10cae7b186201fef/src/azure-cli/azure/cli/command_modules/acr/_help.py
+updated_at: 3/30/2020 6:07:50 AM
+ms.date: 03/30/2020
 description: Manage private registries with Azure Container Registries.

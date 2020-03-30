@@ -54,7 +54,7 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_acr_task_create
   name: az acr task create
-  summary: Creates a series of steps for building, testing and OS & Framework patching containers. Tasks support triggers from git commits and base image updates.
+  summary: Create a series of steps for building, testing and OS & Framework patching containers. Tasks support triggers from git commits and base image updates.
   description: ''
   langs:
   - azurecli
@@ -112,6 +112,9 @@ items:
   - isRequired: true
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
+    description: ''
+  - name: --agent-pool
+    summary: The name of the agent pool.
     description: ''
   - name: --arg
     summary: Build argument in '--arg name[=value]' format. Multiples supported by passing '--arg` multiple times.
@@ -423,6 +426,9 @@ items:
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
+  - name: --agent-pool
+    summary: The name of the agent pool.
+    description: ''
   - name: --arg
     summary: Build argument in '--arg name[=value]' format. Multiples supported by passing '--arg` multiple times.
     description: ''
@@ -575,6 +581,9 @@ items:
     name: --registry -r
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=&lt;registry name&gt;`.
     description: ''
+  - name: --agent-pool
+    summary: The name of the agent pool.
+    description: ''
   - name: --arg
     summary: Build argument in '--arg name[=value]' format. Multiples supported by passing '--arg` multiple times.
     description: ''
@@ -712,7 +721,7 @@ commands:
   summary: Cancel a specified run of an Azure Container Registry.
 - uid: az_acr_task_create
   name: az acr task create
-  summary: Creates a series of steps for building, testing and OS & Framework patching containers. Tasks support triggers from git commits and base image updates.
+  summary: Create a series of steps for building, testing and OS & Framework patching containers. Tasks support triggers from git commits and base image updates.
 - uid: az_acr_task_credential
   name: az acr task credential
   summary: Manage credentials for a task. Please see <a href="https://aka.ms/acr/tasks/cross-registry-authentication">https://aka.ms/acr/tasks/cross-registry-authentication</a> for more information.
@@ -798,7 +807,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acr/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/f64c2a0aa19a217bb37c9c6f3231b88d08f4863e/src/azure-cli/azure/cli/command_modules/acr/_help.py
-updated_at: 3/17/2020 3:09:52 AM
-ms.date: 03/17/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/460d4ab2d7177ee7a868791f10cae7b186201fef/src/azure-cli/azure/cli/command_modules/acr/_help.py
+updated_at: 3/30/2020 6:07:50 AM
+ms.date: 03/30/2020
 description: Manage a collection of steps for building, testing and OS & Framework patching container images using Azure Container Registries.

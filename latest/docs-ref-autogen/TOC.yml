@@ -1460,6 +1460,25 @@
       - name: update
         uid: az_acr_repository_update
         displayName: az acr repository update
+    - name: agentpool
+      uid: az_acr_agentpool
+      displayName: az acr agentpool
+      items:
+      - name: create
+        uid: az_acr_agentpool_create
+        displayName: az acr agentpool create
+      - name: delete
+        uid: az_acr_agentpool_delete
+        displayName: az acr agentpool delete
+      - name: list
+        uid: az_acr_agentpool_list
+        displayName: az acr agentpool list
+      - name: show
+        uid: az_acr_agentpool_show
+        displayName: az acr agentpool show
+      - name: update
+        uid: az_acr_agentpool_update
+        displayName: az acr agentpool update
     - name: config
       uid: az_acr_config
       displayName: az acr config
