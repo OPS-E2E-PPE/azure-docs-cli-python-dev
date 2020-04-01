@@ -7666,6 +7666,19 @@
         - name: show
           uid: az_sql_mi_key_show
           displayName: az sql mi key show
+      - name: op
+        uid: az_sql_mi_op
+        displayName: az sql mi op
+        items:
+        - name: cancel
+          uid: az_sql_mi_op_cancel
+          displayName: az sql mi op cancel
+        - name: list
+          uid: az_sql_mi_op_list
+          displayName: az sql mi op list
+        - name: show
+          uid: az_sql_mi_op_show
+          displayName: az sql mi op show
       - name: tde-key
         uid: az_sql_mi_tde_key
         displayName: az sql mi tde-key

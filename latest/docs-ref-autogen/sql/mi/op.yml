@@ -1,63 +1,35 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_sql_mi_key
-  name: az sql mi key
-  summary: Manage a SQL Instance's keys.
+- uid: az_sql_mi_op
+  name: az sql mi op
+  summary: Manage operations on a managed instance.
   description: ''
   langs:
   - azurecli
   children:
-  - az_sql_mi_key_create
-  - az_sql_mi_key_delete
-  - az_sql_mi_key_list
-  - az_sql_mi_key_show
-- uid: az_sql_mi_key_create
-  name: az sql mi key create
-  summary: Creates a SQL Instance key.
+  - az_sql_mi_op_cancel
+  - az_sql_mi_op_list
+  - az_sql_mi_op_show
+- uid: az_sql_mi_op_cancel
+  name: az sql mi op cancel
+  summary: Cancels the asynchronous operation on the managed instance.
   description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Cancel an operation.
+    syntax:
+      content: az sql mi op cancel -g mygroup --mi myManagedInstance -n d2896mydb-2ba8-4c84-bac1-387c430cce40
   parameters:
   - isRequired: true
-    name: --kid -k
-    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
-    description: ''
-  - isRequired: true
-    name: --managed-instance --mi
-    summary: Name of the Azure SQL managed instance.
-    description: ''
-  - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
-    description: ''
-  - name: --only-show-errors
-    summary: Only show errors, suppressing warnings.
-    description: ''
-  - name: --subscription
-    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-    description: ''
-  source:
-    path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-    remote:
-      branch: master
-      path: src/azure-cli/azure/cli/command_modules/sql/_help.py
-      repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_mi_key_delete
-  name: az sql mi key delete
-  summary: Deletes a SQL Instance key.
-  description: ''
-  langs:
-  - azurecli
-  parameters:
-  - isRequired: true
-    name: --kid -k
-    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
+    name: --name -n
+    summary: The unique name of the operation to cancel.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --managed-instance --mi
-    summary: Name of the Azure SQL managed instance.
+    summary: Name of the Azure SQL Managed Instance.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -74,21 +46,18 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_mi_key_list
-  name: az sql mi key list
-  summary: Gets a list of managed instance keys.
+- uid: az_sql_mi_op_list
+  name: az sql mi op list
+  summary: Gets a list of operations performed on the managed instance.
   description: ''
   langs:
   - azurecli
   parameters:
-  - name: --filter
-    summary: An OData filter expression that filters elements in the collection.
-    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --managed-instance --mi
-    summary: Name of the Azure SQL managed instance.
+    summary: Name of the Azure SQL Managed Instance.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -105,22 +74,22 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_sql_mi_key_show
-  name: az sql mi key show
-  summary: Shows a SQL Instance key.
+- uid: az_sql_mi_op_show
+  name: az sql mi op show
+  summary: Gets a management operation on a managed instance.
   description: ''
   langs:
   - azurecli
   parameters:
   - isRequired: true
-    name: --kid -k
-    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
+    name: --name -n
+    summary: The unique name of the operation to show.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
     description: ''
   - name: --managed-instance --mi
-    summary: Name of the Azure SQL managed instance.
+    summary: Name of the Azure SQL Managed Instance.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
@@ -138,18 +107,15 @@ items:
       path: src/azure-cli/azure/cli/command_modules/sql/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_sql_mi_key_create
-  name: az sql mi key create
-  summary: Creates a SQL Instance key.
-- uid: az_sql_mi_key_delete
-  name: az sql mi key delete
-  summary: Deletes a SQL Instance key.
-- uid: az_sql_mi_key_list
-  name: az sql mi key list
-  summary: Gets a list of managed instance keys.
-- uid: az_sql_mi_key_show
-  name: az sql mi key show
-  summary: Shows a SQL Instance key.
+- uid: az_sql_mi_op_cancel
+  name: az sql mi op cancel
+  summary: Cancels the asynchronous operation on the managed instance.
+- uid: az_sql_mi_op_list
+  name: az sql mi op list
+  summary: Gets a list of operations performed on the managed instance.
+- uid: az_sql_mi_op_show
+  name: az sql mi op show
+  summary: Gets a management operation on a managed instance.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -169,4 +135,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/3de7765b55498db05b121c32e2e1fcd1717de72f/src/azure-cli/azure/cli/command_modules/sql/_help.py
 updated_at: 4/1/2020 1:00:22 AM
 ms.date: 04/01/2020
-description: Manage a SQL Instance's keys.
+description: Manage operations on a managed instance.
