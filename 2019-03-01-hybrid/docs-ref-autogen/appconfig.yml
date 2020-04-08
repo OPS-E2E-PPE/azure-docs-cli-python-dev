@@ -342,7 +342,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/3d9400161881e6b434ef0ba0fec6772e6fa7b090/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
-updated_at: 2/13/2020 2:41:00 AM
-ms.date: 02/13/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/40c4ae7ae1b5f7f9d95f08666aa070df3980acd6/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+updated_at: 4/8/2020 8:27:25 AM
+ms.date: 04/08/2020
 description: Manage App Configurations.
