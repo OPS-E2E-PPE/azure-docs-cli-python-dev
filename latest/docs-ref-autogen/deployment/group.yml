@@ -59,6 +59,10 @@ items:
   - name: --name -n
     summary: The deployment name.
     description: ''
+  - name: --no-prompt
+    parameterValueGroup: false, true
+    summary: The option to disable the prompt of missing parameters for ARM template. When the value is true, the prompt requiring users to provide missing parameter will be ignored. The default value is false.
+    description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
@@ -237,6 +241,10 @@ items:
     description: ''
   - name: --name -n
     summary: The deployment name.
+    description: ''
+  - name: --no-prompt
+    parameterValueGroup: false, true
+    summary: The option to disable the prompt of missing parameters for ARM template. When the value is true, the prompt requiring users to provide missing parameter will be ignored. The default value is false.
     description: ''
   - name: --parameters -p
     summary: Supply deployment parameter values.

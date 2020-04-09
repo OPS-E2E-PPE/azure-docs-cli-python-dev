@@ -142,6 +142,7 @@ items:
     summary: Local configuration file path. Required for file arguments.
     description: ''
   - name: --resolve-keyvault
+    parameterValueGroup: false, true
     summary: Resolve the content of key vault reference.
     description: ''
   - name: --separator
@@ -271,7 +272,7 @@ items:
       content: az appconfig kv list --connection-string Endpoint=https://contoso.azconfig.io;Id=xxx;Secret=xxx --fields key value tags --datetime "2019-05-01T11:24:12Z"
   - summary: List content of key vault reference with key prefix 'KVRef_'.
     syntax:
-      content: az appconfig kv list --connection-string Endpoint=https://contoso.azconfig.io;Id=xxx;Secret=xxx  --key "KVRef_" --resolve-keyvault
+      content: az appconfig kv list --connection-string Endpoint=https://contoso.azconfig.io;Id=xxx;Secret=xxx  --key "KVRef_*" --resolve-keyvault
   - summary: List key-values with multiple labels.
     syntax:
       content: az appconfig kv list --label test,prod,\0 -n MyAppConfiguration
@@ -299,6 +300,7 @@ items:
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=&lt;name&gt;`.
     description: ''
   - name: --resolve-keyvault
+    parameterValueGroup: false, true
     summary: Resolve the content of key vault reference.
     description: ''
   - name: --top -t
@@ -634,7 +636,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/40c4ae7ae1b5f7f9d95f08666aa070df3980acd6/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
-updated_at: 4/8/2020 8:27:25 AM
-ms.date: 04/08/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/726f7d23d6b2fe03d2c964a1afc89d91c8450fcb/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+updated_at: 4/9/2020 2:02:32 AM
+ms.date: 04/09/2020
 description: Manage key-values stored in an App Configuration.
