@@ -4310,6 +4310,25 @@
         - name: update
           uid: az_mysql_server_firewall_rule_update
           displayName: az mysql server firewall-rule update
+      - name: ad-admin
+        uid: az_mysql_server_ad_admin
+        displayName: az mysql server ad-admin
+        items:
+        - name: create
+          uid: az_mysql_server_ad_admin_create
+          displayName: az mysql server ad-admin create
+        - name: delete
+          uid: az_mysql_server_ad_admin_delete
+          displayName: az mysql server ad-admin delete
+        - name: list
+          uid: az_mysql_server_ad_admin_list
+          displayName: az mysql server ad-admin list
+        - name: show
+          uid: az_mysql_server_ad_admin_show
+          displayName: az mysql server ad-admin show
+        - name: wait
+          uid: az_mysql_server_ad_admin_wait
+          displayName: az mysql server ad-admin wait
       - name: key
         uid: az_mysql_server_key
         displayName: az mysql server key
@@ -6708,6 +6727,25 @@
         - name: update
           uid: az_postgres_server_firewall_rule_update
           displayName: az postgres server firewall-rule update
+      - name: ad-admin
+        uid: az_postgres_server_ad_admin
+        displayName: az postgres server ad-admin
+        items:
+        - name: create
+          uid: az_postgres_server_ad_admin_create
+          displayName: az postgres server ad-admin create
+        - name: delete
+          uid: az_postgres_server_ad_admin_delete
+          displayName: az postgres server ad-admin delete
+        - name: list
+          uid: az_postgres_server_ad_admin_list
+          displayName: az postgres server ad-admin list
+        - name: show
+          uid: az_postgres_server_ad_admin_show
+          displayName: az postgres server ad-admin show
+        - name: wait
+          uid: az_postgres_server_ad_admin_wait
+          displayName: az postgres server ad-admin wait
       - name: key
         uid: az_postgres_server_key
         displayName: az postgres server key
@@ -8482,6 +8520,9 @@
       uid: az_storage_logging
       displayName: az storage logging
       items:
+      - name: off
+        uid: az_storage_logging_off
+        displayName: az storage logging off
       - name: show
         uid: az_storage_logging_show
         displayName: az storage logging show

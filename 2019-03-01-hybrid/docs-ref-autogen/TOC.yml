@@ -3626,6 +3626,9 @@
       uid: az_storage_logging
       displayName: az storage logging
       items:
+      - name: off
+        uid: az_storage_logging_off
+        displayName: az storage logging off
       - name: show
         uid: az_storage_logging_show
         displayName: az storage logging show
