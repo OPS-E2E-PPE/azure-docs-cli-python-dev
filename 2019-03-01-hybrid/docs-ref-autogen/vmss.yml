@@ -55,6 +55,9 @@ items:
   - summary: 'Create a Linux VM scale set using a cloud-init script for configuration. See: https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-using-cloud-init'
     syntax:
       content: az vmss create -g MyResourceGroup -n MyVmss --image debian --custom-data MyCloudInitScript.yml
+  - summary: Create a Linux VM scale set from a specialized image version.
+    syntax:
+      content: az vmss create -n MyVmss -g MyResourceGroup --image $id --specialized
   - summary: Create a Debian VM scaleset using Key Vault secrets.
     syntax:
       content: >-
@@ -288,6 +291,10 @@ items:
   - name: --os-type
     parameterValueGroup: linux, windows
     summary: Type of OS installed on a custom VHD. Do not use when specifying an URN or URN alias.
+    description: ''
+  - name: --specialized
+    parameterValueGroup: false, true
+    summary: Indicate whether the source image is specialized.
     description: ''
   - name: --storage-container-name
     defaultValue: vhds
@@ -1252,7 +1259,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/89ad796dab6188a565a2a1d280aa9ec6dc959b59/src/azure-cli/azure/cli/command_modules/vm/_help.py
-updated_at: 3/30/2020 6:57:31 AM
-ms.date: 03/30/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/c0847f6ee0853528ba0dcf9cd35bf9555157d754/src/azure-cli/azure/cli/command_modules/vm/_help.py
+updated_at: 4/15/2020 7:20:48 AM
+ms.date: 04/15/2020
 description: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).

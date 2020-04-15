@@ -2331,6 +2331,9 @@
       uid: az_group_deployment
       displayName: az group deployment
       items:
+      - name: cancel
+        uid: az_group_deployment_cancel
+        displayName: az group deployment cancel
       - name: create
         uid: az_group_deployment_create
         displayName: az group deployment create
@@ -4074,6 +4077,9 @@
       uid: az_deployment_group
       displayName: az deployment group
       items:
+      - name: cancel
+        uid: az_deployment_group_cancel
+        displayName: az deployment group cancel
       - name: create
         uid: az_deployment_group_create
         displayName: az deployment group create

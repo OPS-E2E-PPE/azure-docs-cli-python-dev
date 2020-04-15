@@ -7004,6 +7004,9 @@
       uid: az_group_deployment
       displayName: az group deployment
       items:
+      - name: cancel
+        uid: az_group_deployment_cancel
+        displayName: az group deployment cancel
       - name: create
         uid: az_group_deployment_create
         displayName: az group deployment create
@@ -10938,6 +10941,9 @@
     uid: az_deployment
     displayName: az deployment
     items:
+    - name: cancel
+      uid: az_deployment_cancel
+      displayName: az deployment cancel
     - name: create
       uid: az_deployment_create
       displayName: az deployment create
@@ -10963,6 +10969,9 @@
       uid: az_deployment_group
       displayName: az deployment group
       items:
+      - name: cancel
+        uid: az_deployment_group_cancel
+        displayName: az deployment group cancel
       - name: create
         uid: az_deployment_group_create
         displayName: az deployment group create
@@ -10988,6 +10997,9 @@
       uid: az_deployment_mg
       displayName: az deployment mg
       items:
+      - name: cancel
+        uid: az_deployment_mg_cancel
+        displayName: az deployment mg cancel
       - name: create
         uid: az_deployment_mg_create
         displayName: az deployment mg create
@@ -11063,6 +11075,9 @@
       uid: az_deployment_sub
       displayName: az deployment sub
       items:
+      - name: cancel
+        uid: az_deployment_sub_cancel
+        displayName: az deployment sub cancel
       - name: create
         uid: az_deployment_sub_create
         displayName: az deployment sub create
@@ -11088,6 +11103,9 @@
       uid: az_deployment_tenant
       displayName: az deployment tenant
       items:
+      - name: cancel
+        uid: az_deployment_tenant_cancel
+        displayName: az deployment tenant cancel
       - name: create
         uid: az_deployment_tenant_create
         displayName: az deployment tenant create
