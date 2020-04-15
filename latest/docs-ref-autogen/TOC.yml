@@ -10176,6 +10176,31 @@
       - name: list
         uid: az_appconfig_revision_list
         displayName: az appconfig revision list
+  - name: aro
+    uid: az_aro
+    displayName: az aro
+    items:
+    - name: create
+      uid: az_aro_create
+      displayName: az aro create
+    - name: delete
+      uid: az_aro_delete
+      displayName: az aro delete
+    - name: list
+      uid: az_aro_list
+      displayName: az aro list
+    - name: list-credentials
+      uid: az_aro_list_credentials
+      displayName: az aro list-credentials
+    - name: show
+      uid: az_aro_show
+      displayName: az aro show
+    - name: update
+      uid: az_aro_update
+      displayName: az aro update
+    - name: wait
+      uid: az_aro_wait
+      displayName: az aro wait
   - name: artifacts
     uid: az_artifacts
     displayName: az artifacts
