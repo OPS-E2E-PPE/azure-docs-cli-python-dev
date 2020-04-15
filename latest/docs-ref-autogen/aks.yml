@@ -178,6 +178,9 @@ items:
   - name: --enable-managed-identity
     summary: Using a system assigned managed identity to manage cluster resource group.
     description: ''
+  - name: --enable-node-public-ip
+    summary: Enable VMSS node public IP.
+    description: ''
   - name: --enable-private-cluster
     summary: Enable private cluster.
     description: ''
@@ -1359,7 +1362,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e5c5370814d238e4b639e378cb706ecd06c9aceb/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 3/31/2020 4:54:27 AM
-ms.date: 03/31/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/a92ab8b970b441dca715e231abbf7076cc47ad74/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 4/15/2020 8:43:08 AM
+ms.date: 04/15/2020
 description: Manage Azure Kubernetes Services.
