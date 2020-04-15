@@ -4217,6 +4217,70 @@
           - name: list
             uid: az_monitor_log_analytics_workspace_pack_list
             displayName: az monitor log-analytics workspace pack list
+    - name: private-link-scope
+      uid: az_monitor_private_link_scope
+      displayName: az monitor private-link-scope
+      items:
+      - name: create
+        uid: az_monitor_private_link_scope_create
+        displayName: az monitor private-link-scope create
+      - name: delete
+        uid: az_monitor_private_link_scope_delete
+        displayName: az monitor private-link-scope delete
+      - name: list
+        uid: az_monitor_private_link_scope_list
+        displayName: az monitor private-link-scope list
+      - name: show
+        uid: az_monitor_private_link_scope_show
+        displayName: az monitor private-link-scope show
+      - name: update
+        uid: az_monitor_private_link_scope_update
+        displayName: az monitor private-link-scope update
+      - name: private-endpoint-connection
+        uid: az_monitor_private_link_scope_private_endpoint_connection
+        displayName: az monitor private-link-scope private-endpoint-connection
+        items:
+        - name: approve
+          uid: az_monitor_private_link_scope_private_endpoint_connection_approve
+          displayName: az monitor private-link-scope private-endpoint-connection approve
+        - name: delete
+          uid: az_monitor_private_link_scope_private_endpoint_connection_delete
+          displayName: az monitor private-link-scope private-endpoint-connection delete
+        - name: list
+          uid: az_monitor_private_link_scope_private_endpoint_connection_list
+          displayName: az monitor private-link-scope private-endpoint-connection list
+        - name: reject
+          uid: az_monitor_private_link_scope_private_endpoint_connection_reject
+          displayName: az monitor private-link-scope private-endpoint-connection reject
+        - name: show
+          uid: az_monitor_private_link_scope_private_endpoint_connection_show
+          displayName: az monitor private-link-scope private-endpoint-connection show
+      - name: private-link-resource
+        uid: az_monitor_private_link_scope_private_link_resource
+        displayName: az monitor private-link-scope private-link-resource
+        items:
+        - name: list
+          uid: az_monitor_private_link_scope_private_link_resource_list
+          displayName: az monitor private-link-scope private-link-resource list
+        - name: show
+          uid: az_monitor_private_link_scope_private_link_resource_show
+          displayName: az monitor private-link-scope private-link-resource show
+      - name: scoped-resource
+        uid: az_monitor_private_link_scope_scoped_resource
+        displayName: az monitor private-link-scope scoped-resource
+        items:
+        - name: create
+          uid: az_monitor_private_link_scope_scoped_resource_create
+          displayName: az monitor private-link-scope scoped-resource create
+        - name: delete
+          uid: az_monitor_private_link_scope_scoped_resource_delete
+          displayName: az monitor private-link-scope scoped-resource delete
+        - name: list
+          uid: az_monitor_private_link_scope_scoped_resource_list
+          displayName: az monitor private-link-scope scoped-resource list
+        - name: show
+          uid: az_monitor_private_link_scope_scoped_resource_show
+          displayName: az monitor private-link-scope scoped-resource show
   - name: MySQL
     uid: az_mysql
     displayName: az mysql
