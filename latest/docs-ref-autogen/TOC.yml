@@ -1419,6 +1419,9 @@
     - name: show
       uid: az_acr_show
       displayName: az acr show
+    - name: show-endpoints
+      uid: az_acr_show_endpoints
+      displayName: az acr show-endpoints
     - name: show-usage
       uid: az_acr_show_usage
       displayName: az acr show-usage
