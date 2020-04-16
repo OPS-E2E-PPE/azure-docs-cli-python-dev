@@ -30,7 +30,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/c0847f6ee0853528ba0dcf9cd35bf9555157d754/src/azure-cli/azure/cli/command_modules/vm/_help.py
-updated_at: 4/15/2020 7:20:48 AM
-ms.date: 04/15/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/b686fed3266fa52dae3acee9d5c72571bf049174/src/azure-cli/azure/cli/command_modules/vm/_help.py
+updated_at: 4/16/2020 9:21:55 AM
+ms.date: 04/16/2020
 description: Manage monitor aspect for a vm.
