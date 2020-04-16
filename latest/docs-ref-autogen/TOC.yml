@@ -8128,6 +8128,22 @@
         - name: update
           uid: az_storage_account_blob_service_properties_update
           displayName: az storage account blob-service-properties update
+      - name: encryption-scope
+        uid: az_storage_account_encryption_scope
+        displayName: az storage account encryption-scope
+        items:
+        - name: create
+          uid: az_storage_account_encryption_scope_create
+          displayName: az storage account encryption-scope create
+        - name: list
+          uid: az_storage_account_encryption_scope_list
+          displayName: az storage account encryption-scope list
+        - name: show
+          uid: az_storage_account_encryption_scope_show
+          displayName: az storage account encryption-scope show
+        - name: update
+          uid: az_storage_account_encryption_scope_update
+          displayName: az storage account encryption-scope update
       - name: management-policy
         uid: az_storage_account_management_policy
         displayName: az storage account management-policy
