@@ -429,13 +429,13 @@ items:
     description: ''
   - name: --encryption-key-source
     parameterValueGroup: Microsoft.Keyvault, Microsoft.Storage
-    summary: The default encryption service.
+    summary: The default encryption key source.
     description: ''
   - name: --encryption-key-vault
     summary: The Uri of the KeyVault.
     description: ''
   - name: --encryption-key-version
-    summary: The version of the KeyVault key.
+    summary: The version of the KeyVault key to use, which will opt out of implicit key rotation. Please use "" to opt in key auto-rotation again.
     description: ''
   - name: --bypass
     parameterValueGroup: AzureServices, Logging, Metrics, None
