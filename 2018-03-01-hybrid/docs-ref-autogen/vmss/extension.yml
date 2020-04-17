@@ -126,7 +126,7 @@ items:
     summary: Extension settings in JSON format. A JSON file path is also accepted.
     description: ''
   - name: --version
-    summary: The version of the extension.
+    summary: The version of the extension. To pin extension version to this value, please specify --no-auto-upgrade.
     description: ''
   - name: --only-show-errors
     summary: Only show errors, suppressing warnings.

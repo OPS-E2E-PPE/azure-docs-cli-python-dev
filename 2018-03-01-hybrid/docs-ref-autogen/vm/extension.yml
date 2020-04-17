@@ -132,7 +132,7 @@ items:
     summary: Extension settings in JSON format. A JSON file path is also accepted.
     description: ''
   - name: --version
-    summary: The version of the extension.
+    summary: The version of the extension. To pin extension version to this value, please specify --no-auto-upgrade.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
