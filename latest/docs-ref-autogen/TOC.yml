@@ -3396,6 +3396,29 @@
         - name: show
           uid: az_iot_hub_routing_endpoint_show
           displayName: az iot hub routing-endpoint show
+    - name: central
+      uid: az_iot_central
+      displayName: az iot central
+      items:
+      - name: app
+        uid: az_iot_central_app
+        displayName: az iot central app
+        items:
+        - name: create
+          uid: az_iot_central_app_create
+          displayName: az iot central app create
+        - name: delete
+          uid: az_iot_central_app_delete
+          displayName: az iot central app delete
+        - name: list
+          uid: az_iot_central_app_list
+          displayName: az iot central app list
+        - name: show
+          uid: az_iot_central_app_show
+          displayName: az iot central app show
+        - name: update
+          uid: az_iot_central_app_update
+          displayName: az iot central app update
     - name: dps
       uid: az_iot_dps
       displayName: az iot dps
