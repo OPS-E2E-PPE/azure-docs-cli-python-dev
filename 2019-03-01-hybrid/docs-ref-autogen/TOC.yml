@@ -5243,6 +5243,22 @@
       - name: wait
         uid: az_deployment_sub_wait
         displayName: az deployment sub wait
+  - name: deployment-scripts
+    uid: az_deployment_scripts
+    displayName: az deployment-scripts
+    items:
+    - name: delete
+      uid: az_deployment_scripts_delete
+      displayName: az deployment-scripts delete
+    - name: list
+      uid: az_deployment_scripts_list
+      displayName: az deployment-scripts list
+    - name: show
+      uid: az_deployment_scripts_show
+      displayName: az deployment-scripts show
+    - name: show-log
+      uid: az_deployment_scripts_show_log
+      displayName: az deployment-scripts show-log
   - name: devops
     uid: az_devops
     displayName: az devops

@@ -118,7 +118,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/resource/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/d02f641723aee668d7a0c09292b22faac0146f0f/src/azure-cli/azure/cli/command_modules/resource/_help.py
-updated_at: 4/15/2020 7:48:15 AM
-ms.date: 04/15/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/01473b12526c832eb1d6f00e80752888673dd92f/src/azure-cli/azure/cli/command_modules/resource/_help.py
+updated_at: 4/17/2020 2:08:17 AM
+ms.date: 04/17/2020
 description: Manage deployment operations at subscription scope.
