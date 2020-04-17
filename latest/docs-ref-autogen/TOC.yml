@@ -2123,6 +2123,29 @@
       - name: remove
         uid: az_cosmosdb_network_rule_remove
         displayName: az cosmosdb network-rule remove
+    - name: private-endpoint-connection
+      uid: az_cosmosdb_private_endpoint_connection
+      displayName: az cosmosdb private-endpoint-connection
+      items:
+      - name: approve
+        uid: az_cosmosdb_private_endpoint_connection_approve
+        displayName: az cosmosdb private-endpoint-connection approve
+      - name: delete
+        uid: az_cosmosdb_private_endpoint_connection_delete
+        displayName: az cosmosdb private-endpoint-connection delete
+      - name: reject
+        uid: az_cosmosdb_private_endpoint_connection_reject
+        displayName: az cosmosdb private-endpoint-connection reject
+      - name: show
+        uid: az_cosmosdb_private_endpoint_connection_show
+        displayName: az cosmosdb private-endpoint-connection show
+    - name: private-link-resource
+      uid: az_cosmosdb_private_link_resource
+      displayName: az cosmosdb private-link-resource
+      items:
+      - name: list
+        uid: az_cosmosdb_private_link_resource_list
+        displayName: az cosmosdb private-link-resource list
     - name: sql
       uid: az_cosmosdb_sql
       displayName: az cosmosdb sql
@@ -6367,6 +6390,28 @@
       - name: update
         uid: az_network_private_endpoint_update
         displayName: az network private-endpoint update
+      - name: dns-zone-group
+        uid: az_network_private_endpoint_dns_zone_group
+        displayName: az network private-endpoint dns-zone-group
+        items:
+        - name: add
+          uid: az_network_private_endpoint_dns_zone_group_add
+          displayName: az network private-endpoint dns-zone-group add
+        - name: create
+          uid: az_network_private_endpoint_dns_zone_group_create
+          displayName: az network private-endpoint dns-zone-group create
+        - name: delete
+          uid: az_network_private_endpoint_dns_zone_group_delete
+          displayName: az network private-endpoint dns-zone-group delete
+        - name: list
+          uid: az_network_private_endpoint_dns_zone_group_list
+          displayName: az network private-endpoint dns-zone-group list
+        - name: remove
+          uid: az_network_private_endpoint_dns_zone_group_remove
+          displayName: az network private-endpoint dns-zone-group remove
+        - name: show
+          uid: az_network_private_endpoint_dns_zone_group_show
+          displayName: az network private-endpoint dns-zone-group show
     - name: private-link-service
       uid: az_network_private_link_service
       displayName: az network private-link-service
@@ -7819,6 +7864,35 @@
       - name: show
         uid: az_sql_midb_show
         displayName: az sql midb show
+      - name: ltr-backup
+        uid: az_sql_midb_ltr_backup
+        displayName: az sql midb ltr-backup
+        items:
+        - name: delete
+          uid: az_sql_midb_ltr_backup_delete
+          displayName: az sql midb ltr-backup delete
+        - name: list
+          uid: az_sql_midb_ltr_backup_list
+          displayName: az sql midb ltr-backup list
+        - name: restore
+          uid: az_sql_midb_ltr_backup_restore
+          displayName: az sql midb ltr-backup restore
+        - name: show
+          uid: az_sql_midb_ltr_backup_show
+          displayName: az sql midb ltr-backup show
+        - name: wait
+          uid: az_sql_midb_ltr_backup_wait
+          displayName: az sql midb ltr-backup wait
+      - name: ltr-policy
+        uid: az_sql_midb_ltr_policy
+        displayName: az sql midb ltr-policy
+        items:
+        - name: set
+          uid: az_sql_midb_ltr_policy_set
+          displayName: az sql midb ltr-policy set
+        - name: show
+          uid: az_sql_midb_ltr_policy_show
+          displayName: az sql midb ltr-policy show
       - name: short-term-retention-policy
         uid: az_sql_midb_short_term_retention_policy
         displayName: az sql midb short-term-retention-policy

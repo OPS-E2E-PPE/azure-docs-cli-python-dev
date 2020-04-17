@@ -132,7 +132,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/sql/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/3de7765b55498db05b121c32e2e1fcd1717de72f/src/azure-cli/azure/cli/command_modules/sql/_help.py
-updated_at: 4/1/2020 1:00:22 AM
-ms.date: 04/01/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/eca16ac696642eb40b58cf32aa96f3e845cae86d/src/azure-cli/azure/cli/command_modules/sql/_help.py
+updated_at: 4/17/2020 2:14:07 AM
+ms.date: 04/17/2020
 description: Manage SQL virtual clusters.
