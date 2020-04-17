@@ -258,7 +258,7 @@ items:
     description: ''
   - name: --nodepool-name
     defaultValue: nodepool1
-    summary: Node pool name, upto 12 alphanumeric characters.
+    summary: Node pool name, up to 12 alphanumeric characters.
     description: ''
   - name: --nodepool-tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
@@ -817,7 +817,7 @@ items:
     summary: Do not wait for the long-running operation to finish.
     description: ''
   - name: --nodepool-name
-    summary: Node pool name, upto 12 alphanumeric characters.
+    summary: Node pool name, up to 12 alphanumeric characters.
     description: ''
   - name: --only-show-errors
     summary: Only show errors, suppressing warnings.

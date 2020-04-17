@@ -14610,6 +14610,9 @@
         - name: cancel
           uid: ext_azure-cli-ml_az_ml_run_cancel
           displayName: az ml run cancel
+        - name: download-logs
+          uid: ext_azure-cli-ml_az_ml_run_download_logs
+          displayName: az ml run download-logs
         - name: list
           uid: ext_azure-cli-ml_az_ml_run_list
           displayName: az ml run list
