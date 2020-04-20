@@ -9302,12 +9302,18 @@
           uid: ext_eventgrid_az_eventgrid_domain_private_endpoint_connection
           displayName: az eventgrid domain private-endpoint-connection
           items:
+          - name: approve
+            uid: ext_eventgrid_az_eventgrid_domain_private_endpoint_connection_approve
+            displayName: az eventgrid domain private-endpoint-connection approve
           - name: delete
             uid: ext_eventgrid_az_eventgrid_domain_private_endpoint_connection_delete
             displayName: az eventgrid domain private-endpoint-connection delete
           - name: list
             uid: ext_eventgrid_az_eventgrid_domain_private_endpoint_connection_list
             displayName: az eventgrid domain private-endpoint-connection list
+          - name: reject
+            uid: ext_eventgrid_az_eventgrid_domain_private_endpoint_connection_reject
+            displayName: az eventgrid domain private-endpoint-connection reject
           - name: show
             uid: ext_eventgrid_az_eventgrid_domain_private_endpoint_connection_show
             displayName: az eventgrid domain private-endpoint-connection show
@@ -9534,12 +9540,18 @@
           uid: ext_eventgrid_az_eventgrid_topic_private_endpoint_connection
           displayName: az eventgrid topic private-endpoint-connection
           items:
+          - name: approve
+            uid: ext_eventgrid_az_eventgrid_topic_private_endpoint_connection_approve
+            displayName: az eventgrid topic private-endpoint-connection approve
           - name: delete
             uid: ext_eventgrid_az_eventgrid_topic_private_endpoint_connection_delete
             displayName: az eventgrid topic private-endpoint-connection delete
           - name: list
             uid: ext_eventgrid_az_eventgrid_topic_private_endpoint_connection_list
             displayName: az eventgrid topic private-endpoint-connection list
+          - name: reject
+            uid: ext_eventgrid_az_eventgrid_topic_private_endpoint_connection_reject
+            displayName: az eventgrid topic private-endpoint-connection reject
           - name: show
             uid: ext_eventgrid_az_eventgrid_topic_private_endpoint_connection_show
             displayName: az eventgrid topic private-endpoint-connection show
