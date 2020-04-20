@@ -13750,6 +13750,35 @@
         displayName: az signalr key renew
 - name: Extensions Reference
   items:
+  - name: account
+    uid: ext_account_az
+    items:
+    - name: Subscriptions
+      uid: ext_account_az_account
+      displayName: az account
+      items:
+      - name: subscription
+        uid: ext_account_az_account_subscription
+        displayName: az account subscription
+        items:
+        - name: cancel
+          uid: ext_account_az_account_subscription_cancel
+          displayName: az account subscription cancel
+        - name: create
+          uid: ext_account_az_account_subscription_create
+          displayName: az account subscription create
+        - name: create-csp
+          uid: ext_account_az_account_subscription_create_csp
+          displayName: az account subscription create-csp
+        - name: create-in-enrollment-account
+          uid: ext_account_az_account_subscription_create_in_enrollment_account
+          displayName: az account subscription create-in-enrollment-account
+        - name: enable
+          uid: ext_account_az_account_subscription_enable
+          displayName: az account subscription enable
+        - name: rename
+          uid: ext_account_az_account_subscription_rename
+          displayName: az account subscription rename
   - name: aem
     uid: ext_aem_az
     items:
