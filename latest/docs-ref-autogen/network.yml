@@ -1744,6 +1744,24 @@ commands:
 - uid: az_network_route_table_update
   name: az network route-table update
   summary: Update a route table.
+- uid: az_network_security_partner
+  name: az network security-partner
+  summary: Manage Azure security partner provider.
+- uid: az_network_security_partner_create
+  name: az network security-partner create
+  summary: Create a Azure security partner provider.
+- uid: az_network_security_partner_delete
+  name: az network security-partner delete
+  summary: Delete a Azure security partner provider.
+- uid: az_network_security_partner_list
+  name: az network security-partner list
+  summary: List all Azure security partner provider.
+- uid: az_network_security_partner_show
+  name: az network security-partner show
+  summary: Show a Azure security partner provider.
+- uid: az_network_security_partner_update
+  name: az network security-partner update
+  summary: Update a Azure security partner provider.
 - uid: az_network_service_endpoint
   name: az network service-endpoint
   summary: Manage policies related to service endpoints.
@@ -2234,7 +2252,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/8937383b291d1868dc9de81770c054bbcf4385d4/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 4/20/2020 6:24:19 AM
-ms.date: 04/20/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/2862ce52c97637541eeae93e2ffd31d019064710/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 4/22/2020 9:24:02 AM
+ms.date: 04/22/2020
 description: Manage Azure Network resources.

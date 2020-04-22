@@ -1913,6 +1913,16 @@
       - name: list
         uid: az_network_profile_list
         displayName: az network profile list
+    - name: security-partner
+      uid: az_network_security_partner
+      displayName: az network security-partner
+      items:
+      - name: create
+        uid: az_network_security_partner_create
+        displayName: az network security-partner create
+      - name: list
+        uid: az_network_security_partner_list
+        displayName: az network security-partner list
     - name: service-endpoint
       uid: az_network_service_endpoint
       displayName: az network service-endpoint
