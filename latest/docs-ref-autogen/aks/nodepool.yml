@@ -374,7 +374,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/a92ab8b970b441dca715e231abbf7076cc47ad74/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 4/15/2020 8:43:08 AM
-ms.date: 04/15/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/21172d9720777ddf1c4a75bcf6b0285d78bf5e46/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 4/23/2020 2:28:22 AM
+ms.date: 04/23/2020
 description: Commands to manage node pools in Kubernetes kubernetes cluster.
