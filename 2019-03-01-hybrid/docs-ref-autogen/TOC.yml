@@ -2831,16 +2831,16 @@
         - name: update
           uid: az_network_route_filter_rule_update
           displayName: az network route-filter rule update
-    - name: security-partner
-      uid: az_network_security_partner
-      displayName: az network security-partner
+    - name: security-partner-provider
+      uid: az_network_security_partner_provider
+      displayName: az network security-partner-provider
       items:
       - name: create
-        uid: az_network_security_partner_create
-        displayName: az network security-partner create
+        uid: az_network_security_partner_provider_create
+        displayName: az network security-partner-provider create
       - name: list
-        uid: az_network_security_partner_list
-        displayName: az network security-partner list
+        uid: az_network_security_partner_provider_list
+        displayName: az network security-partner-provider list
     - name: service-endpoint
       uid: az_network_service_endpoint
       displayName: az network service-endpoint

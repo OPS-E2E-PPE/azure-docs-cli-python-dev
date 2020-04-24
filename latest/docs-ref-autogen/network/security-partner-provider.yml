@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_network_security_partner
-  name: az network security-partner
+- uid: az_network_security_partner_provider
+  name: az network security-partner-provider
   summary: Manage Azure security partner provider.
   description: ''
   langs:
   - azurecli
   children:
-  - az_network_security_partner_create
-  - az_network_security_partner_delete
-  - az_network_security_partner_list
-  - az_network_security_partner_show
-  - az_network_security_partner_update
-- uid: az_network_security_partner_create
-  name: az network security-partner create
+  - az_network_security_partner_provider_create
+  - az_network_security_partner_provider_delete
+  - az_network_security_partner_provider_list
+  - az_network_security_partner_provider_show
+  - az_network_security_partner_provider_update
+- uid: az_network_security_partner_provider_create
+  name: az network security-partner-provider create
   summary: Create a Azure security partner provider.
   description: ''
   langs:
@@ -54,8 +54,8 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_network_security_partner_delete
-  name: az network security-partner delete
+- uid: az_network_security_partner_provider_delete
+  name: az network security-partner-provider delete
   summary: Delete a Azure security partner provider.
   description: ''
   langs:
@@ -81,8 +81,8 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_network_security_partner_list
-  name: az network security-partner list
+- uid: az_network_security_partner_provider_list
+  name: az network security-partner-provider list
   summary: List all Azure security partner provider.
   description: ''
   langs:
@@ -103,8 +103,8 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_network_security_partner_show
-  name: az network security-partner show
+- uid: az_network_security_partner_provider_show
+  name: az network security-partner-provider show
   summary: Show a Azure security partner provider.
   description: ''
   langs:
@@ -130,8 +130,8 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_network_security_partner_update
-  name: az network security-partner update
+- uid: az_network_security_partner_provider_update
+  name: az network security-partner-provider update
   summary: Update a Azure security partner provider.
   description: ''
   langs:
@@ -180,20 +180,20 @@ items:
       path: src/azure-cli/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_network_security_partner_create
-  name: az network security-partner create
+- uid: az_network_security_partner_provider_create
+  name: az network security-partner-provider create
   summary: Create a Azure security partner provider.
-- uid: az_network_security_partner_delete
-  name: az network security-partner delete
+- uid: az_network_security_partner_provider_delete
+  name: az network security-partner-provider delete
   summary: Delete a Azure security partner provider.
-- uid: az_network_security_partner_list
-  name: az network security-partner list
+- uid: az_network_security_partner_provider_list
+  name: az network security-partner-provider list
   summary: List all Azure security partner provider.
-- uid: az_network_security_partner_show
-  name: az network security-partner show
+- uid: az_network_security_partner_provider_show
+  name: az network security-partner-provider show
   summary: Show a Azure security partner provider.
-- uid: az_network_security_partner_update
-  name: az network security-partner update
+- uid: az_network_security_partner_provider_update
+  name: az network security-partner-provider update
   summary: Update a Azure security partner provider.
 globalParameters:
 - name: --debug
@@ -211,7 +211,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/2862ce52c97637541eeae93e2ffd31d019064710/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 4/22/2020 9:24:02 AM
-ms.date: 04/22/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/12367f8a1a1e9808c4bc6109b67c38adac88d833/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 4/24/2020 6:00:58 AM
+ms.date: 04/24/2020
 description: Manage Azure security partner provider.
