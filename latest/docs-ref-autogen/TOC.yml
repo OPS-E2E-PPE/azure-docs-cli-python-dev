@@ -4222,6 +4222,28 @@
       uid: az_monitor_log_analytics
       displayName: az monitor log-analytics
       items:
+      - name: cluster
+        uid: az_monitor_log_analytics_cluster
+        displayName: az monitor log-analytics cluster
+        items:
+        - name: create
+          uid: az_monitor_log_analytics_cluster_create
+          displayName: az monitor log-analytics cluster create
+        - name: delete
+          uid: az_monitor_log_analytics_cluster_delete
+          displayName: az monitor log-analytics cluster delete
+        - name: list
+          uid: az_monitor_log_analytics_cluster_list
+          displayName: az monitor log-analytics cluster list
+        - name: show
+          uid: az_monitor_log_analytics_cluster_show
+          displayName: az monitor log-analytics cluster show
+        - name: update
+          uid: az_monitor_log_analytics_cluster_update
+          displayName: az monitor log-analytics cluster update
+        - name: wait
+          uid: az_monitor_log_analytics_cluster_wait
+          displayName: az monitor log-analytics cluster wait
       - name: workspace
         uid: az_monitor_log_analytics_workspace
         displayName: az monitor log-analytics workspace
@@ -4253,6 +4275,28 @@
         - name: update
           uid: az_monitor_log_analytics_workspace_update
           displayName: az monitor log-analytics workspace update
+        - name: linked-service
+          uid: az_monitor_log_analytics_workspace_linked_service
+          displayName: az monitor log-analytics workspace linked-service
+          items:
+          - name: create
+            uid: az_monitor_log_analytics_workspace_linked_service_create
+            displayName: az monitor log-analytics workspace linked-service create
+          - name: delete
+            uid: az_monitor_log_analytics_workspace_linked_service_delete
+            displayName: az monitor log-analytics workspace linked-service delete
+          - name: list
+            uid: az_monitor_log_analytics_workspace_linked_service_list
+            displayName: az monitor log-analytics workspace linked-service list
+          - name: show
+            uid: az_monitor_log_analytics_workspace_linked_service_show
+            displayName: az monitor log-analytics workspace linked-service show
+          - name: update
+            uid: az_monitor_log_analytics_workspace_linked_service_update
+            displayName: az monitor log-analytics workspace linked-service update
+          - name: wait
+            uid: az_monitor_log_analytics_workspace_linked_service_wait
+            displayName: az monitor log-analytics workspace linked-service wait
         - name: pack
           uid: az_monitor_log_analytics_workspace_pack
           displayName: az monitor log-analytics workspace pack
