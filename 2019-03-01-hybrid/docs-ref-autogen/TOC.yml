@@ -2747,6 +2747,12 @@
         - name: delete
           uid: az_network_private_dns_zone_delete
           displayName: az network private-dns zone delete
+        - name: export
+          uid: az_network_private_dns_zone_export
+          displayName: az network private-dns zone export
+        - name: import
+          uid: az_network_private_dns_zone_import
+          displayName: az network private-dns zone import
         - name: list
           uid: az_network_private_dns_zone_list
           displayName: az network private-dns zone list
