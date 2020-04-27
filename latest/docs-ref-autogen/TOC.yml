@@ -11222,6 +11222,9 @@
       - name: wait
         uid: az_deployment_group_wait
         displayName: az deployment group wait
+      - name: what-if
+        uid: az_deployment_group_what_if
+        displayName: az deployment group what-if
     - name: mg
       uid: az_deployment_mg
       displayName: az deployment mg
@@ -11328,6 +11331,9 @@
       - name: wait
         uid: az_deployment_sub_wait
         displayName: az deployment sub wait
+      - name: what-if
+        uid: az_deployment_sub_what_if
+        displayName: az deployment sub what-if
     - name: tenant
       uid: az_deployment_tenant
       displayName: az deployment tenant
