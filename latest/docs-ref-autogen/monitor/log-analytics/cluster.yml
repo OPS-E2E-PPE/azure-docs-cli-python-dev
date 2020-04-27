@@ -297,7 +297,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/f4ff610ce4645293d8521e9c7c2ffc133650370d/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-updated_at: 4/26/2020 7:55:31 AM
-ms.date: 04/26/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/79964fb5ec46abb010362d8a812c75ad7a7e87ca/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+updated_at: 4/27/2020 5:00:33 AM
+ms.date: 04/27/2020
 description: Manage Azure log analytics cluster.

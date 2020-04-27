@@ -4297,6 +4297,28 @@
           - name: wait
             uid: az_monitor_log_analytics_workspace_linked_service_wait
             displayName: az monitor log-analytics workspace linked-service wait
+        - name: linked-storage
+          uid: az_monitor_log_analytics_workspace_linked_storage
+          displayName: az monitor log-analytics workspace linked-storage
+          items:
+          - name: add
+            uid: az_monitor_log_analytics_workspace_linked_storage_add
+            displayName: az monitor log-analytics workspace linked-storage add
+          - name: create
+            uid: az_monitor_log_analytics_workspace_linked_storage_create
+            displayName: az monitor log-analytics workspace linked-storage create
+          - name: delete
+            uid: az_monitor_log_analytics_workspace_linked_storage_delete
+            displayName: az monitor log-analytics workspace linked-storage delete
+          - name: list
+            uid: az_monitor_log_analytics_workspace_linked_storage_list
+            displayName: az monitor log-analytics workspace linked-storage list
+          - name: remove
+            uid: az_monitor_log_analytics_workspace_linked_storage_remove
+            displayName: az monitor log-analytics workspace linked-storage remove
+          - name: show
+            uid: az_monitor_log_analytics_workspace_linked_storage_show
+            displayName: az monitor log-analytics workspace linked-storage show
         - name: pack
           uid: az_monitor_log_analytics_workspace_pack
           displayName: az monitor log-analytics workspace pack

@@ -35,8 +35,16 @@ items:
     name: --workspace-name -n
     summary: Name of the Log Analytics Workspace.
     description: ''
+  - name: --ingestion-access
+    parameterValueGroup: Disabled, Enabled
+    summary: The public network access type to access workspace ingestion.
+    description: ''
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
+    description: ''
+  - name: --query-access
+    parameterValueGroup: Disabled, Enabled
+    summary: The public network access type to access workspace query.
     description: ''
   - name: --retention-time
     defaultValue: "30"
@@ -280,6 +288,14 @@ items:
     name: --workspace-name -n
     summary: Name of the Log Analytics Workspace.
     description: ''
+  - name: --ingestion-access
+    parameterValueGroup: Disabled, Enabled
+    summary: The public network access type to access workspace ingestion.
+    description: ''
+  - name: --query-access
+    parameterValueGroup: Disabled, Enabled
+    summary: The public network access type to access workspace query.
+    description: ''
   - name: --retention-time
     defaultValue: "30"
     summary: The workspace data retention in days.
@@ -345,6 +361,27 @@ commands:
 - uid: az_monitor_log_analytics_workspace_linked_service_wait
   name: az monitor log-analytics workspace linked-service wait
   summary: Place the CLI in a waiting state until a condition of the linked service is met.
+- uid: az_monitor_log_analytics_workspace_linked_storage
+  name: az monitor log-analytics workspace linked-storage
+  summary: Manage linked storage account for log analytics workspace.
+- uid: az_monitor_log_analytics_workspace_linked_storage_add
+  name: az monitor log-analytics workspace linked-storage add
+  summary: Add some linked storage accounts with specific data source type for log analytics workspace.
+- uid: az_monitor_log_analytics_workspace_linked_storage_create
+  name: az monitor log-analytics workspace linked-storage create
+  summary: Create some linked storage accounts for log analytics workspace.
+- uid: az_monitor_log_analytics_workspace_linked_storage_delete
+  name: az monitor log-analytics workspace linked-storage delete
+  summary: Delete all linked storage accounts with specific data source type for log analytics workspace.
+- uid: az_monitor_log_analytics_workspace_linked_storage_list
+  name: az monitor log-analytics workspace linked-storage list
+  summary: List all linked storage accounts for a log analytics workspace.
+- uid: az_monitor_log_analytics_workspace_linked_storage_remove
+  name: az monitor log-analytics workspace linked-storage remove
+  summary: Remove some linked storage accounts with specific data source type for log analytics workspace.
+- uid: az_monitor_log_analytics_workspace_linked_storage_show
+  name: az monitor log-analytics workspace linked-storage show
+  summary: List all linked storage accounts with specific data source type for a log analytics workspace.
 - uid: az_monitor_log_analytics_workspace_list
   name: az monitor log-analytics workspace list
   summary: Get a list of workspaces under a resource group or a subscription.
@@ -388,7 +425,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/f4ff610ce4645293d8521e9c7c2ffc133650370d/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-updated_at: 4/26/2020 7:55:31 AM
-ms.date: 04/26/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/79964fb5ec46abb010362d8a812c75ad7a7e87ca/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+updated_at: 4/27/2020 5:00:33 AM
+ms.date: 04/27/2020
 description: Manage Azure log analytics workspace.
