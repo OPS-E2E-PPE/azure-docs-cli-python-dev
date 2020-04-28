@@ -7882,6 +7882,28 @@
       - name: update
         uid: az_sql_instance_failover_group_update
         displayName: az sql instance-failover-group update
+    - name: instance-pool
+      uid: az_sql_instance_pool
+      displayName: az sql instance-pool
+      items:
+      - name: create
+        uid: az_sql_instance_pool_create
+        displayName: az sql instance-pool create
+      - name: delete
+        uid: az_sql_instance_pool_delete
+        displayName: az sql instance-pool delete
+      - name: list
+        uid: az_sql_instance_pool_list
+        displayName: az sql instance-pool list
+      - name: show
+        uid: az_sql_instance_pool_show
+        displayName: az sql instance-pool show
+      - name: update
+        uid: az_sql_instance_pool_update
+        displayName: az sql instance-pool update
+      - name: wait
+        uid: az_sql_instance_pool_wait
+        displayName: az sql instance-pool wait
     - name: mi
       uid: az_sql_mi
       displayName: az sql mi
@@ -14093,6 +14115,22 @@
             - name: update
               uid: ext_application-insights_az_monitor_app_insights_component_billing_update
               displayName: az monitor app-insights component billing update
+          - name: linked-storage
+            uid: ext_application-insights_az_monitor_app_insights_component_linked_storage
+            displayName: az monitor app-insights component linked-storage
+            items:
+            - name: link
+              uid: ext_application-insights_az_monitor_app_insights_component_linked_storage_link
+              displayName: az monitor app-insights component linked-storage link
+            - name: show
+              uid: ext_application-insights_az_monitor_app_insights_component_linked_storage_show
+              displayName: az monitor app-insights component linked-storage show
+            - name: unlink
+              uid: ext_application-insights_az_monitor_app_insights_component_linked_storage_unlink
+              displayName: az monitor app-insights component linked-storage unlink
+            - name: update
+              uid: ext_application-insights_az_monitor_app_insights_component_linked_storage_update
+              displayName: az monitor app-insights component linked-storage update
         - name: events
           uid: ext_application-insights_az_monitor_app_insights_events
           displayName: az monitor app-insights events
