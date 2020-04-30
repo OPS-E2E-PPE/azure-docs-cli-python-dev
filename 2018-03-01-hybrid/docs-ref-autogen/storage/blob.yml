@@ -879,6 +879,9 @@ items:
   - name: --content-type
     summary: The content MIME type.
     description: ''
+  - name: --encryption-scope
+    summary: A predefined encryption scope used to encrypt the data on the service.
+    description: ''
   - name: --lease-id
     summary: Required if the blob has an active lease.
     description: ''
