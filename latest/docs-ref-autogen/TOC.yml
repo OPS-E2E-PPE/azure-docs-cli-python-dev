@@ -8297,6 +8297,9 @@
       - name: delete
         uid: az_storage_account_delete
         displayName: az storage account delete
+      - name: failover
+        uid: az_storage_account_failover
+        displayName: az storage account failover
       - name: generate-sas
         uid: az_storage_account_generate_sas
         displayName: az storage account generate-sas
