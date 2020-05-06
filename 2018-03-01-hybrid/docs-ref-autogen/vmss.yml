@@ -224,7 +224,7 @@ items:
     summary: The subnet IP address prefix to use when creating a new VNet in CIDR format.
     description: ''
   - name: --vm-domain-name
-    summary: Domain name of VM instances, once configured, the FQDN is 'vm<vm-index>.<vm-domain-name>.<..rest..>'.
+    summary: Domain name of VM instances, once configured, the FQDN is `vm&lt;vm-index&gt;.&lt;vm-domain-name&gt;.&lt;..rest..&gt;`.
     description: ''
   - name: --vnet-address-prefix
     defaultValue: 10.0.0.0/16
@@ -264,7 +264,7 @@ items:
     summary: Sku of the Load Balancer to create. Default to 'Standard' when single placement group is turned off; otherwise, default to 'Basic'.
     description: ''
   - name: --data-disk-caching
-    summary: Storage caching type for data disk(s), including 'None', 'ReadOnly', 'ReadWrite', etc. Use a singular value to apply on all disks, or use '<lun>=<vaule1> <lun>=<value2>' to configure individual disk.
+    summary: Storage caching type for data disk(s), including 'None', 'ReadOnly', 'ReadWrite', etc. Use a singular value to apply on all disks, or use `&lt;lun&gt;=&lt;vaule1&gt; &lt;lun&gt;=&lt;value2&gt;` to configure individual disk.
     description: ''
   - name: --data-disk-sizes-gb
     summary: Space-separated empty managed data disk sizes in GB to create.

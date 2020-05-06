@@ -33,7 +33,7 @@ items:
   parameters:
   - isRequired: true
     name: --authorizations -a
-    summary: Space-separated authorization pairs in a format of <principalId>:<roleDefinitionId>.
+    summary: Space-separated authorization pairs in a format of `&lt;principalId&gt;:&lt;roleDefinitionId&gt;`.
     description: ''
   - isRequired: true
     name: --description

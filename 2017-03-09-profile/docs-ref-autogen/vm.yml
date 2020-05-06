@@ -296,7 +296,7 @@ items:
     summary: Attach an existing OS disk to the VM. Can use the name or ID of a managed disk or the URI to an unmanaged disk VHD.
     description: ''
   - name: --data-disk-caching
-    summary: Storage caching type for data disk(s), including 'None', 'ReadOnly', 'ReadWrite', etc. Use a singular value to apply on all disks, or use '<lun>=<vaule1> <lun>=<value2>' to configure individual disk.
+    summary: Storage caching type for data disk(s), including 'None', 'ReadOnly', 'ReadWrite', etc. Use a singular value to apply on all disks, or use `&lt;lun&gt;=&lt;vaule1&gt; &lt;lun&gt;=&lt;value2&gt;` to configure individual disk.
     description: ''
   - name: --data-disk-sizes-gb
     summary: Space-separated empty managed data disk sizes in GB to create.
