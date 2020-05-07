@@ -216,6 +216,7 @@ items:
     summary: Create the record set only if it does not already exist.
     description: ''
   - name: --ttl
+    defaultValue: "3600"
     summary: Record set TTL (time-to-live).
     description: ''
   - name: --only-show-errors

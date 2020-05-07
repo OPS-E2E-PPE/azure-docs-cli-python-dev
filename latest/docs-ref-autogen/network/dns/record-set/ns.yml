@@ -50,6 +50,7 @@ items:
     summary: Subscription id to add name server record.
     description: ''
   - name: --ttl
+    defaultValue: "3600"
     summary: Record set TTL (time-to-live).
     description: ''
   - name: --only-show-errors

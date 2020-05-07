@@ -74,6 +74,7 @@ items:
     summary: Create the record set only if it does not already exist.
     description: ''
   - name: --minimum-ttl -m
+    defaultValue: "3600"
     summary: Minimum TTL (time-to-live, seconds).
     description: ''
   - name: --refresh-time -f

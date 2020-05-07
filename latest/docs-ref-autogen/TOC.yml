@@ -9358,6 +9358,9 @@
     uid: az_vm
     displayName: az vm
     items:
+    - name: auto-shutdown
+      uid: az_vm_auto_shutdown
+      displayName: az vm auto-shutdown
     - name: capture
       uid: az_vm_capture
       displayName: az vm capture
