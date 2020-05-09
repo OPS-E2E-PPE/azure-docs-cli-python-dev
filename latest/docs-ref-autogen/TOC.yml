@@ -16565,6 +16565,25 @@
           - name: show
             uid: ext_blueprint_az_blueprint_version_artifact_show
             displayName: az blueprint version artifact show
+  - name: connectedk8s
+    uid: ext_connectedk8s_az
+    items:
+    - name: connectedk8s
+      uid: ext_connectedk8s_az_connectedk8s
+      displayName: az connectedk8s
+      items:
+      - name: connect
+        uid: ext_connectedk8s_az_connectedk8s_connect
+        displayName: az connectedk8s connect
+      - name: delete
+        uid: ext_connectedk8s_az_connectedk8s_delete
+        displayName: az connectedk8s delete
+      - name: list
+        uid: ext_connectedk8s_az_connectedk8s_list
+        displayName: az connectedk8s list
+      - name: show
+        uid: ext_connectedk8s_az_connectedk8s_show
+        displayName: az connectedk8s show
   - name: connectedmachine
     uid: ext_connectedmachine_az
     items:
