@@ -8357,6 +8357,16 @@
         - name: update
           uid: az_storage_account_encryption_scope_update
           displayName: az storage account encryption-scope update
+      - name: file-service-properties
+        uid: az_storage_account_file_service_properties
+        displayName: az storage account file-service-properties
+        items:
+        - name: show
+          uid: az_storage_account_file_service_properties_show
+          displayName: az storage account file-service-properties show
+        - name: update
+          uid: az_storage_account_file_service_properties_update
+          displayName: az storage account file-service-properties update
       - name: management-policy
         uid: az_storage_account_management_policy
         displayName: az storage account management-policy
