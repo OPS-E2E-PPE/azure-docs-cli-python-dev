@@ -4456,12 +4456,18 @@
     uid: az_local_context
     displayName: az local-context
     items:
+    - name: delete
+      uid: az_local_context_delete
+      displayName: az local-context delete
     - name: off
       uid: az_local_context_off
       displayName: az local-context off
     - name: on
       uid: az_local_context_on
       displayName: az local-context on
+    - name: show
+      uid: az_local_context_show
+      displayName: az local-context show
   - name: pipelines
     uid: az_pipelines
     displayName: az pipelines
