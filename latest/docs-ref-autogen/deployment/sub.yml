@@ -69,7 +69,7 @@ items:
     summary: The location to store the deployment metadata.
     description: ''
   - name: --confirm-with-what-if -c
-    summary: Instruct the command to run deployment What-If before excuting the deployment. It then prompts you to acknowledge resource changes before it continues.
+    summary: Instruct the command to run deployment What-If before executing the deployment. It then prompts you to acknowledge resource changes before it continues.
     description: ''
   - name: --handle-extended-json-format -j
     summary: Support to handle extended template content including multiline and comments in deployment.
