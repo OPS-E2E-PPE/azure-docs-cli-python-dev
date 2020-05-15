@@ -35,7 +35,7 @@ items:
   parameters:
   - isRequired: true
     name: --name -n
-    summary: Name of the function app.
+    summary: Name of the new function app.
     description: ''
   - isRequired: true
     name: --resource-group -g
