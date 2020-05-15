@@ -9010,6 +9010,118 @@
         - name: update
           uid: az_storage_table_policy_update
           displayName: az storage table policy update
+    - name: fs
+      uid: az_storage_fs
+      displayName: az storage fs
+      items:
+      - name: create
+        uid: az_storage_fs_create
+        displayName: az storage fs create
+      - name: delete
+        uid: az_storage_fs_delete
+        displayName: az storage fs delete
+      - name: exists
+        uid: az_storage_fs_exists
+        displayName: az storage fs exists
+      - name: list
+        uid: az_storage_fs_list
+        displayName: az storage fs list
+      - name: show
+        uid: az_storage_fs_show
+        displayName: az storage fs show
+      - name: access
+        uid: az_storage_fs_access
+        displayName: az storage fs access
+        items:
+        - name: set
+          uid: az_storage_fs_access_set
+          displayName: az storage fs access set
+        - name: show
+          uid: az_storage_fs_access_show
+          displayName: az storage fs access show
+      - name: directory
+        uid: az_storage_fs_directory
+        displayName: az storage fs directory
+        items:
+        - name: create
+          uid: az_storage_fs_directory_create
+          displayName: az storage fs directory create
+        - name: delete
+          uid: az_storage_fs_directory_delete
+          displayName: az storage fs directory delete
+        - name: exists
+          uid: az_storage_fs_directory_exists
+          displayName: az storage fs directory exists
+        - name: list
+          uid: az_storage_fs_directory_list
+          displayName: az storage fs directory list
+        - name: move
+          uid: az_storage_fs_directory_move
+          displayName: az storage fs directory move
+        - name: show
+          uid: az_storage_fs_directory_show
+          displayName: az storage fs directory show
+        - name: metadata
+          uid: az_storage_fs_directory_metadata
+          displayName: az storage fs directory metadata
+          items:
+          - name: show
+            uid: az_storage_fs_directory_metadata_show
+            displayName: az storage fs directory metadata show
+          - name: update
+            uid: az_storage_fs_directory_metadata_update
+            displayName: az storage fs directory metadata update
+      - name: file
+        uid: az_storage_fs_file
+        displayName: az storage fs file
+        items:
+        - name: append
+          uid: az_storage_fs_file_append
+          displayName: az storage fs file append
+        - name: create
+          uid: az_storage_fs_file_create
+          displayName: az storage fs file create
+        - name: delete
+          uid: az_storage_fs_file_delete
+          displayName: az storage fs file delete
+        - name: download
+          uid: az_storage_fs_file_download
+          displayName: az storage fs file download
+        - name: exists
+          uid: az_storage_fs_file_exists
+          displayName: az storage fs file exists
+        - name: list
+          uid: az_storage_fs_file_list
+          displayName: az storage fs file list
+        - name: move
+          uid: az_storage_fs_file_move
+          displayName: az storage fs file move
+        - name: show
+          uid: az_storage_fs_file_show
+          displayName: az storage fs file show
+        - name: upload
+          uid: az_storage_fs_file_upload
+          displayName: az storage fs file upload
+        - name: metadata
+          uid: az_storage_fs_file_metadata
+          displayName: az storage fs file metadata
+          items:
+          - name: show
+            uid: az_storage_fs_file_metadata_show
+            displayName: az storage fs file metadata show
+          - name: update
+            uid: az_storage_fs_file_metadata_update
+            displayName: az storage fs file metadata update
+      - name: metadata
+        uid: az_storage_fs_metadata
+        displayName: az storage fs metadata
+        items:
+        - name: show
+          uid: az_storage_fs_metadata_show
+          displayName: az storage fs metadata show
+        - name: update
+          uid: az_storage_fs_metadata_update
+          displayName: az storage fs metadata update
     - name: share-rm
       uid: az_storage_share_rm
       displayName: az storage share-rm

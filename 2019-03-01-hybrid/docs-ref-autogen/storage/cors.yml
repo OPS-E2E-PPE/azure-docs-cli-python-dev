@@ -169,7 +169,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/14ecf9e44c26862202832bbee41843eec27f3031/src/azure-cli/azure/cli/command_modules/storage/_help.py
-updated_at: 5/9/2020 3:24:13 AM
-ms.date: 05/09/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/2439cc81821ae33d5d504d754f09081d737e0799/src/azure-cli/azure/cli/command_modules/storage/_help.py
+updated_at: 5/15/2020 12:37:07 AM
+ms.date: 05/15/2020
 description: Manage storage service Cross-Origin Resource Sharing (CORS).
