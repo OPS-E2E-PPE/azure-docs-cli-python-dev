@@ -44,7 +44,7 @@ items:
     description: ''
   - isRequired: true
     name: --subnet
-    summary: Name or ID of an existing subnet. If name specified, also specify --vnet-name. If you want to use an existing subnet in other resource group or subscription, please provide the ID instead of the name of the subnet.
+    summary: Name or ID of an existing subnet. If name specified, also specify --vnet-name. If you want to use an existing subnet in other resource group, please provide the ID instead of the name of the subnet.
     description: ''
   - name: --ip-forwarding
     parameterValueGroup: false, true
