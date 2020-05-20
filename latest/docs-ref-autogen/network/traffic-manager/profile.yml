@@ -130,7 +130,7 @@ items:
       content: az network traffic-manager profile delete --name MyTmProfile --resource-group MyResourceGroup --subscription MySubscription
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
     summary: The name of the Traffic Manager profile to be deleted.
@@ -182,7 +182,7 @@ items:
       content: az network traffic-manager profile show -g MyResourceGroup -n MyTmProfile
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
     summary: The name of the Traffic Manager profile.
@@ -228,7 +228,7 @@ items:
     summary: DNS config time-to-live in seconds.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
     summary: The name of the Traffic Manager profile.

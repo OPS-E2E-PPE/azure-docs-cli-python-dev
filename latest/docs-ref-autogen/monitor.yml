@@ -468,7 +468,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/79964fb5ec46abb010362d8a812c75ad7a7e87ca/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-updated_at: 4/27/2020 5:00:33 AM
-ms.date: 04/27/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/43cfcb94d0f32054dd0a73c6a4a4e4482d9141b9/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+updated_at: 5/20/2020 8:14:50 AM
+ms.date: 05/20/2020
 description: Manage the Azure Monitor Service.

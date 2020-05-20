@@ -45,7 +45,7 @@ items:
     summary: Generate VPN client package using legacy implementation.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
     summary: Name of the VNet gateway.
@@ -74,7 +74,7 @@ items:
       content: az network vnet-gateway vpn-client show-url -g MyResourceGroup -n MyVnetGateway
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
     summary: Name of the VNet gateway.

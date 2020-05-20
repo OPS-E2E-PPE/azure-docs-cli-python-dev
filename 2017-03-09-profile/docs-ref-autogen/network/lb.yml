@@ -110,7 +110,7 @@ items:
       content: az network lb delete -g MyResourceGroup -n MyLb
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
     summary: The load balancer name.
@@ -165,7 +165,7 @@ items:
     summary: Expands referenced resources.
     description: ''
   - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
     summary: The load balancer name.
@@ -194,7 +194,7 @@ items:
       content: az network lb update -g MyResourceGroup -n MyLb --set tags.CostCenter=MyBusinessGroup
   parameters:
   - name: --ids
-    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. If provided, no other 'Resource Id' arguments should be specified.
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
     summary: The load balancer name.
