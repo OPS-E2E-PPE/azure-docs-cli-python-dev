@@ -52,7 +52,7 @@ items:
     summary: Size of Redis cache to deploy. Basic and Standard Cache sizes start with C. Premium Cache sizes start with P.
     description: ''
   - name: --enable-non-ssl-port
-    summary: If the value is true, then the non-ssl redis server port (6379) will be enabled.
+    summary: If specified, then the non-ssl redis server port (6379) will be enabled.
     description: ''
   - name: --minimum-tls-version
     parameterValueGroup: 1.0, 1.1, 1.2
