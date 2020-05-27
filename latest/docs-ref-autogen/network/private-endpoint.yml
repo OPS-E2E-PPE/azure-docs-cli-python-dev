@@ -55,7 +55,7 @@ items:
     description: ''
   - name: --manual-request
     parameterValueGroup: false, true
-    summary: Use manual request to establish the connection.
+    summary: Use manual request to establish the connection. Configure it as 'true' when you don't have access to the subscription of private link service.
     description: ''
   - name: --request-message
     summary: A message passed to the owner of the remote resource with this connection request. Restricted to 140 chars.
