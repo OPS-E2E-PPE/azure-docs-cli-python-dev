@@ -126,6 +126,9 @@ items:
   - name: --exclude-pattern
     summary: 'Exclude these files where the name matches the pattern list. For example: \*.jpg;\*.pdf;exactName. This option supports wildcard characters (\*).'
     description: ''
+  - name: --follow-symlinks
+    summary: Follow symbolic links when uploading from local file system.
+    description: ''
   - name: --include-path
     summary: Include only these paths. This option does not support wildcard characters (\*). Checks relative path prefix. For example:myFolder;myFolder/subDirName/file.pdf.
     description: ''
