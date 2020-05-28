@@ -576,6 +576,9 @@ commands:
 - uid: az_network_express_route_list
   name: az network express-route list
   summary: List all ExpressRoute circuits for the current subscription.
+- uid: az_network_express_route_list_route_tables
+  name: az network express-route list-route-tables
+  summary: Show the current routing table of an ExpressRoute circuit peering.
 - uid: az_network_express_route_peering
   name: az network express-route peering
   summary: Manage ExpressRoute peering of an ExpressRoute circuit.
