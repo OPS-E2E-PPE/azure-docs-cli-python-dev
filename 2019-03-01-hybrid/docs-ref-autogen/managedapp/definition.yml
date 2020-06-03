@@ -189,7 +189,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/resource/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/7dc5e27507bad50e89ed0cdb9062b6a7828214f1/src/azure-cli/azure/cli/command_modules/resource/_help.py
-updated_at: 5/28/2020 9:20:54 AM
-ms.date: 05/28/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/e59c45fdfccc94e023c7faf53f38def18867141f/src/azure-cli/azure/cli/command_modules/resource/_help.py
+updated_at: 6/3/2020 1:55:51 AM
+ms.date: 06/03/2020
 description: Manage Azure Managed Applications.
