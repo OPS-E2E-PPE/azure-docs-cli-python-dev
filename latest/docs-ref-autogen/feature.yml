@@ -113,7 +113,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/resource/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e59c45fdfccc94e023c7faf53f38def18867141f/src/azure-cli/azure/cli/command_modules/resource/_help.py
-updated_at: 6/3/2020 1:55:51 AM
-ms.date: 06/03/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/e3dc0e12dbb72be6ccc77d4d94e3a102ebed7c3c/src/azure-cli/azure/cli/command_modules/resource/_help.py
+updated_at: 6/4/2020 1:53:34 PM
+ms.date: 06/04/2020
 description: Manage resource provider features.
