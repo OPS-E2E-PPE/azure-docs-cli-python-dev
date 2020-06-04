@@ -178,7 +178,7 @@ items:
 - uid: az_keyvault_key_import
   name: az keyvault key import
   summary: Import a private key.
-  description: Supports importing base64 encoded private keys from PEM files. Supports importing BYOK keys into HSM for premium key vaults.
+  description: Supports importing base64 encoded private keys from PEM files or strings. Supports importing BYOK keys into HSM for premium key vaults.
   langs:
   - azurecli
   parameters:
@@ -214,11 +214,17 @@ items:
   - name: --byok-file
     summary: BYOK file containing the key to be imported. Must not be password protected.
     description: ''
+  - name: --byok-string
+    summary: BYOK string containing the key to be imported. Must not be password protected.
+    description: ''
   - name: --pem-file
     summary: PEM file containing the key to be imported.
     description: ''
   - name: --pem-password
     summary: Password of PEM file.
+    description: ''
+  - name: --pem-string
+    summary: PEM string containing the key to be imported.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
