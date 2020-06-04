@@ -204,7 +204,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e3b87446b52e8b85e55a8812ec56ae1f97787837/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-updated_at: 6/3/2020 7:04:06 AM
-ms.date: 06/03/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/c4e796bbe7db0cef4ac34df8413067c2c0c98324/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+updated_at: 6/4/2020 5:01:13 AM
+ms.date: 06/04/2020
 description: Manage autoscale settings.

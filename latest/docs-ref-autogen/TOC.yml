@@ -4883,6 +4883,27 @@
           - name: list
             uid: az_monitor_log_analytics_workspace_pack_list
             displayName: az monitor log-analytics workspace pack list
+        - name: saved-search
+          displayName: az monitor log-analytics workspace saved-search
+          items:
+          - name: Overview
+            uid: az_monitor_log_analytics_workspace_saved_search
+            displayName: az monitor log-analytics workspace saved-search
+          - name: create
+            uid: az_monitor_log_analytics_workspace_saved_search_create
+            displayName: az monitor log-analytics workspace saved-search create
+          - name: delete
+            uid: az_monitor_log_analytics_workspace_saved_search_delete
+            displayName: az monitor log-analytics workspace saved-search delete
+          - name: list
+            uid: az_monitor_log_analytics_workspace_saved_search_list
+            displayName: az monitor log-analytics workspace saved-search list
+          - name: show
+            uid: az_monitor_log_analytics_workspace_saved_search_show
+            displayName: az monitor log-analytics workspace saved-search show
+          - name: update
+            uid: az_monitor_log_analytics_workspace_saved_search_update
+            displayName: az monitor log-analytics workspace saved-search update
         - name: table
           displayName: az monitor log-analytics workspace table
           items:
