@@ -220,7 +220,7 @@ items:
   - name: --skip-authorization-header
     summary: Do not auto-append Authorization header.
     description: ''
-  - name: --uri-parameters
+  - name: --uri-parameters --url-parameters
     summary: Space-separated queries in KEY=VALUE format or JSON string. Use @{file} to load from a file.
     description: ''
   - name: --subscription
