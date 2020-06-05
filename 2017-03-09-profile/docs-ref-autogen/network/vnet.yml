@@ -55,6 +55,9 @@ items:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
+  - name: --network-security-group --nsg
+    summary: Name or ID of a network security group (NSG).
+    description: ''
   - name: --subnet-name
     summary: Name of a new subnet to create within the VNet.
     description: ''

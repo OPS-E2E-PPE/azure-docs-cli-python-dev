@@ -102,6 +102,9 @@ items:
     parameterValueGroup: false, true
     summary: Enable VM protection for all subnets in the VNet.
     description: ''
+  - name: --network-security-group --nsg
+    summary: Name or ID of a network security group (NSG).
+    description: ''
   - name: --subnet-name
     summary: Name of a new subnet to create within the VNet.
     description: ''

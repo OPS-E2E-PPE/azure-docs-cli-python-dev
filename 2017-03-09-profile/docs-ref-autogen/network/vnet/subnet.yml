@@ -47,7 +47,7 @@ items:
   - name: --defer
     summary: Temporarily store the object in the local cache instead of sending to Azure. Use `az cache` commands to view/clear.
     description: ''
-  - name: --network-security-group
+  - name: --network-security-group --nsg
     summary: Name or ID of a network security group (NSG).
     description: ''
   - name: --route-table
@@ -180,7 +180,7 @@ items:
   - name: --address-prefix
     summary: Address prefix in CIDR format.
     description: ''
-  - name: --network-security-group
+  - name: --network-security-group --nsg
     summary: Name or ID of a network security group (NSG). Use empty string "" to detach it.
     description: ''
   - name: --route-table

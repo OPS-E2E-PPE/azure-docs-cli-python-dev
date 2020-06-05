@@ -50,7 +50,7 @@ items:
   - name: --delegations
     summary: Space-separated list of services to whom the subnet should be delegated. (e.g. Microsoft.Sql/servers).
     description: ''
-  - name: --network-security-group
+  - name: --network-security-group --nsg
     summary: Name or ID of a network security group (NSG).
     description: ''
   - name: --route-table
@@ -190,7 +190,7 @@ items:
   - name: --delegations
     summary: Space-separated list of services to whom the subnet should be delegated. (e.g. Microsoft.Sql/servers).
     description: ''
-  - name: --network-security-group
+  - name: --network-security-group --nsg
     summary: Name or ID of a network security group (NSG). Use empty string "" to detach it.
     description: ''
   - name: --route-table
