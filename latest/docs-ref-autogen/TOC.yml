@@ -14423,9 +14423,6 @@
     - name: show
       uid: az_openshift_show
       displayName: az openshift show
-    - name: update
-      uid: az_openshift_update
-      displayName: az openshift update
     - name: wait
       uid: az_openshift_wait
       displayName: az openshift wait
