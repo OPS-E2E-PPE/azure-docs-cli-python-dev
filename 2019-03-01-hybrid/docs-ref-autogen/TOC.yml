@@ -4397,6 +4397,9 @@
       - name: Overview
         uid: az_image_builder
         displayName: az image builder
+      - name: cancel
+        uid: az_image_builder_cancel
+        displayName: az image builder cancel
       - name: create
         uid: az_image_builder_create
         displayName: az image builder create
