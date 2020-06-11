@@ -89,6 +89,10 @@ items:
   - name: --template-uri -u
     summary: The URI to the template file.
     description: ''
+  - name: --what-if-exclude-change-types -x
+    parameterValueGroup: Create, Delete, Deploy, Ignore, Modify, NoChange
+    summary: Space-separated list of resource change types to be excluded from What-If results. Applicable when --confirm-with-what-if is set.
+    description: ''
   - name: --what-if-result-format -r
     defaultValue: FullResourcePayloads
     parameterValueGroup: FullResourcePayloads, ResourceIdOnly
