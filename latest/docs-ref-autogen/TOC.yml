@@ -1502,6 +1502,21 @@
       - name: update
         uid: az_cognitiveservices_account_update
         displayName: az cognitiveservices account update
+      - name: identity
+        displayName: az cognitiveservices account identity
+        items:
+        - name: Overview
+          uid: az_cognitiveservices_account_identity
+          displayName: az cognitiveservices account identity
+        - name: assign
+          uid: az_cognitiveservices_account_identity_assign
+          displayName: az cognitiveservices account identity assign
+        - name: remove
+          uid: az_cognitiveservices_account_identity_remove
+          displayName: az cognitiveservices account identity remove
+        - name: show
+          uid: az_cognitiveservices_account_identity_show
+          displayName: az cognitiveservices account identity show
       - name: keys
         displayName: az cognitiveservices account keys
         items:
