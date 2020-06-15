@@ -367,6 +367,9 @@ commands:
 - uid: az_snapshot
   name: az snapshot
   summary: Manage point-in-time copies of managed disks, native blobs, or other snapshots.
+- uid: az_staticwebapp
+  name: az staticwebapp
+  summary: Manage static apps.
 - uid: az_storage
   name: az storage
   summary: Manage Azure Cloud Storage resources.

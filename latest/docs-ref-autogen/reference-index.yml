@@ -505,6 +505,9 @@ commands:
 - uid: az_sql
   name: az sql
   summary: Manage Azure SQL Databases and Data Warehouses.
+- uid: az_staticwebapp
+  name: az staticwebapp
+  summary: Manage static apps.
 - uid: az_storage
   name: az storage
   summary: Manage Azure Cloud Storage resources.
