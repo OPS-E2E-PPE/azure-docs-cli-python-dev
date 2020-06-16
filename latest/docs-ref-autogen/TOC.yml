@@ -8366,6 +8366,9 @@
     - name: show
       uid: az_feature_show
       displayName: az feature show
+    - name: unregister
+      uid: az_feature_unregister
+      displayName: az feature unregister
   - name: Resource providers
     displayName: az provider
     items:
