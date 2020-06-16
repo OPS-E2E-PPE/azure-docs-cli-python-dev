@@ -2237,6 +2237,21 @@
         - name: show
           uid: az_network_lb_address_pool_show
           displayName: az network lb address-pool show
+        - name: address
+          displayName: az network lb address-pool address
+          items:
+          - name: Overview
+            uid: az_network_lb_address_pool_address
+            displayName: az network lb address-pool address
+          - name: add
+            uid: az_network_lb_address_pool_address_add
+            displayName: az network lb address-pool address add
+          - name: list
+            uid: az_network_lb_address_pool_address_list
+            displayName: az network lb address-pool address list
+          - name: remove
+            uid: az_network_lb_address_pool_address_remove
+            displayName: az network lb address-pool address remove
       - name: Front-end IP addresses
         displayName: az network lb frontend-ip
         items:

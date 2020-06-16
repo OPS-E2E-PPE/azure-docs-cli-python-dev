@@ -21,6 +21,12 @@ items:
   - summary: Create an address pool.
     syntax:
       content: az network lb address-pool create -g MyResourceGroup --lb-name MyLb -n MyAddressPool
+  - summary: Create an address pool with several backend addresses using key-value arguments.
+    syntax:
+      content: az network lb address-pool create -g MyResourceGroup --lb-name MyLb -n MyAddressPool --backend-address name=addr1 vnet=MyVnet ip-address=10.0.0.1 --backend-address name=addr2 vnet={VnetResourceId} ip-address=10.0.0.3
+  - summary: Create an address pool with several backend addresses using config file
+    syntax:
+      content: az network lb address-pool create -g MyResourceGroup --lb-name MyLb -n MyAddressPool --backend-address name=addr1 vnet=MyVnet ip-address=10.0.0.1 --backend-addresses-config-file @config_file.json
   parameters:
   - isRequired: true
     name: --lb-name
@@ -28,12 +34,46 @@ items:
     description: ''
   - isRequired: true
     name: --name -n
-    summary: The name of the backend address pool.
+    summary: The name of the backend address pool. If only one exists, omit to use as default.
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
+  - name: --backend-address
+    summary: Backend addresses information for backend address pool.
+    description: >-
+      Usage: --backend-address name=addr1 vnet=MyVnet ip-address=10.0.0.1
+
+
+      name: Required. The name of the backend address.
+
+      vnet: Required. Name or ID of the virtual network.
+
+      ip-address: Required. Ip Address within the Virtual Network.
+
+
+      Multiple backend addresses can be specified by using more than one `--backend-address` argument.
+  - name: --backend-addresses-config-file
+    summary: A config file used to set backend addresses. This argument is for experienced users. You may encounter parse errors if the json file is invalid.
+    description: >-
+      Usage: --backend-addresses-config-file @"{config_file.json}"
+
+
+      A example config file is
+
+      [
+        {
+          "name": "address1",
+          "virtualNetwork": "clitestvnet",
+          "ipAddress": "10.0.0.4"
+        },
+        {
+          "name": "address2",
+          "virtualNetwork": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_lb_address_pool_addresses000001/providers/Microsoft.Network/virtualNetworks/clitestvnet",
+          "ipAddress": "10.0.0.5"
+        }
+      ].
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -136,6 +176,18 @@ items:
       path: src/azure-cli/azure/cli/command_modules/network/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
+- uid: az_network_lb_address_pool_address
+  name: az network lb address-pool address
+  summary: Manage backend addresses of the load balance backend address pool.
+- uid: az_network_lb_address_pool_address_add
+  name: az network lb address-pool address add
+  summary: Add one backend address into the load balance backend address pool.
+- uid: az_network_lb_address_pool_address_list
+  name: az network lb address-pool address list
+  summary: List all backend addresses of the load balance backend address pool.
+- uid: az_network_lb_address_pool_address_remove
+  name: az network lb address-pool address remove
+  summary: Remove one backend address from the load balance backend address pool.
 - uid: az_network_lb_address_pool_create
   name: az network lb address-pool create
   summary: Create an address pool.
@@ -166,7 +218,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e3dc0e12dbb72be6ccc77d4d94e3a102ebed7c3c/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 6/4/2020 1:53:34 PM
-ms.date: 06/04/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/e14ec3d59bc9800a23b35a83a845b321c13b3fc2/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 6/16/2020 2:17:55 AM
+ms.date: 06/16/2020
 description: Manage address pools of a load balancer.
