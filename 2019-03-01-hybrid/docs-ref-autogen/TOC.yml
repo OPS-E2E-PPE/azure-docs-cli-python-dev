@@ -833,21 +833,6 @@
         - name: show
           uid: az_iot_hub_consumer_group_show
           displayName: az iot hub consumer-group show
-      - name: Jobs
-        displayName: az iot hub job
-        items:
-        - name: Overview
-          uid: az_iot_hub_job
-          displayName: az iot hub job
-        - name: cancel
-          uid: az_iot_hub_job_cancel
-          displayName: az iot hub job cancel
-        - name: list
-          uid: az_iot_hub_job_list
-          displayName: az iot hub job list
-        - name: show
-          uid: az_iot_hub_job_show
-          displayName: az iot hub job show
       - name: Policies
         displayName: az iot hub policy
         items:
