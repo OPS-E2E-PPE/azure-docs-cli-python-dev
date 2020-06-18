@@ -537,12 +537,18 @@ commands:
 - uid: az_keyvault_key_create
   name: az keyvault key create
   summary: Creates a new key, stores it, then returns key parameters and attributes to the client.
+- uid: az_keyvault_key_decrypt
+  name: az keyvault key decrypt
+  summary: Decrypts a single block of encrypted data.
 - uid: az_keyvault_key_delete
   name: az keyvault key delete
   summary: Deletes a key of any type from storage in Azure Key Vault.
 - uid: az_keyvault_key_download
   name: az keyvault key download
   summary: Downloads the public part of a stored key.
+- uid: az_keyvault_key_encrypt
+  name: az keyvault key encrypt
+  summary: Encrypts an arbitrary sequence of bytes using an encryption key that is stored in a key vault.
 - uid: az_keyvault_key_import
   name: az keyvault key import
   summary: Import a private key.

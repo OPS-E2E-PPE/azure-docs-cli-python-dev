@@ -1250,12 +1250,18 @@
       - name: create
         uid: az_keyvault_key_create
         displayName: az keyvault key create
+      - name: decrypt
+        uid: az_keyvault_key_decrypt
+        displayName: az keyvault key decrypt
       - name: delete
         uid: az_keyvault_key_delete
         displayName: az keyvault key delete
       - name: download
         uid: az_keyvault_key_download
         displayName: az keyvault key download
+      - name: encrypt
+        uid: az_keyvault_key_encrypt
+        displayName: az keyvault key encrypt
       - name: import
         uid: az_keyvault_key_import
         displayName: az keyvault key import
