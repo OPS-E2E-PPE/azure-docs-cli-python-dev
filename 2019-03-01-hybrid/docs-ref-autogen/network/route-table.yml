@@ -234,7 +234,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/e14ec3d59bc9800a23b35a83a845b321c13b3fc2/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 6/16/2020 2:17:55 AM
-ms.date: 06/16/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/8e00952f560978e0339f713403f57cba483250e2/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 6/18/2020 6:20:50 AM
+ms.date: 06/18/2020
 description: Manage route tables.
