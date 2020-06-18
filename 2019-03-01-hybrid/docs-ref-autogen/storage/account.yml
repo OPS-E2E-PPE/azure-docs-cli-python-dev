@@ -84,6 +84,9 @@ items:
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
+  - name: --require-infrastructure-encryption
+    summary: ''
+    description: ''
   - name: --sku
     defaultValue: Standard_RAGRS
     parameterValueGroup: Premium_LRS, Standard_GRS, Standard_LRS, Standard_RAGRS, Standard_ZRS
