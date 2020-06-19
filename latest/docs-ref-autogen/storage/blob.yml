@@ -609,6 +609,10 @@ items:
     parameterValueGroup: key, login
     summary: 'The mode in which to run the command. "login" mode will directly use your login credentials for the authentication. The legacy "key" mode will attempt to query for an account key if no authentication parameters for the account are provided. Environment variable: AZURE_STORAGE_AUTH_MODE.'
     description: ''
+  - name: --rehydrate-priority -r
+    parameterValueGroup: High, Standard
+    summary: Indicate the priority with which to rehydrate an archived blob. The priority can be set on a blob only once, default value is Standard.
+    description: ''
   - name: --timeout
     summary: The timeout parameter is expressed in seconds. This method may make multiple calls to the Azure service and the timeout will apply to each call individually.
     description: ''
