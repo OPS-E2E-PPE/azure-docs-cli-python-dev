@@ -195,6 +195,9 @@ items:
   - summary: Create a public IP address from body.json file
     syntax:
       content: az rest --method put --url https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/publicIPAddresses/{publicIpAddressName}?api-version=2019-09-01 --body @body.json
+  - summary: List the top three resources (Bash)
+    syntax:
+      content: az rest --method get --url https://management.azure.com/subscriptions/{subscriptionId}/resources?api-version=2019-07-01 --url-parameters \$top=3
   parameters:
   - isRequired: true
     name: --uri --url -u
@@ -221,7 +224,7 @@ items:
     summary: Do not auto-append Authorization header.
     description: ''
   - name: --uri-parameters --url-parameters
-    summary: Space-separated queries in KEY=VALUE format or JSON string. Use @{file} to load from a file.
+    summary: Query parameters in the URL. Space-separated queries in KEY=VALUE format or JSON string. Use @{file} to load from a file.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

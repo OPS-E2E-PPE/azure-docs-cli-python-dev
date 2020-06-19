@@ -8687,6 +8687,39 @@
           - name: list
             uid: az_sql_db_classification_recommendation_list
             displayName: az sql db classification recommendation list
+      - name: ltr-backup
+        displayName: az sql db ltr-backup
+        items:
+        - name: Overview
+          uid: az_sql_db_ltr_backup
+          displayName: az sql db ltr-backup
+        - name: delete
+          uid: az_sql_db_ltr_backup_delete
+          displayName: az sql db ltr-backup delete
+        - name: list
+          uid: az_sql_db_ltr_backup_list
+          displayName: az sql db ltr-backup list
+        - name: restore
+          uid: az_sql_db_ltr_backup_restore
+          displayName: az sql db ltr-backup restore
+        - name: show
+          uid: az_sql_db_ltr_backup_show
+          displayName: az sql db ltr-backup show
+        - name: wait
+          uid: az_sql_db_ltr_backup_wait
+          displayName: az sql db ltr-backup wait
+      - name: ltr-policy
+        displayName: az sql db ltr-policy
+        items:
+        - name: Overview
+          uid: az_sql_db_ltr_policy
+          displayName: az sql db ltr-policy
+        - name: set
+          uid: az_sql_db_ltr_policy_set
+          displayName: az sql db ltr-policy set
+        - name: show
+          uid: az_sql_db_ltr_policy_show
+          displayName: az sql db ltr-policy show
       - name: op
         displayName: az sql db op
         items:
