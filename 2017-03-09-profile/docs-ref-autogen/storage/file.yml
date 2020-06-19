@@ -297,6 +297,10 @@ items:
       content: az storage file generate-sas --account-name MyStorageAccount --expiry 2037-12-31T23:59:00Z --path path/file.txt --permissions rcdw --share-name MyShare --start 2019-01-01T12:20Z
   parameters:
   - isRequired: true
+    name: --expiry
+    summary: Specifies the UTC datetime (Y-m-d'T'H:M'Z') at which the SAS becomes invalid. Do not use if a stored access policy is referenced with --id that specifies this value.
+    description: ''
+  - isRequired: true
     name: --path -p
     summary: The path to the file within the file share.
     description: ''
@@ -318,9 +322,6 @@ items:
     description: ''
   - name: --content-type
     summary: Response header value for Content-Type when resource is accessed using this shared access signature.
-    description: ''
-  - name: --expiry
-    summary: Specifies the UTC datetime (Y-m-d'T'H:M'Z') at which the SAS becomes invalid. Do not use if a stored access policy is referenced with --id that specifies this value.
     description: ''
   - name: --https-only
     summary: Only permit requests made with the HTTPS protocol. If omitted, requests from both the HTTP and HTTPS protocol are permitted.
