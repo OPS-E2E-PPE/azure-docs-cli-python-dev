@@ -142,7 +142,7 @@ items:
   parameters:
   - isRequired: true
     name: --cname -c
-    summary: Canonical name.
+    summary: Value of the cname record-set. It should be Canonical name.
     description: ''
   - isRequired: true
     name: --record-set-name -n
@@ -183,7 +183,7 @@ items:
   parameters:
   - isRequired: true
     name: --cname -c
-    summary: Canonical name.
+    summary: Value of the cname record-set. It should be Canonical name.
     description: ''
   - isRequired: true
     name: --record-set-name -n
