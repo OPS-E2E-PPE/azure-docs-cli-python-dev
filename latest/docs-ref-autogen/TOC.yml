@@ -8369,6 +8369,9 @@
       - name: summarize
         uid: az_policy_state_summarize
         displayName: az policy state summarize
+      - name: trigger-scan
+        uid: az_policy_state_trigger_scan
+        displayName: az policy state trigger-scan
   - name: Resource provider features
     displayName: az feature
     items:
