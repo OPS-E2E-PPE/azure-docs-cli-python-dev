@@ -5132,6 +5132,42 @@
       - name: show
         uid: az_security_pricing_show
         displayName: az security pricing show
+    - name: regulatory-compliance-assessments
+      displayName: az security regulatory-compliance-assessments
+      items:
+      - name: Overview
+        uid: az_security_regulatory_compliance_assessments
+        displayName: az security regulatory-compliance-assessments
+      - name: list
+        uid: az_security_regulatory_compliance_assessments_list
+        displayName: az security regulatory-compliance-assessments list
+      - name: show
+        uid: az_security_regulatory_compliance_assessments_show
+        displayName: az security regulatory-compliance-assessments show
+    - name: regulatory-compliance-controls
+      displayName: az security regulatory-compliance-controls
+      items:
+      - name: Overview
+        uid: az_security_regulatory_compliance_controls
+        displayName: az security regulatory-compliance-controls
+      - name: list
+        uid: az_security_regulatory_compliance_controls_list
+        displayName: az security regulatory-compliance-controls list
+      - name: show
+        uid: az_security_regulatory_compliance_controls_show
+        displayName: az security regulatory-compliance-controls show
+    - name: regulatory-compliance-standards
+      displayName: az security regulatory-compliance-standards
+      items:
+      - name: Overview
+        uid: az_security_regulatory_compliance_standards
+        displayName: az security regulatory-compliance-standards
+      - name: list
+        uid: az_security_regulatory_compliance_standards_list
+        displayName: az security regulatory-compliance-standards list
+      - name: show
+        uid: az_security_regulatory_compliance_standards_show
+        displayName: az security regulatory-compliance-standards show
     - name: setting
       displayName: az security setting
       items:

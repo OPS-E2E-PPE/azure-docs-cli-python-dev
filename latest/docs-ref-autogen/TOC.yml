@@ -15521,6 +15521,42 @@
       - name: show
         uid: az_security_pricing_show
         displayName: az security pricing show
+    - name: regulatory-compliance-assessments
+      displayName: az security regulatory-compliance-assessments
+      items:
+      - name: Overview
+        uid: az_security_regulatory_compliance_assessments
+        displayName: az security regulatory-compliance-assessments
+      - name: list
+        uid: az_security_regulatory_compliance_assessments_list
+        displayName: az security regulatory-compliance-assessments list
+      - name: show
+        uid: az_security_regulatory_compliance_assessments_show
+        displayName: az security regulatory-compliance-assessments show
+    - name: regulatory-compliance-controls
+      displayName: az security regulatory-compliance-controls
+      items:
+      - name: Overview
+        uid: az_security_regulatory_compliance_controls
+        displayName: az security regulatory-compliance-controls
+      - name: list
+        uid: az_security_regulatory_compliance_controls_list
+        displayName: az security regulatory-compliance-controls list
+      - name: show
+        uid: az_security_regulatory_compliance_controls_show
+        displayName: az security regulatory-compliance-controls show
+    - name: regulatory-compliance-standards
+      displayName: az security regulatory-compliance-standards
+      items:
+      - name: Overview
+        uid: az_security_regulatory_compliance_standards
+        displayName: az security regulatory-compliance-standards
+      - name: list
+        uid: az_security_regulatory_compliance_standards_list
+        displayName: az security regulatory-compliance-standards list
+      - name: show
+        uid: az_security_regulatory_compliance_standards_show
+        displayName: az security regulatory-compliance-standards show
     - name: setting
       displayName: az security setting
       items:
@@ -15998,6 +16034,33 @@
       - name: renew
         uid: az_signalr_key_renew
         displayName: az signalr key renew
+    - name: network-rule
+      displayName: az signalr network-rule
+      items:
+      - name: Overview
+        uid: az_signalr_network_rule
+        displayName: az signalr network-rule
+      - name: list
+        uid: az_signalr_network_rule_list
+        displayName: az signalr network-rule list
+      - name: update
+        uid: az_signalr_network_rule_update
+        displayName: az signalr network-rule update
+    - name: upstream
+      displayName: az signalr upstream
+      items:
+      - name: Overview
+        uid: az_signalr_upstream
+        displayName: az signalr upstream
+      - name: clear
+        uid: az_signalr_upstream_clear
+        displayName: az signalr upstream clear
+      - name: list
+        uid: az_signalr_upstream_list
+        displayName: az signalr upstream list
+      - name: update
+        uid: az_signalr_upstream_update
+        displayName: az signalr upstream update
   - name: staticwebapp
     displayName: az staticwebapp
     items:
