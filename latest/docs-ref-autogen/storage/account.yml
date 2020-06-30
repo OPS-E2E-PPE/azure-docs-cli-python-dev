@@ -64,6 +64,10 @@ items:
     parameterValueGroup: Cool, Hot
     summary: The access tier used for billing StandardBlob accounts. Cannot be set for StandardLRS, StandardGRS, StandardRAGRS, or PremiumLRS account types. It is required for StandardBlob accounts during creation.
     description: ''
+  - name: --allow-blob-public-access
+    parameterValueGroup: false, true
+    summary: Allow or disallow public access to all blobs or containers in the storage account. The default interpretation is true for this property.
+    description: ''
   - name: --assign-identity
     summary: Generate and assign a new Storage Account Identity for this storage account for use with key management services like Azure KeyVault.
     description: ''
@@ -506,6 +510,10 @@ items:
   - name: --access-tier
     parameterValueGroup: Cool, Hot
     summary: The access tier used for billing StandardBlob accounts. Cannot be set for StandardLRS, StandardGRS, StandardRAGRS, or PremiumLRS account types. It is required for StandardBlob accounts during creation.
+    description: ''
+  - name: --allow-blob-public-access
+    parameterValueGroup: false, true
+    summary: Allow or disallow public access to all blobs or containers in the storage account. The default interpretation is true for this property.
     description: ''
   - name: --assign-identity
     summary: Generate and assign a new Storage Account Identity for this storage account for use with key management services like Azure KeyVault.
