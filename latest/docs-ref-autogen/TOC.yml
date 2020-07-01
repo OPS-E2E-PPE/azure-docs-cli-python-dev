@@ -11852,6 +11852,33 @@
     - name: update
       uid: az_apim_update
       displayName: az apim update
+    - name: wait
+      uid: az_apim_wait
+      displayName: az apim wait
+    - name: api
+      displayName: az apim api
+      items:
+      - name: Overview
+        uid: az_apim_api
+        displayName: az apim api
+      - name: create
+        uid: az_apim_api_create
+        displayName: az apim api create
+      - name: delete
+        uid: az_apim_api_delete
+        displayName: az apim api delete
+      - name: list
+        uid: az_apim_api_list
+        displayName: az apim api list
+      - name: show
+        uid: az_apim_api_show
+        displayName: az apim api show
+      - name: update
+        uid: az_apim_api_update
+        displayName: az apim api update
+      - name: wait
+        uid: az_apim_api_wait
+        displayName: az apim api wait
   - name: appconfig
     displayName: az appconfig
     items:
