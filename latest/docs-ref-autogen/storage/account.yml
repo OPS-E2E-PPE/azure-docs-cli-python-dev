@@ -113,6 +113,10 @@ items:
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=&lt;location&gt;`.'
     description: ''
+  - name: --min-tls-version
+    parameterValueGroup: TLS1_0, TLS1_1, TLS1_2
+    summary: The minimum TLS version to be permitted on requests to storage. The default interpretation is TLS 1.0 for this property.
+    description: ''
   - name: --require-infrastructure-encryption -i
     parameterValueGroup: false, true
     summary: A boolean indicating whether or not the service applies a secondary layer of encryption with platform managed keys for data at rest.
@@ -539,6 +543,10 @@ items:
   - name: --https-only
     parameterValueGroup: false, true
     summary: Allows https traffic only to storage service.
+    description: ''
+  - name: --min-tls-version
+    parameterValueGroup: TLS1_0, TLS1_1, TLS1_2
+    summary: The minimum TLS version to be permitted on requests to storage. The default interpretation is TLS 1.0 for this property.
     description: ''
   - name: --sku
     parameterValueGroup: Premium_LRS, Premium_ZRS, Standard_GRS, Standard_GZRS, Standard_LRS, Standard_RAGRS, Standard_RAGZRS, Standard_ZRS

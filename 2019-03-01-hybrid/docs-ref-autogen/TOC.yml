@@ -734,6 +734,18 @@
       - name: wait
         uid: az_hdinsight_application_wait
         displayName: az hdinsight application wait
+    - name: host
+      displayName: az hdinsight host
+      items:
+      - name: Overview
+        uid: az_hdinsight_host
+        displayName: az hdinsight host
+      - name: list
+        uid: az_hdinsight_host_list
+        displayName: az hdinsight host list
+      - name: restart
+        uid: az_hdinsight_host_restart
+        displayName: az hdinsight host restart
     - name: monitor
       displayName: az hdinsight monitor
       items:
