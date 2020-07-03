@@ -274,7 +274,7 @@ items:
     summary: Location in which to create VM and related resources. If default location is not configured, will default to the resource group's location.
     description: ''
   - name: --max-price
-    summary: The maximum price (in US Dollars) you are willing to pay for a low priority VM/VMSS. -1 indicates that the low priority VM/VMSS should not be evicted for price reasons.
+    summary: The maximum price (in US Dollars) you are willing to pay for a Spot VM/VMSS. -1 indicates that the Spot VM/VMSS should not be evicted for price reasons.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -1195,7 +1195,7 @@ items:
     summary: Specifies that the Windows image or disk was licensed on-premises. To enable Azure Hybrid Benefit for Windows Server, use 'Windows_Server'. To enable Multitenant Hosting Rights for Windows 10, use 'Windows_Client'. For more information see the Azure Windows VM online docs.
     description: ''
   - name: --max-price
-    summary: The maximum price (in US Dollars) you are willing to pay for a low priority VM/VMSS. -1 indicates that the low priority VM/VMSS should not be evicted for price reasons.
+    summary: The maximum price (in US Dollars) you are willing to pay for a Spot VM/VMSS. -1 indicates that the Spot VM/VMSS should not be evicted for price reasons.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
