@@ -13793,6 +13793,171 @@
       - name: update
         uid: az_eventgrid_event_subscription_update
         displayName: az eventgrid event-subscription update
+    - name: extension-topic
+      displayName: az eventgrid extension-topic
+      items:
+      - name: Overview
+        uid: az_eventgrid_extension_topic
+        displayName: az eventgrid extension-topic
+      - name: show
+        uid: az_eventgrid_extension_topic_show
+        displayName: az eventgrid extension-topic show
+    - name: partner
+      displayName: az eventgrid partner
+      items:
+      - name: Overview
+        uid: az_eventgrid_partner
+        displayName: az eventgrid partner
+      - name: namespace
+        displayName: az eventgrid partner namespace
+        items:
+        - name: Overview
+          uid: az_eventgrid_partner_namespace
+          displayName: az eventgrid partner namespace
+        - name: create
+          uid: az_eventgrid_partner_namespace_create
+          displayName: az eventgrid partner namespace create
+        - name: delete
+          uid: az_eventgrid_partner_namespace_delete
+          displayName: az eventgrid partner namespace delete
+        - name: list
+          uid: az_eventgrid_partner_namespace_list
+          displayName: az eventgrid partner namespace list
+        - name: show
+          uid: az_eventgrid_partner_namespace_show
+          displayName: az eventgrid partner namespace show
+        - name: event-channel
+          displayName: az eventgrid partner namespace event-channel
+          items:
+          - name: Overview
+            uid: az_eventgrid_partner_namespace_event_channel
+            displayName: az eventgrid partner namespace event-channel
+          - name: create
+            uid: az_eventgrid_partner_namespace_event_channel_create
+            displayName: az eventgrid partner namespace event-channel create
+          - name: delete
+            uid: az_eventgrid_partner_namespace_event_channel_delete
+            displayName: az eventgrid partner namespace event-channel delete
+          - name: list
+            uid: az_eventgrid_partner_namespace_event_channel_list
+            displayName: az eventgrid partner namespace event-channel list
+          - name: show
+            uid: az_eventgrid_partner_namespace_event_channel_show
+            displayName: az eventgrid partner namespace event-channel show
+        - name: key
+          displayName: az eventgrid partner namespace key
+          items:
+          - name: Overview
+            uid: az_eventgrid_partner_namespace_key
+            displayName: az eventgrid partner namespace key
+          - name: list
+            uid: az_eventgrid_partner_namespace_key_list
+            displayName: az eventgrid partner namespace key list
+          - name: regenerate
+            uid: az_eventgrid_partner_namespace_key_regenerate
+            displayName: az eventgrid partner namespace key regenerate
+      - name: registration
+        displayName: az eventgrid partner registration
+        items:
+        - name: Overview
+          uid: az_eventgrid_partner_registration
+          displayName: az eventgrid partner registration
+        - name: create
+          uid: az_eventgrid_partner_registration_create
+          displayName: az eventgrid partner registration create
+        - name: delete
+          uid: az_eventgrid_partner_registration_delete
+          displayName: az eventgrid partner registration delete
+        - name: list
+          uid: az_eventgrid_partner_registration_list
+          displayName: az eventgrid partner registration list
+        - name: show
+          uid: az_eventgrid_partner_registration_show
+          displayName: az eventgrid partner registration show
+      - name: topic
+        displayName: az eventgrid partner topic
+        items:
+        - name: Overview
+          uid: az_eventgrid_partner_topic
+          displayName: az eventgrid partner topic
+        - name: activate
+          uid: az_eventgrid_partner_topic_activate
+          displayName: az eventgrid partner topic activate
+        - name: deactivate
+          uid: az_eventgrid_partner_topic_deactivate
+          displayName: az eventgrid partner topic deactivate
+        - name: delete
+          uid: az_eventgrid_partner_topic_delete
+          displayName: az eventgrid partner topic delete
+        - name: list
+          uid: az_eventgrid_partner_topic_list
+          displayName: az eventgrid partner topic list
+        - name: show
+          uid: az_eventgrid_partner_topic_show
+          displayName: az eventgrid partner topic show
+        - name: event-subscription
+          displayName: az eventgrid partner topic event-subscription
+          items:
+          - name: Overview
+            uid: az_eventgrid_partner_topic_event_subscription
+            displayName: az eventgrid partner topic event-subscription
+          - name: create
+            uid: az_eventgrid_partner_topic_event_subscription_create
+            displayName: az eventgrid partner topic event-subscription create
+          - name: delete
+            uid: az_eventgrid_partner_topic_event_subscription_delete
+            displayName: az eventgrid partner topic event-subscription delete
+          - name: list
+            uid: az_eventgrid_partner_topic_event_subscription_list
+            displayName: az eventgrid partner topic event-subscription list
+          - name: show
+            uid: az_eventgrid_partner_topic_event_subscription_show
+            displayName: az eventgrid partner topic event-subscription show
+          - name: update
+            uid: az_eventgrid_partner_topic_event_subscription_update
+            displayName: az eventgrid partner topic event-subscription update
+    - name: system-topic
+      displayName: az eventgrid system-topic
+      items:
+      - name: Overview
+        uid: az_eventgrid_system_topic
+        displayName: az eventgrid system-topic
+      - name: create
+        uid: az_eventgrid_system_topic_create
+        displayName: az eventgrid system-topic create
+      - name: delete
+        uid: az_eventgrid_system_topic_delete
+        displayName: az eventgrid system-topic delete
+      - name: list
+        uid: az_eventgrid_system_topic_list
+        displayName: az eventgrid system-topic list
+      - name: show
+        uid: az_eventgrid_system_topic_show
+        displayName: az eventgrid system-topic show
+      - name: update
+        uid: az_eventgrid_system_topic_update
+        displayName: az eventgrid system-topic update
+      - name: event-subscription
+        displayName: az eventgrid system-topic event-subscription
+        items:
+        - name: Overview
+          uid: az_eventgrid_system_topic_event_subscription
+          displayName: az eventgrid system-topic event-subscription
+        - name: create
+          uid: az_eventgrid_system_topic_event_subscription_create
+          displayName: az eventgrid system-topic event-subscription create
+        - name: delete
+          uid: az_eventgrid_system_topic_event_subscription_delete
+          displayName: az eventgrid system-topic event-subscription delete
+        - name: list
+          uid: az_eventgrid_system_topic_event_subscription_list
+          displayName: az eventgrid system-topic event-subscription list
+        - name: show
+          uid: az_eventgrid_system_topic_event_subscription_show
+          displayName: az eventgrid system-topic event-subscription show
+        - name: update
+          uid: az_eventgrid_system_topic_event_subscription_update
+          displayName: az eventgrid system-topic event-subscription update
     - name: topic
       displayName: az eventgrid topic
       items:
