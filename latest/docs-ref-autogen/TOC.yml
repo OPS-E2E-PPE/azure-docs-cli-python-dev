@@ -4649,6 +4649,27 @@
         - name: show
           uid: az_monitor_diagnostic_settings_categories_show
           displayName: az monitor diagnostic-settings categories show
+      - name: subscription
+        displayName: az monitor diagnostic-settings subscription
+        items:
+        - name: Overview
+          uid: az_monitor_diagnostic_settings_subscription
+          displayName: az monitor diagnostic-settings subscription
+        - name: create
+          uid: az_monitor_diagnostic_settings_subscription_create
+          displayName: az monitor diagnostic-settings subscription create
+        - name: delete
+          uid: az_monitor_diagnostic_settings_subscription_delete
+          displayName: az monitor diagnostic-settings subscription delete
+        - name: list
+          uid: az_monitor_diagnostic_settings_subscription_list
+          displayName: az monitor diagnostic-settings subscription list
+        - name: show
+          uid: az_monitor_diagnostic_settings_subscription_show
+          displayName: az monitor diagnostic-settings subscription show
+        - name: update
+          uid: az_monitor_diagnostic_settings_subscription_update
+          displayName: az monitor diagnostic-settings subscription update
     - name: Log profiles
       displayName: az monitor log-profiles
       items:

@@ -105,7 +105,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/role/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b5937aa49d572fe93e02bb2d30fa6b1cc575d224/src/azure-cli/azure/cli/command_modules/role/_help.py
-updated_at: 6/28/2020 6:16:14 AM
-ms.date: 06/28/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/943596caa909356bffbf395e6cb6ade9aa8d4685/src/azure-cli/azure/cli/command_modules/role/_help.py
+updated_at: 7/6/2020 5:08:10 AM
+ms.date: 07/06/2020
 description: Manage application owners.
