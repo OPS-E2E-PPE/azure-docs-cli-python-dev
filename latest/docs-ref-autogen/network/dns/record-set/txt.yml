@@ -349,7 +349,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/23e60faab3cb41b358ffc645688798402fef9ac7/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 6/29/2020 7:27:11 AM
-ms.date: 06/29/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/ede21e73b6dd6a3ae721e6abf3c56b17be03a259/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 7/8/2020 4:38:29 AM
+ms.date: 07/08/2020
 description: Manage DNS TXT records.
