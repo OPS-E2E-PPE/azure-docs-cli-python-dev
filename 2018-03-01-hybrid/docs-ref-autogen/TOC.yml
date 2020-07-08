@@ -5633,6 +5633,66 @@
       - name: show
         uid: az_security_external_security_solution_show
         displayName: az security external-security-solution show
+    - name: iot-alerts
+      displayName: az security iot-alerts
+      items:
+      - name: Overview
+        uid: az_security_iot_alerts
+        displayName: az security iot-alerts
+      - name: delete
+        uid: az_security_iot_alerts_delete
+        displayName: az security iot-alerts delete
+      - name: list
+        uid: az_security_iot_alerts_list
+        displayName: az security iot-alerts list
+      - name: show
+        uid: az_security_iot_alerts_show
+        displayName: az security iot-alerts show
+    - name: iot-analytics
+      displayName: az security iot-analytics
+      items:
+      - name: Overview
+        uid: az_security_iot_analytics
+        displayName: az security iot-analytics
+      - name: list
+        uid: az_security_iot_analytics_list
+        displayName: az security iot-analytics list
+      - name: show
+        uid: az_security_iot_analytics_show
+        displayName: az security iot-analytics show
+    - name: iot-recommendations
+      displayName: az security iot-recommendations
+      items:
+      - name: Overview
+        uid: az_security_iot_recommendations
+        displayName: az security iot-recommendations
+      - name: list
+        uid: az_security_iot_recommendations_list
+        displayName: az security iot-recommendations list
+      - name: show
+        uid: az_security_iot_recommendations_show
+        displayName: az security iot-recommendations show
+    - name: iot-solution
+      displayName: az security iot-solution
+      items:
+      - name: Overview
+        uid: az_security_iot_solution
+        displayName: az security iot-solution
+      - name: create
+        uid: az_security_iot_solution_create
+        displayName: az security iot-solution create
+      - name: delete
+        uid: az_security_iot_solution_delete
+        displayName: az security iot-solution delete
+      - name: list
+        uid: az_security_iot_solution_list
+        displayName: az security iot-solution list
+      - name: show
+        uid: az_security_iot_solution_show
+        displayName: az security iot-solution show
+      - name: update
+        uid: az_security_iot_solution_update
+        displayName: az security iot-solution update
     - name: jit-policy
       displayName: az security jit-policy
       items:
