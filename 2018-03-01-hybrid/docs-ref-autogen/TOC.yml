@@ -5522,6 +5522,18 @@
       - name: update
         uid: az_security_alert_update
         displayName: az security alert update
+    - name: allowed_connections
+      displayName: az security allowed_connections
+      items:
+      - name: Overview
+        uid: az_security_allowed_connections
+        displayName: az security allowed_connections
+      - name: list
+        uid: az_security_allowed_connections_list
+        displayName: az security allowed_connections list
+      - name: show
+        uid: az_security_allowed_connections_show
+        displayName: az security allowed_connections show
     - name: assessment
       displayName: az security assessment
       items:
