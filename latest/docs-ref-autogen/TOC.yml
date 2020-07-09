@@ -15638,6 +15638,18 @@
     - name: Overview
       uid: az_security
       displayName: az security
+    - name: adaptive-application-controls
+      displayName: az security adaptive-application-controls
+      items:
+      - name: Overview
+        uid: az_security_adaptive_application_controls
+        displayName: az security adaptive-application-controls
+      - name: list
+        uid: az_security_adaptive_application_controls_list
+        displayName: az security adaptive-application-controls list
+      - name: show
+        uid: az_security_adaptive_application_controls_show
+        displayName: az security adaptive-application-controls show
     - name: adaptive_network_hardenings
       displayName: az security adaptive_network_hardenings
       items:
