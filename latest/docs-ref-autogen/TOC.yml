@@ -9137,6 +9137,9 @@
       - name: delete
         uid: az_sql_mi_delete
         displayName: az sql mi delete
+      - name: failover
+        uid: az_sql_mi_failover
+        displayName: az sql mi failover
       - name: list
         uid: az_sql_mi_list
         displayName: az sql mi list

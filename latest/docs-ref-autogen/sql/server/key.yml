@@ -153,7 +153,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/sql/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/578b5648483e568043395af13ec2154079c26325/src/azure-cli/azure/cli/command_modules/sql/_help.py
-updated_at: 7/7/2020 2:20:54 AM
-ms.date: 07/07/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/6a87eb946e924c23ab348fd50d649d12d707be20/src/azure-cli/azure/cli/command_modules/sql/_help.py
+updated_at: 7/9/2020 5:44:39 AM
+ms.date: 07/09/2020
 description: Manage a server's keys.
