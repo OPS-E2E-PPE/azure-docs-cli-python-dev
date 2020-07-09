@@ -15638,6 +15638,18 @@
     - name: Overview
       uid: az_security
       displayName: az security
+    - name: adaptive_network_hardenings
+      displayName: az security adaptive_network_hardenings
+      items:
+      - name: Overview
+        uid: az_security_adaptive_network_hardenings
+        displayName: az security adaptive_network_hardenings
+      - name: list
+        uid: az_security_adaptive_network_hardenings_list
+        displayName: az security adaptive_network_hardenings list
+      - name: show
+        uid: az_security_adaptive_network_hardenings_show
+        displayName: az security adaptive_network_hardenings show
     - name: alert
       displayName: az security alert
       items:

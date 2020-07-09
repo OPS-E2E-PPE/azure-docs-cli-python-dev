@@ -1,32 +1,40 @@
 ### YamlMime:UniversalReference
 items:
-- uid: az_security_iot_analytics
-  name: az security iot-analytics
-  summary: View IoT Security Analytics metrics.
+- uid: az_security_adaptive_network_hardenings
+  name: az security adaptive_network_hardenings
+  summary: View all Adaptive Network Hardening resources.
   description: ''
   langs:
   - azurecli
   children:
-  - az_security_iot_analytics_list
-  - az_security_iot_analytics_show
-- uid: az_security_iot_analytics_list
-  name: az security iot-analytics list
-  summary: List all IoT security Analytics metrics.
+  - az_security_adaptive_network_hardenings_list
+  - az_security_adaptive_network_hardenings_show
+- uid: az_security_adaptive_network_hardenings_list
+  name: az security adaptive_network_hardenings list
+  summary: Gets a list of Adaptive Network Hardenings resources in scope of an extended resource.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Get List of all IoT security Analytics metrics.
+  - summary: Adaptive Network Hardenings - List By Extended Resource
     syntax:
-      content: az security iot-analytics list --solution-name 'IoT-Hub1' --resource-group 'rg1'
+      content: az security adaptive_network_hardenings list --resource-group 'RG1' --resource-type 'virtualMachines' --resource-namespace 'Microsoft.Compute' --resource-name 'VM1'
   parameters:
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - isRequired: true
-    name: --solution-name
-    summary: Name of the IoT Security solution.
+    name: --resource-name
+    summary: Name of the resource.
+    description: ''
+  - isRequired: true
+    name: --resource-namespace
+    summary: The Namespace of the resource.
+    description: ''
+  - isRequired: true
+    name: --resource-type
+    summary: The type of the resource.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -37,24 +45,36 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/security/_help.py
       repo: https://github.com/Azure/azure-cli.git
-- uid: az_security_iot_analytics_show
-  name: az security iot-analytics show
-  summary: Shows IoT Security Analytics metrics.
+- uid: az_security_adaptive_network_hardenings_show
+  name: az security adaptive_network_hardenings show
+  summary: Gets a single Adaptive Network Hardening resource.
   description: ''
   langs:
   - azurecli
   examples:
-  - summary: Get an IoT Security Analytics metrics.
+  - summary: Adaptive Network Hardenings - Get.
     syntax:
-      content: az security iot-analytics show --solution-name 'IoT-Hub1' --resource-group 'rg1'
+      content: az security adaptive_network_hardenings show --resource-group 'RG1' --resource-type 'virtualMachines' --resource-namespace 'Microsoft.Compute' --resource-name 'VM1' --adaptive-network-hardenings-resource-name 'default'
   parameters:
+  - isRequired: true
+    name: --adaptive-network-hardenings-resource-name
+    summary: Adaptive Network Hardening resource name.
+    description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
     description: ''
   - isRequired: true
-    name: --solution-name
-    summary: Name of the IoT Security solution.
+    name: --resource-name
+    summary: Name of the resource.
+    description: ''
+  - isRequired: true
+    name: --resource-namespace
+    summary: The Namespace of the resource.
+    description: ''
+  - isRequired: true
+    name: --resource-type
+    summary: The type of the resource.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -66,12 +86,12 @@ items:
       path: src/azure-cli/azure/cli/command_modules/security/_help.py
       repo: https://github.com/Azure/azure-cli.git
 commands:
-- uid: az_security_iot_analytics_list
-  name: az security iot-analytics list
-  summary: List all IoT security Analytics metrics.
-- uid: az_security_iot_analytics_show
-  name: az security iot-analytics show
-  summary: Shows IoT Security Analytics metrics.
+- uid: az_security_adaptive_network_hardenings_list
+  name: az security adaptive_network_hardenings list
+  summary: Gets a list of Adaptive Network Hardenings resources in scope of an extended resource.
+- uid: az_security_adaptive_network_hardenings_show
+  name: az security adaptive_network_hardenings show
+  summary: Gets a single Adaptive Network Hardening resource.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -93,4 +113,4 @@ original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azu
 gitcommit: https://github.com/Azure/azure-cli/blob/9e520e1346912ed06304a2dead4305f08959a32f/src/azure-cli/azure/cli/command_modules/security/_help.py
 updated_at: 7/9/2020 12:59:46 PM
 ms.date: 07/09/2020
-description: View IoT Security Analytics metrics.
+description: View all Adaptive Network Hardening resources.
