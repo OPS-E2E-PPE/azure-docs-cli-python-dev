@@ -1886,6 +1886,51 @@ commands:
 - uid: az_network_traffic_manager_profile_update
   name: az network traffic-manager profile update
   summary: Update a traffic manager profile.
+- uid: az_network_virtual_appliance
+  name: az network virtual-appliance
+  summary: Manage Azure Network Virtual Appliance.
+- uid: az_network_virtual_appliance_create
+  name: az network virtual-appliance create
+  summary: Create an Azure network virtual appliance.
+- uid: az_network_virtual_appliance_delete
+  name: az network virtual-appliance delete
+  summary: Delete an Azure network virtual appliance.
+- uid: az_network_virtual_appliance_list
+  name: az network virtual-appliance list
+  summary: List all Azure network virtual appliance.
+- uid: az_network_virtual_appliance_show
+  name: az network virtual-appliance show
+  summary: Show the detail of an Azure network virtual appliance.
+- uid: az_network_virtual_appliance_site
+  name: az network virtual-appliance site
+  summary: Manage Azure Network Virtual Appliance Site.
+- uid: az_network_virtual_appliance_site_create
+  name: az network virtual-appliance site create
+  summary: Create an Azure network virtual appliance site.
+- uid: az_network_virtual_appliance_site_delete
+  name: az network virtual-appliance site delete
+  summary: Delete an Azure network virtual appliance site.
+- uid: az_network_virtual_appliance_site_list
+  name: az network virtual-appliance site list
+  summary: List all Azure network virtual appliance site.
+- uid: az_network_virtual_appliance_site_show
+  name: az network virtual-appliance site show
+  summary: Show the detail of an Azure network virtual appliance site.
+- uid: az_network_virtual_appliance_site_update
+  name: az network virtual-appliance site update
+  summary: Update an Azure network virtual appliance site.
+- uid: az_network_virtual_appliance_sku
+  name: az network virtual-appliance sku
+  summary: Manage Azure Network Virtual Appliance Sku.
+- uid: az_network_virtual_appliance_sku_list
+  name: az network virtual-appliance sku list
+  summary: List all Azure network virtual appliance sku.
+- uid: az_network_virtual_appliance_sku_show
+  name: az network virtual-appliance sku show
+  summary: Show the detail of an Azure network virtual appliance sku.
+- uid: az_network_virtual_appliance_update
+  name: az network virtual-appliance update
+  summary: Update an Azure network virtual appliance.
 - uid: az_network_vnet
   name: az network vnet
   summary: Manage Azure Virtual Networks.
@@ -2291,7 +2336,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/network/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/ede21e73b6dd6a3ae721e6abf3c56b17be03a259/src/azure-cli/azure/cli/command_modules/network/_help.py
-updated_at: 7/8/2020 4:38:29 AM
-ms.date: 07/08/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/c763c5bbd7c0a79ede49b540341347a48231beb4/src/azure-cli/azure/cli/command_modules/network/_help.py
+updated_at: 7/9/2020 1:55:38 AM
+ms.date: 07/09/2020
 description: Manage Azure Network resources.
