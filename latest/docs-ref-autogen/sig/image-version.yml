@@ -203,6 +203,9 @@ items:
   - summary: Replicate to one more region
     syntax:
       content: az sig image-version update -g MyResourceGroup --gallery-name MyGallery --gallery-image-definition MyImage --gallery-image-version 1.0.0 --add publishingProfile.targetRegions name=westcentralus
+  - summary: Update --exclude-from-latest. If it is set to true, people deploying VMs with version omitted will not use this version.
+    syntax:
+      content: az sig image-version update -g MyResourceGroup --gallery-name MyGallery --gallery-image-definition MyImage --gallery-image-version 1.0.0 --set publishingProfile.excludeFromLatest=true
   parameters:
   - isRequired: true
     name: --gallery-image-definition -i

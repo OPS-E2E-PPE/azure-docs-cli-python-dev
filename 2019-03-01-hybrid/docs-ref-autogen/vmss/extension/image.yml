@@ -179,7 +179,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/4585b789f94b22da7500ed9cdc4a22eecf16ba5a/src/azure-cli/azure/cli/command_modules/vm/_help.py
-updated_at: 7/9/2020 3:22:19 AM
+gitcommit: https://github.com/Azure/azure-cli/blob/fb601bdbc59d0f89e7226d6a97ce10767c38337a/src/azure-cli/azure/cli/command_modules/vm/_help.py
+updated_at: 7/9/2020 6:11:54 AM
 ms.date: 07/09/2020
 description: Find the available VM extensions for a subscription and region.
