@@ -10772,6 +10772,9 @@
     - name: show
       uid: az_vmss_show
       displayName: az vmss show
+    - name: simulate-eviction
+      uid: az_vmss_simulate_eviction
+      displayName: az vmss simulate-eviction
     - name: start
       uid: az_vmss_start
       displayName: az vmss start
@@ -11021,6 +11024,9 @@
     - name: show
       uid: az_vm_show
       displayName: az vm show
+    - name: simulate-eviction
+      uid: az_vm_simulate_eviction
+      displayName: az vm simulate-eviction
     - name: start
       uid: az_vm_start
       displayName: az vm start

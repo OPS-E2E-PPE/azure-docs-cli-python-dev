@@ -24,6 +24,7 @@ items:
   - az_vmss_scale
   - az_vmss_set_orchestration_service_state
   - az_vmss_show
+  - az_vmss_simulate_eviction
   - az_vmss_start
   - az_vmss_stop
   - az_vmss_update
@@ -862,6 +863,38 @@ items:
       branch: master
       path: src/azure-cli/azure/cli/command_modules/vm/_help.py
       repo: https://github.com/Azure/azure-cli.git
+- uid: az_vmss_simulate_eviction
+  name: az vmss simulate-eviction
+  summary: Simulate the eviction of a Spot virtual machine in a VM scale set.
+  description: ''
+  langs:
+  - azurecli
+  examples:
+  - summary: Simulate the eviction of a Spot virtual machine in a VM scale set.
+    syntax:
+      content: az vmss simulate-eviction --resource-group MyResourceGroup --name MyScaleSet --instance-id 0
+  parameters:
+  - isRequired: true
+    name: --instance-id
+    summary: The instance ID of the virtual machine.
+    description: ''
+  - isRequired: true
+    name: --name -n
+    summary: Scale set name. You can configure the default using `az configure --defaults vmss=&lt;name&gt;`.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=&lt;name&gt;`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  source:
+    path: src/azure-cli/azure/cli/command_modules/vm/_help.py
+    remote:
+      branch: master
+      path: src/azure-cli/azure/cli/command_modules/vm/_help.py
+      repo: https://github.com/Azure/azure-cli.git
 - uid: az_vmss_start
   name: az vmss start
   summary: Start VMs within a VMSS.
@@ -1295,6 +1328,9 @@ commands:
 - uid: az_vmss_show
   name: az vmss show
   summary: Get details on VMs within a VMSS.
+- uid: az_vmss_simulate_eviction
+  name: az vmss simulate-eviction
+  summary: Simulate the eviction of a Spot virtual machine in a VM scale set.
 - uid: az_vmss_start
   name: az vmss start
   summary: Start VMs within a VMSS.
@@ -1328,7 +1364,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/vm/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/fb601bdbc59d0f89e7226d6a97ce10767c38337a/src/azure-cli/azure/cli/command_modules/vm/_help.py
-updated_at: 7/9/2020 6:11:54 AM
-ms.date: 07/09/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/92c8bb1c276b38434733770262a12d1993b7a44d/src/azure-cli/azure/cli/command_modules/vm/_help.py
+updated_at: 7/10/2020 5:22:00 AM
+ms.date: 07/10/2020
 description: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).
