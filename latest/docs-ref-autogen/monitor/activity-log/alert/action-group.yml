@@ -124,7 +124,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/monitor/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/90d6ecb0e6d40c8dcfe28a08f64b9266c29559e4/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-updated_at: 7/6/2020 5:53:06 AM
-ms.date: 07/06/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/4abc978de45d56273df6d91ccd1c39f695c7db2d/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+updated_at: 7/10/2020 12:08:08 AM
+ms.date: 07/10/2020
 description: Manage action groups for activity log alerts.

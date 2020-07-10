@@ -4904,6 +4904,27 @@
         - name: update
           uid: az_monitor_log_analytics_workspace_update
           displayName: az monitor log-analytics workspace update
+        - name: data-export
+          displayName: az monitor log-analytics workspace data-export
+          items:
+          - name: Overview
+            uid: az_monitor_log_analytics_workspace_data_export
+            displayName: az monitor log-analytics workspace data-export
+          - name: create
+            uid: az_monitor_log_analytics_workspace_data_export_create
+            displayName: az monitor log-analytics workspace data-export create
+          - name: delete
+            uid: az_monitor_log_analytics_workspace_data_export_delete
+            displayName: az monitor log-analytics workspace data-export delete
+          - name: list
+            uid: az_monitor_log_analytics_workspace_data_export_list
+            displayName: az monitor log-analytics workspace data-export list
+          - name: show
+            uid: az_monitor_log_analytics_workspace_data_export_show
+            displayName: az monitor log-analytics workspace data-export show
+          - name: update
+            uid: az_monitor_log_analytics_workspace_data_export_update
+            displayName: az monitor log-analytics workspace data-export update
         - name: linked-service
           displayName: az monitor log-analytics workspace linked-service
           items:
