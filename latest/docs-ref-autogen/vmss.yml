@@ -310,6 +310,10 @@ items:
   - name: --data-disk-sizes-gb
     summary: Space-separated empty managed data disk sizes in GB to create.
     description: ''
+  - name: --encryption-at-host
+    parameterValueGroup: false, true
+    summary: Enable Host Encryption for the VM or VMSS. This will enable the encryption for all the disks including Resource/Temp disk at host itself.
+    description: ''
   - name: --ephemeral-os-disk
     parameterValueGroup: false, true
     summary: Allows you to create an OS disk directly on the host node, providing local disk performance and faster VM/VMSS reimage time.
