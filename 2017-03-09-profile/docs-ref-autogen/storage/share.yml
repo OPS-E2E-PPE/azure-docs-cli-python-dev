@@ -167,10 +167,6 @@ items:
       content: az storage share generate-sas --connection-string $connectionString --expiry 2019-02-01T12:20Z --name MyShare --permissions dlrw
   parameters:
   - isRequired: true
-    name: --expiry
-    summary: Specifies the UTC datetime (Y-m-d'T'H:M'Z') at which the SAS becomes invalid. Do not use if a stored access policy is referenced with --id that specifies this value.
-    description: ''
-  - isRequired: true
     name: --name -n
     summary: The file share name.
     description: ''
@@ -188,6 +184,9 @@ items:
     description: ''
   - name: --content-type
     summary: Response header value for Content-Type when resource is accessed using this shared access signature.
+    description: ''
+  - name: --expiry
+    summary: Specifies the UTC datetime (Y-m-d'T'H:M'Z') at which the SAS becomes invalid. Do not use if a stored access policy is referenced with --id that specifies this value.
     description: ''
   - name: --https-only
     summary: Only permit requests made with the HTTPS protocol. If omitted, requests from both the HTTP and HTTPS protocol are permitted.

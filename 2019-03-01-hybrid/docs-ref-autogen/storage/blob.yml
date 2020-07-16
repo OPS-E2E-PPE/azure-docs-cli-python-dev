@@ -404,10 +404,6 @@ items:
     summary: The container name.
     description: ''
   - isRequired: true
-    name: --expiry
-    summary: Specifies the UTC datetime (Y-m-d'T'H:M'Z') at which the SAS becomes invalid. Do not use if a stored access policy is referenced with --id that specifies this value.
-    description: ''
-  - isRequired: true
     name: --name -n
     summary: The blob name.
     description: ''
@@ -429,6 +425,9 @@ items:
     description: ''
   - name: --content-type
     summary: Response header value for Content-Type when resource is accessedusing this shared access signature.
+    description: ''
+  - name: --expiry
+    summary: Specifies the UTC datetime (Y-m-d'T'H:M'Z') at which the SAS becomes invalid. Do not use if a stored access policy is referenced with --id that specifies this value.
     description: ''
   - name: --full-uri
     summary: Indicates that this command return the full blob URI and the shared access signature token.
