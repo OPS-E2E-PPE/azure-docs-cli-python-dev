@@ -866,9 +866,9 @@ items:
   - summary: Update a AKS-managed AAD cluster with tenant ID or admin group object IDs.
     syntax:
       content: az aks update -g MyResourceGroup -n MyManagedCluster --aad-admin-group-object-ids <id-1,id-2> --aad-tenant-id <id>
-  - summary: Update an existing AKS AAD-Integrated cluster to the new AKS-managed AAD experience.
+  - summary: Migrate a AKS AAD-Integrated cluster or a non-AAD cluster to a AKS-managed AAD cluster.
     syntax:
-      content: az aks update -g MyResourceGroup -n MyManagedCluster --enable-aad
+      content: az aks update -g MyResourceGroup -n MyManagedCluster --enable-aad --aad-admin-group-object-ids <id-1,id-2> --aad-tenant-id <id>
   parameters:
   - isRequired: true
     name: --name -n
@@ -1334,7 +1334,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/acs/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/b0d94892483eb0afdce9dbff53d15dcbbb294639/src/azure-cli/azure/cli/command_modules/acs/_help.py
-updated_at: 7/15/2020 7:48:32 AM
-ms.date: 07/15/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/8aea693ed7391851d5614739a73a570730edefa8/src/azure-cli/azure/cli/command_modules/acs/_help.py
+updated_at: 7/21/2020 1:45:10 AM
+ms.date: 07/21/2020
 description: Manage Azure Kubernetes Services.
