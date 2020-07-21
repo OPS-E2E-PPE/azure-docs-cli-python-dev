@@ -122,7 +122,12 @@ items:
     description: ''
   - isRequired: true
     name: --value
-    summary: The value to be decrypted.
+    summary: The value to be decrypted, which should be the result of "az keyvault encrypt".
+    description: ''
+  - name: --data-type
+    defaultValue: base64
+    parameterValueGroup: base64, plaintext
+    summary: The type of the original data.
     description: ''
   - name: --id
     summary: Id of the key. If specified all other 'Id' arguments should be omitted.
@@ -228,7 +233,12 @@ items:
     description: ''
   - isRequired: true
     name: --value
-    summary: The value to be encrypted.
+    summary: The value to be encrypted. Default data type is Base64 encoded string.
+    description: ''
+  - name: --data-type
+    defaultValue: base64
+    parameterValueGroup: base64, plaintext
+    summary: The type of the original data.
     description: ''
   - name: --id
     summary: Id of the key. If specified all other 'Id' arguments should be omitted.
