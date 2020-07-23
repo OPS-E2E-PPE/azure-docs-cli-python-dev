@@ -28,7 +28,7 @@ items:
   parameters:
   - isRequired: true
     name: --destination
-    summary: The destination resource ID. It should be a storage account or an event hub namespace.
+    summary: The destination resource ID. It should be a storage account, an event hub namespace or an event hub. If event hub namespace is provided, event hub would be created for each table automatically.
     description: ''
   - isRequired: true
     name: --name -n
@@ -173,7 +173,7 @@ items:
     summary: All workspace's tables are exported when this is enabled.
     description: ''
   - name: --destination
-    summary: The destination resource ID. It should be a storage account or an event hub namespace.
+    summary: The destination resource ID. It should be a storage account, an event hub namespace or an event hub. If event hub namespace is provided, event hub would be created for each table automatically.
     description: ''
   - name: --enable
     parameterValueGroup: false, true
