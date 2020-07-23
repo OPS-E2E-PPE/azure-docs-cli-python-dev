@@ -369,7 +369,7 @@ commands:
   summary: Manage storage blob leases.
 - uid: az_storage_blob_lease_acquire
   name: az storage blob lease acquire
-  summary: Requests a new lease.
+  summary: Request a new lease.
 - uid: az_storage_blob_lease_break
   name: az storage blob lease break
   summary: Breaks the lease, if the blob has an active lease.
@@ -381,7 +381,7 @@ commands:
   summary: Releases the lease.
 - uid: az_storage_blob_lease_renew
   name: az storage blob lease renew
-  summary: Renews the lease.
+  summary: Renew the lease.
 - uid: az_storage_blob_list
   name: az storage blob list
   summary: List blobs in a given container.
@@ -847,7 +847,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/9a8302043cdd0c6e6f3f5f51b64b296bda7708d5/src/azure-cli/azure/cli/command_modules/storage/_help.py
-updated_at: 7/16/2020 5:46:58 AM
-ms.date: 07/16/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/1a8cb860cf991559529608be2f5ba424466a6669/src/azure-cli/azure/cli/command_modules/storage/_help.py
+updated_at: 7/23/2020 8:07:03 AM
+ms.date: 07/23/2020
 description: Manage Azure Cloud Storage resources.

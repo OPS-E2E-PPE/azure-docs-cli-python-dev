@@ -14,10 +14,14 @@ items:
   - az_storage_blob_lease_renew
 - uid: az_storage_blob_lease_acquire
   name: az storage blob lease acquire
-  summary: Acquires a lock on a blob for write and delete operations.
-  description: The lock duration can be 15 to 60 seconds, or can be infinite.
+  summary: Request a new lease.
+  description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Request a new lease.
+    syntax:
+      content: az storage blob lease acquire -b myblob -c mycontainer --account-name mystorageaccount --account-key 0000-0000
   parameters:
   - isRequired: true
     name: --blob-name -b
@@ -240,10 +244,14 @@ items:
       repo: https://github.com/Azure/azure-cli.git
 - uid: az_storage_blob_lease_renew
   name: az storage blob lease renew
-  summary: Renews a lock on a blob for write and delete operations.
-  description: The lock duration can be 15 to 60 seconds, or can be infinite.
+  summary: Renew the lease.
+  description: ''
   langs:
   - azurecli
+  examples:
+  - summary: Renew the lease.
+    syntax:
+      content: az storage blob lease renew -b myblob -c mycontainer --lease-id "32fe23cd-4779-4919-adb3-357e76c9b1bb" --account-name mystorageaccount --account-key 0000-0000
   parameters:
   - isRequired: true
     name: --blob-name -b
@@ -296,7 +304,7 @@ items:
 commands:
 - uid: az_storage_blob_lease_acquire
   name: az storage blob lease acquire
-  summary: Acquires a lock on a blob for write and delete operations.
+  summary: Request a new lease.
 - uid: az_storage_blob_lease_break
   name: az storage blob lease break
   summary: Breaks a lock on a blob for write and delete operations.
@@ -308,7 +316,7 @@ commands:
   summary: Releases a lock on a blob for write and delete operations.
 - uid: az_storage_blob_lease_renew
   name: az storage blob lease renew
-  summary: Renews a lock on a blob for write and delete operations.
+  summary: Renew the lease.
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -327,7 +335,7 @@ globalParameters:
 doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
 doc_source_url_path: src/azure-cli/azure/cli/command_modules/storage/_help.py
 original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-gitcommit: https://github.com/Azure/azure-cli/blob/9a8302043cdd0c6e6f3f5f51b64b296bda7708d5/src/azure-cli/azure/cli/command_modules/storage/_help.py
-updated_at: 7/16/2020 5:46:58 AM
-ms.date: 07/16/2020
+gitcommit: https://github.com/Azure/azure-cli/blob/1a8cb860cf991559529608be2f5ba424466a6669/src/azure-cli/azure/cli/command_modules/storage/_help.py
+updated_at: 7/23/2020 8:07:03 AM
+ms.date: 07/23/2020
 description: Manage storage blob leases.
