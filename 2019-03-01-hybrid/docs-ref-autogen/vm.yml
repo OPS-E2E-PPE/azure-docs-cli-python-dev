@@ -263,8 +263,7 @@ directCommands:
     summary: Password for the VM if authentication type is 'Password'.
     description: ''
   - name: --admin-username
-    defaultValue: your_system_user_login_name
-    summary: Username for the VM.
+    summary: Username for the VM. Default value is current username of OS. If the default value is system reserved, then default value will be set to azureuser. Please refer to <a href="https://docs.microsoft.com/en-us/rest/api/compute/virtualmachines/createorupdate#osprofile">https://docs.microsoft.com/en-us/rest/api/compute/virtualmachines/createorupdate#osprofile</a> to get a full list of reserved values.
     description: ''
   - name: --asgs
     summary: Space-separated list of existing application security groups to associate with the VM.
