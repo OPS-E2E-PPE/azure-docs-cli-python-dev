@@ -11975,6 +11975,9 @@
       - name: delete
         uid: az_apim_api_delete
         displayName: az apim api delete
+      - name: import
+        uid: az_apim_api_import
+        displayName: az apim api import
       - name: list
         uid: az_apim_api_list
         displayName: az apim api list
