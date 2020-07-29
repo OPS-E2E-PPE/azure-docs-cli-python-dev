@@ -411,8 +411,8 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/b567f0f98d4e9e9063cdb15e1778e6017bd803bc/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  updated_at: 7/29/2020 1:25:56 AM
+  gitcommit: https://github.com/Azure/azure-cli/blob/e94d2c8986ac07d2b92fb21a293444dfaa775047/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  updated_at: 7/29/2020 2:19:25 AM
   ms.date: 07/29/2020
   description: >-
     ACS will be retired as a standalone service on January 31, 2020.

@@ -11915,6 +11915,9 @@
       - name: delete
         uid: az_aks_nodepool_delete
         displayName: az aks nodepool delete
+      - name: get-upgrades
+        uid: az_aks_nodepool_get_upgrades
+        displayName: az aks nodepool get-upgrades
       - name: list
         uid: az_aks_nodepool_list
         displayName: az aks nodepool list
