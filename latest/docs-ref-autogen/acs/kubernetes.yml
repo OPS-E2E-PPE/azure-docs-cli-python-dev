@@ -80,15 +80,25 @@ directCommands:
   syntax: >-
     az acs kubernetes install-cli [--client-version]
                                   [--install-location]
+                                  [--kubelogin-install-location]
+                                  [--kubelogin-version]
                                   [--subscription]
   optionalParameters:
   - name: --client-version
     defaultValue: latest
-    summary: Version of the client to install.
+    summary: Version of kubectl to install.
     description: ''
   - name: --install-location
     defaultValue: ~/.azure-kubectl/kubectl.exe
     summary: Path at which to install kubectl.
+    description: ''
+  - name: --kubelogin-install-location
+    defaultValue: ~/.azure-kubelogin/kubelogin.exe
+    summary: Path at which to install kubelogin.
+    description: ''
+  - name: --kubelogin-version
+    defaultValue: latest
+    summary: Version of kubelogin to install.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -116,7 +126,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/8aea693ed7391851d5614739a73a570730edefa8/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  updated_at: 7/21/2020 1:45:10 AM
-  ms.date: 07/21/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/b567f0f98d4e9e9063cdb15e1778e6017bd803bc/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  updated_at: 7/29/2020 1:25:56 AM
+  ms.date: 07/29/2020
   description: Commands to manage a Kubernetes-orchestrated Azure Container Service.
