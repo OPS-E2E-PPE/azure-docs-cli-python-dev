@@ -232,6 +232,7 @@ commands:
 - az_cdn
 - az_cloud
 - az_cognitiveservices
+- az_config
 - az_configure
 - az_consumption
 - az_container

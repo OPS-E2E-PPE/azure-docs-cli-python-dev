@@ -71,8 +71,8 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_tag_list
   name: az tag list
-  summary: Gets the names and values of all resource tags that are defined in a subscription.
-  description: ''
+  summary: Gets a summary of tag usage under the subscription.
+  description: This operation performs a union of predefined tags, resource tags, resource group tags and subscription tags, and returns a summary of usage for each tag name and value under the given subscription. In case of a large number of tags, this operation may return a previously cached result.
   syntax: az tag list [--subscription]
   optionalParameters:
   - name: --subscription
@@ -81,8 +81,8 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_tag_remove_value
   name: az tag remove-value
-  summary: Deletes a tag value.
-  description: ''
+  summary: Deletes a predefined tag value for a predefined tag name.
+  description: This operation allows deleting a value from the list of predefined values for an existing predefined tag name. The value being deleted must not be in use as a tag value for the given tag name for any resource.
   syntax: >-
     az tag remove-value --name
                         --value
