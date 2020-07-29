@@ -13709,6 +13709,30 @@
         - name: update
           uid: az_devops_wiki_page_update
           displayName: az devops wiki page update
+  - name: disk-access
+    displayName: az disk-access
+    items:
+    - name: Overview
+      uid: az_disk_access
+      displayName: az disk-access
+    - name: create
+      uid: az_disk_access_create
+      displayName: az disk-access create
+    - name: delete
+      uid: az_disk_access_delete
+      displayName: az disk-access delete
+    - name: list
+      uid: az_disk_access_list
+      displayName: az disk-access list
+    - name: show
+      uid: az_disk_access_show
+      displayName: az disk-access show
+    - name: update
+      uid: az_disk_access_update
+      displayName: az disk-access update
+    - name: wait
+      uid: az_disk_access_wait
+      displayName: az disk-access wait
   - name: disk-encryption-set
     displayName: az disk-encryption-set
     items:

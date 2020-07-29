@@ -242,6 +242,7 @@ commands:
 - az_deploymentmanager
 - az_devops
 - az_disk
+- az_disk_access
 - az_disk_encryption_set
 - az_dla
 - az_dls

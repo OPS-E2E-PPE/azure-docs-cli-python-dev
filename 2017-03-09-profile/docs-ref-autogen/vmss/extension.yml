@@ -182,7 +182,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/9ddc1d2b34e75a8604fb03b8e4bb344587c54d34/src/azure-cli/azure/cli/command_modules/vm/_help.py
-  updated_at: 7/24/2020 2:12:52 AM
-  ms.date: 07/24/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/ad36d05eb073bbdb1c0dbc7ac8ea3c5530856fa7/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  updated_at: 7/29/2020 5:47:51 AM
+  ms.date: 07/29/2020
   description: Manage extensions on a VM scale set.
