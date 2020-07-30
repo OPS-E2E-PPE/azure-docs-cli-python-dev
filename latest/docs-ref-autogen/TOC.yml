@@ -1310,6 +1310,9 @@
       - name: show
         uid: az_cdn_origin_show
         displayName: az cdn origin show
+      - name: update
+        uid: az_cdn_origin_update
+        displayName: az cdn origin update
     - name: profile
       displayName: az cdn profile
       items:
