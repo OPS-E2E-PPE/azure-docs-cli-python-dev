@@ -14732,9 +14732,6 @@
     - name: Overview
       uid: az_netappfiles
       displayName: az netappfiles
-    - name: list-mount-targets
-      uid: az_netappfiles_list_mount_targets
-      displayName: az netappfiles list-mount-targets
     - name: account
       displayName: az netappfiles account
       items:
@@ -14825,6 +14822,9 @@
       - name: list
         uid: az_netappfiles_volume_list
         displayName: az netappfiles volume list
+      - name: revert
+        uid: az_netappfiles_volume_revert
+        displayName: az netappfiles volume revert
       - name: show
         uid: az_netappfiles_volume_show
         displayName: az netappfiles volume show
