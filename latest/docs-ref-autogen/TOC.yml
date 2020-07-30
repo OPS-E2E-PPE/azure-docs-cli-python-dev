@@ -11240,6 +11240,9 @@
         - name: delete
           uid: az_vm_host_group_delete
           displayName: az vm host group delete
+        - name: get-instance-view
+          uid: az_vm_host_group_get_instance_view
+          displayName: az vm host group get-instance-view
         - name: list
           uid: az_vm_host_group_list
           displayName: az vm host group list
