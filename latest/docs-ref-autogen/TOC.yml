@@ -13154,6 +13154,9 @@
       - name: wait
         uid: az_deployment_mg_wait
         displayName: az deployment mg wait
+      - name: what-if
+        uid: az_deployment_mg_what_if
+        displayName: az deployment mg what-if
     - name: operation
       displayName: az deployment operation
       items:
@@ -13277,6 +13280,9 @@
       - name: wait
         uid: az_deployment_tenant_wait
         displayName: az deployment tenant wait
+      - name: what-if
+        uid: az_deployment_tenant_what_if
+        displayName: az deployment tenant what-if
   - name: deployment-scripts
     displayName: az deployment-scripts
     items:
