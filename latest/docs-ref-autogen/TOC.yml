@@ -8543,6 +8543,9 @@
     - name: remove-value
       uid: az_tag_remove_value
       displayName: az tag remove-value
+    - name: update
+      uid: az_tag_update
+      displayName: az tag update
   - name: Resources
     displayName: az resource
     items:
