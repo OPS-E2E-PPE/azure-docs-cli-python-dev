@@ -11354,6 +11354,9 @@
     - name: list
       uid: az_webapp_list
       displayName: az webapp list
+    - name: list-instances
+      uid: az_webapp_list_instances
+      displayName: az webapp list-instances
     - name: list-runtimes
       uid: az_webapp_list_runtimes
       displayName: az webapp list-runtimes
