@@ -129,7 +129,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/d5a9ac470c408bafac48e4b52e15cff396421fc3/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-  updated_at: 8/10/2020 5:03:20 AM
-  ms.date: 08/10/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/40f9c7d3228a7ad180a0ced8b1f1caff1408d530/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  updated_at: 8/12/2020 1:49:50 AM
+  ms.date: 08/12/2020
   description: Manage function app container settings.

@@ -394,6 +394,13 @@ commands:
 - az_functionapp_deployment_user_show
 - az_functionapp_devops_pipeline
 - az_functionapp_devops_pipeline_create
+- az_functionapp_function
+- az_functionapp_function_delete
+- az_functionapp_function_keys
+- az_functionapp_function_keys_delete
+- az_functionapp_function_keys_list
+- az_functionapp_function_keys_set
+- az_functionapp_function_show
 - az_functionapp_hybrid_connection
 - az_functionapp_hybrid_connection_add
 - az_functionapp_hybrid_connection_list
@@ -402,6 +409,10 @@ commands:
 - az_functionapp_identity_assign
 - az_functionapp_identity_remove
 - az_functionapp_identity_show
+- az_functionapp_keys
+- az_functionapp_keys_delete
+- az_functionapp_keys_list
+- az_functionapp_keys_set
 - az_functionapp_list
 - az_functionapp_list_consumption_locations
 - az_functionapp_log
@@ -441,7 +452,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/d5a9ac470c408bafac48e4b52e15cff396421fc3/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-  updated_at: 8/10/2020 5:03:20 AM
-  ms.date: 08/10/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/40f9c7d3228a7ad180a0ced8b1f1caff1408d530/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  updated_at: 8/12/2020 1:49:50 AM
+  ms.date: 08/12/2020
   description: Manage function apps. To install the Azure Functions Core tools see <a href="https://github.com/Azure/azure-functions-core-tools">https://github.com/Azure/azure-functions-core-tools</a>.

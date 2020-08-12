@@ -596,6 +596,33 @@
       - name: create
         uid: az_functionapp_devops_pipeline_create
         displayName: az functionapp devops-pipeline create
+    - name: function
+      displayName: az functionapp function
+      items:
+      - name: Overview
+        uid: az_functionapp_function
+        displayName: az functionapp function
+      - name: delete
+        uid: az_functionapp_function_delete
+        displayName: az functionapp function delete
+      - name: show
+        uid: az_functionapp_function_show
+        displayName: az functionapp function show
+      - name: keys
+        displayName: az functionapp function keys
+        items:
+        - name: Overview
+          uid: az_functionapp_function_keys
+          displayName: az functionapp function keys
+        - name: delete
+          uid: az_functionapp_function_keys_delete
+          displayName: az functionapp function keys delete
+        - name: list
+          uid: az_functionapp_function_keys_list
+          displayName: az functionapp function keys list
+        - name: set
+          uid: az_functionapp_function_keys_set
+          displayName: az functionapp function keys set
     - name: hybrid-connection
       displayName: az functionapp hybrid-connection
       items:
@@ -626,6 +653,21 @@
       - name: show
         uid: az_functionapp_identity_show
         displayName: az functionapp identity show
+    - name: keys
+      displayName: az functionapp keys
+      items:
+      - name: Overview
+        uid: az_functionapp_keys
+        displayName: az functionapp keys
+      - name: delete
+        uid: az_functionapp_keys_delete
+        displayName: az functionapp keys delete
+      - name: list
+        uid: az_functionapp_keys_list
+        displayName: az functionapp keys list
+      - name: set
+        uid: az_functionapp_keys_set
+        displayName: az functionapp keys set
     - name: log
       displayName: az functionapp log
       items:
