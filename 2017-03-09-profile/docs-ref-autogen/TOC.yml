@@ -329,6 +329,51 @@
       - name: wait
         uid: az_hdinsight_application_wait
         displayName: az hdinsight application wait
+    - name: autoscale
+      displayName: az hdinsight autoscale
+      items:
+      - name: Overview
+        uid: az_hdinsight_autoscale
+        displayName: az hdinsight autoscale
+      - name: create
+        uid: az_hdinsight_autoscale_create
+        displayName: az hdinsight autoscale create
+      - name: delete
+        uid: az_hdinsight_autoscale_delete
+        displayName: az hdinsight autoscale delete
+      - name: list-timezones
+        uid: az_hdinsight_autoscale_list_timezones
+        displayName: az hdinsight autoscale list-timezones
+      - name: show
+        uid: az_hdinsight_autoscale_show
+        displayName: az hdinsight autoscale show
+      - name: update
+        uid: az_hdinsight_autoscale_update
+        displayName: az hdinsight autoscale update
+      - name: wait
+        uid: az_hdinsight_autoscale_wait
+        displayName: az hdinsight autoscale wait
+      - name: condition
+        displayName: az hdinsight autoscale condition
+        items:
+        - name: Overview
+          uid: az_hdinsight_autoscale_condition
+          displayName: az hdinsight autoscale condition
+        - name: create
+          uid: az_hdinsight_autoscale_condition_create
+          displayName: az hdinsight autoscale condition create
+        - name: delete
+          uid: az_hdinsight_autoscale_condition_delete
+          displayName: az hdinsight autoscale condition delete
+        - name: list
+          uid: az_hdinsight_autoscale_condition_list
+          displayName: az hdinsight autoscale condition list
+        - name: update
+          uid: az_hdinsight_autoscale_condition_update
+          displayName: az hdinsight autoscale condition update
+        - name: wait
+          uid: az_hdinsight_autoscale_condition_wait
+          displayName: az hdinsight autoscale condition wait
     - name: host
       displayName: az hdinsight host
       items:
