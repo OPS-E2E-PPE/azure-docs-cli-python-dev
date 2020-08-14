@@ -169,7 +169,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/5d103d2243737f711ef68e27acbf41e1412dac6c/src/azure-cli/azure/cli/command_modules/role/_help.py
-  updated_at: 7/29/2020 5:51:24 AM
-  ms.date: 07/29/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/fe7807bdd4a24a8b3a8bcaf44ab11eb092723f11/src/azure-cli/azure/cli/command_modules/role/_help.py
+  updated_at: 8/14/2020 6:37:45 AM
+  ms.date: 08/14/2020
   description: Manage an application's OAuth2 permissions.
