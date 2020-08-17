@@ -245,6 +245,7 @@ commands:
 - az_security
 - az_self_test
 - az_storage
+- az_synapse
 - az_tag
 - az_version
 - az_vm

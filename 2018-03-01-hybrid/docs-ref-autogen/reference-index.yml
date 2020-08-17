@@ -248,6 +248,7 @@ commands:
 - az_self_test
 - az_snapshot
 - az_storage
+- az_synapse
 - az_tag
 - az_version
 - az_vm

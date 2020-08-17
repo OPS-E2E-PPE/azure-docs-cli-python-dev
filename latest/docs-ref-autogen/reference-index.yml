@@ -300,6 +300,7 @@ commands:
 - az_sql
 - az_staticwebapp
 - az_storage
+- az_synapse
 - az_tag
 - az_version
 - az_vm

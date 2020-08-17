@@ -1,0 +1,60 @@
+### YamlMime:AzureCLIGroup
+uid: az_synapse
+name: az synapse
+summary: Manage and operate Synapse Workspace, Spark Pool, SQL Pool.
+description: ''
+commands:
+- az_synapse_spark
+- az_synapse_spark_pool
+- az_synapse_spark_pool_create
+- az_synapse_spark_pool_delete
+- az_synapse_spark_pool_list
+- az_synapse_spark_pool_show
+- az_synapse_spark_pool_update
+- az_synapse_spark_pool_wait
+- az_synapse_sql
+- az_synapse_sql_pool
+- az_synapse_sql_pool_create
+- az_synapse_sql_pool_delete
+- az_synapse_sql_pool_list
+- az_synapse_sql_pool_pause
+- az_synapse_sql_pool_resume
+- az_synapse_sql_pool_show
+- az_synapse_sql_pool_update
+- az_synapse_sql_pool_wait
+- az_synapse_workspace
+- az_synapse_workspace_check_name
+- az_synapse_workspace_create
+- az_synapse_workspace_delete
+- az_synapse_workspace_firewall_rule
+- az_synapse_workspace_firewall_rule_create
+- az_synapse_workspace_firewall_rule_delete
+- az_synapse_workspace_firewall_rule_list
+- az_synapse_workspace_firewall_rule_show
+- az_synapse_workspace_firewall_rule_wait
+- az_synapse_workspace_list
+- az_synapse_workspace_show
+- az_synapse_workspace_update
+- az_synapse_workspace_wait
+globalParameters:
+- name: --debug
+  summary: Increase logging verbosity to show all debug logs.
+- name: --help -h
+  summary: Show this help message and exit.
+- name: --only-show-errors
+  summary: Only show errors, suppressing warnings.
+- name: --output -o
+  defaultValue: json
+  parameterValueGroup: json, jsonc, table, tsv
+  summary: Output format.
+- name: --query
+  summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+- name: --verbose
+  summary: Increase logging verbosity. Use --debug for full debug logs.
+metadata:
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  gitcommit: https://github.com/Azure/azure-cli/blob/4bf79e6ec51e8002b5c498f2bd6a378756145bb1/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  updated_at: 8/17/2020 6:19:41 AM
+  ms.date: 08/17/2020
+  description: Manage and operate Synapse Workspace, Spark Pool, SQL Pool.
