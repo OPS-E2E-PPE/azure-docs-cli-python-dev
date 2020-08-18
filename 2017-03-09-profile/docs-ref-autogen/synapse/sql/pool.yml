@@ -330,7 +330,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/4bf79e6ec51e8002b5c498f2bd6a378756145bb1/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-  updated_at: 8/17/2020 6:19:41 AM
-  ms.date: 08/17/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/2e04cb7305bff8133329464c2a591e34cf908395/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  updated_at: 8/18/2020 9:46:22 AM
+  ms.date: 08/18/2020
   description: Manage SQL pools.

@@ -7550,6 +7550,24 @@
       - name: Overview
         uid: az_synapse_spark
         displayName: az synapse spark
+      - name: job
+        displayName: az synapse spark job
+        items:
+        - name: Overview
+          uid: az_synapse_spark_job
+          displayName: az synapse spark job
+        - name: cancel
+          uid: az_synapse_spark_job_cancel
+          displayName: az synapse spark job cancel
+        - name: list
+          uid: az_synapse_spark_job_list
+          displayName: az synapse spark job list
+        - name: show
+          uid: az_synapse_spark_job_show
+          displayName: az synapse spark job show
+        - name: submit
+          uid: az_synapse_spark_job_submit
+          displayName: az synapse spark job submit
       - name: pool
         displayName: az synapse spark pool
         items:
@@ -7574,6 +7592,45 @@
         - name: wait
           uid: az_synapse_spark_pool_wait
           displayName: az synapse spark pool wait
+      - name: session
+        displayName: az synapse spark session
+        items:
+        - name: Overview
+          uid: az_synapse_spark_session
+          displayName: az synapse spark session
+        - name: cancel
+          uid: az_synapse_spark_session_cancel
+          displayName: az synapse spark session cancel
+        - name: create
+          uid: az_synapse_spark_session_create
+          displayName: az synapse spark session create
+        - name: list
+          uid: az_synapse_spark_session_list
+          displayName: az synapse spark session list
+        - name: reset-timeout
+          uid: az_synapse_spark_session_reset_timeout
+          displayName: az synapse spark session reset-timeout
+        - name: show
+          uid: az_synapse_spark_session_show
+          displayName: az synapse spark session show
+      - name: statement
+        displayName: az synapse spark statement
+        items:
+        - name: Overview
+          uid: az_synapse_spark_statement
+          displayName: az synapse spark statement
+        - name: cancel
+          uid: az_synapse_spark_statement_cancel
+          displayName: az synapse spark statement cancel
+        - name: invoke
+          uid: az_synapse_spark_statement_invoke
+          displayName: az synapse spark statement invoke
+        - name: list
+          uid: az_synapse_spark_statement_list
+          displayName: az synapse spark statement list
+        - name: show
+          uid: az_synapse_spark_statement_show
+          displayName: az synapse spark statement show
     - name: sql
       displayName: az synapse sql
       items:

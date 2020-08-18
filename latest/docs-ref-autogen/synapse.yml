@@ -5,6 +5,11 @@ summary: Manage and operate Synapse Workspace, Spark Pool, SQL Pool.
 description: ''
 commands:
 - az_synapse_spark
+- az_synapse_spark_job
+- az_synapse_spark_job_cancel
+- az_synapse_spark_job_list
+- az_synapse_spark_job_show
+- az_synapse_spark_job_submit
 - az_synapse_spark_pool
 - az_synapse_spark_pool_create
 - az_synapse_spark_pool_delete
@@ -12,6 +17,17 @@ commands:
 - az_synapse_spark_pool_show
 - az_synapse_spark_pool_update
 - az_synapse_spark_pool_wait
+- az_synapse_spark_session
+- az_synapse_spark_session_cancel
+- az_synapse_spark_session_create
+- az_synapse_spark_session_list
+- az_synapse_spark_session_reset_timeout
+- az_synapse_spark_session_show
+- az_synapse_spark_statement
+- az_synapse_spark_statement_cancel
+- az_synapse_spark_statement_invoke
+- az_synapse_spark_statement_list
+- az_synapse_spark_statement_show
 - az_synapse_sql
 - az_synapse_sql_pool
 - az_synapse_sql_pool_create
@@ -54,7 +70,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/4bf79e6ec51e8002b5c498f2bd6a378756145bb1/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-  updated_at: 8/17/2020 6:19:41 AM
-  ms.date: 08/17/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/2e04cb7305bff8133329464c2a591e34cf908395/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  updated_at: 8/18/2020 9:46:22 AM
+  ms.date: 08/18/2020
   description: Manage and operate Synapse Workspace, Spark Pool, SQL Pool.
