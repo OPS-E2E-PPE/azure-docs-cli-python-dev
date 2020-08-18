@@ -11009,6 +11009,9 @@
     - name: Overview
       uid: az_vm
       displayName: az vm
+    - name: assess-patches
+      uid: az_vm_assess_patches
+      displayName: az vm assess-patches
     - name: auto-shutdown
       uid: az_vm_auto_shutdown
       displayName: az vm auto-shutdown
