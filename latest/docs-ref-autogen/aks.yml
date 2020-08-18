@@ -58,6 +58,7 @@ directCommands:
                   [--admin-username]
                   [--api-server-authorized-ip-ranges]
                   [--attach-acr]
+                  [--ca-profile]
                   [--client-secret]
                   [--disable-rbac]
                   [--dns-name-prefix]
@@ -175,6 +176,9 @@ directCommands:
     description: ''
   - name: --attach-acr
     summary: Grant the 'acrpull' role assignment to the ACR specified by name or resource ID.
+    description: ''
+  - name: --ca-profile --cluster-autoscaler-profile
+    summary: Space-separated list of key=value pairs for configuring cluster autoscaler. Pass an empty string to clear the profile.
     description: ''
   - name: --client-secret
     summary: Secret associated with the service principal. This argument is required if `--service-principal` is specified.
@@ -853,6 +857,7 @@ directCommands:
                   [--aad-tenant-id]
                   [--api-server-authorized-ip-ranges]
                   [--attach-acr]
+                  [--ca-profile]
                   [--detach-acr]
                   [--disable-cluster-autoscaler]
                   [--enable-aad]
@@ -910,6 +915,9 @@ directCommands:
     description: ''
   - name: --attach-acr
     summary: Grant the 'acrpull' role assignment to the ACR specified by name or resource ID.
+    description: ''
+  - name: --ca-profile --cluster-autoscaler-profile
+    summary: Space-separated list of key=value pairs for configuring cluster autoscaler. Pass an empty string to clear the profile.
     description: ''
   - name: --detach-acr
     summary: Disable the 'acrpull' role assignment to the ACR specified by name or resource ID.
