@@ -27,6 +27,7 @@ directCommands:
                         [--domain]
                         [--edgenode-size]
                         [--encryption-algorithm {RSA-OAEP, RSA-OAEP-256, RSA1_5}]
+                        [--encryption-at-host {false, true}]
                         [--encryption-in-transit {false, true}]
                         [--encryption-key-name]
                         [--encryption-key-version]
@@ -89,6 +90,13 @@ directCommands:
       -p "HttpPassword1234!" \
 
       --storage-account MyStorageAccount --encryption-in-transit true
+  - summary: Create a cluster with encryption at host.
+    syntax: >-
+      az hdinsight create -t spark -g MyResourceGroup -n MyCluster \
+
+      -p "HttpPassword1234!" \
+
+      --storage-account MyStorageAccount --encryption-at-host true
   - summary: Create a cluster with private link settings.
     syntax: >-
       az hdinsight create --esp -t spark -g MyResourceGroup -n MyCluster \
@@ -253,6 +261,10 @@ directCommands:
     defaultValue: RSA-OAEP
     parameterValueGroup: RSA-OAEP, RSA-OAEP-256, RSA1_5
     summary: Algorithm identifier for encryption.
+    description: ''
+  - name: --encryption-at-host
+    parameterValueGroup: false, true
+    summary: Indicates whether enable encryption at host or not.
     description: ''
   - name: --encryption-in-transit
     parameterValueGroup: false, true
@@ -685,7 +697,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/db5437407b0ce90c49d0833ef744a6b407da51e1/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-  updated_at: 8/13/2020 9:28:42 AM
-  ms.date: 08/13/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/e9beb25358db1e4ad0366fed4fa288bccc5d326a/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  updated_at: 8/19/2020 4:44:16 AM
+  ms.date: 08/19/2020
   description: Manage HDInsight resources.
