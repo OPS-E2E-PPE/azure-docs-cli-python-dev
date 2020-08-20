@@ -9077,6 +9077,18 @@
         - name: update
           uid: az_sql_server_ad_admin_update
           displayName: az sql server ad-admin update
+      - name: audit-policy
+        displayName: az sql server audit-policy
+        items:
+        - name: Overview
+          uid: az_sql_server_audit_policy
+          displayName: az sql server audit-policy
+        - name: show
+          uid: az_sql_server_audit_policy_show
+          displayName: az sql server audit-policy show
+        - name: update
+          uid: az_sql_server_audit_policy_update
+          displayName: az sql server audit-policy update
       - name: conn-policy
         displayName: az sql server conn-policy
         items:
