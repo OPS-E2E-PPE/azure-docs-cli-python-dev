@@ -31,7 +31,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --policy-id
-    summary: The ID of object replication policy or "default" if the policy ID is unknown.
+    summary: The ID of object replication policy or "default" if the policy ID is unknown. Policy Id will be auto-generated when setting on destination account. Required when setting on source account.
     description: ''
   - isRequired: true
     name: --source-container -s
@@ -70,7 +70,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --policy-id
-    summary: The ID of object replication policy or "default" if the policy ID is unknown.
+    summary: The ID of object replication policy or "default" if the policy ID is unknown. Policy Id will be auto-generated when setting on destination account. Required when setting on source account.
     description: ''
   optionalParameters:
   - name: --resource-group -g
@@ -100,7 +100,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --policy-id
-    summary: The ID of object replication policy or "default" if the policy ID is unknown.
+    summary: The ID of object replication policy or "default" if the policy ID is unknown. Policy Id will be auto-generated when setting on destination account. Required when setting on source account.
     description: ''
   - isRequired: true
     name: --rule-id -r
@@ -134,7 +134,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --policy-id
-    summary: The ID of object replication policy or "default" if the policy ID is unknown.
+    summary: The ID of object replication policy or "default" if the policy ID is unknown. Policy Id will be auto-generated when setting on destination account. Required when setting on source account.
     description: ''
   - isRequired: true
     name: --rule-id -r
@@ -172,7 +172,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --policy-id
-    summary: The ID of object replication policy or "default" if the policy ID is unknown.
+    summary: The ID of object replication policy or "default" if the policy ID is unknown. Policy Id will be auto-generated when setting on destination account. Required when setting on source account.
     description: ''
   - isRequired: true
     name: --rule-id -r

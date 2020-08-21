@@ -26,6 +26,9 @@
   - name: self-test
     uid: az_self_test
     displayName: az self-test
+  - name: upgrade
+    uid: az_upgrade
+    displayName: az upgrade
   - name: version
     uid: az_version
     displayName: az version
@@ -5075,6 +5078,9 @@
     - name: list-available
       uid: az_extension_list_available
       displayName: az extension list-available
+    - name: list-versions
+      uid: az_extension_list_versions
+      displayName: az extension list-versions
     - name: remove
       uid: az_extension_remove
       displayName: az extension remove
@@ -5957,6 +5963,42 @@
     - name: Overview
       uid: az_synapse
       displayName: az synapse
+    - name: role
+      displayName: az synapse role
+      items:
+      - name: Overview
+        uid: az_synapse_role
+        displayName: az synapse role
+      - name: assignment
+        displayName: az synapse role assignment
+        items:
+        - name: Overview
+          uid: az_synapse_role_assignment
+          displayName: az synapse role assignment
+        - name: create
+          uid: az_synapse_role_assignment_create
+          displayName: az synapse role assignment create
+        - name: delete
+          uid: az_synapse_role_assignment_delete
+          displayName: az synapse role assignment delete
+        - name: list
+          uid: az_synapse_role_assignment_list
+          displayName: az synapse role assignment list
+        - name: show
+          uid: az_synapse_role_assignment_show
+          displayName: az synapse role assignment show
+      - name: definition
+        displayName: az synapse role definition
+        items:
+        - name: Overview
+          uid: az_synapse_role_definition
+          displayName: az synapse role definition
+        - name: list
+          uid: az_synapse_role_definition_list
+          displayName: az synapse role definition list
+        - name: show
+          uid: az_synapse_role_definition_show
+          displayName: az synapse role definition show
     - name: spark
       displayName: az synapse spark
       items:

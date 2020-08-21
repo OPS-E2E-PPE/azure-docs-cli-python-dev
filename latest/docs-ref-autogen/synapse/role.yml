@@ -1,18 +1,17 @@
 ### YamlMime:AzureCLIGroup
-uid: az_synapse_sql
-name: az synapse sql
-summary: Manage SQL pools.
+uid: az_synapse_role
+name: az synapse role
+summary: Manage Synapse's role assignments and definitions.
 description: ''
 commands:
-- az_synapse_sql_pool
-- az_synapse_sql_pool_create
-- az_synapse_sql_pool_delete
-- az_synapse_sql_pool_list
-- az_synapse_sql_pool_pause
-- az_synapse_sql_pool_resume
-- az_synapse_sql_pool_show
-- az_synapse_sql_pool_update
-- az_synapse_sql_pool_wait
+- az_synapse_role_assignment
+- az_synapse_role_assignment_create
+- az_synapse_role_assignment_delete
+- az_synapse_role_assignment_list
+- az_synapse_role_assignment_show
+- az_synapse_role_definition
+- az_synapse_role_definition_list
+- az_synapse_role_definition_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -34,4 +33,4 @@ metadata:
   gitcommit: https://github.com/Azure/azure-cli/blob/28e0caea12586e06aa38d6d0cd40b93a96c1e61c/src/azure-cli/azure/cli/command_modules/synapse/_help.py
   updated_at: 8/21/2020 5:45:27 AM
   ms.date: 08/21/2020
-  description: Manage SQL pools.
+  description: Manage Synapse's role assignments and definitions.
