@@ -1178,6 +1178,9 @@
     - name: update
       uid: az_keyvault_update
       displayName: az keyvault update
+    - name: wait
+      uid: az_keyvault_wait
+      displayName: az keyvault wait
     - name: Certificates
       displayName: az keyvault certificate
       items:

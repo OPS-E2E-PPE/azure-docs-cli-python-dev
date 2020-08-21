@@ -4148,6 +4148,9 @@
     - name: update
       uid: az_keyvault_update
       displayName: az keyvault update
+    - name: wait
+      uid: az_keyvault_wait
+      displayName: az keyvault wait
     - name: Certificates
       displayName: az keyvault certificate
       items:
@@ -4379,6 +4382,9 @@
       - name: remove
         uid: az_keyvault_network_rule_remove
         displayName: az keyvault network-rule remove
+      - name: wait
+        uid: az_keyvault_network_rule_wait
+        displayName: az keyvault network-rule wait
     - name: private-endpoint-connection
       displayName: az keyvault private-endpoint-connection
       items:
