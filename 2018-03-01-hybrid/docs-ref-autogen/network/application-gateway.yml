@@ -75,7 +75,7 @@ directCommands:
     summary: 'The time in seconds after a backend server is removed during which on open connection remains active. Range: 0 (disabled) to 3600.'
     description: ''
   - name: --enable-private-link
-    summary: Enable Private Link feature for this application gateway.
+    summary: Enable Private Link feature for this application gateway. If both public IP and private IP are enbaled, taking effect only in public frontend IP.
     description: ''
   - name: --frontend-port
     summary: The front end port number.

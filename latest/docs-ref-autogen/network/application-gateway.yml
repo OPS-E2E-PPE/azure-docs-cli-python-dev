@@ -82,7 +82,7 @@ directCommands:
     summary: Space-separated list of custom error pages in `STATUS_CODE=URL` format.
     description: ''
   - name: --enable-private-link
-    summary: Enable Private Link feature for this application gateway.
+    summary: Enable Private Link feature for this application gateway. If both public IP and private IP are enbaled, taking effect only in public frontend IP.
     description: ''
   - name: --frontend-port
     summary: The front end port number.
