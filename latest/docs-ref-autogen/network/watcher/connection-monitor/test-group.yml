@@ -48,11 +48,11 @@ directCommands:
     description: ''
   - isRequired: true
     name: --endpoint-dest-name
-    summary: The name of the source of connection monitor endpoint. If you are creating a V2 Connection Monitor, it's required.
+    summary: The name of the destination of connection monitor endpoint. If you are creating a V2 Connection Monitor, it's required.
     description: ''
   - isRequired: true
     name: --endpoint-source-name
-    summary: The name of the destination of connection monitor endpoint. If you are creating a V2 Connection Monitor, it's required.
+    summary: The name of the source of connection monitor endpoint. If you are creating a V2 Connection Monitor, it's required.
     description: ''
   - isRequired: true
     name: --location -l
@@ -72,16 +72,16 @@ directCommands:
     summary: Value indicating whether test group is disabled. false is default.
     description: ''
   - name: --endpoint-dest-address
-    summary: Address of the source of connection monitor endpoint (IP or domain name).
-    description: ''
-  - name: --endpoint-dest-resource-id
-    summary: Resource ID of the source of connection monitor endpoint.
-    description: ''
-  - name: --endpoint-source-address
     summary: Address of the destination of connection monitor endpoint (IP or domain name).
     description: ''
+  - name: --endpoint-dest-resource-id
+    summary: Resource ID of the destination of connection monitor endpoint.
+    description: ''
+  - name: --endpoint-source-address
+    summary: Address of the source of connection monitor endpoint (IP or domain name).
+    description: ''
   - name: --endpoint-source-resource-id
-    summary: Resource ID of the destination of connection monitor endpoint. If endpoint is intended to used as source, this option is required.
+    summary: Resource ID of the source of connection monitor endpoint. If endpoint is intended to used as source, this option is required.
     description: ''
   - name: --frequency
     defaultValue: "60"
