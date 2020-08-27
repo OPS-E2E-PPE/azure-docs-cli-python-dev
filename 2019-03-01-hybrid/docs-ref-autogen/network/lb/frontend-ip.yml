@@ -188,7 +188,7 @@ directCommands:
     summary: The name of the frontend IP configuration.
     description: ''
   - name: --private-ip-address
-    summary: Static private IP address to associate with the configuration. Use "" to remove the static address and use a dynamic address instead.
+    summary: Static private IP address to associate with the configuration. Use ""('""' in PowerShell) to remove the static address and use a dynamic address instead.
     description: ''
   - name: --public-ip-address
     summary: Name or ID of the existing public IP to associate with the configuration.

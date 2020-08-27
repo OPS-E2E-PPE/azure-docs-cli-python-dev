@@ -209,7 +209,7 @@ directCommands:
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
     description: ''
   - name: --dns-servers
-    summary: Space-separated list of DNS server IP addresses. Use "" to revert to default Azure servers.
+    summary: Space-separated list of DNS server IP addresses. Use ""('""' in PowerShell) to revert to default Azure servers.
     description: ''
   - name: --force-string
     summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.

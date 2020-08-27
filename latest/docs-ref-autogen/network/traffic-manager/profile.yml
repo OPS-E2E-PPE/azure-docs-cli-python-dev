@@ -79,7 +79,7 @@ directCommands:
     summary: The number of consecutive failed health checks tolerated before an endpoint is considered degraded.
     description: ''
   - name: --path
-    summary: Path to monitor. Use "" for none.
+    summary: Path to monitor. Use ""('""' in PowerShell) for none.
     description: ''
   - name: --port
     defaultValue: "80"
@@ -239,7 +239,7 @@ directCommands:
     summary: The name of the Traffic Manager profile.
     description: ''
   - name: --path
-    summary: Path to monitor. Use "" for none.
+    summary: Path to monitor. Use ""('""' in PowerShell) for none.
     description: ''
   - name: --port
     summary: Port to monitor.

@@ -66,7 +66,7 @@ directCommands:
     summary: Set to make this configuration the primary one for the NIC.
     description: ''
   - name: --private-ip-address
-    summary: Static IP address to use or "" to use a dynamic address.
+    summary: Static IP address to use or ""('""' in PowerShell) to use a dynamic address.
     description: ''
   - name: --private-ip-address-version
     parameterValueGroup: IPv4, IPv6
@@ -245,7 +245,7 @@ directCommands:
     summary: The network interface (NIC).
     description: ''
   - name: --private-ip-address
-    summary: Static IP address to use or "" to use a dynamic address.
+    summary: Static IP address to use or ""('""' in PowerShell) to use a dynamic address.
     description: ''
   - name: --private-ip-address-version
     parameterValueGroup: IPv4, IPv6
