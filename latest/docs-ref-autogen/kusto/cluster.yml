@@ -11,7 +11,7 @@ directCommands:
   syntax: >-
     az kusto cluster create --name
                             --resource-group
-                            --sku {D11_v2, D12_v2, D13_v2, D14_v2, L16, L4, L8}
+                            --sku {Dev(No SLA)_Standard_D11_v2, Dev(No SLA)_Standard_E2a_v4, Standard_D11_v2, Standard_D12_v2, Standard_D13_v2, Standard_D14_v2, Standard_DS13_v2+1TB_PS, Standard_DS13_v2+2TB_PS, Standard_DS14_v2+3TB_PS, Standard_DS14_v2+4TB_PS, Standard_E16a_v4, Standard_E16as_v4+3TB_PS, Standard_E16as_v4+4TB_PS, Standard_E2a_v4, Standard_E4a_v4, Standard_E8a_v4, Standard_E8as_v4+1TB_PS, Standard_E8as_v4+2TB_PS, Standard_L16s, Standard_L4s, Standard_L8s}
                             [--capacity]
                             [--location]
                             [--no-wait]
@@ -30,7 +30,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --sku
-    parameterValueGroup: D11_v2, D12_v2, D13_v2, D14_v2, L16, L4, L8
+    parameterValueGroup: Dev(No SLA)_Standard_D11_v2, Dev(No SLA)_Standard_E2a_v4, Standard_D11_v2, Standard_D12_v2, Standard_D13_v2, Standard_D14_v2, Standard_DS13_v2+1TB_PS, Standard_DS13_v2+2TB_PS, Standard_DS14_v2+3TB_PS, Standard_DS14_v2+4TB_PS, Standard_E16a_v4, Standard_E16as_v4+3TB_PS, Standard_E16as_v4+4TB_PS, Standard_E2a_v4, Standard_E4a_v4, Standard_E8a_v4, Standard_E8as_v4+1TB_PS, Standard_E8as_v4+2TB_PS, Standard_L16s, Standard_L4s, Standard_L8s
     summary: The name of the sku.
     description: ''
   optionalParameters:
@@ -187,7 +187,7 @@ directCommands:
                             [--remove]
                             [--resource-group]
                             [--set]
-                            [--sku {D11_v2, D12_v2, D13_v2, D14_v2, L16, L4, L8}]
+                            [--sku {Dev(No SLA)_Standard_D11_v2, Dev(No SLA)_Standard_E2a_v4, Standard_D11_v2, Standard_D12_v2, Standard_D13_v2, Standard_D14_v2, Standard_DS13_v2+1TB_PS, Standard_DS13_v2+2TB_PS, Standard_DS14_v2+3TB_PS, Standard_DS14_v2+4TB_PS, Standard_E16a_v4, Standard_E16as_v4+3TB_PS, Standard_E16as_v4+4TB_PS, Standard_E2a_v4, Standard_E4a_v4, Standard_E8a_v4, Standard_E8as_v4+1TB_PS, Standard_E8as_v4+2TB_PS, Standard_L16s, Standard_L4s, Standard_L8s}]
                             [--subscription]
   examples:
   - summary: update a Kusto Cluster.
@@ -218,7 +218,7 @@ directCommands:
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
     description: ''
   - name: --sku
-    parameterValueGroup: D11_v2, D12_v2, D13_v2, D14_v2, L16, L4, L8
+    parameterValueGroup: Dev(No SLA)_Standard_D11_v2, Dev(No SLA)_Standard_E2a_v4, Standard_D11_v2, Standard_D12_v2, Standard_D13_v2, Standard_D14_v2, Standard_DS13_v2+1TB_PS, Standard_DS13_v2+2TB_PS, Standard_DS14_v2+3TB_PS, Standard_DS14_v2+4TB_PS, Standard_E16a_v4, Standard_E16as_v4+3TB_PS, Standard_E16as_v4+4TB_PS, Standard_E2a_v4, Standard_E4a_v4, Standard_E8a_v4, Standard_E8as_v4+1TB_PS, Standard_E8as_v4+2TB_PS, Standard_L16s, Standard_L4s, Standard_L8s
     summary: The name of the sku.
     description: ''
   - name: --subscription
