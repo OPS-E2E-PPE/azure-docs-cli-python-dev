@@ -10661,6 +10661,9 @@
       - name: show
         uid: az_storage_share_rm_show
         displayName: az storage share-rm show
+      - name: stats
+        uid: az_storage_share_rm_stats
+        displayName: az storage share-rm stats
       - name: update
         uid: az_storage_share_rm_update
         displayName: az storage share-rm update
