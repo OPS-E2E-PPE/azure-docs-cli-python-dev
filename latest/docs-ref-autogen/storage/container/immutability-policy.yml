@@ -46,7 +46,7 @@ directCommands:
 - uid: az_storage_container_immutability_policy_delete
   name: az storage container immutability-policy delete
   summary: Aborts an unlocked immutability policy.
-  description: The response of delete has immutabilityPeriodSinceCreationInDays set to 0. ETag in If-Match is required for this operation. Deleting a locked immutability policy is not allowed, only way is to delete the container after deleting all blobs inside the container.
+  description: The response of delete has immutabilityPeriodSinceCreationInDays set to 0. ETag in If-Match is required for this operation. Deleting a locked immutability policy is not allowed, the only way is to delete the container after deleting all expired blobs inside the policy locked container.
   syntax: >-
     az storage container immutability-policy delete --account-name
                                                     --container-name
