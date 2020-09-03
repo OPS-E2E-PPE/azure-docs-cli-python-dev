@@ -16,6 +16,7 @@ directCommands:
                                    [--db-connection-string]
                                    [--db-name]
                                    [--db-type {LocalMySql, MySql, PostgreSql, SqlAzure}]
+                                   [--query-examples]
                                    [--slot]
                                    [--subscription]
   examples:
@@ -48,6 +49,9 @@ directCommands:
     parameterValueGroup: LocalMySql, MySql, PostgreSql, SqlAzure
     summary: Type of database in the backup.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
@@ -61,6 +65,7 @@ directCommands:
   syntax: >-
     az webapp config backup list --resource-group
                                  --webapp-name
+                                 [--query-examples]
                                  [--slot]
                                  [--subscription]
   examples:
@@ -76,6 +81,9 @@ directCommands:
     summary: The name of the web app.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
@@ -96,6 +104,7 @@ directCommands:
                                     [--db-type {LocalMySql, MySql, PostgreSql, SqlAzure}]
                                     [--ignore-hostname-conflict]
                                     [--overwrite]
+                                    [--query-examples]
                                     [--slot]
                                     [--subscription]
                                     [--target-name]
@@ -133,6 +142,9 @@ directCommands:
   - name: --overwrite
     summary: Overwrite the source web app, if --target-name is not specified.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
@@ -149,6 +161,7 @@ directCommands:
   syntax: >-
     az webapp config backup show --resource-group
                                  --webapp-name
+                                 [--query-examples]
                                  [--slot]
                                  [--subscription]
   examples:
@@ -164,6 +177,9 @@ directCommands:
     summary: The name of the web app.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --slot -s
     summary: The name of the slot. Default to the productions slot if not specified.
     description: ''
@@ -183,6 +199,7 @@ directCommands:
                                    [--db-name]
                                    [--db-type {LocalMySql, MySql, PostgreSql, SqlAzure}]
                                    [--frequency]
+                                   [--query-examples]
                                    [--retain-one {false, true}]
                                    [--retention]
                                    [--slot]
@@ -215,6 +232,9 @@ directCommands:
     description: ''
   - name: --frequency
     summary: How often to backup. Use a number followed by d or h, e.g. 5d = 5 days, 2h = 2 hours.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --retain-one
     parameterValueGroup: false, true

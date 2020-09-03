@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az security atp storage show --resource-group
                                  --storage-account
+                                 [--query-examples]
                                  [--subscription]
   examples:
   - summary: Retrieve Advanced Threat Protection settings for a storage account on a subscription scope.
@@ -25,6 +26,9 @@ directCommands:
     summary: Name of an existing storage account.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -37,6 +41,7 @@ directCommands:
     az security atp storage update --is-enabled {false, true}
                                    --resource-group
                                    --storage-account
+                                   [--query-examples]
                                    [--subscription]
   examples:
   - summary: Enable Advanced Threat Protection for a storage account on a subscription scope.
@@ -58,6 +63,9 @@ directCommands:
     summary: Name of an existing storage account.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

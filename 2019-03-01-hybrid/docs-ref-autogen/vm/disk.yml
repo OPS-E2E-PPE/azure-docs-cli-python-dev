@@ -29,6 +29,7 @@ directCommands:
                       [--lun]
                       [--name]
                       [--new]
+                      [--query-examples]
                       [--resource-group]
                       [--size-gb]
                       [--sku {Premium_LRS, Standard_LRS}]
@@ -63,6 +64,9 @@ directCommands:
   - name: --new
     summary: Create a new disk.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -86,6 +90,7 @@ directCommands:
     az vm disk detach --name
                       --resource-group
                       --vm-name
+                      [--query-examples]
                       [--subscription]
   examples:
   - summary: Detach a data disk from a VM.
@@ -104,6 +109,9 @@ directCommands:
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

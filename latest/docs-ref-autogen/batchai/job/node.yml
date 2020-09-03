@@ -17,6 +17,7 @@ directCommands:
                              [--exec]
                              [--node-id]
                              [--password]
+                             [--query-examples]
                              [--ssh-private-key]
                              [--subscription]
   examples:
@@ -62,6 +63,9 @@ directCommands:
   - name: --password -p
     summary: Optional password to establish SSH connection.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --ssh-private-key -k
     summary: Optional SSH private key path to establish SSH connection. If omitted, the default SSH private key will be used.
     description: ''
@@ -78,6 +82,7 @@ directCommands:
                              --job
                              --resource-group
                              --workspace
+                             [--query-examples]
                              [--subscription]
   examples:
   - summary: List remote login information for a job nodes.
@@ -100,6 +105,9 @@ directCommands:
     summary: Name of workspace.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

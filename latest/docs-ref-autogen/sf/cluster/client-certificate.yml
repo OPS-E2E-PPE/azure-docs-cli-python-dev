@@ -16,6 +16,7 @@ directCommands:
                                          [--certificate-issuer-thumbprint]
                                          [--client-certificate-common-names]
                                          [--is-admin]
+                                         [--query-examples]
                                          [--readonly-client-thumbprints]
                                          [--subscription]
                                          [--thumbprint]
@@ -47,6 +48,9 @@ directCommands:
   - name: --is-admin
     summary: Client authentication type.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --readonly-client-thumbprints
     summary: Space-separated list of client certificate thumbprint that has read only permission.
     description: ''
@@ -66,6 +70,7 @@ directCommands:
                                             [--certificate-common-name]
                                             [--certificate-issuer-thumbprint]
                                             [--client-certificate-common-names]
+                                            [--query-examples]
                                             [--subscription]
                                             [--thumbprints]
   examples:
@@ -89,6 +94,9 @@ directCommands:
     description: ''
   - name: --client-certificate-common-names
     summary: 'JSON encoded parameters configuration. Use @{file} to load from a file. For example: [{"certificateCommonName": "test.com","certificateIssuerThumbprint": "22B4AE296B504E512DF880A77A2CAE20200FF922"}].'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

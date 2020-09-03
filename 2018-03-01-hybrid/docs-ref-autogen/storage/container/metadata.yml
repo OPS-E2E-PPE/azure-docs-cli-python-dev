@@ -14,6 +14,7 @@ directCommands:
                                        [--account-name]
                                        [--connection-string]
                                        [--lease-id]
+                                       [--query-examples]
                                        [--sas-token]
                                        [--subscription]
                                        [--timeout]
@@ -34,6 +35,9 @@ directCommands:
     description: ''
   - name: --lease-id
     summary: If specified, get_container_metadata only succeeds if the container's lease is active and matches this ID.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -57,6 +61,7 @@ directCommands:
                                          [--if-modified-since]
                                          [--lease-id]
                                          [--metadata]
+                                         [--query-examples]
                                          [--sas-token]
                                          [--subscription]
                                          [--timeout]
@@ -83,6 +88,9 @@ directCommands:
     description: ''
   - name: --metadata
     summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

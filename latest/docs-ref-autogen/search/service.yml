@@ -14,6 +14,7 @@ directCommands:
                              --sku
                              [--location]
                              [--partition-count]
+                             [--query-examples]
                              [--replica-count]
                              [--subscription]
   requiredParameters:
@@ -36,6 +37,9 @@ directCommands:
   - name: --partition-count
     summary: Number of partitions in the search service.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --replica-count
     summary: Number of replicas in the search service.
     description: ''
@@ -50,6 +54,7 @@ directCommands:
   syntax: >-
     az search service delete --name
                              --resource-group
+                             [--query-examples]
                              [--subscription]
                              [--yes]
   requiredParameters:
@@ -62,6 +67,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -75,6 +83,7 @@ directCommands:
   description: ''
   syntax: >-
     az search service list --resource-group
+                           [--query-examples]
                            [--subscription]
   requiredParameters:
   - isRequired: true
@@ -82,6 +91,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -93,6 +105,7 @@ directCommands:
   syntax: >-
     az search service show --name
                            --resource-group
+                           [--query-examples]
                            [--subscription]
   requiredParameters:
   - isRequired: true
@@ -104,6 +117,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -118,6 +134,7 @@ directCommands:
                              [--add]
                              [--force-string]
                              [--partition-count]
+                             [--query-examples]
                              [--remove]
                              [--replica-count]
                              [--set]
@@ -140,6 +157,9 @@ directCommands:
     description: ''
   - name: --partition-count
     summary: Number of partitions in the search service.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

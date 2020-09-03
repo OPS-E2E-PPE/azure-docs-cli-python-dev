@@ -10,6 +10,7 @@ directCommands:
   description: ''
   syntax: >-
     az keyvault private-link-resource list --vault-name
+                                           [--query-examples]
                                            [--resource-group]
                                            [--subscription]
   examples:
@@ -21,6 +22,9 @@ directCommands:
     summary: Name of the Key Vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
     description: ''

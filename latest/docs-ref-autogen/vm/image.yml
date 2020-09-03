@@ -12,6 +12,7 @@ directCommands:
     az vm image accept-terms [--offer]
                              [--plan]
                              [--publisher]
+                             [--query-examples]
                              [--subscription]
                              [--urn]
   examples:
@@ -26,6 +27,9 @@ directCommands:
     description: ''
   - name: --publisher -p
     summary: Image publisher.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -43,6 +47,7 @@ directCommands:
                      [--location]
                      [--offer]
                      [--publisher]
+                     [--query-examples]
                      [--sku]
                      [--subscription]
   examples:
@@ -65,6 +70,9 @@ directCommands:
   - name: --publisher -p
     summary: Image publisher name, partial name is accepted.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sku -s
     summary: Image sku name, partial name is accepted.
     description: ''
@@ -79,6 +87,7 @@ directCommands:
   syntax: >-
     az vm image list-offers --location
                             --publisher
+                            [--query-examples]
                             [--subscription]
   examples:
   - summary: List all offers from Microsoft in the West US region.
@@ -96,6 +105,9 @@ directCommands:
     description: ''
     valueFrom: az vm image list-publishers
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -106,6 +118,7 @@ directCommands:
   description: ''
   syntax: >-
     az vm image list-publishers --location
+                                [--query-examples]
                                 [--subscription]
   examples:
   - summary: List all publishers in the West US region.
@@ -118,6 +131,9 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -130,6 +146,7 @@ directCommands:
     az vm image list-skus --location
                           --offer
                           --publisher
+                          [--query-examples]
                           [--subscription]
   examples:
   - summary: List all skus available for CentOS published by OpenLogic in the West US region.
@@ -149,6 +166,9 @@ directCommands:
     description: ''
     valueFrom: az vm image list-publishers
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -161,6 +181,7 @@ directCommands:
     az vm image show [--location]
                      [--offer]
                      [--publisher]
+                     [--query-examples]
                      [--sku]
                      [--subscription]
                      [--urn]
@@ -182,6 +203,9 @@ directCommands:
     description: ''
   - name: --publisher -p
     summary: Image publisher.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sku -s
     summary: Image sku.

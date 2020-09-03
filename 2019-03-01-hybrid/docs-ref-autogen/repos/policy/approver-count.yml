@@ -21,6 +21,7 @@ directCommands:
                                           [--detect {false, true}]
                                           [--org]
                                           [--project]
+                                          [--query-examples]
                                           [--subscription]
   requiredParameters:
   - isRequired: true
@@ -76,6 +77,9 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -95,6 +99,7 @@ directCommands:
                                           [--minimum-approver-count]
                                           [--org]
                                           [--project]
+                                          [--query-examples]
                                           [--repository-id]
                                           [--reset-on-source-push {false, true}]
                                           [--subscription]
@@ -139,6 +144,9 @@ directCommands:
     description: ''
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --repository-id
     summary: Id of the repository on which to apply the policy.

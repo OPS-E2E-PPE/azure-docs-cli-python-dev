@@ -22,6 +22,7 @@ directCommands:
                    [--min-capacity]
                    [--name]
                    [--no-wait]
+                   [--query-examples]
                    [--read-replicas]
                    [--read-scale {Disabled, Enabled}]
                    [--resource-group]
@@ -79,6 +80,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --read-replicas
     summary: The number of readonly replicas to provision for the database. Only settable for Hyperscale edition.
     description: ''
@@ -126,6 +130,7 @@ directCommands:
                      [--max-size]
                      [--min-capacity]
                      [--no-wait]
+                     [--query-examples]
                      [--read-replicas]
                      [--read-scale {Disabled, Enabled}]
                      [--sample-name {AdventureWorksLT}]
@@ -199,6 +204,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --read-replicas
     summary: The number of readonly replicas to provision for the database. Only settable for Hyperscale edition.
     description: ''
@@ -232,6 +240,7 @@ directCommands:
     az sql db delete [--ids]
                      [--name]
                      [--no-wait]
+                     [--query-examples]
                      [--resource-group]
                      [--server]
                      [--subscription]
@@ -248,6 +257,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -275,6 +287,7 @@ directCommands:
                      [--auth-type {ADPassword, SQL}]
                      [--ids]
                      [--name]
+                     [--query-examples]
                      [--resource-group]
                      [--server]
                      [--subscription]
@@ -327,6 +340,9 @@ directCommands:
   - name: --name -n
     summary: Name of the Azure SQL Database.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -350,6 +366,7 @@ directCommands:
                      [--auth-type {ADPassword, SQL}]
                      [--ids]
                      [--name]
+                     [--query-examples]
                      [--resource-group]
                      [--server]
                      [--subscription]
@@ -402,6 +419,9 @@ directCommands:
   - name: --name -n
     summary: Name of the Azure SQL Database.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -419,6 +439,7 @@ directCommands:
   syntax: >-
     az sql db list [--elastic-pool]
                    [--ids]
+                   [--query-examples]
                    [--resource-group]
                    [--server]
                    [--subscription]
@@ -431,6 +452,9 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -448,12 +472,16 @@ directCommands:
   description: ''
   syntax: >-
     az sql db list-deleted [--ids]
+                           [--query-examples]
                            [--resource-group]
                            [--server]
                            [--subscription]
   optionalParameters:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -474,6 +502,7 @@ directCommands:
                             [--available]
                             [--dtu]
                             [--edition]
+                            [--query-examples]
                             [--service-objective]
                             [--show-details {max-size}]
                             [--subscription]
@@ -500,6 +529,9 @@ directCommands:
   - name: --edition --tier -e
     summary: Edition to search for. If unspecified, all editions are shown.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --service-objective
     summary: Service objective to search for. If unspecified, all service objectives are shown.
     description: ''
@@ -521,6 +553,7 @@ directCommands:
   syntax: >-
     az sql db list-usages [--ids]
                           [--name]
+                          [--query-examples]
                           [--resource-group]
                           [--server]
                           [--subscription]
@@ -530,6 +563,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Azure SQL Database.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -549,6 +585,7 @@ directCommands:
     az sql db rename --new-name
                      [--ids]
                      [--name]
+                     [--query-examples]
                      [--resource-group]
                      [--server]
                      [--subscription]
@@ -566,6 +603,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Azure SQL Database.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -595,6 +635,7 @@ directCommands:
                       [--min-capacity]
                       [--name]
                       [--no-wait]
+                      [--query-examples]
                       [--read-replicas]
                       [--read-scale {Disabled, Enabled}]
                       [--resource-group]
@@ -651,6 +692,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --read-replicas
     summary: The number of readonly replicas to provision for the database. Only settable for Hyperscale edition.
     description: ''
@@ -688,6 +732,7 @@ directCommands:
   syntax: >-
     az sql db show [--ids]
                    [--name]
+                   [--query-examples]
                    [--resource-group]
                    [--server]
                    [--subscription]
@@ -700,6 +745,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Azure SQL Database.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -720,6 +768,7 @@ directCommands:
                                      [--auth-type {ADIntegrated, ADPassword, SqlPassword}]
                                      [--ids]
                                      [--name]
+                                     [--query-examples]
                                      [--server]
                                      [--subscription]
   examples:
@@ -743,6 +792,9 @@ directCommands:
   - name: --name -n
     defaultValue: <databasename>
     summary: Name of the Azure SQL Database.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --server -s
     defaultValue: <servername>
@@ -770,6 +822,7 @@ directCommands:
                      [--min-capacity]
                      [--name]
                      [--no-wait]
+                     [--query-examples]
                      [--read-replicas]
                      [--read-scale {Disabled, Enabled}]
                      [--remove]
@@ -834,6 +887,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --read-replicas
     summary: The number of readonly replicas to provision for the database. Only settable for Hyperscale edition.

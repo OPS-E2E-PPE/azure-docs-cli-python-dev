@@ -13,6 +13,7 @@ directCommands:
                   --resource-group
                   --vm-name
                   [--primary-nic]
+                  [--query-examples]
                   [--subscription]
   examples:
   - summary: Add two NICs to a VM.
@@ -34,6 +35,9 @@ directCommands:
   - name: --primary-nic
     summary: Name or ID of the primary NIC. If missing, the first NIC in the list will be the primary.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -45,6 +49,7 @@ directCommands:
   syntax: >-
     az vm nic list --resource-group
                    --vm-name
+                   [--query-examples]
                    [--subscription]
   examples:
   - summary: List all of the NICs on a VM.
@@ -59,6 +64,9 @@ directCommands:
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -72,6 +80,7 @@ directCommands:
                      --resource-group
                      --vm-name
                      [--primary-nic]
+                     [--query-examples]
                      [--subscription]
   examples:
   - summary: Remove two NICs from a VM.
@@ -93,6 +102,9 @@ directCommands:
   - name: --primary-nic
     summary: Name or ID of the primary NIC. If missing, the first NIC in the list will be the primary.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -106,6 +118,7 @@ directCommands:
                   --resource-group
                   --vm-name
                   [--primary-nic]
+                  [--query-examples]
                   [--subscription]
   examples:
   - summary: Set a NIC on a VM to be the primary interface.
@@ -129,6 +142,9 @@ directCommands:
   - name: --primary-nic
     summary: Name or ID of the primary NIC. If missing, the first NIC in the list will be the primary.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -141,6 +157,7 @@ directCommands:
     az vm nic show --nic
                    --resource-group
                    --vm-name
+                   [--query-examples]
                    [--subscription]
   examples:
   - summary: Show details of a NIC on a VM.
@@ -159,6 +176,9 @@ directCommands:
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

@@ -17,6 +17,7 @@ directCommands:
                                    [--connection-string]
                                    [--metadata]
                                    [--permissions]
+                                   [--query-examples]
                                    [--sas-token]
                                    [--subscription]
                                    [--timeout]
@@ -55,6 +56,9 @@ directCommands:
   - name: --permissions
     summary: POSIX access permissions for the file owner, the file owning group, and others. Each class may be granted read, write, or execute permission. The sticky bit is also supported. Both symbolic (rwxrw-rw-) and 4-digit octal notation (e.g. 0766) are supported. For more information, please refer to <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control#levels-of-permission">https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control#levels-of-permission</a>.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -79,6 +83,7 @@ directCommands:
                                    [--account-name]
                                    [--auth-mode {key, login}]
                                    [--connection-string]
+                                   [--query-examples]
                                    [--sas-token]
                                    [--subscription]
                                    [--timeout]
@@ -109,6 +114,9 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -133,6 +141,7 @@ directCommands:
                                    [--account-name]
                                    [--auth-mode {key, login}]
                                    [--connection-string]
+                                   [--query-examples]
                                    [--sas-token]
                                    [--subscription]
                                    [--timeout]
@@ -162,6 +171,9 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -184,6 +196,7 @@ directCommands:
                                  [--connection-string]
                                  [--num-results]
                                  [--path]
+                                 [--query-examples]
                                  [--recursive {false, true}]
                                  [--sas-token]
                                  [--subscription]
@@ -218,6 +231,9 @@ directCommands:
   - name: --path
     summary: Filter the results to return only paths under the specified path.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --recursive
     defaultValue: "1"
     parameterValueGroup: false, true
@@ -245,6 +261,7 @@ directCommands:
                                  [--account-name]
                                  [--auth-mode {key, login}]
                                  [--connection-string]
+                                 [--query-examples]
                                  [--sas-token]
                                  [--subscription]
                                  [--timeout]
@@ -278,6 +295,9 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -299,6 +319,7 @@ directCommands:
                                  [--account-name]
                                  [--auth-mode {key, login}]
                                  [--connection-string]
+                                 [--query-examples]
                                  [--sas-token]
                                  [--subscription]
                                  [--timeout]
@@ -329,6 +350,9 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

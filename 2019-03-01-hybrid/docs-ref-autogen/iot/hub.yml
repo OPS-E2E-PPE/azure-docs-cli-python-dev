@@ -26,6 +26,7 @@ directCommands:
                       [--fileupload-storage-auth-type]
                       [--location]
                       [--partition-count]
+                      [--query-examples]
                       [--rd]
                       [--sku {B1, B2, B3, F1, S1, S2, S3}]
                       [--subscription]
@@ -100,6 +101,9 @@ directCommands:
     defaultValue: "4"
     summary: The number of partitions of the backing Event Hub for device-to-cloud messages.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --rd --retention-day
     defaultValue: "1"
     summary: Specifies how long this IoT hub will maintain device-to-cloud events, between 1 and 7 days.
@@ -124,6 +128,7 @@ directCommands:
   syntax: >-
     az iot hub delete [--ids]
                       [--name]
+                      [--query-examples]
                       [--resource-group]
                       [--subscription]
   examples:
@@ -135,6 +140,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: IoT Hub name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -148,7 +156,8 @@ directCommands:
   summary: List IoT hubs.
   description: ''
   syntax: >-
-    az iot hub list [--resource-group]
+    az iot hub list [--query-examples]
+                    [--resource-group]
                     [--subscription]
   examples:
   - summary: List all IoT hubs in a subscription.
@@ -156,6 +165,9 @@ directCommands:
   - summary: List all IoT hubs in the resource group 'MyGroup'
     syntax: az iot hub list --resource-group MyGroup
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -170,6 +182,7 @@ directCommands:
   syntax: >-
     az iot hub list-skus [--ids]
                          [--name]
+                         [--query-examples]
                          [--resource-group]
                          [--subscription]
   examples:
@@ -181,6 +194,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: IoT Hub name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -197,6 +213,7 @@ directCommands:
     az iot hub manual-failover [--ids]
                                [--name]
                                [--no-wait]
+                               [--query-examples]
                                [--resource-group]
                                [--subscription]
   examples:
@@ -212,6 +229,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -226,6 +246,7 @@ directCommands:
   syntax: >-
     az iot hub show [--ids]
                     [--name]
+                    [--query-examples]
                     [--resource-group]
                     [--subscription]
   examples:
@@ -237,6 +258,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: IoT Hub name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -255,6 +279,7 @@ directCommands:
                                       [--ids]
                                       [--key {primary, secondary}]
                                       [--policy-name]
+                                      [--query-examples]
                                       [--resource-group]
                                       [--subscription]
   examples:
@@ -287,6 +312,9 @@ directCommands:
     defaultValue: iothubowner
     summary: Shared access policy to use.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -301,6 +329,7 @@ directCommands:
   syntax: >-
     az iot hub show-quota-metrics [--ids]
                                   [--name]
+                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
   examples:
@@ -314,6 +343,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: IoT Hub name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -329,6 +361,7 @@ directCommands:
   syntax: >-
     az iot hub show-stats [--ids]
                           [--name]
+                          [--query-examples]
                           [--resource-group]
                           [--subscription]
   examples:
@@ -340,6 +373,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: IoT Hub name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -370,6 +406,7 @@ directCommands:
                       [--force-string]
                       [--ids]
                       [--name]
+                      [--query-examples]
                       [--rd]
                       [--remove]
                       [--resource-group]
@@ -436,6 +473,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: IoT Hub name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --rd --retention-day
     summary: Specifies how long this IoT hub will maintain device-to-cloud events, between 1 and 7 days.

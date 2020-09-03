@@ -16,6 +16,7 @@ directCommands:
                                 --vm-password
                                 --vm-user-name
                                 [--durability-level {Bronze, Gold, Silver}]
+                                [--query-examples]
                                 [--subscription]
                                 [--vm-sku]
                                 [--vm-tier]
@@ -52,6 +53,9 @@ directCommands:
     defaultValue: Bronze
     parameterValueGroup: Bronze, Gold, Silver
     summary: Durability level.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

@@ -12,6 +12,7 @@ directCommands:
     az iot hub certificate create --hub-name
                                   --name
                                   --path
+                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
   examples:
@@ -35,6 +36,9 @@ directCommands:
     summary: The path to the file containing the certificate.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -51,6 +55,7 @@ directCommands:
                                   --name
                                   [--hub-name]
                                   [--ids]
+                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
   examples:
@@ -72,6 +77,9 @@ directCommands:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -88,6 +96,7 @@ directCommands:
                                                       --name
                                                       [--hub-name]
                                                       [--ids]
+                                                      [--query-examples]
                                                       [--resource-group]
                                                       [--subscription]
   examples:
@@ -111,6 +120,9 @@ directCommands:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -125,6 +137,7 @@ directCommands:
   syntax: >-
     az iot hub certificate list [--hub-name]
                                 [--ids]
+                                [--query-examples]
                                 [--resource-group]
                                 [--subscription]
   examples:
@@ -136,6 +149,9 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -152,6 +168,7 @@ directCommands:
     az iot hub certificate show --name
                                 [--hub-name]
                                 [--ids]
+                                [--query-examples]
                                 [--resource-group]
                                 [--subscription]
   examples:
@@ -171,6 +188,9 @@ directCommands:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -188,6 +208,7 @@ directCommands:
                                   --path
                                   [--hub-name]
                                   [--ids]
+                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
   examples:
@@ -215,6 +236,9 @@ directCommands:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -232,6 +256,7 @@ directCommands:
                                   --path
                                   [--hub-name]
                                   [--ids]
+                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
   examples:
@@ -258,6 +283,9 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

@@ -18,6 +18,7 @@ directCommands:
                                              --target-resource-group
                                              --template-path
                                              [--location]
+                                             [--query-examples]
                                              [--subscription]
                                              [--tags]
   examples:
@@ -68,6 +69,9 @@ directCommands:
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -84,6 +88,7 @@ directCommands:
                                              --resource-group
                                              --service-name
                                              --service-topology-name
+                                             [--query-examples]
                                              [--subscription]
   examples:
   - summary: Deletes a service unit.
@@ -106,6 +111,9 @@ directCommands:
     summary: The name of the service topology.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -118,6 +126,7 @@ directCommands:
     az deploymentmanager service-unit list --resource-group
                                            --service-name
                                            --service-topology-name
+                                           [--query-examples]
                                            [--subscription]
   examples:
   - summary: List the service units in the given service topology and service.
@@ -136,6 +145,9 @@ directCommands:
     summary: The name of the service topology.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -149,6 +161,7 @@ directCommands:
                                            --resource-group
                                            --service-name
                                            --service-topology-name
+                                           [--query-examples]
                                            [--subscription]
   examples:
   - summary: Get the service unit.
@@ -171,6 +184,9 @@ directCommands:
     summary: The name of the service topology.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -188,6 +204,7 @@ directCommands:
                                              [--deployment-mode {Complete, Incremental}]
                                              [--force-string]
                                              [--parameters-path]
+                                             [--query-examples]
                                              [--remove]
                                              [--set]
                                              [--subscription]
@@ -230,6 +247,9 @@ directCommands:
     description: ''
   - name: --parameters-path
     summary: The path to the ARM parameters file. Either the full SAS Uri or the relative path in the artifact source for this topology.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

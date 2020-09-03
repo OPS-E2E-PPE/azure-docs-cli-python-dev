@@ -12,6 +12,7 @@ directCommands:
     az cdn waf policy rate-limit-rule delete --name
                                              [--ids]
                                              [--policy-name]
+                                             [--query-examples]
                                              [--resource-group]
                                              [--subscription]
                                              [--yes]
@@ -30,6 +31,9 @@ directCommands:
   - name: --policy-name
     summary: Name of the CDN WAF policy.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -47,6 +51,7 @@ directCommands:
   syntax: >-
     az cdn waf policy rate-limit-rule list --policy-name
                                            --resource-group
+                                           [--query-examples]
                                            [--subscription]
   examples:
   - summary: List rate limit rules of a CDN WAF policy.
@@ -61,6 +66,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -79,6 +87,7 @@ directCommands:
                                           [--disabled]
                                           [--ids]
                                           [--policy-name]
+                                          [--query-examples]
                                           [--resource-group]
                                           [--subscription]
   examples:
@@ -122,6 +131,9 @@ directCommands:
   - name: --policy-name
     summary: Name of the CDN WAF policy.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -137,6 +149,7 @@ directCommands:
     az cdn waf policy rate-limit-rule show --name
                                            [--ids]
                                            [--policy-name]
+                                           [--query-examples]
                                            [--resource-group]
                                            [--subscription]
   examples:
@@ -153,6 +166,9 @@ directCommands:
     description: ''
   - name: --policy-name
     summary: Name of the CDN WAF policy.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

@@ -19,6 +19,7 @@ directCommands:
                                           [--floating-ip {false, true}]
                                           [--frontend-ip-name]
                                           [--idle-timeout]
+                                          [--query-examples]
                                           [--subscription]
   examples:
   - summary: Create a basic inbound NAT rule for port 80.
@@ -70,6 +71,9 @@ directCommands:
   - name: --idle-timeout
     summary: Idle timeout in minutes.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -82,6 +86,7 @@ directCommands:
     az network lb inbound-nat-rule delete --lb-name
                                           --name
                                           --resource-group
+                                          [--query-examples]
                                           [--subscription]
   examples:
   - summary: Delete an inbound NAT rule.
@@ -100,6 +105,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -111,6 +119,7 @@ directCommands:
   syntax: >-
     az network lb inbound-nat-rule list --lb-name
                                         --resource-group
+                                        [--query-examples]
                                         [--subscription]
   examples:
   - summary: List inbound NAT rules.
@@ -125,6 +134,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -137,6 +149,7 @@ directCommands:
     az network lb inbound-nat-rule show --lb-name
                                         --name
                                         --resource-group
+                                        [--query-examples]
                                         [--subscription]
   examples:
   - summary: Get the details of an inbound NAT rule.
@@ -155,6 +168,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -176,6 +192,7 @@ directCommands:
                                           [--lb-name]
                                           [--name]
                                           [--protocol {All, Tcp, Udp}]
+                                          [--query-examples]
                                           [--remove]
                                           [--resource-group]
                                           [--set]
@@ -228,6 +245,9 @@ directCommands:
   - name: --protocol
     parameterValueGroup: All, Tcp, Udp
     summary: Network transport protocol.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

@@ -21,6 +21,7 @@ directCommands:
                                              [--display-name]
                                              [--logo-uri]
                                              [--long-description]
+                                             [--query-examples]
                                              [--setup-uri]
                                              [--subscription]
                                              [--tags]
@@ -71,6 +72,9 @@ directCommands:
   - name: --long-description
     summary: Description of the custom scenarios and integration. Length of this description should not exceed 2048 characters.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --setup-uri
     summary: URI of the partner website that can be used by Azure customers to setup Event Grid integration on an event source.
     description: ''
@@ -88,6 +92,7 @@ directCommands:
   syntax: >-
     az eventgrid partner registration delete [--ids]
                                              [--name]
+                                             [--query-examples]
                                              [--resource-group]
                                              [--subscription]
                                              [--yes]
@@ -97,6 +102,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the partner registration.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -114,6 +122,7 @@ directCommands:
   description: ''
   syntax: >-
     az eventgrid partner registration list [--odata-query]
+                                           [--query-examples]
                                            [--resource-group]
                                            [--subscription]
   examples:
@@ -129,6 +138,9 @@ directCommands:
   - name: --odata-query
     summary: 'The OData query used for filtering the list results. Filtering is currently allowed on the Name property only. The supported operations include: CONTAINS, eq (for equal), ne (for not equal), AND, OR and NOT.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -143,6 +155,7 @@ directCommands:
   syntax: >-
     az eventgrid partner registration show [--ids]
                                            [--name]
+                                           [--query-examples]
                                            [--resource-group]
                                            [--subscription]
   optionalParameters:
@@ -151,6 +164,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the partner registration.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

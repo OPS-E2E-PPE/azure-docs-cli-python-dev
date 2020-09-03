@@ -13,6 +13,7 @@ directCommands:
                                                              --resource-group
                                                              --workspace-name
                                                              [--no-wait]
+                                                             [--query-examples]
                                                              [--resource-id]
                                                              [--subscription]
                                                              [--write-access-resource-id]
@@ -38,6 +39,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-id
     summary: The resource id of the resource that will be linked to the workspace. This should be used for linking resources which require read access.
     description: ''
@@ -57,6 +61,7 @@ directCommands:
                                                              --resource-group
                                                              --workspace-name
                                                              [--no-wait]
+                                                             [--query-examples]
                                                              [--subscription]
                                                              [--yes]
   examples:
@@ -79,6 +84,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -93,6 +101,7 @@ directCommands:
   syntax: >-
     az monitor log-analytics workspace linked-service list --resource-group
                                                            --workspace-name
+                                                           [--query-examples]
                                                            [--subscription]
   examples:
   - summary: Gets all the linked services in a workspace.
@@ -107,6 +116,9 @@ directCommands:
     summary: Name of the Log Analytics Workspace.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -119,6 +131,7 @@ directCommands:
     az monitor log-analytics workspace linked-service show --name
                                                            --resource-group
                                                            --workspace-name
+                                                           [--query-examples]
                                                            [--subscription]
   examples:
   - summary: Show the properties of a linked service.
@@ -137,6 +150,9 @@ directCommands:
     summary: Name of the Log Analytics Workspace.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -152,6 +168,7 @@ directCommands:
                                                              [--add]
                                                              [--force-string]
                                                              [--no-wait]
+                                                             [--query-examples]
                                                              [--remove]
                                                              [--resource-id]
                                                              [--set]
@@ -185,6 +202,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -214,6 +234,7 @@ directCommands:
                                                            [--deleted]
                                                            [--exists]
                                                            [--interval]
+                                                           [--query-examples]
                                                            [--subscription]
                                                            [--timeout]
                                                            [--updated]
@@ -249,6 +270,9 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

@@ -14,6 +14,7 @@ directCommands:
                              [--account-name]
                              [--auth-mode {key, login}]
                              [--connection-string]
+                             [--query-examples]
                              [--sas-token]
                              [--subscription]
                              [--timeout]
@@ -35,6 +36,9 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -58,6 +62,7 @@ directCommands:
                               [--account-name]
                               [--auth-mode {key, login}]
                               [--connection-string]
+                              [--query-examples]
                               [--sas-token]
                               [--subscription]
                               [--timeout]
@@ -88,6 +93,9 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -109,6 +117,7 @@ directCommands:
                            [--auth-mode {key, login}]
                            [--connection-string]
                            [--num-messages]
+                           [--query-examples]
                            [--sas-token]
                            [--subscription]
                            [--timeout]
@@ -135,6 +144,9 @@ directCommands:
   - name: --num-messages
     summary: A nonzero integer value that specifies the number of messages to retrieve from the queue, up to a maximum of 32. If fewer are visible, the visible messages are returned. By default, a single message is retrieved from the queue with this operation.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -159,6 +171,7 @@ directCommands:
                             [--auth-mode {key, login}]
                             [--connection-string]
                             [--num-messages]
+                            [--query-examples]
                             [--sas-token]
                             [--subscription]
                             [--timeout]
@@ -184,6 +197,9 @@ directCommands:
   - name: --num-messages
     summary: A nonzero integer value that specifies the number of messages to peek from the queue, up to a maximum of 32. By default, a single message is peeked from the queue with this operation.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -205,6 +221,7 @@ directCommands:
                            [--account-name]
                            [--auth-mode {key, login}]
                            [--connection-string]
+                           [--query-examples]
                            [--sas-token]
                            [--subscription]
                            [--time-to-live]
@@ -232,6 +249,9 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -263,6 +283,7 @@ directCommands:
                               [--auth-mode {key, login}]
                               [--connection-string]
                               [--content]
+                              [--query-examples]
                               [--sas-token]
                               [--subscription]
                               [--timeout]
@@ -299,6 +320,9 @@ directCommands:
     description: ''
   - name: --content
     summary: Message content, up to 64KB in size.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

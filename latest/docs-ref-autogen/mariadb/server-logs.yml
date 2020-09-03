@@ -12,6 +12,7 @@ directCommands:
     az mariadb server-logs download --name
                                     --resource-group
                                     --server-name
+                                    [--query-examples]
                                     [--subscription]
   examples:
   - summary: Download log files f1 and f2 to the current directory from the server 'testsvr'.
@@ -30,6 +31,9 @@ directCommands:
     summary: Name of the server. The name can contain only lowercase letters, numbers, and the hyphen (-) character. Minimum 3 characters and maximum 63 characters.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -43,6 +47,7 @@ directCommands:
                                 [--file-last-written]
                                 [--filename-contains]
                                 [--max-file-size]
+                                [--query-examples]
                                 [--subscription]
   examples:
   - summary: List log files for 'testsvr' modified in the last 72 hours (default value).
@@ -69,6 +74,9 @@ directCommands:
     description: ''
   - name: --max-file-size
     summary: The file size limitation to filter files.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

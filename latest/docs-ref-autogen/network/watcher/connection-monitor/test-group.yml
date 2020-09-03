@@ -29,6 +29,7 @@ directCommands:
                                                          [--icmp-disable-trace-route {false, true}]
                                                          [--preferred-ip-version {IPv4, IPv6}]
                                                          [--protocol {Http, Icmp, Tcp}]
+                                                         [--query-examples]
                                                          [--subscription]
                                                          [--tcp-disable-trace-route {false, true}]
                                                          [--tcp-port]
@@ -116,6 +117,9 @@ directCommands:
     parameterValueGroup: Http, Icmp, Tcp
     summary: The protocol to use in test evaluation.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -140,6 +144,7 @@ directCommands:
   syntax: >-
     az network watcher connection-monitor test-group list --connection-monitor
                                                           --location
+                                                          [--query-examples]
                                                           [--subscription]
   requiredParameters:
   - isRequired: true
@@ -151,6 +156,9 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -163,6 +171,7 @@ directCommands:
     az network watcher connection-monitor test-group remove --connection-monitor
                                                             --location
                                                             --name
+                                                            [--query-examples]
                                                             [--subscription]
   requiredParameters:
   - isRequired: true
@@ -178,6 +187,9 @@ directCommands:
     summary: The name of the connection monitor test group.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -190,6 +202,7 @@ directCommands:
     az network watcher connection-monitor test-group show --connection-monitor
                                                           --location
                                                           --name
+                                                          [--query-examples]
                                                           [--subscription]
   requiredParameters:
   - isRequired: true
@@ -205,6 +218,9 @@ directCommands:
     summary: The name of the connection monitor test group.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

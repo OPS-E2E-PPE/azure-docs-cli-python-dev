@@ -12,6 +12,7 @@ directCommands:
     az vm image terms accept [--offer]
                              [--plan]
                              [--publisher]
+                             [--query-examples]
                              [--subscription]
                              [--urn]
   examples:
@@ -26,6 +27,9 @@ directCommands:
     description: ''
   - name: --publisher -p
     summary: Image publisher.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -42,6 +46,7 @@ directCommands:
     az vm image terms cancel [--offer]
                              [--plan]
                              [--publisher]
+                             [--query-examples]
                              [--subscription]
                              [--urn]
   examples:
@@ -59,6 +64,9 @@ directCommands:
   - name: --publisher -p
     summary: Image publisher.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -74,6 +82,7 @@ directCommands:
     az vm image terms show [--offer]
                            [--plan]
                            [--publisher]
+                           [--query-examples]
                            [--subscription]
                            [--urn]
   examples:
@@ -88,6 +97,9 @@ directCommands:
     description: ''
   - name: --publisher -p
     summary: Image publisher.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

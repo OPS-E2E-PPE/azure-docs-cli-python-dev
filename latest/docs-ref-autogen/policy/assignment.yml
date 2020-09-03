@@ -19,6 +19,7 @@ directCommands:
                                 [--params]
                                 [--policy]
                                 [--policy-set-definition]
+                                [--query-examples]
                                 [--resource-group]
                                 [--role]
                                 [--scope]
@@ -78,6 +79,9 @@ directCommands:
   - name: --policy-set-definition -d
     summary: Name or id of the policy set definition.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.
     description: ''
@@ -99,6 +103,7 @@ directCommands:
   description: ''
   syntax: >-
     az policy assignment delete --name
+                                [--query-examples]
                                 [--resource-group]
                                 [--scope]
   examples:
@@ -110,6 +115,9 @@ directCommands:
     summary: Name of the policy assignment.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.
     description: ''
@@ -123,11 +131,15 @@ directCommands:
   description: ''
   syntax: >-
     az policy assignment list [--disable-scope-strict-match]
+                              [--query-examples]
                               [--resource-group]
                               [--scope]
   optionalParameters:
   - name: --disable-scope-strict-match
     summary: Include policy assignments either inherited from parent scope or at child scope.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.
@@ -142,6 +154,7 @@ directCommands:
   description: ''
   syntax: >-
     az policy assignment show --name
+                              [--query-examples]
                               [--resource-group]
                               [--scope]
   examples:
@@ -153,6 +166,9 @@ directCommands:
     summary: Name of the policy assignment.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.
     description: ''

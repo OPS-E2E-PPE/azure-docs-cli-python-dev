@@ -12,6 +12,7 @@ directCommands:
     az openshift monitor disable --name
                                  --resource-group
                                  [--no-wait]
+                                 [--query-examples]
                                  [--subscription]
   examples:
   - summary: Disable Log Analytics monitoring.
@@ -29,6 +30,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -41,6 +45,7 @@ directCommands:
                                 --resource-group
                                 --workspace-id
                                 [--no-wait]
+                                [--query-examples]
                                 [--subscription]
   examples:
   - summary: Enable Log Analytics in a managed OpenShift cluster.
@@ -61,6 +66,9 @@ directCommands:
   optionalParameters:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

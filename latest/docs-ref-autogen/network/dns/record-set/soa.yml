@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az network dns record-set soa show --resource-group
                                        --zone-name
+                                       [--query-examples]
                                        [--subscription]
   examples:
   - summary: Get the details of an SOA record.
@@ -27,6 +28,9 @@ directCommands:
     summary: The name of the zone.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -43,6 +47,7 @@ directCommands:
                                          [--host]
                                          [--if-none-match]
                                          [--minimum-ttl]
+                                         [--query-examples]
                                          [--refresh-time]
                                          [--retry-time]
                                          [--serial-number]
@@ -77,6 +82,9 @@ directCommands:
   - name: --minimum-ttl -m
     defaultValue: "3600"
     summary: Minimum TTL (time-to-live, seconds).
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --refresh-time -f
     summary: Refresh value (seconds).

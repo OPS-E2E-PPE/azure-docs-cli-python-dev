@@ -14,6 +14,7 @@ directCommands:
                                [--alert-notifications]
                                [--alerts-admins]
                                [--phone]
+                               [--query-examples]
                                [--subscription]
   examples:
   - summary: Creates a security contact.
@@ -37,6 +38,9 @@ directCommands:
   - name: --phone
     summary: Phone of the security contact.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -47,6 +51,7 @@ directCommands:
   description: ''
   syntax: >-
     az security contact delete --name
+                               [--query-examples]
                                [--subscription]
   examples:
   - summary: Deletes a security contact.
@@ -57,6 +62,9 @@ directCommands:
     summary: Name of the resource to be fetched.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -65,11 +73,16 @@ directCommands:
   name: az security contact list
   summary: List security contact.
   description: ''
-  syntax: az security contact list [--subscription]
+  syntax: >-
+    az security contact list [--query-examples]
+                             [--subscription]
   examples:
   - summary: Get security contacts.
     syntax: az security contact list
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -80,6 +93,7 @@ directCommands:
   description: ''
   syntax: >-
     az security contact show --name
+                             [--query-examples]
                              [--subscription]
   examples:
   - summary: Get a security contact.
@@ -90,6 +104,9 @@ directCommands:
     summary: Name of the resource to be fetched.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

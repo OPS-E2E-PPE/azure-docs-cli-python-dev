@@ -17,6 +17,7 @@ directCommands:
                                     [--file-filter]
                                     [--org]
                                     [--project]
+                                    [--query-examples]
                                     [--scope {organization, project}]
                                     [--subscription]
   requiredParameters:
@@ -50,6 +51,9 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --scope
     defaultValue: organization
     parameterValueGroup: organization, project
@@ -71,6 +75,7 @@ directCommands:
                                    [--detect {false, true}]
                                    [--org]
                                    [--project]
+                                   [--query-examples]
                                    [--scope {organization, project}]
                                    [--subscription]
   requiredParameters:
@@ -103,6 +108,9 @@ directCommands:
     description: ''
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --scope
     defaultValue: organization

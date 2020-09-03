@@ -18,6 +18,7 @@ directCommands:
                                   [--filepath]
                                   [--from-full-rp-name]
                                   [--log-point-in-time]
+                                  [--query-examples]
                                   [--rp-name]
                                   [--subscription]
                                   [--target-container-name]
@@ -64,6 +65,9 @@ directCommands:
     description: ''
   - name: --log-point-in-time
     summary: Specify the point-in-time which will be restored.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --rp-name -r
     summary: Name of the recovery point.

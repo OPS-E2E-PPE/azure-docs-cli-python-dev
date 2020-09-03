@@ -15,6 +15,7 @@ directCommands:
                                                           --workspace-name
                                                           [--all {false, true}]
                                                           [--enable {false, true}]
+                                                          [--query-examples]
                                                           [--subscription]
                                                           [--tables]
   examples:
@@ -48,6 +49,9 @@ directCommands:
     parameterValueGroup: false, true
     summary: Enable this data export rule.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -63,6 +67,7 @@ directCommands:
     az monitor log-analytics workspace data-export delete --name
                                                           --resource-group
                                                           --workspace-name
+                                                          [--query-examples]
                                                           [--subscription]
                                                           [--yes]
   requiredParameters:
@@ -79,6 +84,9 @@ directCommands:
     summary: Name of the Log Analytics Workspace.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -93,6 +101,7 @@ directCommands:
   syntax: >-
     az monitor log-analytics workspace data-export list --resource-group
                                                         --workspace-name
+                                                        [--query-examples]
                                                         [--subscription]
   requiredParameters:
   - isRequired: true
@@ -104,6 +113,9 @@ directCommands:
     summary: Name of the Log Analytics Workspace.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -116,6 +128,7 @@ directCommands:
     az monitor log-analytics workspace data-export show --name
                                                         --resource-group
                                                         --workspace-name
+                                                        [--query-examples]
                                                         [--subscription]
   requiredParameters:
   - isRequired: true
@@ -131,6 +144,9 @@ directCommands:
     summary: Name of the Log Analytics Workspace.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -148,6 +164,7 @@ directCommands:
                                                           [--destination]
                                                           [--enable {false, true}]
                                                           [--force-string]
+                                                          [--query-examples]
                                                           [--remove]
                                                           [--set]
                                                           [--subscription]
@@ -185,6 +202,9 @@ directCommands:
     description: ''
   - name: --force-string
     summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

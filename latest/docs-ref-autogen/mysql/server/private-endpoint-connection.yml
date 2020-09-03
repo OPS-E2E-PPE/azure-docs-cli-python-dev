@@ -13,6 +13,7 @@ directCommands:
                                                         [--id]
                                                         [--ids]
                                                         [--name]
+                                                        [--query-examples]
                                                         [--resource-group]
                                                         [--server-name]
                                                         [--subscription]
@@ -28,6 +29,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the Server. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified server.
@@ -46,6 +50,7 @@ directCommands:
     az mysql server private-endpoint-connection delete [--id]
                                                        [--ids]
                                                        [--name]
+                                                       [--query-examples]
                                                        [--resource-group]
                                                        [--server-name]
                                                        [--subscription]
@@ -58,6 +63,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the Server. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified server.
@@ -77,6 +85,7 @@ directCommands:
                                                        [--id]
                                                        [--ids]
                                                        [--name]
+                                                       [--query-examples]
                                                        [--resource-group]
                                                        [--server-name]
                                                        [--subscription]
@@ -92,6 +101,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the Server. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified server.
@@ -110,6 +122,7 @@ directCommands:
     az mysql server private-endpoint-connection show [--id]
                                                      [--ids]
                                                      [--name]
+                                                     [--query-examples]
                                                      [--resource-group]
                                                      [--server-name]
                                                      [--subscription]
@@ -122,6 +135,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the Server. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified server.

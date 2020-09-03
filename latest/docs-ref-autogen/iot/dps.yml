@@ -12,6 +12,7 @@ directCommands:
     az iot dps create --name
                       --resource-group
                       [--location]
+                      [--query-examples]
                       [--sku {S1}]
                       [--subscription]
                       [--unit]
@@ -33,6 +34,9 @@ directCommands:
   - name: --location -l
     summary: Location of your IoT Provisioning Service. Default is the location of target resource group.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sku
     defaultValue: S1
     parameterValueGroup: S1
@@ -53,6 +57,7 @@ directCommands:
   syntax: >-
     az iot dps delete [--ids]
                       [--name]
+                      [--query-examples]
                       [--resource-group]
                       [--subscription]
   examples:
@@ -64,6 +69,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: IoT Provisioning Service name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -77,7 +85,8 @@ directCommands:
   summary: List Azure IoT Hub device provisioning services.
   description: ''
   syntax: >-
-    az iot dps list [--resource-group]
+    az iot dps list [--query-examples]
+                    [--resource-group]
                     [--subscription]
   examples:
   - summary: List all Azure IoT Hub device provisioning services in a subscription.
@@ -85,6 +94,9 @@ directCommands:
   - summary: List all Azure IoT Hub device provisioning services in the resource group 'MyResourceGroup'
     syntax: az iot dps list --resource-group MyResourceGroup
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -99,6 +111,7 @@ directCommands:
   syntax: >-
     az iot dps show [--ids]
                     [--name]
+                    [--query-examples]
                     [--resource-group]
                     [--subscription]
   examples:
@@ -110,6 +123,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: IoT Provisioning Service name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -127,6 +143,7 @@ directCommands:
                       [--force-string]
                       [--ids]
                       [--name]
+                      [--query-examples]
                       [--remove]
                       [--resource-group]
                       [--set]
@@ -146,6 +163,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: IoT Provisioning Service name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

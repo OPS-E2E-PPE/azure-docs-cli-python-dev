@@ -12,6 +12,7 @@ directCommands:
     az keyvault network-rule add --name
                                  [--ip-address]
                                  [--no-wait]
+                                 [--query-examples]
                                  [--resource-group]
                                  [--subnet]
                                  [--subscription]
@@ -27,6 +28,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -47,6 +51,7 @@ directCommands:
   description: ''
   syntax: >-
     az keyvault network-rule list --name
+                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
   requiredParameters:
@@ -55,6 +60,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
     description: ''
@@ -70,6 +78,7 @@ directCommands:
     az keyvault network-rule remove --name
                                     [--ip-address]
                                     [--no-wait]
+                                    [--query-examples]
                                     [--resource-group]
                                     [--subnet]
                                     [--subscription]
@@ -85,6 +94,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -110,6 +122,7 @@ directCommands:
                                   [--deleted]
                                   [--exists]
                                   [--interval]
+                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
                                   [--timeout]
@@ -138,6 +151,9 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.

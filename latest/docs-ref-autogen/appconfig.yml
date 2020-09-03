@@ -14,6 +14,7 @@ directCommands:
                         --resource-group
                         [--assign-identity]
                         [--enable-public-network {false, true}]
+                        [--query-examples]
                         [--sku {Free, Standard}]
                         [--subscription]
   examples:
@@ -46,6 +47,9 @@ directCommands:
     parameterValueGroup: false, true
     summary: When true, requests coming from public networks have permission to access this store while private endpoint is enabled. When false, only requests made through Private Links can reach this store.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sku
     defaultValue: Standard
     parameterValueGroup: Free, Standard
@@ -61,6 +65,7 @@ directCommands:
   description: ''
   syntax: >-
     az appconfig delete --name
+                        [--query-examples]
                         [--resource-group]
                         [--subscription]
                         [--yes]
@@ -73,6 +78,9 @@ directCommands:
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -88,12 +96,16 @@ directCommands:
   summary: Lists all App Configurations under the current subscription.
   description: ''
   syntax: >-
-    az appconfig list [--resource-group]
+    az appconfig list [--query-examples]
+                      [--resource-group]
                       [--subscription]
   examples:
   - summary: List all App Configurations under a resource group
     syntax: az appconfig list -g MyResourceGroup
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -107,6 +119,7 @@ directCommands:
   description: ''
   syntax: >-
     az appconfig show --name
+                      [--query-examples]
                       [--resource-group]
                       [--subscription]
   examples:
@@ -118,6 +131,9 @@ directCommands:
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -135,6 +151,7 @@ directCommands:
                         [--encryption-key-vault]
                         [--encryption-key-version]
                         [--identity-client-id]
+                        [--query-examples]
                         [--resource-group]
                         [--sku {Free, Standard}]
                         [--subscription]
@@ -165,6 +182,9 @@ directCommands:
     description: ''
   - name: --identity-client-id
     summary: Client ID of the managed identity with wrap and unwrap access to encryption key. Use system assigned identity by default.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

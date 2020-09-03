@@ -13,6 +13,7 @@ directCommands:
                            [--connection-string]
                            [--label]
                            [--name]
+                           [--query-examples]
                            [--subscription]
                            [--yes]
   examples:
@@ -34,6 +35,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -61,6 +65,7 @@ directCommands:
                            [--path]
                            [--prefix]
                            [--preserve-labels {false, true}]
+                           [--query-examples]
                            [--resolve-keyvault {false, true}]
                            [--separator]
                            [--skip-features {false, true}]
@@ -128,6 +133,9 @@ directCommands:
     parameterValueGroup: false, true
     summary: Flag to preserve labels from source AppConfig. This argument should NOT be specified along with --dest-label.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resolve-keyvault
     parameterValueGroup: false, true
     summary: Resolve the content of key vault reference.
@@ -166,6 +174,7 @@ directCommands:
                            [--path]
                            [--prefix]
                            [--preserve-labels {false, true}]
+                           [--query-examples]
                            [--separator]
                            [--skip-features {false, true}]
                            [--src-connection-string]
@@ -226,6 +235,9 @@ directCommands:
     parameterValueGroup: false, true
     summary: Flag to preserve labels from source AppConfig. This argument should NOT be specified along with --label.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --separator
     summary: "Delimiter for flattening the json or yaml file to key-value pairs. Separator will be ignored for property files and feature flags. Supported values: '.', ',', ';', '-', '_', '__', '/', ':'."
     description: ''
@@ -264,6 +276,7 @@ directCommands:
                          [--key]
                          [--label]
                          [--name]
+                         [--query-examples]
                          [--resolve-keyvault {false, true}]
                          [--subscription]
                          [--top]
@@ -301,6 +314,9 @@ directCommands:
   - name: --name -n
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resolve-keyvault
     parameterValueGroup: false, true
     summary: Resolve the content of key vault reference. This argument should NOT be specified along with --fields. Instead use --query for customized query.
@@ -321,6 +337,7 @@ directCommands:
                          [--connection-string]
                          [--label]
                          [--name]
+                         [--query-examples]
                          [--subscription]
                          [--yes]
   examples:
@@ -343,6 +360,9 @@ directCommands:
   - name: --name -n
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -360,6 +380,7 @@ directCommands:
                             [--key]
                             [--label]
                             [--name]
+                            [--query-examples]
                             [--subscription]
                             [--yes]
   examples:
@@ -385,6 +406,9 @@ directCommands:
   - name: --name -n
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -402,6 +426,7 @@ directCommands:
                         [--content-type]
                         [--label]
                         [--name]
+                        [--query-examples]
                         [--subscription]
                         [--tags]
                         [--value]
@@ -435,6 +460,9 @@ directCommands:
   - name: --name -n
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -458,6 +486,7 @@ directCommands:
                                  [--connection-string]
                                  [--label]
                                  [--name]
+                                 [--query-examples]
                                  [--subscription]
                                  [--tags]
                                  [--yes]
@@ -485,6 +514,9 @@ directCommands:
   - name: --name -n
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -505,6 +537,7 @@ directCommands:
                          [--datetime]
                          [--label]
                          [--name]
+                         [--query-examples]
                          [--subscription]
   examples:
   - summary: Show a key-value using App Configuration name with a specific label and datetime
@@ -529,6 +562,9 @@ directCommands:
   - name: --name -n
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -542,6 +578,7 @@ directCommands:
                            [--connection-string]
                            [--label]
                            [--name]
+                           [--query-examples]
                            [--subscription]
                            [--yes]
   examples:
@@ -563,6 +600,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

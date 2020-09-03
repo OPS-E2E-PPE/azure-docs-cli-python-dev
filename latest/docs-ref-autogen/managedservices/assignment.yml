@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az managedservices assignment create --definition
                                          [--assignment-id]
+                                         [--query-examples]
                                          [--resource-group]
                                          [--subscription]
   examples:
@@ -27,6 +28,9 @@ directCommands:
   - name: --assignment-id
     summary: Can be used to override the generated registration assignment id.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -40,6 +44,7 @@ directCommands:
   description: ''
   syntax: >-
     az managedservices assignment delete --assignment
+                                         [--query-examples]
                                          [--resource-group]
                                          [--subscription]
   examples:
@@ -53,6 +58,9 @@ directCommands:
     summary: The identifier (guid) or the fully qualified resource id of the registration assignment. When resource id is used, subscription id and resource group parameters are ignored.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -66,6 +74,7 @@ directCommands:
   description: ''
   syntax: >-
     az managedservices assignment list [--include-definition {false, true}]
+                                       [--query-examples]
                                        [--resource-group]
                                        [--subscription]
   examples:
@@ -79,6 +88,9 @@ directCommands:
   - name: --include-definition
     parameterValueGroup: false, true
     summary: When provided, gets the associated registration definition details.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -94,6 +106,7 @@ directCommands:
   syntax: >-
     az managedservices assignment show --assignment
                                        [--include-definition {false, true}]
+                                       [--query-examples]
                                        [--resource-group]
                                        [--subscription]
   examples:
@@ -112,6 +125,9 @@ directCommands:
   - name: --include-definition
     parameterValueGroup: false, true
     summary: When provided, gets the associated registration definition details.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

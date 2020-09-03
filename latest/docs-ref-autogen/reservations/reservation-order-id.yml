@@ -10,6 +10,7 @@ directCommands:
   description: Get applicable reservations that are applied to this subscription.
   syntax: >-
     az reservations reservation-order-id list --subscription-id
+                                              [--query-examples]
                                               [--subscription]
   requiredParameters:
   - isRequired: true
@@ -17,6 +18,9 @@ directCommands:
     summary: Id of the subscription to look up applied reservations.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

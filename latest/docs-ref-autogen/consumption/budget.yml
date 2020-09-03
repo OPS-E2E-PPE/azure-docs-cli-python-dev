@@ -16,6 +16,7 @@ directCommands:
                                  --start-date
                                  --time-grain {annually, monthly, quarterly}
                                  [--meter-filter]
+                                 [--query-examples]
                                  [--resource-filter]
                                  [--resource-group]
                                  [--resource-group-filter]
@@ -51,6 +52,9 @@ directCommands:
   - name: --meter-filter
     summary: Space-separated list of meters to filter on. Required if category is usage.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-filter
     summary: Space-separated list of resource instances to filter on.
     description: ''
@@ -70,6 +74,7 @@ directCommands:
   description: ''
   syntax: >-
     az consumption budget delete --budget-name
+                                 [--query-examples]
                                  [--resource-group]
                                  [--subscription]
   examples:
@@ -81,6 +86,9 @@ directCommands:
     summary: Name of a budget.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -93,9 +101,13 @@ directCommands:
   summary: List budgets for an Azure subscription.
   description: ''
   syntax: >-
-    az consumption budget list [--resource-group]
+    az consumption budget list [--query-examples]
+                               [--resource-group]
                                [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -109,6 +121,7 @@ directCommands:
   description: ''
   syntax: >-
     az consumption budget show --budget-name
+                               [--query-examples]
                                [--resource-group]
                                [--subscription]
   examples:
@@ -120,6 +133,9 @@ directCommands:
     summary: Name of a budget.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''

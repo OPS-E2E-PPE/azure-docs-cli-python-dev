@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az webapp deployment list-publishing-credentials [--ids]
                                                      [--name]
+                                                     [--query-examples]
                                                      [--resource-group]
                                                      [--slot]
                                                      [--subscription]
@@ -23,6 +24,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using `az configure --defaults web=<name>`.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -40,6 +44,7 @@ directCommands:
   syntax: >-
     az webapp deployment list-publishing-profiles [--ids]
                                                   [--name]
+                                                  [--query-examples]
                                                   [--resource-group]
                                                   [--slot]
                                                   [--subscription]
@@ -53,6 +58,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the web app. You can configure the default using `az configure --defaults web=<name>`.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

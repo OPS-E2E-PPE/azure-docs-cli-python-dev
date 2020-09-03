@@ -23,6 +23,7 @@ directCommands:
                         [--metadata]
                         [--pool-id]
                         [--priority]
+                        [--query-examples]
                         [--subscription]
                         [--uses-task-dependencies]
   optionalParameters:
@@ -68,6 +69,9 @@ directCommands:
   - name: --priority
     summary: The priority of the Job. Priority values can range from -1000 to 1000, with -1000 being the lowest priority and 1000 being the highest priority. The default value is 0.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -88,6 +92,7 @@ directCommands:
                         [--if-modified-since]
                         [--if-none-match]
                         [--if-unmodified-since]
+                        [--query-examples]
                         [--subscription]
                         [--yes]
   requiredParameters:
@@ -117,6 +122,9 @@ directCommands:
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -138,6 +146,7 @@ directCommands:
                          [--if-modified-since]
                          [--if-none-match]
                          [--if-unmodified-since]
+                         [--query-examples]
                          [--subscription]
   requiredParameters:
   - isRequired: true
@@ -170,6 +179,9 @@ directCommands:
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -187,6 +199,7 @@ directCommands:
                         [--if-modified-since]
                         [--if-none-match]
                         [--if-unmodified-since]
+                        [--query-examples]
                         [--subscription]
   requiredParameters:
   - isRequired: true
@@ -215,6 +228,9 @@ directCommands:
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -230,6 +246,7 @@ directCommands:
                       [--expand]
                       [--filter]
                       [--job-schedule-id]
+                      [--query-examples]
                       [--select]
                       [--subscription]
   optionalParameters:
@@ -250,6 +267,9 @@ directCommands:
     description: ''
   - name: --job-schedule-id
     summary: The ID of the job schedule from which you want to get a list of jobs. If omitted, lists all jobs in the account.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --select
     summary: An OData $select clause.
@@ -278,6 +298,7 @@ directCommands:
                        [--on-all-tasks-complete {noaction, terminatejob}]
                        [--pool-id]
                        [--priority]
+                       [--query-examples]
                        [--subscription]
   requiredParameters:
   - isRequired: true
@@ -328,6 +349,9 @@ directCommands:
   - name: --priority
     summary: The priority of the Job. Priority values can range from -1000 to 1000, with -1000 being the lowest priority and 1000 being the highest priority. If omitted, it is set to the default value 0.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -352,6 +376,7 @@ directCommands:
                      [--on-all-tasks-complete {noaction, terminatejob}]
                      [--pool-id]
                      [--priority]
+                     [--query-examples]
                      [--subscription]
   requiredParameters:
   - isRequired: true
@@ -402,6 +427,9 @@ directCommands:
   - name: --priority
     summary: The priority of the Job. Priority values can range from -1000 to 1000, with -1000 being the lowest priority and 1000 being the highest priority. If omitted, the priority of the Job is left unchanged.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -420,6 +448,7 @@ directCommands:
                       [--if-modified-since]
                       [--if-none-match]
                       [--if-unmodified-since]
+                      [--query-examples]
                       [--select]
                       [--subscription]
   requiredParameters:
@@ -452,6 +481,9 @@ directCommands:
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --select
     summary: An OData $select clause.
     description: ''
@@ -472,6 +504,7 @@ directCommands:
                       [--if-modified-since]
                       [--if-none-match]
                       [--if-unmodified-since]
+                      [--query-examples]
                       [--subscription]
                       [--terminate-reason]
   requiredParameters:
@@ -500,6 +533,9 @@ directCommands:
     description: ''
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

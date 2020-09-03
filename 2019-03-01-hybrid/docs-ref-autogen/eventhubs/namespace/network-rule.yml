@@ -14,6 +14,7 @@ directCommands:
                                             [--action {Allow}]
                                             [--ignore-missing-endpoint {false, true}]
                                             [--ip-address]
+                                            [--query-examples]
                                             [--subnet]
                                             [--subscription]
                                             [--vnet-name]
@@ -46,6 +47,9 @@ directCommands:
   - name: --ip-address
     summary: IPv4 address or CIDR range - 10.6.0.0/24.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subnet
     summary: Name or ID of subnet. If name is supplied, `--vnet-name` must be supplied.
     description: ''
@@ -63,6 +67,7 @@ directCommands:
   syntax: >-
     az eventhubs namespace network-rule list --namespace-name
                                              --resource-group
+                                             [--query-examples]
                                              [--subscription]
   examples:
   - summary: Show properties of Network rule of the given Namespace
@@ -77,6 +82,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -89,6 +97,7 @@ directCommands:
     az eventhubs namespace network-rule remove --namespace-name
                                                --resource-group
                                                [--ip-address]
+                                               [--query-examples]
                                                [--subnet]
                                                [--subscription]
                                                [--vnet-name]
@@ -109,6 +118,9 @@ directCommands:
   optionalParameters:
   - name: --ip-address
     summary: IPv4 address or CIDR range - 10.6.0.0/24.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subnet
     summary: Name or ID of subnet. If name is supplied, `--vnet-name` must be supplied.

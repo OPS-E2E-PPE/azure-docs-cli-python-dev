@@ -23,6 +23,7 @@ directCommands:
                                                                  [--http-valid-status-codes]
                                                                  [--icmp-disable-trace-route {false, true}]
                                                                  [--preferred-ip-version {IPv4, IPv6}]
+                                                                 [--query-examples]
                                                                  [--subscription]
                                                                  [--tcp-disable-trace-route {false, true}]
                                                                  [--tcp-port]
@@ -88,6 +89,9 @@ directCommands:
     parameterValueGroup: IPv4, IPv6
     summary: The preferred IP version to use in test evaluation. The connection monitor may choose to use a different version depending on other parameters.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -112,6 +116,7 @@ directCommands:
   syntax: >-
     az network watcher connection-monitor test-configuration list --connection-monitor
                                                                   --location
+                                                                  [--query-examples]
                                                                   [--subscription]
   requiredParameters:
   - isRequired: true
@@ -123,6 +128,9 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -135,6 +143,7 @@ directCommands:
     az network watcher connection-monitor test-configuration remove --connection-monitor
                                                                     --location
                                                                     --name
+                                                                    [--query-examples]
                                                                     [--subscription]
                                                                     [--test-groups]
   examples:
@@ -156,6 +165,9 @@ directCommands:
     summary: The name of the connection monitor test configuration.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -171,6 +183,7 @@ directCommands:
     az network watcher connection-monitor test-configuration show --connection-monitor
                                                                   --location
                                                                   --name
+                                                                  [--query-examples]
                                                                   [--subscription]
   requiredParameters:
   - isRequired: true
@@ -186,6 +199,9 @@ directCommands:
     summary: The name of the connection monitor test configuration.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

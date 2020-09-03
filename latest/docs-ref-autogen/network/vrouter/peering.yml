@@ -14,6 +14,7 @@ directCommands:
                                       --peer-ip
                                       --resource-group
                                       --vrouter-name
+                                      [--query-examples]
                                       [--subscription]
   requiredParameters:
   - isRequired: true
@@ -37,6 +38,9 @@ directCommands:
     summary: The name of the Virtual Router.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -49,6 +53,7 @@ directCommands:
     az network vrouter peering delete --name
                                       --resource-group
                                       --vrouter-name
+                                      [--query-examples]
                                       [--subscription]
   requiredParameters:
   - isRequired: true
@@ -64,6 +69,9 @@ directCommands:
     summary: The name of the Virtual Router.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -75,6 +83,7 @@ directCommands:
   syntax: >-
     az network vrouter peering list --resource-group
                                     --vrouter-name
+                                    [--query-examples]
                                     [--subscription]
   requiredParameters:
   - isRequired: true
@@ -86,6 +95,9 @@ directCommands:
     summary: The name of the Virtual Router.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -98,6 +110,7 @@ directCommands:
     az network vrouter peering show --name
                                     --resource-group
                                     --vrouter-name
+                                    [--query-examples]
                                     [--subscription]
   requiredParameters:
   - isRequired: true
@@ -113,6 +126,9 @@ directCommands:
     summary: The name of the Virtual Router.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -129,6 +145,7 @@ directCommands:
                                       [--force-string]
                                       [--peer-asn]
                                       [--peer-ip]
+                                      [--query-examples]
                                       [--remove]
                                       [--set]
                                       [--subscription]
@@ -157,6 +174,9 @@ directCommands:
     description: ''
   - name: --peer-ip
     summary: Peer IP address.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

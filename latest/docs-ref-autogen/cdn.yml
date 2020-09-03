@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az cdn name-exists [--ids]
                        [--name]
+                       [--query-examples]
                        [--subscription]
   optionalParameters:
   - name: --ids
@@ -18,6 +19,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The resource name to validate.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -27,8 +31,13 @@ directCommands:
   name: az cdn usage
   summary: Check the quota and actual usage of the CDN profiles under the given subscription.
   description: ''
-  syntax: az cdn usage [--subscription]
+  syntax: >-
+    az cdn usage [--query-examples]
+                 [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

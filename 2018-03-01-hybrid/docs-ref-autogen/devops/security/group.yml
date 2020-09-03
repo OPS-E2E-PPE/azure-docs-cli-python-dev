@@ -17,6 +17,7 @@ directCommands:
                                     [--org]
                                     [--origin-id]
                                     [--project]
+                                    [--query-examples]
                                     [--scope {organization, project}]
                                     [--subscription]
   examples:
@@ -68,6 +69,9 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project in which Azure DevOps group should be created.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --scope
     defaultValue: project
     parameterValueGroup: organization, project
@@ -84,6 +88,7 @@ directCommands:
     az devops security group delete --id
                                     [--detect {false, true}]
                                     [--org]
+                                    [--query-examples]
                                     [--subscription]
                                     [--yes]
   requiredParameters:
@@ -98,6 +103,9 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -114,6 +122,7 @@ directCommands:
                                   [--detect {false, true}]
                                   [--org]
                                   [--project]
+                                  [--query-examples]
                                   [--scope {organization, project}]
                                   [--subject-types]
                                   [--subscription]
@@ -130,6 +139,9 @@ directCommands:
     description: ''
   - name: --project -p
     summary: List groups for a particular project.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --scope
     defaultValue: project
@@ -150,6 +162,7 @@ directCommands:
     az devops security group show --id
                                   [--detect {false, true}]
                                   [--org]
+                                  [--query-examples]
                                   [--subscription]
   requiredParameters:
   - isRequired: true
@@ -164,6 +177,9 @@ directCommands:
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -177,6 +193,7 @@ directCommands:
                                     [--detect {false, true}]
                                     [--name]
                                     [--org]
+                                    [--query-examples]
                                     [--subscription]
   requiredParameters:
   - isRequired: true
@@ -196,6 +213,9 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

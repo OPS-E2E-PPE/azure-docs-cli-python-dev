@@ -15,6 +15,7 @@ directCommands:
                               [--account-endpoint]
                               [--account-key]
                               [--account-name]
+                              [--query-examples]
                               [--recursive]
                               [--subscription]
                               [--yes]
@@ -41,6 +42,9 @@ directCommands:
   - name: --account-name
     summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --recursive
     summary: Whether to delete children of a directory. If the filePath parameter represents a directory instead of a file, you can set recursive to true to delete the directory and all of the files and subdirectories in it. If recursive is false then the directory must be empty or deletion will fail.
     description: ''
@@ -66,6 +70,7 @@ directCommands:
                                 [--end-range]
                                 [--if-modified-since]
                                 [--if-unmodified-since]
+                                [--query-examples]
                                 [--start-range]
                                 [--subscription]
   requiredParameters:
@@ -104,6 +109,9 @@ directCommands:
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --start-range
     summary: The byte range to be retrieved. If not set the file will be retrieved from the beginning.
     description: ''
@@ -122,6 +130,7 @@ directCommands:
                             [--account-key]
                             [--account-name]
                             [--filter]
+                            [--query-examples]
                             [--recursive]
                             [--subscription]
   requiredParameters:
@@ -146,6 +155,9 @@ directCommands:
   - name: --filter
     summary: An OData $filter clause. For more information on constructing this filter, see <a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-task-files">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-task-files</a>.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --recursive
     summary: Whether to list children of the Task directory. This parameter can be used in combination with the filter parameter to list specific type of files.
     description: ''
@@ -166,6 +178,7 @@ directCommands:
                             [--account-name]
                             [--if-modified-since]
                             [--if-unmodified-since]
+                            [--query-examples]
                             [--subscription]
   requiredParameters:
   - isRequired: true
@@ -195,6 +208,9 @@ directCommands:
     description: ''
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

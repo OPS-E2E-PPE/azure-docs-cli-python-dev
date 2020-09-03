@@ -20,6 +20,7 @@ directCommands:
                                                [--geo-mapping]
                                                [--min-child-endpoints]
                                                [--priority]
+                                               [--query-examples]
                                                [--subnets]
                                                [--subscription]
                                                [--target]
@@ -72,6 +73,9 @@ directCommands:
   - name: --priority
     summary: Priority of the endpoint when using the 'Priority' traffic routing method. Values range from 1 to 1000, with lower values representing higher priority.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subnets
     summary: Space-separated list of subnet CIDR prefixes (10.0.0.0/24) or subnet ranges (10.0.0.0-11.0.0.0).
     description: ''
@@ -96,6 +100,7 @@ directCommands:
     az network traffic-manager endpoint delete [--ids]
                                                [--name]
                                                [--profile-name]
+                                               [--query-examples]
                                                [--resource-group]
                                                [--subscription]
                                                [--type {azureEndpoints, externalEndpoints, nestedEndpoints}]
@@ -113,6 +118,9 @@ directCommands:
     description: ''
   - name: --profile-name
     summary: Name of parent profile.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -132,6 +140,7 @@ directCommands:
   syntax: >-
     az network traffic-manager endpoint list --profile-name
                                              --resource-group
+                                             [--query-examples]
                                              [--subscription]
                                              [--type {azureEndpoints, externalEndpoints, nestedEndpoints}]
   examples:
@@ -147,6 +156,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -163,6 +175,7 @@ directCommands:
     az network traffic-manager endpoint show [--ids]
                                              [--name]
                                              [--profile-name]
+                                             [--query-examples]
                                              [--resource-group]
                                              [--subscription]
                                              [--type {azureEndpoints, externalEndpoints, nestedEndpoints}]
@@ -181,6 +194,9 @@ directCommands:
   - name: --profile-name
     summary: Name of parent profile.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -196,11 +212,16 @@ directCommands:
   name: az network traffic-manager endpoint show-geographic-hierarchy
   summary: Get the default geographic hierarchy used by the geographic traffic routing method.
   description: ''
-  syntax: az network traffic-manager endpoint show-geographic-hierarchy [--subscription]
+  syntax: >-
+    az network traffic-manager endpoint show-geographic-hierarchy [--query-examples]
+                                                                  [--subscription]
   examples:
   - summary: Get the default geographic hierarchy used by the geographic traffic routing method.
     syntax: az network traffic-manager endpoint show-geographic-hierarchy
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -222,6 +243,7 @@ directCommands:
                                                [--name]
                                                [--priority]
                                                [--profile-name]
+                                               [--query-examples]
                                                [--remove]
                                                [--resource-group]
                                                [--set]
@@ -275,6 +297,9 @@ directCommands:
     description: ''
   - name: --profile-name
     summary: Name of parent profile.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az keyvault certificate pending delete --name
                                            --vault-name
+                                           [--query-examples]
                                            [--subscription]
   requiredParameters:
   - isRequired: true
@@ -22,6 +23,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -37,6 +41,7 @@ directCommands:
                                           [--disabled {false, true}]
                                           [--expires]
                                           [--not-before]
+                                          [--query-examples]
                                           [--subscription]
                                           [--tags]
   requiredParameters:
@@ -63,6 +68,9 @@ directCommands:
   - name: --not-before
     summary: Key not usable before the provided UTC datetime  (Y-m-d'T'H:M:S'Z').
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -77,6 +85,7 @@ directCommands:
   syntax: >-
     az keyvault certificate pending show --name
                                          --vault-name
+                                         [--query-examples]
                                          [--subscription]
   requiredParameters:
   - isRequired: true
@@ -88,6 +97,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

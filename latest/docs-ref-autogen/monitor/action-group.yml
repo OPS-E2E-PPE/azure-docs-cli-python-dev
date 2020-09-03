@@ -12,6 +12,7 @@ directCommands:
     az monitor action-group create --name
                                    --resource-group
                                    [--action]
+                                   [--query-examples]
                                    [--short-name]
                                    [--subscription]
                                    [--tags]
@@ -68,6 +69,9 @@ directCommands:
       'useaadauth', 'isglobalrunbook' and 'usecommonalertschema' are optional arguements that only need to be passed to set the respective parameter to True.
 
       If the 'useaadauth' argument is passed, then the OBJECT_ID and IDENTIFIER_URI values are required as well.
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --short-name
     summary: The short name of the action group.
     description: ''
@@ -85,6 +89,7 @@ directCommands:
   syntax: >-
     az monitor action-group delete [--ids]
                                    [--name]
+                                   [--query-examples]
                                    [--resource-group]
                                    [--subscription]
   optionalParameters:
@@ -93,6 +98,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the action group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -109,6 +117,7 @@ directCommands:
     az monitor action-group enable-receiver --name
                                             [--action-group]
                                             [--ids]
+                                            [--query-examples]
                                             [--resource-group]
                                             [--subscription]
   requiredParameters:
@@ -123,6 +132,9 @@ directCommands:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -135,9 +147,13 @@ directCommands:
   summary: List action groups under a resource group or the current subscription.
   description: ''
   syntax: >-
-    az monitor action-group list [--resource-group]
+    az monitor action-group list [--query-examples]
+                                 [--resource-group]
                                  [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of the resource group under which the action groups are being listed. If it is omitted, all the action groups under the current subscription are listed.
     description: ''
@@ -152,6 +168,7 @@ directCommands:
   syntax: >-
     az monitor action-group show [--ids]
                                  [--name]
+                                 [--query-examples]
                                  [--resource-group]
                                  [--subscription]
   examples:
@@ -163,6 +180,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the action group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -181,6 +201,7 @@ directCommands:
                                    [--force-string]
                                    [--ids]
                                    [--name]
+                                   [--query-examples]
                                    [--remove]
                                    [--remove-action]
                                    [--resource-group]
@@ -243,6 +264,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the action group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

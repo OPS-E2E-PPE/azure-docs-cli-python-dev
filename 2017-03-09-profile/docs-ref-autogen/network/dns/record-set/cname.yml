@@ -15,6 +15,7 @@ directCommands:
                                            [--if-match]
                                            [--if-none-match]
                                            [--metadata]
+                                           [--query-examples]
                                            [--subscription]
                                            [--ttl]
   examples:
@@ -45,6 +46,9 @@ directCommands:
   - name: --metadata
     summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -62,6 +66,7 @@ directCommands:
                                            --resource-group
                                            --zone-name
                                            [--if-match]
+                                           [--query-examples]
                                            [--subscription]
                                            [--yes]
   examples:
@@ -84,6 +89,9 @@ directCommands:
   - name: --if-match
     summary: The etag of the record set. Omit this value to always delete the current record set. Specify the last-seen etag value to prevent accidentally deleting any concurrent changes.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -98,6 +106,7 @@ directCommands:
   syntax: >-
     az network dns record-set cname list --resource-group
                                          --zone-name
+                                         [--query-examples]
                                          [--subscription]
   examples:
   - summary: List the CNAME record set in a zone.
@@ -112,6 +121,9 @@ directCommands:
     summary: The name of the zone.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -126,6 +138,7 @@ directCommands:
                                                   --resource-group
                                                   --zone-name
                                                   [--keep-empty-record-set]
+                                                  [--query-examples]
                                                   [--subscription]
   examples:
   - summary: Remove a CNAME record from its record set.
@@ -153,6 +166,9 @@ directCommands:
   - name: --keep-empty-record-set
     summary: Keep the empty record set if the last record is removed.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -167,6 +183,7 @@ directCommands:
                                                --resource-group
                                                --zone-name
                                                [--if-none-match]
+                                               [--query-examples]
                                                [--subscription]
                                                [--ttl]
   examples:
@@ -195,6 +212,9 @@ directCommands:
   - name: --if-none-match
     summary: Create the record set only if it does not already exist.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -211,6 +231,7 @@ directCommands:
     az network dns record-set cname show --name
                                          --resource-group
                                          --zone-name
+                                         [--query-examples]
                                          [--subscription]
   examples:
   - summary: Get the details of a CNAME record set.
@@ -229,6 +250,9 @@ directCommands:
     summary: The name of the zone.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

@@ -19,6 +19,7 @@ directCommands:
                              [--group]
                              [--owner]
                              [--permissions]
+                             [--query-examples]
                              [--sas-token]
                              [--subscription]
   examples:
@@ -65,6 +66,9 @@ directCommands:
   - name: --permissions
     summary: Invalid in conjunction with acl. POSIX access permissions for the file owner, the file owning group, and others. Each class may be granted read(r), write(w), or execute(x) permission. Both symbolic (rwxrw-rw-) and 4-digit octal notation (e.g. 0766) are supported.'.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -83,6 +87,7 @@ directCommands:
                               [--account-name]
                               [--auth-mode {key, login}]
                               [--connection-string]
+                              [--query-examples]
                               [--sas-token]
                               [--subscription]
   examples:
@@ -110,6 +115,9 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

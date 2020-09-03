@@ -17,6 +17,7 @@ directCommands:
                                 [--ip-tags]
                                 [--location]
                                 [--public-ip-prefix]
+                                [--query-examples]
                                 [--reverse-fqdn]
                                 [--sku {Basic, Standard}]
                                 [--subscription]
@@ -60,6 +61,9 @@ directCommands:
   - name: --public-ip-prefix
     summary: Name or ID of a public IP prefix.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --reverse-fqdn
     summary: Reverse FQDN (fully qualified domain name).
     description: ''
@@ -90,6 +94,7 @@ directCommands:
   syntax: >-
     az network public-ip delete [--ids]
                                 [--name]
+                                [--query-examples]
                                 [--resource-group]
                                 [--subscription]
   examples:
@@ -101,6 +106,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the public IP address.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -114,7 +122,8 @@ directCommands:
   summary: List public IP addresses.
   description: ''
   syntax: >-
-    az network public-ip list [--resource-group]
+    az network public-ip list [--query-examples]
+                              [--resource-group]
                               [--subscription]
   examples:
   - summary: List all public IPs in a subscription.
@@ -124,6 +133,9 @@ directCommands:
   - summary: List all public IPs of a domain name label.
     syntax: az network public-ip list -g MyResourceGroup --query "[?dnsSettings.domainNameLabel=='MyLabel']"
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -139,6 +151,7 @@ directCommands:
     az network public-ip show [--expand]
                               [--ids]
                               [--name]
+                              [--query-examples]
                               [--resource-group]
                               [--subscription]
   examples:
@@ -155,6 +168,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the public IP address.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -177,6 +193,7 @@ directCommands:
                                 [--ip-tags]
                                 [--name]
                                 [--public-ip-prefix]
+                                [--query-examples]
                                 [--remove]
                                 [--resource-group]
                                 [--reverse-fqdn]
@@ -216,6 +233,9 @@ directCommands:
     description: ''
   - name: --public-ip-prefix
     summary: Name or ID of a public IP prefix.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

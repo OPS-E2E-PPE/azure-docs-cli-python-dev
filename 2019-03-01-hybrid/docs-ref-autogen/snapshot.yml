@@ -13,6 +13,7 @@ directCommands:
                        --resource-group
                        [--location]
                        [--no-wait]
+                       [--query-examples]
                        [--size-gb]
                        [--sku {Premium_LRS, Standard_LRS}]
                        [--source]
@@ -46,6 +47,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --size-gb -z
     summary: 'Size in GB. Max size: 4095 GB (certain preview disks can be larger).'
     description: ''
@@ -73,6 +77,7 @@ directCommands:
   syntax: >-
     az snapshot delete [--ids]
                        [--name]
+                       [--query-examples]
                        [--resource-group]
                        [--subscription]
   optionalParameters:
@@ -81,6 +86,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the snapshot.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -96,6 +104,7 @@ directCommands:
     az snapshot grant-access --duration-in-seconds
                              [--ids]
                              [--name]
+                             [--query-examples]
                              [--resource-group]
                              [--subscription]
   examples:
@@ -113,6 +122,9 @@ directCommands:
   - name: --name -n
     summary: The name of the snapshot.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -124,9 +136,13 @@ directCommands:
   summary: List snapshots.
   description: ''
   syntax: >-
-    az snapshot list [--resource-group]
+    az snapshot list [--query-examples]
+                     [--resource-group]
                      [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -140,6 +156,7 @@ directCommands:
   syntax: >-
     az snapshot revoke-access [--ids]
                               [--name]
+                              [--query-examples]
                               [--resource-group]
                               [--subscription]
   examples:
@@ -151,6 +168,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the snapshot.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -165,6 +185,7 @@ directCommands:
   syntax: >-
     az snapshot show [--ids]
                      [--name]
+                     [--query-examples]
                      [--resource-group]
                      [--subscription]
   optionalParameters:
@@ -173,6 +194,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the snapshot.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -190,6 +214,7 @@ directCommands:
                        [--ids]
                        [--name]
                        [--no-wait]
+                       [--query-examples]
                        [--remove]
                        [--resource-group]
                        [--set]
@@ -215,6 +240,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
@@ -244,6 +272,7 @@ directCommands:
                      [--ids]
                      [--interval]
                      [--name]
+                     [--query-examples]
                      [--resource-group]
                      [--subscription]
                      [--timeout]
@@ -275,6 +304,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the snapshot.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

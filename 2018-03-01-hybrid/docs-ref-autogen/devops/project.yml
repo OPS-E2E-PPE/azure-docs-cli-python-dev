@@ -15,6 +15,7 @@ directCommands:
                              [--open]
                              [--org]
                              [--process]
+                             [--query-examples]
                              [--source-control {git, tfvc}]
                              [--subscription]
                              [--visibility {private, public}]
@@ -40,6 +41,9 @@ directCommands:
   - name: --process -p
     summary: Process to use. Default if not specified.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --source-control -s
     defaultValue: git
     parameterValueGroup: git, tfvc
@@ -61,6 +65,7 @@ directCommands:
     az devops project delete --id
                              [--detect {false, true}]
                              [--org]
+                             [--query-examples]
                              [--subscription]
                              [--yes]
   requiredParameters:
@@ -75,6 +80,9 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -91,6 +99,7 @@ directCommands:
                            [--detect {false, true}]
                            [--get-default-team-image-url {false, true}]
                            [--org]
+                           [--query-examples]
                            [--skip]
                            [--state-filter {all, createPending, deleted, deleting, new, unchanged, wellFormed}]
                            [--subscription]
@@ -109,6 +118,9 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --skip
     summary: Number of results to skip.
@@ -133,6 +145,7 @@ directCommands:
                            [--detect {false, true}]
                            [--open]
                            [--org]
+                           [--query-examples]
                            [--subscription]
   requiredParameters:
   - isRequired: true
@@ -149,6 +162,9 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

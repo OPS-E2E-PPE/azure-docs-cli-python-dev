@@ -19,6 +19,7 @@ directCommands:
                                                         [--activation-expiration-date]
                                                         [--partner-topic-description]
                                                         [--publisher-filter]
+                                                        [--query-examples]
                                                         [--subscription]
   examples:
   - summary: Create a specific event channel.
@@ -93,6 +94,9 @@ directCommands:
       BoolEquals:                --publisher-filter data.property3 BoolEquals true
 
       Multiple publisher filters can be specified by using more than one `--publisher-filter` argument.
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -105,6 +109,7 @@ directCommands:
     az eventgrid partner namespace event-channel delete [--ids]
                                                         [--name]
                                                         [--partner-namespace-name]
+                                                        [--query-examples]
                                                         [--resource-group]
                                                         [--subscription]
                                                         [--yes]
@@ -120,6 +125,9 @@ directCommands:
     description: ''
   - name: --partner-namespace-name
     summary: Name of the partner namespace.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -139,6 +147,7 @@ directCommands:
     az eventgrid partner namespace event-channel list --partner-namespace-name
                                                       --resource-group
                                                       [--odata-query]
+                                                      [--query-examples]
                                                       [--subscription]
   examples:
   - summary: List all event-channels in a specific partner namespace.
@@ -158,6 +167,9 @@ directCommands:
   - name: --odata-query
     summary: 'The OData query used for filtering the list results. Filtering is currently allowed on the Name property only. The supported operations include: CONTAINS, eq (for equal), ne (for not equal), AND, OR and NOT.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -170,6 +182,7 @@ directCommands:
     az eventgrid partner namespace event-channel show [--ids]
                                                       [--name]
                                                       [--partner-namespace-name]
+                                                      [--query-examples]
                                                       [--resource-group]
                                                       [--subscription]
   examples:
@@ -186,6 +199,9 @@ directCommands:
     description: ''
   - name: --partner-namespace-name
     summary: Name of the partner namespace.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

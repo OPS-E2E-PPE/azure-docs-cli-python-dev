@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az functionapp deployment user set --user-name
                                        [--password]
+                                       [--query-examples]
                                        [--subscription]
   examples:
   - summary: Set FTP and git deployment credentials for all apps.
@@ -24,6 +25,9 @@ directCommands:
   - name: --password
     summary: Password, will prompt if not specified.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -32,8 +36,13 @@ directCommands:
   name: az functionapp deployment user show
   summary: Gets publishing user.
   description: Description for Gets publishing user.
-  syntax: az functionapp deployment user show [--subscription]
+  syntax: >-
+    az functionapp deployment user show [--query-examples]
+                                        [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

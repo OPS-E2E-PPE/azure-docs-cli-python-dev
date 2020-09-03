@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az policy assignment identity assign --name
                                          [--identity-scope]
+                                         [--query-examples]
                                          [--resource-group]
                                          [--role]
                                          [--scope]
@@ -27,6 +28,9 @@ directCommands:
   optionalParameters:
   - name: --identity-scope
     summary: Scope that the system assigned identity can access.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.
@@ -45,6 +49,7 @@ directCommands:
   description: ''
   syntax: >-
     az policy assignment identity remove --name
+                                         [--query-examples]
                                          [--resource-group]
                                          [--scope]
   requiredParameters:
@@ -53,6 +58,9 @@ directCommands:
     summary: Name of the policy assignment.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.
     description: ''
@@ -66,6 +74,7 @@ directCommands:
   description: ''
   syntax: >-
     az policy assignment identity show --name
+                                       [--query-examples]
                                        [--resource-group]
                                        [--scope]
   examples:
@@ -77,6 +86,9 @@ directCommands:
     summary: Name of the policy assignment.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.
     description: ''

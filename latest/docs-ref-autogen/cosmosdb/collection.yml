@@ -16,6 +16,7 @@ directCommands:
                                   [--key]
                                   [--name]
                                   [--partition-key-path]
+                                  [--query-examples]
                                   [--resource-group-name]
                                   [--subscription]
                                   [--throughput]
@@ -60,6 +61,9 @@ directCommands:
   - name: --partition-key-path
     summary: Partition Key Path, e.g., '/properties/name'.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group-name -g
     summary: Name of the resource group. Must be used in conjunction with cosmosdb account name.
     description: ''
@@ -82,6 +86,7 @@ directCommands:
                                   --db-name
                                   [--key]
                                   [--name]
+                                  [--query-examples]
                                   [--resource-group-name]
                                   [--subscription]
                                   [--url-connection]
@@ -101,6 +106,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Cosmos DB account name. Must be used in conjunction with either name of the resource group or cosmosdb account key.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group-name -g
     summary: Name of the resource group. Must be used in conjunction with cosmosdb account name.
@@ -124,6 +132,7 @@ directCommands:
                                   --db-name
                                   [--key]
                                   [--name]
+                                  [--query-examples]
                                   [--resource-group-name]
                                   [--subscription]
                                   [--url-connection]
@@ -143,6 +152,9 @@ directCommands:
   - name: --name -n
     summary: Cosmos DB account name. Must be used in conjunction with either name of the resource group or cosmosdb account key.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group-name -g
     summary: Name of the resource group. Must be used in conjunction with cosmosdb account name.
     description: ''
@@ -161,6 +173,7 @@ directCommands:
     az cosmosdb collection list --db-name
                                 [--key]
                                 [--name]
+                                [--query-examples]
                                 [--resource-group-name]
                                 [--subscription]
                                 [--url-connection]
@@ -175,6 +188,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Cosmos DB account name. Must be used in conjunction with either name of the resource group or cosmosdb account key.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group-name -g
     summary: Name of the resource group. Must be used in conjunction with cosmosdb account name.
@@ -195,6 +211,7 @@ directCommands:
                                 --db-name
                                 [--key]
                                 [--name]
+                                [--query-examples]
                                 [--resource-group-name]
                                 [--subscription]
                                 [--url-connection]
@@ -213,6 +230,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Cosmos DB account name. Must be used in conjunction with either name of the resource group or cosmosdb account key.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group-name -g
     summary: Name of the resource group. Must be used in conjunction with cosmosdb account name.
@@ -235,6 +255,7 @@ directCommands:
                                   [--indexing-policy]
                                   [--key]
                                   [--name]
+                                  [--query-examples]
                                   [--resource-group-name]
                                   [--subscription]
                                   [--throughput]
@@ -260,6 +281,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Cosmos DB account name. Must be used in conjunction with either name of the resource group or cosmosdb account key.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group-name -g
     summary: Name of the resource group. Must be used in conjunction with cosmosdb account name.

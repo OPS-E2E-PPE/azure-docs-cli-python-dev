@@ -20,6 +20,7 @@ directCommands:
                                                 [--billing-plan {Monthly, Upfront}]
                                                 [--instance-flexibility]
                                                 [--location]
+                                                [--query-examples]
                                                 [--renew {false, true}]
                                                 [--subscription]
   examples:
@@ -71,6 +72,9 @@ directCommands:
   - name: --location
     summary: 'Values from: `az account list-locations`.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --renew
     parameterValueGroup: false, true
     summary: Set this to true will automatically purchase a new reservation on the expiration date time.
@@ -83,8 +87,13 @@ directCommands:
   name: az reservations reservation-order list
   summary: Get all reservation orders.
   description: List of all the reservation orders that the user has access to in the current tenant.
-  syntax: az reservations reservation-order list [--subscription]
+  syntax: >-
+    az reservations reservation-order list [--query-examples]
+                                           [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -106,6 +115,7 @@ directCommands:
                                                [--billing-plan {Monthly, Upfront}]
                                                [--instance-flexibility]
                                                [--location]
+                                               [--query-examples]
                                                [--renew {false, true}]
                                                [--subscription]
   examples:
@@ -161,6 +171,9 @@ directCommands:
   - name: --location
     summary: 'Values from: `az account list-locations`.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --renew
     parameterValueGroup: false, true
     summary: Set this to true will automatically purchase a new reservation on the expiration date time.
@@ -176,6 +189,7 @@ directCommands:
   syntax: >-
     az reservations reservation-order show --reservation-order-id
                                            [--expand]
+                                           [--query-examples]
                                            [--subscription]
   requiredParameters:
   - isRequired: true
@@ -185,6 +199,9 @@ directCommands:
   optionalParameters:
   - name: --expand
     summary: May be used to expand the planInformation.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

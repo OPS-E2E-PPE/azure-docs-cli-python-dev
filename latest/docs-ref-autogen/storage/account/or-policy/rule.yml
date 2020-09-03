@@ -15,6 +15,7 @@ directCommands:
                                           --source-container
                                           [--min-creation-time]
                                           [--prefix]
+                                          [--query-examples]
                                           [--resource-group]
                                           [--subscription]
   examples:
@@ -44,6 +45,9 @@ directCommands:
   - name: --prefix --prefix-match
     summary: Optional. Filter the results to replicate only blobs whose names begin with the specified prefix.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -58,6 +62,7 @@ directCommands:
   syntax: >-
     az storage account or-policy rule list --account-name
                                            --policy-id
+                                           [--query-examples]
                                            [--resource-group]
                                            [--subscription]
   examples:
@@ -73,6 +78,9 @@ directCommands:
     summary: The ID of object replication policy or "default" if the policy ID is unknown. Policy Id will be auto-generated when setting on destination account. Required when setting on source account.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -88,6 +96,7 @@ directCommands:
     az storage account or-policy rule remove --account-name
                                              --policy-id
                                              --rule-id
+                                             [--query-examples]
                                              [--resource-group]
                                              [--subscription]
   examples:
@@ -107,6 +116,9 @@ directCommands:
     summary: Rule Id is auto-generated for each new rule on destination account. It is required for put policy on source account.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -122,6 +134,7 @@ directCommands:
     az storage account or-policy rule show --account-name
                                            --policy-id
                                            --rule-id
+                                           [--query-examples]
                                            [--resource-group]
                                            [--subscription]
   examples:
@@ -141,6 +154,9 @@ directCommands:
     summary: Rule Id is auto-generated for each new rule on destination account. It is required for put policy on source account.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -159,6 +175,7 @@ directCommands:
                                              [--destination-container]
                                              [--min-creation-time]
                                              [--prefix]
+                                             [--query-examples]
                                              [--resource-group]
                                              [--source-container]
                                              [--subscription]
@@ -187,6 +204,9 @@ directCommands:
     description: ''
   - name: --prefix --prefix-match
     summary: Optional. Filter the results to replicate only blobs whose names begin with the specified prefix.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

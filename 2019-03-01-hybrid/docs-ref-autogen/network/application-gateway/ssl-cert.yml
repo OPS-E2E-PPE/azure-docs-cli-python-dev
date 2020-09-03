@@ -16,6 +16,7 @@ directCommands:
                                                    [--cert-password]
                                                    [--key-vault-secret-id]
                                                    [--no-wait]
+                                                   [--query-examples]
                                                    [--subscription]
   examples:
   - summary: Upload an SSL certificate via --cert-file and --cert-password.
@@ -83,6 +84,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -96,6 +100,7 @@ directCommands:
                                                    [--ids]
                                                    [--name]
                                                    [--no-wait]
+                                                   [--query-examples]
                                                    [--resource-group]
                                                    [--subscription]
   examples:
@@ -114,6 +119,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -128,6 +136,7 @@ directCommands:
   syntax: >-
     az network application-gateway ssl-cert list --gateway-name
                                                  --resource-group
+                                                 [--query-examples]
                                                  [--subscription]
   examples:
   - summary: List SSL certificates.
@@ -142,6 +151,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -154,6 +166,7 @@ directCommands:
     az network application-gateway ssl-cert show [--gateway-name]
                                                  [--ids]
                                                  [--name]
+                                                 [--query-examples]
                                                  [--resource-group]
                                                  [--subscription]
   examples:
@@ -168,6 +181,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the SSL certificate.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -190,6 +206,7 @@ directCommands:
                                                    [--key-vault-secret-id]
                                                    [--name]
                                                    [--no-wait]
+                                                   [--query-examples]
                                                    [--remove]
                                                    [--resource-group]
                                                    [--set]
@@ -226,6 +243,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

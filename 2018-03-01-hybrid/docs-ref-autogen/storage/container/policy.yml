@@ -17,6 +17,7 @@ directCommands:
                                        [--expiry]
                                        [--lease-id]
                                        [--permissions]
+                                       [--query-examples]
                                        [--sas-token]
                                        [--start]
                                        [--subscription]
@@ -47,6 +48,9 @@ directCommands:
     description: ''
   - name: --permissions
     summary: 'Allowed values: (d)elete (l)ist (r)ead (w)rite. Can be combined.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -69,6 +73,7 @@ directCommands:
                                        [--account-name]
                                        [--connection-string]
                                        [--lease-id]
+                                       [--query-examples]
                                        [--sas-token]
                                        [--subscription]
   requiredParameters:
@@ -93,6 +98,9 @@ directCommands:
   - name: --lease-id
     summary: The container lease ID.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -110,6 +118,7 @@ directCommands:
                                      [--account-name]
                                      [--connection-string]
                                      [--lease-id]
+                                     [--query-examples]
                                      [--sas-token]
                                      [--subscription]
   requiredParameters:
@@ -130,6 +139,9 @@ directCommands:
   - name: --lease-id
     summary: The container lease ID.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -148,6 +160,7 @@ directCommands:
                                      [--account-name]
                                      [--connection-string]
                                      [--lease-id]
+                                     [--query-examples]
                                      [--sas-token]
                                      [--subscription]
   requiredParameters:
@@ -172,6 +185,9 @@ directCommands:
   - name: --lease-id
     summary: The container lease ID.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -192,6 +208,7 @@ directCommands:
                                        [--expiry]
                                        [--lease-id]
                                        [--permissions]
+                                       [--query-examples]
                                        [--sas-token]
                                        [--start]
                                        [--subscription]
@@ -222,6 +239,9 @@ directCommands:
     description: ''
   - name: --permissions
     summary: 'Allowed values: (d)elete (l)ist (r)ead (w)rite. Can be combined.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

@@ -12,6 +12,7 @@ directCommands:
     az network watcher connection-monitor output add --connection-monitor
                                                      --location
                                                      --type {Workspace}
+                                                     [--query-examples]
                                                      [--subscription]
                                                      [--workspace-id]
   requiredParameters:
@@ -29,6 +30,9 @@ directCommands:
     summary: Connection monitor output destination type. Currently, only "Workspace" is supported.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -43,6 +47,7 @@ directCommands:
   syntax: >-
     az network watcher connection-monitor output list --connection-monitor
                                                       --location
+                                                      [--query-examples]
                                                       [--subscription]
   requiredParameters:
   - isRequired: true
@@ -54,6 +59,9 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -65,6 +73,7 @@ directCommands:
   syntax: >-
     az network watcher connection-monitor output remove --connection-monitor
                                                         --location
+                                                        [--query-examples]
                                                         [--subscription]
   requiredParameters:
   - isRequired: true
@@ -76,6 +85,9 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

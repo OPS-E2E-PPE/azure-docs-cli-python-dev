@@ -21,6 +21,7 @@ directCommands:
                            [--no-wait]
                            [--origin-host-header]
                            [--origin-path]
+                           [--query-examples]
                            [--query-string-caching-behavior]
                            [--subscription]
                            [--tags]
@@ -78,6 +79,9 @@ directCommands:
   - name: --origin-path
     summary: A directory path on the origin that CDN can use to retrieve content from, e.g. contoso.cloudapp.net/originpath.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --query-string-caching-behavior
     summary: Defines how CDN caches requests that include query strings. You can ignore any query strings when caching, bypass caching to prevent requests that contain query strings from being cached, or cache every request with a unique URL.
     description: ''
@@ -97,6 +101,7 @@ directCommands:
                            [--name]
                            [--no-wait]
                            [--profile-name]
+                           [--query-examples]
                            [--resource-group]
                            [--subscription]
   examples:
@@ -115,6 +120,9 @@ directCommands:
   - name: --profile-name
     summary: Name of the CDN profile which is unique within the resource group.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -129,6 +137,7 @@ directCommands:
   syntax: >-
     az cdn endpoint list --profile-name
                          --resource-group
+                         [--query-examples]
                          [--subscription]
   examples:
   - summary: List all endpoints within a given CDN profile.
@@ -143,6 +152,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -157,6 +169,7 @@ directCommands:
                          [--name]
                          [--no-wait]
                          [--profile-name]
+                         [--query-examples]
                          [--resource-group]
                          [--subscription]
   examples:
@@ -180,6 +193,9 @@ directCommands:
   - name: --profile-name
     summary: Name of the CDN profile which is unique within the resource group.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -197,6 +213,7 @@ directCommands:
                           [--name]
                           [--no-wait]
                           [--profile-name]
+                          [--query-examples]
                           [--resource-group]
                           [--subscription]
   examples:
@@ -220,6 +237,9 @@ directCommands:
   - name: --profile-name
     summary: Name of the CDN profile which is unique within the resource group.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -235,6 +255,7 @@ directCommands:
     az cdn endpoint show [--ids]
                          [--name]
                          [--profile-name]
+                         [--query-examples]
                          [--resource-group]
                          [--subscription]
   optionalParameters:
@@ -246,6 +267,9 @@ directCommands:
     description: ''
   - name: --profile-name
     summary: Name of the CDN profile which is unique within the resource group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -263,6 +287,7 @@ directCommands:
                           [--name]
                           [--no-wait]
                           [--profile-name]
+                          [--query-examples]
                           [--resource-group]
                           [--subscription]
   examples:
@@ -281,6 +306,9 @@ directCommands:
   - name: --profile-name
     summary: Name of the CDN profile which is unique within the resource group.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -297,6 +325,7 @@ directCommands:
                          [--name]
                          [--no-wait]
                          [--profile-name]
+                         [--query-examples]
                          [--resource-group]
                          [--subscription]
   examples:
@@ -314,6 +343,9 @@ directCommands:
     description: ''
   - name: --profile-name
     summary: Name of the CDN profile which is unique within the resource group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -339,6 +371,7 @@ directCommands:
                            [--origin-host-header]
                            [--origin-path]
                            [--profile-name]
+                           [--query-examples]
                            [--query-string-caching {BypassCaching, IgnoreQueryString, NotSet, UseQueryString}]
                            [--remove]
                            [--resource-group]
@@ -390,6 +423,9 @@ directCommands:
   - name: --profile-name
     summary: Name of the CDN profile which is unique within the resource group.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --query-string-caching
     parameterValueGroup: BypassCaching, IgnoreQueryString, NotSet, UseQueryString
     summary: Defines how CDN caches requests that include query strings. You can ignore any query strings when caching, bypass caching to prevent requests that contain query strings from being cached, or cache every request with a unique URL.
@@ -419,6 +455,7 @@ directCommands:
                                            [--ids]
                                            [--name]
                                            [--profile-name]
+                                           [--query-examples]
                                            [--resource-group]
                                            [--subscription]
   requiredParameters:
@@ -435,6 +472,9 @@ directCommands:
     description: ''
   - name: --profile-name
     summary: Name of the CDN profile which is unique within the resource group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

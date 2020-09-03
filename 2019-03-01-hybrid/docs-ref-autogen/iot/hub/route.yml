@@ -15,6 +15,7 @@ directCommands:
                             --source {devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents}
                             [--condition]
                             [--enabled {false, true}]
+                            [--query-examples]
                             [--resource-group]
                             [--subscription]
   examples:
@@ -48,6 +49,9 @@ directCommands:
     parameterValueGroup: false, true
     summary: A boolean indicating whether to enable route to the Iot hub.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -63,6 +67,7 @@ directCommands:
     az iot hub route delete [--hub-name]
                             [--ids]
                             [--name]
+                            [--query-examples]
                             [--resource-group]
                             [--source {devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents}]
                             [--subscription]
@@ -83,6 +88,9 @@ directCommands:
   - name: --name --route-name -n
     summary: Name of the Route.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -101,6 +109,7 @@ directCommands:
   syntax: >-
     az iot hub route list [--hub-name]
                           [--ids]
+                          [--query-examples]
                           [--resource-group]
                           [--source {devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents}]
                           [--subscription]
@@ -115,6 +124,9 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -135,6 +147,7 @@ directCommands:
     az iot hub route show --name
                           [--hub-name]
                           [--ids]
+                          [--query-examples]
                           [--resource-group]
                           [--subscription]
   examples:
@@ -151,6 +164,9 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -169,6 +185,7 @@ directCommands:
                           [--hub-name]
                           [--ids]
                           [--name]
+                          [--query-examples]
                           [--resource-group]
                           [--source {devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents}]
                           [--sp]
@@ -193,6 +210,9 @@ directCommands:
     description: ''
   - name: --name --route-name -n
     summary: Name of the Route.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -219,6 +239,7 @@ directCommands:
                             [--enabled {false, true}]
                             [--hub-name]
                             [--ids]
+                            [--query-examples]
                             [--resource-group]
                             [--source {devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents}]
                             [--subscription]
@@ -246,6 +267,9 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

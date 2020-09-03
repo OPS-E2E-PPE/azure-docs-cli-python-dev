@@ -16,6 +16,7 @@ directCommands:
                                              [--capture-size]
                                              [--file-path]
                                              [--filters]
+                                             [--query-examples]
                                              [--storage-account]
                                              [--storage-path]
                                              [--subscription]
@@ -74,6 +75,9 @@ directCommands:
   - name: --filters
     summary: JSON encoded list of packet filters. Use `@{path}` to load from file.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --storage-account
     summary: Name or ID of a storage account to save the packet capture to.
     description: ''
@@ -94,6 +98,7 @@ directCommands:
   syntax: >-
     az network watcher packet-capture delete --location
                                              --name
+                                             [--query-examples]
                                              [--subscription]
   examples:
   - summary: Delete a packet capture session. This only deletes the session and not the capture file.
@@ -110,6 +115,9 @@ directCommands:
     summary: The name of the packet capture session.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -120,6 +128,7 @@ directCommands:
   description: ''
   syntax: >-
     az network watcher packet-capture list --location
+                                           [--query-examples]
                                            [--subscription]
   examples:
   - summary: List all packet capture sessions within a region.
@@ -132,6 +141,9 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -143,6 +155,7 @@ directCommands:
   syntax: >-
     az network watcher packet-capture show --location
                                            --name
+                                           [--query-examples]
                                            [--subscription]
   examples:
   - summary: Show a packet capture session.
@@ -157,6 +170,9 @@ directCommands:
     summary: The name of the packet capture session.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -168,6 +184,7 @@ directCommands:
   syntax: >-
     az network watcher packet-capture show-status --location
                                                   --name
+                                                  [--query-examples]
                                                   [--subscription]
   examples:
   - summary: Show the status of a packet capture session.
@@ -182,6 +199,9 @@ directCommands:
     summary: The name given to the packet capture session.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -193,6 +213,7 @@ directCommands:
   syntax: >-
     az network watcher packet-capture stop --location
                                            --name
+                                           [--query-examples]
                                            [--subscription]
   examples:
   - summary: Stop a running packet capture session.
@@ -207,6 +228,9 @@ directCommands:
     summary: The name of the packet capture session.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

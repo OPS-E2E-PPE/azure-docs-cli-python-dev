@@ -13,6 +13,7 @@ directCommands:
                                                          --name
                                                          --resource-group
                                                          --scope-name
+                                                         [--query-examples]
                                                          [--subscription]
   requiredParameters:
   - isRequired: true
@@ -32,6 +33,9 @@ directCommands:
     summary: Name of the Azure Monitor Private Link Scope.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -44,6 +48,7 @@ directCommands:
     az monitor private-link-scope scoped-resource delete --name
                                                          --resource-group
                                                          --scope-name
+                                                         [--query-examples]
                                                          [--subscription]
                                                          [--yes]
   requiredParameters:
@@ -60,6 +65,9 @@ directCommands:
     summary: Name of the Azure Monitor Private Link Scope.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -74,6 +82,7 @@ directCommands:
   syntax: >-
     az monitor private-link-scope scoped-resource list --resource-group
                                                        --scope-name
+                                                       [--query-examples]
                                                        [--subscription]
   requiredParameters:
   - isRequired: true
@@ -85,6 +94,9 @@ directCommands:
     summary: Name of the Azure Monitor Private Link Scope.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -97,6 +109,7 @@ directCommands:
     az monitor private-link-scope scoped-resource show --name
                                                        --resource-group
                                                        --scope-name
+                                                       [--query-examples]
                                                        [--subscription]
   requiredParameters:
   - isRequired: true
@@ -112,6 +125,9 @@ directCommands:
     summary: Name of the Azure Monitor Private Link Scope.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

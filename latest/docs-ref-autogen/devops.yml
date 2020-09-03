@@ -20,6 +20,7 @@ directCommands:
   syntax: >-
     az devops configure [--defaults]
                         [--list]
+                        [--query-examples]
                         [--subscription]
                         [--use-git-aliases {false, true}]
   optionalParameters:
@@ -28,6 +29,9 @@ directCommands:
     description: ''
   - name: --list -l
     summary: Lists the contents of the config file.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -40,8 +44,13 @@ directCommands:
   name: az devops feedback
   summary: Displays information on how to provide feedback to the Azure DevOps CLI team.
   description: ''
-  syntax: az devops feedback [--subscription]
+  syntax: >-
+    az devops feedback [--query-examples]
+                       [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -60,6 +69,7 @@ directCommands:
                      [--media-type]
                      [--org]
                      [--out-file]
+                     [--query-examples]
                      [--query-parameters]
                      [--resource]
                      [--route-parameters]
@@ -124,6 +134,9 @@ directCommands:
   - name: --out-file
     summary: Path and file name to the file  for which this function saves the response body.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --query-parameters
     summary: Specifies the list of query parameters.
     description: ''
@@ -142,10 +155,14 @@ directCommands:
   description: Refer <a href="https://aka.ms/azure-devops-cli-auth">https://aka.ms/azure-devops-cli-auth</a> for more information on providing PAT as input.
   syntax: >-
     az devops login [--org]
+                    [--query-examples]
                     [--subscription]
   optionalParameters:
   - name: --org --organization
     summary: 'Azure DevOps organization URL. Example: <a href="https://dev.azure.com/MyOrganizationName">https://dev.azure.com/MyOrganizationName</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -156,10 +173,14 @@ directCommands:
   description: ''
   syntax: >-
     az devops logout [--org]
+                     [--query-examples]
                      [--subscription]
   optionalParameters:
   - name: --org --organization
     summary: 'Azure DevOps organization URL. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>. If no organization is specified, all organizations will be logged out.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

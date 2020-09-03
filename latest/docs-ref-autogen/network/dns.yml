@@ -9,9 +9,13 @@ directCommands:
   summary: Returns the DNS records specified by the referencing targetResourceIds.
   description: ''
   syntax: >-
-    az network dns list-references [--subscription]
+    az network dns list-references [--query-examples]
+                                   [--subscription]
                                    [--target-resources]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

@@ -12,6 +12,7 @@ directCommands:
     az monitor private-link-scope private-endpoint-connection approve [--description]
                                                                       [--id]
                                                                       [--name]
+                                                                      [--query-examples]
                                                                       [--resource-group]
                                                                       [--scope-name]
                                                                       [--subscription]
@@ -29,6 +30,9 @@ directCommands:
     summary: Name of the private endpoint connection.
     description: ''
     valueFrom: az monitor private-link-scope show
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: The resource group name of specified private link scope.
     description: ''
@@ -46,6 +50,7 @@ directCommands:
   syntax: >-
     az monitor private-link-scope private-endpoint-connection delete [--id]
                                                                      [--name]
+                                                                     [--query-examples]
                                                                      [--resource-group]
                                                                      [--scope-name]
                                                                      [--subscription]
@@ -56,6 +61,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the private link scope.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified private link scope.
@@ -77,6 +85,7 @@ directCommands:
   syntax: >-
     az monitor private-link-scope private-endpoint-connection list --resource-group
                                                                    --scope-name
+                                                                   [--query-examples]
                                                                    [--subscription]
   requiredParameters:
   - isRequired: true
@@ -88,6 +97,9 @@ directCommands:
     summary: Name of the Azure Monitor Private Link Scope.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -100,6 +112,7 @@ directCommands:
     az monitor private-link-scope private-endpoint-connection reject [--description]
                                                                      [--id]
                                                                      [--name]
+                                                                     [--query-examples]
                                                                      [--resource-group]
                                                                      [--scope-name]
                                                                      [--subscription]
@@ -117,6 +130,9 @@ directCommands:
     summary: Name of the private endpoint connection.
     description: ''
     valueFrom: az monitor private-link-scope show
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: The resource group name of specified private link scope.
     description: ''
@@ -134,6 +150,7 @@ directCommands:
   syntax: >-
     az monitor private-link-scope private-endpoint-connection show [--id]
                                                                    [--name]
+                                                                   [--query-examples]
                                                                    [--resource-group]
                                                                    [--scope-name]
                                                                    [--subscription]
@@ -145,6 +162,9 @@ directCommands:
     summary: Name of the private endpoint connection.
     description: ''
     valueFrom: az monitor private-link-scope show
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: The resource group name of specified private link scope.
     description: ''

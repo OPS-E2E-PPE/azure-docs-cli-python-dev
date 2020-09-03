@@ -23,6 +23,7 @@ directCommands:
                        [--network-acls-vnets]
                        [--no-self-perms {false, true}]
                        [--no-wait]
+                       [--query-examples]
                        [--retention-days]
                        [--sku {premium, standard}]
                        [--subscription]
@@ -93,6 +94,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --retention-days
     defaultValue: "90"
     summary: Soft delete data retention days. It accepts >=7 and <=90.
@@ -115,6 +119,7 @@ directCommands:
   description: ''
   syntax: >-
     az keyvault delete --name
+                       [--query-examples]
                        [--resource-group]
                        [--subscription]
   examples:
@@ -126,6 +131,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
     description: ''
@@ -141,6 +149,7 @@ directCommands:
     az keyvault delete-policy --name
                               [--no-wait]
                               [--object-id]
+                              [--query-examples]
                               [--resource-group]
                               [--spn]
                               [--subscription]
@@ -156,6 +165,9 @@ directCommands:
     description: ''
   - name: --object-id
     summary: A GUID that identifies the principal that will receive permissions.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -175,9 +187,13 @@ directCommands:
   summary: List key vaults.
   description: ''
   syntax: >-
-    az keyvault list [--resource-group]
+    az keyvault list [--query-examples]
+                     [--resource-group]
                      [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -189,8 +205,13 @@ directCommands:
   name: az keyvault list-deleted
   summary: Gets information about the deleted vaults in a subscription.
   description: 'keyword callable clsA custom type or function that will be passed the direct response :return: An iterator like instance of either DeletedVaultListResult or the result of cls(response) :rtype: ~azure.core.paging.ItemPaged[~azure.mgmt.keyvault.v2016_10_01.models.DeletedVaultListResult] :raises: ~azure.core.exceptions.HttpResponseError.'
-  syntax: az keyvault list-deleted [--subscription]
+  syntax: >-
+    az keyvault list-deleted [--query-examples]
+                             [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -203,6 +224,7 @@ directCommands:
     az keyvault purge --name
                       [--location]
                       [--no-wait]
+                      [--query-examples]
                       [--subscription]
   requiredParameters:
   - isRequired: true
@@ -216,6 +238,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -228,6 +253,7 @@ directCommands:
     az keyvault recover --name
                         [--location]
                         [--no-wait]
+                        [--query-examples]
                         [--resource-group]
                         [--subscription]
   examples:
@@ -244,6 +270,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Resource group of the deleted vault.
@@ -262,6 +291,7 @@ directCommands:
                            [--key-permissions {backup, create, decrypt, delete, encrypt, get, import, list, purge, recover, restore, sign, unwrapKey, update, verify, wrapKey}]
                            [--no-wait]
                            [--object-id]
+                           [--query-examples]
                            [--resource-group]
                            [--secret-permissions {backup, delete, get, list, purge, recover, restore, set}]
                            [--spn]
@@ -287,6 +317,9 @@ directCommands:
     description: ''
   - name: --object-id
     summary: A GUID that identifies the principal that will receive permissions.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -315,6 +348,7 @@ directCommands:
   description: ''
   syntax: >-
     az keyvault show --name
+                     [--query-examples]
                      [--resource-group]
                      [--subscription]
   examples:
@@ -326,6 +360,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
     description: ''
@@ -348,6 +385,7 @@ directCommands:
                        [--enabled-for-template-deployment {false, true}]
                        [--force-string]
                        [--no-wait]
+                       [--query-examples]
                        [--remove]
                        [--resource-group]
                        [--retention-days]
@@ -395,6 +433,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -422,6 +463,7 @@ directCommands:
                      [--deleted]
                      [--exists]
                      [--interval]
+                     [--query-examples]
                      [--resource-group]
                      [--subscription]
                      [--timeout]
@@ -450,6 +492,9 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.

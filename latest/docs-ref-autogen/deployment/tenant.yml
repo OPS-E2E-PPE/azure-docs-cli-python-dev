@@ -10,6 +10,7 @@ directCommands:
   description: ''
   syntax: >-
     az deployment tenant cancel --name
+                                [--query-examples]
                                 [--subscription]
   examples:
   - summary: Cancel a deployment at tenant scope.
@@ -20,6 +21,9 @@ directCommands:
     summary: The deployment name.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -36,6 +40,7 @@ directCommands:
                                 [--no-prompt {false, true}]
                                 [--no-wait]
                                 [--parameters]
+                                [--query-examples]
                                 [--subscription]
                                 [--template-file]
                                 [--template-uri]
@@ -81,6 +86,9 @@ directCommands:
   - name: --parameters -p
     summary: Supply deployment parameter values.
     description: Parameters may be supplied from a file using the `@{path}` syntax, a JSON string, or as <KEY=VALUE> pairs. Parameters are evaluated in order, so when a value is assigned twice, the latter value will be used. It is recommended that you supply your parameters file first, and then override selectively using KEY=VALUE syntax.
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -107,6 +115,7 @@ directCommands:
   syntax: >-
     az deployment tenant delete --name
                                 [--no-wait]
+                                [--query-examples]
                                 [--subscription]
   examples:
   - summary: Delete a deployment at tenant scope.
@@ -120,6 +129,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -130,6 +142,7 @@ directCommands:
   description: ''
   syntax: >-
     az deployment tenant export --name
+                                [--query-examples]
                                 [--subscription]
   examples:
   - summary: Export the template used for a deployment at tenant scope.
@@ -140,6 +153,9 @@ directCommands:
     summary: The deployment name.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -150,6 +166,7 @@ directCommands:
   description: ''
   syntax: >-
     az deployment tenant list [--filter]
+                              [--query-examples]
                               [--subscription]
   examples:
   - summary: List deployments at tenant scope.
@@ -157,6 +174,9 @@ directCommands:
   optionalParameters:
   - name: --filter
     summary: Filter expression using OData notation. You can use --filter "provisioningState eq '{state}'" to filter provisioningState. To get more information, please visit <a href="https://docs.microsoft.com/en-us/rest/api/resources/deployments/listatsubscriptionscope#uri-parameters">https://docs.microsoft.com/en-us/rest/api/resources/deployments/listatsubscriptionscope#uri-parameters</a>.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -168,6 +188,7 @@ directCommands:
   description: ''
   syntax: >-
     az deployment tenant show --name
+                              [--query-examples]
                               [--subscription]
   examples:
   - summary: Show a deployment at tenant scope.
@@ -178,6 +199,9 @@ directCommands:
     summary: The deployment name.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -192,6 +216,7 @@ directCommands:
                                   [--name]
                                   [--no-prompt {false, true}]
                                   [--parameters]
+                                  [--query-examples]
                                   [--subscription]
                                   [--template-file]
                                   [--template-uri]
@@ -217,6 +242,9 @@ directCommands:
   - name: --parameters -p
     summary: Supply deployment parameter values.
     description: Parameters may be supplied from a file using the `@{path}` syntax, a JSON string, or as <KEY=VALUE> pairs. Parameters are evaluated in order, so when a value is assigned twice, the latter value will be used. It is recommended that you supply your parameters file first, and then override selectively using KEY=VALUE syntax.
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -238,6 +266,7 @@ directCommands:
                               [--deleted]
                               [--exists]
                               [--interval]
+                              [--query-examples]
                               [--subscription]
                               [--timeout]
                               [--updated]
@@ -266,6 +295,9 @@ directCommands:
     defaultValue: "30"
     summary: Polling interval in seconds.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -288,6 +320,7 @@ directCommands:
                                  [--no-pretty-print]
                                  [--no-prompt {false, true}]
                                  [--parameters]
+                                 [--query-examples]
                                  [--result-format {FullResourcePayloads, ResourceIdOnly}]
                                  [--subscription]
                                  [--template-file]
@@ -322,6 +355,9 @@ directCommands:
   - name: --parameters -p
     summary: Supply deployment parameter values.
     description: Parameters may be supplied from a file using the `@{path}` syntax, a JSON string, or as <KEY=VALUE> pairs. Parameters are evaluated in order, so when a value is assigned twice, the latter value will be used. It is recommended that you supply your parameters file first, and then override selectively using KEY=VALUE syntax.
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --result-format -r
     defaultValue: FullResourcePayloads
     parameterValueGroup: FullResourcePayloads, ResourceIdOnly

@@ -15,6 +15,7 @@ directCommands:
                      [--collation]
                      [--max-size]
                      [--no-wait]
+                     [--query-examples]
                      [--read-replica-count]
                      [--service-objective]
                      [--subscription]
@@ -46,6 +47,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --read-replica-count
     summary: The number of readonly replicas to provision for the database. Only settable for Hyperscale edition.
     description: ''
@@ -71,6 +75,7 @@ directCommands:
     az sql dw delete [--ids]
                      [--name]
                      [--no-wait]
+                     [--query-examples]
                      [--resource-group]
                      [--server]
                      [--subscription]
@@ -87,6 +92,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -107,6 +115,7 @@ directCommands:
   description: ''
   syntax: >-
     az sql dw list [--ids]
+                   [--query-examples]
                    [--resource-group]
                    [--server]
                    [--subscription]
@@ -116,6 +125,9 @@ directCommands:
   optionalParameters:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -134,6 +146,7 @@ directCommands:
   syntax: >-
     az sql dw pause [--ids]
                     [--name]
+                    [--query-examples]
                     [--resource-group]
                     [--server]
                     [--subscription]
@@ -143,6 +156,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the data warehouse.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -161,6 +177,7 @@ directCommands:
   syntax: >-
     az sql dw resume [--ids]
                      [--name]
+                     [--query-examples]
                      [--resource-group]
                      [--server]
                      [--subscription]
@@ -170,6 +187,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the data warehouse.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -188,6 +208,7 @@ directCommands:
   syntax: >-
     az sql dw show [--ids]
                    [--name]
+                   [--query-examples]
                    [--resource-group]
                    [--server]
                    [--subscription]
@@ -200,6 +221,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the data warehouse.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -222,6 +246,7 @@ directCommands:
                      [--max-size]
                      [--name]
                      [--no-wait]
+                     [--query-examples]
                      [--remove]
                      [--resource-group]
                      [--server]
@@ -249,6 +274,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

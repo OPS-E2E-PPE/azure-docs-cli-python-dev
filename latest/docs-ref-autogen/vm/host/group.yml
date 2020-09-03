@@ -14,6 +14,7 @@ directCommands:
                             [--automatic-placement {false, true}]
                             [--location]
                             [--platform-fault-domain-count]
+                            [--query-examples]
                             [--subscription]
                             [--tags]
                             [--zone {1, 2, 3}]
@@ -40,6 +41,9 @@ directCommands:
   - name: --platform-fault-domain-count -c
     summary: 'Number of fault domains that the host group can span. Allowed values: 1, 2, 3.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -58,6 +62,7 @@ directCommands:
   syntax: >-
     az vm host group delete [--ids]
                             [--name]
+                            [--query-examples]
                             [--resource-group]
                             [--subscription]
                             [--yes]
@@ -67,6 +72,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Dedicated Host Group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -85,6 +93,7 @@ directCommands:
   syntax: >-
     az vm host group get-instance-view [--ids]
                                        [--name]
+                                       [--query-examples]
                                        [--resource-group]
                                        [--subscription]
   examples:
@@ -96,6 +105,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Dedicated Host Group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -109,9 +121,13 @@ directCommands:
   summary: List dedicated host groups.
   description: Lists dedicated host groups by subscription. If resource group is specified, lists dedicated host groups by resource group.
   syntax: >-
-    az vm host group list [--resource-group]
+    az vm host group list [--query-examples]
+                          [--resource-group]
                           [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -126,6 +142,7 @@ directCommands:
   syntax: >-
     az vm host group show [--ids]
                           [--name]
+                          [--query-examples]
                           [--resource-group]
                           [--subscription]
   examples:
@@ -137,6 +154,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Dedicated Host Group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -154,6 +174,7 @@ directCommands:
                             [--force-string]
                             [--ids]
                             [--name]
+                            [--query-examples]
                             [--remove]
                             [--resource-group]
                             [--set]
@@ -170,6 +191,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Dedicated Host Group.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

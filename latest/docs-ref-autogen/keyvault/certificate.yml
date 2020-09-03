@@ -12,6 +12,7 @@ directCommands:
     az keyvault certificate backup --file
                                    [--id]
                                    [--name]
+                                   [--query-examples]
                                    [--subscription]
                                    [--vault-name]
   requiredParameters:
@@ -25,6 +26,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -42,6 +46,7 @@ directCommands:
                                    --policy
                                    --vault-name
                                    [--disabled {false, true}]
+                                   [--query-examples]
                                    [--subscription]
                                    [--tags]
                                    [--validity]
@@ -77,6 +82,9 @@ directCommands:
     parameterValueGroup: false, true
     summary: Create certificate in disabled state.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -94,6 +102,7 @@ directCommands:
   syntax: >-
     az keyvault certificate delete [--id]
                                    [--name]
+                                   [--query-examples]
                                    [--subscription]
                                    [--vault-name]
   optionalParameters:
@@ -102,6 +111,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -119,6 +131,7 @@ directCommands:
                                      [--encoding {DER, PEM}]
                                      [--id]
                                      [--name]
+                                     [--query-examples]
                                      [--subscription]
                                      [--vault-name]
                                      [--version]
@@ -150,6 +163,9 @@ directCommands:
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -171,7 +187,8 @@ directCommands:
 
     For more details, see: <a href="https://docs.microsoft.com/azure/key-vault/certificates/about-certificates#certificate-policy">https://docs.microsoft.com/azure/key-vault/certificates/about-certificates#certificate-policy</a>.
   syntax: >-
-    az keyvault certificate get-default-policy [--scaffold]
+    az keyvault certificate get-default-policy [--query-examples]
+                                               [--scaffold]
                                                [--subscription]
   examples:
   - summary: Create a self-signed certificate with the default policy
@@ -179,6 +196,9 @@ directCommands:
       az keyvault certificate create --vault-name vaultname -n cert1 \
         -p "$(az keyvault certificate get-default-policy)"
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --scaffold
     summary: Create a fully formed policy structure with default values.
     description: ''
@@ -197,6 +217,7 @@ directCommands:
                                    [--disabled {false, true}]
                                    [--password]
                                    [--policy]
+                                   [--query-examples]
                                    [--subscription]
                                    [--tags]
   examples:
@@ -246,6 +267,9 @@ directCommands:
   - name: --policy -p
     summary: JSON encoded policy defintion. Use @{file} to load from a file(e.g. @my_policy.json).
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -261,6 +285,7 @@ directCommands:
     az keyvault certificate list --vault-name
                                  [--include-pending {false, true}]
                                  [--maxresults]
+                                 [--query-examples]
                                  [--subscription]
   requiredParameters:
   - isRequired: true
@@ -275,6 +300,9 @@ directCommands:
   - name: --maxresults
     summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -287,6 +315,7 @@ directCommands:
     az keyvault certificate list-deleted --vault-name
                                          [--include-pending {false, true}]
                                          [--maxresults]
+                                         [--query-examples]
                                          [--subscription]
   requiredParameters:
   - isRequired: true
@@ -301,6 +330,9 @@ directCommands:
   - name: --maxresults
     summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -313,6 +345,7 @@ directCommands:
     az keyvault certificate list-versions [--id]
                                           [--maxresults]
                                           [--name]
+                                          [--query-examples]
                                           [--subscription]
                                           [--vault-name]
   optionalParameters:
@@ -324,6 +357,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -339,6 +375,7 @@ directCommands:
   syntax: >-
     az keyvault certificate purge [--id]
                                   [--name]
+                                  [--query-examples]
                                   [--subscription]
                                   [--vault-name]
   optionalParameters:
@@ -347,6 +384,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -362,6 +402,7 @@ directCommands:
   syntax: >-
     az keyvault certificate recover [--id]
                                     [--name]
+                                    [--query-examples]
                                     [--subscription]
                                     [--vault-name]
   optionalParameters:
@@ -370,6 +411,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -385,6 +429,7 @@ directCommands:
   syntax: >-
     az keyvault certificate restore --file
                                     --vault-name
+                                    [--query-examples]
                                     [--subscription]
   requiredParameters:
   - isRequired: true
@@ -396,6 +441,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -409,6 +457,7 @@ directCommands:
                                            [--id]
                                            [--name]
                                            [--policy]
+                                           [--query-examples]
                                            [--subscription]
                                            [--tags]
                                            [--vault-name]
@@ -426,6 +475,9 @@ directCommands:
     description: ''
   - name: --policy -p
     summary: JSON encoded policy defintion. Use @{file} to load from a file(e.g. @my_policy.json).
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -447,6 +499,7 @@ directCommands:
   syntax: >-
     az keyvault certificate show [--id]
                                  [--name]
+                                 [--query-examples]
                                  [--subscription]
                                  [--vault-name]
                                  [--version]
@@ -456,6 +509,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -474,6 +530,7 @@ directCommands:
   syntax: >-
     az keyvault certificate show-deleted [--id]
                                          [--name]
+                                         [--query-examples]
                                          [--subscription]
                                          [--vault-name]
   optionalParameters:
@@ -482,6 +539,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

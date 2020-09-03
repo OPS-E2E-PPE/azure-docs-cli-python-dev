@@ -15,6 +15,7 @@ directCommands:
                                          [--identifier]
                                          [--ids]
                                          [--name]
+                                         [--query-examples]
                                          [--resource-group]
                                          [--subscription]
   optionalParameters:
@@ -36,6 +37,9 @@ directCommands:
   - name: --name -n
     summary: The name of the streaming endpoint.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -52,6 +56,7 @@ directCommands:
                                             [--account-name]
                                             [--ids]
                                             [--name]
+                                            [--query-examples]
                                             [--resource-group]
                                             [--subscription]
   requiredParameters:
@@ -68,6 +73,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the streaming endpoint.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

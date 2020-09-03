@@ -20,6 +20,7 @@ directCommands:
                  [--no-push]
                  [--no-wait]
                  [--platform]
+                 [--query-examples]
                  [--resource-group]
                  [--secret-build-arg]
                  [--subscription]
@@ -78,6 +79,9 @@ directCommands:
   - name: --platform
     summary: The platform where build/task is run, Eg, 'windows' and 'linux'. When it's used in build commands, it also can be specified in 'os/arch/variant' format for the resulting image. Eg, linux/arm/v7. The 'arch' and 'variant' parts are optional.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -104,6 +108,7 @@ directCommands:
   syntax: >-
     az acr check-health [--ignore-errors]
                         [--name]
+                        [--query-examples]
                         [--subscription]
                         [--yes]
   examples:
@@ -118,6 +123,9 @@ directCommands:
   - name: --name -n
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -131,6 +139,7 @@ directCommands:
   description: ''
   syntax: >-
     az acr check-name --name
+                      [--query-examples]
                       [--subscription]
   examples:
   - summary: Check if a registry name already exists.
@@ -141,6 +150,9 @@ directCommands:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -159,6 +171,7 @@ directCommands:
                   [--key-encryption-key]
                   [--location]
                   [--public-network-enabled {false, true}]
+                  [--query-examples]
                   [--subscription]
                   [--tags]
                   [--workspace]
@@ -201,6 +214,9 @@ directCommands:
     parameterValueGroup: false, true
     summary: Allow public network access for the container registry. The Default is allowed.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -217,6 +233,7 @@ directCommands:
   description: ''
   syntax: >-
     az acr delete --name
+                  [--query-examples]
                   [--resource-group]
                   [--subscription]
                   [--yes]
@@ -229,6 +246,9 @@ directCommands:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -249,6 +269,7 @@ directCommands:
                   [--force]
                   [--image]
                   [--password]
+                  [--query-examples]
                   [--registry]
                   [--repository]
                   [--resource-group]
@@ -284,6 +305,9 @@ directCommands:
   - name: --password -p
     summary: The password of source container registry.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --registry -r
     summary: The source Azure container registry. This can be name, login server or resource ID of the source registry.
     description: ''
@@ -305,7 +329,8 @@ directCommands:
   summary: Lists all the container registries under the current subscription.
   description: ''
   syntax: >-
-    az acr list [--resource-group]
+    az acr list [--query-examples]
+                [--resource-group]
                 [--subscription]
   examples:
   - summary: List container registries and show the results in a table, across multiple resource groups.
@@ -313,6 +338,9 @@ directCommands:
   - summary: List container registries in a resource group and show the results in a table.
     syntax: az acr list -g MyResourceGroup -o table
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -328,6 +356,7 @@ directCommands:
     az acr login --name
                  [--expose-token]
                  [--password]
+                 [--query-examples]
                  [--resource-group]
                  [--subscription]
                  [--suffix]
@@ -348,6 +377,9 @@ directCommands:
     description: ''
   - name: --password -p
     summary: The password used to log into a container registry.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -376,6 +408,7 @@ directCommands:
                [--no-logs]
                [--no-wait]
                [--platform]
+               [--query-examples]
                [--resource-group]
                [--set]
                [--set-secret]
@@ -429,6 +462,9 @@ directCommands:
   - name: --platform
     summary: The platform where build/task is run, Eg, 'windows' and 'linux'. When it's used in build commands, it also can be specified in 'os/arch/variant' format for the resulting image. Eg, linux/arm/v7. The 'arch' and 'variant' parts are optional.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -457,6 +493,7 @@ directCommands:
   description: ''
   syntax: >-
     az acr show --name
+                [--query-examples]
                 [--resource-group]
                 [--subscription]
   examples:
@@ -470,6 +507,9 @@ directCommands:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -483,6 +523,7 @@ directCommands:
   description: ''
   syntax: >-
     az acr show-endpoints --name
+                          [--query-examples]
                           [--resource-group]
                           [--subscription]
   requiredParameters:
@@ -491,6 +532,9 @@ directCommands:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -504,6 +548,7 @@ directCommands:
   description: ''
   syntax: >-
     az acr show-usage --name
+                      [--query-examples]
                       [--resource-group]
                       [--subscription]
   examples:
@@ -515,6 +560,9 @@ directCommands:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -534,6 +582,7 @@ directCommands:
                   [--default-action {Allow, Deny}]
                   [--force-string]
                   [--public-network-enabled {false, true}]
+                  [--query-examples]
                   [--remove]
                   [--resource-group]
                   [--set]
@@ -572,6 +621,9 @@ directCommands:
   - name: --public-network-enabled
     parameterValueGroup: false, true
     summary: Allow public network access for the container registry. The Default is allowed.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

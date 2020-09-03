@@ -12,6 +12,7 @@ directCommands:
     az account lock create --lock-type {CanNotDelete, ReadOnly}
                            --name
                            [--notes]
+                           [--query-examples]
   examples:
   - summary: Create a read-only subscription level lock.
     syntax: az account lock create --lock-type ReadOnly -n lockName
@@ -29,6 +30,9 @@ directCommands:
   - name: --notes
     summary: Notes about this lock.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_lock_delete
   name: az account lock delete
@@ -37,6 +41,7 @@ directCommands:
   syntax: >-
     az account lock delete [--ids]
                            [--name]
+                           [--query-examples]
   examples:
   - summary: Delete a subscription lock
     syntax: az account lock delete --name lockName
@@ -47,18 +52,26 @@ directCommands:
   - name: --name -n
     summary: Name of the lock.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_lock_list
   name: az account lock list
   summary: List lock information in the subscription.
   description: ''
-  syntax: az account lock list [--filter-string]
+  syntax: >-
+    az account lock list [--filter-string]
+                         [--query-examples]
   examples:
   - summary: List out all locks on the subscription level
     syntax: az account lock list
   optionalParameters:
   - name: --filter-string
     summary: A query filter to use to restrict the results.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_lock_show
@@ -68,6 +81,7 @@ directCommands:
   syntax: >-
     az account lock show [--ids]
                          [--name]
+                         [--query-examples]
   examples:
   - summary: Show a subscription level lock
     syntax: az account lock show -n lockname
@@ -77,6 +91,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the lock.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_lock_update
@@ -88,6 +105,7 @@ directCommands:
                            [--lock-type {CanNotDelete, ReadOnly}]
                            [--name]
                            [--notes]
+                           [--query-examples]
   examples:
   - summary: Update a subscription lock with new notes and type
     syntax: az account lock update --name lockName --notes newNotesHere --lock-type CanNotDelete
@@ -104,6 +122,9 @@ directCommands:
     description: ''
   - name: --notes
     summary: Notes about this lock.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 commands:

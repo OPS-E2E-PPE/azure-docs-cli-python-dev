@@ -15,6 +15,7 @@ directCommands:
                                       [--certificate-output-folder]
                                       [--certificate-password]
                                       [--certificate-subject-name]
+                                      [--query-examples]
                                       [--secret-identifier]
                                       [--subscription]
                                       [--vault-name]
@@ -43,6 +44,9 @@ directCommands:
     description: ''
   - name: --certificate-subject-name
     summary: The subject name of the certificate to be created.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --secret-identifier
     summary: The existing Azure key vault secret URL.

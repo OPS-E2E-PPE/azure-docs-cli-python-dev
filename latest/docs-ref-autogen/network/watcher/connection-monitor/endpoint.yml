@@ -16,6 +16,7 @@ directCommands:
                                                        [--dest-test-groups]
                                                        [--filter-item]
                                                        [--filter-type {Include}]
+                                                       [--query-examples]
                                                        [--resource-id]
                                                        [--source-test-groups]
                                                        [--subscription]
@@ -53,6 +54,9 @@ directCommands:
     parameterValueGroup: Include
     summary: The behavior of the endpoint filter. Currently only 'Include' is supported.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-id
     summary: Resource ID of the connection monitor endpoint.
     description: ''
@@ -70,6 +74,7 @@ directCommands:
   syntax: >-
     az network watcher connection-monitor endpoint list --connection-monitor
                                                         --location
+                                                        [--query-examples]
                                                         [--subscription]
   requiredParameters:
   - isRequired: true
@@ -81,6 +86,9 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -93,6 +101,7 @@ directCommands:
     az network watcher connection-monitor endpoint remove --connection-monitor
                                                           --location
                                                           --name
+                                                          [--query-examples]
                                                           [--subscription]
                                                           [--test-groups]
   examples:
@@ -114,6 +123,9 @@ directCommands:
     summary: The name of the connection monitor endpoint.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -129,6 +141,7 @@ directCommands:
     az network watcher connection-monitor endpoint show --connection-monitor
                                                         --location
                                                         --name
+                                                        [--query-examples]
                                                         [--subscription]
   requiredParameters:
   - isRequired: true
@@ -144,6 +157,9 @@ directCommands:
     summary: The name of the connection monitor endpoint.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

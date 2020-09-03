@@ -12,6 +12,7 @@ directCommands:
     az sf cluster setting remove --cluster-name
                                  --resource-group
                                  [--parameter]
+                                 [--query-examples]
                                  [--section]
                                  [--settings-section-description]
                                  [--subscription]
@@ -31,6 +32,9 @@ directCommands:
   - name: --parameter
     summary: Parameter name.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --section
     summary: Section name.
     description: ''
@@ -48,6 +52,7 @@ directCommands:
     az sf cluster setting set --cluster-name
                               --resource-group
                               [--parameter]
+                              [--query-examples]
                               [--section]
                               [--settings-section-description]
                               [--subscription]
@@ -67,6 +72,9 @@ directCommands:
   optionalParameters:
   - name: --parameter
     summary: Parameter name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --section
     summary: Section name.

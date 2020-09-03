@@ -15,6 +15,7 @@ directCommands:
                                             --virtual-network
                                             --zone-name
                                             [--no-wait]
+                                            [--query-examples]
                                             [--subscription]
                                             [--tags]
   examples:
@@ -50,6 +51,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -67,6 +71,7 @@ directCommands:
                                             --zone-name
                                             [--if-match]
                                             [--no-wait]
+                                            [--query-examples]
                                             [--subscription]
                                             [--yes]
   examples:
@@ -92,6 +97,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -106,6 +114,7 @@ directCommands:
   syntax: >-
     az network private-dns link vnet list --resource-group
                                           --zone-name
+                                          [--query-examples]
                                           [--subscription]
                                           [--top]
   examples:
@@ -121,6 +130,9 @@ directCommands:
     summary: The name of the Private DNS zone.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -136,6 +148,7 @@ directCommands:
     az network private-dns link vnet show --name
                                           --resource-group
                                           --zone-name
+                                          [--query-examples]
                                           [--subscription]
   examples:
   - summary: Get a virtual network link to the specified Private DNS zone..
@@ -154,6 +167,9 @@ directCommands:
     summary: The name of the Private DNS zone.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -170,6 +186,7 @@ directCommands:
                                             [--force-string]
                                             [--if-match]
                                             [--no-wait]
+                                            [--query-examples]
                                             [--registration-enabled {false, true}]
                                             [--remove]
                                             [--set]
@@ -206,6 +223,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --registration-enabled -e
     parameterValueGroup: false, true
     summary: Specify if the link is registration enabled.
@@ -236,6 +256,7 @@ directCommands:
                                           [--deleted]
                                           [--exists]
                                           [--interval]
+                                          [--query-examples]
                                           [--subscription]
                                           [--timeout]
                                           [--updated]
@@ -271,6 +292,9 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

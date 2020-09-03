@@ -15,6 +15,7 @@ directCommands:
                                          --object-type
                                          [--max-dop-per-job]
                                          [--min-priority-per-job]
+                                         [--query-examples]
                                          [--resource-group]
                                          [--subscription]
   requiredParameters:
@@ -41,6 +42,9 @@ directCommands:
   - name: --min-priority-per-job
     summary: The minimum priority allowed per job for this policy. At least one of `--min-priority-per-job` and `--max-dop-per-job` must be specified.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: If not specified, will attempt to discover the resource group for the specified Data Lake Analytics account.
     description: ''
@@ -56,6 +60,7 @@ directCommands:
     az dla account compute-policy delete --compute-policy-name
                                          [--account]
                                          [--ids]
+                                         [--query-examples]
                                          [--resource-group]
                                          [--subscription]
   requiredParameters:
@@ -69,6 +74,9 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: If not specified, will attempt to discover the resource group for the specified Data Lake Analytics account.
@@ -84,6 +92,7 @@ directCommands:
   syntax: >-
     az dla account compute-policy list [--account]
                                        [--ids]
+                                       [--query-examples]
                                        [--resource-group]
                                        [--subscription]
   optionalParameters:
@@ -92,6 +101,9 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: If not specified, will attempt to discover the resource group for the specified Data Lake Analytics account.
@@ -108,6 +120,7 @@ directCommands:
     az dla account compute-policy show --compute-policy-name
                                        [--account]
                                        [--ids]
+                                       [--query-examples]
                                        [--resource-group]
                                        [--subscription]
   requiredParameters:
@@ -121,6 +134,9 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: If not specified, will attempt to discover the resource group for the specified Data Lake Analytics account.
@@ -139,6 +155,7 @@ directCommands:
                                          [--ids]
                                          [--max-dop-per-job]
                                          [--min-priority-per-job]
+                                         [--query-examples]
                                          [--resource-group]
                                          [--subscription]
   requiredParameters:
@@ -158,6 +175,9 @@ directCommands:
     description: ''
   - name: --min-priority-per-job
     summary: The minimum priority allowed per job for this policy. At least one of `--min-priority-per-job` and `--max-dop-per-job` must be specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: If not specified, will attempt to discover the resource group for the specified Data Lake Analytics account.

@@ -16,6 +16,7 @@ directCommands:
                              [--expiry]
                              [--output-directory-id]
                              [--path]
+                             [--query-examples]
                              [--subscription]
   examples:
   - summary: List files in the standard output directory of the job.
@@ -60,6 +61,9 @@ directCommands:
     defaultValue: .
     summary: Relative path in the given output directory.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -76,6 +80,7 @@ directCommands:
                                --workspace
                                [--output-directory-id]
                                [--path]
+                               [--query-examples]
                                [--subscription]
   examples:
   - summary: Stream standard output file of the job.
@@ -115,6 +120,9 @@ directCommands:
   - name: --path -p
     defaultValue: .
     summary: Relative path in the given output directory.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

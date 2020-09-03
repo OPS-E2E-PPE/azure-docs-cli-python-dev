@@ -13,6 +13,7 @@ directCommands:
                                   --status-code
                                   [--additional-data]
                                   [--assessed-resource-id]
+                                  [--query-examples]
                                   [--status-cause]
                                   [--status-description]
                                   [--subscription]
@@ -35,6 +36,9 @@ directCommands:
   - name: --assessed-resource-id
     summary: The target resource for this assessment.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --status-cause
     summary: Progremmatic code for the cause of the assessment result.
     description: ''
@@ -52,6 +56,7 @@ directCommands:
   syntax: >-
     az security assessment delete --name
                                   [--assessed-resource-id]
+                                  [--query-examples]
                                   [--subscription]
   examples:
   - summary: Deletes a security assessment.
@@ -65,6 +70,9 @@ directCommands:
   - name: --assessed-resource-id
     summary: The target resource for this assessment.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -73,11 +81,16 @@ directCommands:
   name: az security assessment list
   summary: List all security assessment results.
   description: ''
-  syntax: az security assessment list [--subscription]
+  syntax: >-
+    az security assessment list [--query-examples]
+                                [--subscription]
   examples:
   - summary: Get security assessments.
     syntax: az security assessment list
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -89,6 +102,7 @@ directCommands:
   syntax: >-
     az security assessment show --name
                                 [--assessed-resource-id]
+                                [--query-examples]
                                 [--subscription]
   examples:
   - summary: Get a security assessment.
@@ -101,6 +115,9 @@ directCommands:
   optionalParameters:
   - name: --assessed-resource-id
     summary: The target resource for this assessment.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

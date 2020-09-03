@@ -13,6 +13,7 @@ directCommands:
                                --resource-group
                                [--if-none-match]
                                [--parent-name]
+                               [--query-examples]
                                [--registration-vnets]
                                [--resolution-vnets]
                                [--subscription]
@@ -41,6 +42,9 @@ directCommands:
   - name: --parent-name -p
     summary: Specify if parent zone exists for this zone and delegation for the child zone in the parent is to be added.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --registration-vnets
     summary: 'Space-separated names or IDs of virtual networks that register hostnames in this DNS zone. Number of private DNS zones with virtual network auto-registration enabled is 1. If you need to increase this limit, please contact Azure Support: <a href="https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits">https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits</a>.'
     description: ''
@@ -67,6 +71,7 @@ directCommands:
     az network dns zone delete --name
                                --resource-group
                                [--if-match]
+                               [--query-examples]
                                [--subscription]
                                [--yes]
   examples:
@@ -85,6 +90,9 @@ directCommands:
   - name: --if-match
     summary: The etag of the DNS zone. Omit this value to always delete the current zone. Specify the last-seen etag value to prevent accidentally deleting any concurrent changes.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -100,6 +108,7 @@ directCommands:
     az network dns zone export --name
                                --resource-group
                                [--file-name]
+                               [--query-examples]
                                [--subscription]
   examples:
   - summary: Export a DNS zone as a DNS zone file.
@@ -117,6 +126,9 @@ directCommands:
   - name: --file-name -f
     summary: Path to the DNS zone file to save.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -129,6 +141,7 @@ directCommands:
     az network dns zone import --file-name
                                --name
                                --resource-group
+                               [--query-examples]
                                [--subscription]
   examples:
   - summary: Import a local zone file into a DNS zone resource.
@@ -147,6 +160,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -156,12 +172,16 @@ directCommands:
   summary: List DNS zones.
   description: ''
   syntax: >-
-    az network dns zone list [--resource-group]
+    az network dns zone list [--query-examples]
+                             [--resource-group]
                              [--subscription]
   examples:
   - summary: List DNS zones in a resource group.
     syntax: az network dns zone list -g MyResourceGroup
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -176,6 +196,7 @@ directCommands:
   syntax: >-
     az network dns zone show --name
                              --resource-group
+                             [--query-examples]
                              [--subscription]
   examples:
   - summary: List DNS zones in a resource group.
@@ -190,6 +211,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -204,6 +228,7 @@ directCommands:
                                [--add]
                                [--force-string]
                                [--if-match]
+                               [--query-examples]
                                [--registration-vnets]
                                [--remove]
                                [--resolution-vnets]
@@ -234,6 +259,9 @@ directCommands:
     description: ''
   - name: --if-match
     summary: Update only if the resource with the same ETAG exists.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --registration-vnets
     summary: 'Space-separated names or IDs of virtual networks that register hostnames in this DNS zone. Number of private DNS zones with virtual network auto-registration enabled is 1. If you need to increase this limit, please contact Azure Support: <a href="https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits">https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits</a>.'

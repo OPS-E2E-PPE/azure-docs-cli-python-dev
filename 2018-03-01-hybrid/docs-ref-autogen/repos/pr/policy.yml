@@ -12,6 +12,7 @@ directCommands:
     az repos pr policy list --id
                             [--detect {false, true}]
                             [--org]
+                            [--query-examples]
                             [--skip]
                             [--subscription]
                             [--top]
@@ -27,6 +28,9 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --skip
     summary: Number of policies to skip.
@@ -46,6 +50,7 @@ directCommands:
                              --id
                              [--detect {false, true}]
                              [--org]
+                             [--query-examples]
                              [--subscription]
   requiredParameters:
   - isRequired: true
@@ -63,6 +68,9 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

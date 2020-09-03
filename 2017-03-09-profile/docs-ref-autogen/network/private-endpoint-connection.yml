@@ -12,6 +12,7 @@ directCommands:
     az network private-endpoint-connection approve [--description]
                                                    [--id]
                                                    [--name]
+                                                   [--query-examples]
                                                    [--resource-group]
                                                    [--resource-name]
                                                    [--subscription]
@@ -32,6 +33,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the private endpoint connection.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -54,6 +58,7 @@ directCommands:
   syntax: >-
     az network private-endpoint-connection delete [--id]
                                                   [--name]
+                                                  [--query-examples]
                                                   [--resource-group]
                                                   [--resource-name]
                                                   [--subscription]
@@ -72,6 +77,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the private endpoint connection.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -97,6 +105,7 @@ directCommands:
   syntax: >-
     az network private-endpoint-connection list [--id]
                                                 [--name]
+                                                [--query-examples]
                                                 [--resource-group]
                                                 [--subscription]
                                                 [--type {Microsoft.AppConfiguration/configurationStores, Microsoft.Batch/batchAccounts, Microsoft.CognitiveServices/accounts, Microsoft.Compute/diskAccesses, Microsoft.ContainerRegistry/registries, Microsoft.DBforMariaDB/servers, Microsoft.DBforMySQL/servers, Microsoft.DBforPostgreSQL/servers, Microsoft.Devices/IotHubs, Microsoft.DocumentDB/databaseAccounts, Microsoft.EventGrid/domains, Microsoft.EventGrid/topics, Microsoft.Keyvault/vaults, Microsoft.Network/applicationGateways, Microsoft.SignalRService/signalr, Microsoft.Storage/storageAccounts, Microsoft.Web/sites, microsoft.insights/privateLinkScopes}]
@@ -113,6 +122,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the resource.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -133,6 +145,7 @@ directCommands:
     az network private-endpoint-connection reject [--description]
                                                   [--id]
                                                   [--name]
+                                                  [--query-examples]
                                                   [--resource-group]
                                                   [--resource-name]
                                                   [--subscription]
@@ -153,6 +166,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the private endpoint connection.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -175,6 +191,7 @@ directCommands:
   syntax: >-
     az network private-endpoint-connection show [--id]
                                                 [--name]
+                                                [--query-examples]
                                                 [--resource-group]
                                                 [--resource-name]
                                                 [--subscription]
@@ -192,6 +209,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the private endpoint connection.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

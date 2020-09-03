@@ -24,6 +24,7 @@ directCommands:
                   [--no-wait]
                   [--pod-cidr]
                   [--pull-secret]
+                  [--query-examples]
                   [--service-cidr]
                   [--subscription]
                   [--tags]
@@ -92,6 +93,9 @@ directCommands:
   - name: --pull-secret
     summary: Pull secret of cluster.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --service-cidr
     summary: CIDR of service network.
     description: ''
@@ -125,6 +129,7 @@ directCommands:
     az aro delete --name
                   --resource-group
                   [--no-wait]
+                  [--query-examples]
                   [--subscription]
                   [--yes]
   examples:
@@ -143,6 +148,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -155,7 +163,8 @@ directCommands:
   summary: List clusters.
   description: ''
   syntax: >-
-    az aro list [--resource-group]
+    az aro list [--query-examples]
+                [--resource-group]
                 [--subscription]
   examples:
   - summary: List clusters.
@@ -163,6 +172,9 @@ directCommands:
   - summary: List clusters with table view.
     syntax: az aro list -o table
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -177,6 +189,7 @@ directCommands:
   syntax: >-
     az aro list-credentials --name
                             --resource-group
+                            [--query-examples]
                             [--subscription]
   examples:
   - summary: List credentials of a cluster.
@@ -191,6 +204,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -202,6 +218,7 @@ directCommands:
   syntax: >-
     az aro show --name
                 --resource-group
+                [--query-examples]
                 [--subscription]
   examples:
   - summary: Get the details of a cluster.
@@ -216,6 +233,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -228,6 +248,7 @@ directCommands:
     az aro update --name
                   --resource-group
                   [--no-wait]
+                  [--query-examples]
                   [--subscription]
   examples:
   - summary: Update a cluster.
@@ -245,6 +266,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -261,6 +285,7 @@ directCommands:
                 [--deleted]
                 [--exists]
                 [--interval]
+                [--query-examples]
                 [--subscription]
                 [--timeout]
                 [--updated]
@@ -289,6 +314,9 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

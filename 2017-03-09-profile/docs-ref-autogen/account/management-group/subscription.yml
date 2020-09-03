@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az account management-group subscription add --name
                                                  --subscription
+                                                 [--query-examples]
   examples:
   - summary: Add a subscription to a management group.
     syntax: az account management-group subscription add --name GroupName --subscription Subscription
@@ -23,6 +24,10 @@ directCommands:
     name: --subscription -s
     summary: Subscription Id or Name.
     description: ''
+  optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_management_group_subscription_remove
   name: az account management-group subscription remove
@@ -31,6 +36,7 @@ directCommands:
   syntax: >-
     az account management-group subscription remove --name
                                                     --subscription
+                                                    [--query-examples]
   examples:
   - summary: Remove an existing subscription from a management group.
     syntax: az account management-group subscription remove --name GroupName --subscription Subscription
@@ -42,6 +48,10 @@ directCommands:
   - isRequired: true
     name: --subscription -s
     summary: Subscription Id or Name.
+    description: ''
+  optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 commands:

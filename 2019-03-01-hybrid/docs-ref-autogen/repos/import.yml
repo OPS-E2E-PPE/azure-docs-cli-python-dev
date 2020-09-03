@@ -14,6 +14,7 @@ directCommands:
                            [--git-service-endpoint-id]
                            [--org]
                            [--project]
+                           [--query-examples]
                            [--repository]
                            [--requires-authorization]
                            [--subscription]
@@ -36,6 +37,9 @@ directCommands:
     description: ''
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --repository -r
     summary: Name or ID of the repository to create the import request in.

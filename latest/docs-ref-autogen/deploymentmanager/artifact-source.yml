@@ -14,6 +14,7 @@ directCommands:
                                                 --resource-group
                                                 --sas-uri
                                                 [--artifact-root]
+                                                [--query-examples]
                                                 [--subscription]
                                                 [--tags]
   examples:
@@ -40,6 +41,9 @@ directCommands:
   - name: --artifact-root
     summary: The root folder under which the artifacts are to be found. This is the path relative to the Azure storage container provided in --sas-uri.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -54,6 +58,7 @@ directCommands:
   syntax: >-
     az deploymentmanager artifact-source delete --artifact-source-name
                                                 --resource-group
+                                                [--query-examples]
                                                 [--subscription]
                                                 [--yes]
   examples:
@@ -69,6 +74,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -82,6 +90,7 @@ directCommands:
   description: ''
   syntax: >-
     az deploymentmanager artifact-source list --resource-group
+                                              [--query-examples]
                                               [--subscription]
   examples:
   - summary: List artifact sources in the given resource group.
@@ -92,6 +101,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -103,6 +115,7 @@ directCommands:
   syntax: >-
     az deploymentmanager artifact-source show --artifact-source-name
                                               --resource-group
+                                              [--query-examples]
                                               [--subscription]
   examples:
   - summary: Get an artifact source
@@ -117,6 +130,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -131,6 +147,7 @@ directCommands:
                                                 [--add]
                                                 [--artifact-root]
                                                 [--force-string]
+                                                [--query-examples]
                                                 [--remove]
                                                 [--sas-uri]
                                                 [--set]
@@ -157,6 +174,9 @@ directCommands:
     description: ''
   - name: --force-string
     summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

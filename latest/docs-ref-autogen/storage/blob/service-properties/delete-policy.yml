@@ -13,6 +13,7 @@ directCommands:
                                                           [--account-name]
                                                           [--auth-mode {key, login}]
                                                           [--connection-string]
+                                                          [--query-examples]
                                                           [--sas-token]
                                                           [--subscription]
                                                           [--timeout]
@@ -32,6 +33,9 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -54,6 +58,7 @@ directCommands:
                                                             [--connection-string]
                                                             [--days-retained]
                                                             [--enable {false, true}]
+                                                            [--query-examples]
                                                             [--sas-token]
                                                             [--subscription]
   examples:
@@ -79,6 +84,9 @@ directCommands:
   - name: --enable
     parameterValueGroup: false, true
     summary: Enables/disables soft-delete.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

@@ -17,6 +17,7 @@ directCommands:
                                 [--auth-mode {key, login}]
                                 [--connection-string]
                                 [--lease-id]
+                                [--query-examples]
                                 [--sas-token]
                                 [--subscription]
                                 [--timeout]
@@ -50,6 +51,9 @@ directCommands:
   - name: --lease-id
     summary: Required if the destination blob has an active infinite lease.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -77,6 +81,7 @@ directCommands:
                                [--destination-if-unmodified-since]
                                [--destination-lease-id]
                                [--metadata]
+                               [--query-examples]
                                [--sas-token]
                                [--source-account-key]
                                [--source-account-name]
@@ -139,6 +144,9 @@ directCommands:
     description: ''
   - name: --metadata
     summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -205,6 +213,7 @@ directCommands:
                                      [--destination-path]
                                      [--dryrun]
                                      [--pattern]
+                                     [--query-examples]
                                      [--sas-token]
                                      [--source-account-key]
                                      [--source-account-name]
@@ -242,6 +251,9 @@ directCommands:
   - name: --pattern
     summary: The pattern used for globbing files or blobs in the source. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to <a href="https://docs.python.org/3.7/library/fnmatch.html">https://docs.python.org/3.7/library/fnmatch.html</a>.
     description: When you use '*' in --pattern, it will match any character including the the directory separator '/'.
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''

@@ -14,6 +14,7 @@ directCommands:
                                                   --nic-name
                                                   --resource-group
                                                   [--lb-name]
+                                                  [--query-examples]
                                                   [--subscription]
   examples:
   - summary: Add an inbound NAT rule to an IP configuration.
@@ -43,6 +44,9 @@ directCommands:
   - name: --lb-name
     summary: The name of the load balancer associated with the NAT rule (Omit if suppying a NAT rule ID).
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -57,6 +61,7 @@ directCommands:
                                                      --nic-name
                                                      --resource-group
                                                      [--lb-name]
+                                                     [--query-examples]
                                                      [--subscription]
   examples:
   - summary: Remove an inbound NAT rule of an IP configuration.
@@ -85,6 +90,9 @@ directCommands:
   optionalParameters:
   - name: --lb-name
     summary: The name of the load balancer associated with the NAT rule (Omit if suppying a NAT rule ID).
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

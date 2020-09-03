@@ -18,6 +18,7 @@ directCommands:
                                [--file-path]
                                [--org]
                                [--project]
+                               [--query-examples]
                                [--subscription]
   examples:
   - summary: Create a new page with path 'my page' in a wiki named 'myprojectwiki' with inline content
@@ -59,6 +60,9 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -73,6 +77,7 @@ directCommands:
                                [--detect {false, true}]
                                [--org]
                                [--project]
+                               [--query-examples]
                                [--subscription]
                                [--yes]
   requiredParameters:
@@ -99,6 +104,9 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -117,6 +125,7 @@ directCommands:
                              [--open]
                              [--org]
                              [--project]
+                             [--query-examples]
                              [--subscription]
                              [--version]
   requiredParameters:
@@ -145,6 +154,9 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -166,6 +178,7 @@ directCommands:
                                [--file-path]
                                [--org]
                                [--project]
+                               [--query-examples]
                                [--subscription]
   examples:
   - summary: Update content of page with path 'my page' in a wiki named 'myprojectwiki' with inline content
@@ -210,6 +223,9 @@ directCommands:
     description: ''
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

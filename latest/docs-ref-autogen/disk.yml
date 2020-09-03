@@ -40,6 +40,7 @@ directCommands:
                    [--network-access-policy {AllowAll, AllowPrivate, DenyAll}]
                    [--no-wait]
                    [--os-type {Linux, Windows}]
+                   [--query-examples]
                    [--size-gb]
                    [--sku {Premium_LRS, StandardSSD_LRS, Standard_LRS, UltraSSD_LRS}]
                    [--source]
@@ -136,6 +137,9 @@ directCommands:
     parameterValueGroup: Linux, Windows
     summary: The Operating System type of the Disk.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --size-gb -z
     summary: 'Size in GB. Max size: 4095 GB (certain preview disks can be larger).'
     description: ''
@@ -171,6 +175,7 @@ directCommands:
     az disk delete [--ids]
                    [--name]
                    [--no-wait]
+                   [--query-examples]
                    [--resource-group]
                    [--subscription]
                    [--yes]
@@ -186,6 +191,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -205,6 +213,7 @@ directCommands:
                          [--access-level {Read, Write}]
                          [--ids]
                          [--name]
+                         [--query-examples]
                          [--resource-group]
                          [--subscription]
   examples:
@@ -227,6 +236,9 @@ directCommands:
   - name: --name -n
     summary: The name of the managed disk.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -238,9 +250,13 @@ directCommands:
   summary: List managed disks.
   description: ''
   syntax: >-
-    az disk list [--resource-group]
+    az disk list [--query-examples]
+                 [--resource-group]
                  [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -254,6 +270,7 @@ directCommands:
   syntax: >-
     az disk revoke-access [--ids]
                           [--name]
+                          [--query-examples]
                           [--resource-group]
                           [--subscription]
   examples:
@@ -268,6 +285,9 @@ directCommands:
   - name: --name -n
     summary: The name of the managed disk.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -281,6 +301,7 @@ directCommands:
   syntax: >-
     az disk show [--ids]
                  [--name]
+                 [--query-examples]
                  [--resource-group]
                  [--subscription]
   optionalParameters:
@@ -289,6 +310,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the managed disk.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -312,6 +336,7 @@ directCommands:
                    [--name]
                    [--network-access-policy {AllowAll, AllowPrivate, DenyAll}]
                    [--no-wait]
+                   [--query-examples]
                    [--remove]
                    [--resource-group]
                    [--set]
@@ -358,6 +383,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -389,6 +417,7 @@ directCommands:
                  [--ids]
                  [--interval]
                  [--name]
+                 [--query-examples]
                  [--resource-group]
                  [--subscription]
                  [--timeout]
@@ -418,6 +447,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the managed disk.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

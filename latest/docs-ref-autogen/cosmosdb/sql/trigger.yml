@@ -16,6 +16,7 @@ directCommands:
                                    --name
                                    --resource-group
                                    [--operation {All, Create, Delete, Replace, Update}]
+                                   [--query-examples]
                                    [--subscription]
                                    [--type {Post, Pre}]
   examples:
@@ -51,6 +52,9 @@ directCommands:
     parameterValueGroup: All, Create, Delete, Replace, Update
     summary: The operation of the trigger.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -69,6 +73,7 @@ directCommands:
                                    --database-name
                                    --name
                                    --resource-group
+                                   [--query-examples]
                                    [--subscription]
                                    [--yes]
   requiredParameters:
@@ -93,6 +98,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -109,6 +117,7 @@ directCommands:
                                  --container-name
                                  --database-name
                                  --resource-group
+                                 [--query-examples]
                                  [--subscription]
   requiredParameters:
   - isRequired: true
@@ -128,6 +137,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -142,6 +154,7 @@ directCommands:
                                  --database-name
                                  --name
                                  --resource-group
+                                 [--query-examples]
                                  [--subscription]
   requiredParameters:
   - isRequired: true
@@ -165,6 +178,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -181,6 +197,7 @@ directCommands:
                                    --resource-group
                                    [--body]
                                    [--operation {All, Create, Delete, Replace, Update}]
+                                   [--query-examples]
                                    [--subscription]
                                    [--type {Post, Pre}]
   requiredParameters:
@@ -211,6 +228,9 @@ directCommands:
   - name: --operation
     parameterValueGroup: All, Create, Delete, Replace, Update
     summary: The operation of the trigger.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

@@ -12,6 +12,7 @@ directCommands:
     az account management-group create --name
                                        [--display-name]
                                        [--parent]
+                                       [--query-examples]
   examples:
   - summary: Create a new management group.
     syntax: az account management-group create --name GroupName
@@ -33,12 +34,17 @@ directCommands:
   - name: --parent -p
     summary: Sets the parent of the management group. Can be the fully qualified id or the name of the management group. If null, the root tenant group is set as the parent.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_management_group_delete
   name: az account management-group delete
   summary: Delete an existing management group.
   description: Delete an existing management group.
-  syntax: az account management-group delete --name
+  syntax: >-
+    az account management-group delete --name
+                                       [--query-examples]
   examples:
   - summary: Delete an existing management group
     syntax: az account management-group delete --name GroupName
@@ -47,15 +53,23 @@ directCommands:
     name: --name -n
     summary: Name of the management group.
     description: ''
+  optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_management_group_list
   name: az account management-group list
   summary: List all management groups.
   description: List of all management groups in the current tenant.
-  syntax: az account management-group list
+  syntax: az account management-group list [--query-examples]
   examples:
   - summary: List all management groups
     syntax: az account management-group list
+  optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_management_group_show
   name: az account management-group show
@@ -64,6 +78,7 @@ directCommands:
   syntax: >-
     az account management-group show --name
                                      [--expand]
+                                     [--query-examples]
                                      [--recurse]
   examples:
   - summary: Get a management group.
@@ -81,6 +96,9 @@ directCommands:
   - name: --expand -e
     summary: If given, lists the children in the first level of hierarchy.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --recurse -r
     summary: If given, lists the children in all levels of hierarchy.
     description: ''
@@ -95,6 +113,7 @@ directCommands:
                                        [--display-name]
                                        [--force-string]
                                        [--parent]
+                                       [--query-examples]
                                        [--remove]
                                        [--set]
   examples:
@@ -121,6 +140,9 @@ directCommands:
     description: ''
   - name: --parent -p
     summary: Update the parent of the management group. Can be the fully qualified id or the name of the management group. If null, no change is made.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

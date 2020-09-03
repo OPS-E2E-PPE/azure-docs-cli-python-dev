@@ -22,6 +22,7 @@ directCommands:
                               [--location]
                               [--minimal-tls-version {TLS1_0, TLS1_1, TLS1_2, TLSEnforcementDisabled}]
                               [--public-network-access {Disabled, Enabled}]
+                              [--query-examples]
                               [--ssl-enforcement {Disabled, Enabled}]
                               [--storage-size]
                               [--subscription]
@@ -90,6 +91,9 @@ directCommands:
     parameterValueGroup: Disabled, Enabled
     summary: Enable or disable public network access to server. When disabled, only connections made through Private Links can reach this server. Default is Enabled.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --ssl-enforcement
     parameterValueGroup: Disabled, Enabled
     summary: Enable or disable ssl enforcement for connections to server. Default is Enabled.
@@ -113,6 +117,7 @@ directCommands:
   syntax: >-
     az postgres server delete [--ids]
                               [--name]
+                              [--query-examples]
                               [--resource-group]
                               [--subscription]
                               [--yes]
@@ -125,6 +130,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the server. The name can contain only lowercase letters, numbers, and the hyphen (-) character. Minimum 3 characters and maximum 63 characters.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -147,6 +155,7 @@ directCommands:
                                   [--ids]
                                   [--name]
                                   [--no-wait]
+                                  [--query-examples]
                                   [--resource-group]
                                   [--sku-name]
                                   [--subscription]
@@ -185,6 +194,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -199,7 +211,8 @@ directCommands:
   summary: List available servers.
   description: ''
   syntax: >-
-    az postgres server list [--resource-group]
+    az postgres server list [--query-examples]
+                            [--resource-group]
                             [--subscription]
   examples:
   - summary: List all PostgreSQL servers in a subscription.
@@ -207,6 +220,9 @@ directCommands:
   - summary: List all PostgreSQL servers in a resource group.
     syntax: az postgres server list -g testgroup
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -220,6 +236,7 @@ directCommands:
   syntax: >-
     az postgres server restart [--ids]
                                [--name]
+                               [--query-examples]
                                [--resource-group]
                                [--subscription]
   examples:
@@ -231,6 +248,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the server. The name can contain only lowercase letters, numbers, and the hyphen (-) character. Minimum 3 characters and maximum 63 characters.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -248,6 +268,7 @@ directCommands:
                                [--ids]
                                [--name]
                                [--no-wait]
+                               [--query-examples]
                                [--resource-group]
                                [--subscription]
   examples:
@@ -277,6 +298,9 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -290,6 +314,7 @@ directCommands:
   syntax: >-
     az postgres server show [--ids]
                             [--name]
+                            [--query-examples]
                             [--resource-group]
                             [--subscription]
   examples:
@@ -301,6 +326,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the server. The name can contain only lowercase letters, numbers, and the hyphen (-) character. Minimum 3 characters and maximum 63 characters.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -323,6 +351,7 @@ directCommands:
                               [--minimal-tls-version {TLS1_0, TLS1_1, TLS1_2, TLSEnforcementDisabled}]
                               [--name]
                               [--public-network-access {Disabled, Enabled}]
+                              [--query-examples]
                               [--remove]
                               [--resource-group]
                               [--set]
@@ -372,6 +401,9 @@ directCommands:
     parameterValueGroup: Disabled, Enabled
     summary: Enable or disable public network access to server. When disabled, only connections made through Private Links can reach this server. Default is Enabled.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -407,6 +439,7 @@ directCommands:
                             [--ids]
                             [--interval]
                             [--name]
+                            [--query-examples]
                             [--resource-group]
                             [--subscription]
                             [--timeout]
@@ -426,6 +459,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the server. The name can contain only lowercase letters, numbers, and the hyphen (-) character. Minimum 3 characters and maximum 63 characters.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

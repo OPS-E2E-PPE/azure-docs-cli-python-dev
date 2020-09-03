@@ -12,6 +12,7 @@ directCommands:
     az resource link create --link
                             --target
                             [--notes]
+                            [--query-examples]
                             [--subscription]
   examples:
   - summary: Create a link from {SourceID} to {ResourceID} with notes
@@ -29,6 +30,9 @@ directCommands:
   - name: --notes
     summary: Notes for the link.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -39,6 +43,7 @@ directCommands:
   description: ''
   syntax: >-
     az resource link delete --link
+                            [--query-examples]
                             [--subscription]
   examples:
   - summary: Delete link {LinkID}
@@ -49,6 +54,9 @@ directCommands:
     summary: Fully-qualified resource ID of the resource link.
     description: 'Format: /subscriptions/{SubID}/resourceGroups/{ResourceGroupID}/providers/{ProviderNamespace}/{ResourceType}/{ResourceName}/providers/Microsoft.Resources/links/{LinkName}.'
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -59,6 +67,7 @@ directCommands:
   description: ''
   syntax: >-
     az resource link list [--filter]
+                          [--query-examples]
                           [--scope]
                           [--subscription]
   examples:
@@ -69,6 +78,9 @@ directCommands:
   optionalParameters:
   - name: --filter
     summary: Filter string for limiting results.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --scope
     summary: Fully-qualified scope for retrieving links.
@@ -83,6 +95,7 @@ directCommands:
   description: ''
   syntax: >-
     az resource link show --link
+                          [--query-examples]
                           [--subscription]
   requiredParameters:
   - isRequired: true
@@ -90,6 +103,9 @@ directCommands:
     summary: Fully-qualified resource ID of the resource link.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -101,6 +117,7 @@ directCommands:
   syntax: >-
     az resource link update --link
                             [--notes]
+                            [--query-examples]
                             [--subscription]
                             [--target]
   examples:
@@ -114,6 +131,9 @@ directCommands:
   optionalParameters:
   - name: --notes
     summary: Notes for the link.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

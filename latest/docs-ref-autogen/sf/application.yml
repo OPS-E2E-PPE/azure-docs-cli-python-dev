@@ -18,6 +18,7 @@ directCommands:
                              [--max-nodes]
                              [--min-nodes]
                              [--package-url]
+                             [--query-examples]
                              [--subscription]
   examples:
   - summary: Create application "testApp" with parameters. The application type "TestAppType" version "v1" should already exist in the cluster, and the application parameters should be defined in the application manifest.
@@ -63,6 +64,9 @@ directCommands:
   - name: --package-url
     summary: Specify the url of the application package sfpkg file.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -74,6 +78,7 @@ directCommands:
     az sf application delete --application-name
                              --cluster-name
                              --resource-group
+                             [--query-examples]
                              [--subscription]
   examples:
   - summary: Delete application.
@@ -92,6 +97,9 @@ directCommands:
     summary: Specify the resource group name. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -102,6 +110,7 @@ directCommands:
   syntax: >-
     az sf application list --cluster-name
                            --resource-group
+                           [--query-examples]
                            [--subscription]
   examples:
   - summary: List applications for a given cluster.
@@ -116,6 +125,9 @@ directCommands:
     summary: Specify the resource group name. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -127,6 +139,7 @@ directCommands:
     az sf application show --application-name
                            --cluster-name
                            --resource-group
+                           [--query-examples]
                            [--subscription]
   examples:
   - summary: Get application.
@@ -145,6 +158,9 @@ directCommands:
     summary: Specify the resource group name. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -170,6 +186,7 @@ directCommands:
                              [--max-porcent-unhealthy-replicas]
                              [--max-porcent-unhealthy-services]
                              [--min-nodes]
+                             [--query-examples]
                              [--service-type-health-policy-map]
                              [--subscription]
                              [--ud_timeout]
@@ -241,6 +258,9 @@ directCommands:
     description: ''
   - name: --min-nodes --minimum-nodes
     summary: Specify the minimum number of nodes where Service Fabric will reserve capacity for this application, this does not mean that the application is guaranteed to have replicas on all those nodes. The value of this parameter must be a non-negative integer. Default value for this is zero, which means no capacity is reserved for the application.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --service-type-health-policy-map
     summary: 'Specify the map of the health policy to use for different service types as a hash table in the following format: {"ServiceTypeName" : "MaxPercentUnhealthyPartitionsPerService,MaxPercentUnhealthyReplicasPerPartition,MaxPercentUnhealthyServices"}. For example: @{ "ServiceTypeName01" = "5,10,5"; "ServiceTypeName02" = "5,5,5" }.'

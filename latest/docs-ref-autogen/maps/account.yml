@@ -12,6 +12,7 @@ directCommands:
     az maps account create --name
                            --resource-group
                            [--accept-tos]
+                           [--query-examples]
                            [--sku {S0, S1}]
                            [--subscription]
                            [--tags]
@@ -36,6 +37,9 @@ directCommands:
       License (<a href="https://azure.microsoft.com/support/legal/">https://azure.microsoft.com/support/legal/</a>) and
 
       Privacy Statement (<a href="https://privacy.microsoft.com/privacystatement">https://privacy.microsoft.com/privacystatement</a>).
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sku -s
     defaultValue: S0
     parameterValueGroup: S0, S1
@@ -55,6 +59,7 @@ directCommands:
   syntax: >-
     az maps account delete [--ids]
                            [--name]
+                           [--query-examples]
                            [--resource-group]
                            [--subscription]
   examples:
@@ -66,6 +71,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the maps account.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Resource group name.
@@ -79,9 +87,13 @@ directCommands:
   summary: Show all maps accounts in a subscription or in a resource group.
   description: ''
   syntax: >-
-    az maps account list [--resource-group]
+    az maps account list [--query-examples]
+                         [--resource-group]
                          [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Resource group name.
     description: ''
@@ -96,6 +108,7 @@ directCommands:
   syntax: >-
     az maps account show [--ids]
                          [--name]
+                         [--query-examples]
                          [--resource-group]
                          [--subscription]
   examples:
@@ -107,6 +120,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the maps account.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Resource group name.
@@ -124,6 +140,7 @@ directCommands:
                            [--force-string]
                            [--ids]
                            [--name]
+                           [--query-examples]
                            [--remove]
                            [--resource-group]
                            [--set]
@@ -142,6 +159,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the maps account.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

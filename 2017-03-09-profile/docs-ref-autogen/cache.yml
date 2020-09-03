@@ -12,6 +12,7 @@ directCommands:
     az cache delete --name
                     --resource-group
                     --resource-type
+                    [--query-examples]
                     [--subscription]
   requiredParameters:
   - isRequired: true
@@ -27,6 +28,9 @@ directCommands:
     summary: The resource type.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -34,8 +38,13 @@ directCommands:
   name: az cache list
   summary: List the contents of the object cache.
   description: ''
-  syntax: az cache list [--subscription]
+  syntax: >-
+    az cache list [--query-examples]
+                  [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -43,8 +52,13 @@ directCommands:
   name: az cache purge
   summary: Clear the entire CLI object cache.
   description: ''
-  syntax: az cache purge [--subscription]
+  syntax: >-
+    az cache purge [--query-examples]
+                   [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -56,6 +70,7 @@ directCommands:
     az cache show --name
                   --resource-group
                   --resource-type
+                  [--query-examples]
                   [--subscription]
   requiredParameters:
   - isRequired: true
@@ -71,6 +86,9 @@ directCommands:
     summary: The resource type.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

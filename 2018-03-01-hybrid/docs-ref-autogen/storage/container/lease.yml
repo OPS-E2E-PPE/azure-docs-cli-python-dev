@@ -17,6 +17,7 @@ directCommands:
                                        [--if-unmodified-since]
                                        [--lease-duration]
                                        [--proposed-lease-id]
+                                       [--query-examples]
                                        [--sas-token]
                                        [--subscription]
                                        [--timeout]
@@ -48,6 +49,9 @@ directCommands:
   - name: --proposed-lease-id
     summary: Proposed lease ID, in a GUID string format. The Blob service returns 400 (Invalid request) if the proposed lease ID is not in the correct format.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -70,6 +74,7 @@ directCommands:
                                      [--if-modified-since]
                                      [--if-unmodified-since]
                                      [--lease-break-period]
+                                     [--query-examples]
                                      [--sas-token]
                                      [--subscription]
                                      [--timeout]
@@ -97,6 +102,9 @@ directCommands:
   - name: --lease-break-period
     summary: This is the proposed duration of seconds that the lease should continue before it is broken, between 0 and 60 seconds. This break period is only used if it is shorter than the time remaining on the lease. If longer, the time remaining on the lease is used. A new lease will not be available before the break period has expired, but the lease may be held for longer than the break period. If this header does not appear with a break operation, a fixed-duration lease breaks after the remaining lease period elapses, and an infinite lease breaks immediately.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -120,6 +128,7 @@ directCommands:
                                       [--connection-string]
                                       [--if-modified-since]
                                       [--if-unmodified-since]
+                                      [--query-examples]
                                       [--sas-token]
                                       [--subscription]
                                       [--timeout]
@@ -152,6 +161,9 @@ directCommands:
   - name: --if-unmodified-since
     summary: Commence only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -174,6 +186,7 @@ directCommands:
                                        [--connection-string]
                                        [--if-modified-since]
                                        [--if-unmodified-since]
+                                       [--query-examples]
                                        [--sas-token]
                                        [--subscription]
                                        [--timeout]
@@ -202,6 +215,9 @@ directCommands:
   - name: --if-unmodified-since
     summary: Commence only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -224,6 +240,7 @@ directCommands:
                                      [--connection-string]
                                      [--if-modified-since]
                                      [--if-unmodified-since]
+                                     [--query-examples]
                                      [--sas-token]
                                      [--subscription]
                                      [--timeout]
@@ -251,6 +268,9 @@ directCommands:
     description: ''
   - name: --if-unmodified-since
     summary: Commence only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

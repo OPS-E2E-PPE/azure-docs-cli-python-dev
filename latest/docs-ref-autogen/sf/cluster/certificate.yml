@@ -15,6 +15,7 @@ directCommands:
                                   [--certificate-output-folder]
                                   [--certificate-password]
                                   [--certificate-subject-name]
+                                  [--query-examples]
                                   [--secret-identifier]
                                   [--subscription]
                                   [--vault-name]
@@ -50,6 +51,9 @@ directCommands:
   - name: --certificate-subject-name
     summary: The subject name of the certificate to be created.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --secret-identifier
     summary: The existing Azure key vault secret URL.
     description: ''
@@ -70,6 +74,7 @@ directCommands:
     az sf cluster certificate remove --cluster-name
                                      --resource-group
                                      --thumbprint
+                                     [--query-examples]
                                      [--subscription]
   examples:
   - summary: Remove a certificate by thumbprint.
@@ -88,6 +93,9 @@ directCommands:
     summary: The cluster certificate thumbprint to be removed.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

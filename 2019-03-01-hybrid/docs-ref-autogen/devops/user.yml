@@ -13,6 +13,7 @@ directCommands:
                        --license-type {advanced, earlyAdopter, express, professional, stakeholder}
                        [--detect {false, true}]
                        [--org]
+                       [--query-examples]
                        [--send-email-invite {false, true}]
                        [--subscription]
   requiredParameters:
@@ -33,6 +34,9 @@ directCommands:
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --send-email-invite
     parameterValueGroup: false, true
     summary: Whether to send email invite for new user or not.
@@ -47,6 +51,7 @@ directCommands:
   syntax: >-
     az devops user list [--detect {false, true}]
                         [--org]
+                        [--query-examples]
                         [--skip]
                         [--subscription]
                         [--top]
@@ -57,6 +62,9 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --skip
     summary: 'Offset: Number of records to skip.'
@@ -76,6 +84,7 @@ directCommands:
     az devops user remove --user
                           [--detect {false, true}]
                           [--org]
+                          [--query-examples]
                           [--subscription]
                           [--yes]
   requiredParameters:
@@ -91,6 +100,9 @@ directCommands:
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -105,6 +117,7 @@ directCommands:
     az devops user show --user
                         [--detect {false, true}]
                         [--org]
+                        [--query-examples]
                         [--subscription]
   requiredParameters:
   - isRequired: true
@@ -119,6 +132,9 @@ directCommands:
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -131,6 +147,7 @@ directCommands:
                           --user
                           [--detect {false, true}]
                           [--org]
+                          [--query-examples]
                           [--subscription]
   requiredParameters:
   - isRequired: true
@@ -149,6 +166,9 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

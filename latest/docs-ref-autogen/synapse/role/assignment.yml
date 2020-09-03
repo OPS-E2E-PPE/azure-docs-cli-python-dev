@@ -12,6 +12,7 @@ directCommands:
     az synapse role assignment create --assignee
                                       --role
                                       --workspace-name
+                                      [--query-examples]
                                       [--subscription]
   examples:
   - summary: Create a role assignment using service principal name.
@@ -43,6 +44,9 @@ directCommands:
     summary: The workspace name.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -55,6 +59,7 @@ directCommands:
     az synapse role assignment delete --workspace-name
                                       [--assignee]
                                       [--ids]
+                                      [--query-examples]
                                       [--role]
                                       [--subscription]
                                       [--yes]
@@ -101,6 +106,9 @@ directCommands:
   - name: --ids
     summary: Space-separated role assignment ids. You should not provide --role or --assignee when --ids is provided.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --role
     summary: The role name/id that is assigned to the principal.
     description: ''
@@ -118,6 +126,7 @@ directCommands:
   syntax: >-
     az synapse role assignment list --workspace-name
                                     [--assignee]
+                                    [--query-examples]
                                     [--role]
                                     [--subscription]
   examples:
@@ -147,6 +156,9 @@ directCommands:
   - name: --assignee
     summary: 'Represent a user, group, or service principal. Supported format: object id, user sign-in name, or service principal name.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --role
     summary: The role name/id that is assigned to the principal.
     description: ''
@@ -161,6 +173,7 @@ directCommands:
   syntax: >-
     az synapse role assignment show --id
                                     --workspace-name
+                                    [--query-examples]
                                     [--subscription]
   examples:
   - summary: Get a role assignment by id.
@@ -178,6 +191,9 @@ directCommands:
     summary: The workspace name.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

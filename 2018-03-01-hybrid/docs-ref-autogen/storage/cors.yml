@@ -18,6 +18,7 @@ directCommands:
                         [--connection-string]
                         [--exposed-headers]
                         [--max-age]
+                        [--query-examples]
                         [--sas-token]
                         [--subscription]
                         [--timeout]
@@ -54,6 +55,9 @@ directCommands:
   - name: --max-age
     summary: The maximum number of seconds the client/browser should cache a preflight response.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -73,6 +77,7 @@ directCommands:
                           [--account-key]
                           [--account-name]
                           [--connection-string]
+                          [--query-examples]
                           [--sas-token]
                           [--subscription]
                           [--timeout]
@@ -94,6 +99,9 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -112,6 +120,7 @@ directCommands:
     az storage cors list [--account-key]
                          [--account-name]
                          [--connection-string]
+                         [--query-examples]
                          [--sas-token]
                          [--services]
                          [--subscription]
@@ -128,6 +137,9 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

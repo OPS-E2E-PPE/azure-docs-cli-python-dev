@@ -14,6 +14,7 @@ directCommands:
                                       [--encoding {ascii, utf-16be, utf-16le, utf-8}]
                                       [--org]
                                       [--project]
+                                      [--query-examples]
                                       [--subscription]
   requiredParameters:
   - isRequired: true
@@ -36,6 +37,9 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -49,6 +53,7 @@ directCommands:
                                       [--detect {false, true}]
                                       [--org]
                                       [--project]
+                                      [--query-examples]
                                       [--subscription]
                                       [--yes]
   requiredParameters:
@@ -70,6 +75,9 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -84,6 +92,7 @@ directCommands:
     az devops service-endpoint list [--detect {false, true}]
                                     [--org]
                                     [--project]
+                                    [--query-examples]
                                     [--subscription]
   optionalParameters:
   - name: --detect
@@ -95,6 +104,9 @@ directCommands:
     description: ''
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -108,6 +120,7 @@ directCommands:
                                     [--detect {false, true}]
                                     [--org]
                                     [--project]
+                                    [--query-examples]
                                     [--subscription]
   requiredParameters:
   - isRequired: true
@@ -125,6 +138,9 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -138,6 +154,7 @@ directCommands:
                                       [--enable-for-all {false, true}]
                                       [--org]
                                       [--project]
+                                      [--query-examples]
                                       [--subscription]
   requiredParameters:
   - isRequired: true
@@ -158,6 +175,9 @@ directCommands:
     description: ''
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

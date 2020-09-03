@@ -12,6 +12,7 @@ directCommands:
     az local-context delete [--all]
                             [--name]
                             [--purge]
+                            [--query-examples]
                             [--recursive]
                             [--subscription]
                             [--yes]
@@ -34,6 +35,9 @@ directCommands:
   - name: --purge
     summary: Delete local context file from working directory. Only available when --all is specified.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --recursive
     summary: Indicates this is recursive delete of local context. Only available when --all is specified.
     description: ''
@@ -47,8 +51,13 @@ directCommands:
   name: az local-context off
   summary: Turn off local context.
   description: ''
-  syntax: az local-context off [--subscription]
+  syntax: >-
+    az local-context off [--query-examples]
+                         [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -56,8 +65,13 @@ directCommands:
   name: az local-context on
   summary: Turn on local context.
   description: ''
-  syntax: az local-context on [--subscription]
+  syntax: >-
+    az local-context on [--query-examples]
+                        [--subscription]
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -67,6 +81,7 @@ directCommands:
   description: ''
   syntax: >-
     az local-context show [--name]
+                          [--query-examples]
                           [--subscription]
   examples:
   - summary: Show all local context value
@@ -76,6 +91,9 @@ directCommands:
   optionalParameters:
   - name: --name -n
     summary: Space-separated list of local context parameter names.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

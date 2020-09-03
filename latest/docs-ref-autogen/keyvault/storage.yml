@@ -15,6 +15,7 @@ directCommands:
                             --vault-name
                             [--auto-regenerate-key {false, true}]
                             [--disabled {false, true}]
+                            [--query-examples]
                             [--regeneration-period]
                             [--subscription]
                             [--tags]
@@ -60,6 +61,9 @@ directCommands:
     parameterValueGroup: false, true
     summary: Add the storage account in a disabled state.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --regeneration-period
     summary: The key regeneration time duration specified in ISO-8601 format, such as "P30D" for rotation every 30 days.
     description: ''
@@ -78,6 +82,7 @@ directCommands:
     az keyvault storage backup --file
                                [--id]
                                [--name]
+                               [--query-examples]
                                [--subscription]
                                [--vault-name]
   requiredParameters:
@@ -91,6 +96,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name to identify the storage account in the vault. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -106,6 +114,7 @@ directCommands:
   syntax: >-
     az keyvault storage list --vault-name
                              [--maxresults]
+                             [--query-examples]
                              [--subscription]
   requiredParameters:
   - isRequired: true
@@ -115,6 +124,9 @@ directCommands:
   optionalParameters:
   - name: --maxresults
     summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -127,6 +139,7 @@ directCommands:
   syntax: >-
     az keyvault storage list-deleted --vault-name
                                      [--maxresults]
+                                     [--query-examples]
                                      [--subscription]
   requiredParameters:
   - isRequired: true
@@ -136,6 +149,9 @@ directCommands:
   optionalParameters:
   - name: --maxresults
     summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -148,6 +164,7 @@ directCommands:
   syntax: >-
     az keyvault storage purge --name
                               --vault-name
+                              [--query-examples]
                               [--subscription]
   requiredParameters:
   - isRequired: true
@@ -159,6 +176,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -170,6 +190,7 @@ directCommands:
   syntax: >-
     az keyvault storage recover --name
                                 --vault-name
+                                [--query-examples]
                                 [--subscription]
   requiredParameters:
   - isRequired: true
@@ -181,6 +202,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -193,6 +217,7 @@ directCommands:
     az keyvault storage regenerate-key --key-name
                                        [--id]
                                        [--name]
+                                       [--query-examples]
                                        [--subscription]
                                        [--vault-name]
   requiredParameters:
@@ -206,6 +231,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name to identify the storage account in the vault. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -221,6 +249,7 @@ directCommands:
   syntax: >-
     az keyvault storage remove [--id]
                                [--name]
+                               [--query-examples]
                                [--subscription]
                                [--vault-name]
   examples:
@@ -232,6 +261,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name to identify the storage account in the vault. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -247,6 +279,7 @@ directCommands:
   syntax: >-
     az keyvault storage restore --file
                                 --vault-name
+                                [--query-examples]
                                 [--subscription]
   requiredParameters:
   - isRequired: true
@@ -258,6 +291,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -269,6 +305,7 @@ directCommands:
   syntax: >-
     az keyvault storage show [--id]
                              [--name]
+                             [--query-examples]
                              [--subscription]
                              [--vault-name]
   optionalParameters:
@@ -277,6 +314,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name to identify the storage account in the vault. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -292,6 +332,7 @@ directCommands:
   syntax: >-
     az keyvault storage show-deleted --name
                                      --vault-name
+                                     [--query-examples]
                                      [--subscription]
   requiredParameters:
   - isRequired: true
@@ -303,6 +344,9 @@ directCommands:
     summary: Name of the key vault.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -317,6 +361,7 @@ directCommands:
                                [--disabled {false, true}]
                                [--id]
                                [--name]
+                               [--query-examples]
                                [--regeneration-period]
                                [--subscription]
                                [--tags]
@@ -338,6 +383,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name to identify the storage account in the vault. Required if --id is not specified.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --regeneration-period
     summary: The key regeneration time duration specified in ISO-8601 format, such as "P30D" for rotation every 30 days.

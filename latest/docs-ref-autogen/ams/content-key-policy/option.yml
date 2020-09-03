@@ -27,6 +27,7 @@ directCommands:
                                          [--open-id-connect-discovery-document]
                                          [--open-restriction]
                                          [--play-ready-template]
+                                         [--query-examples]
                                          [--rental-and-lease-key-type]
                                          [--rental-duration]
                                          [--resource-group]
@@ -93,6 +94,9 @@ directCommands:
   - name: --play-ready-template
     summary: JSON PlayReady license template. Use @{file} to load from a file.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --rental-and-lease-key-type
     summary: 'The rental and lease key type. Available values: Undefined, DualExpiry, PersistentUnlimited, PersistentLimited.'
     description: ''
@@ -130,6 +134,7 @@ directCommands:
                                             [--account-name]
                                             [--ids]
                                             [--name]
+                                            [--query-examples]
                                             [--resource-group]
                                             [--subscription]
   requiredParameters:
@@ -146,6 +151,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The content key policy name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -175,6 +183,7 @@ directCommands:
                                             [--open-id-connect-discovery-document]
                                             [--play-ready-template]
                                             [--policy-option-name]
+                                            [--query-examples]
                                             [--rental-and-lease-key-type]
                                             [--rental-duration]
                                             [--resource-group]
@@ -237,6 +246,9 @@ directCommands:
     description: ''
   - name: --policy-option-name
     summary: The content key policy option name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --rental-and-lease-key-type
     summary: 'The rental and lease key type. Available values: Undefined, DualExpiry, PersistentUnlimited, PersistentLimited.'

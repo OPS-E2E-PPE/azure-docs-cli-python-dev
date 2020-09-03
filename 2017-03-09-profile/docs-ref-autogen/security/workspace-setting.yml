@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az security workspace-setting create --name
                                          --target-workspace
+                                         [--query-examples]
                                          [--subscription]
   examples:
   - summary: Creates a workspace settings in your subscription - these settings let you control which workspace will hold your security data
@@ -25,6 +26,9 @@ directCommands:
     summary: An ID of the workspace resource that will hold the security data.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -35,6 +39,7 @@ directCommands:
   description: ''
   syntax: >-
     az security workspace-setting delete --name
+                                         [--query-examples]
                                          [--subscription]
   examples:
   - summary: Deletes the workspace settings in your subscription - this will make the security events on the subscription be reported to the default workspace
@@ -45,6 +50,9 @@ directCommands:
     summary: Name of the resource to be fetched.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -53,11 +61,16 @@ directCommands:
   name: az security workspace-setting list
   summary: Shows the workspace settings in your subscription - these settings let you control which workspace will hold your security data.
   description: ''
-  syntax: az security workspace-setting list [--subscription]
+  syntax: >-
+    az security workspace-setting list [--query-examples]
+                                       [--subscription]
   examples:
   - summary: Shows the workspace settings in your subscription - these settings let you control which workspace will hold your security data
     syntax: az security workspace-setting list
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -68,6 +81,7 @@ directCommands:
   description: ''
   syntax: >-
     az security workspace-setting show --name
+                                       [--query-examples]
                                        [--subscription]
   examples:
   - summary: Shows the workspace settings in your subscription - these settings let you control which workspace will hold your security data
@@ -78,6 +92,9 @@ directCommands:
     summary: Name of the resource to be fetched.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

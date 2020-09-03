@@ -16,6 +16,7 @@ directCommands:
                                                        --peering-name
                                                        --resource-group
                                                        [--authorization-key]
+                                                       [--query-examples]
                                                        [--subscription]
   examples:
   - summary: Create connection between two ExpressRoute circuits with AzurePrivatePeering settings.
@@ -51,6 +52,9 @@ directCommands:
   optionalParameters:
   - name: --authorization-key
     summary: The authorization key used when the peer circuit is in another subscription.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

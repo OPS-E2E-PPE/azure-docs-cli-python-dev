@@ -10,6 +10,7 @@ directCommands:
   description: ''
   syntax: >-
     az acr config retention show --registry
+                                 [--query-examples]
                                  [--resource-group]
                                  [--subscription]
   examples:
@@ -21,6 +22,9 @@ directCommands:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -36,6 +40,7 @@ directCommands:
     az acr config retention update --registry
                                    --type {UntaggedManifests}
                                    [--days]
+                                   [--query-examples]
                                    [--resource-group]
                                    [--status {disabled, enabled}]
                                    [--subscription]
@@ -58,6 +63,9 @@ directCommands:
   - name: --days
     defaultValue: "7"
     summary: 'The number of days to retain an untagged manifest after which it gets purged (Range: 0 to 365). Value "0" will delete untagged manifests immediately.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

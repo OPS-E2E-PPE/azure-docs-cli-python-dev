@@ -21,6 +21,7 @@ directCommands:
                          [--public-ip-address-allocation {Dynamic, Static}]
                          [--public-ip-dns-name]
                          [--public-ip-zone {1, 2, 3}]
+                         [--query-examples]
                          [--sku {Basic, Standard}]
                          [--subnet]
                          [--subnet-address-prefix]
@@ -84,6 +85,9 @@ directCommands:
     parameterValueGroup: 1, 2, 3
     summary: Used to created a new public ip for the load balancer, a.k.a public facing Load balancer.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --sku
     defaultValue: Basic
     parameterValueGroup: Basic, Standard
@@ -120,6 +124,7 @@ directCommands:
   syntax: >-
     az network lb delete [--ids]
                          [--name]
+                         [--query-examples]
                          [--resource-group]
                          [--subscription]
   examples:
@@ -131,6 +136,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The load balancer name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -144,12 +152,16 @@ directCommands:
   summary: List load balancers.
   description: ''
   syntax: >-
-    az network lb list [--resource-group]
+    az network lb list [--query-examples]
+                       [--resource-group]
                        [--subscription]
   examples:
   - summary: List load balancers.
     syntax: az network lb list -g MyResourceGroup
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -165,6 +177,7 @@ directCommands:
     az network lb show [--expand]
                        [--ids]
                        [--name]
+                       [--query-examples]
                        [--resource-group]
                        [--subscription]
   examples:
@@ -179,6 +192,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The load balancer name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -196,6 +212,7 @@ directCommands:
                          [--force-string]
                          [--ids]
                          [--name]
+                         [--query-examples]
                          [--remove]
                          [--resource-group]
                          [--set]
@@ -215,6 +232,9 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The load balancer name.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

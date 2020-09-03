@@ -10,6 +10,7 @@ directCommands:
   description: ''
   syntax: >-
     az provider list [--expand]
+                     [--query-examples]
                      [--subscription]
   examples:
   - summary: Display all resource types for the network resource provider.
@@ -17,6 +18,9 @@ directCommands:
   optionalParameters:
   - name: --expand
     summary: The properties to include in the results. For example, use &$expand=metadata in the query string to retrieve resource provider metadata. To include property aliases in response, use $expand=resourceTypes/aliases.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -28,6 +32,7 @@ directCommands:
   description: ''
   syntax: >-
     az provider register --namespace
+                         [--query-examples]
                          [--subscription]
                          [--wait]
   examples:
@@ -39,6 +44,9 @@ directCommands:
     summary: The resource namespace, aka 'provider'.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -53,6 +61,7 @@ directCommands:
   syntax: >-
     az provider show --namespace
                      [--expand]
+                     [--query-examples]
                      [--subscription]
   requiredParameters:
   - isRequired: true
@@ -62,6 +71,9 @@ directCommands:
   optionalParameters:
   - name: --expand
     summary: The $expand query parameter. For example, to include property aliases in response, use $expand=resourceTypes/aliases.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -73,6 +85,7 @@ directCommands:
   description: ''
   syntax: >-
     az provider unregister --namespace
+                           [--query-examples]
                            [--subscription]
                            [--wait]
   examples:
@@ -84,6 +97,9 @@ directCommands:
     summary: The resource namespace, aka 'provider'.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

@@ -20,6 +20,7 @@ directCommands:
                          [--json-file]
                          [--node-deallocation-option {requeue, retaineddata, taskcompletion, terminate}]
                          [--node-list]
+                         [--query-examples]
                          [--resize-timeout]
                          [--subscription]
   requiredParameters:
@@ -59,6 +60,9 @@ directCommands:
   - name: --node-list
     summary: Required. A list containing the IDs of the Compute Nodes to be removed from the specified Pool. Space-separated values.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resize-timeout
     summary: The timeout for removal of Compute Nodes to the Pool. The default value is 15 minutes. The minimum value is 5 minutes. If you specify a value less than 5 minutes, the Batch service returns an error; if you are calling the REST API directly, the HTTP status code is 400 (Bad Request). Expected format is an ISO-8601 duration.
     description: ''
@@ -76,6 +80,7 @@ directCommands:
                        [--account-key]
                        [--account-name]
                        [--filter]
+                       [--query-examples]
                        [--select]
                        [--subscription]
   requiredParameters:
@@ -96,6 +101,9 @@ directCommands:
   - name: --filter
     summary: An OData $filter clause. For more information on constructing this filter, see <a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-nodes-in-a-pool">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-nodes-in-a-pool</a>.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --select
     summary: An OData $select clause.
     description: ''
@@ -114,6 +122,7 @@ directCommands:
                          [--account-key]
                          [--account-name]
                          [--node-reboot-option {requeue, retaineddata, taskcompletion, terminate}]
+                         [--query-examples]
                          [--subscription]
   requiredParameters:
   - isRequired: true
@@ -138,6 +147,9 @@ directCommands:
     parameterValueGroup: requeue, retaineddata, taskcompletion, terminate
     summary: When to reboot the Compute Node and what to do with currently running Tasks. The default value is requeue.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -153,6 +165,7 @@ directCommands:
                           [--account-key]
                           [--account-name]
                           [--node-reimage-option {requeue, retaineddata, taskcompletion, terminate}]
+                          [--query-examples]
                           [--subscription]
   requiredParameters:
   - isRequired: true
@@ -177,6 +190,9 @@ directCommands:
     parameterValueGroup: requeue, retaineddata, taskcompletion, terminate
     summary: When to reimage the Compute Node and what to do with currently running Tasks. The default value is requeue.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -191,6 +207,7 @@ directCommands:
                        [--account-endpoint]
                        [--account-key]
                        [--account-name]
+                       [--query-examples]
                        [--select]
                        [--subscription]
   requiredParameters:
@@ -211,6 +228,9 @@ directCommands:
     description: ''
   - name: --account-name
     summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --select
     summary: An OData $select clause.

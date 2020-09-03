@@ -11,6 +11,7 @@ directCommands:
   syntax: >-
     az tag add-value --name
                      --value
+                     [--query-examples]
                      [--subscription]
   examples:
   - summary: Create a tag value.
@@ -25,6 +26,9 @@ directCommands:
     summary: The tag value.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -35,6 +39,7 @@ directCommands:
   description: The az tag create command with an id creates or updates the entire set of tags on a resource, resource group or subscription. This operation allows adding or replacing the entire set of tags on the specified resource, resource group or subscription. The specified entity can have a maximum of 50 tags.
   syntax: >-
     az tag create [--name]
+                  [--query-examples]
                   [--resource-id]
                   [--subscription]
                   [--tags]
@@ -50,6 +55,9 @@ directCommands:
   optionalParameters:
   - name: --name -n
     summary: The name of the tag to create.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-id
     summary: The resource identifier for the entity being tagged. A resource, a resource group or a subscription may be tagged.
@@ -67,6 +75,7 @@ directCommands:
   description: The az tag delete command with an id deletes the entire set of tags on a resource, resource group or subscription.
   syntax: >-
     az tag delete [--name]
+                  [--query-examples]
                   [--resource-id]
                   [--subscription]
                   [--yes]
@@ -83,6 +92,9 @@ directCommands:
   - name: --name -n
     summary: The name of the tag to be deleted.
     description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-id
     summary: The resource identifier for the entity being tagged. A resource, a resource group or a subscription may be tagged.
     description: ''
@@ -98,7 +110,8 @@ directCommands:
   summary: List the entire set of tags on a specific resource.
   description: The az tag list command with an id lists the entire set of tags on a resource, resource group or subscription.
   syntax: >-
-    az tag list [--resource-id]
+    az tag list [--query-examples]
+                [--resource-id]
                 [--subscription]
   examples:
   - summary: List the entire set of tags on a subscription.
@@ -108,6 +121,9 @@ directCommands:
   - summary: List the entire set of tags on a resource.
     syntax: az tag list --resource-id /subscriptions/{sub-id}/resourcegroups/{rg}/providers/Microsoft.Compute/virtualMachines/{vmName}
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --resource-id
     summary: The resource identifier for the entity being tagged. A resource, a resource group or a subscription may be tagged.
     description: ''
@@ -122,6 +138,7 @@ directCommands:
   syntax: >-
     az tag remove-value --name
                         --value
+                        [--query-examples]
                         [--subscription]
   requiredParameters:
   - isRequired: true
@@ -133,6 +150,9 @@ directCommands:
     summary: The tag value.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -145,6 +165,7 @@ directCommands:
     az tag update --operation {Delete, Merge, Replace}
                   --resource-id
                   --tags
+                  [--query-examples]
                   [--subscription]
   examples:
   - summary: Selectively update the set of tags on a subscription with "merge" Operation.
@@ -168,6 +189,9 @@ directCommands:
     summary: The tags to be updated on the resource.
     description: ''
   optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
