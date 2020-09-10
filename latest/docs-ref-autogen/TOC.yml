@@ -12032,15 +12032,9 @@
     - name: install-cli
       uid: az_aks_install_cli
       displayName: az aks install-cli
-    - name: install-connector
-      uid: az_aks_install_connector
-      displayName: az aks install-connector
     - name: list
       uid: az_aks_list
       displayName: az aks list
-    - name: remove-connector
-      uid: az_aks_remove_connector
-      displayName: az aks remove-connector
     - name: remove-dev-spaces
       uid: az_aks_remove_dev_spaces
       displayName: az aks remove-dev-spaces
@@ -12062,9 +12056,6 @@
     - name: upgrade
       uid: az_aks_upgrade
       displayName: az aks upgrade
-    - name: upgrade-connector
-      uid: az_aks_upgrade_connector
-      displayName: az aks upgrade-connector
     - name: use-dev-spaces
       uid: az_aks_use_dev_spaces
       displayName: az aks use-dev-spaces
