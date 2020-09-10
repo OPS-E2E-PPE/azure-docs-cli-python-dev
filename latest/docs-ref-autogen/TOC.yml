@@ -13922,6 +13922,9 @@
     - name: list
       uid: az_disk_encryption_set_list
       displayName: az disk-encryption-set list
+    - name: list-associated-resources
+      uid: az_disk_encryption_set_list_associated_resources
+      displayName: az disk-encryption-set list-associated-resources
     - name: show
       uid: az_disk_encryption_set_show
       displayName: az disk-encryption-set show
