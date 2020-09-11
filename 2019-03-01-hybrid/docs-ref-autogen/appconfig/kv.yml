@@ -401,7 +401,7 @@ directCommands:
     summary: If no key specified, restore all keys by default. Support star sign as filters, for instance abc\* means keys with abc as prefix.
     description: ''
   - name: --label
-    summary: If no label specified, restore all key-value pairs with all labels. Support star sign as filters, for instance abc\* means labels with abc as prefix.
+    summary: If no label specified, restore all key-value pairs with all labels. Support star sign as filters, for instance abc\* means labels with abc as prefix. Use '0' for null label.
     description: ''
   - name: --name -n
     summary: Name of the App Configuration. You can configure the default name using `az configure --defaults app_configuration_store=<name>`.
