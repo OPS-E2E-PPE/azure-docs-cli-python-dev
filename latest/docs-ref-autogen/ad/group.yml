@@ -150,7 +150,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/f372105f9a7c42371d745716c49b4d2c91a98588/src/azure-cli/azure/cli/command_modules/role/_help.py
-  updated_at: 9/11/2020 5:38:43 AM
+  gitcommit: https://github.com/Azure/azure-cli/blob/d303eb967d4cc4f0ed60de4ba6f1344d661c98eb/src/azure-cli/azure/cli/command_modules/role/_help.py
+  updated_at: 9/11/2020 9:10:38 AM
   ms.date: 09/11/2020
   description: Manage Azure Active Directory groups.

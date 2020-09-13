@@ -13,30 +13,30 @@ directCommands:
                               [--query-examples]
                               [--subscription]
   examples:
-  - summary: Create a role with read-only access to storage and network resources, and the ability to start or restart VMs.
+  - summary: Create a role with read-only access to storage and network resources, and the ability to start or restart VMs. (Bash)
     syntax: >-
-      az role definition create --role-definition '{ \
-          "Name": "Contoso On-call", \
-          "Description": "Perform VM actions and read storage and network information.", \
-          "Actions": [ \
-              "Microsoft.Compute/*/read", \
-                  "Microsoft.Compute/virtualMachines/start/action", \
-                  "Microsoft.Compute/virtualMachines/restart/action", \
-                  "Microsoft.Network/*/read", \
-              "Microsoft.Storage/*/read", \
-                  "Microsoft.Authorization/*/read", \
-              "Microsoft.Resources/subscriptions/resourceGroups/read", \
-              "Microsoft.Resources/subscriptions/resourceGroups/resources/read", \
-              "Microsoft.Insights/alertRules/*", \
-                  "Microsoft.Support/*" \
-          ], \
-          "DataActions": [ \
-              "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/*" \
-          ], \
-          "NotDataActions": [ \
-              "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write" \
-          ], \
-          "AssignableScopes": ["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"] \
+      az role definition create --role-definition '{
+          "Name": "Contoso On-call",
+          "Description": "Perform VM actions and read storage and network information.",
+          "Actions": [
+              "Microsoft.Compute/*/read",
+                  "Microsoft.Compute/virtualMachines/start/action",
+                  "Microsoft.Compute/virtualMachines/restart/action",
+                  "Microsoft.Network/*/read",
+              "Microsoft.Storage/*/read",
+                  "Microsoft.Authorization/*/read",
+              "Microsoft.Resources/subscriptions/resourceGroups/read",
+              "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
+              "Microsoft.Insights/alertRules/*",
+                  "Microsoft.Support/*"
+          ],
+          "DataActions": [
+              "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/*"
+          ],
+          "NotDataActions": [
+              "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write"
+          ],
+          "AssignableScopes": ["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"]
       }'
   - summary: Create a role from a file containing a JSON description.
     syntax: az role definition create --role-definition @ad-role.json
@@ -131,32 +131,32 @@ directCommands:
                               [--query-examples]
                               [--subscription]
   examples:
-  - summary: Update a role using the output of "az role definition list"
+  - summary: Update a role using the output of "az role definition list". (Bash)
     syntax: >-
-      az role definition update --role-definition '{ \
-          "roleName": "Contoso On-call", \
-          "Description": "Perform VM actions and read storage and network information.", \
-          "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Authorization/roleDefinitions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", \
-          "roleType": "CustomRole", \
-          "type": "Microsoft.Authorization/roleDefinitions", \
-          "Actions": [ \
-              "Microsoft.Compute/*/read", \
-                  "Microsoft.Compute/virtualMachines/start/action", \
-                  "Microsoft.Compute/virtualMachines/restart/action", \
-                  "Microsoft.Network/*/read", \
-              "Microsoft.Storage/*/read", \
-                  "Microsoft.Authorization/*/read", \
-              "Microsoft.Resources/subscriptions/resourceGroups/read", \
-              "Microsoft.Resources/subscriptions/resourceGroups/resources/read", \
-              "Microsoft.Support/*" \
-              ], \
-              "DataActions": [ \
-                  "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/*" \
-          ], \
-          "NotDataActions": [ \
-              "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write" \
-          ], \
-          "AssignableScopes": ["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"] \
+      az role definition update --role-definition '{
+          "roleName": "Contoso On-call",
+          "Description": "Perform VM actions and read storage and network information.",
+          "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Authorization/roleDefinitions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+          "roleType": "CustomRole",
+          "type": "Microsoft.Authorization/roleDefinitions",
+          "Actions": [
+              "Microsoft.Compute/*/read",
+                  "Microsoft.Compute/virtualMachines/start/action",
+                  "Microsoft.Compute/virtualMachines/restart/action",
+                  "Microsoft.Network/*/read",
+              "Microsoft.Storage/*/read",
+                  "Microsoft.Authorization/*/read",
+              "Microsoft.Resources/subscriptions/resourceGroups/read",
+              "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
+              "Microsoft.Support/*"
+              ],
+              "DataActions": [
+                  "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/*"
+          ],
+          "NotDataActions": [
+              "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write"
+          ],
+          "AssignableScopes": ["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"]
       }'
   requiredParameters:
   - isRequired: true
@@ -194,7 +194,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/f372105f9a7c42371d745716c49b4d2c91a98588/src/azure-cli/azure/cli/command_modules/role/_help.py
-  updated_at: 9/11/2020 5:38:43 AM
+  gitcommit: https://github.com/Azure/azure-cli/blob/d303eb967d4cc4f0ed60de4ba6f1344d661c98eb/src/azure-cli/azure/cli/command_modules/role/_help.py
+  updated_at: 9/11/2020 9:10:38 AM
   ms.date: 09/11/2020
   description: Manage role definitions.
