@@ -354,5 +354,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 08/27/2020
+  ms.date: 09/14/2020
   description: Manage DNS PTR records.

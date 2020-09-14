@@ -25,12 +25,12 @@ directCommands:
                                                        [--subscription]
                                                        [--type {AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine, MMAWorkspaceNetwork}]
   examples:
-  - summary: Add an endpoint as destination
-    syntax: az network watcher connection-monitor endpoint add --connection-monitor MyConnectionMonitor --location westus --name MyEndpoint --address "bing.com" --dest-test-groups DefaultTestGroup
-  - summary: Add an endpoint as source
-    syntax: az network watcher connection-monitor endpoint add --connection-monitor MyConnectionMonitor --location westus --name MyEndpoint --resource-id MyVMResourceID --source-test-groups DefaultTestGroup
-  - summary: Add an endpoint with filter
-    syntax: az network watcher connection-monitor endpoint add --connection-monitor MyConnectionMonitor --location westus --name MyEndpoint --resource-id MyLogAnalysisWorkSpaceID --source-test-groups DefaultTestGroup --filter-type Include --filter-item type=AgentAddress address=npmuser --filter-item type=AgentAddress address=pypiuser
+  - summary: Add an external address as a destination endpoint
+    syntax: az network watcher connection-monitor endpoint add --connection-monitor MyConnectionMonitor --location westus --name MyExternalEndpoint --address "bing.com" --dest-test-groups DefaultTestGroup --type ExternalAddress
+  - summary: Add an Azure VM as a source endpoint
+    syntax: az network watcher connection-monitor endpoint add --connection-monitor MyConnectionMonitor --location westus --name MyVMEndpoint --resource-id MyVMResourceID --source-test-groups DefaultTestGroup --type AzureVM
+  - summary: Add a Subnet as a source endpoint with addresses excluded
+    syntax: az network watcher connection-monitor endpoint add --connection-monitor MyConnectionMonitor --location westus --name MySubnetEndpoint --resource-id MySubnetID --source-test-groups DefaultTestGroup --type AzureSubnet --address-exclude 10.0.0.25 10.0.0.30 --coverage-level BelowAverage
   requiredParameters:
   - isRequired: true
     name: --connection-monitor
@@ -204,5 +204,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 08/27/2020
+  ms.date: 09/14/2020
   description: Manage endpoint of a connection monitor.

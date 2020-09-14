@@ -15,6 +15,7 @@ directCommands:
                      [--query-examples]
                      [--source]
                      [--system]
+                     [--upgrade]
                      [--version]
                      [--yes]
   examples:
@@ -28,6 +29,10 @@ directCommands:
     syntax: az extension add --source ~/anextension-0.0.1-py2.py3-none-any.whl --pip-proxy https://user:pass@proxy.server:8080
   - summary: Add extension to system directory
     syntax: az extension add --name anextension --system
+  - summary: Add a specific version of extension
+    syntax: az extension add --name anextension --version 1.0.0
+  - summary: Upgrade the extension if already installed
+    syntax: az extension add --upgrade --name anextension
   optionalParameters:
   - name: --name -n
     summary: Name of extension.
@@ -47,6 +52,9 @@ directCommands:
   - name: --system
     summary: Use a system directory for the extension.
     description: Default path is azure-cli-extensions folder under the CLI running python environment lib path, configurable by environment variable AZURE_EXTENSION_SYS_DIR. On Windows, you may need to open your shell as Administrator to run with the right permission.
+  - name: --upgrade
+    summary: Update the extension if already installed, otherwise just install the extension.
+    description: ''
   - name: --version
     defaultValue: latest
     summary: The specific version of an extension.
@@ -200,5 +208,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 08/21/2020
+  ms.date: 09/14/2020
   description: Manage and update CLI extensions.
