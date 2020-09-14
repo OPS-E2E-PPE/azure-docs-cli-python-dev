@@ -12242,6 +12242,144 @@
       - name: wait
         uid: az_apim_api_wait
         displayName: az apim api wait
+      - name: operation
+        displayName: az apim api operation
+        items:
+        - name: Overview
+          uid: az_apim_api_operation
+          displayName: az apim api operation
+        - name: create
+          uid: az_apim_api_operation_create
+          displayName: az apim api operation create
+        - name: delete
+          uid: az_apim_api_operation_delete
+          displayName: az apim api operation delete
+        - name: list
+          uid: az_apim_api_operation_list
+          displayName: az apim api operation list
+        - name: show
+          uid: az_apim_api_operation_show
+          displayName: az apim api operation show
+        - name: update
+          uid: az_apim_api_operation_update
+          displayName: az apim api operation update
+      - name: release
+        displayName: az apim api release
+        items:
+        - name: Overview
+          uid: az_apim_api_release
+          displayName: az apim api release
+        - name: create
+          uid: az_apim_api_release_create
+          displayName: az apim api release create
+        - name: delete
+          uid: az_apim_api_release_delete
+          displayName: az apim api release delete
+        - name: list
+          uid: az_apim_api_release_list
+          displayName: az apim api release list
+        - name: show
+          uid: az_apim_api_release_show
+          displayName: az apim api release show
+        - name: update
+          uid: az_apim_api_release_update
+          displayName: az apim api release update
+      - name: revision
+        displayName: az apim api revision
+        items:
+        - name: Overview
+          uid: az_apim_api_revision
+          displayName: az apim api revision
+        - name: create
+          uid: az_apim_api_revision_create
+          displayName: az apim api revision create
+        - name: list
+          uid: az_apim_api_revision_list
+          displayName: az apim api revision list
+      - name: versionset
+        displayName: az apim api versionset
+        items:
+        - name: Overview
+          uid: az_apim_api_versionset
+          displayName: az apim api versionset
+        - name: create
+          uid: az_apim_api_versionset_create
+          displayName: az apim api versionset create
+        - name: delete
+          uid: az_apim_api_versionset_delete
+          displayName: az apim api versionset delete
+        - name: list
+          uid: az_apim_api_versionset_list
+          displayName: az apim api versionset list
+        - name: show
+          uid: az_apim_api_versionset_show
+          displayName: az apim api versionset show
+        - name: update
+          uid: az_apim_api_versionset_update
+          displayName: az apim api versionset update
+    - name: nv
+      displayName: az apim nv
+      items:
+      - name: Overview
+        uid: az_apim_nv
+        displayName: az apim nv
+      - name: create
+        uid: az_apim_nv_create
+        displayName: az apim nv create
+      - name: delete
+        uid: az_apim_nv_delete
+        displayName: az apim nv delete
+      - name: list
+        uid: az_apim_nv_list
+        displayName: az apim nv list
+      - name: show
+        uid: az_apim_nv_show
+        displayName: az apim nv show
+      - name: show-secret
+        uid: az_apim_nv_show_secret
+        displayName: az apim nv show-secret
+      - name: update
+        uid: az_apim_nv_update
+        displayName: az apim nv update
+    - name: product
+      displayName: az apim product
+      items:
+      - name: Overview
+        uid: az_apim_product
+        displayName: az apim product
+      - name: create
+        uid: az_apim_product_create
+        displayName: az apim product create
+      - name: delete
+        uid: az_apim_product_delete
+        displayName: az apim product delete
+      - name: list
+        uid: az_apim_product_list
+        displayName: az apim product list
+      - name: show
+        uid: az_apim_product_show
+        displayName: az apim product show
+      - name: update
+        uid: az_apim_product_update
+        displayName: az apim product update
+      - name: api
+        displayName: az apim product api
+        items:
+        - name: Overview
+          uid: az_apim_product_api
+          displayName: az apim product api
+        - name: add
+          uid: az_apim_product_api_add
+          displayName: az apim product api add
+        - name: check
+          uid: az_apim_product_api_check
+          displayName: az apim product api check
+        - name: delete
+          uid: az_apim_product_api_delete
+          displayName: az apim product api delete
+        - name: list
+          uid: az_apim_product_api_list
+          displayName: az apim product api list
   - name: appconfig
     displayName: az appconfig
     items:
