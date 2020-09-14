@@ -9,7 +9,7 @@ directCommands:
   summary: Configure logging for a web app.
   description: ''
   syntax: >-
-    az webapp log config [--application-logging {false, true}]
+    az webapp log config [--application-logging {azureblobstorage, filesystem, off}]
                          [--detailed-error-messages {false, true}]
                          [--docker-container-logging {filesystem, off}]
                          [--failed-request-tracing {false, true}]
@@ -28,8 +28,8 @@ directCommands:
     syntax: az webapp log config --docker-container-logging off --name MyWebapp --resource-group MyResourceGroup
   optionalParameters:
   - name: --application-logging
-    parameterValueGroup: false, true
-    summary: Configure application logging to file system.
+    parameterValueGroup: azureblobstorage, filesystem, off
+    summary: Configure application logging.
     description: ''
   - name: --detailed-error-messages
     parameterValueGroup: false, true

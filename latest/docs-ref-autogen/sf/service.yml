@@ -17,11 +17,11 @@ directCommands:
                          --state {stateful, stateless}
                          [--default-move-cost {High, Low, Medium, Zero}]
                          [--instance-count]
-                         [--min-replica-set-size]
+                         [--min-replica]
                          [--partition-scheme {named, singleton, uniformInt64}]
                          [--query-examples]
                          [--subscription]
-                         [--target-replica-set-size]
+                         [--target-replica]
   examples:
   - summary: Create a new stateless service "testApp~testService1" with instance count -1 (on all the nodes).
     syntax: >-
@@ -65,7 +65,7 @@ directCommands:
   - name: --instance-count
     summary: Specify the instance count for the stateless service. If -1 is used, it means it will run on all the nodes.
     description: ''
-  - name: --min-replica-set-size
+  - name: --min-replica --min-replica-set-size
     summary: Specify the min replica set size for the stateful service.
     description: ''
   - name: --partition-scheme
@@ -79,7 +79,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  - name: --target-replica-set-size
+  - name: --target-replica --target-replica-set-size
     summary: Specify the target replica set size for the stateful service.
     description: ''
 - uid: az_sf_service_delete

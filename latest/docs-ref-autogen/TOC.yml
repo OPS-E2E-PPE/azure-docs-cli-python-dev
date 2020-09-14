@@ -9662,6 +9662,96 @@
         - name: set
           uid: az_sf_cluster_upgrade_type_set
           displayName: az sf cluster upgrade-type set
+    - name: managed-cluster
+      displayName: az sf managed-cluster
+      items:
+      - name: Overview
+        uid: az_sf_managed_cluster
+        displayName: az sf managed-cluster
+      - name: create
+        uid: az_sf_managed_cluster_create
+        displayName: az sf managed-cluster create
+      - name: delete
+        uid: az_sf_managed_cluster_delete
+        displayName: az sf managed-cluster delete
+      - name: list
+        uid: az_sf_managed_cluster_list
+        displayName: az sf managed-cluster list
+      - name: show
+        uid: az_sf_managed_cluster_show
+        displayName: az sf managed-cluster show
+      - name: update
+        uid: az_sf_managed_cluster_update
+        displayName: az sf managed-cluster update
+      - name: client-certificate
+        displayName: az sf managed-cluster client-certificate
+        items:
+        - name: Overview
+          uid: az_sf_managed_cluster_client_certificate
+          displayName: az sf managed-cluster client-certificate
+        - name: add
+          uid: az_sf_managed_cluster_client_certificate_add
+          displayName: az sf managed-cluster client-certificate add
+        - name: delete
+          uid: az_sf_managed_cluster_client_certificate_delete
+          displayName: az sf managed-cluster client-certificate delete
+    - name: managed-node-type
+      displayName: az sf managed-node-type
+      items:
+      - name: Overview
+        uid: az_sf_managed_node_type
+        displayName: az sf managed-node-type
+      - name: create
+        uid: az_sf_managed_node_type_create
+        displayName: az sf managed-node-type create
+      - name: delete
+        uid: az_sf_managed_node_type_delete
+        displayName: az sf managed-node-type delete
+      - name: list
+        uid: az_sf_managed_node_type_list
+        displayName: az sf managed-node-type list
+      - name: show
+        uid: az_sf_managed_node_type_show
+        displayName: az sf managed-node-type show
+      - name: update
+        uid: az_sf_managed_node_type_update
+        displayName: az sf managed-node-type update
+      - name: node
+        displayName: az sf managed-node-type node
+        items:
+        - name: Overview
+          uid: az_sf_managed_node_type_node
+          displayName: az sf managed-node-type node
+        - name: delete
+          uid: az_sf_managed_node_type_node_delete
+          displayName: az sf managed-node-type node delete
+        - name: reimage
+          uid: az_sf_managed_node_type_node_reimage
+          displayName: az sf managed-node-type node reimage
+        - name: restart
+          uid: az_sf_managed_node_type_node_restart
+          displayName: az sf managed-node-type node restart
+      - name: vm-extension
+        displayName: az sf managed-node-type vm-extension
+        items:
+        - name: Overview
+          uid: az_sf_managed_node_type_vm_extension
+          displayName: az sf managed-node-type vm-extension
+        - name: add
+          uid: az_sf_managed_node_type_vm_extension_add
+          displayName: az sf managed-node-type vm-extension add
+        - name: delete
+          uid: az_sf_managed_node_type_vm_extension_delete
+          displayName: az sf managed-node-type vm-extension delete
+      - name: vm-secret
+        displayName: az sf managed-node-type vm-secret
+        items:
+        - name: Overview
+          uid: az_sf_managed_node_type_vm_secret
+          displayName: az sf managed-node-type vm-secret
+        - name: add
+          uid: az_sf_managed_node_type_vm_secret_add
+          displayName: az sf managed-node-type vm-secret add
     - name: service
       displayName: az sf service
       items:
