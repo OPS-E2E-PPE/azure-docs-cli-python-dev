@@ -23,11 +23,15 @@ directCommands:
                                                  [--dest-resource]
                                                  [--do-not-start]
                                                  [--endpoint-dest-address]
+                                                 [--endpoint-dest-coverage-level {AboveAverage, Average, BelowAverage, Default, Full, Low}]
                                                  [--endpoint-dest-name]
                                                  [--endpoint-dest-resource-id]
+                                                 [--endpoint-dest-type {AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine, MMAWorkspaceNetwork}]
                                                  [--endpoint-source-address]
+                                                 [--endpoint-source-coverage-level {AboveAverage, Average, BelowAverage, Default, Full, Low}]
                                                  [--endpoint-source-name]
                                                  [--endpoint-source-resource-id]
+                                                 [--endpoint-source-type {AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine, MMAWorkspaceNetwork}]
                                                  [--frequency]
                                                  [--http-method {Get, Post}]
                                                  [--http-path]
@@ -86,20 +90,36 @@ directCommands:
   - name: --endpoint-dest-address
     summary: Address of the destination of connection monitor endpoint (IP or domain name).
     description: ''
+  - name: --endpoint-dest-coverage-level
+    parameterValueGroup: AboveAverage, Average, BelowAverage, Default, Full, Low
+    summary: Test coverage for the endpoint.
+    description: ''
   - name: --endpoint-dest-name
     summary: The name of the destination of connection monitor endpoint. If you are creating a V2 Connection Monitor, it's required.
     description: ''
   - name: --endpoint-dest-resource-id
     summary: Resource ID of the destination of connection monitor endpoint.
     description: ''
+  - name: --endpoint-dest-type
+    parameterValueGroup: AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine, MMAWorkspaceNetwork
+    summary: The endpoint type.
+    description: ''
   - name: --endpoint-source-address
     summary: Address of the source of connection monitor endpoint (IP or domain name).
+    description: ''
+  - name: --endpoint-source-coverage-level
+    parameterValueGroup: AboveAverage, Average, BelowAverage, Default, Full, Low
+    summary: Test coverage for the endpoint.
     description: ''
   - name: --endpoint-source-name
     summary: The name of the source of connection monitor endpoint. If you are creating a V2 Connection Monitor, it's required.
     description: ''
   - name: --endpoint-source-resource-id
     summary: Resource ID of the source of connection monitor endpoint. If endpoint is intended to used as source, this option is required.
+    description: ''
+  - name: --endpoint-source-type
+    parameterValueGroup: AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine, MMAWorkspaceNetwork
+    summary: The endpoint type.
     description: ''
   - name: --frequency
     defaultValue: "60"

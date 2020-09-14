@@ -13,6 +13,9 @@ directCommands:
                                                        --location
                                                        --name
                                                        [--address]
+                                                       [--address-exclude]
+                                                       [--address-include]
+                                                       [--coverage-level {AboveAverage, Average, BelowAverage, Default, Full, Low}]
                                                        [--dest-test-groups]
                                                        [--filter-item]
                                                        [--filter-type {Include}]
@@ -20,6 +23,7 @@ directCommands:
                                                        [--resource-id]
                                                        [--source-test-groups]
                                                        [--subscription]
+                                                       [--type {AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine, MMAWorkspaceNetwork}]
   examples:
   - summary: Add an endpoint as destination
     syntax: az network watcher connection-monitor endpoint add --connection-monitor MyConnectionMonitor --location westus --name MyEndpoint --address "bing.com" --dest-test-groups DefaultTestGroup
@@ -44,6 +48,16 @@ directCommands:
   - name: --address
     summary: Address of the connection monitor endpoint (IP or domain name).
     description: ''
+  - name: --address-exclude
+    summary: List of address of the endpoint item which needs to be included to the endpoint scope.
+    description: ''
+  - name: --address-include
+    summary: List of address of the endpoint item which needs to be included to the endpoint scope.
+    description: ''
+  - name: --coverage-level
+    parameterValueGroup: AboveAverage, Average, BelowAverage, Default, Full, Low
+    summary: Test coverage for the endpoint.
+    description: ''
   - name: --dest-test-groups
     summary: Space-separated list of names for test group to reference as destination.
     description: ''
@@ -65,6 +79,10 @@ directCommands:
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --type
+    parameterValueGroup: AzureSubnet, AzureVM, AzureVNet, ExternalAddress, MMAWorkspaceMachine, MMAWorkspaceNetwork
+    summary: The endpoint type.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_watcher_connection_monitor_endpoint_list
