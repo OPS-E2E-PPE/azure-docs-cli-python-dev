@@ -39,7 +39,7 @@ directCommands:
     summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --recursive
-    summary: Indicates this is recursive delete of local context. Only available when --all is specified.
+    summary: Indicate this is recursive delete of local context. Only available when --all is specified.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

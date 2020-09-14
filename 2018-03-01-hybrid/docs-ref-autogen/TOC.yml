@@ -4706,6 +4706,24 @@
     - name: unset
       uid: az_config_unset
       displayName: az config unset
+    - name: param-persist
+      displayName: az config param-persist
+      items:
+      - name: Overview
+        uid: az_config_param_persist
+        displayName: az config param-persist
+      - name: delete
+        uid: az_config_param_persist_delete
+        displayName: az config param-persist delete
+      - name: off
+        uid: az_config_param_persist_off
+        displayName: az config param-persist off
+      - name: on
+        uid: az_config_param_persist_on
+        displayName: az config param-persist on
+      - name: show
+        uid: az_config_param_persist_show
+        displayName: az config param-persist show
   - name: deployment
     displayName: az deployment
     items:

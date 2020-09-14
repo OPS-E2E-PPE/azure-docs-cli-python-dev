@@ -49,6 +49,7 @@ directCommands:
                                                  [--tags]
                                                  [--tcp-disable-trace-route {false, true}]
                                                  [--tcp-port]
+                                                 [--tcp-port-behavior {ListenIfAvailable, None}]
                                                  [--test-config-name]
                                                  [--test-group-disable {false, true}]
                                                  [--test-group-name]
@@ -171,6 +172,10 @@ directCommands:
     description: ''
   - name: --tcp-port
     summary: The port to connect to.
+    description: ''
+  - name: --tcp-port-behavior
+    parameterValueGroup: ListenIfAvailable, None
+    summary: Destination port behavior.
     description: ''
   - name: --test-config-name
     summary: The name of the connection monitor test configuration. If you are creating a V2 Connection Monitor, it's required.
@@ -408,9 +413,6 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/d8328c7dfdc9c42d6b0b0086cad0f89483ed3e42/src/azure-cli/azure/cli/command_modules/network/_help.py
-  updated_at: 8/27/2020 6:38:37 AM
   ms.date: 08/27/2020
   description: >-
     Connection monitor can be used to monitor network connectivity between an Azure virtual machine and an IP address.
