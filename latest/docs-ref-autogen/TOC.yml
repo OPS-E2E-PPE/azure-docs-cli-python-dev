@@ -11366,6 +11366,9 @@
       - name: get-boot-log
         uid: az_vm_boot_diagnostics_get_boot_log
         displayName: az vm boot-diagnostics get-boot-log
+      - name: get-boot-log-uris
+        uid: az_vm_boot_diagnostics_get_boot_log_uris
+        displayName: az vm boot-diagnostics get-boot-log-uris
     - name: Diagnostics
       displayName: az vm diagnostics
       items:
