@@ -25,6 +25,7 @@ directCommands:
                       [--fileupload-sas-ttl]
                       [--fileupload-storage-auth-type]
                       [--location]
+                      [--min-tls-version]
                       [--partition-count]
                       [--rd]
                       [--sku {B1, B2, B3, F1, S1, S2, S3}]
@@ -95,6 +96,9 @@ directCommands:
     description: ''
   - name: --location -l
     summary: Location of your IoT Hub. Default is the location of target resource group.
+    description: ''
+  - name: --min-tls-version --mintls
+    summary: Specify the minimum TLS version to support for this hub. Can be set to "1.2" to have clients that use a TLS version below 1.2 to be rejected.
     description: ''
   - name: --partition-count
     defaultValue: "4"
