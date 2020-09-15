@@ -29,7 +29,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --vault-name
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --account-id
@@ -68,7 +68,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --vault-name
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --query-examples
@@ -90,7 +90,7 @@ directCommands:
   requiredParameters:
   - isRequired: true
     name: --vault-name
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --maxresults
@@ -119,7 +119,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --vault-name
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --query-examples
@@ -150,7 +150,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --vault-name
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --account-id
@@ -203,5 +203,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 08/21/2020
+  ms.date: 09/15/2020
   description: Manage certificate issuer information.

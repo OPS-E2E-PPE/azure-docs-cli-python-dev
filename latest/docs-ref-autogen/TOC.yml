@@ -4148,9 +4148,15 @@
     - name: update
       uid: az_keyvault_update
       displayName: az keyvault update
+    - name: update-hsm
+      uid: az_keyvault_update_hsm
+      displayName: az keyvault update-hsm
     - name: wait
       uid: az_keyvault_wait
       displayName: az keyvault wait
+    - name: wait-hsm
+      uid: az_keyvault_wait_hsm
+      displayName: az keyvault wait-hsm
     - name: Certificates
       displayName: az keyvault certificate
       items:
@@ -4292,6 +4298,9 @@
       - name: encrypt
         uid: az_keyvault_key_encrypt
         displayName: az keyvault key encrypt
+      - name: get-policy-template
+        uid: az_keyvault_key_get_policy_template
+        displayName: az keyvault key get-policy-template
       - name: import
         uid: az_keyvault_key_import
         displayName: az keyvault key import
@@ -4367,6 +4376,15 @@
       - name: show-deleted
         uid: az_keyvault_secret_show_deleted
         displayName: az keyvault secret show-deleted
+    - name: backup
+      displayName: az keyvault backup
+      items:
+      - name: Overview
+        uid: az_keyvault_backup
+        displayName: az keyvault backup
+      - name: start
+        uid: az_keyvault_backup_start
+        displayName: az keyvault backup start
     - name: network-rule
       displayName: az keyvault network-rule
       items:
@@ -4415,6 +4433,63 @@
       - name: list
         uid: az_keyvault_private_link_resource_list
         displayName: az keyvault private-link-resource list
+    - name: restore
+      displayName: az keyvault restore
+      items:
+      - name: Overview
+        uid: az_keyvault_restore
+        displayName: az keyvault restore
+      - name: start
+        uid: az_keyvault_restore_start
+        displayName: az keyvault restore start
+    - name: role
+      displayName: az keyvault role
+      items:
+      - name: Overview
+        uid: az_keyvault_role
+        displayName: az keyvault role
+      - name: assignment
+        displayName: az keyvault role assignment
+        items:
+        - name: Overview
+          uid: az_keyvault_role_assignment
+          displayName: az keyvault role assignment
+        - name: create
+          uid: az_keyvault_role_assignment_create
+          displayName: az keyvault role assignment create
+        - name: delete
+          uid: az_keyvault_role_assignment_delete
+          displayName: az keyvault role assignment delete
+        - name: list
+          uid: az_keyvault_role_assignment_list
+          displayName: az keyvault role assignment list
+      - name: definition
+        displayName: az keyvault role definition
+        items:
+        - name: Overview
+          uid: az_keyvault_role_definition
+          displayName: az keyvault role definition
+        - name: list
+          uid: az_keyvault_role_definition_list
+          displayName: az keyvault role definition list
+    - name: security-domain
+      displayName: az keyvault security-domain
+      items:
+      - name: Overview
+        uid: az_keyvault_security_domain
+        displayName: az keyvault security-domain
+      - name: download
+        uid: az_keyvault_security_domain_download
+        displayName: az keyvault security-domain download
+      - name: init-recovery
+        uid: az_keyvault_security_domain_init_recovery
+        displayName: az keyvault security-domain init-recovery
+      - name: upload
+        uid: az_keyvault_security_domain_upload
+        displayName: az keyvault security-domain upload
+      - name: wait
+        uid: az_keyvault_security_domain_wait
+        displayName: az keyvault security-domain wait
     - name: storage
       displayName: az keyvault storage
       items:
@@ -8741,6 +8816,9 @@
       - name: list-changelogs
         uid: az_role_assignment_list_changelogs
         displayName: az role assignment list-changelogs
+      - name: update
+        uid: az_role_assignment_update
+        displayName: az role assignment update
     - name: Definitions
       displayName: az role definition
       items:

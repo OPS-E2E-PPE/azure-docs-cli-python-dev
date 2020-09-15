@@ -34,7 +34,7 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --vault-name
-    summary: Name of the key vault. Required if --id is not specified.
+    summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_certificate_create
@@ -71,11 +71,11 @@ directCommands:
     description: ''
   - isRequired: true
     name: --policy -p
-    summary: JSON encoded policy defintion. Use @{file} to load from a file(e.g. @my_policy.json).
+    summary: JSON encoded policy definition. Use @{file} to load from a file(e.g. @my_policy.json).
     description: ''
   - isRequired: true
     name: --vault-name
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --disabled
@@ -119,7 +119,7 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --vault-name
-    summary: Name of the key vault. Required if --id is not specified.
+    summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_certificate_download
@@ -170,7 +170,7 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --vault-name
-    summary: Name of the key vault. Required if --id is not specified.
+    summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
   - name: --version -v
     summary: The certificate version. If omitted, uses the latest version.
@@ -254,7 +254,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --vault-name
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --disabled
@@ -265,7 +265,7 @@ directCommands:
     summary: If the private key in certificate is encrypted, the password used for encryption.
     description: ''
   - name: --policy -p
-    summary: JSON encoded policy defintion. Use @{file} to load from a file(e.g. @my_policy.json).
+    summary: JSON encoded policy definition. Use @{file} to load from a file(e.g. @my_policy.json).
     description: ''
   - name: --query-examples
     summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
@@ -282,17 +282,16 @@ directCommands:
   summary: List certificates in a specified key vault.
   description: The GetCertificates operation returns the set of certificates resources in the specified key vault. This operation requires the certificates/list permission.
   syntax: >-
-    az keyvault certificate list --vault-name
+    az keyvault certificate list [--id]
                                  [--include-pending {false, true}]
                                  [--maxresults]
                                  [--query-examples]
                                  [--subscription]
-  requiredParameters:
-  - isRequired: true
-    name: --vault-name
-    summary: Name of the key vault.
-    description: ''
+                                 [--vault-name]
   optionalParameters:
+  - name: --id
+    summary: Id of the Vault or HSM. If specified all other 'Id' arguments should be omitted.
+    description: ''
   - name: --include-pending
     parameterValueGroup: false, true
     summary: Specifies whether to include certificates which are not completely provisioned.
@@ -306,6 +305,9 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --vault-name
+    summary: Name of the Key Vault. Required if --id is not specified.
+    description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_certificate_list_deleted
   name: az keyvault certificate list-deleted
@@ -313,6 +315,7 @@ directCommands:
   description: The GetDeletedCertificates operation retrieves the certificates in the current vault which are in a deleted state and ready for recovery or purging. This operation includes deletion-specific information. This operation requires the certificates/get/list permission. This operation can only be enabled on soft-delete enabled vaults.
   syntax: >-
     az keyvault certificate list-deleted --vault-name
+                                         [--id]
                                          [--include-pending {false, true}]
                                          [--maxresults]
                                          [--query-examples]
@@ -320,9 +323,12 @@ directCommands:
   requiredParameters:
   - isRequired: true
     name: --vault-name
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
+  - name: --id
+    summary: Id of the Vault. If specified all other 'Id' arguments should be omitted.
+    description: ''
   - name: --include-pending
     parameterValueGroup: false, true
     summary: Specifies whether to include certificates which are not completely provisioned.
@@ -365,7 +371,7 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --vault-name
-    summary: Name of the key vault. Required if --id is not specified.
+    summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_certificate_purge
@@ -380,7 +386,7 @@ directCommands:
                                   [--vault-name]
   optionalParameters:
   - name: --id
-    summary: The recovery id of the certificate.  If specified all other 'Id' arguments should be omitted.
+    summary: The recovery id of the certificate. If specified all other 'Id' arguments should be omitted.
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
@@ -392,7 +398,7 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --vault-name
-    summary: Name of the key vault. Required if --id is not specified.
+    summary: Name of the Vault. Required if --id is not specified.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_certificate_recover
@@ -407,7 +413,7 @@ directCommands:
                                     [--vault-name]
   optionalParameters:
   - name: --id
-    summary: The recovery id of the certificate.  If specified all other 'Id' arguments should be omitted.
+    summary: The recovery id of the certificate. If specified all other 'Id' arguments should be omitted.
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
@@ -419,7 +425,7 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --vault-name
-    summary: Name of the key vault. Required if --id is not specified.
+    summary: Name of the Vault. Required if --id is not specified.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_certificate_restore
@@ -438,7 +444,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --vault-name
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --query-examples
@@ -474,7 +480,7 @@ directCommands:
     summary: Name of the certificate. Required if --id is not specified.
     description: ''
   - name: --policy -p
-    summary: JSON encoded policy defintion. Use @{file} to load from a file(e.g. @my_policy.json).
+    summary: JSON encoded policy definition. Use @{file} to load from a file(e.g. @my_policy.json).
     description: ''
   - name: --query-examples
     summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
@@ -486,7 +492,7 @@ directCommands:
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --vault-name
-    summary: Name of the key vault. Required if --id is not specified.
+    summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
   - name: --version -v
     summary: The certificate version. If omitted, uses the latest version.
@@ -517,7 +523,7 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --vault-name
-    summary: Name of the key vault. Required if --id is not specified.
+    summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
   - name: --version -v
     summary: The certificate version. If omitted, uses the latest version.
@@ -535,7 +541,7 @@ directCommands:
                                          [--vault-name]
   optionalParameters:
   - name: --id
-    summary: The recovery id of the certificate.  If specified all other 'Id' arguments should be omitted.
+    summary: The recovery id of the certificate. If specified all other 'Id' arguments should be omitted.
     description: ''
   - name: --name -n
     summary: Name of the certificate. Required if --id is not specified.
@@ -547,7 +553,7 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --vault-name
-    summary: Name of the key vault. Required if --id is not specified.
+    summary: Name of the Vault. Required if --id is not specified.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 commands:
@@ -601,5 +607,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 08/21/2020
+  ms.date: 09/15/2020
   description: Manage certificates.

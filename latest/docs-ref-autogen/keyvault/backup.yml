@@ -1,39 +1,52 @@
 ### YamlMime:AzureCLIGroup
-uid: az_keyvault_private_link_resource
-name: az keyvault private-link-resource
-summary: Manage vault private link resources.
+uid: az_keyvault_backup
+name: az keyvault backup
+summary: Manage full HSM backup.
 description: ''
 directCommands:
-- uid: az_keyvault_private_link_resource_list
-  name: az keyvault private-link-resource list
-  summary: List the private link resources supported for a Key Vault.
+- uid: az_keyvault_backup_start
+  name: az keyvault backup start
+  summary: Begin a full backup of the HSM.
   description: ''
   syntax: >-
-    az keyvault private-link-resource list --vault-name
-                                           [--query-examples]
-                                           [--resource-group]
-                                           [--subscription]
-  examples:
-  - summary: Get the private link resources that need to be created for a Key Vault.
-    syntax: az keyvault private-link-resource list --vault-name mykv
+    az keyvault backup start --storage-container-SAS-token
+                             [--blob-container-name]
+                             [--hsm-name]
+                             [--id]
+                             [--query-examples]
+                             [--storage-account-name]
+                             [--storage-resource-uri]
+                             [--subscription]
   requiredParameters:
   - isRequired: true
-    name: --vault-name
-    summary: Name of the Vault.
+    name: --storage-container-SAS-token -t
+    summary: The SAS token pointing to an Azure Blob storage container.
     description: ''
   optionalParameters:
+  - name: --blob-container-name
+    summary: Name of Blob Container.
+    description: ''
+  - name: --hsm-name
+    summary: Name of the HSM. Can be omitted if --id is specified.
+    description: ''
+  - name: --id
+    summary: Id of the HSM.
+    description: ''
   - name: --query-examples
     summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
-  - name: --resource-group -g
-    summary: Proceed only if Key Vault belongs to the specified resource group.
+  - name: --storage-account-name
+    summary: Name of Azure Storage Account.
+    description: ''
+  - name: --storage-resource-uri
+    summary: Azure Blob storage container Uri. If specified all other 'Storage Id' arguments should be omitted.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 commands:
-- az_keyvault_private_link_resource_list
+- az_keyvault_backup_start
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -52,4 +65,4 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   ms.date: 09/15/2020
-  description: Manage vault private link resources.
+  description: Manage full HSM backup.

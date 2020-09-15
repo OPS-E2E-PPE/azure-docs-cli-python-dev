@@ -1316,6 +1316,9 @@
       - name: encrypt
         uid: az_keyvault_key_encrypt
         displayName: az keyvault key encrypt
+      - name: get-policy-template
+        uid: az_keyvault_key_get_policy_template
+        displayName: az keyvault key get-policy-template
       - name: import
         uid: az_keyvault_key_import
         displayName: az keyvault key import

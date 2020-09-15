@@ -6,11 +6,11 @@ description: ''
 directCommands:
 - uid: az_keyvault_create
   name: az keyvault create
-  summary: Create a key vault.
+  summary: Create a Vault or HSM.
   description: If `--enable-rbac-authorization` is not specified, then default permissions are created for the current user or service principal unless the `--no-self-perms` flag is specified.
   syntax: >-
-    az keyvault create --name
-                       --resource-group
+    az keyvault create --resource-group
+                       [--administrators]
                        [--bypass {AzureServices, None}]
                        [--default-action {Allow, Deny}]
                        [--enable-purge-protection {false, true}]
@@ -19,7 +19,9 @@ directCommands:
                        [--enabled-for-deployment {false, true}]
                        [--enabled-for-disk-encryption {false, true}]
                        [--enabled-for-template-deployment {false, true}]
+                       [--hsm-name]
                        [--location]
+                       [--name]
                        [--network-acls]
                        [--network-acls-ips]
                        [--network-acls-vnets]
@@ -27,7 +29,7 @@ directCommands:
                        [--no-wait]
                        [--query-examples]
                        [--retention-days]
-                       [--sku {premium, standard}]
+                       [--sku]
                        [--subscription]
                        [--tags]
   examples:
@@ -45,14 +47,13 @@ directCommands:
     syntax: az keyvault create --location westus2 --name MyKeyVault --resource-group MyResourceGroup
   requiredParameters:
   - isRequired: true
-    name: --name -n
-    summary: Name of the key vault.
-    description: ''
-  - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --administrators
+    summary: '[HSM Only] Administrator role for data plane operations for Managed HSM. It accepts a space separated list of OIDs that will be assigned.'
+    description: ''
   - name: --bypass
     parameterValueGroup: AzureServices, None
     summary: Bypass traffic for space-separated uses.
@@ -71,22 +72,28 @@ directCommands:
     description: ''
   - name: --enable-soft-delete
     parameterValueGroup: false, true
-    summary: Property to specify whether the 'soft delete' functionality is enabled for this key vault. If it's not set to any value(true or false) when creating new key vault, it will be set to true by default. Once set to true, it cannot be reverted to false.
+    summary: "[Vault Only] Property to specify whether the 'soft delete' functionality is enabled for this key vault. If it's not set to any value (true or false) when creating new key vault, it will be set to true by default. Once set to true, it cannot be reverted to false."
     description: ''
   - name: --enabled-for-deployment
     parameterValueGroup: false, true
-    summary: Property to specify whether Azure Virtual Machines are permitted to retrieve certificates stored as secrets from the key vault.
+    summary: '[Vault Only] Property to specify whether Azure Virtual Machines are permitted to retrieve certificates stored as secrets from the key vault.'
     description: ''
   - name: --enabled-for-disk-encryption
     parameterValueGroup: false, true
-    summary: Property to specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys.
+    summary: '[Vault Only] Property to specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys.'
     description: ''
   - name: --enabled-for-template-deployment
     parameterValueGroup: false, true
-    summary: Property to specify whether Azure Resource Manager is permitted to retrieve secrets from the key vault.
+    summary: '[Vault Only] Property to specify whether Azure Resource Manager is permitted to retrieve secrets from the key vault.'
+    description: ''
+  - name: --hsm-name
+    summary: Name of the HSM. (--hsm-name and --name/-n are mutually exclusive, please specify just one of them).
     description: ''
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
+    description: ''
+  - name: --name -n
+    summary: Name of the Vault.
     description: ''
   - name: --network-acls
     summary: 'Network ACLs. It accepts a JSON filename or a JSON string. JSON format: `{"ip":[<ip1>, <ip2>...],"vnet":[<vnet_name_1>/<subnet_name_1>,<subnet_id2>...]}`.'
@@ -99,7 +106,7 @@ directCommands:
     description: ''
   - name: --no-self-perms
     parameterValueGroup: false, true
-    summary: Don't add permissions for the current user/service principal in the new vault.
+    summary: "[Vault Only] Don't add permissions for the current user/service principal in the new vault."
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -112,9 +119,7 @@ directCommands:
     summary: Soft delete data retention days. It accepts >=7 and <=90.
     description: ''
   - name: --sku
-    defaultValue: standard
-    parameterValueGroup: premium, standard
-    summary: Required. SKU details.
+    summary: 'Required. SKU details. Allowed values for Vault: premium, standard. Default: standard. Allowed values for HSM: Standard_B1, Custom_B32. Default: Standard_B1.'
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -125,22 +130,28 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_delete
   name: az keyvault delete
-  summary: Delete a key vault.
+  summary: Delete a Vault or HSM.
   description: ''
   syntax: >-
-    az keyvault delete --name
+    az keyvault delete [--hsm-name]
+                       [--name]
+                       [--no-wait]
                        [--query-examples]
                        [--resource-group]
                        [--subscription]
   examples:
   - summary: Delete a key vault. (autogenerated)
     syntax: az keyvault delete --name MyKeyVault --resource-group MyResourceGroup
-  requiredParameters:
-  - isRequired: true
-    name: --name -n
-    summary: Name of the key vault.
-    description: ''
   optionalParameters:
+  - name: --hsm-name
+    summary: Name of the HSM. (--hsm-name and --name/-n are mutually exclusive, please specify just one of them).
+    description: ''
+  - name: --name -n
+    summary: Name of the Vault.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
   - name: --query-examples
     summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
@@ -167,7 +178,7 @@ directCommands:
   requiredParameters:
   - isRequired: true
     name: --name -n
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --no-wait
@@ -194,11 +205,12 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_list
   name: az keyvault list
-  summary: List key vaults.
+  summary: List Vaults and/or HSMs.
   description: ''
   syntax: >-
     az keyvault list [--query-examples]
                      [--resource-group]
+                     [--resource-type]
                      [--subscription]
   optionalParameters:
   - name: --query-examples
@@ -207,20 +219,27 @@ directCommands:
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
+  - name: --resource-type
+    summary: When --resource-type is not present the command will list all Vaults and HSMs. Possible values for --resource-type are vault and hsm.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_list_deleted
   name: az keyvault list-deleted
-  summary: Gets information about the deleted vaults in a subscription.
-  description: 'keyword callable clsA custom type or function that will be passed the direct response :return: An iterator like instance of either DeletedVaultListResult or the result of cls(response) :rtype: ~azure.core.paging.ItemPaged[~azure.mgmt.keyvault.v2019_09_01.models.DeletedVaultListResult] :raises: ~azure.core.exceptions.HttpResponseError.'
+  summary: Get information about the deleted Vaults or HSMs in a subscription.
+  description: ''
   syntax: >-
     az keyvault list-deleted [--query-examples]
+                             [--resource-type]
                              [--subscription]
   optionalParameters:
   - name: --query-examples
     summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
+  - name: --resource-type
+    summary: When --resource-type is not present the command will list all deleted Vaults and HSMs. Possible values for --resource-type are vault and hsm.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -228,22 +247,24 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_purge
   name: az keyvault purge
-  summary: Permanently deletes the specified vault.
-  description: Aka Purges the deleted Azure key vault.
+  summary: Permanently delete the specified Vault or HSM. Aka Purges the deleted Vault or HSM.
+  description: ''
   syntax: >-
-    az keyvault purge --name
+    az keyvault purge [--hsm-name]
                       [--location]
+                      [--name]
                       [--no-wait]
                       [--query-examples]
                       [--subscription]
-  requiredParameters:
-  - isRequired: true
-    name: --name -n
-    summary: Name of the deleted vault.
-    description: ''
   optionalParameters:
+  - name: --hsm-name
+    summary: Name of the deleted HSM. (--hsm-name and --name/-n are mutually exclusive, please specify just one of them).
+    description: ''
   - name: --location -l
-    summary: Location of the deleted vault.
+    summary: Location of the deleted Vault or HSM.
+    description: ''
+  - name: --name -n
+    summary: Name of the deleted Vault.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -257,11 +278,12 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_recover
   name: az keyvault recover
-  summary: Recover a key vault.
-  description: Recovers a previously deleted key vault for which soft delete was enabled.
+  summary: Recover a Vault or HSM.
+  description: Recover a previously deleted Vault or HSM for which soft delete was enabled.
   syntax: >-
-    az keyvault recover --name
+    az keyvault recover [--hsm-name]
                         [--location]
+                        [--name]
                         [--no-wait]
                         [--query-examples]
                         [--resource-group]
@@ -269,14 +291,15 @@ directCommands:
   examples:
   - summary: Recover a key vault. (autogenerated)
     syntax: az keyvault recover --location westus2 --name MyKeyVault --resource-group MyResourceGroup
-  requiredParameters:
-  - isRequired: true
-    name: --name -n
-    summary: Name of the deleted vault.
-    description: ''
   optionalParameters:
+  - name: --hsm-name
+    summary: Name of the deleted HSM. (--hsm-name and --name/-n are mutually exclusive, please specify just one of them).
+    description: ''
   - name: --location -l
-    summary: Location of the deleted vault.
+    summary: Location of the deleted Vault or HSM.
+    description: ''
+  - name: --name -n
+    summary: Name of the deleted Vault.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -285,7 +308,7 @@ directCommands:
     summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
-    summary: Resource group of the deleted vault.
+    summary: Resource group of the deleted Vault or HSM.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -311,7 +334,7 @@ directCommands:
   requiredParameters:
   - isRequired: true
     name: --name -n
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --certificate-permissions
@@ -354,22 +377,24 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_show
   name: az keyvault show
-  summary: Show details of a key vault.
+  summary: Show details of a Vault or HSM.
   description: ''
   syntax: >-
-    az keyvault show --name
+    az keyvault show [--hsm-name]
+                     [--name]
                      [--query-examples]
                      [--resource-group]
                      [--subscription]
   examples:
   - summary: Show details of a key vault. (autogenerated)
     syntax: az keyvault show --name MyKeyVault
-  requiredParameters:
-  - isRequired: true
-    name: --name -n
-    summary: Name of the key vault.
-    description: ''
   optionalParameters:
+  - name: --hsm-name
+    summary: Name of the HSM. (--hsm-name and --name/-n are mutually exclusive, please specify just one of them).
+    description: ''
+  - name: --name -n
+    summary: Name of the Vault.
+    description: ''
   - name: --query-examples
     summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
@@ -382,7 +407,7 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_update
   name: az keyvault update
-  summary: Update the properties of a key vault.
+  summary: Update the properties of a Vault.
   description: ''
   syntax: >-
     az keyvault update --name
@@ -404,12 +429,12 @@ directCommands:
                        [--set]
                        [--subscription]
   examples:
-  - summary: Update the properties of a key vault. (autogenerated)
+  - summary: Update the properties of a Vault. (autogenerated)
     syntax: az keyvault update --enabled-for-disk-encryption true --name MyKeyVault --resource-group MyResourceGroup
   requiredParameters:
   - isRequired: true
     name: --name -n
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --add
@@ -433,19 +458,19 @@ directCommands:
     description: ''
   - name: --enable-soft-delete
     parameterValueGroup: false, true
-    summary: Property to specify whether the 'soft delete' functionality is enabled for this key vault. If it's not set to any value(true or false) when creating new key vault, it will be set to true by default. Once set to true, it cannot be reverted to false.
+    summary: "[Vault Only] Property to specify whether the 'soft delete' functionality is enabled for this key vault. If it's not set to any value (true or false) when creating new key vault, it will be set to true by default. Once set to true, it cannot be reverted to false."
     description: ''
   - name: --enabled-for-deployment
     parameterValueGroup: false, true
-    summary: Property to specify whether Azure Virtual Machines are permitted to retrieve certificates stored as secrets from the key vault.
+    summary: '[Vault Only] Property to specify whether Azure Virtual Machines are permitted to retrieve certificates stored as secrets from the key vault.'
     description: ''
   - name: --enabled-for-disk-encryption
     parameterValueGroup: false, true
-    summary: Property to specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys.
+    summary: '[Vault Only] Property to specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys.'
     description: ''
   - name: --enabled-for-template-deployment
     parameterValueGroup: false, true
-    summary: Property to specify whether Azure Resource Manager is permitted to retrieve secrets from the key vault.
+    summary: '[Vault Only] Property to specify whether Azure Resource Manager is permitted to retrieve secrets from the key vault.'
     description: ''
   - name: --force-string
     summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
@@ -472,9 +497,76 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+- uid: az_keyvault_update_hsm
+  name: az keyvault update-hsm
+  summary: Update the properties of a HSM.
+  description: ''
+  syntax: >-
+    az keyvault update-hsm --hsm-name
+                           [--add]
+                           [--bypass {AzureServices, None}]
+                           [--default-action {Allow, Deny}]
+                           [--enable-purge-protection {false, true}]
+                           [--force-string]
+                           [--no-wait]
+                           [--query-examples]
+                           [--remove]
+                           [--resource-group]
+                           [--secondary-locations]
+                           [--set]
+                           [--subscription]
+  examples:
+  - summary: Update the properties of a HSM.
+    syntax: az keyvault update-hsm --enable-purge-protection true --hsm-name MyHSM --resource-group MyResourceGroup
+  requiredParameters:
+  - isRequired: true
+    name: --hsm-name
+    summary: Name of the HSM.
+    description: ''
+  optionalParameters:
+  - name: --add
+    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --bypass
+    parameterValueGroup: AzureServices, None
+    summary: Bypass traffic for space-separated uses.
+    description: ''
+  - name: --default-action
+    parameterValueGroup: Allow, Deny
+    summary: Default action to apply when no rule matches.
+    description: ''
+  - name: --enable-purge-protection -e
+    parameterValueGroup: false, true
+    summary: Property specifying whether protection against purge is enabled for this managed HSM pool. Setting this property to true activates protection against purge for this managed HSM pool and its content - only the Managed HSM service may initiate a hard, irrecoverable deletion. The setting is effective only if soft delete is also enabled. Enabling this functionality is irreversible.
+    description: ''
+  - name: --force-string
+    summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
+    description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
+  - name: --remove
+    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
+    description: ''
+  - name: --resource-group -g
+    summary: Proceed only if Key Vault belongs to the specified resource group.
+    description: ''
+  - name: --secondary-locations
+    summary: --secondary-locations extends/contracts an HSM pool to listed regions. The primary location where the resource was originally created CANNOT be removed.
+    description: ''
+  - name: --set
+    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_wait
   name: az keyvault wait
-  summary: Place the CLI in a waiting state until a condition of the vault is met.
+  summary: Place the CLI in a waiting state until a condition of the Vault is met.
   description: ''
   syntax: >-
     az keyvault wait --name
@@ -494,7 +586,7 @@ directCommands:
   requiredParameters:
   - isRequired: true
     name: --name -n
-    summary: Name of the key vault.
+    summary: Name of the Vault.
     description: ''
   optionalParameters:
   - name: --created
@@ -530,7 +622,67 @@ directCommands:
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+- uid: az_keyvault_wait_hsm
+  name: az keyvault wait-hsm
+  summary: Place the CLI in a waiting state until a condition of the HSM is met.
+  description: ''
+  syntax: >-
+    az keyvault wait-hsm --hsm-name
+                         [--created]
+                         [--custom]
+                         [--deleted]
+                         [--exists]
+                         [--interval]
+                         [--query-examples]
+                         [--resource-group]
+                         [--subscription]
+                         [--timeout]
+                         [--updated]
+  examples:
+  - summary: Pause CLI until the HSM is created.
+    syntax: az keyvault wait-hsm --hsm-name MyHSM --created
+  requiredParameters:
+  - isRequired: true
+    name: --hsm-name
+    summary: Name of the HSM.
+    description: ''
+  optionalParameters:
+  - name: --created
+    summary: Wait until created with 'provisioningState' at 'Succeeded'.
+    description: ''
+  - name: --custom
+    summary: Wait until the condition satisfies a custom JMESPath query. E.g. provisioningState!='InProgress', instanceView.statuses[?code=='PowerState/running'].
+    description: ''
+  - name: --deleted
+    summary: Wait until deleted.
+    description: ''
+  - name: --exists
+    summary: Wait until the resource exists.
+    description: ''
+  - name: --interval
+    defaultValue: "30"
+    summary: Polling interval in seconds.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    description: ''
+  - name: --resource-group -g
+    summary: Proceed only if HSM belongs to the specified resource group.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --timeout
+    defaultValue: "3600"
+    summary: Maximum wait in seconds.
+    description: ''
+  - name: --updated
+    summary: Wait until updated with provisioningState at 'Succeeded'.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 commands:
+- az_keyvault_backup
+- az_keyvault_backup_start
 - az_keyvault_certificate
 - az_keyvault_certificate_backup
 - az_keyvault_certificate_contact
@@ -575,6 +727,7 @@ commands:
 - az_keyvault_key_delete
 - az_keyvault_key_download
 - az_keyvault_key_encrypt
+- az_keyvault_key_get_policy_template
 - az_keyvault_key_import
 - az_keyvault_key_list
 - az_keyvault_key_list_deleted
@@ -602,6 +755,15 @@ commands:
 - az_keyvault_private_link_resource_list
 - az_keyvault_purge
 - az_keyvault_recover
+- az_keyvault_restore
+- az_keyvault_restore_start
+- az_keyvault_role
+- az_keyvault_role_assignment
+- az_keyvault_role_assignment_create
+- az_keyvault_role_assignment_delete
+- az_keyvault_role_assignment_list
+- az_keyvault_role_definition
+- az_keyvault_role_definition_list
 - az_keyvault_secret
 - az_keyvault_secret_backup
 - az_keyvault_secret_delete
@@ -616,6 +778,11 @@ commands:
 - az_keyvault_secret_set_attributes
 - az_keyvault_secret_show
 - az_keyvault_secret_show_deleted
+- az_keyvault_security_domain
+- az_keyvault_security_domain_download
+- az_keyvault_security_domain_init_recovery
+- az_keyvault_security_domain_upload
+- az_keyvault_security_domain_wait
 - az_keyvault_set_policy
 - az_keyvault_show
 - az_keyvault_storage
@@ -641,7 +808,9 @@ commands:
 - az_keyvault_storage_show_deleted
 - az_keyvault_storage_update
 - az_keyvault_update
+- az_keyvault_update_hsm
 - az_keyvault_wait
+- az_keyvault_wait_hsm
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -659,5 +828,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 08/21/2020
+  ms.date: 09/15/2020
   description: Manage KeyVault keys, secrets, and certificates.
