@@ -43,7 +43,7 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vrouter_peering_delete
   name: az network vrouter peering delete
-  summary: Deletes the specified peering from a Virtual Router.
+  summary: Delete a virtual router peering.
   description: ''
   syntax: >-
     az network vrouter peering delete --name
@@ -70,7 +70,7 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vrouter_peering_list
   name: az network vrouter peering list
-  summary: Lists all Virtual Router Peerings in a Virtual Router resource.
+  summary: List all virtual router peerings under a resource group.
   description: ''
   syntax: >-
     az network vrouter peering list --resource-group
@@ -96,7 +96,7 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vrouter_peering_show
   name: az network vrouter peering show
-  summary: Gets the specified Virtual Router Peering.
+  summary: Show a virtual router peering.
   description: ''
   syntax: >-
     az network vrouter peering show --name
@@ -199,5 +199,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 09/14/2020
+  ms.date: 09/15/2020
   description: Manage the virtual router peering.
