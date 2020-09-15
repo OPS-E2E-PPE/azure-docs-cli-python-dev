@@ -16,7 +16,6 @@ directCommands:
                                               --validity-period
                                               --vault-name
                                               [--disabled {false, true}]
-                                              [--query-examples]
                                               [--subscription]
                                               [--tags]
   examples:
@@ -71,9 +70,6 @@ directCommands:
     parameterValueGroup: false, true
     summary: Add the storage account in a disabled state.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -89,7 +85,6 @@ directCommands:
     az keyvault storage sas-definition delete [--account-name]
                                               [--id]
                                               [--name]
-                                              [--query-examples]
                                               [--subscription]
                                               [--vault-name]
   optionalParameters:
@@ -101,9 +96,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name to identify the SAS definition in the vault. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -136,7 +128,7 @@ directCommands:
     summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -150,7 +142,6 @@ directCommands:
     az keyvault storage sas-definition list-deleted --account-name
                                                     --vault-name
                                                     [--maxresults]
-                                                    [--query-examples]
                                                     [--subscription]
   requiredParameters:
   - isRequired: true
@@ -165,9 +156,6 @@ directCommands:
   - name: --maxresults
     summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -180,7 +168,6 @@ directCommands:
     az keyvault storage sas-definition recover --account-name
                                                --name
                                                --vault-name
-                                               [--query-examples]
                                                [--subscription]
   requiredParameters:
   - isRequired: true
@@ -196,9 +183,6 @@ directCommands:
     summary: Name of the Vault.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -225,7 +209,7 @@ directCommands:
     summary: Name to identify the SAS definition in the vault. Required if --id is not specified.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -242,7 +226,6 @@ directCommands:
     az keyvault storage sas-definition show-deleted --account-name
                                                     --name
                                                     --vault-name
-                                                    [--query-examples]
                                                     [--subscription]
   requiredParameters:
   - isRequired: true
@@ -258,9 +241,6 @@ directCommands:
     summary: Name of the Vault.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -274,7 +254,6 @@ directCommands:
                                               [--disabled {false, true}]
                                               [--id]
                                               [--name]
-                                              [--query-examples]
                                               [--sas-type {account, service}]
                                               [--subscription]
                                               [--tags]
@@ -294,9 +273,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name to identify the SAS definition in the vault. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-type
     parameterValueGroup: account, service

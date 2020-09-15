@@ -15,7 +15,6 @@ directCommands:
                             [--include-sub-areas {false, true}]
                             [--org]
                             [--project]
-                            [--query-examples]
                             [--set-as-default]
                             [--subscription]
   examples:
@@ -44,9 +43,6 @@ directCommands:
     description: ''
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --set-as-default
     summary: 'Set this area path as default area for this team. Default: False.'
@@ -82,7 +78,7 @@ directCommands:
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -97,7 +93,6 @@ directCommands:
                                [--detect {false, true}]
                                [--org]
                                [--project]
-                               [--query-examples]
                                [--subscription]
   requiredParameters:
   - isRequired: true
@@ -119,9 +114,6 @@ directCommands:
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -136,7 +128,6 @@ directCommands:
                                [--include-sub-areas {false, true}]
                                [--org]
                                [--project]
-                               [--query-examples]
                                [--set-as-default]
                                [--subscription]
   requiredParameters:
@@ -162,9 +153,6 @@ directCommands:
     description: ''
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --set-as-default
     summary: 'Set as default team area path. Default: False.'

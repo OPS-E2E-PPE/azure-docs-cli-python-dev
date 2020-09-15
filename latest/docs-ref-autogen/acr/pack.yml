@@ -20,7 +20,6 @@ directCommands:
                       [--pack-image-tag]
                       [--platform]
                       [--pull]
-                      [--query-examples]
                       [--resource-group]
                       [--subscription]
                       [--timeout]
@@ -69,9 +68,6 @@ directCommands:
     description: ''
   - name: --pull
     summary: Pull the latest builder and run images before use.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

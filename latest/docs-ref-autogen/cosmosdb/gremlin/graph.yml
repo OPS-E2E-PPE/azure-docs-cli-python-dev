@@ -17,7 +17,6 @@ directCommands:
                                      [--conflict-resolution-policy]
                                      [--idx]
                                      [--max-throughput]
-                                     [--query-examples]
                                      [--subscription]
                                      [--throughput]
                                      [--ttl]
@@ -70,9 +69,6 @@ directCommands:
   - name: --max-throughput
     summary: The maximum throughput resource can scale to (RU/s). Provided when the resource is autoscale enabled. The minimum value can be 4000 (RU/s).
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -92,7 +88,6 @@ directCommands:
                                      --database-name
                                      --name
                                      --resource-group
-                                     [--query-examples]
                                      [--subscription]
                                      [--yes]
   requiredParameters:
@@ -113,9 +108,6 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -132,7 +124,6 @@ directCommands:
                                      --database-name
                                      --name
                                      --resource-group
-                                     [--query-examples]
                                      [--subscription]
   requiredParameters:
   - isRequired: true
@@ -152,9 +143,6 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -184,7 +172,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -220,7 +208,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -236,7 +224,6 @@ directCommands:
                                      --name
                                      --resource-group
                                      [--idx]
-                                     [--query-examples]
                                      [--subscription]
                                      [--ttl]
   requiredParameters:
@@ -259,9 +246,6 @@ directCommands:
   optionalParameters:
   - name: --idx
     summary: 'Indexing Policy, you can enter it as a string or as a file, e.g., --idx @policy-file.json or --idx "{"indexingMode": "consistent", "automatic": true, "includedPaths": [{"path": "/\*"}], "excludedPaths": [{ "path": "/headquarters/employees/?"}, { "path": "/\"_etag\"/?"}]}".'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

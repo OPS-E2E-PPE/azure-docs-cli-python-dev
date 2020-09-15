@@ -16,7 +16,6 @@ directCommands:
                          [--connection-string]
                          [--metadata]
                          [--public-access {file, filesystem, off}]
-                         [--query-examples]
                          [--sas-token]
                          [--subscription]
                          [--timeout]
@@ -51,9 +50,6 @@ directCommands:
     parameterValueGroup: file, filesystem, off
     summary: Specify whether data in the file system may be accessed publicly and the level of access.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -74,7 +70,6 @@ directCommands:
                          [--account-name]
                          [--auth-mode {key, login}]
                          [--connection-string]
-                         [--query-examples]
                          [--sas-token]
                          [--subscription]
                          [--timeout]
@@ -101,9 +96,6 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -127,7 +119,6 @@ directCommands:
                          [--account-name]
                          [--auth-mode {key, login}]
                          [--connection-string]
-                         [--query-examples]
                          [--sas-token]
                          [--subscription]
                          [--timeout]
@@ -152,9 +143,6 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -205,7 +193,7 @@ directCommands:
     summary: Filter the results to return only file systems whose names begin with the specified prefix.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -251,7 +239,7 @@ directCommands:
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

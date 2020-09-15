@@ -20,7 +20,6 @@ directCommands:
                                              --sa-lifetime
                                              --sa-max-size
                                              [--no-wait]
-                                             [--query-examples]
                                              [--subscription]
   examples:
   - summary: Add specified IPsec policies to a gateway instead of relying on defaults.
@@ -79,9 +78,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -94,7 +90,6 @@ directCommands:
     az network vnet-gateway ipsec-policy clear --gateway-name
                                                --resource-group
                                                [--no-wait]
-                                               [--query-examples]
                                                [--subscription]
   examples:
   - summary: Remove all previously specified IPsec policies from a gateway.
@@ -111,9 +106,6 @@ directCommands:
   optionalParameters:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -142,7 +134,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

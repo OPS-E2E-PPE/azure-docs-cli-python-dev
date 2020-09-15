@@ -17,7 +17,6 @@ directCommands:
                                       [--container-url]
                                       [--end-time]
                                       [--json-file]
-                                      [--query-examples]
                                       [--start-time]
                                       [--subscription]
   requiredParameters:
@@ -47,9 +46,6 @@ directCommands:
     description: ''
   - name: --json-file
     summary: A file containing the upload batch service logs configuration specification in JSON (formatted to match the respective REST API body). If this parameter is specified, all 'Upload Batch Service Logs Configuration Arguments' are ignored.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --start-time
     summary: Required. The start of the time range from which to upload Batch Service log file(s). Any log file containing a log message in the time range will be uploaded. This means that the operation might retrieve more logs than have been requested since the entire log file is always uploaded, but the operation should not retrieve fewer logs than have been requested. Expected format is an ISO-8601 timestamp.

@@ -19,7 +19,6 @@ directCommands:
                                   [--generate-ssh-keys]
                                   [--no-wait]
                                   [--password]
-                                  [--query-examples]
                                   [--ssh-key]
                                   [--storage-sku {Premium_LRS, Standard_LRS}]
                                   [--subnet]
@@ -71,9 +70,6 @@ directCommands:
   - name: --password -p
     summary: Optional password for the admin user created on the NFS node.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --ssh-key -k
     summary: Optional SSH public key value or path. If ommited and no password specified, default SSH key (~/.ssh/id_rsa.pub) will be used.
     description: ''
@@ -102,7 +98,6 @@ directCommands:
     az batchai file-server delete [--ids]
                                   [--name]
                                   [--no-wait]
-                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
                                   [--workspace]
@@ -123,9 +118,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -163,7 +155,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -193,7 +185,7 @@ directCommands:
     summary: Name of file server.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

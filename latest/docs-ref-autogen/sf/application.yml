@@ -18,7 +18,6 @@ directCommands:
                              [--max-nodes]
                              [--min-nodes]
                              [--package-url]
-                             [--query-examples]
                              [--subscription]
   examples:
   - summary: Create application "testApp" with parameters. The application type "TestAppType" version "v1" should already exist in the cluster, and the application parameters should be defined in the application manifest.
@@ -64,9 +63,6 @@ directCommands:
   - name: --package-url
     summary: Specify the url of the application package sfpkg file.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -78,7 +74,6 @@ directCommands:
     az sf application delete --application-name
                              --cluster-name
                              --resource-group
-                             [--query-examples]
                              [--subscription]
   examples:
   - summary: Delete application.
@@ -97,9 +92,6 @@ directCommands:
     summary: Specify the resource group name. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -126,7 +118,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -159,7 +151,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -186,7 +178,6 @@ directCommands:
                              [--max-porcent-unhealthy-replicas]
                              [--max-porcent-unhealthy-services]
                              [--min-nodes]
-                             [--query-examples]
                              [--rep-check-timeout]
                              [--service-type-health-policy-map]
                              [--subscription]
@@ -258,9 +249,6 @@ directCommands:
     description: ''
   - name: --min-nodes --minimum-nodes
     summary: Specify the minimum number of nodes where Service Fabric will reserve capacity for this application, this does not mean that the application is guaranteed to have replicas on all those nodes. The value of this parameter must be a non-negative integer. Default value for this is zero, which means no capacity is reserved for the application.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --rep-check-timeout --replica-check-timeout --upgrade-replica-set-check-timeout
     summary: Specify the maximum time, in seconds, that Service Fabric waits for a service to reconfigure into a safe state, if not already in a safe state, before Service Fabric proceeds with the upgrade.

@@ -18,7 +18,6 @@ directCommands:
                     [--location]
                     [--os-disk-caching {None, ReadOnly, ReadWrite}]
                     [--os-type {Linux, Windows}]
-                    [--query-examples]
                     [--storage-sku {Premium_LRS, StandardSSD_LRS, Standard_LRS, UltraSSD_LRS}]
                     [--subscription]
                     [--tags]
@@ -67,9 +66,6 @@ directCommands:
     parameterValueGroup: Linux, Windows
     summary: ''
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --storage-sku
     parameterValueGroup: Premium_LRS, StandardSSD_LRS, Standard_LRS, UltraSSD_LRS
     summary: The SKU of the storage account with which to create the VM image. Unused if source VM is specified.
@@ -91,7 +87,6 @@ directCommands:
   syntax: >-
     az image delete [--ids]
                     [--name]
-                    [--query-examples]
                     [--resource-group]
                     [--subscription]
   optionalParameters:
@@ -100,9 +95,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the image.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -120,7 +112,7 @@ directCommands:
                   [--subscription]
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -150,7 +142,7 @@ directCommands:
     summary: The name of the image.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -167,7 +159,6 @@ directCommands:
                     [--force-string]
                     [--ids]
                     [--name]
-                    [--query-examples]
                     [--remove]
                     [--resource-group]
                     [--set]
@@ -190,9 +181,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the image.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

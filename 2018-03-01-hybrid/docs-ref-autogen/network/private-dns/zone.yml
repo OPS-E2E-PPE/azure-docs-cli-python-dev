@@ -12,7 +12,6 @@ directCommands:
     az network private-dns zone create --name
                                        --resource-group
                                        [--no-wait]
-                                       [--query-examples]
                                        [--subscription]
                                        [--tags]
   examples:
@@ -31,9 +30,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -50,7 +46,6 @@ directCommands:
                                        --resource-group
                                        [--if-match]
                                        [--no-wait]
-                                       [--query-examples]
                                        [--subscription]
                                        [--yes]
   examples:
@@ -72,9 +67,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -90,7 +82,6 @@ directCommands:
     az network private-dns zone export --name
                                        --resource-group
                                        [--file-name]
-                                       [--query-examples]
                                        [--subscription]
   examples:
   - summary: Export a Private DNS zone as a DNS zone file.
@@ -108,9 +99,6 @@ directCommands:
   - name: --file-name -f
     summary: Path to the Private DNS zone file to save.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -123,7 +111,6 @@ directCommands:
     az network private-dns zone import --file-name
                                        --name
                                        --resource-group
-                                       [--query-examples]
                                        [--subscription]
   examples:
   - summary: Import a local zone file into a Private DNS zone resource.
@@ -142,9 +129,6 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -162,7 +146,7 @@ directCommands:
     syntax: az network private-dns zone list -g MyResourceGroup
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -194,7 +178,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -211,7 +195,6 @@ directCommands:
                                        [--force-string]
                                        [--if-match]
                                        [--no-wait]
-                                       [--query-examples]
                                        [--remove]
                                        [--set]
                                        [--subscription]
@@ -241,9 +224,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -269,7 +249,6 @@ directCommands:
                                      [--deleted]
                                      [--exists]
                                      [--interval]
-                                     [--query-examples]
                                      [--subscription]
                                      [--timeout]
                                      [--updated]
@@ -301,9 +280,6 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

@@ -16,7 +16,6 @@ directCommands:
                                  [--allocation-weight]
                                  [--apply-allocation-policy {false, true}]
                                  [--no-wait]
-                                 [--query-examples]
                                  [--subscription]
   examples:
   - summary: Create a linked IoT hub in an Azure IoT Hub device provisioning service
@@ -51,9 +50,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -67,7 +63,6 @@ directCommands:
                                  --linked-hub
                                  --resource-group
                                  [--no-wait]
-                                 [--query-examples]
                                  [--subscription]
   examples:
   - summary: Delete linked IoT hub 'MyLinkedHub' in an Azure IoT Hub device provisioning service
@@ -88,9 +83,6 @@ directCommands:
   optionalParameters:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -119,7 +111,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -153,7 +145,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -170,7 +162,6 @@ directCommands:
                                  [--allocation-weight]
                                  [--apply-allocation-policy {false, true}]
                                  [--no-wait]
-                                 [--query-examples]
                                  [--subscription]
   examples:
   - summary: Update linked IoT hub 'MyLinkedHub.azure-devices.net' in an Azure IoT Hub device provisioning service
@@ -198,9 +189,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

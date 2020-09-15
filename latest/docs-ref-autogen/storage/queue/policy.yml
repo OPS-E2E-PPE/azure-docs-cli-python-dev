@@ -17,7 +17,6 @@ directCommands:
                                    [--connection-string]
                                    [--expiry]
                                    [--permissions]
-                                   [--query-examples]
                                    [--sas-token]
                                    [--start]
                                    [--subscription]
@@ -50,9 +49,6 @@ directCommands:
   - name: --permissions
     summary: 'Allowed values: (a)dd (p)rocess (r)ead (u)pdate. Can be combined.'
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -74,7 +70,6 @@ directCommands:
                                    [--account-name]
                                    [--auth-mode {key, login}]
                                    [--connection-string]
-                                   [--query-examples]
                                    [--sas-token]
                                    [--subscription]
   requiredParameters:
@@ -99,9 +94,6 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -143,7 +135,7 @@ directCommands:
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -190,7 +182,7 @@ directCommands:
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -212,7 +204,6 @@ directCommands:
                                    [--connection-string]
                                    [--expiry]
                                    [--permissions]
-                                   [--query-examples]
                                    [--sas-token]
                                    [--start]
                                    [--subscription]
@@ -244,9 +235,6 @@ directCommands:
     description: ''
   - name: --permissions
     summary: 'Allowed values: (a)dd (p)rocess (r)ead (u)pdate. Can be combined.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

@@ -13,7 +13,6 @@ directCommands:
                                                            [--id]
                                                            [--ids]
                                                            [--name]
-                                                           [--query-examples]
                                                            [--resource-group]
                                                            [--server-name]
                                                            [--subscription]
@@ -29,9 +28,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the Server. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified server.
@@ -50,7 +46,6 @@ directCommands:
     az postgres server private-endpoint-connection delete [--id]
                                                           [--ids]
                                                           [--name]
-                                                          [--query-examples]
                                                           [--resource-group]
                                                           [--server-name]
                                                           [--subscription]
@@ -63,9 +58,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the Server. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified server.
@@ -85,7 +77,6 @@ directCommands:
                                                           [--id]
                                                           [--ids]
                                                           [--name]
-                                                          [--query-examples]
                                                           [--resource-group]
                                                           [--server-name]
                                                           [--subscription]
@@ -101,9 +92,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the Server. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified server.
@@ -137,7 +125,7 @@ directCommands:
     summary: The name of the private endpoint connection associated with the Server. Required if --id is not specified.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified server.

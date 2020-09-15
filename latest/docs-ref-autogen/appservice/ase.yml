@@ -21,7 +21,6 @@ directCommands:
                              [--ignore-subnet-size-validation {false, true}]
                              [--location]
                              [--no-wait]
-                             [--query-examples]
                              [--subscription]
                              [--virtual-ip-type {External, Internal}]
                              [--vnet-name]
@@ -104,9 +103,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -126,7 +122,6 @@ directCommands:
   syntax: >-
     az appservice ase delete --name
                              [--no-wait]
-                             [--query-examples]
                              [--resource-group]
                              [--subscription]
                              [--yes]
@@ -141,9 +136,6 @@ directCommands:
   optionalParameters:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -170,7 +162,7 @@ directCommands:
     syntax: az appservice ase list --resource-group MyResourceGroup
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -185,7 +177,6 @@ directCommands:
   description: ''
   syntax: >-
     az appservice ase list-addresses --name
-                                     [--query-examples]
                                      [--resource-group]
                                      [--subscription]
   examples:
@@ -197,9 +188,6 @@ directCommands:
     summary: Name of the app service environment.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -213,7 +201,6 @@ directCommands:
   description: ''
   syntax: >-
     az appservice ase list-plans --name
-                                 [--query-examples]
                                  [--resource-group]
                                  [--subscription]
   examples:
@@ -225,9 +212,6 @@ directCommands:
     summary: Name of the app service environment.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -254,7 +238,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -272,7 +256,6 @@ directCommands:
                              [--front-end-scale-factor]
                              [--front-end-sku {I1, I2, I3}]
                              [--no-wait]
-                             [--query-examples]
                              [--resource-group]
                              [--subscription]
   examples:
@@ -295,9 +278,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

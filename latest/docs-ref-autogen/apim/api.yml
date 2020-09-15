@@ -22,7 +22,6 @@ directCommands:
                        [--no-wait]
                        [--open-id-provider-id]
                        [--protocols {http, https}]
-                       [--query-examples]
                        [--service-url]
                        [--subscription]
                        [--subscription-key-header-name]
@@ -80,9 +79,6 @@ directCommands:
     parameterValueGroup: http, https
     summary: Describes on which protocols the operations in this API can be invoked.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --service-url
     summary: Absolute URL of the backend service implementing this API. Cannot be more than 2000 characters long.
     description: ''
@@ -114,7 +110,6 @@ directCommands:
                        [--delete-revisions]
                        [--if-match]
                        [--no-wait]
-                       [--query-examples]
                        [--subscription]
                        [--yes]
   requiredParameters:
@@ -140,9 +135,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -165,7 +157,6 @@ directCommands:
                        [--display-name]
                        [--no-wait]
                        [--protocols {http, https}]
-                       [--query-examples]
                        [--service-url]
                        [--soap-api-type]
                        [--specification-format {OpenApi, OpenApiJson, Swagger, Wadl, Wsdl}]
@@ -213,9 +204,6 @@ directCommands:
   - name: --protocols
     parameterValueGroup: http, https
     summary: Describes on which protocols the operations in this API can be invoked.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --service-url
     summary: Absolute URL of the backend service implementing this API. Cannot be more than 2000 characters long.
@@ -279,7 +267,7 @@ directCommands:
     summary: Filter of APIs by displayName.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --skip
     summary: Number of records to skip.
@@ -316,7 +304,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -339,7 +327,6 @@ directCommands:
                        [--no-wait]
                        [--path]
                        [--protocols {http, https}]
-                       [--query-examples]
                        [--remove]
                        [--service-url]
                        [--set]
@@ -394,9 +381,6 @@ directCommands:
     parameterValueGroup: http, https
     summary: Describes on which protocols the operations in this API can be invoked.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -436,7 +420,6 @@ directCommands:
                      [--deleted]
                      [--exists]
                      [--interval]
-                     [--query-examples]
                      [--subscription]
                      [--timeout]
                      [--updated]
@@ -472,9 +455,6 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

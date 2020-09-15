@@ -37,7 +37,7 @@ directCommands:
     summary: Filter the set of metrics to retrieve by time interval.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -66,7 +66,6 @@ directCommands:
                               [--connection-string]
                               [--hour {false, true}]
                               [--minute {false, true}]
-                              [--query-examples]
                               [--sas-token]
                               [--subscription]
                               [--timeout]
@@ -105,9 +104,6 @@ directCommands:
   - name: --minute
     parameterValueGroup: false, true
     summary: Update the by-minute metrics.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

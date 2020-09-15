@@ -14,7 +14,6 @@ directCommands:
                                                  [--common-name]
                                                  [--is-admin {false, true}]
                                                  [--issuer-thumbprint]
-                                                 [--query-examples]
                                                  [--subscription]
                                                  [--thumbprint]
   examples:
@@ -42,9 +41,6 @@ directCommands:
   - name: --issuer-thumbprint
     summary: Space-separated list of issuer thumbprints.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -59,7 +55,6 @@ directCommands:
     az sf managed-cluster client-certificate delete --cluster-name
                                                     --resource-group
                                                     [--common-name]
-                                                    [--query-examples]
                                                     [--subscription]
                                                     [--thumbprint]
   examples:
@@ -79,9 +74,6 @@ directCommands:
   optionalParameters:
   - name: --common-name
     summary: A single or Space-separated list of client certificate common name(s) to be remove.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

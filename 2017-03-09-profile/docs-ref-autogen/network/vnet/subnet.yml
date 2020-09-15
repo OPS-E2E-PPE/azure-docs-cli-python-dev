@@ -15,7 +15,6 @@ directCommands:
                                   --vnet-name
                                   [--defer]
                                   [--network-security-group]
-                                  [--query-examples]
                                   [--route-table]
                                   [--subscription]
   examples:
@@ -49,9 +48,6 @@ directCommands:
   - name: --network-security-group --nsg
     summary: Name or ID of a network security group (NSG).
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --route-table
     summary: Name or ID of a route table to associate with the subnet.
     description: ''
@@ -66,7 +62,6 @@ directCommands:
   syntax: >-
     az network vnet subnet delete [--ids]
                                   [--name]
-                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
                                   [--vnet-name]
@@ -81,9 +76,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The subnet name.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -118,7 +110,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -150,7 +142,7 @@ directCommands:
     summary: The subnet name.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -173,7 +165,6 @@ directCommands:
                                   [--ids]
                                   [--name]
                                   [--network-security-group]
-                                  [--query-examples]
                                   [--remove]
                                   [--resource-group]
                                   [--route-table]
@@ -205,9 +196,6 @@ directCommands:
     description: ''
   - name: --network-security-group --nsg
     summary: Name or ID of a network security group (NSG). Use empty string ""('""' in PowerShell) to detach it.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

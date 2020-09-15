@@ -13,7 +13,6 @@ directCommands:
                                         --name
                                         --resource-group
                                         [--function-name]
-                                        [--query-examples]
                                         [--slot]
                                         [--subscription]
   examples:
@@ -35,9 +34,6 @@ directCommands:
   optionalParameters:
   - name: --function-name
     summary: Name of the Function.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --slot -s
     summary: The name of the slot. Defaults to the productions slot if not specified.
@@ -75,7 +71,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --slot -s
     summary: The name of the slot. Defaults to the productions slot if not specified.
@@ -94,7 +90,6 @@ directCommands:
                                      --name
                                      --resource-group
                                      [--key-value]
-                                     [--query-examples]
                                      [--slot]
                                      [--subscription]
   examples:
@@ -120,9 +115,6 @@ directCommands:
   optionalParameters:
   - name: --key-value
     summary: Value of the new key. If not provided, a value will be generated.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --slot -s
     summary: The name of the slot. Defaults to the productions slot if not specified.

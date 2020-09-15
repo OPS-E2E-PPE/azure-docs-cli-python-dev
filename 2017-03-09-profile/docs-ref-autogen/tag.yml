@@ -11,7 +11,6 @@ directCommands:
   syntax: >-
     az tag add-value --name
                      --value
-                     [--query-examples]
                      [--subscription]
   examples:
   - summary: Create a tag value.
@@ -26,9 +25,6 @@ directCommands:
     summary: The tag value.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -39,7 +35,6 @@ directCommands:
   description: The az tag create command with an id creates or updates the entire set of tags on a resource, resource group or subscription. This operation allows adding or replacing the entire set of tags on the specified resource, resource group or subscription. The specified entity can have a maximum of 50 tags.
   syntax: >-
     az tag create [--name]
-                  [--query-examples]
                   [--subscription]
                   [--tags]
   examples:
@@ -55,9 +50,6 @@ directCommands:
   - name: --name -n
     summary: The name of the tag to create.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
     description: ''
@@ -71,7 +63,6 @@ directCommands:
   description: The az tag delete command with an id deletes the entire set of tags on a resource, resource group or subscription.
   syntax: >-
     az tag delete [--name]
-                  [--query-examples]
                   [--subscription]
                   [--yes]
   examples:
@@ -86,9 +77,6 @@ directCommands:
   optionalParameters:
   - name: --name -n
     summary: The name of the tag to be deleted.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -113,7 +101,7 @@ directCommands:
     syntax: az tag list --resource-id /subscriptions/{sub-id}/resourcegroups/{rg}/providers/Microsoft.Compute/virtualMachines/{vmName}
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -126,7 +114,6 @@ directCommands:
   syntax: >-
     az tag remove-value --name
                         --value
-                        [--query-examples]
                         [--subscription]
   requiredParameters:
   - isRequired: true
@@ -138,9 +125,6 @@ directCommands:
     summary: The tag value.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

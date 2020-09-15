@@ -13,7 +13,6 @@ directCommands:
                            [--hsm-name]
                            [--id]
                            [--name]
-                           [--query-examples]
                            [--subscription]
                            [--vault-name]
   requiredParameters:
@@ -30,9 +29,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the key. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -56,7 +52,6 @@ directCommands:
                            [--not-before]
                            [--ops {decrypt, encrypt, export, import, sign, unwrapKey, verify, wrapKey}]
                            [--protection {hsm, software}]
-                           [--query-examples]
                            [--size]
                            [--subscription]
                            [--tags]
@@ -97,9 +92,6 @@ directCommands:
     parameterValueGroup: hsm, software
     summary: Specifies the type of key protection.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --size
     summary: 'The key size in bits. For example: 2048, 3072, or 4096 for RSA. 128, 192, or 256 for oct.'
     description: ''
@@ -123,7 +115,6 @@ directCommands:
                             [--data-type {base64, plaintext}]
                             [--id]
                             [--name]
-                            [--query-examples]
                             [--subscription]
                             [--vault-name]
                             [--version]
@@ -149,9 +140,6 @@ directCommands:
   - name: --name -n
     summary: Name of the key. Required if --id is not specified.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -170,7 +158,6 @@ directCommands:
     az keyvault key delete [--hsm-name]
                            [--id]
                            [--name]
-                           [--query-examples]
                            [--subscription]
                            [--vault-name]
   optionalParameters:
@@ -182,9 +169,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the key. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -203,7 +187,6 @@ directCommands:
                              [--hsm-name]
                              [--id]
                              [--name]
-                             [--query-examples]
                              [--subscription]
                              [--vault-name]
                              [--version]
@@ -232,9 +215,6 @@ directCommands:
   - name: --name -n
     summary: Name of the key. Required if --id is not specified.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -255,7 +235,6 @@ directCommands:
                             [--data-type {base64, plaintext}]
                             [--id]
                             [--name]
-                            [--query-examples]
                             [--subscription]
                             [--vault-name]
                             [--version]
@@ -281,9 +260,6 @@ directCommands:
   - name: --name -n
     summary: Name of the key. Required if --id is not specified.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -298,13 +274,8 @@ directCommands:
   name: az keyvault key get-policy-template
   summary: Return policy template as JSON encoded policy definition.
   description: ''
-  syntax: >-
-    az keyvault key get-policy-template [--query-examples]
-                                        [--subscription]
+  syntax: az keyvault key get-policy-template [--subscription]
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -327,7 +298,6 @@ directCommands:
                            [--pem-password]
                            [--pem-string]
                            [--protection {hsm, software}]
-                           [--query-examples]
                            [--subscription]
                            [--tags]
                            [--vault-name]
@@ -374,9 +344,6 @@ directCommands:
     parameterValueGroup: hsm, software
     summary: Specifies the type of key protection.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -409,7 +376,7 @@ directCommands:
     summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -426,7 +393,6 @@ directCommands:
     az keyvault key list-deleted [--hsm-name]
                                  [--id]
                                  [--maxresults]
-                                 [--query-examples]
                                  [--subscription]
                                  [--vault-name]
   optionalParameters:
@@ -438,9 +404,6 @@ directCommands:
     description: ''
   - name: --maxresults
     summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -458,7 +421,6 @@ directCommands:
                                   [--id]
                                   [--maxresults]
                                   [--name]
-                                  [--query-examples]
                                   [--subscription]
                                   [--vault-name]
   optionalParameters:
@@ -473,9 +435,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the key. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -492,7 +451,6 @@ directCommands:
     az keyvault key purge [--hsm-name]
                           [--id]
                           [--name]
-                          [--query-examples]
                           [--subscription]
                           [--vault-name]
   optionalParameters:
@@ -504,9 +462,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the key. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -523,7 +478,6 @@ directCommands:
     az keyvault key recover [--hsm-name]
                             [--id]
                             [--name]
-                            [--query-examples]
                             [--subscription]
                             [--vault-name]
   optionalParameters:
@@ -535,9 +489,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the key. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -554,7 +505,6 @@ directCommands:
     az keyvault key restore --file
                             [--hsm-name]
                             [--id]
-                            [--query-examples]
                             [--subscription]
                             [--vault-name]
   requiredParameters:
@@ -568,9 +518,6 @@ directCommands:
     description: ''
   - name: --id
     summary: Id of the Vault or HSM. If specified all other 'Id' arguments should be omitted.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -591,7 +538,6 @@ directCommands:
                                    [--name]
                                    [--not-before]
                                    [--ops {decrypt, encrypt, export, import, sign, unwrapKey, verify, wrapKey}]
-                                   [--query-examples]
                                    [--subscription]
                                    [--tags]
                                    [--vault-name]
@@ -619,9 +565,6 @@ directCommands:
   - name: --ops
     parameterValueGroup: decrypt, encrypt, export, import, sign, unwrapKey, verify, wrapKey
     summary: Space-separated list of permitted JSON web key operations.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -659,7 +602,7 @@ directCommands:
     summary: Name of the key. Required if --id is not specified.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -679,7 +622,6 @@ directCommands:
     az keyvault key show-deleted [--hsm-name]
                                  [--id]
                                  [--name]
-                                 [--query-examples]
                                  [--subscription]
                                  [--vault-name]
   optionalParameters:
@@ -691,9 +633,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the key. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

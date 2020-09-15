@@ -17,7 +17,6 @@ directCommands:
                                                        [--modified-path]
                                                        [--modified-query-string]
                                                        [--no-wait]
-                                                       [--query-examples]
                                                        [--request-headers]
                                                        [--response-headers]
                                                        [--sequence]
@@ -53,9 +52,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --request-headers
     summary: Space-separated list of HEADER=VALUE pairs.
     description: ''
@@ -80,7 +76,6 @@ directCommands:
                                                        [--ids]
                                                        [--name]
                                                        [--no-wait]
-                                                       [--query-examples]
                                                        [--resource-group]
                                                        [--rule-set-name]
                                                        [--subscription]
@@ -99,9 +94,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -141,7 +133,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -151,13 +143,8 @@ directCommands:
   name: az network application-gateway rewrite-rule list-request-headers
   summary: Lists all available request headers.
   description: ''
-  syntax: >-
-    az network application-gateway rewrite-rule list-request-headers [--query-examples]
-                                                                     [--subscription]
+  syntax: az network application-gateway rewrite-rule list-request-headers [--subscription]
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -166,13 +153,8 @@ directCommands:
   name: az network application-gateway rewrite-rule list-response-headers
   summary: Lists all available response headers.
   description: ''
-  syntax: >-
-    az network application-gateway rewrite-rule list-response-headers [--query-examples]
-                                                                      [--subscription]
+  syntax: az network application-gateway rewrite-rule list-response-headers [--subscription]
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -203,7 +185,7 @@ directCommands:
     summary: Name of the rewrite rule.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -229,7 +211,6 @@ directCommands:
                                                        [--modified-query-string]
                                                        [--name]
                                                        [--no-wait]
-                                                       [--query-examples]
                                                        [--remove]
                                                        [--request-headers]
                                                        [--resource-group]
@@ -269,9 +250,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

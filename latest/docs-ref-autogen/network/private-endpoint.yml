@@ -18,7 +18,6 @@ directCommands:
                                        [--group-ids]
                                        [--location]
                                        [--manual-request {false, true}]
-                                       [--query-examples]
                                        [--request-message]
                                        [--subscription]
                                        [--tags]
@@ -61,9 +60,6 @@ directCommands:
     parameterValueGroup: false, true
     summary: Use manual request to establish the connection. Configure it as 'true' when you don't have access to the subscription of private link service.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --request-message
     summary: A message passed to the owner of the remote resource with this connection request. Restricted to 140 chars.
     description: ''
@@ -84,7 +80,6 @@ directCommands:
   syntax: >-
     az network private-endpoint delete [--ids]
                                        [--name]
-                                       [--query-examples]
                                        [--resource-group]
                                        [--subscription]
   examples:
@@ -96,9 +91,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the private endpoint.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -117,7 +109,7 @@ directCommands:
                                      [--subscription]
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -132,7 +124,6 @@ directCommands:
   description: ''
   syntax: >-
     az network private-endpoint list-types --location
-                                           [--query-examples]
                                            [--subscription]
   requiredParameters:
   - isRequired: true
@@ -140,9 +131,6 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -168,7 +156,7 @@ directCommands:
     summary: Name of the private endpoint.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -186,7 +174,6 @@ directCommands:
                                        [--force-string]
                                        [--ids]
                                        [--name]
-                                       [--query-examples]
                                        [--remove]
                                        [--request-message]
                                        [--resource-group]
@@ -210,9 +197,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the private endpoint.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

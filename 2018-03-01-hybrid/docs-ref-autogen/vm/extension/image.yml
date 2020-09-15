@@ -40,7 +40,7 @@ directCommands:
     summary: Image publisher name.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -56,7 +56,6 @@ directCommands:
   syntax: >-
     az vm extension image list-names --location
                                      --publisher
-                                     [--query-examples]
                                      [--subscription]
   examples:
   - summary: Find Docker extensions by publisher and location.
@@ -77,9 +76,6 @@ directCommands:
     summary: Image publisher name.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -94,7 +90,6 @@ directCommands:
                                         --publisher
                                         [--filter]
                                         [--orderby]
-                                        [--query-examples]
                                         [--subscription]
                                         [--top]
   examples:
@@ -121,9 +116,6 @@ directCommands:
     description: ''
   - name: --orderby
     summary: The $orderby odata query option.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -182,7 +174,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

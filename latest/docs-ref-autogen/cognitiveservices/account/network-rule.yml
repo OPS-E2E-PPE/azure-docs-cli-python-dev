@@ -12,7 +12,6 @@ directCommands:
     az cognitiveservices account network-rule add --name
                                                   --resource-group
                                                   [--ip-address]
-                                                  [--query-examples]
                                                   [--subnet]
                                                   [--subscription]
                                                   [--vnet-name]
@@ -33,9 +32,6 @@ directCommands:
   optionalParameters:
   - name: --ip-address
     summary: IPv4 address or CIDR range.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subnet
     summary: Name or ID of subnet. If name is supplied, `--vnet-name` must be supplied.
@@ -70,7 +66,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -84,7 +80,6 @@ directCommands:
     az cognitiveservices account network-rule remove --name
                                                      --resource-group
                                                      [--ip-address]
-                                                     [--query-examples]
                                                      [--subnet]
                                                      [--subscription]
                                                      [--vnet-name]
@@ -105,9 +100,6 @@ directCommands:
   optionalParameters:
   - name: --ip-address
     summary: IPv4 address or CIDR range.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subnet
     summary: Name or ID of subnet. If name is supplied, `--vnet-name` must be supplied.

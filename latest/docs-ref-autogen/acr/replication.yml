@@ -12,7 +12,6 @@ directCommands:
     az acr replication create --location
                               --registry
                               [--name]
-                              [--query-examples]
                               [--region-endpoint-enabled {false, true}]
                               [--resource-group]
                               [--subscription]
@@ -35,9 +34,6 @@ directCommands:
   - name: --name -n
     summary: The name of the replication. Default to the location name.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --region-endpoint-enabled
     parameterValueGroup: false, true
     summary: 'Allow routing to this replication. Requests will not be routed to a disabled replication. Data syncing will continue regardless of the region endpoint status. Default: true.'
@@ -59,7 +55,6 @@ directCommands:
   syntax: >-
     az acr replication delete --name
                               --registry
-                              [--query-examples]
                               [--resource-group]
                               [--subscription]
   examples:
@@ -75,9 +70,6 @@ directCommands:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -104,7 +96,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -137,7 +129,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -155,7 +147,6 @@ directCommands:
                               --registry
                               [--add]
                               [--force-string]
-                              [--query-examples]
                               [--region-endpoint-enabled {false, true}]
                               [--remove]
                               [--resource-group]
@@ -182,9 +173,6 @@ directCommands:
     description: ''
   - name: --force-string
     summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --region-endpoint-enabled
     parameterValueGroup: false, true

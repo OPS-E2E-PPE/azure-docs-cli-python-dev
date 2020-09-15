@@ -13,7 +13,6 @@ directCommands:
                                     [--account-endpoint]
                                     [--account-key]
                                     [--account-name]
-                                    [--query-examples]
                                     [--subscription]
   requiredParameters:
   - isRequired: true
@@ -29,9 +28,6 @@ directCommands:
     description: ''
   - name: --account-name
     summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -52,7 +48,6 @@ directCommands:
                                    [--if-modified-since]
                                    [--if-none-match]
                                    [--if-unmodified-since]
-                                   [--query-examples]
                                    [--subscription]
   requiredParameters:
   - isRequired: true
@@ -87,9 +82,6 @@ directCommands:
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -104,7 +96,6 @@ directCommands:
                                      [--account-endpoint]
                                      [--account-key]
                                      [--account-name]
-                                     [--query-examples]
                                      [--subscription]
   requiredParameters:
   - isRequired: true
@@ -124,9 +115,6 @@ directCommands:
     description: ''
   - name: --account-name
     summary: 'Batch account name. Alternatively, set by environment variable: AZURE_BATCH_ACCOUNT.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

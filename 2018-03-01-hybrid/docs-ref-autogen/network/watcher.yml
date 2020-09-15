@@ -11,7 +11,6 @@ directCommands:
   syntax: >-
     az network watcher configure --locations
                                  [--enabled {false, true}]
-                                 [--query-examples]
                                  [--resource-group]
                                  [--subscription]
                                  [--tags]
@@ -27,9 +26,6 @@ directCommands:
   - name: --enabled
     parameterValueGroup: false, true
     summary: Enabled status of Network Watcher in the specified regions.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. Required when enabling new regions.
@@ -55,7 +51,7 @@ directCommands:
     syntax: az network watcher list
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -71,7 +67,6 @@ directCommands:
                                      --source-ip
                                      --vm
                                      [--nic]
-                                     [--query-examples]
                                      [--subscription]
   examples:
   - summary: Get the next hop from a VMs assigned IP address to a destination at 10.1.0.4.
@@ -97,9 +92,6 @@ directCommands:
   - name: --nic
     summary: Name or ID of the NIC resource to test. If the VM has multiple NICs and IP forwarding is enabled on any of them, this parameter is required.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -111,7 +103,6 @@ directCommands:
   syntax: >-
     az network watcher show-security-group-view --resource-group
                                                 --vm
-                                                [--query-examples]
                                                 [--subscription]
   examples:
   - summary: Get the network security group information for the specified VM.
@@ -126,9 +117,6 @@ directCommands:
     summary: Name or ID of the VM to target. If the name of the VM is provided, the --resource-group is required.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -139,7 +127,6 @@ directCommands:
   description: For more information about using network topology visit <a href="https://docs.microsoft.com/azure/network-watcher/network-watcher-topology-cli">https://docs.microsoft.com/azure/network-watcher/network-watcher-topology-cli</a>.
   syntax: >-
     az network watcher show-topology [--location]
-                                     [--query-examples]
                                      [--resource-group]
                                      [--subnet]
                                      [--subscription]
@@ -151,9 +138,6 @@ directCommands:
   - name: --location -l
     summary: Location. Defaults to the location of the target resource group.
     description: Topology information is only shown for resources within the target resource group that are within the specified region.
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: The name of the target resource group to perform topology on.
     description: ''
@@ -179,7 +163,6 @@ directCommands:
                                          [--headers]
                                          [--method]
                                          [--protocol {TCP, UDP}]
-                                         [--query-examples]
                                          [--resource-group]
                                          [--source-port]
                                          [--subscription]
@@ -214,9 +197,6 @@ directCommands:
     parameterValueGroup: TCP, UDP
     summary: Protocol to test on.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -241,7 +221,6 @@ directCommands:
                                     --remote
                                     --vm
                                     [--nic]
-                                    [--query-examples]
                                     [--resource-group]
                                     [--subscription]
   examples:
@@ -275,9 +254,6 @@ directCommands:
   optionalParameters:
   - name: --nic
     summary: Name or ID of the NIC resource to test. If the VM has multiple NICs and IP forwarding is enabled on any of them, this parameter is required.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of the resource group the target VM is in.

@@ -12,7 +12,6 @@ directCommands:
     az dls account network-rule create --account-name
                                        --name
                                        --subnet
-                                       [--query-examples]
                                        [--resource-group]
                                        [--subscription]
                                        [--vnet-name]
@@ -30,9 +29,6 @@ directCommands:
     summary: The subnet name or id for the virtual network rule.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -51,7 +47,6 @@ directCommands:
     az dls account network-rule delete --account-name
                                        [--ids]
                                        [--name]
-                                       [--query-examples]
                                        [--resource-group]
                                        [--subscription]
   requiredParameters:
@@ -65,9 +60,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The virtual network rule name.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -92,7 +84,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -125,7 +117,7 @@ directCommands:
     summary: The virtual network rule name.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -145,7 +137,6 @@ directCommands:
                                        [--force-string]
                                        [--ids]
                                        [--name]
-                                       [--query-examples]
                                        [--remove]
                                        [--resource-group]
                                        [--set]
@@ -172,9 +163,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The virtual network rule name.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

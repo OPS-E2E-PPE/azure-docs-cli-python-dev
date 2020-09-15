@@ -19,7 +19,6 @@ directCommands:
                                  --vnet
                                  [--endpoint-type]
                                  [--protocol-types]
-                                 [--query-examples]
                                  [--remote-volume-resource-id]
                                  [--replication-schedule]
                                  [--service-level {Premium, Standard, Ultra}]
@@ -71,9 +70,6 @@ directCommands:
   - name: --protocol-types
     summary: Space seperated list of protocols that the volume can use, available protocols are "NFSv4.1", "NFSv3", "CIFS".
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --remote-volume-resource-id
     summary: The volume id of the remote volume of the replication (the destination for "src" volume endpoints and the source for "dst" endpoints).
     description: ''
@@ -110,7 +106,6 @@ directCommands:
                                  [--ids]
                                  [--name]
                                  [--pool-name]
-                                 [--query-examples]
                                  [--resource-group]
                                  [--subscription]
   examples:
@@ -128,9 +123,6 @@ directCommands:
     description: ''
   - name: --pool-name -p
     summary: The name of the ANF pool.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -167,7 +159,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -183,7 +175,6 @@ directCommands:
                                  --pool-name
                                  --resource-group
                                  --snapshot-id
-                                 [--query-examples]
                                  [--subscription]
   examples:
   - summary: Revert a volume to one of its snapshots.
@@ -210,9 +201,6 @@ directCommands:
     summary: Snapshot_Id of the snapshot. UUID v4 used to identify the Snapshot, example "9760acf5-4638-11e7-9bdb-020073ca3333".
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -246,7 +234,7 @@ directCommands:
     summary: The name of the ANF pool.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -267,7 +255,6 @@ directCommands:
                                  [--name]
                                  [--pool-name]
                                  [--protocol-types]
-                                 [--query-examples]
                                  [--remove]
                                  [--resource-group]
                                  [--service-level {Premium, Standard, Ultra}]
@@ -299,9 +286,6 @@ directCommands:
     description: ''
   - name: --protocol-types
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

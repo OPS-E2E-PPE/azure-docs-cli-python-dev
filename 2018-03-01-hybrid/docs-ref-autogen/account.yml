@@ -8,19 +8,14 @@ directCommands:
   name: az account clear
   summary: Clear all subscriptions from the CLI's local cache.
   description: To clear the current subscription, use 'az logout'.
-  syntax: az account clear [--query-examples]
-  optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
+  syntax: az account clear
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_get_access_token
   name: az account get-access-token
   summary: Get a token for utilities to access Azure.
   description: The token will be valid for at least 5 minutes with the maximum at 60 minutes. If the subscription argument isn't specified, the current account is used.
   syntax: >-
-    az account get-access-token [--query-examples]
-                                [--resource]
+    az account get-access-token [--resource]
                                 [--resource-type {aad-graph, arm, batch, data-lake, media, ms-graph, oss-rdbms}]
                                 [--subscription]
                                 [--tenant]
@@ -34,9 +29,6 @@ directCommands:
   - summary: Get an access token to use with MS Graph API
     syntax: az account get-access-token --resource-type ms-graph
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource
     summary: Azure resource endpoints. Default to Azure Resource Manager.
     description: ''
@@ -64,7 +56,7 @@ directCommands:
     summary: List all subscriptions, rather than just 'Enabled' ones.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --refresh
     summary: Retrieve up-to-date subscriptions from server.
@@ -74,27 +66,17 @@ directCommands:
   name: az account list-locations
   summary: List supported regions for the current subscription.
   description: ''
-  syntax: az account list-locations [--query-examples]
-  optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
+  syntax: az account list-locations
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_set
   name: az account set
   summary: Set a subscription to be the current active subscription.
   description: ''
-  syntax: >-
-    az account set --subscription
-                   [--query-examples]
+  syntax: az account set --subscription
   requiredParameters:
   - isRequired: true
     name: --subscription -s
     summary: Name or ID of subscription.
-    description: ''
-  optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
 - uid: az_account_show
@@ -107,7 +89,7 @@ directCommands:
                     [--subscription]
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sdk-auth
     summary: Output result to a file compatible with Azure SDK auth. Only applicable when authenticating with a Service Principal.

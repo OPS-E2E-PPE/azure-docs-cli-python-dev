@@ -11,7 +11,6 @@ directCommands:
   syntax: >-
     az acr task cancel-run --registry
                            --run-id
-                           [--query-examples]
                            [--resource-group]
                            [--subscription]
   examples:
@@ -27,9 +26,6 @@ directCommands:
     summary: The unique run identifier.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -62,7 +58,6 @@ directCommands:
                        [--no-push {false, true}]
                        [--platform]
                        [--pull-request-trigger-enabled {false, true}]
-                       [--query-examples]
                        [--resource-group]
                        [--schedule]
                        [--secret-arg]
@@ -188,9 +183,6 @@ directCommands:
     parameterValueGroup: false, true
     summary: Indicates whether the source control pull request trigger is enabled. The trigger is disabled by default.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -244,7 +236,6 @@ directCommands:
   syntax: >-
     az acr task delete --name
                        --registry
-                       [--query-examples]
                        [--resource-group]
                        [--subscription]
                        [--yes]
@@ -261,9 +252,6 @@ directCommands:
     summary: The name of the container registry. You can configure the default registry name using `az configure --defaults acr=<registry name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -293,7 +281,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -310,7 +298,6 @@ directCommands:
     az acr task list-runs --registry
                           [--image]
                           [--name]
-                          [--query-examples]
                           [--resource-group]
                           [--run-status {Canceled, Error, Failed, Queued, Running, Started, Succeeded, Timeout}]
                           [--subscription]
@@ -336,9 +323,6 @@ directCommands:
   - name: --name -n
     summary: The name of the task.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -362,7 +346,6 @@ directCommands:
     az acr task logs --registry
                      [--image]
                      [--name]
-                     [--query-examples]
                      [--resource-group]
                      [--run-id]
                      [--subscription]
@@ -387,9 +370,6 @@ directCommands:
   - name: --name -n
     summary: The name of the task.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -413,7 +393,6 @@ directCommands:
                     [--file]
                     [--no-logs]
                     [--no-wait]
-                    [--query-examples]
                     [--resource-group]
                     [--secret-arg]
                     [--set]
@@ -457,9 +436,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the run to complete and return immediately after queuing the run.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -510,7 +486,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -529,7 +505,6 @@ directCommands:
   syntax: >-
     az acr task show-run --registry
                          --run-id
-                         [--query-examples]
                          [--resource-group]
                          [--subscription]
   examples:
@@ -545,9 +520,6 @@ directCommands:
     summary: The unique run identifier.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -577,7 +549,6 @@ directCommands:
                        [--no-push {false, true}]
                        [--platform]
                        [--pull-request-trigger-enabled {false, true}]
-                       [--query-examples]
                        [--resource-group]
                        [--secret-arg]
                        [--set]
@@ -665,9 +636,6 @@ directCommands:
     parameterValueGroup: false, true
     summary: Indicates whether the source control pull request trigger is enabled. The trigger is disabled by default.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -712,7 +680,6 @@ directCommands:
     az acr task update-run --registry
                            --run-id
                            [--no-archive {false, true}]
-                           [--query-examples]
                            [--resource-group]
                            [--subscription]
   examples:
@@ -731,9 +698,6 @@ directCommands:
   - name: --no-archive
     parameterValueGroup: false, true
     summary: Indicates whether the run should be archived.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

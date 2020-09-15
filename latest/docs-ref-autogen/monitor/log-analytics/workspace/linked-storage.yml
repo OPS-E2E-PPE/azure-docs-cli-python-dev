@@ -13,7 +13,6 @@ directCommands:
                                                           --storage-accounts
                                                           --type {AzureWatson, CustomLogs}
                                                           --workspace-name
-                                                          [--query-examples]
                                                           [--subscription]
   examples:
   - summary: Add two linked storage accounts for a log analytics workspace using the name of the storage account.
@@ -39,9 +38,6 @@ directCommands:
     summary: Name of the Log Analytics Workspace.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -54,7 +50,6 @@ directCommands:
     az monitor log-analytics workspace linked-storage create --resource-group
                                                              --type {AzureWatson, CustomLogs}
                                                              --workspace-name
-                                                             [--query-examples]
                                                              [--storage-accounts]
                                                              [--subscription]
   examples:
@@ -77,9 +72,6 @@ directCommands:
     summary: Name of the Log Analytics Workspace.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --storage-accounts
     summary: List of Name or ID of Azure Storage Account.
     description: ''
@@ -95,7 +87,6 @@ directCommands:
     az monitor log-analytics workspace linked-storage delete --resource-group
                                                              --type {AzureWatson, CustomLogs}
                                                              --workspace-name
-                                                             [--query-examples]
                                                              [--subscription]
                                                              [--yes]
   examples:
@@ -116,9 +107,6 @@ directCommands:
     summary: Name of the Log Analytics Workspace.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -149,7 +137,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -164,7 +152,6 @@ directCommands:
                                                              --storage-accounts
                                                              --type {AzureWatson, CustomLogs}
                                                              --workspace-name
-                                                             [--query-examples]
                                                              [--subscription]
   examples:
   - summary: Remove two linked storage accounts for a log analytics workspace using the name of the storage account.
@@ -190,9 +177,6 @@ directCommands:
     summary: Name of the Log Analytics Workspace.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -226,7 +210,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

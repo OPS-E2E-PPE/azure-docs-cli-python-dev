@@ -16,7 +16,6 @@ directCommands:
                              [--account-name]
                              [--connection-string]
                              [--if-match]
-                             [--query-examples]
                              [--sas-token]
                              [--subscription]
                              [--timeout]
@@ -47,9 +46,6 @@ directCommands:
     defaultValue: ''
     summary: The client may specify the ETag for the entity on the request in order to compare to the ETag maintained by the service for the purpose of optimistic concurrency. The delete operation will be performed only if the ETag sent by the client matches the value maintained by the server, indicating that the entity has not been modified since it was retrieved by the client. To force an unconditional delete, set If-Match to the wildcard character (\*).
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -71,7 +67,6 @@ directCommands:
                              [--account-name]
                              [--connection-string]
                              [--if-exists {fail, merge, replace}]
-                             [--query-examples]
                              [--sas-token]
                              [--subscription]
                              [--timeout]
@@ -102,9 +97,6 @@ directCommands:
     parameterValueGroup: fail, merge, replace
     summary: Behavior when an entity already exists for the specified PartitionKey and RowKey.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -126,7 +118,6 @@ directCommands:
                             [--account-name]
                             [--connection-string]
                             [--if-match]
-                            [--query-examples]
                             [--sas-token]
                             [--subscription]
                             [--timeout]
@@ -153,9 +144,6 @@ directCommands:
     defaultValue: ''
     summary: The client may specify the ETag for the entity on the request in order to compare to the ETag maintained by the service for the purpose of optimistic concurrency. The merge operation will be performed only if the ETag sent by the client matches the value maintained by the server, indicating that the entity has not been modified since it was retrieved by the client. To force an unconditional merge, set If-Match to the wildcard character (\*).
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -179,7 +167,6 @@ directCommands:
                             [--filter]
                             [--marker]
                             [--num-results]
-                            [--query-examples]
                             [--sas-token]
                             [--select]
                             [--subscription]
@@ -216,9 +203,6 @@ directCommands:
   - name: --num-results
     summary: The maximum number of entities to return.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -243,7 +227,6 @@ directCommands:
                               [--account-name]
                               [--connection-string]
                               [--if-match]
-                              [--query-examples]
                               [--sas-token]
                               [--subscription]
                               [--timeout]
@@ -269,9 +252,6 @@ directCommands:
   - name: --if-match
     defaultValue: ''
     summary: The client may specify the ETag for the entity on the request in order to compare to the ETag maintained by the service for the purpose of optimistic concurrency. The update operation will be performed only if the ETag sent by the client matches the value maintained by the server, indicating that the entity has not been modified since it was retrieved by the client. To force an unconditional update, set If-Match to the wildcard character (\*).
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -328,7 +308,7 @@ directCommands:
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

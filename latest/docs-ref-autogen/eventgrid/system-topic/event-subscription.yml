@@ -26,7 +26,6 @@ directCommands:
                                                         [--max-delivery-attempts]
                                                         [--max-events-per-batch]
                                                         [--preferred-batch-size-in-kilobytes]
-                                                        [--query-examples]
                                                         [--subject-begins-with]
                                                         [--subject-case-sensitive {false, true}]
                                                         [--subject-ends-with]
@@ -156,9 +155,6 @@ directCommands:
   - name: --preferred-batch-size-in-kilobytes
     summary: Preferred batch size in kilobytes. Must be a number between 1 and 1024.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subject-begins-with
     summary: An optional string to filter events for an event subscription based on a prefix. Wildcard characters are not supported.
     description: ''
@@ -181,7 +177,6 @@ directCommands:
     az eventgrid system-topic event-subscription delete --name
                                                         --resource-group
                                                         --system-topic-name
-                                                        [--query-examples]
                                                         [--subscription]
                                                         [--yes]
   examples:
@@ -203,9 +198,6 @@ directCommands:
     summary: Name of the system topic.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -240,7 +232,7 @@ directCommands:
     summary: 'The OData query used for filtering the list results. Filtering is currently allowed on the Name property only. The supported operations include: CONTAINS, eq (for equal), ne (for not equal), AND, OR and NOT.'
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -281,7 +273,7 @@ directCommands:
     summary: Specify to indicate whether the full endpoint URL should be returned. True if flag present.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -301,7 +293,6 @@ directCommands:
                                                         [--endpoint-type {azurefunction, eventhub, hybridconnection, servicebusqueue, servicebustopic, storagequeue, webhook}]
                                                         [--included-event-types]
                                                         [--labels]
-                                                        [--query-examples]
                                                         [--subject-begins-with]
                                                         [--subject-ends-with]
                                                         [--subscription]
@@ -394,9 +385,6 @@ directCommands:
     description: ''
   - name: --labels
     summary: A space-separated list of labels to associate with this event subscription.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subject-begins-with
     summary: An optional string to filter events for an event subscription based on a prefix. Wildcard characters are not supported.

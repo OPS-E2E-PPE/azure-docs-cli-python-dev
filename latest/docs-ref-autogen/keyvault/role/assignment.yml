@@ -17,7 +17,6 @@ directCommands:
                                        [--hsm-name]
                                        [--id]
                                        [--name]
-                                       [--query-examples]
                                        [--subscription]
   requiredParameters:
   - isRequired: true
@@ -48,9 +47,6 @@ directCommands:
   - name: --name -n
     summary: Name of the role assignment.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -66,7 +62,6 @@ directCommands:
                                        [--id]
                                        [--ids]
                                        [--name]
-                                       [--query-examples]
                                        [--role]
                                        [--scope]
                                        [--subscription]
@@ -88,9 +83,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the role assignment.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --role
     summary: Role name or id.
@@ -129,7 +121,7 @@ directCommands:
     summary: Id of the HSM. If specified all other 'Id' arguments should be omitted.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --role
     summary: Role name or id.

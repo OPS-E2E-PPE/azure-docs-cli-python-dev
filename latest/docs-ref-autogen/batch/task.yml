@@ -20,7 +20,6 @@ directCommands:
                          [--json-file]
                          [--max-task-retry-count]
                          [--max-wall-clock-time]
-                         [--query-examples]
                          [--resource-files]
                          [--retention-time]
                          [--subscription]
@@ -61,9 +60,6 @@ directCommands:
   - name: --max-wall-clock-time
     summary: The maximum elapsed time that the Task may run, measured from the time the Task starts. If the Task does not complete within the time limit, the Batch service terminates it. If this is not specified, there is no time limit on how long the Task may run.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-files
     summary: A list of files that the Batch service will download to the compute node before running the command line. Space-separated resource references in filename=httpurl format, with httpurl being any HTTP url with public access or a SAS url with read access.
     description: ''
@@ -91,7 +87,6 @@ directCommands:
                          [--if-modified-since]
                          [--if-none-match]
                          [--if-unmodified-since]
-                         [--query-examples]
                          [--subscription]
                          [--yes]
   requiredParameters:
@@ -124,9 +119,6 @@ directCommands:
     description: ''
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -171,7 +163,7 @@ directCommands:
     summary: An OData $filter clause. For more information on constructing this filter, see <a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-tasks">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-tasks</a>.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --select
     summary: An OData $select clause.
@@ -194,7 +186,6 @@ directCommands:
                              [--if-modified-since]
                              [--if-none-match]
                              [--if-unmodified-since]
-                             [--query-examples]
                              [--subscription]
   requiredParameters:
   - isRequired: true
@@ -227,9 +218,6 @@ directCommands:
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -251,7 +239,6 @@ directCommands:
                         [--json-file]
                         [--max-task-retry-count]
                         [--max-wall-clock-time]
-                        [--query-examples]
                         [--retention-time]
                         [--subscription]
   requiredParameters:
@@ -293,9 +280,6 @@ directCommands:
     description: ''
   - name: --max-wall-clock-time
     summary: The maximum elapsed time that the Task may run, measured from the time the Task starts. If the Task does not complete within the time limit, the Batch service terminates it. If this is not specified, there is no time limit on how long the Task may run. Expected format is an ISO-8601 duration.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --retention-time
     summary: The minimum time to retain the Task directory on the Compute Node where it ran, from the time it completes execution. After this time, the Batch service may delete the Task directory and all its contents. The default is 7 days, i.e. the Task directory will be retained for 7 days unless the Compute Node is removed or the Job is deleted. Expected format is an ISO-8601 duration.
@@ -357,7 +341,7 @@ directCommands:
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --select
     summary: An OData $select clause.
@@ -380,7 +364,6 @@ directCommands:
                        [--if-modified-since]
                        [--if-none-match]
                        [--if-unmodified-since]
-                       [--query-examples]
                        [--subscription]
   requiredParameters:
   - isRequired: true
@@ -412,9 +395,6 @@ directCommands:
     description: ''
   - name: --if-unmodified-since
     summary: A timestamp indicating the last modified time of the resource known to the client. The operation will be performed only if the resource on the service has not been modified since the specified time.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

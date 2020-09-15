@@ -27,7 +27,6 @@ directCommands:
                        [--network-acls-vnets]
                        [--no-self-perms {false, true}]
                        [--no-wait]
-                       [--query-examples]
                        [--retention-days]
                        [--sku]
                        [--subscription]
@@ -111,9 +110,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --retention-days
     defaultValue: "90"
     summary: Soft delete data retention days. It accepts >=7 and <=90.
@@ -136,7 +132,6 @@ directCommands:
     az keyvault delete [--hsm-name]
                        [--name]
                        [--no-wait]
-                       [--query-examples]
                        [--resource-group]
                        [--subscription]
   examples:
@@ -151,9 +146,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -170,7 +162,6 @@ directCommands:
     az keyvault delete-policy --name
                               [--no-wait]
                               [--object-id]
-                              [--query-examples]
                               [--resource-group]
                               [--spn]
                               [--subscription]
@@ -186,9 +177,6 @@ directCommands:
     description: ''
   - name: --object-id
     summary: A GUID that identifies the principal that will receive permissions.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -214,7 +202,7 @@ directCommands:
                      [--subscription]
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -231,13 +219,9 @@ directCommands:
   summary: Get information about the deleted Vaults or HSMs in a subscription.
   description: ''
   syntax: >-
-    az keyvault list-deleted [--query-examples]
-                             [--resource-type]
+    az keyvault list-deleted [--resource-type]
                              [--subscription]
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-type
     summary: When --resource-type is not present the command will list all deleted Vaults and HSMs. Possible values for --resource-type are vault and hsm.
     description: ''
@@ -254,7 +238,6 @@ directCommands:
                       [--location]
                       [--name]
                       [--no-wait]
-                      [--query-examples]
                       [--subscription]
   optionalParameters:
   - name: --hsm-name
@@ -269,9 +252,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -285,7 +265,6 @@ directCommands:
                         [--location]
                         [--name]
                         [--no-wait]
-                        [--query-examples]
                         [--resource-group]
                         [--subscription]
   examples:
@@ -304,9 +283,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Resource group of the deleted Vault or HSM.
     description: ''
@@ -324,7 +300,6 @@ directCommands:
                            [--key-permissions {backup, create, decrypt, delete, encrypt, get, import, list, purge, recover, restore, sign, unwrapKey, update, verify, wrapKey}]
                            [--no-wait]
                            [--object-id]
-                           [--query-examples]
                            [--resource-group]
                            [--secret-permissions {backup, delete, get, list, purge, recover, restore, set}]
                            [--spn]
@@ -350,9 +325,6 @@ directCommands:
     description: ''
   - name: --object-id
     summary: A GUID that identifies the principal that will receive permissions.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -396,7 +368,7 @@ directCommands:
     summary: Name of the Vault.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -422,7 +394,6 @@ directCommands:
                        [--enabled-for-template-deployment {false, true}]
                        [--force-string]
                        [--no-wait]
-                       [--query-examples]
                        [--remove]
                        [--resource-group]
                        [--retention-days]
@@ -478,9 +449,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -509,7 +477,6 @@ directCommands:
                            [--enable-purge-protection {false, true}]
                            [--force-string]
                            [--no-wait]
-                           [--query-examples]
                            [--remove]
                            [--resource-group]
                            [--secondary-locations]
@@ -545,9 +512,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -575,7 +539,6 @@ directCommands:
                      [--deleted]
                      [--exists]
                      [--interval]
-                     [--query-examples]
                      [--resource-group]
                      [--subscription]
                      [--timeout]
@@ -605,9 +568,6 @@ directCommands:
     defaultValue: "30"
     summary: Polling interval in seconds.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
     description: ''
@@ -633,7 +593,6 @@ directCommands:
                          [--deleted]
                          [--exists]
                          [--interval]
-                         [--query-examples]
                          [--resource-group]
                          [--subscription]
                          [--timeout]
@@ -662,9 +621,6 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if HSM belongs to the specified resource group.

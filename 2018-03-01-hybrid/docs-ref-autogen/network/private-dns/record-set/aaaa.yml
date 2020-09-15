@@ -13,7 +13,6 @@ directCommands:
                                                       --record-set-name
                                                       --resource-group
                                                       --zone-name
-                                                      [--query-examples]
                                                       [--subscription]
   examples:
   - summary: Add an AAAA record.
@@ -38,9 +37,6 @@ directCommands:
     summary: The name of the Private DNS zone.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -54,7 +50,6 @@ directCommands:
                                                   --resource-group
                                                   --zone-name
                                                   [--metadata]
-                                                  [--query-examples]
                                                   [--subscription]
                                                   [--ttl]
   examples:
@@ -77,9 +72,6 @@ directCommands:
   - name: --metadata
     summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -97,7 +89,6 @@ directCommands:
                                                   --resource-group
                                                   --zone-name
                                                   [--if-match]
-                                                  [--query-examples]
                                                   [--subscription]
                                                   [--yes]
   examples:
@@ -119,9 +110,6 @@ directCommands:
   optionalParameters:
   - name: --if-match
     summary: The ETag of the record set. Omit this value to always delete the current record set. Specify the last-seen ETag value to prevent accidentally deleting any concurrent changes.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -153,7 +141,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -169,7 +157,6 @@ directCommands:
                                                          --resource-group
                                                          --zone-name
                                                          [--keep-empty-record-set]
-                                                         [--query-examples]
                                                          [--subscription]
   examples:
   - summary: Remove an AAAA record from its record set.
@@ -196,9 +183,6 @@ directCommands:
   optionalParameters:
   - name: --keep-empty-record-set
     summary: Keep the empty record set if the last record is removed.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -232,7 +216,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -250,7 +234,6 @@ directCommands:
                                                   [--force-string]
                                                   [--if-match]
                                                   [--metadata]
-                                                  [--query-examples]
                                                   [--remove]
                                                   [--set]
                                                   [--subscription]
@@ -284,9 +267,6 @@ directCommands:
     description: ''
   - name: --metadata
     summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

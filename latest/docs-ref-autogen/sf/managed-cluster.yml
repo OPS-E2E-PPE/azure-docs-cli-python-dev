@@ -21,7 +21,6 @@ directCommands:
                                  [--dns-name]
                                  [--gateway-connection-port]
                                  [--location]
-                                 [--query-examples]
                                  [--sku]
                                  [--subscription]
                                  [--tags]
@@ -75,9 +74,6 @@ directCommands:
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sku
     defaultValue: Basic
     summary: "Cluster's Sku, the options are Basic: it will have a minimum of 3 seed nodes and only allows 1 node type and Standard: it will have a minimum of 5 seed nodes and allows multiple node types."
@@ -95,7 +91,6 @@ directCommands:
   syntax: >-
     az sf managed-cluster delete --cluster-name
                                  --resource-group
-                                 [--query-examples]
                                  [--subscription]
   examples:
   - summary: Delete cluster.
@@ -110,9 +105,6 @@ directCommands:
     summary: Specify the resource group name. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -131,7 +123,7 @@ directCommands:
     syntax: az sf managed-cluster list
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Specify the resource group name. You can configure the default group using `az configure --defaults group=<name>`.
@@ -162,7 +154,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -177,7 +169,6 @@ directCommands:
                                  [--client-connection-port]
                                  [--dns-name]
                                  [--gateway-connection-port]
-                                 [--query-examples]
                                  [--subscription]
                                  [--tags]
   examples:
@@ -201,9 +192,6 @@ directCommands:
     description: ''
   - name: --gateway-connection-port --gateway-port
     summary: Port used for http connections to the cluster.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

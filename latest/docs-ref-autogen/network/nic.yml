@@ -28,7 +28,6 @@ directCommands:
                           [--private-ip-address]
                           [--private-ip-address-version {IPv4, IPv6}]
                           [--public-ip-address]
-                          [--query-examples]
                           [--subscription]
                           [--tags]
                           [--vnet-name]
@@ -109,9 +108,6 @@ directCommands:
   - name: --public-ip-address
     summary: Name or ID of an existing public IP address, or none by default.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -130,7 +126,6 @@ directCommands:
     az network nic delete [--ids]
                           [--name]
                           [--no-wait]
-                          [--query-examples]
                           [--resource-group]
                           [--subscription]
   examples:
@@ -145,9 +140,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -169,7 +161,7 @@ directCommands:
     syntax: az network nic list --query "[?dnsSettings.internalDomainNameSuffix=`{dnsSuffix}`]"
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -185,7 +177,6 @@ directCommands:
   syntax: >-
     az network nic list-effective-nsg [--ids]
                                       [--name]
-                                      [--query-examples]
                                       [--resource-group]
                                       [--subscription]
   examples:
@@ -197,9 +188,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The network interface (NIC).
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -233,7 +221,7 @@ directCommands:
     summary: The network interface (NIC).
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -249,7 +237,6 @@ directCommands:
   syntax: >-
     az network nic show-effective-route-table [--ids]
                                               [--name]
-                                              [--query-examples]
                                               [--resource-group]
                                               [--subscription]
   examples:
@@ -261,9 +248,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The network interface (NIC).
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -287,7 +271,6 @@ directCommands:
                           [--name]
                           [--network-security-group]
                           [--no-wait]
-                          [--query-examples]
                           [--remove]
                           [--resource-group]
                           [--set]
@@ -330,9 +313,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -359,7 +339,6 @@ directCommands:
                         [--ids]
                         [--interval]
                         [--name]
-                        [--query-examples]
                         [--resource-group]
                         [--subscription]
                         [--timeout]
@@ -392,9 +371,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The network interface (NIC).
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

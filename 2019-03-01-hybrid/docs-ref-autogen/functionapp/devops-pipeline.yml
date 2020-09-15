@@ -16,7 +16,6 @@ directCommands:
                                           [--organization-name]
                                           [--overwrite-yaml {false, true}]
                                           [--project-name]
-                                          [--query-examples]
                                           [--repository-name]
                                           [--subscription]
   examples:
@@ -49,9 +48,6 @@ directCommands:
     description: ''
   - name: --project-name
     summary: Name of the Azure DevOps project that you want to use.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --repository-name
     summary: Name of the Azure DevOps repository that you want to use.

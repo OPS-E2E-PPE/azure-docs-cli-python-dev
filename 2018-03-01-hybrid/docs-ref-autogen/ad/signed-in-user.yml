@@ -8,13 +8,8 @@ directCommands:
   name: az ad signed-in-user list-owned-objects
   summary: Get the list of directory objects that are owned by the user.
   description: ''
-  syntax: >-
-    az ad signed-in-user list-owned-objects [--query-examples]
-                                            [--type]
+  syntax: az ad signed-in-user list-owned-objects [--type]
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --type -t
     summary: Object type filter, e.g. "application", "servicePrincipal"  "group", etc.
     description: ''
@@ -26,7 +21,7 @@ directCommands:
   syntax: az ad signed-in-user show [--query-examples]
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
 commands:

@@ -15,7 +15,6 @@ directCommands:
                                 --profile-name
                                 --resource-group
                                 [--location]
-                                [--query-examples]
                                 [--subscription]
                                 [--tags]
   examples:
@@ -48,9 +47,6 @@ directCommands:
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -67,7 +63,6 @@ directCommands:
                                 --name
                                 --profile-name
                                 --resource-group
-                                [--query-examples]
                                 [--subscription]
   examples:
   - summary: Delete a custom domain.
@@ -90,9 +85,6 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -106,7 +98,6 @@ directCommands:
                                        --name
                                        --profile-name
                                        --resource-group
-                                       [--query-examples]
                                        [--subscription]
   requiredParameters:
   - isRequired: true
@@ -126,9 +117,6 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -143,7 +131,6 @@ directCommands:
                                       --profile-name
                                       --resource-group
                                       [--min-tls-version {1.0, 1.2, none}]
-                                      [--query-examples]
                                       [--subscription]
                                       [--user-cert-group-name]
                                       [--user-cert-protocol-type {ip, sni}]
@@ -177,9 +164,6 @@ directCommands:
   - name: --min-tls-version
     parameterValueGroup: 1.0, 1.2, none
     summary: The minimum TLS version required for the custom domain.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -229,7 +213,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -268,7 +252,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

@@ -16,7 +16,6 @@ directCommands:
                                 [--insights-to-extract {AllInsights, AudioInsightsOnly, VideoInsightsOnly}]
                                 [--name]
                                 [--on-error {ContinueJob, StopProcessingJob}]
-                                [--query-examples]
                                 [--relative-priority {High, Low, Normal}]
                                 [--resolution]
                                 [--resource-group]
@@ -52,9 +51,6 @@ directCommands:
     parameterValueGroup: ContinueJob, StopProcessingJob
     summary: A Transform can define more than one output. This property defines what the service should do when one output fails - either continue to produce other outputs, or, stop the other outputs. The overall Job state will not reflect failures of outputs that are specified with 'ContinueJob'. The default is 'StopProcessingJob'.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --relative-priority
     parameterValueGroup: High, Low, Normal
     summary: Sets the relative priority of the transform outputs within a transform. This sets the priority that the service uses for processing TransformOutputs. The default priority is Normal.
@@ -78,7 +74,6 @@ directCommands:
                                    [--account-name]
                                    [--ids]
                                    [--name]
-                                   [--query-examples]
                                    [--resource-group]
                                    [--subscription]
   examples:
@@ -98,9 +93,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the transform.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

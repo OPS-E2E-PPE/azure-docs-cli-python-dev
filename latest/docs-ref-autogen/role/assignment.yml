@@ -16,7 +16,6 @@ directCommands:
                               [--condition]
                               [--condition-version]
                               [--description]
-                              [--query-examples]
                               [--resource-group]
                               [--scope]
                               [--subscription]
@@ -52,9 +51,6 @@ directCommands:
   - name: --description
     summary: Description of role assignment.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Use it only if the role or assignment was added at the level of a resource group.
     description: ''
@@ -73,7 +69,6 @@ directCommands:
     az role assignment delete [--assignee]
                               [--ids]
                               [--include-inherited]
-                              [--query-examples]
                               [--resource-group]
                               [--role]
                               [--scope]
@@ -91,9 +86,6 @@ directCommands:
     description: ''
   - name: --include-inherited
     summary: Include assignments applied on parent scopes.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Use it only if the role or assignment was added at the level of a resource group.
@@ -144,7 +136,7 @@ directCommands:
     summary: Include assignments applied on parent scopes.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Use it only if the role or assignment was added at the level of a resource group.
@@ -165,15 +157,11 @@ directCommands:
   description: ''
   syntax: >-
     az role assignment list-changelogs [--end-time]
-                                       [--query-examples]
                                        [--start-time]
                                        [--subscription]
   optionalParameters:
   - name: --end-time
     summary: The end time of the query in the format of %Y-%m-%dT%H:%M:%SZ, e.g. 2000-12-31T12:59:59Z. Defaults to the current time.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --start-time
     summary: The start time of the query in the format of %Y-%m-%dT%H:%M:%SZ, e.g. 2000-12-31T12:59:59Z. Defaults to 1 Hour prior to the current time.
@@ -188,7 +176,6 @@ directCommands:
   description: ''
   syntax: >-
     az role assignment update --role-assignment
-                              [--query-examples]
                               [--subscription]
   examples:
   - summary: Update a role assignment from a JSON file.
@@ -215,9 +202,6 @@ directCommands:
     summary: Description of an existing role assignment as JSON, or a path to a file containing a JSON description.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

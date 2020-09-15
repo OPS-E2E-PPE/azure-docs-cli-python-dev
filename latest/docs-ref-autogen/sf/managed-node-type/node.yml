@@ -14,7 +14,6 @@ directCommands:
                                         --node-name
                                         --resource-group
                                         [--force {false, true}]
-                                        [--query-examples]
                                         [--subscription]
   examples:
   - summary: Delete 2 nodes.
@@ -41,9 +40,6 @@ directCommands:
     parameterValueGroup: false, true
     summary: Using this flag will force the operation even if service fabric is unable to disable the nodes. Use with caution as this might cause data loss if stateful workloads are running on the node.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -57,7 +53,6 @@ directCommands:
                                          --node-name
                                          --resource-group
                                          [--force {false, true}]
-                                         [--query-examples]
                                          [--subscription]
   examples:
   - summary: Reimage 2 nodes.
@@ -84,9 +79,6 @@ directCommands:
     parameterValueGroup: false, true
     summary: Using this flag will force the operation even if service fabric is unable to disable the nodes. Use with caution as this might cause data loss if stateful workloads are running on the node.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -100,7 +92,6 @@ directCommands:
                                          --node-name
                                          --resource-group
                                          [--force {false, true}]
-                                         [--query-examples]
                                          [--subscription]
   examples:
   - summary: Restart 2 nodes.
@@ -126,9 +117,6 @@ directCommands:
   - name: --force
     parameterValueGroup: false, true
     summary: Using this flag will force the operation even if service fabric is unable to disable the nodes. Use with caution as this might cause data loss if stateful workloads are running on the node.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

@@ -12,7 +12,6 @@ directCommands:
     az cdn profile create --name
                           --resource-group
                           [--location]
-                          [--query-examples]
                           [--sku {Custom_Verizon, Premium_ChinaCdn, Premium_Verizon, Standard_Akamai, Standard_ChinaCdn, Standard_Microsoft, Standard_Verizon}]
                           [--subscription]
                           [--tags]
@@ -34,9 +33,6 @@ directCommands:
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sku
     defaultValue: Standard_Akamai
     parameterValueGroup: Custom_Verizon, Premium_ChinaCdn, Premium_Verizon, Standard_Akamai, Standard_ChinaCdn, Standard_Microsoft, Standard_Verizon
@@ -56,7 +52,6 @@ directCommands:
   syntax: >-
     az cdn profile delete [--ids]
                           [--name]
-                          [--query-examples]
                           [--resource-group]
                           [--subscription]
   examples:
@@ -68,9 +63,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the CDN profile which is unique within the resource group.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -92,7 +84,7 @@ directCommands:
     syntax: az cdn profile list -g group
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -119,7 +111,7 @@ directCommands:
     summary: Name of the CDN profile which is unique within the resource group.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -137,7 +129,6 @@ directCommands:
                           [--force-string]
                           [--ids]
                           [--name]
-                          [--query-examples]
                           [--remove]
                           [--resource-group]
                           [--set]
@@ -158,9 +149,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the CDN profile which is unique within the resource group.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
@@ -185,7 +173,6 @@ directCommands:
   syntax: >-
     az cdn profile usage [--ids]
                          [--name]
-                         [--query-examples]
                          [--resource-group]
                          [--subscription]
   optionalParameters:
@@ -194,9 +181,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the CDN profile which is unique within the resource group.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

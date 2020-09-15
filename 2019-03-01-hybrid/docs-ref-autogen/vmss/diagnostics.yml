@@ -10,14 +10,10 @@ directCommands:
   description: ''
   syntax: >-
     az vmss diagnostics get-default-config [--is-windows-os]
-                                           [--query-examples]
                                            [--subscription]
   optionalParameters:
   - name: --is-windows-os
     summary: For Windows VMs.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -33,7 +29,6 @@ directCommands:
                             --vmss-name
                             [--no-auto-upgrade {false, true}]
                             [--protected-settings]
-                            [--query-examples]
                             [--subscription]
                             [--version]
   examples:
@@ -59,9 +54,6 @@ directCommands:
     description: ''
   - name: --protected-settings
     summary: Json string or a file path containing private configurations such as storage account keys, etc.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

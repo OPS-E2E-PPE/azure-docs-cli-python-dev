@@ -17,7 +17,6 @@ directCommands:
                               --service
                               --setting-name
                               [--parameters]
-                              [--query-examples]
                               [--subscription]
   examples:
   - summary: Create a new OAuth connection setting on a bot.
@@ -60,9 +59,6 @@ directCommands:
   - name: --parameters
     summary: 'Parameter values for service provider parameters. Usage: --parameters key=value key1=value1.'
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -75,7 +71,6 @@ directCommands:
     az bot authsetting delete --name
                               --resource-group
                               --setting-name
-                              [--query-examples]
                               [--subscription]
   requiredParameters:
   - isRequired: true
@@ -91,9 +86,6 @@ directCommands:
     summary: Name of the oauth connection setting.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -118,7 +110,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -130,7 +122,6 @@ directCommands:
   description: ''
   syntax: >-
     az bot authsetting list-providers [--provider-name]
-                                      [--query-examples]
                                       [--subscription]
   examples:
   - summary: List all service providers.
@@ -140,9 +131,6 @@ directCommands:
   optionalParameters:
   - name: --provider-name
     summary: Service provider name for which to fetch details.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -173,7 +161,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

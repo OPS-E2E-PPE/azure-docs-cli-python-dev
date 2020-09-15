@@ -12,7 +12,6 @@ directCommands:
     az monitor private-link-scope private-endpoint-connection approve [--description]
                                                                       [--id]
                                                                       [--name]
-                                                                      [--query-examples]
                                                                       [--resource-group]
                                                                       [--scope-name]
                                                                       [--subscription]
@@ -30,9 +29,6 @@ directCommands:
     summary: Name of the private endpoint connection.
     description: ''
     valueFrom: az monitor private-link-scope show
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: The resource group name of specified private link scope.
     description: ''
@@ -50,7 +46,6 @@ directCommands:
   syntax: >-
     az monitor private-link-scope private-endpoint-connection delete [--id]
                                                                      [--name]
-                                                                     [--query-examples]
                                                                      [--resource-group]
                                                                      [--scope-name]
                                                                      [--subscription]
@@ -61,9 +56,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the private link scope.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified private link scope.
@@ -98,7 +90,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -112,7 +104,6 @@ directCommands:
     az monitor private-link-scope private-endpoint-connection reject [--description]
                                                                      [--id]
                                                                      [--name]
-                                                                     [--query-examples]
                                                                      [--resource-group]
                                                                      [--scope-name]
                                                                      [--subscription]
@@ -130,9 +121,6 @@ directCommands:
     summary: Name of the private endpoint connection.
     description: ''
     valueFrom: az monitor private-link-scope show
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: The resource group name of specified private link scope.
     description: ''
@@ -163,7 +151,7 @@ directCommands:
     description: ''
     valueFrom: az monitor private-link-scope show
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: The resource group name of specified private link scope.

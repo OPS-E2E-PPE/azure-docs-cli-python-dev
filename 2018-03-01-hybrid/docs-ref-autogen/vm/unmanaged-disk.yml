@@ -28,7 +28,6 @@ directCommands:
                                 [--lun]
                                 [--name]
                                 [--new]
-                                [--query-examples]
                                 [--size-gb]
                                 [--subscription]
                                 [--vhd-uri]
@@ -64,9 +63,6 @@ directCommands:
   - name: --new
     summary: Create a new disk.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --size-gb -z
     defaultValue: "1023"
     summary: 'Size in GB. Max size: 4095 GB (certain preview disks can be larger).'
@@ -86,7 +82,6 @@ directCommands:
     az vm unmanaged-disk detach --name
                                 --resource-group
                                 --vm-name
-                                [--query-examples]
                                 [--subscription]
   examples:
   - summary: Detach a data disk from a VM.
@@ -105,9 +100,6 @@ directCommands:
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -139,7 +131,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

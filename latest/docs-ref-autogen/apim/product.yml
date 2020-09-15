@@ -17,7 +17,6 @@ directCommands:
                            [--legal-terms]
                            [--no-wait]
                            [--product-id]
-                           [--query-examples]
                            [--state {notPublished, published}]
                            [--subscription]
                            [--subscription-required]
@@ -54,9 +53,6 @@ directCommands:
   - name: --product-id
     summary: Product identifier. Must be unique in the current API Management service instance.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --state
     parameterValueGroup: notPublished, published
     summary: Whether product is published or not. Published products are discoverable by users of developer portal. Non published products are visible only to administrators. Default state of Product is notPublished.
@@ -82,7 +78,6 @@ directCommands:
                            [--delete-subscriptions]
                            [--if-match]
                            [--no-wait]
-                           [--query-examples]
                            [--subscription]
                            [--yes]
   examples:
@@ -110,9 +105,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -144,7 +136,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -178,7 +170,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -200,7 +192,6 @@ directCommands:
                            [--legal-terms]
                            [--no-wait]
                            [--product-name]
-                           [--query-examples]
                            [--remove]
                            [--set]
                            [--state {notPublished, published}]
@@ -247,9 +238,6 @@ directCommands:
     description: ''
   - name: --product-name
     summary: Product name.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

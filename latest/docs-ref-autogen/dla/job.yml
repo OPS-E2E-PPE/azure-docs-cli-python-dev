@@ -12,7 +12,6 @@ directCommands:
     az dla job cancel --job-identity
                       [--account]
                       [--ids]
-                      [--query-examples]
                       [--subscription]
   requiredParameters:
   - isRequired: true
@@ -25,9 +24,6 @@ directCommands:
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -65,7 +61,7 @@ directCommands:
     summary: A filter which returns jobs only containing the specified pipeline_id.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --recurrence-id
     summary: A filter which returns jobs only containing the specified recurrence_id.
@@ -118,7 +114,7 @@ directCommands:
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -140,7 +136,6 @@ directCommands:
                       [--pipeline-name]
                       [--pipeline-uri]
                       [--priority]
-                      [--query-examples]
                       [--recurrence-id]
                       [--recurrence-name]
                       [--run-id]
@@ -186,9 +181,6 @@ directCommands:
     defaultValue: "1000"
     summary: The priority of the job.
     description: Lower values increase the priority, with the lowest value being 1. This determines the order jobs are run in.
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --recurrence-id
     summary: Recurrence GUID, unique per activity/script, regardless of iteration. Links different occurrences of the same job together.
     description: ''
@@ -214,7 +206,6 @@ directCommands:
                     [--account]
                     [--ids]
                     [--max-wait-time-sec]
-                    [--query-examples]
                     [--subscription]
                     [--wait-interval-sec]
   requiredParameters:
@@ -232,9 +223,6 @@ directCommands:
   - name: --max-wait-time-sec
     defaultValue: "-1"
     summary: The maximum amount of time to wait before erroring out. Default value is to never timeout. Any value <= 0 means never timeout.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

@@ -15,7 +15,6 @@ directCommands:
                                             --virtual-network
                                             --zone-name
                                             [--no-wait]
-                                            [--query-examples]
                                             [--subscription]
                                             [--tags]
   examples:
@@ -51,9 +50,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -71,7 +67,6 @@ directCommands:
                                             --zone-name
                                             [--if-match]
                                             [--no-wait]
-                                            [--query-examples]
                                             [--subscription]
                                             [--yes]
   examples:
@@ -96,9 +91,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -131,7 +123,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -168,7 +160,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -186,7 +178,6 @@ directCommands:
                                             [--force-string]
                                             [--if-match]
                                             [--no-wait]
-                                            [--query-examples]
                                             [--registration-enabled {false, true}]
                                             [--remove]
                                             [--set]
@@ -223,9 +214,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --registration-enabled -e
     parameterValueGroup: false, true
     summary: Specify if the link is registration enabled.
@@ -256,7 +244,6 @@ directCommands:
                                           [--deleted]
                                           [--exists]
                                           [--interval]
-                                          [--query-examples]
                                           [--subscription]
                                           [--timeout]
                                           [--updated]
@@ -292,9 +279,6 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

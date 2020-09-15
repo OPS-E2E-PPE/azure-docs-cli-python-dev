@@ -11,7 +11,6 @@ directCommands:
   syntax: >-
     az config param-persist delete [--all]
                                    [--purge]
-                                   [--query-examples]
                                    [--recursive]
                                    [--yes]
                                    [<NAME>]
@@ -31,9 +30,6 @@ directCommands:
   - name: --purge
     summary: Delete parameter persistence file from working directory. Only available when --all is specified.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --recursive
     summary: Indicate this is recursive delete of parameter persistence. Only available when --all is specified.
     description: ''
@@ -48,21 +44,13 @@ directCommands:
   name: az config param-persist off
   summary: Turn off parameter persistence.
   description: ''
-  syntax: az config param-persist off [--query-examples]
-  optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
+  syntax: az config param-persist off
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/config/_help.py
 - uid: az_config_param_persist_on
   name: az config param-persist on
   summary: Turn on parameter persistence.
   description: ''
-  syntax: az config param-persist on [--query-examples]
-  optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
+  syntax: az config param-persist on
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/config/_help.py
 - uid: az_config_param_persist_show
   name: az config param-persist show
@@ -78,7 +66,7 @@ directCommands:
     syntax: az config param-persist show resource_group_name
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: <NAME>
     summary: Space-separated list of parameter persistence names.

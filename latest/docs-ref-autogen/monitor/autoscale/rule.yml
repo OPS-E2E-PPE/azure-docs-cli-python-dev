@@ -13,7 +13,6 @@ directCommands:
                                    --dest-schedule
                                    --index
                                    --resource-group
-                                   [--query-examples]
                                    [--source-schedule]
                                    [--subscription]
   requiredParameters:
@@ -34,9 +33,6 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --source-schedule
     defaultValue: default
     summary: Name of the profile to copy rules from.
@@ -55,7 +51,6 @@ directCommands:
                                      --scale
                                      [--cooldown]
                                      [--profile-name]
-                                     [--query-examples]
                                      [--resource]
                                      [--resource-group]
                                      [--resource-namespace]
@@ -113,9 +108,6 @@ directCommands:
     defaultValue: default
     summary: Name of the autoscale profile.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource
     summary: Name or ID of the target resource.
     description: ''
@@ -148,7 +140,6 @@ directCommands:
                                      --index
                                      --resource-group
                                      [--profile-name]
-                                     [--query-examples]
                                      [--subscription]
   requiredParameters:
   - isRequired: true
@@ -167,9 +158,6 @@ directCommands:
   - name: --profile-name
     defaultValue: default
     summary: Name of the autoscale profile.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -203,7 +191,7 @@ directCommands:
     summary: Name of the autoscale profile.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

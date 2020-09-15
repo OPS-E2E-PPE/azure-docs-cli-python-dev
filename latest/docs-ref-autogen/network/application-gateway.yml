@@ -35,7 +35,6 @@ directCommands:
                                           [--private-link-subnet-prefix]
                                           [--public-ip-address]
                                           [--public-ip-address-allocation]
-                                          [--query-examples]
                                           [--routing-rule-type {Basic, PathBasedRouting}]
                                           [--servers]
                                           [--sku {Standard_Large, Standard_Medium, Standard_Small, Standard_v2, WAF_Large, WAF_Medium, WAF_v2}]
@@ -149,9 +148,6 @@ directCommands:
     defaultValue: Dynamic
     summary: The kind of IP allocation to use when creating a new public IP.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --routing-rule-type
     defaultValue: Basic
     parameterValueGroup: Basic, PathBasedRouting
@@ -205,7 +201,6 @@ directCommands:
     az network application-gateway delete [--ids]
                                           [--name]
                                           [--no-wait]
-                                          [--query-examples]
                                           [--resource-group]
                                           [--subscription]
   examples:
@@ -220,9 +215,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -244,7 +236,7 @@ directCommands:
     syntax: az network application-gateway list -g MyResourceGroup
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -274,7 +266,7 @@ directCommands:
     summary: Name of the application gateway.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -291,7 +283,6 @@ directCommands:
     az network application-gateway show-backend-health [--expand]
                                                        [--ids]
                                                        [--name]
-                                                       [--query-examples]
                                                        [--resource-group]
                                                        [--subscription]
   examples:
@@ -307,9 +298,6 @@ directCommands:
   - name: --name -n
     summary: Name of the application gateway.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -324,7 +312,6 @@ directCommands:
   syntax: >-
     az network application-gateway start [--ids]
                                          [--name]
-                                         [--query-examples]
                                          [--resource-group]
                                          [--subscription]
   examples:
@@ -336,9 +323,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the application gateway.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -354,7 +338,6 @@ directCommands:
   syntax: >-
     az network application-gateway stop [--ids]
                                         [--name]
-                                        [--query-examples]
                                         [--resource-group]
                                         [--subscription]
   examples:
@@ -366,9 +349,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the application gateway.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -392,7 +372,6 @@ directCommands:
                                           [--min-capacity]
                                           [--name]
                                           [--no-wait]
-                                          [--query-examples]
                                           [--remove]
                                           [--resource-group]
                                           [--set]
@@ -434,9 +413,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -469,7 +445,6 @@ directCommands:
                                         [--ids]
                                         [--interval]
                                         [--name]
-                                        [--query-examples]
                                         [--resource-group]
                                         [--subscription]
                                         [--timeout]
@@ -499,9 +474,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the application gateway.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

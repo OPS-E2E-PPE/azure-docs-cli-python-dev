@@ -11,7 +11,6 @@ directCommands:
   syntax: >-
     az batch account autostorage-keys sync --name
                                            --resource-group
-                                           [--query-examples]
                                            [--subscription]
   requiredParameters:
   - isRequired: true
@@ -23,9 +22,6 @@ directCommands:
     summary: Name of the resource group.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

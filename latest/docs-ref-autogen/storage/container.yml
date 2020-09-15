@@ -19,7 +19,6 @@ directCommands:
                                 [--metadata]
                                 [--prevent-encryption-scope-override {false, true}]
                                 [--public-access {blob, container, off}]
-                                [--query-examples]
                                 [--resource-group]
                                 [--sas-token]
                                 [--subscription]
@@ -67,9 +66,6 @@ directCommands:
     parameterValueGroup: blob, container, off
     summary: Specifies whether data in the container may be accessed publicly.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -98,7 +94,6 @@ directCommands:
                                 [--if-modified-since]
                                 [--if-unmodified-since]
                                 [--lease-id]
-                                [--query-examples]
                                 [--sas-token]
                                 [--subscription]
                                 [--timeout]
@@ -139,9 +134,6 @@ directCommands:
   - name: --lease-id
     summary: If specified, delete_container only succeeds if the container's lease is active and matches this ID. Required if the container has an active lease.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -162,7 +154,6 @@ directCommands:
                                 [--account-name]
                                 [--auth-mode {key, login}]
                                 [--connection-string]
-                                [--query-examples]
                                 [--sas-token]
                                 [--subscription]
                                 [--timeout]
@@ -187,9 +178,6 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -222,7 +210,6 @@ directCommands:
                                       [--ip]
                                       [--permissions]
                                       [--policy-name]
-                                      [--query-examples]
                                       [--start]
                                       [--subscription]
   examples:
@@ -289,9 +276,6 @@ directCommands:
   - name: --policy-name
     summary: The name of a stored access policy within the container's ACL.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --start
     summary: Specifies the UTC datetime (Y-m-d'T'H:M'Z') at which the SAS becomes valid. Do not use if a stored access policy is referenced with --id that specifies this value. Defaults to the time of the request.
     description: ''
@@ -344,7 +328,7 @@ directCommands:
     summary: Filters the results to return only containers whose names begin with the specified prefix.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -370,7 +354,6 @@ directCommands:
                                         [--if-unmodified-since]
                                         [--lease-id]
                                         [--public-access {blob, container, off}]
-                                        [--query-examples]
                                         [--sas-token]
                                         [--subscription]
                                         [--timeout]
@@ -405,9 +388,6 @@ directCommands:
   - name: --public-access
     parameterValueGroup: blob, container, off
     summary: Specifies whether data in the container may be accessed publicly.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -457,7 +437,7 @@ directCommands:
     summary: If specified, get_container_properties only succeeds if the container's lease is active and matches this ID.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -480,7 +460,6 @@ directCommands:
                                          [--auth-mode {key, login}]
                                          [--connection-string]
                                          [--lease-id]
-                                         [--query-examples]
                                          [--sas-token]
                                          [--subscription]
                                          [--timeout]
@@ -505,9 +484,6 @@ directCommands:
     description: ''
   - name: --lease-id
     summary: If specified, get_container_acl only succeeds if the container's lease is active and matches this ID.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

@@ -13,7 +13,6 @@ directCommands:
                       [--delete]
                       [--ids]
                       [--name]
-                      [--query-examples]
                       [--resource-group]
                       [--subscription]
                       [--transform-name]
@@ -29,9 +28,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the job.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -51,7 +47,6 @@ directCommands:
     az ams job delete [--account-name]
                       [--ids]
                       [--name]
-                      [--query-examples]
                       [--resource-group]
                       [--subscription]
                       [--transform-name]
@@ -64,9 +59,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the job.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -116,7 +108,7 @@ directCommands:
     summary: Specifies the key by which the result collection should be ordered.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -145,7 +137,7 @@ directCommands:
     summary: The name of the job.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -173,7 +165,6 @@ directCommands:
                      [--label]
                      [--name]
                      [--priority {High, Low, Normal}]
-                     [--query-examples]
                      [--resource-group]
                      [--subscription]
                      [--transform-name]
@@ -214,9 +205,6 @@ directCommands:
     parameterValueGroup: High, Low, Normal
     summary: The priority with which the job should be processed.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -239,7 +227,6 @@ directCommands:
                       [--ids]
                       [--name]
                       [--priority {High, Low, Normal}]
-                      [--query-examples]
                       [--remove]
                       [--resource-group]
                       [--set]
@@ -267,9 +254,6 @@ directCommands:
   - name: --priority
     parameterValueGroup: High, Low, Normal
     summary: The priority with which the job should be processed.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

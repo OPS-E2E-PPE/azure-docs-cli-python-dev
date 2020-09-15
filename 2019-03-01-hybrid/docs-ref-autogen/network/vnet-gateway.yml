@@ -22,7 +22,6 @@ directCommands:
                                    [--location]
                                    [--no-wait]
                                    [--peer-weight]
-                                   [--query-examples]
                                    [--radius-secret]
                                    [--radius-server]
                                    [--sku {Basic, HighPerformance, Standard, UltraPerformance, VpnGw1, VpnGw2, VpnGw3}]
@@ -89,9 +88,6 @@ directCommands:
   - name: --peer-weight
     summary: Weight (0-100) added to routes learned through BGP peering.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --radius-secret
     summary: Radius secret to use for authentication.
     description: ''
@@ -127,7 +123,6 @@ directCommands:
     az network vnet-gateway delete [--ids]
                                    [--name]
                                    [--no-wait]
-                                   [--query-examples]
                                    [--resource-group]
                                    [--subscription]
   examples:
@@ -142,9 +137,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -171,7 +163,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -185,7 +177,6 @@ directCommands:
     az network vnet-gateway list-advertised-routes --peer
                                                    [--ids]
                                                    [--name]
-                                                   [--query-examples]
                                                    [--resource-group]
                                                    [--subscription]
   examples:
@@ -203,9 +194,6 @@ directCommands:
   - name: --name -n
     summary: Name of the VNet gateway.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -221,7 +209,6 @@ directCommands:
     az network vnet-gateway list-bgp-peer-status [--ids]
                                                  [--name]
                                                  [--peer]
-                                                 [--query-examples]
                                                  [--resource-group]
                                                  [--subscription]
   examples:
@@ -237,9 +224,6 @@ directCommands:
   - name: --peer
     summary: The IP address of the peer to retrieve the status of.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -254,7 +238,6 @@ directCommands:
   syntax: >-
     az network vnet-gateway list-learned-routes [--ids]
                                                 [--name]
-                                                [--query-examples]
                                                 [--resource-group]
                                                 [--subscription]
   examples:
@@ -266,9 +249,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the VNet gateway.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -285,7 +265,6 @@ directCommands:
     az network vnet-gateway reset [--gateway-vip]
                                   [--ids]
                                   [--name]
-                                  [--query-examples]
                                   [--resource-group]
                                   [--subscription]
   examples:
@@ -302,9 +281,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the VNet gateway.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -334,7 +310,7 @@ directCommands:
     summary: Name of the VNet gateway.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -362,7 +338,6 @@ directCommands:
                                    [--no-wait]
                                    [--peer-weight]
                                    [--public-ip-addresses]
-                                   [--query-examples]
                                    [--radius-secret]
                                    [--radius-server]
                                    [--remove]
@@ -426,9 +401,6 @@ directCommands:
   - name: --public-ip-addresses
     summary: Specify a single public IP (name or ID) for an active-standby gateway. Specify two space-separated public IPs for an active-active gateway.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --radius-secret
     summary: Radius secret to use for authentication.
     description: ''
@@ -474,7 +446,6 @@ directCommands:
                                  [--ids]
                                  [--interval]
                                  [--name]
-                                 [--query-examples]
                                  [--resource-group]
                                  [--subscription]
                                  [--timeout]
@@ -506,9 +477,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the VNet gateway.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

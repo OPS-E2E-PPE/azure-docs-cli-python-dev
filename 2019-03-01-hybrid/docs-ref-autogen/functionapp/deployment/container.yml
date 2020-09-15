@@ -12,7 +12,6 @@ directCommands:
     az functionapp deployment container config --enable-cd {false, true}
                                                [--ids]
                                                [--name]
-                                               [--query-examples]
                                                [--resource-group]
                                                [--slot]
                                                [--subscription]
@@ -32,9 +31,6 @@ directCommands:
   - name: --name -n
     summary: Name of the function app.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -52,7 +48,6 @@ directCommands:
   syntax: >-
     az functionapp deployment container show-cd-url [--ids]
                                                     [--name]
-                                                    [--query-examples]
                                                     [--resource-group]
                                                     [--slot]
                                                     [--subscription]
@@ -67,9 +62,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the function app.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

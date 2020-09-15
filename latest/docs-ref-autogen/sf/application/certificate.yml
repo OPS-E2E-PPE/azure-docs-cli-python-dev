@@ -15,7 +15,6 @@ directCommands:
                                       [--cert-subject-name]
                                       [--certificate-file]
                                       [--certificate-password]
-                                      [--query-examples]
                                       [--secret-identifier]
                                       [--subscription]
                                       [--vault-name]
@@ -44,9 +43,6 @@ directCommands:
     description: ''
   - name: --certificate-password
     summary: The password of the certificate file.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --secret-identifier
     summary: The existing Azure key vault secret URL.

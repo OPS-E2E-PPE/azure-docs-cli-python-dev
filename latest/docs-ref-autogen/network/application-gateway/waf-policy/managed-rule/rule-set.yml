@@ -14,7 +14,6 @@ directCommands:
                                                                         --type {Microsoft_BotManagerRuleSet, OWASP}
                                                                         --version {0.1, 2.2.9, 3.0, 3.1}
                                                                         [--group-name]
-                                                                        [--query-examples]
                                                                         [--rules]
                                                                         [--subscription]
   requiredParameters:
@@ -39,9 +38,6 @@ directCommands:
   optionalParameters:
   - name: --group-name
     summary: The name of the web application firewall rule set group.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --rules
     summary: List of rules that will be disabled.
@@ -73,7 +69,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -89,7 +85,6 @@ directCommands:
                                                                            --type {Microsoft_BotManagerRuleSet, OWASP}
                                                                            --version {0.1, 2.2.9, 3.0, 3.1}
                                                                            [--group-name]
-                                                                           [--query-examples]
                                                                            [--subscription]
   examples:
   - summary: Remove a managed rule set by rule set group name if rule_group_name is specified. Otherwise, remove all rule set.
@@ -117,9 +112,6 @@ directCommands:
   - name: --group-name
     summary: The name of the web application firewall rule set group.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -136,7 +128,6 @@ directCommands:
                                                                            --version {0.1, 2.2.9, 3.0, 3.1}
                                                                            [--add]
                                                                            [--force-string]
-                                                                           [--query-examples]
                                                                            [--remove]
                                                                            [--rules]
                                                                            [--set]
@@ -170,9 +161,6 @@ directCommands:
     description: ''
   - name: --force-string
     summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

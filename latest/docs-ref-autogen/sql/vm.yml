@@ -14,7 +14,6 @@ directCommands:
                            [--ids]
                            [--name]
                            [--operator-acc-pwd]
-                           [--query-examples]
                            [--resource-group]
                            [--service-acc-pwd]
                            [--subscription]
@@ -38,9 +37,6 @@ directCommands:
     description: ''
   - name: --operator-acc-pwd -p
     summary: Password for the cluster operator account provided in the SQL virtual machine group.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -82,7 +78,6 @@ directCommands:
                      [--maintenance-window-duration]
                      [--maintenance-window-start-hour]
                      [--port]
-                     [--query-examples]
                      [--retention-period]
                      [--sa-key]
                      [--sp-name]
@@ -203,9 +198,6 @@ directCommands:
   - name: --port
     summary: SQL Server port.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --retention-period
     summary: Retention period of backup. 1-30 days.
     description: ''
@@ -250,7 +242,6 @@ directCommands:
   syntax: >-
     az sql vm delete [--ids]
                      [--name]
-                     [--query-examples]
                      [--resource-group]
                      [--subscription]
                      [--yes]
@@ -260,9 +251,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the SQL virtual machine.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -284,7 +272,7 @@ directCommands:
                    [--subscription]
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -300,7 +288,6 @@ directCommands:
   syntax: >-
     az sql vm remove-from-group [--ids]
                                 [--name]
-                                [--query-examples]
                                 [--resource-group]
                                 [--subscription]
   examples:
@@ -312,9 +299,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the SQL virtual machine.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -346,7 +330,7 @@ directCommands:
     summary: Name of the SQL virtual machine.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -385,7 +369,6 @@ directCommands:
                      [--maintenance-window-start-hour]
                      [--name]
                      [--port]
-                     [--query-examples]
                      [--remove]
                      [--resource-group]
                      [--retention-period]
@@ -507,9 +490,6 @@ directCommands:
     description: ''
   - name: --port
     summary: SQL Server port.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

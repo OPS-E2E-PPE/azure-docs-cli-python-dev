@@ -15,7 +15,6 @@ directCommands:
                                         --service-topology-name
                                         --target-location
                                         --target-subscription-id
-                                        [--query-examples]
                                         [--subscription]
                                         [--tags]
   examples:
@@ -47,9 +46,6 @@ directCommands:
     summary: The subscription to which the resources in the service should be deployed to.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -65,7 +61,6 @@ directCommands:
     az deploymentmanager service delete --name
                                         --resource-group
                                         --service-topology-name
-                                        [--query-examples]
                                         [--subscription]
   examples:
   - summary: Deletes a service topology.
@@ -84,9 +79,6 @@ directCommands:
     summary: The name of the service topology.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -114,7 +106,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -148,7 +140,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -164,7 +156,6 @@ directCommands:
                                         --service-topology-name
                                         [--add]
                                         [--force-string]
-                                        [--query-examples]
                                         [--remove]
                                         [--set]
                                         [--subscription]
@@ -193,9 +184,6 @@ directCommands:
     description: ''
   - name: --force-string
     summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

@@ -20,7 +20,6 @@ directCommands:
                                     [--edgenode-size]
                                     [--marketplace-id]
                                     [--no-validation-timeout]
-                                    [--query-examples]
                                     [--script-parameters]
                                     [--ssh-password]
                                     [--ssh-public-key]
@@ -115,9 +114,6 @@ directCommands:
   - name: --no-validation-timeout
     summary: Permit timeout error during argument validation phase. If omitted, validation timeout error will be permitted.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --script-parameters
     summary: The parameters for the script.
     description: ''
@@ -161,7 +157,6 @@ directCommands:
                                     --name
                                     --resource-group
                                     [--no-wait]
-                                    [--query-examples]
                                     [--subscription]
                                     [--yes]
   requiredParameters:
@@ -180,9 +175,6 @@ directCommands:
   optionalParameters:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -211,7 +203,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -242,7 +234,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -261,7 +253,6 @@ directCommands:
                                   [--deleted]
                                   [--exists]
                                   [--interval]
-                                  [--query-examples]
                                   [--subscription]
                                   [--timeout]
                                   [--updated]
@@ -294,9 +285,6 @@ directCommands:
   - name: --interval
     defaultValue: "30"
     summary: Polling interval in seconds.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

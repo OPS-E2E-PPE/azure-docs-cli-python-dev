@@ -13,7 +13,6 @@ directCommands:
                                      --reliability-level {Bronze, Gold, Platinum, Silver}
                                      --resource-group
                                      [--auto-add-node]
-                                     [--query-examples]
                                      [--subscription]
   examples:
   - summary: Change the cluster reliability level to 'Silver'.
@@ -35,9 +34,6 @@ directCommands:
   optionalParameters:
   - name: --auto-add-node
     summary: Add node count automatically when changing reliability.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

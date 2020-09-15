@@ -14,7 +14,6 @@ directCommands:
                             [--account-name]
                             [--connection-string]
                             [--fail-on-exist]
-                            [--query-examples]
                             [--sas-token]
                             [--subscription]
                             [--timeout]
@@ -36,9 +35,6 @@ directCommands:
   - name: --fail-on-exist
     summary: Throw an exception if the table already exists.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -59,7 +55,6 @@ directCommands:
                             [--account-name]
                             [--connection-string]
                             [--fail-not-exist]
-                            [--query-examples]
                             [--sas-token]
                             [--subscription]
                             [--timeout]
@@ -81,9 +76,6 @@ directCommands:
   - name: --fail-not-exist
     summary: Specifies whether to throw an exception if the table doesn't exist.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -103,7 +95,6 @@ directCommands:
                             [--account-key]
                             [--account-name]
                             [--connection-string]
-                            [--query-examples]
                             [--sas-token]
                             [--subscription]
                             [--timeout]
@@ -121,9 +112,6 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -151,7 +139,6 @@ directCommands:
                                   [--ip]
                                   [--permissions]
                                   [--policy-name]
-                                  [--query-examples]
                                   [--sas-token]
                                   [--start]
                                   [--start-pk]
@@ -192,9 +179,6 @@ directCommands:
     description: ''
   - name: --policy-name
     summary: The name of a stored access policy within the table's ACL.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -243,7 +227,7 @@ directCommands:
     summary: The maximum number of tables to return.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

@@ -15,7 +15,6 @@ directCommands:
                             [--connection-string]
                             [--fail-on-exist]
                             [--metadata]
-                            [--query-examples]
                             [--quota]
                             [--sas-token]
                             [--subscription]
@@ -44,9 +43,6 @@ directCommands:
   - name: --metadata
     summary: Metadata in space-separated key=value pairs. This overwrites any existing metadata.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --quota
     summary: Specifies the maximum size of the share, in gigabytes. Must be greater than 0, and less than or equal to 5TB (5120).
     description: ''
@@ -70,7 +66,6 @@ directCommands:
                             [--account-name]
                             [--connection-string]
                             [--fail-not-exist]
-                            [--query-examples]
                             [--sas-token]
                             [--subscription]
                             [--timeout]
@@ -92,9 +87,6 @@ directCommands:
   - name: --fail-not-exist
     summary: Specify whether to throw an exception when the share doesn't exist. False by default.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -114,7 +106,6 @@ directCommands:
                             [--account-key]
                             [--account-name]
                             [--connection-string]
-                            [--query-examples]
                             [--sas-token]
                             [--subscription]
                             [--timeout]
@@ -137,9 +128,6 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -170,7 +158,6 @@ directCommands:
                                   [--ip]
                                   [--permissions]
                                   [--policy-name]
-                                  [--query-examples]
                                   [--sas-token]
                                   [--start]
                                   [--subscription]
@@ -231,9 +218,6 @@ directCommands:
   - name: --policy-name
     summary: The name of a stored access policy within the share's ACL.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -284,7 +268,7 @@ directCommands:
     summary: Filters the results to return only shares whose names begin with the specified prefix.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -325,7 +309,7 @@ directCommands:
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -346,7 +330,6 @@ directCommands:
                            [--account-key]
                            [--account-name]
                            [--connection-string]
-                           [--query-examples]
                            [--sas-token]
                            [--subscription]
                            [--timeout]
@@ -364,9 +347,6 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -388,7 +368,6 @@ directCommands:
                             [--account-key]
                             [--account-name]
                             [--connection-string]
-                            [--query-examples]
                             [--sas-token]
                             [--subscription]
                             [--timeout]
@@ -411,9 +390,6 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -434,7 +410,6 @@ directCommands:
                          [--account-name]
                          [--connection-string]
                          [--protocol {http, https}]
-                         [--query-examples]
                          [--sas-token]
                          [--subscription]
                          [--unc]
@@ -460,9 +435,6 @@ directCommands:
     defaultValue: https
     parameterValueGroup: http, https
     summary: Protocol to use.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'

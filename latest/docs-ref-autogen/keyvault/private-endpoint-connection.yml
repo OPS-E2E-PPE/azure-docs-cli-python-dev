@@ -13,7 +13,6 @@ directCommands:
                                                     [--id]
                                                     [--name]
                                                     [--no-wait]
-                                                    [--query-examples]
                                                     [--resource-group]
                                                     [--subscription]
                                                     [--vault-name]
@@ -45,9 +44,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
     description: ''
@@ -66,7 +62,6 @@ directCommands:
     az keyvault private-endpoint-connection delete [--id]
                                                    [--name]
                                                    [--no-wait]
-                                                   [--query-examples]
                                                    [--resource-group]
                                                    [--subscription]
                                                    [--vault-name]
@@ -95,9 +90,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
     description: ''
@@ -117,7 +109,6 @@ directCommands:
                                                    [--id]
                                                    [--name]
                                                    [--no-wait]
-                                                   [--query-examples]
                                                    [--resource-group]
                                                    [--subscription]
                                                    [--vault-name]
@@ -148,9 +139,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -196,7 +184,7 @@ directCommands:
     summary: The name of the private endpoint connection associated with the Key Vault. Required if --id is not specified.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.
@@ -220,7 +208,6 @@ directCommands:
                                                  [--id]
                                                  [--interval]
                                                  [--name]
-                                                 [--query-examples]
                                                  [--resource-group]
                                                  [--subscription]
                                                  [--timeout]
@@ -253,9 +240,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the private endpoint connection associated with the Key Vault. Required if --id is not specified.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Proceed only if Key Vault belongs to the specified resource group.

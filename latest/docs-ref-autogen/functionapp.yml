@@ -26,7 +26,6 @@ directCommands:
                           [--functions-version {2, 3}]
                           [--os-type {Linux, Windows}]
                           [--plan]
-                          [--query-examples]
                           [--role]
                           [--runtime {dotnet, java, node, powershell, python}]
                           [--runtime-version]
@@ -100,9 +99,6 @@ directCommands:
   - name: --plan -p
     summary: Name or resource id of the function app service plan. Use 'appservice plan create' to get one.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --role
     defaultValue: Contributor
     summary: Role name or id the system assigned identity will have.
@@ -131,7 +127,6 @@ directCommands:
   syntax: >-
     az functionapp delete [--ids]
                           [--name]
-                          [--query-examples]
                           [--resource-group]
                           [--slot]
                           [--subscription]
@@ -144,9 +139,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the function app.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -173,7 +165,7 @@ directCommands:
     syntax: az functionapp list --query "[?state=='Running']"
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -186,13 +178,8 @@ directCommands:
   name: az functionapp list-consumption-locations
   summary: List available locations for running function apps.
   description: ''
-  syntax: >-
-    az functionapp list-consumption-locations [--query-examples]
-                                              [--subscription]
+  syntax: az functionapp list-consumption-locations [--subscription]
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -204,7 +191,6 @@ directCommands:
   syntax: >-
     az functionapp restart [--ids]
                            [--name]
-                           [--query-examples]
                            [--resource-group]
                            [--slot]
                            [--subscription]
@@ -217,9 +203,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the function app.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -253,7 +236,7 @@ directCommands:
     summary: Name of the function app.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -272,7 +255,6 @@ directCommands:
   syntax: >-
     az functionapp start [--ids]
                          [--name]
-                         [--query-examples]
                          [--resource-group]
                          [--slot]
                          [--subscription]
@@ -285,9 +267,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the function app.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -306,7 +285,6 @@ directCommands:
   syntax: >-
     az functionapp stop [--ids]
                         [--name]
-                        [--query-examples]
                         [--resource-group]
                         [--slot]
                         [--subscription]
@@ -319,9 +297,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the function app.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -343,7 +318,6 @@ directCommands:
                           [--ids]
                           [--name]
                           [--plan]
-                          [--query-examples]
                           [--remove]
                           [--resource-group]
                           [--set]
@@ -366,9 +340,6 @@ directCommands:
     description: ''
   - name: --plan
     summary: The name or resource id of the plan to update the functionapp with.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

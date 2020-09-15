@@ -21,7 +21,6 @@ directCommands:
                                    [--ephemeral-start-port]
                                    [--placement-property]
                                    [--primary {false, true}]
-                                   [--query-examples]
                                    [--subscription]
                                    [--vm-image-offer]
                                    [--vm-image-publisher]
@@ -77,9 +76,6 @@ directCommands:
     parameterValueGroup: false, true
     summary: Specify if the node type is primary. On this node type will run system services. Only one node type should be marked as primary. Primary node type cannot be deleted or changed for existing clusters.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -111,7 +107,6 @@ directCommands:
     az sf managed-node-type delete --cluster-name
                                    --name
                                    --resource-group
-                                   [--query-examples]
                                    [--subscription]
   examples:
   - summary: Delete cluster.
@@ -130,9 +125,6 @@ directCommands:
     summary: Specify the resource group name. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -159,7 +151,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -192,7 +184,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -212,7 +204,6 @@ directCommands:
                                    [--ephemeral-start-port]
                                    [--instance-count]
                                    [--placement-property]
-                                   [--query-examples]
                                    [--subscription]
   examples:
   - summary: Update the instance count of the node type.
@@ -253,9 +244,6 @@ directCommands:
     description: ''
   - name: --placement-property
     summary: 'Placement tags applied to nodes in the node type as key/value pairs, which can be used to indicate where certain services (workload) should run. Updating this will override the current values.for example: --placement-property NodeColor=Green SomeProperty=5.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

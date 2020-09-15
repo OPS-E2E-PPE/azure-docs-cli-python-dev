@@ -13,7 +13,6 @@ directCommands:
                                --project-name
                                --resource-group
                                --service-name
-                               [--query-examples]
                                [--subscription]
   requiredParameters:
   - isRequired: true
@@ -33,9 +32,6 @@ directCommands:
     summary: The name of the Service.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -49,7 +45,6 @@ directCommands:
                                    --project-name
                                    --resource-group
                                    --service-name
-                                   [--query-examples]
                                    [--subscription]
   requiredParameters:
   - isRequired: true
@@ -69,9 +64,6 @@ directCommands:
     summary: The name of the Service.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -91,7 +83,6 @@ directCommands:
                                [--enable-data-integrity-validation]
                                [--enable-query-analysis-validation]
                                [--enable-schema-validation]
-                               [--query-examples]
                                [--subscription]
   examples:
   - summary: Create and start a Task which performs no validation checks.
@@ -162,9 +153,6 @@ directCommands:
   - name: --enable-schema-validation
     summary: Whether to compare the schema information between source and target.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -179,7 +167,6 @@ directCommands:
                                --resource-group
                                --service-name
                                [--delete-running-tasks]
-                               [--query-examples]
                                [--subscription]
                                [--yes]
   examples:
@@ -205,9 +192,6 @@ directCommands:
   optionalParameters:
   - name: --delete-running-tasks
     summary: If the Task is currently running, cancel the Task before deleting the Project.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -247,7 +231,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -293,7 +277,7 @@ directCommands:
     summary: Expand the response to provide more details. Use with "command" to see more details of the Task. Use with "output" to see the results of the Task's migration.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

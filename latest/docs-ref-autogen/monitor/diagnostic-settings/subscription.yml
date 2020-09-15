@@ -14,7 +14,6 @@ directCommands:
                                                        --name
                                                        [--event-hub-auth-rule]
                                                        [--event-hub-name]
-                                                       [--query-examples]
                                                        [--service-bus-rule]
                                                        [--storage-account]
                                                        [--subscription]
@@ -78,9 +77,6 @@ directCommands:
   - name: --event-hub-name
     summary: The name of the event hub. If none is specified, the default event hub will be selected.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --service-bus-rule
     summary: The service bus rule ID of the service bus namespace in which you would like to have Event Hubs created for streaming the Activity Log. The rule ID is of the format '{service bus resource ID}/authorizationrules/{key name}'.
     description: ''
@@ -100,7 +96,6 @@ directCommands:
   description: ''
   syntax: >-
     az monitor diagnostic-settings subscription delete --name
-                                                       [--query-examples]
                                                        [--subscription]
                                                        [--yes]
   requiredParameters:
@@ -109,9 +104,6 @@ directCommands:
     summary: The name of the diagnostic setting.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -128,7 +120,7 @@ directCommands:
                                                      [--subscription]
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -149,7 +141,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -166,7 +158,6 @@ directCommands:
                                                        [--event-hub-name]
                                                        [--force-string]
                                                        [--logs]
-                                                       [--query-examples]
                                                        [--remove]
                                                        [--service-bus-rule]
                                                        [--set]
@@ -193,9 +184,6 @@ directCommands:
     description: ''
   - name: --logs
     summary: JSON encoded list of logs settings. Use '@{file}' to load from a file.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

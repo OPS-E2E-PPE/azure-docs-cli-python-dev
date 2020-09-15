@@ -10,7 +10,6 @@ directCommands:
   description: ''
   syntax: >-
     az config get [--local]
-                  [--query-examples]
                   [<KEY>]
   examples:
   - summary: Get all configurations.
@@ -22,9 +21,6 @@ directCommands:
   optionalParameters:
   - name: --local
     summary: Include local configuration. Scan from the working directory up to the root drive, then the global configuration and return the first occurrence.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: <KEY>
     summary: The configuration to get. If not provided, all sections and configurations will be listed. If `section` is provided, all configurations under the specified section will be listed. If `<section>.<key>` is provided, only the corresponding configuration is shown.
@@ -39,7 +35,6 @@ directCommands:
     By default without specifying --local, the configuration will be saved to `~/.azure/config`.
   syntax: >-
     az config set [--local]
-                  [--query-examples]
                   [<KEY_VALUE>]
   examples:
   - summary: Disable color with `core.no_color`.
@@ -61,9 +56,6 @@ directCommands:
   - name: --local
     summary: Set as a local configuration in the working directory.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: <KEY_VALUE>
     summary: Space-separated configurations in the form of <section>.<key>=<value>.
     description: ''
@@ -74,7 +66,6 @@ directCommands:
   description: ''
   syntax: >-
     az config unset [--local]
-                    [--query-examples]
                     [<KEY>]
   examples:
   - summary: Unset the configuration of key `core.no_color`.
@@ -82,9 +73,6 @@ directCommands:
   optionalParameters:
   - name: --local
     summary: Include local configuration. Scan from the working directory up to the root drive, then the global configuration and unset the first occurrence.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: <KEY>
     summary: The configuration to unset, in the form of <section>.<key>.

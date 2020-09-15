@@ -11,7 +11,6 @@ directCommands:
   syntax: >-
     az policy assignment identity assign --name
                                          [--identity-scope]
-                                         [--query-examples]
                                          [--resource-group]
                                          [--role]
                                          [--scope]
@@ -28,9 +27,6 @@ directCommands:
   optionalParameters:
   - name: --identity-scope
     summary: Scope that the system assigned identity can access.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.
@@ -49,7 +45,6 @@ directCommands:
   description: ''
   syntax: >-
     az policy assignment identity remove --name
-                                         [--query-examples]
                                          [--resource-group]
                                          [--scope]
   requiredParameters:
@@ -58,9 +53,6 @@ directCommands:
     summary: Name of the policy assignment.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.
     description: ''
@@ -87,7 +79,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: The resource group where the policy will be applied.

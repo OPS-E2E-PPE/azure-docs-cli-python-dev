@@ -10,7 +10,6 @@ directCommands:
   description: ''
   syntax: >-
     az repos pr checkout --id
-                         [--query-examples]
                          [--remote-name]
                          [--subscription]
   requiredParameters:
@@ -19,9 +18,6 @@ directCommands:
     summary: ID of the pull request.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --remote-name
     defaultValue: origin
     summary: Name of git remote against which PR is raised.
@@ -45,7 +41,6 @@ directCommands:
                        [--open]
                        [--org]
                        [--project]
-                       [--query-examples]
                        [--repository]
                        [--reviewers]
                        [--source-branch]
@@ -93,9 +88,6 @@ directCommands:
     description: ''
   - name: --project -p
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --repository -r
     summary: Name or ID of the repository to create the pull request in.
@@ -163,7 +155,7 @@ directCommands:
     summary: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --repository -r
     summary: Name or ID of the repository.
@@ -199,7 +191,6 @@ directCommands:
                          --vote {approve, approve-with-suggestions, reject, reset, wait-for-author}
                          [--detect {false, true}]
                          [--org]
-                         [--query-examples]
                          [--subscription]
   requiredParameters:
   - isRequired: true
@@ -218,9 +209,6 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -253,7 +241,7 @@ directCommands:
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -273,7 +261,6 @@ directCommands:
                        [--draft {false, true}]
                        [--merge-commit-message]
                        [--org]
-                       [--query-examples]
                        [--squash {false, true}]
                        [--status {abandoned, active, completed}]
                        [--subscription]
@@ -316,9 +303,6 @@ directCommands:
     description: ''
   - name: --org --organization
     summary: 'Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: <a href="https://dev.azure.com/MyOrganizationName/">https://dev.azure.com/MyOrganizationName/</a>.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --squash
     parameterValueGroup: false, true

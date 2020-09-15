@@ -13,7 +13,6 @@ directCommands:
                                 --name
                                 --resource-group
                                 [--parameters]
-                                [--query-examples]
                                 [--subscription]
   requiredParameters:
   - isRequired: true
@@ -32,9 +31,6 @@ directCommands:
   - name: --parameters
     summary: The parameters for the request.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -47,7 +43,6 @@ directCommands:
     az batch application delete --application-name
                                 --name
                                 --resource-group
-                                [--query-examples]
                                 [--subscription]
                                 [--yes]
   requiredParameters:
@@ -64,9 +59,6 @@ directCommands:
     summary: Name of the resource group.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -98,7 +90,7 @@ directCommands:
     summary: The maximum number of items to return in the response.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -115,7 +107,6 @@ directCommands:
                              [--allow-updates]
                              [--default-version]
                              [--display-name]
-                             [--query-examples]
                              [--subscription]
   requiredParameters:
   - isRequired: true
@@ -139,9 +130,6 @@ directCommands:
     description: ''
   - name: --display-name
     summary: The display name for the application.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -172,7 +160,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

@@ -14,7 +14,6 @@ directCommands:
                                               --pool-name
                                               --remote-volume-resource-id
                                               --resource-group
-                                              [--query-examples]
                                               [--subscription]
   examples:
   - summary: Authorize the volume as the replication destination for the source
@@ -41,9 +40,6 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -57,7 +53,6 @@ directCommands:
                                              [--ids]
                                              [--name]
                                              [--pool-name]
-                                             [--query-examples]
                                              [--resource-group]
                                              [--subscription]
   examples:
@@ -76,9 +71,6 @@ directCommands:
   - name: --pool-name -p
     summary: The name of the ANF pool.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -95,7 +87,6 @@ directCommands:
                                              [--ids]
                                              [--name]
                                              [--pool-name]
-                                             [--query-examples]
                                              [--resource-group]
                                              [--subscription]
   examples:
@@ -114,9 +105,6 @@ directCommands:
   - name: --pool-name -p
     summary: The name of the ANF pool.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -133,7 +121,6 @@ directCommands:
                                              [--ids]
                                              [--name]
                                              [--pool-name]
-                                             [--query-examples]
                                              [--resource-group]
                                              [--subscription]
   examples:
@@ -152,9 +139,6 @@ directCommands:
   - name: --pool-name -p
     summary: The name of the ANF pool.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -171,7 +155,6 @@ directCommands:
                                               [--ids]
                                               [--name]
                                               [--pool-name]
-                                              [--query-examples]
                                               [--resource-group]
                                               [--subscription]
   examples:
@@ -189,9 +172,6 @@ directCommands:
     description: ''
   - name: --pool-name -p
     summary: The name of the ANF pool.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

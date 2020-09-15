@@ -24,7 +24,6 @@ directCommands:
                                                         [--path]
                                                         [--probe]
                                                         [--protocol {Http, Https}]
-                                                        [--query-examples]
                                                         [--root-certs]
                                                         [--subscription]
                                                         [--timeout]
@@ -91,9 +90,6 @@ directCommands:
     parameterValueGroup: Http, Https
     summary: The HTTP settings protocol.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --root-certs
     summary: Space-separated list of trusted root certificates (names or IDs) to associate with the HTTP settings. --host-name or --host-name-from-backend-pool is required when this field is set.
     description: ''
@@ -113,7 +109,6 @@ directCommands:
                                                         [--ids]
                                                         [--name]
                                                         [--no-wait]
-                                                        [--query-examples]
                                                         [--resource-group]
                                                         [--subscription]
   examples:
@@ -131,9 +126,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -165,7 +157,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -196,7 +188,7 @@ directCommands:
     summary: The name of the backed HTTP settings.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -227,7 +219,6 @@ directCommands:
                                                         [--port]
                                                         [--probe]
                                                         [--protocol {Http, Https}]
-                                                        [--query-examples]
                                                         [--remove]
                                                         [--resource-group]
                                                         [--root-certs]
@@ -296,9 +287,6 @@ directCommands:
   - name: --protocol
     parameterValueGroup: Http, Https
     summary: The HTTP settings protocol.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

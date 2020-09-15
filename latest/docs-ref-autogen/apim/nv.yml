@@ -13,7 +13,6 @@ directCommands:
                       --named-value-id
                       --resource-group
                       --service-name
-                      [--query-examples]
                       [--secret {false, true}]
                       [--subscription]
                       [--tags]
@@ -39,9 +38,6 @@ directCommands:
     summary: The name of the API Management service instance.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --secret
     parameterValueGroup: false, true
     summary: Determines whether the value is a secret and should be encrypted or not. Default value is false.
@@ -64,7 +60,6 @@ directCommands:
     az apim nv delete --named-value-id
                       --resource-group
                       --service-name
-                      [--query-examples]
                       [--subscription]
                       [--yes]
   requiredParameters:
@@ -81,9 +76,6 @@ directCommands:
     summary: The name of the API Management service instance.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -111,7 +103,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -142,7 +134,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -156,7 +148,6 @@ directCommands:
     az apim nv show-secret --named-value-id
                            --resource-group
                            --service-name
-                           [--query-examples]
                            [--subscription]
   requiredParameters:
   - isRequired: true
@@ -172,9 +163,6 @@ directCommands:
     summary: The name of the API Management service instance.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -190,7 +178,6 @@ directCommands:
                       [--add]
                       [--force-string]
                       [--if-match]
-                      [--query-examples]
                       [--remove]
                       [--secret {false, true}]
                       [--set]
@@ -222,9 +209,6 @@ directCommands:
     description: ''
   - name: --if-match
     summary: ETag of the Entity. Not required when creating an entity, but required when updating an entity.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

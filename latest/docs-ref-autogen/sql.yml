@@ -10,7 +10,6 @@ directCommands:
   description: ''
   syntax: >-
     az sql list-usages --location
-                       [--query-examples]
                        [--subscription]
   requiredParameters:
   - isRequired: true
@@ -18,9 +17,6 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -32,7 +28,6 @@ directCommands:
   syntax: >-
     az sql show-usage --location
                       --usage
-                      [--query-examples]
                       [--subscription]
   requiredParameters:
   - isRequired: true
@@ -44,9 +39,6 @@ directCommands:
     summary: Name of usage metric to return.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

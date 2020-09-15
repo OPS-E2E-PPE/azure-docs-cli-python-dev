@@ -15,7 +15,6 @@ directCommands:
                                          [--encapsulation {Dot1Q, QinQ}]
                                          [--location]
                                          [--peering-location]
-                                         [--query-examples]
                                          [--subscription]
                                          [--tags]
   examples:
@@ -44,9 +43,6 @@ directCommands:
   - name: --peering-location
     summary: The name of the peering location that the port is mapped to physically.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -61,7 +57,6 @@ directCommands:
   syntax: >-
     az network express-route port delete [--ids]
                                          [--name]
-                                         [--query-examples]
                                          [--resource-group]
                                          [--subscription]
   examples:
@@ -73,9 +68,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: ExpressRoute port name.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -94,7 +86,7 @@ directCommands:
                                        [--subscription]
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -124,7 +116,7 @@ directCommands:
     summary: ExpressRoute port name.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -142,7 +134,6 @@ directCommands:
                                          [--force-string]
                                          [--ids]
                                          [--name]
-                                         [--query-examples]
                                          [--remove]
                                          [--resource-group]
                                          [--set]
@@ -163,9 +154,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: ExpressRoute port name.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

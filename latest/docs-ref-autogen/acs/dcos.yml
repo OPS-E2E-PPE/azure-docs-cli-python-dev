@@ -12,7 +12,6 @@ directCommands:
     az acs dcos browse --name
                        --resource-group
                        [--disable-browser]
-                       [--query-examples]
                        [--ssh-key-file]
                        [--subscription]
   requiredParameters:
@@ -27,9 +26,6 @@ directCommands:
   optionalParameters:
   - name: --disable-browser
     summary: Do not open browser after opening a proxy to the cluster web user interface.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --ssh-key-file
     defaultValue: ~\.ssh\id_rsa
@@ -46,7 +42,6 @@ directCommands:
   syntax: >-
     az acs dcos install-cli [--client-version]
                             [--install-location]
-                            [--query-examples]
                             [--subscription]
   optionalParameters:
   - name: --client-version
@@ -56,9 +51,6 @@ directCommands:
   - name: --install-location
     defaultValue: ~/.azure-kubectl/kubectl.exe
     summary: Path at which to install kubectl.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

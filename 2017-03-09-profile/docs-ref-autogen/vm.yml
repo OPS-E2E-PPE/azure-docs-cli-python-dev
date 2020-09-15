@@ -14,7 +14,6 @@ directCommands:
                         [--location]
                         [--name]
                         [--off]
-                        [--query-examples]
                         [--resource-group]
                         [--subscription]
                         [--time]
@@ -40,9 +39,6 @@ directCommands:
   - name: --off
     summary: Turn off auto-shutdown for VM. Configuration will be cleared.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -65,7 +61,6 @@ directCommands:
                   [--ids]
                   [--name]
                   [--overwrite]
-                  [--query-examples]
                   [--resource-group]
                   [--storage-container]
                   [--subscription]
@@ -101,9 +96,6 @@ directCommands:
   - name: --overwrite
     defaultValue: "1"
     summary: Overwrite the existing disk file.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -158,7 +150,6 @@ directCommands:
                  [--public-ip-address-allocation {dynamic, static}]
                  [--public-ip-address-dns-name]
                  [--public-ip-sku]
-                 [--query-examples]
                  [--role]
                  [--scope]
                  [--secrets]
@@ -346,9 +337,6 @@ directCommands:
   - name: --public-ip-sku
     summary: ''
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --role
     defaultValue: Contributor
     summary: Role name or id the system assigned identity will have.
@@ -424,7 +412,6 @@ directCommands:
     az vm deallocate [--ids]
                      [--name]
                      [--no-wait]
-                     [--query-examples]
                      [--resource-group]
                      [--subscription]
   examples:
@@ -456,9 +443,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -474,7 +458,6 @@ directCommands:
     az vm delete [--ids]
                  [--name]
                  [--no-wait]
-                 [--query-examples]
                  [--resource-group]
                  [--subscription]
                  [--yes]
@@ -492,9 +475,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -514,7 +494,6 @@ directCommands:
     az vm generalize [--ids]
                      [--name]
                      [--no-wait]
-                     [--query-examples]
                      [--resource-group]
                      [--subscription]
   examples:
@@ -544,9 +523,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -561,7 +537,6 @@ directCommands:
   syntax: >-
     az vm get-instance-view [--ids]
                             [--name]
-                            [--query-examples]
                             [--resource-group]
                             [--subscription]
   examples:
@@ -575,9 +550,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=<name>`.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -604,7 +576,7 @@ directCommands:
     syntax: az vm list -g MyResourceGroup -d
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -623,7 +595,6 @@ directCommands:
   syntax: >-
     az vm list-ip-addresses [--ids]
                             [--name]
-                            [--query-examples]
                             [--resource-group]
                             [--subscription]
   examples:
@@ -638,9 +609,6 @@ directCommands:
   - name: --name -n
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=<name>`.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -654,7 +622,6 @@ directCommands:
   description: ''
   syntax: >-
     az vm list-sizes --location
-                     [--query-examples]
                      [--subscription]
   examples:
   - summary: List the available VM sizes in the West US region.
@@ -665,9 +632,6 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -678,7 +642,6 @@ directCommands:
   description: ''
   syntax: >-
     az vm list-usage --location
-                     [--query-examples]
                      [--subscription]
   examples:
   - summary: Get the compute resource usage for the West US region.
@@ -689,9 +652,6 @@ directCommands:
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -703,7 +663,6 @@ directCommands:
   syntax: >-
     az vm list-vm-resize-options [--ids]
                                  [--name]
-                                 [--query-examples]
                                  [--resource-group]
                                  [--subscription]
   examples:
@@ -717,9 +676,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=<name>`.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -739,7 +695,6 @@ directCommands:
                     [--name]
                     [--nsg-name]
                     [--priority]
-                    [--query-examples]
                     [--resource-group]
                     [--subscription]
   examples:
@@ -771,9 +726,6 @@ directCommands:
     defaultValue: "900"
     summary: Rule priority, between 100 (highest priority) and 4096 (lowest priority). Must be unique for each rule in the collection.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -789,7 +741,6 @@ directCommands:
     az vm redeploy [--ids]
                    [--name]
                    [--no-wait]
-                   [--query-examples]
                    [--resource-group]
                    [--subscription]
   examples:
@@ -807,9 +758,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -826,7 +774,6 @@ directCommands:
                  [--ids]
                  [--name]
                  [--no-wait]
-                 [--query-examples]
                  [--resource-group]
                  [--subscription]
   examples:
@@ -850,9 +797,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -869,7 +813,6 @@ directCommands:
                   [--ids]
                   [--name]
                   [--no-wait]
-                  [--query-examples]
                   [--resource-group]
                   [--subscription]
   examples:
@@ -889,9 +832,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -924,7 +864,7 @@ directCommands:
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=<name>`.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -944,7 +884,6 @@ directCommands:
     az vm start [--ids]
                 [--name]
                 [--no-wait]
-                [--query-examples]
                 [--resource-group]
                 [--subscription]
   examples:
@@ -964,9 +903,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -982,7 +918,6 @@ directCommands:
     az vm stop [--ids]
                [--name]
                [--no-wait]
-               [--query-examples]
                [--resource-group]
                [--subscription]
   examples:
@@ -1001,9 +936,6 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -1024,7 +956,6 @@ directCommands:
                  [--license-type {None, RHEL_BYOS, SLES_BYOS, Windows_Client, Windows_Server}]
                  [--name]
                  [--no-wait]
-                 [--query-examples]
                  [--remove]
                  [--resource-group]
                  [--set]
@@ -1064,9 +995,6 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
@@ -1095,7 +1023,6 @@ directCommands:
                [--ids]
                [--interval]
                [--name]
-               [--query-examples]
                [--resource-group]
                [--subscription]
                [--timeout]
@@ -1127,9 +1054,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: The name of the Virtual Machine. You can configure the default using `az configure --defaults vm=<name>`.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

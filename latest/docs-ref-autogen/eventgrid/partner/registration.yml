@@ -21,7 +21,6 @@ directCommands:
                                              [--display-name]
                                              [--logo-uri]
                                              [--long-description]
-                                             [--query-examples]
                                              [--setup-uri]
                                              [--subscription]
                                              [--tags]
@@ -72,9 +71,6 @@ directCommands:
   - name: --long-description
     summary: Description of the custom scenarios and integration. Length of this description should not exceed 2048 characters.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --setup-uri
     summary: URI of the partner website that can be used by Azure customers to setup Event Grid integration on an event source.
     description: ''
@@ -92,7 +88,6 @@ directCommands:
   syntax: >-
     az eventgrid partner registration delete [--ids]
                                              [--name]
-                                             [--query-examples]
                                              [--resource-group]
                                              [--subscription]
                                              [--yes]
@@ -102,9 +97,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the partner registration.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -139,7 +131,7 @@ directCommands:
     summary: 'The OData query used for filtering the list results. Filtering is currently allowed on the Name property only. The supported operations include: CONTAINS, eq (for equal), ne (for not equal), AND, OR and NOT.'
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -166,7 +158,7 @@ directCommands:
     summary: Name of the partner registration.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.

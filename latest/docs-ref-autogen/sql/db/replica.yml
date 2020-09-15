@@ -22,7 +22,6 @@ directCommands:
                              [--min-capacity]
                              [--no-wait]
                              [--partner-resource-group]
-                             [--query-examples]
                              [--read-replicas]
                              [--read-scale {Disabled, Enabled}]
                              [--service-objective]
@@ -81,9 +80,6 @@ directCommands:
   - name: --partner-resource-group
     summary: Name of the resource group to create the new replica in. If unspecified, defaults to the origin resource group.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --read-replicas
     summary: The number of readonly replicas to provision for the database. Only settable for Hyperscale edition.
     description: ''
@@ -114,7 +110,6 @@ directCommands:
                                   [--ids]
                                   [--name]
                                   [--partner-resource-group]
-                                  [--query-examples]
                                   [--resource-group]
                                   [--server]
                                   [--subscription]
@@ -133,9 +128,6 @@ directCommands:
     description: ''
   - name: --partner-resource-group
     summary: Name of the resource group that the other replica is in. If unspecified, defaults to the first database's resource group.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -157,7 +149,6 @@ directCommands:
   syntax: >-
     az sql db replica list-links [--ids]
                                  [--name]
-                                 [--query-examples]
                                  [--resource-group]
                                  [--server]
                                  [--subscription]
@@ -170,9 +161,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Azure SQL Database.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -192,7 +180,6 @@ directCommands:
     az sql db replica set-primary [--allow-data-loss]
                                   [--ids]
                                   [--name]
-                                  [--query-examples]
                                   [--resource-group]
                                   [--server]
                                   [--subscription]
@@ -208,9 +195,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the database to fail over.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of the resource group containing the secondary replica that will become the new primary.

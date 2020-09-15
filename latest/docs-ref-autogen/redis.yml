@@ -16,7 +16,6 @@ directCommands:
                     --vm-size {c0, c1, c2, c3, c4, c5, c6, p1, p2, p3, p4, p5}
                     [--enable-non-ssl-port]
                     [--minimum-tls-version {1.0, 1.1, 1.2}]
-                    [--query-examples]
                     [--redis-configuration]
                     [--replicas-per-master]
                     [--shard-count]
@@ -60,9 +59,6 @@ directCommands:
     parameterValueGroup: 1.0, 1.1, 1.2
     summary: Specifies the TLS version required by clients to connect to cache.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --redis-configuration
     summary: JSON encoded configuration settings. Use @{file} to load from a file.
     description: ''
@@ -99,7 +95,6 @@ directCommands:
   syntax: >-
     az redis delete [--ids]
                     [--name]
-                    [--query-examples]
                     [--resource-group]
                     [--subscription]
                     [--yes]
@@ -109,9 +104,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Redis cache.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -133,7 +125,6 @@ directCommands:
                     [--file-format]
                     [--ids]
                     [--name]
-                    [--query-examples]
                     [--resource-group]
                     [--subscription]
   requiredParameters:
@@ -155,9 +146,6 @@ directCommands:
   - name: --name -n
     summary: Name of the Redis cache.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -173,7 +161,6 @@ directCommands:
     az redis force-reboot --reboot-type {AllNodes, PrimaryNode, SecondaryNode}
                           [--ids]
                           [--name]
-                          [--query-examples]
                           [--resource-group]
                           [--shard-id]
                           [--subscription]
@@ -189,9 +176,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Redis cache.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -212,7 +196,6 @@ directCommands:
                     [--file-format]
                     [--ids]
                     [--name]
-                    [--query-examples]
                     [--resource-group]
                     [--subscription]
   requiredParameters:
@@ -230,9 +213,6 @@ directCommands:
   - name: --name -n
     summary: Name of the Redis cache.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -249,7 +229,6 @@ directCommands:
                            [--file-format]
                            [--ids]
                            [--name]
-                           [--query-examples]
                            [--resource-group]
                            [--subscription]
   requiredParameters:
@@ -266,9 +245,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Redis cache.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -287,7 +263,7 @@ directCommands:
                   [--subscription]
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -303,7 +279,6 @@ directCommands:
   syntax: >-
     az redis list-keys [--ids]
                        [--name]
-                       [--query-examples]
                        [--resource-group]
                        [--subscription]
   optionalParameters:
@@ -312,9 +287,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Redis cache.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -331,7 +303,6 @@ directCommands:
     az redis regenerate-keys --key-type {Primary, Secondary}
                              [--ids]
                              [--name]
-                             [--query-examples]
                              [--resource-group]
                              [--subscription]
   requiredParameters:
@@ -346,9 +317,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Redis cache.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -375,7 +343,7 @@ directCommands:
     summary: Name of the Redis cache.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -393,7 +361,6 @@ directCommands:
                     [--force-string]
                     [--ids]
                     [--name]
-                    [--query-examples]
                     [--remove]
                     [--resource-group]
                     [--set]
@@ -412,9 +379,6 @@ directCommands:
     description: ''
   - name: --name -n
     summary: Name of the Redis cache.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'

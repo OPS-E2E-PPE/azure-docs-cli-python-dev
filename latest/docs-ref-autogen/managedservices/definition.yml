@@ -19,7 +19,6 @@ directCommands:
                                          [--plan-product]
                                          [--plan-publisher]
                                          [--plan-version]
-                                         [--query-examples]
                                          [--subscription]
   examples:
   - summary: Creates a registration definition under the default subscription scope with the required parameters.
@@ -60,9 +59,6 @@ directCommands:
   - name: --plan-version
     summary: The plan version.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -73,7 +69,6 @@ directCommands:
   description: ''
   syntax: >-
     az managedservices definition delete --definition
-                                         [--query-examples]
                                          [--subscription]
   examples:
   - summary: Deletes the registration definition given its identifier under the default subscription scope.
@@ -86,9 +81,6 @@ directCommands:
     summary: The identifier (guid) or the fully qualified resource id of the registration definition. When resource id is used, subscription id and resource group parameters are ignored.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -105,7 +97,7 @@ directCommands:
     syntax: az managedservices definition list
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -131,7 +123,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

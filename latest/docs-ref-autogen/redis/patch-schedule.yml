@@ -12,7 +12,6 @@ directCommands:
     az redis patch-schedule create --name
                                    --resource-group
                                    --schedule-entries
-                                   [--query-examples]
                                    [--subscription]
   requiredParameters:
   - isRequired: true
@@ -28,9 +27,6 @@ directCommands:
     summary: List of Patch schedule entries. Example Value:[{"dayOfWeek":"Monday","startHourUtc":"00","maintenanceWindow":"PT5H"}].
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -42,7 +38,6 @@ directCommands:
   syntax: >-
     az redis patch-schedule delete --name
                                    --resource-group
-                                   [--query-examples]
                                    [--subscription]
   requiredParameters:
   - isRequired: true
@@ -54,9 +49,6 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -81,7 +73,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -95,7 +87,6 @@ directCommands:
     az redis patch-schedule update --name
                                    --resource-group
                                    --schedule-entries
-                                   [--query-examples]
                                    [--subscription]
   requiredParameters:
   - isRequired: true
@@ -111,9 +102,6 @@ directCommands:
     summary: List of Patch schedule entries. Example Value:[{"dayOfWeek":"Monday","startHourUtc":"00","maintenanceWindow":"PT5H"}].
     description: ''
   optionalParameters:
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''

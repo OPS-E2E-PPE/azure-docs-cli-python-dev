@@ -12,7 +12,6 @@ directCommands:
     az acs kubernetes browse --name
                              --resource-group
                              [--disable-browser]
-                             [--query-examples]
                              [--ssh-key-file]
                              [--subscription]
   requiredParameters:
@@ -27,9 +26,6 @@ directCommands:
   optionalParameters:
   - name: --disable-browser
     summary: Do not open browser after opening a proxy to the cluster web user interface.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --ssh-key-file
     defaultValue: ~\.ssh\id_rsa
@@ -48,7 +44,6 @@ directCommands:
                                       --resource-group
                                       [--file]
                                       [--overwrite-existing]
-                                      [--query-examples]
                                       [--ssh-key-file]
                                       [--subscription]
   examples:
@@ -71,9 +66,6 @@ directCommands:
   - name: --overwrite-existing
     summary: If specified, overwrite any existing credentials.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --ssh-key-file
     summary: Path to an SSH key file to use.
     description: ''
@@ -90,7 +82,6 @@ directCommands:
                                   [--install-location]
                                   [--kubelogin-install-location]
                                   [--kubelogin-version]
-                                  [--query-examples]
                                   [--subscription]
   optionalParameters:
   - name: --client-version
@@ -108,9 +99,6 @@ directCommands:
   - name: --kubelogin-version
     defaultValue: latest
     summary: Version of kubelogin to install.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.

@@ -14,7 +14,6 @@ directCommands:
                            [--account-key]
                            [--account-name]
                            [--connection-string]
-                           [--query-examples]
                            [--sas-token]
                            [--subscription]
                            [--timeout]
@@ -37,9 +36,6 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -61,7 +57,6 @@ directCommands:
                                  [--connection-string]
                                  [--dryrun]
                                  [--pattern]
-                                 [--query-examples]
                                  [--sas-token]
                                  [--subscription]
                                  [--timeout]
@@ -91,9 +86,6 @@ directCommands:
   - name: --pattern
     summary: The pattern used for file globbing. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to <a href="https://docs.python.org/3.7/library/fnmatch.html">https://docs.python.org/3.7/library/fnmatch.html</a>.
     description: When you use '*' in --pattern, it will match any character including the the directory separator '/'.
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -119,7 +111,6 @@ directCommands:
                              [--max-connections]
                              [--no-progress]
                              [--open-mode]
-                             [--query-examples]
                              [--sas-token]
                              [--snapshot]
                              [--start-range]
@@ -162,9 +153,6 @@ directCommands:
     defaultValue: wb
     summary: Mode to use when opening the file. Note that specifying append only open_mode prevents parallel download. So, max_connections must be set to 1 if this open_mode is used.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -198,7 +186,6 @@ directCommands:
                                    [--max-connections]
                                    [--no-progress]
                                    [--pattern]
-                                   [--query-examples]
                                    [--sas-token]
                                    [--snapshot]
                                    [--subscription]
@@ -238,9 +225,6 @@ directCommands:
   - name: --pattern
     summary: The pattern used for file globbing. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to <a href="https://docs.python.org/3.7/library/fnmatch.html">https://docs.python.org/3.7/library/fnmatch.html</a>.
     description: When you use '*' in --pattern, it will match any character including the the directory separator '/'.
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -264,7 +248,6 @@ directCommands:
                            [--account-key]
                            [--account-name]
                            [--connection-string]
-                           [--query-examples]
                            [--sas-token]
                            [--snapshot]
                            [--subscription]
@@ -292,9 +275,6 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -329,7 +309,6 @@ directCommands:
                                  [--ip]
                                  [--permissions]
                                  [--policy-name]
-                                 [--query-examples]
                                  [--sas-token]
                                  [--start]
                                  [--subscription]
@@ -389,9 +368,6 @@ directCommands:
     description: ''
   - name: --policy-name
     summary: The name of a stored access policy within the container's ACL.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -453,7 +429,7 @@ directCommands:
     summary: The directory path within the file share.
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -479,7 +455,6 @@ directCommands:
                            [--account-key]
                            [--account-name]
                            [--connection-string]
-                           [--query-examples]
                            [--sas-token]
                            [--subscription]
                            [--timeout]
@@ -505,9 +480,6 @@ directCommands:
     description: ''
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -554,7 +526,7 @@ directCommands:
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
   - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -586,7 +558,6 @@ directCommands:
                            [--content-language]
                            [--content-md5]
                            [--content-type]
-                           [--query-examples]
                            [--sas-token]
                            [--subscription]
                            [--timeout]
@@ -631,9 +602,6 @@ directCommands:
   - name: --content-type
     summary: The content MIME type.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -664,7 +632,6 @@ directCommands:
                            [--metadata]
                            [--no-progress]
                            [--path]
-                           [--query-examples]
                            [--sas-token]
                            [--subscription]
                            [--timeout]
@@ -724,9 +691,6 @@ directCommands:
   - name: --path -p
     summary: The path to the file within the file share. If the file name is omitted, the source file name will be used.
     description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -762,7 +726,6 @@ directCommands:
                                  [--metadata]
                                  [--no-progress]
                                  [--pattern]
-                                 [--query-examples]
                                  [--sas-token]
                                  [--subscription]
                                  [--validate-content]
@@ -825,9 +788,6 @@ directCommands:
   - name: --pattern
     summary: The pattern used for file globbing. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to <a href="https://docs.python.org/3.7/library/fnmatch.html">https://docs.python.org/3.7/library/fnmatch.html</a>.
     description: When you use '*' in --pattern, it will match any character including the the directory separator '/'.
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
-    description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
     description: ''
@@ -849,7 +809,6 @@ directCommands:
                         [--account-name]
                         [--connection-string]
                         [--protocol {http, https}]
-                        [--query-examples]
                         [--sas-token]
                         [--subscription]
   examples:
@@ -878,9 +837,6 @@ directCommands:
     defaultValue: https
     parameterValueGroup: http, https
     summary: Protocol to use.
-    description: ''
-  - name: --query-examples
-    summary: Recommend JMESPath string for you. Currently this is a dummy parameter.
     description: ''
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
