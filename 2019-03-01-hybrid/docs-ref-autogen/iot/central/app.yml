@@ -17,6 +17,7 @@ directCommands:
                               --subdomain
                               [--display-name]
                               [--location]
+                              [--no-wait]
                               [--sku {F1, S1, ST0, ST1, ST2}]
                               [--subscription]
                               [--template]
@@ -45,6 +46,9 @@ directCommands:
   - name: --location -l
     summary: Where your app's info and resources are stored. We will default to the location of the target resource group. See documentation for a full list of supported locations.
     description: ''
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
   - name: --sku -p
     defaultValue: ST2
     parameterValueGroup: F1, S1, ST0, ST1, ST2
@@ -67,6 +71,7 @@ directCommands:
   syntax: >-
     az iot central app delete --name
                               --resource-group
+                              [--no-wait]
                               [--subscription]
                               [--yes]
   examples:
@@ -82,6 +87,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
