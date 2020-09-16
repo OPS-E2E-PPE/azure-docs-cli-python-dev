@@ -10853,6 +10853,9 @@
       - name: list
         uid: az_storage_share_rm_list
         displayName: az storage share-rm list
+      - name: restore
+        uid: az_storage_share_rm_restore
+        displayName: az storage share-rm restore
       - name: show
         uid: az_storage_share_rm_show
         displayName: az storage share-rm show
