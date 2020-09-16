@@ -39,6 +39,8 @@ directCommands:
   syntax: >-
     az storage account blob-service-properties update --account-name
                                                       [--add]
+                                                      [--container-days]
+                                                      [--container-retention {false, true}]
                                                       [--delete-retention-days]
                                                       [--enable-change-feed {false, true}]
                                                       [--enable-delete-retention {false, true}]
@@ -65,6 +67,13 @@ directCommands:
   optionalParameters:
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --container-days --container-delete-retention-days
+    summary: Indicate the number of days that the deleted container should be retained. The minimum specified value can be 1 and the maximum value can be 365.
+    description: ''
+  - name: --container-retention --enable-container-delete-retention
+    parameterValueGroup: false, true
+    summary: Enable container delete retention policy for container soft delete when set to true. Disable container delete retention policy when set to false.
     description: ''
   - name: --delete-retention-days
     summary: Indicate the number of days that the deleted blob should be retained. The value must be in range [1,365]. It must be provided when `--enable-delete-retention` is true.
