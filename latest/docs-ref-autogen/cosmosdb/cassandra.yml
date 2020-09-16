@@ -11,6 +11,7 @@ commands:
 - az_cosmosdb_cassandra_keyspace_list
 - az_cosmosdb_cassandra_keyspace_show
 - az_cosmosdb_cassandra_keyspace_throughput
+- az_cosmosdb_cassandra_keyspace_throughput_migrate
 - az_cosmosdb_cassandra_keyspace_throughput_show
 - az_cosmosdb_cassandra_keyspace_throughput_update
 - az_cosmosdb_cassandra_table
@@ -20,6 +21,7 @@ commands:
 - az_cosmosdb_cassandra_table_list
 - az_cosmosdb_cassandra_table_show
 - az_cosmosdb_cassandra_table_throughput
+- az_cosmosdb_cassandra_table_throughput_migrate
 - az_cosmosdb_cassandra_table_throughput_show
 - az_cosmosdb_cassandra_table_throughput_update
 - az_cosmosdb_cassandra_table_update
@@ -40,5 +42,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 04/17/2020
+  ms.date: 09/16/2020
   description: Manage Cassandra resources of Azure Cosmos DB account.

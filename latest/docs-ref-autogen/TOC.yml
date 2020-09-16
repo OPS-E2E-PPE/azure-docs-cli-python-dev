@@ -2177,6 +2177,9 @@
           - name: Overview
             uid: az_cosmosdb_cassandra_keyspace_throughput
             displayName: az cosmosdb cassandra keyspace throughput
+          - name: migrate
+            uid: az_cosmosdb_cassandra_keyspace_throughput_migrate
+            displayName: az cosmosdb cassandra keyspace throughput migrate
           - name: show
             uid: az_cosmosdb_cassandra_keyspace_throughput_show
             displayName: az cosmosdb cassandra keyspace throughput show
@@ -2213,6 +2216,9 @@
           - name: Overview
             uid: az_cosmosdb_cassandra_table_throughput
             displayName: az cosmosdb cassandra table throughput
+          - name: migrate
+            uid: az_cosmosdb_cassandra_table_throughput_migrate
+            displayName: az cosmosdb cassandra table throughput migrate
           - name: show
             uid: az_cosmosdb_cassandra_table_throughput_show
             displayName: az cosmosdb cassandra table throughput show
@@ -2297,6 +2303,9 @@
           - name: Overview
             uid: az_cosmosdb_gremlin_database_throughput
             displayName: az cosmosdb gremlin database throughput
+          - name: migrate
+            uid: az_cosmosdb_gremlin_database_throughput_migrate
+            displayName: az cosmosdb gremlin database throughput migrate
           - name: show
             uid: az_cosmosdb_gremlin_database_throughput_show
             displayName: az cosmosdb gremlin database throughput show
@@ -2333,6 +2342,9 @@
           - name: Overview
             uid: az_cosmosdb_gremlin_graph_throughput
             displayName: az cosmosdb gremlin graph throughput
+          - name: migrate
+            uid: az_cosmosdb_gremlin_graph_throughput_migrate
+            displayName: az cosmosdb gremlin graph throughput migrate
           - name: show
             uid: az_cosmosdb_gremlin_graph_throughput_show
             displayName: az cosmosdb gremlin graph throughput show
@@ -2387,6 +2399,9 @@
           - name: Overview
             uid: az_cosmosdb_mongodb_collection_throughput
             displayName: az cosmosdb mongodb collection throughput
+          - name: migrate
+            uid: az_cosmosdb_mongodb_collection_throughput_migrate
+            displayName: az cosmosdb mongodb collection throughput migrate
           - name: show
             uid: az_cosmosdb_mongodb_collection_throughput_show
             displayName: az cosmosdb mongodb collection throughput show
@@ -2420,6 +2435,9 @@
           - name: Overview
             uid: az_cosmosdb_mongodb_database_throughput
             displayName: az cosmosdb mongodb database throughput
+          - name: migrate
+            uid: az_cosmosdb_mongodb_database_throughput_migrate
+            displayName: az cosmosdb mongodb database throughput migrate
           - name: show
             uid: az_cosmosdb_mongodb_database_throughput_show
             displayName: az cosmosdb mongodb database throughput show
@@ -2504,6 +2522,9 @@
           - name: Overview
             uid: az_cosmosdb_sql_container_throughput
             displayName: az cosmosdb sql container throughput
+          - name: migrate
+            uid: az_cosmosdb_sql_container_throughput_migrate
+            displayName: az cosmosdb sql container throughput migrate
           - name: show
             uid: az_cosmosdb_sql_container_throughput_show
             displayName: az cosmosdb sql container throughput show
@@ -2537,6 +2558,9 @@
           - name: Overview
             uid: az_cosmosdb_sql_database_throughput
             displayName: az cosmosdb sql database throughput
+          - name: migrate
+            uid: az_cosmosdb_sql_database_throughput_migrate
+            displayName: az cosmosdb sql database throughput migrate
           - name: show
             uid: az_cosmosdb_sql_database_throughput_show
             displayName: az cosmosdb sql database throughput show
@@ -2633,6 +2657,9 @@
         - name: Overview
           uid: az_cosmosdb_table_throughput
           displayName: az cosmosdb table throughput
+        - name: migrate
+          uid: az_cosmosdb_table_throughput_migrate
+          displayName: az cosmosdb table throughput migrate
         - name: show
           uid: az_cosmosdb_table_throughput_show
           displayName: az cosmosdb table throughput show
@@ -25930,9 +25957,6 @@
         - name: Overview
           uid: ext_storage-preview_az_storage_blob
           displayName: az storage blob
-        - name: list
-          uid: ext_storage-preview_az_storage_blob_list
-          displayName: az storage blob list
         - name: move
           uid: ext_storage-preview_az_storage_blob_move
           displayName: az storage blob move

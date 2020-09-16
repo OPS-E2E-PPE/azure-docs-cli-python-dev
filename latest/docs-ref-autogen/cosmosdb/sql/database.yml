@@ -164,6 +164,7 @@ commands:
 - az_cosmosdb_sql_database_list
 - az_cosmosdb_sql_database_show
 - az_cosmosdb_sql_database_throughput
+- az_cosmosdb_sql_database_throughput_migrate
 - az_cosmosdb_sql_database_throughput_show
 - az_cosmosdb_sql_database_throughput_update
 globalParameters:
@@ -183,5 +184,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 04/17/2020
+  ms.date: 09/16/2020
   description: Manage Azure Cosmos DB SQL databases.

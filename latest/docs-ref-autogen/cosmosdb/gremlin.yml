@@ -11,6 +11,7 @@ commands:
 - az_cosmosdb_gremlin_database_list
 - az_cosmosdb_gremlin_database_show
 - az_cosmosdb_gremlin_database_throughput
+- az_cosmosdb_gremlin_database_throughput_migrate
 - az_cosmosdb_gremlin_database_throughput_show
 - az_cosmosdb_gremlin_database_throughput_update
 - az_cosmosdb_gremlin_graph
@@ -20,6 +21,7 @@ commands:
 - az_cosmosdb_gremlin_graph_list
 - az_cosmosdb_gremlin_graph_show
 - az_cosmosdb_gremlin_graph_throughput
+- az_cosmosdb_gremlin_graph_throughput_migrate
 - az_cosmosdb_gremlin_graph_throughput_show
 - az_cosmosdb_gremlin_graph_throughput_update
 - az_cosmosdb_gremlin_graph_update
@@ -40,5 +42,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 04/17/2020
+  ms.date: 09/16/2020
   description: Manage Gremlin resources of Azure Cosmos DB account.
