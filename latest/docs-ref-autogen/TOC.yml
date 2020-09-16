@@ -5309,6 +5309,12 @@
       - name: show
         uid: az_mysql_server_show
         displayName: az mysql server show
+      - name: start
+        uid: az_mysql_server_start
+        displayName: az mysql server start
+      - name: stop
+        uid: az_mysql_server_stop
+        displayName: az mysql server stop
       - name: update
         uid: az_mysql_server_update
         displayName: az mysql server update
@@ -5453,6 +5459,117 @@
         - name: update
           uid: az_mysql_server_vnet_rule_update
           displayName: az mysql server vnet-rule update
+    - name: flexible-server
+      displayName: az mysql flexible-server
+      items:
+      - name: Overview
+        uid: az_mysql_flexible_server
+        displayName: az mysql flexible-server
+      - name: create
+        uid: az_mysql_flexible_server_create
+        displayName: az mysql flexible-server create
+      - name: delete
+        uid: az_mysql_flexible_server_delete
+        displayName: az mysql flexible-server delete
+      - name: list
+        uid: az_mysql_flexible_server_list
+        displayName: az mysql flexible-server list
+      - name: list-skus
+        uid: az_mysql_flexible_server_list_skus
+        displayName: az mysql flexible-server list-skus
+      - name: restart
+        uid: az_mysql_flexible_server_restart
+        displayName: az mysql flexible-server restart
+      - name: restore
+        uid: az_mysql_flexible_server_restore
+        displayName: az mysql flexible-server restore
+      - name: show
+        uid: az_mysql_flexible_server_show
+        displayName: az mysql flexible-server show
+      - name: show-connection-string
+        uid: az_mysql_flexible_server_show_connection_string
+        displayName: az mysql flexible-server show-connection-string
+      - name: start
+        uid: az_mysql_flexible_server_start
+        displayName: az mysql flexible-server start
+      - name: stop
+        uid: az_mysql_flexible_server_stop
+        displayName: az mysql flexible-server stop
+      - name: update
+        uid: az_mysql_flexible_server_update
+        displayName: az mysql flexible-server update
+      - name: wait
+        uid: az_mysql_flexible_server_wait
+        displayName: az mysql flexible-server wait
+      - name: db
+        displayName: az mysql flexible-server db
+        items:
+        - name: Overview
+          uid: az_mysql_flexible_server_db
+          displayName: az mysql flexible-server db
+        - name: create
+          uid: az_mysql_flexible_server_db_create
+          displayName: az mysql flexible-server db create
+        - name: delete
+          uid: az_mysql_flexible_server_db_delete
+          displayName: az mysql flexible-server db delete
+        - name: list
+          uid: az_mysql_flexible_server_db_list
+          displayName: az mysql flexible-server db list
+        - name: show
+          uid: az_mysql_flexible_server_db_show
+          displayName: az mysql flexible-server db show
+      - name: firewall-rule
+        displayName: az mysql flexible-server firewall-rule
+        items:
+        - name: Overview
+          uid: az_mysql_flexible_server_firewall_rule
+          displayName: az mysql flexible-server firewall-rule
+        - name: create
+          uid: az_mysql_flexible_server_firewall_rule_create
+          displayName: az mysql flexible-server firewall-rule create
+        - name: delete
+          uid: az_mysql_flexible_server_firewall_rule_delete
+          displayName: az mysql flexible-server firewall-rule delete
+        - name: list
+          uid: az_mysql_flexible_server_firewall_rule_list
+          displayName: az mysql flexible-server firewall-rule list
+        - name: show
+          uid: az_mysql_flexible_server_firewall_rule_show
+          displayName: az mysql flexible-server firewall-rule show
+        - name: update
+          uid: az_mysql_flexible_server_firewall_rule_update
+          displayName: az mysql flexible-server firewall-rule update
+      - name: parameter
+        displayName: az mysql flexible-server parameter
+        items:
+        - name: Overview
+          uid: az_mysql_flexible_server_parameter
+          displayName: az mysql flexible-server parameter
+        - name: list
+          uid: az_mysql_flexible_server_parameter_list
+          displayName: az mysql flexible-server parameter list
+        - name: set
+          uid: az_mysql_flexible_server_parameter_set
+          displayName: az mysql flexible-server parameter set
+        - name: show
+          uid: az_mysql_flexible_server_parameter_show
+          displayName: az mysql flexible-server parameter show
+      - name: replica
+        displayName: az mysql flexible-server replica
+        items:
+        - name: Overview
+          uid: az_mysql_flexible_server_replica
+          displayName: az mysql flexible-server replica
+        - name: create
+          uid: az_mysql_flexible_server_replica_create
+          displayName: az mysql flexible-server replica create
+        - name: list
+          uid: az_mysql_flexible_server_replica_list
+          displayName: az mysql flexible-server replica list
+        - name: stop-replication
+          uid: az_mysql_flexible_server_replica_stop_replication
+          displayName: az mysql flexible-server replica stop-replication
   - name: Networking
     displayName: az network
     items:
@@ -8336,6 +8453,84 @@
         - name: update
           uid: az_postgres_server_vnet_rule_update
           displayName: az postgres server vnet-rule update
+    - name: flexible-server
+      displayName: az postgres flexible-server
+      items:
+      - name: Overview
+        uid: az_postgres_flexible_server
+        displayName: az postgres flexible-server
+      - name: create
+        uid: az_postgres_flexible_server_create
+        displayName: az postgres flexible-server create
+      - name: delete
+        uid: az_postgres_flexible_server_delete
+        displayName: az postgres flexible-server delete
+      - name: list
+        uid: az_postgres_flexible_server_list
+        displayName: az postgres flexible-server list
+      - name: list-skus
+        uid: az_postgres_flexible_server_list_skus
+        displayName: az postgres flexible-server list-skus
+      - name: restart
+        uid: az_postgres_flexible_server_restart
+        displayName: az postgres flexible-server restart
+      - name: restore
+        uid: az_postgres_flexible_server_restore
+        displayName: az postgres flexible-server restore
+      - name: show
+        uid: az_postgres_flexible_server_show
+        displayName: az postgres flexible-server show
+      - name: show-connection-string
+        uid: az_postgres_flexible_server_show_connection_string
+        displayName: az postgres flexible-server show-connection-string
+      - name: start
+        uid: az_postgres_flexible_server_start
+        displayName: az postgres flexible-server start
+      - name: stop
+        uid: az_postgres_flexible_server_stop
+        displayName: az postgres flexible-server stop
+      - name: update
+        uid: az_postgres_flexible_server_update
+        displayName: az postgres flexible-server update
+      - name: wait
+        uid: az_postgres_flexible_server_wait
+        displayName: az postgres flexible-server wait
+      - name: firewall-rule
+        displayName: az postgres flexible-server firewall-rule
+        items:
+        - name: Overview
+          uid: az_postgres_flexible_server_firewall_rule
+          displayName: az postgres flexible-server firewall-rule
+        - name: create
+          uid: az_postgres_flexible_server_firewall_rule_create
+          displayName: az postgres flexible-server firewall-rule create
+        - name: delete
+          uid: az_postgres_flexible_server_firewall_rule_delete
+          displayName: az postgres flexible-server firewall-rule delete
+        - name: list
+          uid: az_postgres_flexible_server_firewall_rule_list
+          displayName: az postgres flexible-server firewall-rule list
+        - name: show
+          uid: az_postgres_flexible_server_firewall_rule_show
+          displayName: az postgres flexible-server firewall-rule show
+        - name: update
+          uid: az_postgres_flexible_server_firewall_rule_update
+          displayName: az postgres flexible-server firewall-rule update
+      - name: parameter
+        displayName: az postgres flexible-server parameter
+        items:
+        - name: Overview
+          uid: az_postgres_flexible_server_parameter
+          displayName: az postgres flexible-server parameter
+        - name: list
+          uid: az_postgres_flexible_server_parameter_list
+          displayName: az postgres flexible-server parameter list
+        - name: set
+          uid: az_postgres_flexible_server_parameter_set
+          displayName: az postgres flexible-server parameter set
+        - name: show
+          uid: az_postgres_flexible_server_parameter_show
+          displayName: az postgres flexible-server parameter show
   - name: Redis Cache
     displayName: az redis
     items:
@@ -15137,6 +15332,12 @@
       - name: show
         uid: az_mariadb_server_show
         displayName: az mariadb server show
+      - name: start
+        uid: az_mariadb_server_start
+        displayName: az mariadb server start
+      - name: stop
+        uid: az_mariadb_server_stop
+        displayName: az mariadb server stop
       - name: update
         uid: az_mariadb_server_update
         displayName: az mariadb server update
