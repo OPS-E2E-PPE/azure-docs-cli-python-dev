@@ -7,7 +7,7 @@ directCommands:
 - uid: az_extension_add
   name: az extension add
   summary: Add an extension.
-  description: ''
+  description: To learn about installing extensions automatically, visit <a href="https://aka.ms/AzExtDynamicInstall">https://aka.ms/AzExtDynamicInstall</a>.
   syntax: >-
     az extension add [--name]
                      [--pip-extra-index-urls]
@@ -183,5 +183,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 09/14/2020
+  ms.date: 09/16/2020
   description: Manage and update CLI extensions.

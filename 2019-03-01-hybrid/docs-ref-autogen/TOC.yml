@@ -6410,6 +6410,42 @@
     - name: Overview
       uid: az_eventhubs
       displayName: az eventhubs
+    - name: cluster
+      displayName: az eventhubs cluster
+      items:
+      - name: Overview
+        uid: az_eventhubs_cluster
+        displayName: az eventhubs cluster
+      - name: available-region
+        uid: az_eventhubs_cluster_available_region
+        displayName: az eventhubs cluster available-region
+      - name: create
+        uid: az_eventhubs_cluster_create
+        displayName: az eventhubs cluster create
+      - name: delete
+        uid: az_eventhubs_cluster_delete
+        displayName: az eventhubs cluster delete
+      - name: list
+        uid: az_eventhubs_cluster_list
+        displayName: az eventhubs cluster list
+      - name: show
+        uid: az_eventhubs_cluster_show
+        displayName: az eventhubs cluster show
+      - name: update
+        uid: az_eventhubs_cluster_update
+        displayName: az eventhubs cluster update
+      - name: wait
+        uid: az_eventhubs_cluster_wait
+        displayName: az eventhubs cluster wait
+      - name: namespace
+        displayName: az eventhubs cluster namespace
+        items:
+        - name: Overview
+          uid: az_eventhubs_cluster_namespace
+          displayName: az eventhubs cluster namespace
+        - name: list
+          uid: az_eventhubs_cluster_namespace_list
+          displayName: az eventhubs cluster namespace list
     - name: eventhub
       displayName: az eventhubs eventhub
       items:
