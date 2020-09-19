@@ -15131,33 +15131,6 @@
     - name: show
       uid: az_identity_show
       displayName: az identity show
-  - name: iotcentral
-    displayName: az iotcentral
-    items:
-    - name: Overview
-      uid: az_iotcentral
-      displayName: az iotcentral
-    - name: app
-      displayName: az iotcentral app
-      items:
-      - name: Overview
-        uid: az_iotcentral_app
-        displayName: az iotcentral app
-      - name: create
-        uid: az_iotcentral_app_create
-        displayName: az iotcentral app create
-      - name: delete
-        uid: az_iotcentral_app_delete
-        displayName: az iotcentral app delete
-      - name: list
-        uid: az_iotcentral_app_list
-        displayName: az iotcentral app list
-      - name: show
-        uid: az_iotcentral_app_show
-        displayName: az iotcentral app show
-      - name: update
-        uid: az_iotcentral_app_update
-        displayName: az iotcentral app update
   - name: kusto
     displayName: az kusto
     items:
@@ -17727,6 +17700,12 @@
       - name: show
         uid: ext_aks-preview_az_aks_show
         displayName: az aks show
+      - name: start
+        uid: ext_aks-preview_az_aks_start
+        displayName: az aks start
+      - name: stop
+        uid: ext_aks-preview_az_aks_stop
+        displayName: az aks stop
       - name: update
         uid: ext_aks-preview_az_aks_update
         displayName: az aks update
