@@ -16,6 +16,7 @@ directCommands:
                                                [--http-listener]
                                                [--http-settings]
                                                [--no-wait]
+                                               [--priority]
                                                [--redirect-config]
                                                [--rewrite-rule-set]
                                                [--rule-type]
@@ -51,6 +52,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --priority
+    summary: Priority of the request routing rule. Range from 1 to 2000.
     description: ''
   - name: --redirect-config
     summary: The name or ID of the redirect configuration to use with the created rule.
@@ -180,6 +184,7 @@ directCommands:
                                                [--ids]
                                                [--name]
                                                [--no-wait]
+                                               [--priority]
                                                [--redirect-config]
                                                [--remove]
                                                [--resource-group]
@@ -222,6 +227,9 @@ directCommands:
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --priority
+    summary: Priority of the request routing rule. Range from 1 to 2000.
     description: ''
   - name: --redirect-config
     summary: The name or ID of the redirect configuration to use with the created rule.
