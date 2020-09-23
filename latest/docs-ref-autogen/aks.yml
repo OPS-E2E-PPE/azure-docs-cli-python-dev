@@ -55,6 +55,7 @@ directCommands:
                   [--aad-server-app-id]
                   [--aad-server-app-secret]
                   [--aad-tenant-id]
+                  [--aci-subnet-name]
                   [--admin-username]
                   [--api-server-authorized-ip-ranges]
                   [--attach-acr]
@@ -167,6 +168,9 @@ directCommands:
   - name: --aad-tenant-id
     summary: The ID of an Azure Active Directory tenant.
     description: ''
+  - name: --aci-subnet-name
+    summary: The name of a subnet in an existing VNet into which to deploy the virtual nodes.
+    description: ''
   - name: --admin-username -u
     defaultValue: azureuser
     summary: User account to create on node VMs for SSH access.
@@ -208,6 +212,9 @@ directCommands:
                        If monitoring addon is enabled --no-wait argument will have no effect
           azure-policy - enable Azure policy. The Azure Policy add-on for AKS enables at-scale enforcements and safeguards on your clusters in a centralized, consistent manner.
                        Learn more at aka.ms/aks/policy.
+          virtual-node - enable AKS Virtual Node.
+                       Requires --aci-subnet-name to provide the name of an existing subnet for the Virtual Node to use.
+                       aci-subnet-name must be in the same vent which is specified by --vnet-subnet-id (required as well).
   - name: --enable-cluster-autoscaler
     summary: Enable cluster autoscaler, default value is false.
     description: If specified, please make sure the kubernetes version is larger than 1.10.6.
@@ -1110,7 +1117,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/ee4670a4818633a7a4ed060915772a074b50ff74/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  updated_at: 9/10/2020 6:27:52 AM
-  ms.date: 09/10/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/4e854c444bb5747cc6cff5474fb5fbd429038e52/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  updated_at: 9/23/2020 3:17:07 AM
+  ms.date: 09/23/2020
   description: Manage Azure Kubernetes Services.
