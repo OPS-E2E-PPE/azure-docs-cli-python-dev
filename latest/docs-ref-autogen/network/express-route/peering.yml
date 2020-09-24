@@ -306,7 +306,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/2b0e639001248204ba26394238d02492783c13b1/src/azure-cli/azure/cli/command_modules/network/_help.py
-  updated_at: 9/17/2020 3:44:37 AM
-  ms.date: 09/17/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/6a0e60abaaf216978afbcaf7acb2214a3793404b/src/azure-cli/azure/cli/command_modules/network/_help.py
+  updated_at: 9/24/2020 10:40:04 AM
+  ms.date: 09/24/2020
   description: Manage ExpressRoute peering of an ExpressRoute circuit.
