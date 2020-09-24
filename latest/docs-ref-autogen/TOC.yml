@@ -17549,6 +17549,30 @@
         - name: wait
           uid: az_synapse_workspace_firewall_rule_wait
           displayName: az synapse workspace firewall-rule wait
+  - name: ts
+    displayName: az ts
+    items:
+    - name: Overview
+      uid: az_ts
+      displayName: az ts
+    - name: create
+      uid: az_ts_create
+      displayName: az ts create
+    - name: delete
+      uid: az_ts_delete
+      displayName: az ts delete
+    - name: export
+      uid: az_ts_export
+      displayName: az ts export
+    - name: list
+      uid: az_ts_list
+      displayName: az ts list
+    - name: show
+      uid: az_ts_show
+      displayName: az ts show
+    - name: update
+      uid: az_ts_update
+      displayName: az ts update
 - name: Extensions Reference
   items:
   - name: account

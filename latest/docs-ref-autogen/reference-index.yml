@@ -321,6 +321,7 @@ commands:
 - az_storage
 - az_synapse
 - az_tag
+- az_ts
 - az_upgrade
 - az_version
 - az_vm

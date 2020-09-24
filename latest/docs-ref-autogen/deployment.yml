@@ -38,6 +38,7 @@ directCommands:
                          [--parameters]
                          [--subscription]
                          [--template-file]
+                         [--template-spec]
                          [--template-uri]
                          [--what-if-exclude-change-types {Create, Delete, Deploy, Ignore, Modify, NoChange}]
                          [--what-if-result-format {FullResourcePayloads, ResourceIdOnly}]
@@ -52,6 +53,8 @@ directCommands:
     syntax: >-
       az deployment create --location WestUS --template-file azuredeploy.json  \
           --parameters @params.json --parameters https://mysite/params.json --parameters MyValue=This MyArray=@array.json
+  - summary: Create a deployment at subscription scope from a template-spec
+    syntax: az deployment create --location WestUS --template-spec "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myRG/providers/Microsoft.Resources/templateSpecs/myTemplateSpec/versions/1.0"
   requiredParameters:
   - isRequired: true
     name: --location -l
@@ -82,6 +85,9 @@ directCommands:
     description: ''
   - name: --template-file -f
     summary: The path to the template file.
+    description: ''
+  - name: --template-spec -s
+    summary: The template spec resource id.
     description: ''
   - name: --template-uri -u
     summary: The URI to the template file.
@@ -198,6 +204,7 @@ directCommands:
                            [--parameters]
                            [--subscription]
                            [--template-file]
+                           [--template-spec]
                            [--template-uri]
   examples:
   - summary: Validate whether a template is valid at subscription scope.
@@ -226,6 +233,9 @@ directCommands:
     description: ''
   - name: --template-file -f
     summary: The path to the template file.
+    description: ''
+  - name: --template-spec -s
+    summary: The template spec resource id.
     description: ''
   - name: --template-uri -u
     summary: The URI to the template file.
@@ -363,7 +373,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/fd4f3a3aa3a33e9058d6f5df4b4b35a62058d0cf/src/azure-cli/azure/cli/command_modules/resource/_help.py
-  updated_at: 8/21/2020 4:24:57 AM
-  ms.date: 08/21/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/b232ed96b0a7b1d9bd9ec013e27eef1bd31f7d13/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  updated_at: 9/24/2020 10:25:06 AM
+  ms.date: 09/24/2020
   description: Manage Azure Resource Manager template deployment at subscription scope.
