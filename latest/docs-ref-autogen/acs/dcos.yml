@@ -77,7 +77,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/4e854c444bb5747cc6cff5474fb5fbd429038e52/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  updated_at: 9/23/2020 3:17:07 AM
-  ms.date: 09/23/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/9bc39ba299becb40cf5b465ba62ff77bea8635c6/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  updated_at: 9/25/2020 12:55:00 AM
+  ms.date: 09/25/2020
   description: Commands to manage a DC/OS-orchestrated Azure Container Service.

@@ -312,7 +312,7 @@ directCommands:
   summary: Gets a SQL virtual machine.
   description: ''
   syntax: >-
-    az sql vm show [--expand]
+    az sql vm show [--expand {*, AutoBackupSettings, AutoPatchingSettings, KeyVaultCredentialSettings, ServerConfigurationsManagementSettings}]
                    [--ids]
                    [--name]
                    [--query-examples]
@@ -320,8 +320,8 @@ directCommands:
                    [--subscription]
   optionalParameters:
   - name: --expand
-    parameterValueGroup: ''
-    summary: Get the SQLIaaSExtension configuration settings.
+    parameterValueGroup: '*, AutoBackupSettings, AutoPatchingSettings, KeyVaultCredentialSettings, ServerConfigurationsManagementSettings'
+    summary: Get the SQLIaaSExtension configuration settings. To view all settings, use \*. To select only a few, the settings must be space-separted.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
