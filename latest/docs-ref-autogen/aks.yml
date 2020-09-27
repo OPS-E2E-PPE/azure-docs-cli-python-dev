@@ -67,6 +67,7 @@ directCommands:
                   [--docker-bridge-address]
                   [--enable-aad]
                   [--enable-addons]
+                  [--enable-ahub]
                   [--enable-cluster-autoscaler]
                   [--enable-managed-identity]
                   [--enable-node-public-ip]
@@ -139,6 +140,8 @@ directCommands:
     syntax: az aks create -g MyResourceGroup -n MyManagedCluster --outbound-type userDefinedRouting --load-balancer-sku standard --vnet-subnet-id customUserSubnetVnetID
   - summary: Create a kubernetes cluster with supporting Windows agent pools.
     syntax: az aks create -g MyResourceGroup -n MyManagedCluster --load-balancer-sku Standard --network-plugin azure --windows-admin-username azure --windows-admin-password 'replacePassword1234$'
+  - summary: Create a kubernetes cluster with supporting Windows agent pools with AHUB enabled.
+    syntax: az aks create -g MyResourceGroup -n MyManagedCluster --load-balancer-sku Standard --network-plugin azure --windows-admin-username azure --windows-admin-password 'replacePassword1234$' --enable-ahub
   - summary: Create a kubernetes cluster with managed AAD enabled.
     syntax: az aks create -g MyResourceGroup -n MyManagedCluster --enable-aad --aad-admin-group-object-ids <id-1,id-2> --aad-tenant-id <id>
   - summary: Create a kubernetes cluster with server side encryption using your owned key.
@@ -215,6 +218,9 @@ directCommands:
           virtual-node - enable AKS Virtual Node.
                        Requires --aci-subnet-name to provide the name of an existing subnet for the Virtual Node to use.
                        aci-subnet-name must be in the same vent which is specified by --vnet-subnet-id (required as well).
+  - name: --enable-ahub
+    summary: Enable Azure Hybrid User Benefits (AHUB) for Windows VMs.
+    description: ''
   - name: --enable-cluster-autoscaler
     summary: Enable cluster autoscaler, default value is false.
     description: If specified, please make sure the kubernetes version is larger than 1.10.6.
@@ -752,8 +758,10 @@ directCommands:
                   [--attach-acr]
                   [--ca-profile]
                   [--detach-acr]
+                  [--disable-ahub]
                   [--disable-cluster-autoscaler]
                   [--enable-aad]
+                  [--enable-ahub]
                   [--enable-cluster-autoscaler]
                   [--load-balancer-idle-timeout]
                   [--load-balancer-managed-outbound-ip-count]
@@ -787,6 +795,10 @@ directCommands:
     syntax: az aks update -g MyResourceGroup -n MyManagedCluster --aad-admin-group-object-ids <id-1,id-2> --aad-tenant-id <id>
   - summary: Migrate a AKS AAD-Integrated cluster or a non-AAD cluster to a AKS-managed AAD cluster.
     syntax: az aks update -g MyResourceGroup -n MyManagedCluster --enable-aad --aad-admin-group-object-ids <id-1,id-2> --aad-tenant-id <id>
+  - summary: Enable Azure Hybrid User Benefits featture for a kubernetes cluster.
+    syntax: az aks update -g MyResourceGroup -n MyManagedCluster --enable-ahub
+  - summary: Disable Azure Hybrid User Benefits featture for a kubernetes cluster.
+    syntax: az aks update -g MyResourceGroup -n MyManagedCluster --disable-ahub
   requiredParameters:
   - isRequired: true
     name: --name -n
@@ -815,11 +827,17 @@ directCommands:
   - name: --detach-acr
     summary: Disable the 'acrpull' role assignment to the ACR specified by name or resource ID.
     description: ''
+  - name: --disable-ahub
+    summary: Disable Azure Hybrid User Benefits (AHUB) feature for cluster.
+    description: ''
   - name: --disable-cluster-autoscaler -d
     summary: Disable cluster autoscaler.
     description: ''
   - name: --enable-aad
     summary: Enable managed AAD feature for cluster.
+    description: ''
+  - name: --enable-ahub
+    summary: Enable Azure Hybrid User Benefits (AHUB) feature for cluster.
     description: ''
   - name: --enable-cluster-autoscaler -e
     summary: Enable cluster autoscaler.
@@ -1120,7 +1138,7 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/9bc39ba299becb40cf5b465ba62ff77bea8635c6/src/azure-cli/azure/cli/command_modules/acs/_help.py
-  updated_at: 9/25/2020 12:55:00 AM
-  ms.date: 09/25/2020
+  gitcommit: https://github.com/Azure/azure-cli/blob/fb36b750115dbed72e2fb62141de266695c8f605/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  updated_at: 9/27/2020 1:34:12 AM
+  ms.date: 09/27/2020
   description: Manage Azure Kubernetes Services.
