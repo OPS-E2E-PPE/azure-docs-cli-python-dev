@@ -427,8 +427,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  original_content_git_url: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/Azure/azure-cli/blob/b232ed96b0a7b1d9bd9ec013e27eef1bd31f7d13/src/azure-cli/azure/cli/command_modules/resource/_help.py
-  updated_at: 9/24/2020 10:25:06 AM
   ms.date: 09/24/2020
   description: Manage Azure Resource Manager template deployment at management group.
