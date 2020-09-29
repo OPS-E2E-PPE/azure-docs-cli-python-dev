@@ -9674,6 +9674,27 @@
       - name: show
         uid: az_sql_midb_show
         displayName: az sql midb show
+      - name: log-replay
+        displayName: az sql midb log-replay
+        items:
+        - name: Overview
+          uid: az_sql_midb_log_replay
+          displayName: az sql midb log-replay
+        - name: complete
+          uid: az_sql_midb_log_replay_complete
+          displayName: az sql midb log-replay complete
+        - name: show
+          uid: az_sql_midb_log_replay_show
+          displayName: az sql midb log-replay show
+        - name: start
+          uid: az_sql_midb_log_replay_start
+          displayName: az sql midb log-replay start
+        - name: stop
+          uid: az_sql_midb_log_replay_stop
+          displayName: az sql midb log-replay stop
+        - name: wait
+          uid: az_sql_midb_log_replay_wait
+          displayName: az sql midb log-replay wait
       - name: ltr-backup
         displayName: az sql midb ltr-backup
         items:
@@ -24509,12 +24530,15 @@
         - name: create
           uid: ext_maintenance_az_maintenance_applyupdate_create
           displayName: az maintenance applyupdate create
-        - name: get
-          uid: ext_maintenance_az_maintenance_applyupdate_get
-          displayName: az maintenance applyupdate get
+        - name: get-parent
+          uid: ext_maintenance_az_maintenance_applyupdate_get_parent
+          displayName: az maintenance applyupdate get-parent
         - name: show
           uid: ext_maintenance_az_maintenance_applyupdate_show
           displayName: az maintenance applyupdate show
+        - name: update
+          uid: ext_maintenance_az_maintenance_applyupdate_update
+          displayName: az maintenance applyupdate update
       - name: assignment
         displayName: az maintenance assignment
         items:
@@ -24530,6 +24554,12 @@
         - name: list
           uid: ext_maintenance_az_maintenance_assignment_list
           displayName: az maintenance assignment list
+        - name: list-parent
+          uid: ext_maintenance_az_maintenance_assignment_list_parent
+          displayName: az maintenance assignment list-parent
+        - name: update
+          uid: ext_maintenance_az_maintenance_assignment_update
+          displayName: az maintenance assignment update
       - name: configuration
         displayName: az maintenance configuration
         items:
@@ -24551,6 +24581,18 @@
         - name: update
           uid: ext_maintenance_az_maintenance_configuration_update
           displayName: az maintenance configuration update
+      - name: public-configuration
+        displayName: az maintenance public-configuration
+        items:
+        - name: Overview
+          uid: ext_maintenance_az_maintenance_public_configuration
+          displayName: az maintenance public-configuration
+        - name: list
+          uid: ext_maintenance_az_maintenance_public_configuration_list
+          displayName: az maintenance public-configuration list
+        - name: show
+          uid: ext_maintenance_az_maintenance_public_configuration_show
+          displayName: az maintenance public-configuration show
       - name: update
         displayName: az maintenance update
         items:
@@ -24560,6 +24602,9 @@
         - name: list
           uid: ext_maintenance_az_maintenance_update_list
           displayName: az maintenance update list
+        - name: list-parent
+          uid: ext_maintenance_az_maintenance_update_list_parent
+          displayName: az maintenance update list-parent
   - name: managementpartner
     items:
     - name: Overview
