@@ -10937,6 +10937,30 @@
         - name: update
           uid: az_storage_table_policy_update
           displayName: az storage table policy update
+    - name: container-rm
+      displayName: az storage container-rm
+      items:
+      - name: Overview
+        uid: az_storage_container_rm
+        displayName: az storage container-rm
+      - name: create
+        uid: az_storage_container_rm_create
+        displayName: az storage container-rm create
+      - name: delete
+        uid: az_storage_container_rm_delete
+        displayName: az storage container-rm delete
+      - name: exists
+        uid: az_storage_container_rm_exists
+        displayName: az storage container-rm exists
+      - name: list
+        uid: az_storage_container_rm_list
+        displayName: az storage container-rm list
+      - name: show
+        uid: az_storage_container_rm_show
+        displayName: az storage container-rm show
+      - name: update
+        uid: az_storage_container_rm_update
+        displayName: az storage container-rm update
     - name: fs
       displayName: az storage fs
       items:
