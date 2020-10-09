@@ -11396,6 +11396,9 @@
       - name: show
         uid: az_vmss_extension_show
         displayName: az vmss extension show
+      - name: upgrade
+        uid: az_vmss_extension_upgrade
+        displayName: az vmss extension upgrade
       - name: Images
         displayName: az vmss extension image
         items:
