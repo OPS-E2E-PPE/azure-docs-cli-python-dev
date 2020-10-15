@@ -8997,6 +8997,37 @@
           - name: send
             uid: ext_azure-iot_az_dt_twin_telemetry_send
             displayName: az dt twin telemetry send
+  - name: baremetal-infrastructure
+    items:
+    - name: Overview
+      uid: ext_baremetal-infrastructure_az
+    - name: baremetalinstance
+      displayName: az baremetalinstance
+      items:
+      - name: Overview
+        uid: ext_baremetal-infrastructure_az_baremetalinstance
+        displayName: az baremetalinstance
+      - name: delete
+        uid: ext_baremetal-infrastructure_az_baremetalinstance_delete
+        displayName: az baremetalinstance delete
+      - name: list
+        uid: ext_baremetal-infrastructure_az_baremetalinstance_list
+        displayName: az baremetalinstance list
+      - name: restart
+        uid: ext_baremetal-infrastructure_az_baremetalinstance_restart
+        displayName: az baremetalinstance restart
+      - name: show
+        uid: ext_baremetal-infrastructure_az_baremetalinstance_show
+        displayName: az baremetalinstance show
+      - name: shutdown
+        uid: ext_baremetal-infrastructure_az_baremetalinstance_shutdown
+        displayName: az baremetalinstance shutdown
+      - name: start
+        uid: ext_baremetal-infrastructure_az_baremetalinstance_start
+        displayName: az baremetalinstance start
+      - name: update
+        uid: ext_baremetal-infrastructure_az_baremetalinstance_update
+        displayName: az baremetalinstance update
   - name: blockchain
     items:
     - name: Overview
