@@ -14874,87 +14874,15 @@
       - name: Overview
         uid: ext_storage-preview_az_storage
         displayName: az storage
-      - name: Accounts
-        displayName: az storage account
-        items:
-        - name: Overview
-          uid: ext_storage-preview_az_storage_account
-          displayName: az storage account
-        - name: check-name
-          uid: ext_storage-preview_az_storage_account_check_name
-          displayName: az storage account check-name
-        - name: create
-          uid: ext_storage-preview_az_storage_account_create
-          displayName: az storage account create
-        - name: delete
-          uid: ext_storage-preview_az_storage_account_delete
-          displayName: az storage account delete
-        - name: failover
-          uid: ext_storage-preview_az_storage_account_failover
-          displayName: az storage account failover
-        - name: list
-          uid: ext_storage-preview_az_storage_account_list
-          displayName: az storage account list
-        - name: show
-          uid: ext_storage-preview_az_storage_account_show
-          displayName: az storage account show
-        - name: show-usage
-          uid: ext_storage-preview_az_storage_account_show_usage
-          displayName: az storage account show-usage
-        - name: update
-          uid: ext_storage-preview_az_storage_account_update
-          displayName: az storage account update
-        - name: Keys
-          displayName: az storage account keys
-          items:
-          - name: Overview
-            uid: ext_storage-preview_az_storage_account_keys
-            displayName: az storage account keys
-          - name: list
-            uid: ext_storage-preview_az_storage_account_keys_list
-            displayName: az storage account keys list
-          - name: renew
-            uid: ext_storage-preview_az_storage_account_keys_renew
-            displayName: az storage account keys renew
-        - name: management-policy
-          displayName: az storage account management-policy
-          items:
-          - name: Overview
-            uid: ext_storage-preview_az_storage_account_management_policy
-            displayName: az storage account management-policy
-          - name: create
-            uid: ext_storage-preview_az_storage_account_management_policy_create
-            displayName: az storage account management-policy create
-          - name: delete
-            uid: ext_storage-preview_az_storage_account_management_policy_delete
-            displayName: az storage account management-policy delete
-          - name: show
-            uid: ext_storage-preview_az_storage_account_management_policy_show
-            displayName: az storage account management-policy show
-          - name: update
-            uid: ext_storage-preview_az_storage_account_management_policy_update
-            displayName: az storage account management-policy update
-        - name: network-rule
-          displayName: az storage account network-rule
-          items:
-          - name: Overview
-            uid: ext_storage-preview_az_storage_account_network_rule
-            displayName: az storage account network-rule
-          - name: add
-            uid: ext_storage-preview_az_storage_account_network_rule_add
-            displayName: az storage account network-rule add
-          - name: list
-            uid: ext_storage-preview_az_storage_account_network_rule_list
-            displayName: az storage account network-rule list
-          - name: remove
-            uid: ext_storage-preview_az_storage_account_network_rule_remove
-            displayName: az storage account network-rule remove
       - name: Blob
         displayName: az storage blob
         items:
         - name: Overview
           uid: ext_storage-preview_az_storage_blob
           displayName: az storage blob
+        - name: list
+          uid: ext_storage-preview_az_storage_blob_list
+          displayName: az storage blob list
         - name: move
           uid: ext_storage-preview_az_storage_blob_move
           displayName: az storage blob move
