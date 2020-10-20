@@ -581,7 +581,8 @@ directCommands:
   summary: Delete a VM.
   description: ''
   syntax: >-
-    az vm delete [--ids]
+    az vm delete [--force-deletion]
+                 [--ids]
                  [--name]
                  [--no-wait]
                  [--resource-group]
@@ -593,6 +594,9 @@ directCommands:
   - summary: Delete all VMs in a resource group.
     syntax: az vm delete --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   optionalParameters:
+  - name: --force-deletion
+    summary: Optional parameter to force delete virtual machines.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
