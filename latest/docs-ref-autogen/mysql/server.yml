@@ -217,6 +217,25 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+- uid: az_mysql_server_list_skus
+  name: az mysql server list-skus
+  summary: List available sku's in the given region.
+  description: ''
+  syntax: >-
+    az mysql server list-skus --location
+                              [--subscription]
+  examples:
+  - summary: List available sku's in the given region.
+    syntax: az mysql server list-skus -l eastus
+  requiredParameters:
+  - isRequired: true
+    name: --location -l
+    summary: The name of the location.
+    description: ''
+  optionalParameters:
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
 - uid: az_mysql_server_restart
   name: az mysql server restart
   summary: Restart a server.
@@ -526,6 +545,7 @@ commands:
 - az_mysql_server_key_list
 - az_mysql_server_key_show
 - az_mysql_server_list
+- az_mysql_server_list_skus
 - az_mysql_server_private_endpoint_connection
 - az_mysql_server_private_endpoint_connection_approve
 - az_mysql_server_private_endpoint_connection_delete

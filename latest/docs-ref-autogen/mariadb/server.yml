@@ -212,6 +212,25 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+- uid: az_mariadb_server_list_skus
+  name: az mariadb server list-skus
+  summary: List available sku's in the given region.
+  description: ''
+  syntax: >-
+    az mariadb server list-skus --location
+                                [--subscription]
+  examples:
+  - summary: List available sku's in the given region.
+    syntax: az mariadb server list-skus -l eastus
+  requiredParameters:
+  - isRequired: true
+    name: --location -l
+    summary: The name of the location.
+    description: ''
+  optionalParameters:
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
 - uid: az_mariadb_server_restart
   name: az mariadb server restart
   summary: Restart a server.
@@ -502,6 +521,7 @@ commands:
 - az_mariadb_server_firewall_rule_update
 - az_mariadb_server_georestore
 - az_mariadb_server_list
+- az_mariadb_server_list_skus
 - az_mariadb_server_private_endpoint_connection
 - az_mariadb_server_private_endpoint_connection_approve
 - az_mariadb_server_private_endpoint_connection_delete

@@ -217,6 +217,25 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+- uid: az_postgres_server_list_skus
+  name: az postgres server list-skus
+  summary: List available sku's in the given region.
+  description: ''
+  syntax: >-
+    az postgres server list-skus --location
+                                 [--subscription]
+  examples:
+  - summary: List available sku's in the given region.
+    syntax: az postgres server list-skus -l eastus
+  requiredParameters:
+  - isRequired: true
+    name: --location -l
+    summary: The name of the location.
+    description: ''
+  optionalParameters:
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
 - uid: az_postgres_server_restart
   name: az postgres server restart
   summary: Restart a server.
@@ -471,6 +490,7 @@ commands:
 - az_postgres_server_key_list
 - az_postgres_server_key_show
 - az_postgres_server_list
+- az_postgres_server_list_skus
 - az_postgres_server_private_endpoint_connection
 - az_postgres_server_private_endpoint_connection_approve
 - az_postgres_server_private_endpoint_connection_delete

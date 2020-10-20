@@ -5312,6 +5312,9 @@
       - name: list
         uid: az_mysql_server_list
         displayName: az mysql server list
+      - name: list-skus
+        uid: az_mysql_server_list_skus
+        displayName: az mysql server list-skus
       - name: restart
         uid: az_mysql_server_restart
         displayName: az mysql server restart
@@ -8312,6 +8315,9 @@
       - name: list
         uid: az_postgres_server_list
         displayName: az postgres server list
+      - name: list-skus
+        uid: az_postgres_server_list_skus
+        displayName: az postgres server list-skus
       - name: restart
         uid: az_postgres_server_restart
         displayName: az postgres server restart
@@ -15392,6 +15398,9 @@
       - name: list
         uid: az_mariadb_server_list
         displayName: az mariadb server list
+      - name: list-skus
+        uid: az_mariadb_server_list_skus
+        displayName: az mariadb server list-skus
       - name: restart
         uid: az_mariadb_server_restart
         displayName: az mariadb server restart
