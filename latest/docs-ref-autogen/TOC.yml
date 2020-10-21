@@ -9176,6 +9176,9 @@
         - name: update
           uid: az_sql_db_audit_policy_update
           displayName: az sql db audit-policy update
+        - name: wait
+          uid: az_sql_db_audit_policy_wait
+          displayName: az sql db audit-policy wait
       - name: classification
         displayName: az sql db classification
         items:
@@ -9416,6 +9419,9 @@
         - name: update
           uid: az_sql_server_audit_policy_update
           displayName: az sql server audit-policy update
+        - name: wait
+          uid: az_sql_server_audit_policy_wait
+          displayName: az sql server audit-policy wait
       - name: conn-policy
         displayName: az sql server conn-policy
         items:
