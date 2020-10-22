@@ -366,10 +366,10 @@ directCommands:
     summary: Generate SSH public and private key files if missing. The keys will be stored in the ~/.ssh directory.
     description: ''
   - name: --host
-    summary: Name or ID of the dedicated host this VM will reside in. If a name is specified, a host group must be specified via `--host-group`.
+    summary: ID of the dedicated host that the VM will reside in. --host and --host-group can't be used together.
     description: ''
   - name: --host-group
-    summary: Name of the dedicated host group containing the dedicated host this VM will reside in.
+    summary: Name or ID of the dedicated host group that the VM will reside in. --host and --host-group can't be used together.
     description: ''
   - name: --image
     summary: 'The name of the operating system image as a URN alias, URN, custom image name or ID, custom image version ID, or VHD blob URI. This parameter is required unless using `--attach-os-disk.` Valid URN format: "Publisher:Offer:Sku:Version".'
