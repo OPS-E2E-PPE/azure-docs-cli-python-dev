@@ -10,7 +10,6 @@ commands:
 - az_mysql_db_list
 - az_mysql_db_show
 - az_mysql_flexible_server
-- az_mysql_flexible_server_connect
 - az_mysql_flexible_server_create
 - az_mysql_flexible_server_db
 - az_mysql_flexible_server_db_create

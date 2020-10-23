@@ -10,7 +10,6 @@ commands:
 - az_postgres_db_list
 - az_postgres_db_show
 - az_postgres_flexible_server
-- az_postgres_flexible_server_connect
 - az_postgres_flexible_server_create
 - az_postgres_flexible_server_delete
 - az_postgres_flexible_server_firewall_rule
