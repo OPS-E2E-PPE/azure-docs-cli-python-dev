@@ -5480,6 +5480,9 @@
       - name: Overview
         uid: az_mysql_flexible_server
         displayName: az mysql flexible-server
+      - name: connect
+        uid: az_mysql_flexible_server_connect
+        displayName: az mysql flexible-server connect
       - name: create
         uid: az_mysql_flexible_server_create
         displayName: az mysql flexible-server create
@@ -8477,6 +8480,9 @@
       - name: Overview
         uid: az_postgres_flexible_server
         displayName: az postgres flexible-server
+      - name: connect
+        uid: az_postgres_flexible_server_connect
+        displayName: az postgres flexible-server connect
       - name: create
         uid: az_postgres_flexible_server_create
         displayName: az postgres flexible-server create

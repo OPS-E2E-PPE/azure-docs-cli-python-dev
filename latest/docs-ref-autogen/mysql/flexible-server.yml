@@ -4,6 +4,40 @@ name: az mysql flexible-server
 summary: Manage Azure Database for MySQL Flexible Servers.
 description: ''
 directCommands:
+- uid: az_mysql_flexible_server_connect
+  name: az mysql flexible-server connect
+  summary: Connect to a flexible server.
+  description: ''
+  syntax: >-
+    az mysql flexible-server connect --admin-password
+                                     --admin-user
+                                     --name
+                                     [--database-name]
+                                     [--mysql-query]
+                                     [--subscription]
+  requiredParameters:
+  - isRequired: true
+    name: --admin-password -p
+    summary: The login password of the administrator.
+    description: ''
+  - isRequired: true
+    name: --admin-user -u
+    summary: The login username of the administrator.
+    description: ''
+  - isRequired: true
+    name: --name -n
+    summary: Name of the server. The name can contain only lowercase letters, numbers, and the hyphen (-) character. Minimum 3 characters and maximum 63 characters.
+    description: ''
+  optionalParameters:
+  - name: --database-name -d
+    summary: The name of a database.
+    description: ''
+  - name: --mysql-query -c
+    summary: A query to run against the flexible server.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
 - uid: az_mysql_flexible_server_create
   name: az mysql flexible-server create
   summary: Create a flexible server.
@@ -51,7 +85,7 @@ directCommands:
     summary: 'The password of the administrator. Minimum 8 characters and maximum 128 characters. Password must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters.'
     description: ''
   - name: --admin-user, -u
-    defaultValue: sinfulOxbird5
+    defaultValue: crushedHornet1
     summary: Administrator username for the server. Once set, it cannot be changed.
     description: ''
   - name: --assign-identity
@@ -521,6 +555,7 @@ directCommands:
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
 commands:
+- az_mysql_flexible_server_connect
 - az_mysql_flexible_server_create
 - az_mysql_flexible_server_db
 - az_mysql_flexible_server_db_create
