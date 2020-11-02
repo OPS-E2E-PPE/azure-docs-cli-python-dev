@@ -92,6 +92,7 @@ directCommands:
                   [--node-count]
                   [--node-osdisk-diskencryptionset-id]
                   [--node-osdisk-size]
+                  [--node-osdisk-type]
                   [--node-vm-size]
                   [--nodepool-labels]
                   [--nodepool-name]
@@ -147,6 +148,8 @@ directCommands:
     syntax: az aks create -g MyResourceGroup -n MyManagedCluster --enable-aad --aad-admin-group-object-ids <id-1,id-2> --aad-tenant-id <id>
   - summary: Create a kubernetes cluster with server side encryption using your owned key.
     syntax: az aks create -g MyResourceGroup -n MyManagedCluster --node-osdisk-diskencryptionset-id <disk-encryption-set-resource-id>
+  - summary: Create a kubernetes cluster with ephemeral OS enabled.
+    syntax: az aks create -g MyResourceGroup -n MyManagedCluster --node-osdisk-type Ephemeral --node-osdisk-size 48
   requiredParameters:
   - isRequired: true
     name: --name -n
@@ -301,6 +304,9 @@ directCommands:
     description: ''
   - name: --node-osdisk-size
     summary: Size in GB of the OS disk for each node in the node pool. Minimum 30 GB.
+    description: ''
+  - name: --node-osdisk-type
+    summary: OS disk type to be used for machines in a given agent pool. Defaults to 'Ephemeral' when possible in conjunction with VM size and OS disk size. May not be changed for this pool after creation.
     description: ''
   - name: --node-vm-size -s
     defaultValue: Standard_DS2_v2
@@ -1141,5 +1147,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 10/21/2020
+  ms.date: 11/02/2020
   description: Manage Azure Kubernetes Services.
