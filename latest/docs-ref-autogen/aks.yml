@@ -582,12 +582,17 @@ directCommands:
   summary: Download and install kubectl, the Kubernetes command-line tool. Download and install kubelogin, a client-go credential (exec) plugin implementing azure authentication.
   description: ''
   syntax: >-
-    az aks install-cli [--client-version]
+    az aks install-cli [--base-src-url]
+                       [--client-version]
                        [--install-location]
+                       [--kubelogin-base-src-url]
                        [--kubelogin-install-location]
                        [--kubelogin-version]
                        [--subscription]
   optionalParameters:
+  - name: --base-src-url
+    summary: Base download source URL for kubectl releases.
+    description: ''
   - name: --client-version
     defaultValue: latest
     summary: Version of kubectl to install.
@@ -595,6 +600,9 @@ directCommands:
   - name: --install-location
     defaultValue: ~/.azure-kubectl/kubectl.exe
     summary: Path at which to install kubectl.
+    description: ''
+  - name: --kubelogin-base-src-url -l
+    summary: Base download source URL for kubelogin releases.
     description: ''
   - name: --kubelogin-install-location
     defaultValue: ~/.azure-kubelogin/kubelogin.exe
