@@ -1,85 +1,85 @@
 ### YamlMime:AzureCLIGroup
-uid: az_netappfiles_pool
-name: az netappfiles pool
-summary: Manage Azure NetApp Files (ANF) Pool Resources.
+uid: az_netappfiles_volume_backup
+name: az netappfiles volume backup
+summary: Manage Azure NetApp Files (ANF) Volume Backup Resources.
 description: ''
 directCommands:
-- uid: az_netappfiles_pool_create
-  name: az netappfiles pool create
-  summary: Create a new Azure NetApp Files (ANF) pool.
+- uid: az_netappfiles_volume_backup_create
+  name: az netappfiles volume backup create
+  summary: Create specified ANF volume backup.
   description: ''
   syntax: >-
-    az netappfiles pool create --account-name
-                               --location
-                               --name
-                               --resource-group
-                               --service-level {Premium, Standard, Ultra}
-                               --size
-                               [--qos-type]
-                               [--subscription]
-                               [--tags]
+    az netappfiles volume backup create --account-name
+                                        --backup-name
+                                        --location
+                                        --name
+                                        --pool-name
+                                        --resource-group
+                                        [--label]
+                                        [--subscription]
   examples:
-  - summary: Create an ANF pool
-    syntax: az netappfiles pool create -g mygroup --account-name myaccountname --name mypoolname -l westus2 --size 8 --service-level premium
+  - summary: Returns the created ANF backup
+    syntax: az netappfiles volume backup create -g mygroup --account-name myaccname --pool-name mypoolname --name myvolname -l westus2 --backup-name mybackupname
   requiredParameters:
   - isRequired: true
     name: --account-name -a
     summary: The name of the ANF account.
+    description: ''
+  - isRequired: true
+    name: --backup-name -b
+    summary: The name of the ANF backup.
     description: ''
   - isRequired: true
     name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
   - isRequired: true
-    name: --name --pool-name -n -p
+    name: --name --volume-name -n -v
+    summary: The name of the ANF volume.
+    description: ''
+  - isRequired: true
+    name: --pool-name -p
     summary: The name of the ANF pool.
     description: ''
   - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
-  - isRequired: true
-    name: --service-level
-    parameterValueGroup: Premium, Standard, Ultra
-    summary: The service level for the ANF pool.
-    description: ''
-  - isRequired: true
-    name: --size
-    summary: The size for the ANF pool. Must be an integer number of tebibytes in multiples of 4.
-    description: ''
   optionalParameters:
-  - name: --qos-type
-    summary: The qos type of the ANF pool.
+  - name: --label
+    summary: Label for backup.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  - name: --tags
-    summary: Space-separated tags in `key[=value]` format.
-    description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
-- uid: az_netappfiles_pool_delete
-  name: az netappfiles pool delete
-  summary: Delete the specified ANF pool.
-  description: ''
+- uid: az_netappfiles_volume_backup_delete
+  name: az netappfiles volume backup delete
+  summary: Delete backup.
+  description: Delete a backup of the volume.
   syntax: >-
-    az netappfiles pool delete [--account-name]
-                               [--ids]
-                               [--name]
-                               [--resource-group]
-                               [--subscription]
-  examples:
-  - summary: Delete an ANF pool
-    syntax: az netappfiles pool delete -g mygroup --account-name myaccname --name mypoolname
+    az netappfiles volume backup delete [--account-name]
+                                        [--backup-name]
+                                        [--ids]
+                                        [--name]
+                                        [--pool-name]
+                                        [--resource-group]
+                                        [--subscription]
   optionalParameters:
   - name: --account-name -a
-    summary: The name of the ANF account.
+    summary: Name of the ANF account.
+    description: ''
+  - name: --backup-name -b
+    summary: The name of the backup.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
-  - name: --name --pool-name -n -p
-    summary: The name of the ANF pool.
+  - name: --name --volume-name -n -v
+    summary: Name of the ANF volume.
+    description: ''
+  - name: --pool-name -p
+    summary: Name of the ANF pool.
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
@@ -88,24 +88,34 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
-- uid: az_netappfiles_pool_list
-  name: az netappfiles pool list
-  summary: L:ist the ANF pools for the specified account.
+- uid: az_netappfiles_volume_backup_list
+  name: az netappfiles volume backup list
+  summary: List the ANF Backups for the specified volume.
   description: ''
   syntax: >-
-    az netappfiles pool list --account-name
-                             --resource-group
-                             [--query-examples]
-                             [--subscription]
+    az netappfiles volume backup list --account-name
+                                      --name
+                                      --pool-name
+                                      --resource-group
+                                      [--query-examples]
+                                      [--subscription]
   examples:
-  - summary: List the pools for the ANF account
-    syntax: az netappfiles pool list -g mygroup --account-name myname
+  - summary: List the ANF backups of the volume
+    syntax: az netappfiles volume backup list -g mygroup --account-name myaccname --pool-name mypoolname --name myvolname
   requiredParameters:
   - isRequired: true
     name: --account-name -a
     summary: The name of the ANF account.
     description: ''
   - isRequired: true
+    name: --name --volume-name -n -v
+    summary: The name of the ANF pool.
+    description: ''
+  - isRequired: true
+    name: --pool-name -p
+    summary: The name of the ANF pool.
+    description: ''
+  - isRequired: true
     name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
@@ -117,28 +127,36 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
-- uid: az_netappfiles_pool_show
-  name: az netappfiles pool show
-  summary: Get the specified ANF pool.
+- uid: az_netappfiles_volume_backup_show
+  name: az netappfiles volume backup show
+  summary: Get the specified ANF Backup.
   description: ''
   syntax: >-
-    az netappfiles pool show [--account-name]
-                             [--ids]
-                             [--name]
-                             [--query-examples]
-                             [--resource-group]
-                             [--subscription]
+    az netappfiles volume backup show [--account-name]
+                                      [--backup-name]
+                                      [--ids]
+                                      [--name]
+                                      [--pool-name]
+                                      [--query-examples]
+                                      [--resource-group]
+                                      [--subscription]
   examples:
-  - summary: Get an ANF pool
-    syntax: az netappfiles pool show -g mygroup --account-name myaccname --name mypoolname
+  - summary: Returns the properties of the given ANF backup
+    syntax: az netappfiles volume backup show -g mygroup --account-name myaccname --pool-name mypoolname --name myvolname --backup-name mybackupname
   optionalParameters:
   - name: --account-name -a
     summary: The name of the ANF account.
     description: ''
+  - name: --backup-name -b
+    summary: The name of the ANF backup.
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
-  - name: --name --pool-name -n -p
+  - name: --name --volume-name -n -v
+    summary: The name of the ANF pool.
+    description: ''
+  - name: --pool-name -p
     summary: The name of the ANF pool.
     description: ''
   - name: --query-examples
@@ -151,70 +169,58 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
-- uid: az_netappfiles_pool_update
-  name: az netappfiles pool update
-  summary: Update the tags of the specified ANF pool.
+- uid: az_netappfiles_volume_backup_update
+  name: az netappfiles volume backup update
+  summary: Update the specified ANF backup with the values provided.
   description: ''
   syntax: >-
-    az netappfiles pool update [--account-name]
-                               [--add]
-                               [--force-string]
-                               [--ids]
-                               [--name]
-                               [--qos-type]
-                               [--remove]
-                               [--resource-group]
-                               [--set]
-                               [--size]
-                               [--subscription]
-                               [--tags]
+    az netappfiles volume backup update [--account-name]
+                                        [--backup-name]
+                                        [--ids]
+                                        [--label]
+                                        [--name]
+                                        [--pool-name]
+                                        [--resource-group]
+                                        [--subscription]
+                                        [--tags]
   examples:
-  - summary: Update specific values for an ANF pool
-    syntax: az netappfiles pool update -g mygroup --account-name myaccname --name mypoolname --tags mytag1=abcd mytag2=efgh
+  - summary: Update an ANF backup
+    syntax: az netappfiles volume backup update -g mygroup --account-name myaccname --pool-name mypoolname --name myvolname --backup-name mybackupname
   optionalParameters:
   - name: --account-name -a
     summary: The name of the ANF account.
     description: ''
-  - name: --add
-    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
-    description: ''
-  - name: --force-string
-    summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
+  - name: --backup-name -b
+    summary: The name of the ANF backup.
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
-  - name: --name --pool-name -n -p
+  - name: --label
+    summary: Label for backup.
+    description: ''
+  - name: --name --volume-name -n -v
+    summary: The name of the ANF volume.
+    description: ''
+  - name: --pool-name -p
     summary: The name of the ANF pool.
-    description: ''
-  - name: --qos-type
-    summary: The qos type of the ANF pool.
-    description: ''
-  - name: --remove
-    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
     description: ''
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
-    description: ''
-  - name: --set
-    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
-    description: ''
-  - name: --size
-    summary: The size for the ANF pool. Must be an integer number of tebibytes in multiples of 4.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --tags
-    summary: Space-separated tags in `key[=value]` format.
+    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 commands:
-- az_netappfiles_pool_create
-- az_netappfiles_pool_delete
-- az_netappfiles_pool_list
-- az_netappfiles_pool_show
-- az_netappfiles_pool_update
+- az_netappfiles_volume_backup_create
+- az_netappfiles_volume_backup_delete
+- az_netappfiles_volume_backup_list
+- az_netappfiles_volume_backup_show
+- az_netappfiles_volume_backup_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -233,4 +239,4 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   ms.date: 11/08/2020
-  description: Manage Azure NetApp Files (ANF) Pool Resources.
+  description: Manage Azure NetApp Files (ANF) Volume Backup Resources.

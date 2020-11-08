@@ -15782,6 +15782,36 @@
         - name: remove
           uid: az_netappfiles_account_ad_remove
           displayName: az netappfiles account ad remove
+      - name: backup
+        displayName: az netappfiles account backup
+        items:
+        - name: Overview
+          uid: az_netappfiles_account_backup
+          displayName: az netappfiles account backup
+        - name: list
+          uid: az_netappfiles_account_backup_list
+          displayName: az netappfiles account backup list
+      - name: backup-policy
+        displayName: az netappfiles account backup-policy
+        items:
+        - name: Overview
+          uid: az_netappfiles_account_backup_policy
+          displayName: az netappfiles account backup-policy
+        - name: create
+          uid: az_netappfiles_account_backup_policy_create
+          displayName: az netappfiles account backup-policy create
+        - name: delete
+          uid: az_netappfiles_account_backup_policy_delete
+          displayName: az netappfiles account backup-policy delete
+        - name: list
+          uid: az_netappfiles_account_backup_policy_list
+          displayName: az netappfiles account backup-policy list
+        - name: show
+          uid: az_netappfiles_account_backup_policy_show
+          displayName: az netappfiles account backup-policy show
+        - name: update
+          uid: az_netappfiles_account_backup_policy_update
+          displayName: az netappfiles account backup-policy update
     - name: pool
       displayName: az netappfiles pool
       items:
@@ -15821,6 +15851,39 @@
       - name: show
         uid: az_netappfiles_snapshot_show
         displayName: az netappfiles snapshot show
+      - name: policy
+        displayName: az netappfiles snapshot policy
+        items:
+        - name: Overview
+          uid: az_netappfiles_snapshot_policy
+          displayName: az netappfiles snapshot policy
+        - name: create
+          uid: az_netappfiles_snapshot_policy_create
+          displayName: az netappfiles snapshot policy create
+        - name: delete
+          uid: az_netappfiles_snapshot_policy_delete
+          displayName: az netappfiles snapshot policy delete
+        - name: list
+          uid: az_netappfiles_snapshot_policy_list
+          displayName: az netappfiles snapshot policy list
+        - name: show
+          uid: az_netappfiles_snapshot_policy_show
+          displayName: az netappfiles snapshot policy show
+        - name: update
+          uid: az_netappfiles_snapshot_policy_update
+          displayName: az netappfiles snapshot policy update
+        - name: volumes
+          uid: az_netappfiles_snapshot_policy_volumes
+          displayName: az netappfiles snapshot policy volumes
+    - name: vault
+      displayName: az netappfiles vault
+      items:
+      - name: Overview
+        uid: az_netappfiles_vault
+        displayName: az netappfiles vault
+      - name: list
+        uid: az_netappfiles_vault_list
+        displayName: az netappfiles vault list
     - name: volume
       displayName: az netappfiles volume
       items:
@@ -15836,6 +15899,9 @@
       - name: list
         uid: az_netappfiles_volume_list
         displayName: az netappfiles volume list
+      - name: pool-change
+        uid: az_netappfiles_volume_pool_change
+        displayName: az netappfiles volume pool-change
       - name: revert
         uid: az_netappfiles_volume_revert
         displayName: az netappfiles volume revert
@@ -15845,6 +15911,27 @@
       - name: update
         uid: az_netappfiles_volume_update
         displayName: az netappfiles volume update
+      - name: backup
+        displayName: az netappfiles volume backup
+        items:
+        - name: Overview
+          uid: az_netappfiles_volume_backup
+          displayName: az netappfiles volume backup
+        - name: create
+          uid: az_netappfiles_volume_backup_create
+          displayName: az netappfiles volume backup create
+        - name: delete
+          uid: az_netappfiles_volume_backup_delete
+          displayName: az netappfiles volume backup delete
+        - name: list
+          uid: az_netappfiles_volume_backup_list
+          displayName: az netappfiles volume backup list
+        - name: show
+          uid: az_netappfiles_volume_backup_show
+          displayName: az netappfiles volume backup show
+        - name: update
+          uid: az_netappfiles_volume_backup_update
+          displayName: az netappfiles volume backup update
       - name: export-policy
         displayName: az netappfiles volume export-policy
         items:
@@ -15869,6 +15956,9 @@
         - name: approve
           uid: az_netappfiles_volume_replication_approve
           displayName: az netappfiles volume replication approve
+        - name: re-initialize
+          uid: az_netappfiles_volume_replication_re_initialize
+          displayName: az netappfiles volume replication re-initialize
         - name: remove
           uid: az_netappfiles_volume_replication_remove
           displayName: az netappfiles volume replication remove
