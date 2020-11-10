@@ -13388,6 +13388,18 @@
       - name: wait
         uid: az_billing_account_wait
         displayName: az billing account wait
+    - name: agreement
+      displayName: az billing agreement
+      items:
+      - name: Overview
+        uid: az_billing_agreement
+        displayName: az billing agreement
+      - name: list
+        uid: az_billing_agreement_list
+        displayName: az billing agreement list
+      - name: show
+        uid: az_billing_agreement_show
+        displayName: az billing agreement show
     - name: balance
       displayName: az billing balance
       items:
@@ -13421,6 +13433,24 @@
       - name: show
         uid: az_billing_enrollment_account_show
         displayName: az billing enrollment-account show
+    - name: instruction
+      displayName: az billing instruction
+      items:
+      - name: Overview
+        uid: az_billing_instruction
+        displayName: az billing instruction
+      - name: create
+        uid: az_billing_instruction_create
+        displayName: az billing instruction create
+      - name: list
+        uid: az_billing_instruction_list
+        displayName: az billing instruction list
+      - name: show
+        uid: az_billing_instruction_show
+        displayName: az billing instruction show
+      - name: update
+        uid: az_billing_instruction_update
+        displayName: az billing instruction update
     - name: invoice
       displayName: az billing invoice
       items:
@@ -13469,6 +13499,15 @@
       - name: show
         uid: az_billing_period_show
         displayName: az billing period show
+    - name: permission
+      displayName: az billing permission
+      items:
+      - name: Overview
+        uid: az_billing_permission
+        displayName: az billing permission
+      - name: list
+        uid: az_billing_permission_list
+        displayName: az billing permission list
     - name: policy
       displayName: az billing policy
       items:
@@ -13535,6 +13574,33 @@
       - name: update
         uid: az_billing_property_update
         displayName: az billing property update
+    - name: role-assignment
+      displayName: az billing role-assignment
+      items:
+      - name: Overview
+        uid: az_billing_role_assignment
+        displayName: az billing role-assignment
+      - name: delete
+        uid: az_billing_role_assignment_delete
+        displayName: az billing role-assignment delete
+      - name: list
+        uid: az_billing_role_assignment_list
+        displayName: az billing role-assignment list
+      - name: show
+        uid: az_billing_role_assignment_show
+        displayName: az billing role-assignment show
+    - name: role-definition
+      displayName: az billing role-definition
+      items:
+      - name: Overview
+        uid: az_billing_role_definition
+        displayName: az billing role-definition
+      - name: list
+        uid: az_billing_role_definition_list
+        displayName: az billing role-definition list
+      - name: show
+        uid: az_billing_role_definition_show
+        displayName: az billing role-definition show
     - name: subscription
       displayName: az billing subscription
       items:

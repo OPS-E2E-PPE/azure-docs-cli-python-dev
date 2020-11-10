@@ -9,6 +9,9 @@ commands:
 - az_billing_account_show
 - az_billing_account_update
 - az_billing_account_wait
+- az_billing_agreement
+- az_billing_agreement_list
+- az_billing_agreement_show
 - az_billing_balance
 - az_billing_balance_show
 - az_billing_customer
@@ -17,6 +20,11 @@ commands:
 - az_billing_enrollment_account
 - az_billing_enrollment_account_list
 - az_billing_enrollment_account_show
+- az_billing_instruction
+- az_billing_instruction_create
+- az_billing_instruction_list
+- az_billing_instruction_show
+- az_billing_instruction_update
 - az_billing_invoice
 - az_billing_invoice_download
 - az_billing_invoice_list
@@ -30,6 +38,8 @@ commands:
 - az_billing_period
 - az_billing_period_list
 - az_billing_period_show
+- az_billing_permission
+- az_billing_permission_list
 - az_billing_policy
 - az_billing_policy_show
 - az_billing_policy_update
@@ -48,6 +58,13 @@ commands:
 - az_billing_property
 - az_billing_property_show
 - az_billing_property_update
+- az_billing_role_assignment
+- az_billing_role_assignment_delete
+- az_billing_role_assignment_list
+- az_billing_role_assignment_show
+- az_billing_role_definition
+- az_billing_role_definition_list
+- az_billing_role_definition_show
 - az_billing_subscription
 - az_billing_subscription_list
 - az_billing_subscription_move
