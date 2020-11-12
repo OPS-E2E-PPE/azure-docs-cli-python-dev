@@ -58,6 +58,7 @@ directCommands:
                   [--aci-subnet-name]
                   [--admin-username]
                   [--api-server-authorized-ip-ranges]
+                  [--assign-identity]
                   [--attach-acr]
                   [--ca-profile]
                   [--client-secret]
@@ -184,6 +185,9 @@ directCommands:
     description: ''
   - name: --api-server-authorized-ip-ranges
     summary: Comma seperated list of authorized apiserver IP ranges. Set to 0.0.0.0/32 to restrict apiserver traffic to node pools.
+    description: ''
+  - name: --assign-identity
+    summary: Specify an existing user assigned identity for control plane's usage in order to manage cluster resource group.
     description: ''
   - name: --attach-acr
     summary: Grant the 'acrpull' role assignment to the ACR specified by name or resource ID.
@@ -1155,5 +1159,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 11/09/2020
+  ms.date: 11/12/2020
   description: Manage Azure Kubernetes Services.
