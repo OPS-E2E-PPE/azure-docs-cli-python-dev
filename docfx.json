@@ -1,5 +1,14 @@
 {
   "build": {
+    "groups": {
+      "azure-cli-latest": {"moniker_range": "azure-cli-latest"},
+      "azure-cli-2017-03-09-profile": {"moniker_range": "azure-cli-2017-03-09-profile"},
+      "conceptual": {
+        "moniker_ranges": [
+        "azure-cli-latest || azure-cli-2017-03-09-profile"
+        ]
+      }
+    },
     "content": [
       {
         "files": [
@@ -13,7 +22,7 @@
           "TOC.yml"
         ],
         "src": "latest/docs-ref-autogen",
-        "version": "azure-cli-latest",
+        "group": "azure-cli-latest",
         "dest": "command"
       },
       {
@@ -21,7 +30,7 @@
           "TOC.yml"
         ],
         "src": "2017-03-09-profile/docs-ref-autogen",
-        "version": "azure-cli-2017-03-09-profile",
+        "group": "azure-cli-2017-03-09-profile",
         "dest": "command"
       },
       {
@@ -38,7 +47,7 @@
           "ThirdPartyNotices"
         ],
         "src": "latest/docs-ref-autogen",
-        "version": "azure-cli-latest",
+        "group": "azure-cli-latest",
         "dest": ""
       },
       {
@@ -56,7 +65,7 @@
           "ThirdPartyNotices"
         ],
         "src": "docs-ref-conceptual",
-        "version": "azure-cli-latest",
+        "group": "conceptual",
         "dest": ""
       },
       {
@@ -73,25 +82,7 @@
           "ThirdPartyNotices"
         ],
         "src": "2017-03-09-profile/docs-ref-autogen",
-        "version": "azure-cli-2017-03-09-profile",
-        "dest": ""
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/TOC.md",
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ],
-        "src": "docs-ref-conceptual",
-        "version": "azure-cli-2017-03-09-profile",
+        "group": "azure-cli-2017-03-09-profile",
         "dest": ""
       }
     ],
@@ -106,20 +97,7 @@
           "**/includes/**"
         ],
         "src": "docs-ref-conceptual",
-        "version": "azure-cli-latest",
-        "dest": ""
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "src": "docs-ref-conceptual",
-        "version": "azure-cli-2017-03-09-profile",
+        "group": "conceptual",
         "dest": ""
       }
     ],
