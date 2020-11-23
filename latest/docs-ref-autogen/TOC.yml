@@ -5333,6 +5333,9 @@
       - name: update
         uid: az_mysql_server_update
         displayName: az mysql server update
+      - name: upgrade
+        uid: az_mysql_server_upgrade
+        displayName: az mysql server upgrade
       - name: wait
         uid: az_mysql_server_wait
         displayName: az mysql server wait
