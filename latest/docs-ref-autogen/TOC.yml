@@ -12626,6 +12626,9 @@
     - name: list
       uid: az_apim_list
       displayName: az apim list
+    - name: restore
+      uid: az_apim_restore
+      displayName: az apim restore
     - name: show
       uid: az_apim_show
       displayName: az apim show
@@ -12782,6 +12785,9 @@
       - name: update
         uid: az_apim_product_update
         displayName: az apim product update
+      - name: wait
+        uid: az_apim_product_wait
+        displayName: az apim product wait
       - name: api
         displayName: az apim product api
         items:
