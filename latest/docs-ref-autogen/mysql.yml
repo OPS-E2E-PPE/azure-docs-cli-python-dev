@@ -82,6 +82,7 @@ commands:
 - az_mysql_server_restart
 - az_mysql_server_restore
 - az_mysql_server_show
+- az_mysql_server_show_connection_string
 - az_mysql_server_start
 - az_mysql_server_stop
 - az_mysql_server_update

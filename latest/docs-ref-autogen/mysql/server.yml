@@ -43,7 +43,7 @@ directCommands:
     summary: 'The password of the administrator. Minimum 8 characters and maximum 128 characters. Password must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters.'
     description: ''
   - name: --admin-user -u
-    defaultValue: amusedStoat8
+    defaultValue: curiousDunnock7
     summary: Administrator username for the server. Once set, it cannot be changed.
     description: ''
   - name: --assign-identity
@@ -333,6 +333,43 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+- uid: az_mysql_server_show_connection_string
+  name: az mysql server show-connection-string
+  summary: Show the connection strings for a MySQL server database.
+  description: ''
+  syntax: >-
+    az mysql server show-connection-string [--admin-password]
+                                           [--admin-user]
+                                           [--database-name]
+                                           [--ids]
+                                           [--server-name]
+                                           [--subscription]
+  examples:
+  - summary: Show connection strings for cmd and programming languages.
+    syntax: az mysql server show-connection-string -s testServer -u username -p password -d databasename
+  optionalParameters:
+  - name: --admin-password -p
+    defaultValue: '{password}'
+    summary: The login password of the administrator.
+    description: ''
+  - name: --admin-user -u
+    defaultValue: '{username}'
+    summary: The login username of the administrator.
+    description: ''
+  - name: --database-name -d
+    defaultValue: '{database}'
+    summary: The name of a database.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --server-name -s
+    defaultValue: '{server}'
+    summary: Name of the server.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
 - uid: az_mysql_server_start
   name: az mysql server start
   summary: Start a stopped server.
@@ -586,6 +623,7 @@ commands:
 - az_mysql_server_restart
 - az_mysql_server_restore
 - az_mysql_server_show
+- az_mysql_server_show_connection_string
 - az_mysql_server_start
 - az_mysql_server_stop
 - az_mysql_server_update
