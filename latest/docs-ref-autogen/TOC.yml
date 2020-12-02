@@ -1319,6 +1319,12 @@
       - name: Overview
         uid: az_cdn_origin
         displayName: az cdn origin
+      - name: create
+        uid: az_cdn_origin_create
+        displayName: az cdn origin create
+      - name: delete
+        uid: az_cdn_origin_delete
+        displayName: az cdn origin delete
       - name: list
         uid: az_cdn_origin_list
         displayName: az cdn origin list
@@ -1328,6 +1334,27 @@
       - name: update
         uid: az_cdn_origin_update
         displayName: az cdn origin update
+    - name: origin-group
+      displayName: az cdn origin-group
+      items:
+      - name: Overview
+        uid: az_cdn_origin_group
+        displayName: az cdn origin-group
+      - name: create
+        uid: az_cdn_origin_group_create
+        displayName: az cdn origin-group create
+      - name: delete
+        uid: az_cdn_origin_group_delete
+        displayName: az cdn origin-group delete
+      - name: list
+        uid: az_cdn_origin_group_list
+        displayName: az cdn origin-group list
+      - name: show
+        uid: az_cdn_origin_group_show
+        displayName: az cdn origin-group show
+      - name: update
+        uid: az_cdn_origin_group_update
+        displayName: az cdn origin-group update
     - name: profile
       displayName: az cdn profile
       items:
