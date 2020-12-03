@@ -5756,21 +5756,102 @@
         - name: list
           uid: az_synapse_sql_pool_list
           displayName: az synapse sql pool list
+        - name: list-deleted
+          uid: az_synapse_sql_pool_list_deleted
+          displayName: az synapse sql pool list-deleted
         - name: pause
           uid: az_synapse_sql_pool_pause
           displayName: az synapse sql pool pause
+        - name: restore
+          uid: az_synapse_sql_pool_restore
+          displayName: az synapse sql pool restore
         - name: resume
           uid: az_synapse_sql_pool_resume
           displayName: az synapse sql pool resume
         - name: show
           uid: az_synapse_sql_pool_show
           displayName: az synapse sql pool show
+        - name: show-connection-string
+          uid: az_synapse_sql_pool_show_connection_string
+          displayName: az synapse sql pool show-connection-string
         - name: update
           uid: az_synapse_sql_pool_update
           displayName: az synapse sql pool update
         - name: wait
           uid: az_synapse_sql_pool_wait
           displayName: az synapse sql pool wait
+        - name: audit-policy
+          displayName: az synapse sql pool audit-policy
+          items:
+          - name: Overview
+            uid: az_synapse_sql_pool_audit_policy
+            displayName: az synapse sql pool audit-policy
+          - name: show
+            uid: az_synapse_sql_pool_audit_policy_show
+            displayName: az synapse sql pool audit-policy show
+          - name: update
+            uid: az_synapse_sql_pool_audit_policy_update
+            displayName: az synapse sql pool audit-policy update
+        - name: classification
+          displayName: az synapse sql pool classification
+          items:
+          - name: Overview
+            uid: az_synapse_sql_pool_classification
+            displayName: az synapse sql pool classification
+          - name: create
+            uid: az_synapse_sql_pool_classification_create
+            displayName: az synapse sql pool classification create
+          - name: delete
+            uid: az_synapse_sql_pool_classification_delete
+            displayName: az synapse sql pool classification delete
+          - name: list
+            uid: az_synapse_sql_pool_classification_list
+            displayName: az synapse sql pool classification list
+          - name: show
+            uid: az_synapse_sql_pool_classification_show
+            displayName: az synapse sql pool classification show
+          - name: update
+            uid: az_synapse_sql_pool_classification_update
+            displayName: az synapse sql pool classification update
+          - name: recommendation
+            displayName: az synapse sql pool classification recommendation
+            items:
+            - name: Overview
+              uid: az_synapse_sql_pool_classification_recommendation
+              displayName: az synapse sql pool classification recommendation
+            - name: disable
+              uid: az_synapse_sql_pool_classification_recommendation_disable
+              displayName: az synapse sql pool classification recommendation disable
+            - name: enable
+              uid: az_synapse_sql_pool_classification_recommendation_enable
+              displayName: az synapse sql pool classification recommendation enable
+            - name: list
+              uid: az_synapse_sql_pool_classification_recommendation_list
+              displayName: az synapse sql pool classification recommendation list
+        - name: tde
+          displayName: az synapse sql pool tde
+          items:
+          - name: Overview
+            uid: az_synapse_sql_pool_tde
+            displayName: az synapse sql pool tde
+          - name: set
+            uid: az_synapse_sql_pool_tde_set
+            displayName: az synapse sql pool tde set
+          - name: show
+            uid: az_synapse_sql_pool_tde_show
+            displayName: az synapse sql pool tde show
+        - name: threat-policy
+          displayName: az synapse sql pool threat-policy
+          items:
+          - name: Overview
+            uid: az_synapse_sql_pool_threat_policy
+            displayName: az synapse sql pool threat-policy
+          - name: show
+            uid: az_synapse_sql_pool_threat_policy_show
+            displayName: az synapse sql pool threat-policy show
+          - name: update
+            uid: az_synapse_sql_pool_threat_policy_update
+            displayName: az synapse sql pool threat-policy update
     - name: trigger
       displayName: az synapse trigger
       items:
