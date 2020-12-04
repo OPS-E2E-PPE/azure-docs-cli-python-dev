@@ -1,0 +1,406 @@
+### YamlMime:AzureCLIGroup
+uid: az_ad_app
+name: az ad app
+summary: Manage applications with AAD Graph.
+description: ''
+directCommands:
+- uid: az_ad_app_create
+  name: az ad app create
+  summary: Create a web application, web API or native application.
+  description: ''
+  syntax: >-
+    az ad app create --display-name
+                     [--app-roles]
+                     [--available-to-other-tenants {false, true}]
+                     [--credential-description]
+                     [--end-date]
+                     [--homepage]
+                     [--identifier-uris]
+                     [--key-type {AsymmetricX509Cert, Password, Symmetric}]
+                     [--key-usage {Sign, Verify}]
+                     [--key-value]
+                     [--native-app {false, true}]
+                     [--oauth2-allow-implicit-flow {false, true}]
+                     [--optional-claims]
+                     [--password]
+                     [--reply-urls]
+                     [--required-resource-accesses]
+                     [--start-date]
+  examples:
+  - summary: Create a native application with delegated permission of "access the AAD directory as the signed-in user"
+    syntax: >-
+      az ad app create --display-name my-native --native-app --required-resource-accesses @manifest.json
+
+      ("manifest.json" contains the following content)
+
+      [{
+          "resourceAppId": "00000002-0000-0000-c000-000000000000",
+          "resourceAccess": [
+              {
+                  "id": "a42657d6-7f20-40e3-b6f0-cee03008a62a",
+                  "type": "Scope"
+              }
+         ]
+      }]
+  - summary: Create an application with a role
+    syntax: >-
+      az ad app create --display-name mytestapp --identifier-uris https://mytestapp.websites.net --app-roles @manifest.json
+
+      ("manifest.json" contains the following content)
+
+      [{
+          "allowedMemberTypes": [
+            "User"
+          ],
+          "description": "Approvers can mark documents as approved",
+          "displayName": "Approver",
+          "isEnabled": "true",
+          "value": "approver"
+      }]
+  - summary: Create an application with optional claims
+    syntax: >-
+      az ad app create --display-name mytestapp --optional-claims @manifest.json
+
+      ("manifest.json" contains the following content)
+
+      {
+          "idToken": [
+              {
+                  "name": "auth_time",
+                  "source": null,
+                  "essential": false
+              }
+          ],
+          "accessToken": [
+              {
+                  "name": "email",
+                  "source": null,
+                  "essential": false
+              }
+          ]
+      }
+  requiredParameters:
+  - isRequired: true
+    name: --display-name
+    summary: The display name of the application.
+    description: ''
+  optionalParameters:
+  - name: --app-roles
+    summary: Declare the roles you want to associate with your application. Should be in manifest json format. See examples below for details.
+    description: ''
+  - name: --available-to-other-tenants
+    parameterValueGroup: false, true
+    summary: The application can be used from any Azure AD tenants.
+    description: ''
+  - name: --credential-description
+    summary: The description of the password.
+    description: ''
+  - name: --end-date
+    summary: Date or datetime after which credentials expire(e.g. '2017-12-31T11:59:59+00:00' or '2017-12-31'). Default value is one year after current time.
+    description: ''
+  - name: --homepage
+    summary: The url where users can sign in and use your app.
+    description: ''
+  - name: --identifier-uris
+    summary: Space-separated unique URIs that Azure AD can use for this app.
+    description: ''
+  - name: --key-type
+    defaultValue: AsymmetricX509Cert
+    parameterValueGroup: AsymmetricX509Cert, Password, Symmetric
+    summary: The type of the key credentials associated with the application.
+    description: ''
+  - name: --key-usage
+    defaultValue: Verify
+    parameterValueGroup: Sign, Verify
+    summary: The usage of the key credentials associated with the application.
+    description: ''
+  - name: --key-value
+    summary: The value for the key credentials associated with the application.
+    description: ''
+  - name: --native-app
+    parameterValueGroup: false, true
+    summary: An application which can be installed on a user's device or computer.
+    description: ''
+  - name: --oauth2-allow-implicit-flow
+    parameterValueGroup: false, true
+    summary: Whether to allow implicit grant flow for OAuth2.
+    description: ''
+  - name: --optional-claims
+    summary: Declare the optional claims for the application. Should be in manifest json format. See examples below for details. Please reference <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims#optionalclaim-type">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims#optionalclaim-type</a> for optional claim properties.
+    description: ''
+  - name: --password
+    summary: App password, aka 'client secret'.
+    description: ''
+  - name: --reply-urls
+    summary: Space-separated URIs to which Azure AD will redirect in response to an OAuth 2.0 request. The value does not need to be a physical endpoint, but must be a valid URI.
+    description: ''
+  - name: --required-resource-accesses
+    summary: Resource scopes and roles the application requires access to. Should be in manifest json format. See examples below for details.
+    description: ''
+  - name: --start-date
+    summary: Date or datetime at which credentials become valid(e.g. '2017-01-01T01:00:00+00:00' or '2017-01-01'). Default value is current time.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+- uid: az_ad_app_delete
+  name: az ad app delete
+  summary: Delete an application.
+  description: ''
+  syntax: az ad app delete --id
+  examples:
+  - summary: Delete an application. (autogenerated)
+    syntax: az ad app delete --id 00000000-0000-0000-0000-000000000000
+  requiredParameters:
+  - isRequired: true
+    name: --id
+    summary: Identifier uri, application id, or object id.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+- uid: az_ad_app_list
+  name: az ad app list
+  summary: List applications.
+  description: For low latency, by default, only the first 100 will be returned unless you provide filter arguments or use "--all".
+  syntax: >-
+    az ad app list [--all]
+                   [--app-id]
+                   [--display-name]
+                   [--filter]
+                   [--identifier-uri]
+                   [--query-examples]
+                   [--show-mine]
+  optionalParameters:
+  - name: --all
+    summary: List all entities, expect long delay if under a big organization.
+    description: ''
+  - name: --app-id
+    summary: Application id.
+    description: ''
+  - name: --display-name
+    summary: The display name of the application.
+    description: ''
+  - name: --filter
+    summary: OData filter, e.g. --filter "displayname eq 'test' and servicePrincipalType eq 'Application'".
+    description: ''
+  - name: --identifier-uri
+    summary: Graph application identifier, must be in uri format.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
+    description: ''
+  - name: --show-mine
+    summary: List entities owned by the current user.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+- uid: az_ad_app_show
+  name: az ad app show
+  summary: Get the details of an application.
+  description: ''
+  syntax: >-
+    az ad app show --id
+                   [--query-examples]
+  examples:
+  - summary: Get the details of an application. (autogenerated)
+    syntax: az ad app show --id 00000000-0000-0000-0000-000000000000
+  requiredParameters:
+  - isRequired: true
+    name: --id
+    summary: Identifier uri, application id, or object id.
+    description: ''
+  optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+- uid: az_ad_app_update
+  name: az ad app update
+  summary: Update an application.
+  description: ''
+  syntax: >-
+    az ad app update --id
+                     [--add]
+                     [--app-roles]
+                     [--available-to-other-tenants {false, true}]
+                     [--credential-description]
+                     [--display-name]
+                     [--end-date]
+                     [--force-string]
+                     [--homepage]
+                     [--identifier-uris]
+                     [--key-type {AsymmetricX509Cert, Password, Symmetric}]
+                     [--key-usage {Sign, Verify}]
+                     [--key-value]
+                     [--oauth2-allow-implicit-flow {false, true}]
+                     [--optional-claims]
+                     [--password]
+                     [--remove]
+                     [--reply-urls]
+                     [--required-resource-accesses]
+                     [--set]
+                     [--start-date]
+  examples:
+  - summary: update a native application with delegated permission of "access the AAD directory as the signed-in user"
+    syntax: >-
+      az ad app update --id e042ec79-34cd-498f-9d9f-123456781234 --required-resource-accesses @manifest.json
+
+      ("manifest.json" contains the following content)
+
+      [{
+          "resourceAppId": "00000002-0000-0000-c000-000000000000",
+          "resourceAccess": [
+              {
+                  "id": "a42657d6-7f20-40e3-b6f0-cee03008a62a",
+                  "type": "Scope"
+              }
+         ]
+      }]
+  - summary: declare an application role
+    syntax: >-
+      az ad app update --id e042ec79-34cd-498f-9d9f-123456781234 --app-roles @manifest.json
+
+      ("manifest.json" contains the following content)
+
+      [{
+          "allowedMemberTypes": [
+            "User"
+          ],
+          "description": "Approvers can mark documents as approved",
+          "displayName": "Approver",
+          "isEnabled": "true",
+          "value": "approver"
+      }]
+  - summary: update optional claims
+    syntax: >-
+      az ad app update --id e042ec79-34cd-498f-9d9f-123456781234 --optional-claims @manifest.json
+
+      ("manifest.json" contains the following content)
+
+      {
+          "idToken": [
+              {
+                  "name": "auth_time",
+                  "source": null,
+                  "essential": false
+              }
+          ],
+          "accessToken": [
+              {
+                  "name": "email",
+                  "source": null,
+                  "essential": false
+              }
+          ]
+      }
+  - summary: update an application's group membership claims to "All"
+    syntax: az ad app update --id e042ec79-34cd-498f-9d9f-123456781234 --set groupMembershipClaims=All
+  requiredParameters:
+  - isRequired: true
+    name: --id
+    summary: Identifier uri, application id, or object id.
+    description: ''
+  optionalParameters:
+  - name: --add
+    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --app-roles
+    summary: Declare the roles you want to associate with your application. Should be in manifest json format. See examples below for details.
+    description: ''
+  - name: --available-to-other-tenants
+    parameterValueGroup: false, true
+    summary: The application can be used from any Azure AD tenants.
+    description: ''
+  - name: --credential-description
+    summary: The description of the password.
+    description: ''
+  - name: --display-name
+    summary: The display name of the application.
+    description: ''
+  - name: --end-date
+    summary: Date or datetime after which credentials expire(e.g. '2017-12-31T11:59:59+00:00' or '2017-12-31'). Default value is one year after current time.
+    description: ''
+  - name: --force-string
+    summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
+    description: ''
+  - name: --homepage
+    summary: The url where users can sign in and use your app.
+    description: ''
+  - name: --identifier-uris
+    summary: Space-separated unique URIs that Azure AD can use for this app.
+    description: ''
+  - name: --key-type
+    defaultValue: AsymmetricX509Cert
+    parameterValueGroup: AsymmetricX509Cert, Password, Symmetric
+    summary: The type of the key credentials associated with the application.
+    description: ''
+  - name: --key-usage
+    defaultValue: Verify
+    parameterValueGroup: Sign, Verify
+    summary: The usage of the key credentials associated with the application.
+    description: ''
+  - name: --key-value
+    summary: The value for the key credentials associated with the application.
+    description: ''
+  - name: --oauth2-allow-implicit-flow
+    parameterValueGroup: false, true
+    summary: Whether to allow implicit grant flow for OAuth2.
+    description: ''
+  - name: --optional-claims
+    summary: Declare the optional claims for the application. Should be in manifest json format. See examples below for details. Please reference <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims#optionalclaim-type">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims#optionalclaim-type</a> for optional claim properties.
+    description: ''
+  - name: --password
+    summary: App password, aka 'client secret'.
+    description: ''
+  - name: --remove
+    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
+    description: ''
+  - name: --reply-urls
+    summary: Space-separated URIs to which Azure AD will redirect in response to an OAuth 2.0 request. The value does not need to be a physical endpoint, but must be a valid URI.
+    description: ''
+  - name: --required-resource-accesses
+    summary: Resource scopes and roles the application requires access to. Should be in manifest json format. See examples below for details.
+    description: ''
+  - name: --set
+    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --start-date
+    summary: Date or datetime at which credentials become valid(e.g. '2017-01-01T01:00:00+00:00' or '2017-01-01'). Default value is current time.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+commands:
+- az_ad_app_create
+- az_ad_app_credential
+- az_ad_app_credential_delete
+- az_ad_app_credential_list
+- az_ad_app_credential_reset
+- az_ad_app_delete
+- az_ad_app_list
+- az_ad_app_owner
+- az_ad_app_owner_add
+- az_ad_app_owner_list
+- az_ad_app_owner_remove
+- az_ad_app_permission
+- az_ad_app_permission_add
+- az_ad_app_permission_admin_consent
+- az_ad_app_permission_delete
+- az_ad_app_permission_grant
+- az_ad_app_permission_list
+- az_ad_app_permission_list_grants
+- az_ad_app_show
+- az_ad_app_update
+globalParameters:
+- name: --debug
+  summary: Increase logging verbosity to show all debug logs.
+- name: --help -h
+  summary: Show this help message and exit.
+- name: --only-show-errors
+  summary: Only show errors, suppressing warnings.
+- name: --output -o
+  defaultValue: json
+  parameterValueGroup: json, jsonc, table, tsv
+  summary: Output format.
+- name: --query
+  summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+- name: --verbose
+  summary: Increase logging verbosity. Use --debug for full debug logs.
+metadata:
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  ms.date: 12/02/2020
+  description: Manage applications with AAD Graph.

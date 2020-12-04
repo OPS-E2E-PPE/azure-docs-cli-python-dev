@@ -1,0 +1,229 @@
+### YamlMime:AzureCLIGroup
+uid: az_network_vnet_peering
+name: az network vnet peering
+summary: Manage peering connections between Azure Virtual Networks.
+description: To learn more about virtual network peering visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering">https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering</a>.
+directCommands:
+- uid: az_network_vnet_peering_create
+  name: az network vnet peering create
+  summary: Create a virtual network peering connection.
+  description: To successfully peer two virtual networks this command must be called twice with the values for --vnet-name and --remote-vnet reversed.
+  syntax: >-
+    az network vnet peering create --name
+                                   --remote-vnet
+                                   --resource-group
+                                   --vnet-name
+                                   [--allow-forwarded-traffic]
+                                   [--allow-gateway-transit]
+                                   [--allow-vnet-access]
+                                   [--subscription]
+                                   [--use-remote-gateways]
+  examples:
+  - summary: Create a peering connection between two virtual networks.
+    syntax: >-
+      az network vnet peering create -g MyResourceGroup -n MyVnet1ToMyVnet2 --vnet-name MyVnet1 \
+          --remote-vnet MyVnet2Id --allow-vnet-access
+  requiredParameters:
+  - isRequired: true
+    name: --name -n
+    summary: The name of the VNet peering.
+    description: ''
+  - isRequired: true
+    name: --remote-vnet
+    summary: Resource ID or name of the remote VNet.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - isRequired: true
+    name: --vnet-name
+    summary: The virtual network (VNet) name.
+    description: ''
+  optionalParameters:
+  - name: --allow-forwarded-traffic
+    summary: Allows forwarded traffic from the local VNet to the remote VNet.
+    description: ''
+  - name: --allow-gateway-transit
+    summary: Allows gateway link to be used in the remote VNet.
+    description: ''
+  - name: --allow-vnet-access
+    summary: Allows access from the local VNet to the remote VNet.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --use-remote-gateways
+    summary: Allows VNet to use the remote VNet's gateway. Remote VNet gateway must have --allow-gateway-transit enabled for remote peering. Only 1 peering can have this flag enabled. Cannot be set if the VNet already has a gateway.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet_peering_delete
+  name: az network vnet peering delete
+  summary: Delete a peering.
+  description: ''
+  syntax: >-
+    az network vnet peering delete [--ids]
+                                   [--name]
+                                   [--resource-group]
+                                   [--subscription]
+                                   [--vnet-name]
+  examples:
+  - summary: Delete a virtual network peering connection.
+    syntax: az network vnet peering delete -g MyResourceGroup -n MyVnet1ToMyVnet2 --vnet-name MyVnet1
+  optionalParameters:
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --name -n
+    summary: The name of the VNet peering.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --vnet-name
+    summary: The virtual network (VNet) name.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet_peering_list
+  name: az network vnet peering list
+  summary: List peerings.
+  description: ''
+  syntax: >-
+    az network vnet peering list --resource-group
+                                 --vnet-name
+                                 [--query-examples]
+                                 [--subscription]
+  examples:
+  - summary: List all peerings of a specified virtual network.
+    syntax: az network vnet peering list -g MyResourceGroup --vnet-name MyVnet1
+  requiredParameters:
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - isRequired: true
+    name: --vnet-name
+    summary: The virtual network (VNet) name.
+    description: ''
+  optionalParameters:
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet_peering_show
+  name: az network vnet peering show
+  summary: Show details of a peering.
+  description: ''
+  syntax: >-
+    az network vnet peering show [--ids]
+                                 [--name]
+                                 [--query-examples]
+                                 [--resource-group]
+                                 [--subscription]
+                                 [--vnet-name]
+  examples:
+  - summary: Show all details of the specified virtual network peering.
+    syntax: az network vnet peering show -g MyResourceGroup -n MyVnet1ToMyVnet2 --vnet-name MyVnet1
+  optionalParameters:
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --name -n
+    summary: The name of the VNet peering.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --vnet-name
+    summary: The virtual network (VNet) name.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet_peering_update
+  name: az network vnet peering update
+  summary: Update a peering.
+  description: ''
+  syntax: >-
+    az network vnet peering update [--add]
+                                   [--force-string]
+                                   [--ids]
+                                   [--name]
+                                   [--remove]
+                                   [--resource-group]
+                                   [--set]
+                                   [--subscription]
+                                   [--vnet-name]
+  examples:
+  - summary: Change forwarded traffic configuration of a virtual network peering.
+    syntax: az network vnet peering update -g MyResourceGroup -n MyVnet1ToMyVnet2 --vnet-name MyVnet1 --set allowForwardedTraffic=true
+  - summary: Change virtual network access of a virtual network peering.
+    syntax: az network vnet peering update -g MyResourceGroup -n MyVnet1ToMyVnet2 --vnet-name MyVnet1 --set allowVirtualNetworkAccess=true
+  - summary: Change gateway transit property configuration of a virtual network peering.
+    syntax: az network vnet peering update -g MyResourceGroup -n MyVnet1ToMyVnet2 --vnet-name MyVnet1 --set allowGatewayTransit=true
+  - summary: Use remote gateways in virtual network peering.
+    syntax: az network vnet peering update -g MyResourceGroup -n MyVnet1ToMyVnet2 --vnet-name MyVnet1 --set useRemoteGateways=true
+  optionalParameters:
+  - name: --add
+    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --force-string
+    summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --name -n
+    summary: The name of the VNet peering.
+    description: ''
+  - name: --remove
+    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - name: --set
+    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --vnet-name
+    summary: The virtual network (VNet) name.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+commands:
+- az_network_vnet_peering_create
+- az_network_vnet_peering_delete
+- az_network_vnet_peering_list
+- az_network_vnet_peering_show
+- az_network_vnet_peering_update
+globalParameters:
+- name: --debug
+  summary: Increase logging verbosity to show all debug logs.
+- name: --help -h
+  summary: Show this help message and exit.
+- name: --only-show-errors
+  summary: Only show errors, suppressing warnings.
+- name: --output -o
+  defaultValue: json
+  parameterValueGroup: json, jsonc, table, tsv
+  summary: Output format.
+- name: --query
+  summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+- name: --verbose
+  summary: Increase logging verbosity. Use --debug for full debug logs.
+metadata:
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  ms.date: 12/04/2020
+  description: To learn more about virtual network peering visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering">https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering</a>.

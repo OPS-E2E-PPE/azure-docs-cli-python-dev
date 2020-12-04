@@ -1,0 +1,221 @@
+### YamlMime:AzureCLIGroup
+uid: az_webapp_config
+name: az webapp config
+summary: Configure a web app.
+description: ''
+directCommands:
+- uid: az_webapp_config_set
+  name: az webapp config set
+  summary: Set a web app's configuration.
+  description: ''
+  syntax: >-
+    az webapp config set [--always-on {false, true}]
+                         [--auto-heal-enabled {false, true}]
+                         [--ftps-state {AllAllowed, Disabled, FtpsOnly}]
+                         [--generic-configurations]
+                         [--http20-enabled {false, true}]
+                         [--ids]
+                         [--java-container]
+                         [--java-container-version]
+                         [--java-version]
+                         [--linux-fx-version]
+                         [--min-tls-version]
+                         [--name]
+                         [--net-framework-version]
+                         [--number-of-workers]
+                         [--php-version]
+                         [--prewarmed-instance-count]
+                         [--python-version]
+                         [--remote-debugging-enabled {false, true}]
+                         [--resource-group]
+                         [--slot]
+                         [--startup-file]
+                         [--subscription]
+                         [--use-32bit-worker-process {false, true}]
+                         [--web-sockets-enabled {false, true}]
+                         [--windows-fx-version]
+  examples:
+  - summary: turn on "alwaysOn"
+    syntax: az webapp config set -g MyResourceGroup -n MyUniqueApp --always-on true
+  - summary: turn on "alwaysOn" through a json with content "{"alwaysOn", true}"
+    syntax: 'az webapp config set -g MyResourceGroup -n MyUniqueApp --generic-configurations "{"alwaysOn": true}"'
+  optionalParameters:
+  - name: --always-on
+    parameterValueGroup: false, true
+    summary: Ensure web app gets loaded all the time, rather unloaded after been idle. Recommended when you have continuous web jobs running.
+    description: ''
+  - name: --auto-heal-enabled
+    parameterValueGroup: false, true
+    summary: Enable or disable auto heal.
+    description: ''
+  - name: --ftps-state
+    parameterValueGroup: AllAllowed, Disabled, FtpsOnly
+    summary: Set the Ftps state value for an app. Default value is 'AllAllowed'.
+    description: ''
+  - name: --generic-configurations
+    summary: Provide site configuration list in a format of either `key=value` pair or `@<json_file>`.
+    description: ''
+  - name: --http20-enabled
+    parameterValueGroup: false, true
+    summary: Configures a web site to allow clients to connect over http2.0.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --java-container
+    summary: The java container, e.g., Tomcat, Jetty.
+    description: ''
+  - name: --java-container-version
+    summary: The version of the java container, e.g., '8.0.23' for Tomcat.
+    description: ''
+  - name: --java-version
+    summary: The version used to run your web app if using Java, e.g., '1.7' for Java 7, '1.8' for Java 8.
+    description: ''
+  - name: --linux-fx-version
+    summary: The runtime stack used for your linux-based webapp, e.g., "RUBY|2.5.5", "NODE|10.14", "PHP|7.2", "DOTNETCORE|2.1". See <a href="https://aka.ms/linux-stacks">https://aka.ms/linux-stacks</a> for more info.
+    description: ''
+  - name: --min-tls-version
+    summary: The minimum version of TLS required for SSL requests, e.g., '1.0', '1.1', '1.2'.
+    description: ''
+  - name: --name -n
+    summary: Name of the web app. You can configure the default using `az configure --defaults web=<name>`.
+    description: ''
+  - name: --net-framework-version
+    summary: The version used to run your web app if using .NET Framework, e.g., 'v4.0' for .NET 4.6 and 'v3.0' for .NET 3.5.
+    description: ''
+  - name: --number-of-workers
+    summary: The number of workers to be allocated.
+    description: ''
+  - name: --php-version
+    summary: The version used to run your web app if using PHP, e.g., 5.5, 5.6, 7.0.
+    description: ''
+  - name: --prewarmed-instance-count
+    summary: Number of pre-warmed instances a function app has.
+    description: ''
+  - name: --python-version
+    summary: The version used to run your web app if using Python, e.g., 2.7, 3.4.
+    description: ''
+  - name: --remote-debugging-enabled
+    parameterValueGroup: false, true
+    summary: Enable or disable remote debugging.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - name: --slot -s
+    summary: The name of the slot. Default to the productions slot if not specified.
+    description: ''
+  - name: --startup-file
+    summary: The startup file for linux hosted web apps, e.g. 'process.json' for Node.js web.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --use-32bit-worker-process
+    parameterValueGroup: false, true
+    summary: Use 32 bits worker process or not.
+    description: ''
+  - name: --web-sockets-enabled
+    parameterValueGroup: false, true
+    summary: Enable or disable web sockets.
+    description: ''
+  - name: --windows-fx-version
+    summary: A docker image name used for your windows container web app, e.g., microsoft/nanoserver:ltsc2016.
+    description: ''
+- uid: az_webapp_config_show
+  name: az webapp config show
+  summary: Get the details of a web app's configuration.
+  description: ''
+  syntax: >-
+    az webapp config show [--ids]
+                          [--name]
+                          [--query-examples]
+                          [--resource-group]
+                          [--slot]
+                          [--subscription]
+  examples:
+  - summary: Get the details of a web app's configuration. (autogenerated)
+    syntax: az webapp config show --name MyWebapp --resource-group MyResourceGroup
+  optionalParameters:
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --name -n
+    summary: Name of the web app. You can configure the default using `az configure --defaults web=<name>`.
+    description: ''
+  - name: --query-examples
+    summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - name: --slot -s
+    summary: The name of the slot. Default to the productions slot if not specified.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+commands:
+- az_webapp_config_access_restriction
+- az_webapp_config_access_restriction_add
+- az_webapp_config_access_restriction_remove
+- az_webapp_config_access_restriction_set
+- az_webapp_config_access_restriction_show
+- az_webapp_config_appsettings
+- az_webapp_config_appsettings_delete
+- az_webapp_config_appsettings_list
+- az_webapp_config_appsettings_set
+- az_webapp_config_backup
+- az_webapp_config_backup_create
+- az_webapp_config_backup_list
+- az_webapp_config_backup_restore
+- az_webapp_config_backup_show
+- az_webapp_config_backup_update
+- az_webapp_config_connection_string
+- az_webapp_config_connection_string_delete
+- az_webapp_config_connection_string_list
+- az_webapp_config_connection_string_set
+- az_webapp_config_container
+- az_webapp_config_container_delete
+- az_webapp_config_container_set
+- az_webapp_config_container_show
+- az_webapp_config_hostname
+- az_webapp_config_hostname_add
+- az_webapp_config_hostname_delete
+- az_webapp_config_hostname_get_external_ip
+- az_webapp_config_hostname_list
+- az_webapp_config_set
+- az_webapp_config_show
+- az_webapp_config_snapshot
+- az_webapp_config_snapshot_list
+- az_webapp_config_snapshot_restore
+- az_webapp_config_ssl
+- az_webapp_config_ssl_bind
+- az_webapp_config_ssl_create
+- az_webapp_config_ssl_delete
+- az_webapp_config_ssl_import
+- az_webapp_config_ssl_list
+- az_webapp_config_ssl_unbind
+- az_webapp_config_ssl_upload
+- az_webapp_config_storage_account
+- az_webapp_config_storage_account_add
+- az_webapp_config_storage_account_delete
+- az_webapp_config_storage_account_list
+- az_webapp_config_storage_account_update
+globalParameters:
+- name: --debug
+  summary: Increase logging verbosity to show all debug logs.
+- name: --help -h
+  summary: Show this help message and exit.
+- name: --only-show-errors
+  summary: Only show errors, suppressing warnings.
+- name: --output -o
+  defaultValue: json
+  parameterValueGroup: json, jsonc, table, tsv
+  summary: Output format.
+- name: --query
+  summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+- name: --verbose
+  summary: Increase logging verbosity. Use --debug for full debug logs.
+metadata:
+  description: Configure a web app.

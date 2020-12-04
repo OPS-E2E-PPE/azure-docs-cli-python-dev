@@ -1,0 +1,84 @@
+### YamlMime:AzureCLIGroup
+uid: az_ad
+name: az ad
+summary: Manage Azure Active Directory Graph entities needed for Role Based Access Control.
+description: ''
+commands:
+- az_ad_app
+- az_ad_app_create
+- az_ad_app_credential
+- az_ad_app_credential_delete
+- az_ad_app_credential_list
+- az_ad_app_credential_reset
+- az_ad_app_delete
+- az_ad_app_list
+- az_ad_app_owner
+- az_ad_app_owner_add
+- az_ad_app_owner_list
+- az_ad_app_owner_remove
+- az_ad_app_permission
+- az_ad_app_permission_add
+- az_ad_app_permission_admin_consent
+- az_ad_app_permission_delete
+- az_ad_app_permission_grant
+- az_ad_app_permission_list
+- az_ad_app_permission_list_grants
+- az_ad_app_show
+- az_ad_app_update
+- az_ad_group
+- az_ad_group_create
+- az_ad_group_delete
+- az_ad_group_get_member_groups
+- az_ad_group_list
+- az_ad_group_member
+- az_ad_group_member_add
+- az_ad_group_member_check
+- az_ad_group_member_list
+- az_ad_group_member_remove
+- az_ad_group_owner
+- az_ad_group_owner_add
+- az_ad_group_owner_list
+- az_ad_group_owner_remove
+- az_ad_group_show
+- az_ad_signed_in_user
+- az_ad_signed_in_user_list_owned_objects
+- az_ad_signed_in_user_show
+- az_ad_sp
+- az_ad_sp_create
+- az_ad_sp_create_for_rbac
+- az_ad_sp_credential
+- az_ad_sp_credential_delete
+- az_ad_sp_credential_list
+- az_ad_sp_credential_reset
+- az_ad_sp_delete
+- az_ad_sp_list
+- az_ad_sp_owner
+- az_ad_sp_owner_list
+- az_ad_sp_show
+- az_ad_sp_update
+- az_ad_user
+- az_ad_user_create
+- az_ad_user_delete
+- az_ad_user_get_member_groups
+- az_ad_user_list
+- az_ad_user_show
+- az_ad_user_update
+globalParameters:
+- name: --debug
+  summary: Increase logging verbosity to show all debug logs.
+- name: --help -h
+  summary: Show this help message and exit.
+- name: --only-show-errors
+  summary: Only show errors, suppressing warnings.
+- name: --output -o
+  defaultValue: json
+  parameterValueGroup: json, jsonc, table, tsv
+  summary: Output format.
+- name: --query
+  summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+- name: --verbose
+  summary: Increase logging verbosity. Use --debug for full debug logs.
+metadata:
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  ms.date: 12/02/2020
+  description: Manage Azure Active Directory Graph entities needed for Role Based Access Control.
