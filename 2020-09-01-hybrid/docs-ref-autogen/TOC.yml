@@ -497,6 +497,9 @@
         - name: list
           uid: az_functionapp_config_ssl_list
           displayName: az functionapp config ssl list
+        - name: show
+          uid: az_functionapp_config_ssl_show
+          displayName: az functionapp config ssl show
         - name: unbind
           uid: az_functionapp_config_ssl_unbind
           displayName: az functionapp config ssl unbind
@@ -5972,6 +5975,9 @@
         - name: list
           uid: az_webapp_config_ssl_list
           displayName: az webapp config ssl list
+        - name: show
+          uid: az_webapp_config_ssl_show
+          displayName: az webapp config ssl show
         - name: unbind
           uid: az_webapp_config_ssl_unbind
           displayName: az webapp config ssl unbind
