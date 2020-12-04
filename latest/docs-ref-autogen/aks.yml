@@ -118,6 +118,7 @@ directCommands:
                   [--windows-admin-password]
                   [--windows-admin-username]
                   [--workspace-resource-id]
+                  [--yes]
                   [--zones {1, 2, 3}]
   examples:
   - summary: Create a Kubernetes cluster with an existing SSH public key.
@@ -253,6 +254,7 @@ directCommands:
     summary: Enable cluster autoscaler, default value is false.
     description: If specified, please make sure the kubernetes version is larger than 1.10.6.
   - name: --enable-managed-identity
+    defaultValue: "1"
     summary: Using a system assigned managed identity to manage cluster resource group.
     description: ''
   - name: --enable-node-public-ip
@@ -392,6 +394,9 @@ directCommands:
     description: ''
   - name: --workspace-resource-id
     summary: The resource ID of an existing Log Analytics Workspace to use for storing monitoring data. If not specified, uses the default Log Analytics Workspace if it exists, otherwise creates one.
+    description: ''
+  - name: --yes -y
+    summary: Do not prompt for confirmation.
     description: ''
   - name: --zones -z
     parameterValueGroup: 1, 2, 3
