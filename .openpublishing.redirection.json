@@ -1,0 +1,59 @@
+{
+  "redirections": [
+    {
+      "source_path": "docs-ref-conceptual/overview.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/install-azure-cli.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/install-azure-cli",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/get-started-with-azure-cli.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/get-started-with-azure-cli",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/authenticate-azure-cli.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/authenticate-azure-cli",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/create-an-azure-service-principal-azure-cli.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/create-an-azure-service-principal-azure-cli",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/interactive-azure-cli.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/interactive-azure-cli",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/manage-azure-subscriptions-azure-cli.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/manage-azure-subscriptions-azure-cli",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/format-output-azure-cli.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/format-output-azure-cli",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/query-azure-cli.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/query-azure-cli",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/azure-cli-extensions.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/azure-cli-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs-ref-conceptual/azure-cli-Configuration.md",
+      "redirect_url": "/juns_archive_test/azure-cli-docs-dev-juns-archive/azure-cli-configuration",
+      "redirect_document_id": true
+    }
+  ]
+}
