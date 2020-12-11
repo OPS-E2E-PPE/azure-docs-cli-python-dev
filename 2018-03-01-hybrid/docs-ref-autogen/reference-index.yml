@@ -239,6 +239,7 @@ commands:
 - az_cloud
 - az_config
 - az_configure
+- az_demo
 - az_deployment
 - az_deployment_scripts
 - az_devops

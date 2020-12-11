@@ -6602,6 +6602,15 @@
       - name: show
         uid: az_config_param_persist_show
         displayName: az config param-persist show
+  - name: demo
+    displayName: az demo
+    items:
+    - name: Overview
+      uid: az_demo
+      displayName: az demo
+    - name: style
+      uid: az_demo_style
+      displayName: az demo style
   - name: deployment
     displayName: az deployment
     items:

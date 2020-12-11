@@ -257,6 +257,7 @@ commands:
 - az_consumption
 - az_container
 - az_cosmosdb
+- az_demo
 - az_deployment
 - az_deployment_scripts
 - az_deploymentmanager

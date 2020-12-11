@@ -14297,6 +14297,15 @@
       - name: list
         uid: az_consumption_usage_list
         displayName: az consumption usage list
+  - name: demo
+    displayName: az demo
+    items:
+    - name: Overview
+      uid: az_demo
+      displayName: az demo
+    - name: style
+      uid: az_demo_style
+      displayName: az demo style
   - name: deployment
     displayName: az deployment
     items:
