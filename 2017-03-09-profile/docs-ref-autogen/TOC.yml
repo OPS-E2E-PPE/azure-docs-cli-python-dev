@@ -5519,6 +5519,39 @@
       - name: show
         uid: az_security_regulatory_compliance_standards_show
         displayName: az security regulatory-compliance-standards show
+    - name: secure-score-control-definitions
+      displayName: az security secure-score-control-definitions
+      items:
+      - name: Overview
+        uid: az_security_secure_score_control_definitions
+        displayName: az security secure-score-control-definitions
+      - name: list
+        uid: az_security_secure_score_control_definitions_list
+        displayName: az security secure-score-control-definitions list
+    - name: secure-score-controls
+      displayName: az security secure-score-controls
+      items:
+      - name: Overview
+        uid: az_security_secure_score_controls
+        displayName: az security secure-score-controls
+      - name: list
+        uid: az_security_secure_score_controls_list
+        displayName: az security secure-score-controls list
+      - name: list_by_score
+        uid: az_security_secure_score_controls_list_by_score
+        displayName: az security secure-score-controls list_by_score
+    - name: secure-scores
+      displayName: az security secure-scores
+      items:
+      - name: Overview
+        uid: az_security_secure_scores
+        displayName: az security secure-scores
+      - name: list
+        uid: az_security_secure_scores_list
+        displayName: az security secure-scores list
+      - name: show
+        uid: az_security_secure_scores_show
+        displayName: az security secure-scores show
     - name: setting
       displayName: az security setting
       items:
