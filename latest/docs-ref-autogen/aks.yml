@@ -246,7 +246,7 @@ directCommands:
                        Learn more at aka.ms/aks/policy.
           virtual-node - enable AKS Virtual Node.
                        Requires --aci-subnet-name to provide the name of an existing subnet for the Virtual Node to use.
-                       aci-subnet-name must be in the same vent which is specified by --vnet-subnet-id (required as well).
+                       aci-subnet-name must be in the same vnet which is specified by --vnet-subnet-id (required as well).
   - name: --enable-ahub
     summary: Enable Azure Hybrid User Benefits (AHUB) for Windows VMs.
     description: ''
@@ -1207,5 +1207,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/07/2020
+  ms.date: 12/29/2020
   description: Manage Azure Kubernetes Services.
