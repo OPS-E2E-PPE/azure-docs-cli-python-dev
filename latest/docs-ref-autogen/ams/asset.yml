@@ -118,7 +118,7 @@ directCommands:
     summary: The name of the Azure Media Services account.
     description: ''
   - name: --expiry
-    defaultValue: 2021-01-12 07:41:38.313318
+    defaultValue: 2021-01-12 12:47:41.797497
     summary: Specifies the UTC datetime (Y-m-d'T'H:M:S'Z') at which the SAS becomes invalid. This must be less than 24 hours from the current time.
     description: ''
   - name: --ids
