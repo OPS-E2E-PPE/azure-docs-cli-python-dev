@@ -12740,6 +12740,9 @@
     - name: browse
       uid: az_aks_browse
       displayName: az aks browse
+    - name: check-acr
+      uid: az_aks_check_acr
+      displayName: az aks check-acr
     - name: create
       uid: az_aks_create
       displayName: az aks create
