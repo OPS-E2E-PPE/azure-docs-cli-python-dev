@@ -22,6 +22,7 @@ directCommands:
                              [--kind {ASEv2, ASEv3}]
                              [--location]
                              [--no-wait]
+                             [--os-preference {Linux, Windows}]
                              [--subscription]
                              [--virtual-ip-type {External, Internal}]
                              [--vnet-name]
@@ -122,6 +123,10 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
+  - name: --os-preference
+    parameterValueGroup: Linux, Windows
+    summary: Determine if app service environment should start with Linux workers. Applies to ASEv2 only.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -136,19 +141,24 @@ directCommands:
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_appservice_ase_create_inbound_services
   name: az appservice ase create-inbound-services
-  summary: Create the inbound services needed in preview for ASEv3 (private endpoint and DNS).
+  summary: Create the inbound services needed in preview for ASEv3 (private endpoint and DNS) or Private DNS Zone for Internal ASEv2.
   description: ''
   syntax: >-
     az appservice ase create-inbound-services --name
                                               --resource-group
                                               --subnet
+                                              [--skip-dns {false, true}]
                                               [--subscription]
                                               [--vnet-name]
   examples:
   - summary: Create private endpoint, Private DNS Zone, A records and ensure subnet network policy.
     syntax: >-
+      az appservice ase create-inbound-services -n MyASEName -g ASEResourceGroup \
+        --vnet-name MyASEVirtualNetwork --subnet MyAseSubnet
+  - summary: Create private endpoint and ensure subnet network policy (ASEv3), but do not create DNS Zone and records.
+    syntax: >-
       az appservice ase create-inbound-services -n MyASEv3Name -g ASEv3ResourceGroup \
-        --vnet-name MyASEv3VirtualNetwork --subnet Inbound
+        --vnet-name MyASEv3VirtualNetwork --subnet Inbound --skip-dns
   requiredParameters:
   - isRequired: true
     name: --name -n
@@ -163,6 +173,10 @@ directCommands:
     summary: Name or ID of existing subnet for inbound traffic to ASEv3.                    To create vnet and/or subnet use `az network vnet [subnet] create`.
     description: ''
   optionalParameters:
+  - name: --skip-dns
+    parameterValueGroup: false, true
+    summary: Do not create Private DNS Zone and DNS records.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
@@ -367,5 +381,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/18/2021
+  ms.date: 01/19/2021
   description: Manage App Service Environments v2.
