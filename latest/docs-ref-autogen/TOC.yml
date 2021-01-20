@@ -18068,6 +18068,27 @@
       - name: update
         uid: az_signalr_upstream_update
         displayName: az signalr upstream update
+  - name: sshkey
+    displayName: az sshkey
+    items:
+    - name: Overview
+      uid: az_sshkey
+      displayName: az sshkey
+    - name: create
+      uid: az_sshkey_create
+      displayName: az sshkey create
+    - name: delete
+      uid: az_sshkey_delete
+      displayName: az sshkey delete
+    - name: list
+      uid: az_sshkey_list
+      displayName: az sshkey list
+    - name: show
+      uid: az_sshkey_show
+      displayName: az sshkey show
+    - name: update
+      uid: az_sshkey_update
+      displayName: az sshkey update
   - name: staticwebapp
     displayName: az staticwebapp
     items:
