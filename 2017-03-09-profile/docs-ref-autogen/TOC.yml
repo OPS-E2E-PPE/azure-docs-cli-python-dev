@@ -6233,6 +6233,48 @@
         - name: wait
           uid: az_synapse_workspace_firewall_rule_wait
           displayName: az synapse workspace firewall-rule wait
+      - name: key
+        displayName: az synapse workspace key
+        items:
+        - name: Overview
+          uid: az_synapse_workspace_key
+          displayName: az synapse workspace key
+        - name: create
+          uid: az_synapse_workspace_key_create
+          displayName: az synapse workspace key create
+        - name: delete
+          uid: az_synapse_workspace_key_delete
+          displayName: az synapse workspace key delete
+        - name: list
+          uid: az_synapse_workspace_key_list
+          displayName: az synapse workspace key list
+        - name: show
+          uid: az_synapse_workspace_key_show
+          displayName: az synapse workspace key show
+        - name: update
+          uid: az_synapse_workspace_key_update
+          displayName: az synapse workspace key update
+        - name: wait
+          uid: az_synapse_workspace_key_wait
+          displayName: az synapse workspace key wait
+      - name: managed-identity
+        displayName: az synapse workspace managed-identity
+        items:
+        - name: Overview
+          uid: az_synapse_workspace_managed_identity
+          displayName: az synapse workspace managed-identity
+        - name: grant-sql-access
+          uid: az_synapse_workspace_managed_identity_grant_sql_access
+          displayName: az synapse workspace managed-identity grant-sql-access
+        - name: revoke-sql-access
+          uid: az_synapse_workspace_managed_identity_revoke_sql_access
+          displayName: az synapse workspace managed-identity revoke-sql-access
+        - name: show-sql-access
+          uid: az_synapse_workspace_managed_identity_show_sql_access
+          displayName: az synapse workspace managed-identity show-sql-access
+        - name: wait
+          uid: az_synapse_workspace_managed_identity_wait
+          displayName: az synapse workspace managed-identity wait
 - name: Extensions Reference
   items:
   - name: account
