@@ -8129,6 +8129,54 @@
         - name: update
           uid: az_network_route_filter_rule_update
           displayName: az network route-filter rule update
+    - name: routeserver
+      displayName: az network routeserver
+      items:
+      - name: Overview
+        uid: az_network_routeserver
+        displayName: az network routeserver
+      - name: create
+        uid: az_network_routeserver_create
+        displayName: az network routeserver create
+      - name: delete
+        uid: az_network_routeserver_delete
+        displayName: az network routeserver delete
+      - name: list
+        uid: az_network_routeserver_list
+        displayName: az network routeserver list
+      - name: show
+        uid: az_network_routeserver_show
+        displayName: az network routeserver show
+      - name: update
+        uid: az_network_routeserver_update
+        displayName: az network routeserver update
+      - name: peering
+        displayName: az network routeserver peering
+        items:
+        - name: Overview
+          uid: az_network_routeserver_peering
+          displayName: az network routeserver peering
+        - name: create
+          uid: az_network_routeserver_peering_create
+          displayName: az network routeserver peering create
+        - name: delete
+          uid: az_network_routeserver_peering_delete
+          displayName: az network routeserver peering delete
+        - name: list
+          uid: az_network_routeserver_peering_list
+          displayName: az network routeserver peering list
+        - name: list-advertised-routes
+          uid: az_network_routeserver_peering_list_advertised_routes
+          displayName: az network routeserver peering list-advertised-routes
+        - name: list-learned-routes
+          uid: az_network_routeserver_peering_list_learned_routes
+          displayName: az network routeserver peering list-learned-routes
+        - name: show
+          uid: az_network_routeserver_peering_show
+          displayName: az network routeserver peering show
+        - name: update
+          uid: az_network_routeserver_peering_update
+          displayName: az network routeserver peering update
     - name: security-partner-provider
       displayName: az network security-partner-provider
       items:
