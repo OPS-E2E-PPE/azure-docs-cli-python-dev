@@ -845,6 +845,58 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+- uid: az_aks_start
+  name: az aks start
+  summary: Start Managed Cluster.
+  description: Starts a Stopped Managed Cluster.
+  syntax: >-
+    az aks start --name
+                 --resource-group
+                 [--no-wait]
+                 [--subscription]
+  requiredParameters:
+  - isRequired: true
+    name: --name -n
+    summary: Name of the managed cluster.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  optionalParameters:
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+- uid: az_aks_stop
+  name: az aks stop
+  summary: Stop Managed Cluster.
+  description: Stops a Running Managed Cluster.
+  syntax: >-
+    az aks stop --name
+                --resource-group
+                [--no-wait]
+                [--subscription]
+  requiredParameters:
+  - isRequired: true
+    name: --name -n
+    summary: Name of the managed cluster.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  optionalParameters:
+  - name: --no-wait
+    summary: Do not wait for the long-running operation to finish.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_aks_update
   name: az aks update
   summary: Update a managed Kubernetes cluster.
@@ -1216,6 +1268,8 @@ commands:
 - az_aks_rotate_certs
 - az_aks_scale
 - az_aks_show
+- az_aks_start
+- az_aks_stop
 - az_aks_update
 - az_aks_update_credentials
 - az_aks_upgrade

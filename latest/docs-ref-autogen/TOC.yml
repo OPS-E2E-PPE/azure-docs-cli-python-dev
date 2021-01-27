@@ -12833,6 +12833,12 @@
     - name: show
       uid: az_aks_show
       displayName: az aks show
+    - name: start
+      uid: az_aks_start
+      displayName: az aks start
+    - name: stop
+      uid: az_aks_stop
+      displayName: az aks stop
     - name: update
       uid: az_aks_update
       displayName: az aks update
