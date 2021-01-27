@@ -16,7 +16,7 @@ directCommands:
                      [--collation]
                      [--max-size]
                      [--no-wait]
-                     [--read-replica-count]
+                     [--read-replicas]
                      [--service-objective]
                      [--subscription]
                      [--tags]
@@ -50,7 +50,7 @@ directCommands:
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
     description: ''
-  - name: --read-replica-count
+  - name: --read-replicas
     summary: The number of readonly replicas to provision for the database. Only settable for Hyperscale edition.
     description: ''
   - name: --service-objective
