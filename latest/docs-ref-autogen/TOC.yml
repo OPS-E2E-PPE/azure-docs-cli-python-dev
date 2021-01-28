@@ -9761,6 +9761,27 @@
         - name: show
           uid: az_sql_server_key_show
           displayName: az sql server key show
+      - name: ms-support
+        displayName: az sql server ms-support
+        items:
+        - name: Overview
+          uid: az_sql_server_ms_support
+          displayName: az sql server ms-support
+        - name: audit-policy
+          displayName: az sql server ms-support audit-policy
+          items:
+          - name: Overview
+            uid: az_sql_server_ms_support_audit_policy
+            displayName: az sql server ms-support audit-policy
+          - name: show
+            uid: az_sql_server_ms_support_audit_policy_show
+            displayName: az sql server ms-support audit-policy show
+          - name: update
+            uid: az_sql_server_ms_support_audit_policy_update
+            displayName: az sql server ms-support audit-policy update
+          - name: wait
+            uid: az_sql_server_ms_support_audit_policy_wait
+            displayName: az sql server ms-support audit-policy wait
       - name: tde-key
         displayName: az sql server tde-key
         items:

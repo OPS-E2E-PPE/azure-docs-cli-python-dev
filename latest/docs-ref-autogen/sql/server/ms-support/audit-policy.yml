@@ -1,19 +1,19 @@
 ### YamlMime:AzureCLIGroup
-uid: az_sql_server_audit_policy
-name: az sql server audit-policy
-summary: Manage a server's auditing policy.
+uid: az_sql_server_ms_support_audit_policy
+name: az sql server ms-support audit-policy
+summary: Manage a server's Microsoft support operations auditing policy.
 description: ''
 directCommands:
-- uid: az_sql_server_audit_policy_show
-  name: az sql server audit-policy show
-  summary: Show server audit policy.
+- uid: az_sql_server_ms_support_audit_policy_show
+  name: az sql server ms-support audit-policy show
+  summary: Show server Microsoft support operations audit policy.
   description: ''
   syntax: >-
-    az sql server audit-policy show [--ids]
-                                    [--name]
-                                    [--query-examples]
-                                    [--resource-group]
-                                    [--subscription]
+    az sql server ms-support audit-policy show [--ids]
+                                               [--name]
+                                               [--query-examples]
+                                               [--resource-group]
+                                               [--subscription]
   optionalParameters:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
@@ -31,77 +31,68 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_server_audit_policy_update
-  name: az sql server audit-policy update
-  summary: Update a server's auditing policy.
-  description: If the policy is being enabled, `--storage-account` or both `--storage-endpoint` and `--storage-key` must be specified.
+- uid: az_sql_server_ms_support_audit_policy_update
+  name: az sql server ms-support audit-policy update
+  summary: Update a server's Microsoft support operations auditing policy.
+  description: If the Microsoft support operations policy is being enabled, `--storage-account` or both `--storage-endpoint` and `--storage-key` must be specified.
   syntax: >-
-    az sql server audit-policy update [--actions]
-                                      [--add]
-                                      [--blob-storage-target-state {Disabled, Enabled}]
-                                      [--eh]
-                                      [--ehari]
-                                      [--ehts {Disabled, Enabled}]
-                                      [--force-string]
-                                      [--ids]
-                                      [--lats {Disabled, Enabled}]
-                                      [--lawri]
-                                      [--name]
-                                      [--no-wait]
-                                      [--remove]
-                                      [--resource-group]
-                                      [--retention-days]
-                                      [--set]
-                                      [--state {Disabled, Enabled}]
-                                      [--storage-account]
-                                      [--storage-endpoint]
-                                      [--storage-key]
-                                      [--subscription]
+    az sql server ms-support audit-policy update [--add]
+                                                 [--blob-storage-target-state {Disabled, Enabled}]
+                                                 [--eh]
+                                                 [--ehari]
+                                                 [--ehts {Disabled, Enabled}]
+                                                 [--force-string]
+                                                 [--ids]
+                                                 [--lats {Disabled, Enabled}]
+                                                 [--lawri]
+                                                 [--name]
+                                                 [--no-wait]
+                                                 [--remove]
+                                                 [--resource-group]
+                                                 [--set]
+                                                 [--state {Disabled, Enabled}]
+                                                 [--storage-account]
+                                                 [--storage-endpoint]
+                                                 [--storage-key]
+                                                 [--subscription]
   examples:
   - summary: Enable by storage account name.
     syntax: >-
-      az sql server audit-policy update -g mygroup -n myserver --state Enabled \
+      az sql server ms-support audit-policy update -g mygroup -n myserver --state Enabled \
           --bsts Enabled --storage-account mystorage
   - summary: Enable by storage endpoint and key.
     syntax: >-
-      az sql server audit-policy update -g mygroup -n myserver --state Enabled \
+      az sql server ms-support audit-policy update -g mygroup -n myserver --state Enabled \
           --bsts Enabled --storage-endpoint https://mystorage.blob.core.windows.net \
           --storage-key MYKEY==
-  - summary: Set the list of audit actions.
+  - summary: Disable a Microsoft support operations auditing policy.
+    syntax: az sql server ms-support audit-policy update -g mygroup -n myserver --state Disabled
+  - summary: Disable a blob storage Microsoft support operations auditing policy.
+    syntax: az sql server ms-support audit-policy update -g mygroup -n myserver --bsts Disabled
+  - summary: Enable a log analytics Microsoft support operations auditing policy.
     syntax: >-
-      az sql server audit-policy update -g mygroup -n myserver \
-          --actions FAILED_DATABASE_AUTHENTICATION_GROUP 'UPDATE on server::myserver by public'
-  - summary: Disable an auditing policy.
-    syntax: az sql server audit-policy update -g mygroup -n myserver --state Disabled
-  - summary: Disable a blob storage auditing policy.
-    syntax: az sql server audit-policy update -g mygroup -n myserver --bsts Disabled
-  - summary: Enable a log analytics auditing policy.
-    syntax: >-
-      az sql server audit-policy update -g mygroup -n myserver --state Enabled \
+      az sql server ms-support audit-policy update -g mygroup -n myserver --state Enabled \
           --lats Enabled --lawri myworkspaceresourceid
-  - summary: Disable a log analytics auditing policy.
+  - summary: Disable a log analytics Microsoft support operations auditing policy.
     syntax: >-
-      az sql server audit-policy update -g mygroup -n myserver
+      az sql server ms-support audit-policy update -g mygroup -n myserver
           --lats Disabled
-  - summary: Enable an event hub auditing policy.
+  - summary: Enable an event hub Microsoft support operations auditing policy.
     syntax: >-
-      az sql server audit-policy update -g mygroup -n myserver --state Enabled \
+      az sql server ms-support audit-policy update -g mygroup -n myserver --state Enabled \
           --event-hub-target-state Enabled \
           --event-hub-authorization-rule-id eventhubauthorizationruleid \
           --event-hub eventhubname
-  - summary: Enable an event hub auditing policy for default event hub.
+  - summary: Enable an event hub Microsoft support operations auditing policy for default event hub.
     syntax: >-
-      az sql server audit-policy update -g mygroup -n myserver --state Enabled \
+      az sql server ms-support audit-policy update -g mygroup -n myserver --state Enabled \
           --event-hub-target-state Enabled \
           --event-hub-authorization-rule-id eventhubauthorizationruleid
-  - summary: Disable an event hub auditing policy.
+  - summary: Disable an event hub Microsoft support operations auditing policy.
     syntax: >-
-      az sql server audit-policy update -g mygroup -n myserver
+      az sql server ms-support audit-policy update -g mygroup -n myserver
           --event-hub-target-state Disabled
   optionalParameters:
-  - name: --actions
-    summary: List of actions and action groups to audit.
-    description: ''
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
     description: ''
@@ -144,9 +135,6 @@ directCommands:
   - name: --resource-group -g
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
-  - name: --retention-days
-    summary: The number of days to retain audit logs.
-    description: ''
   - name: --set
     summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
     description: ''
@@ -167,25 +155,25 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_server_audit_policy_wait
-  name: az sql server audit-policy wait
-  summary: Place the CLI in a waiting state until a condition of the server's audit policy is met.
+- uid: az_sql_server_ms_support_audit_policy_wait
+  name: az sql server ms-support audit-policy wait
+  summary: Place the CLI in a waiting state until a condition of the server's Microsoft support operations audit policy is met.
   description: ''
   syntax: >-
-    az sql server audit-policy wait [--created]
-                                    [--custom]
-                                    [--deleted]
-                                    [--exists]
-                                    [--ids]
-                                    [--interval]
-                                    [--name]
-                                    [--resource-group]
-                                    [--subscription]
-                                    [--timeout]
-                                    [--updated]
+    az sql server ms-support audit-policy wait [--created]
+                                               [--custom]
+                                               [--deleted]
+                                               [--exists]
+                                               [--ids]
+                                               [--interval]
+                                               [--name]
+                                               [--resource-group]
+                                               [--subscription]
+                                               [--timeout]
+                                               [--updated]
   examples:
-  - summary: Place the CLI in a waiting state until it determines that server's audit policy exists
-    syntax: az sql server audit-policy wait -g mygroup -n myserver --exists
+  - summary: Place the CLI in a waiting state until it determines that server's Microsoft support operations audit policy exists
+    syntax: az sql server ms-support audit-policy wait -g mygroup -n myserver --exists
   optionalParameters:
   - name: --created
     summary: Wait until created with 'provisioningState' at 'Succeeded'.
@@ -224,9 +212,9 @@ directCommands:
     description: ''
   editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
 commands:
-- az_sql_server_audit_policy_show
-- az_sql_server_audit_policy_update
-- az_sql_server_audit_policy_wait
+- az_sql_server_ms_support_audit_policy_show
+- az_sql_server_ms_support_audit_policy_update
+- az_sql_server_ms_support_audit_policy_wait
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -245,4 +233,4 @@ globalParameters:
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
   ms.date: 01/28/2021
-  description: Manage a server's auditing policy.
+  description: Manage a server's Microsoft support operations auditing policy.
