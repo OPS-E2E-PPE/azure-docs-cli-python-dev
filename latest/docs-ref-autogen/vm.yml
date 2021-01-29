@@ -599,7 +599,7 @@ directCommands:
     syntax: az vm delete --ids $(az vm list -g MyResourceGroup --query "[].id" -o tsv)
   optionalParameters:
   - name: --force-deletion
-    summary: Optional parameter to force delete virtual machines.
+    summary: Optional parameter to force delete virtual machines.(Feature in Preview).
     description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
@@ -1493,5 +1493,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  ms.date: 01/29/2021
   description: Manage Linux or Windows virtual machines.
