@@ -13275,6 +13275,9 @@
       - name: update
         uid: ext_connectedk8s_az_connectedk8s_update
         displayName: az connectedk8s update
+      - name: upgrade
+        uid: ext_connectedk8s_az_connectedk8s_upgrade
+        displayName: az connectedk8s upgrade
   - name: connectedmachine
     items:
     - name: Overview
@@ -15217,6 +15220,9 @@
           - name: show
             uid: ext_front-door_az_network_front_door_load_balancing_show
             displayName: az network front-door load-balancing show
+          - name: update
+            uid: ext_front-door_az_network_front_door_load_balancing_update
+            displayName: az network front-door load-balancing update
         - name: probe
           displayName: az network front-door probe
           items:
