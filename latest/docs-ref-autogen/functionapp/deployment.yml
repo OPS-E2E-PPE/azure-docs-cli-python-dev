@@ -4,7 +4,7 @@ name: az functionapp deployment
 summary: Manage function app deployments.
 description: ''
 directCommands:
-- uid: az_functionapp_deployment_list_publishing_credentials
+- uid: az_functionapp_deployment_list-publishing-credentials
   name: az functionapp deployment list-publishing-credentials
   summary: Get the details for available function app publishing credentials.
   description: ''
@@ -33,8 +33,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-- uid: az_functionapp_deployment_list_publishing_profiles
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_functionapp_deployment_list-publishing-profiles
   name: az functionapp deployment list-publishing-profiles
   summary: Get the details for available function app deployment profiles.
   description: ''
@@ -67,27 +67,27 @@ directCommands:
   - name: --xml
     summary: Retrieves the publishing profile details in XML format.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 commands:
 - az_functionapp_deployment_container
 - az_functionapp_deployment_container_config
-- az_functionapp_deployment_container_show_cd_url
-- az_functionapp_deployment_list_publishing_credentials
-- az_functionapp_deployment_list_publishing_profiles
+- az_functionapp_deployment_container_show-cd-url
+- az_functionapp_deployment_list-publishing-credentials
+- az_functionapp_deployment_list-publishing-profiles
 - az_functionapp_deployment_slot
-- az_functionapp_deployment_slot_auto_swap
+- az_functionapp_deployment_slot_auto-swap
 - az_functionapp_deployment_slot_create
 - az_functionapp_deployment_slot_delete
 - az_functionapp_deployment_slot_list
 - az_functionapp_deployment_slot_swap
 - az_functionapp_deployment_source
 - az_functionapp_deployment_source_config
-- az_functionapp_deployment_source_config_local_git
-- az_functionapp_deployment_source_config_zip
+- az_functionapp_deployment_source_config-local-git
+- az_functionapp_deployment_source_config-zip
 - az_functionapp_deployment_source_delete
 - az_functionapp_deployment_source_show
 - az_functionapp_deployment_source_sync
-- az_functionapp_deployment_source_update_token
+- az_functionapp_deployment_source_update-token
 - az_functionapp_deployment_user
 - az_functionapp_deployment_user_set
 - az_functionapp_deployment_user_show
@@ -107,6 +107,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/19/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/05/2020
   description: Manage function app deployments.

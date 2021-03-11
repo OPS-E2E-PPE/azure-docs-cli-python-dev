@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_vnet_subnet
-name: az network vnet subnet
+name: Subnets
 summary: Manage subnets in an Azure Virtual Network.
 description: To learn more about subnets visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-subnet">https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-subnet</a>.
 directCommands:
@@ -63,7 +63,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vnet_subnet_delete
   name: az network vnet subnet delete
   summary: Delete a subnet.
@@ -95,7 +95,7 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vnet_subnet_list
   name: az network vnet subnet list
   summary: List the subnets in a virtual network.
@@ -124,7 +124,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vnet_subnet_show
   name: az network vnet subnet show
   summary: Show details of a subnet.
@@ -162,7 +162,7 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vnet_subnet_update
   name: az network vnet subnet update
   summary: Update a subnet.
@@ -233,7 +233,7 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
 - az_network_vnet_subnet_create
 - az_network_vnet_subnet_delete
@@ -256,6 +256,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: To learn more about subnets visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-subnet">https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-subnet</a>.

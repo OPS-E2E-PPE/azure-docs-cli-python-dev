@@ -101,7 +101,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 - uid: az_servicebus_queue_delete
   name: az servicebus queue delete
   summary: Deletes the Service Bus Queue.
@@ -131,7 +131,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 - uid: az_servicebus_queue_list
   name: az servicebus queue list
   summary: List the Queue by Service Bus Namepsace.
@@ -168,7 +168,7 @@ directCommands:
   - name: --top
     summary: May be used to limit the number of results to the most recent N usageDetails.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 - uid: az_servicebus_queue_show
   name: az servicebus queue show
   summary: Shows the Service Bus Queue Details.
@@ -202,7 +202,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 - uid: az_servicebus_queue_update
   name: az servicebus queue update
   summary: Updates existing Service Bus Queue.
@@ -316,17 +316,17 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 commands:
-- az_servicebus_queue_authorization_rule
-- az_servicebus_queue_authorization_rule_create
-- az_servicebus_queue_authorization_rule_delete
-- az_servicebus_queue_authorization_rule_keys
-- az_servicebus_queue_authorization_rule_keys_list
-- az_servicebus_queue_authorization_rule_keys_renew
-- az_servicebus_queue_authorization_rule_list
-- az_servicebus_queue_authorization_rule_show
-- az_servicebus_queue_authorization_rule_update
+- az_servicebus_queue_authorization-rule
+- az_servicebus_queue_authorization-rule_create
+- az_servicebus_queue_authorization-rule_delete
+- az_servicebus_queue_authorization-rule_keys
+- az_servicebus_queue_authorization-rule_keys_list
+- az_servicebus_queue_authorization-rule_keys_renew
+- az_servicebus_queue_authorization-rule_list
+- az_servicebus_queue_authorization-rule_show
+- az_servicebus_queue_authorization-rule_update
 - az_servicebus_queue_create
 - az_servicebus_queue_delete
 - az_servicebus_queue_list
@@ -348,6 +348,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 10/17/2019
   description: Manage Azure Service Bus Queue and Authorization Rule.

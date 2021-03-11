@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_policy_assignment
-name: az policy assignment
+name: Policy assignments
 summary: Manage resource policy assignments.
 description: ''
 directCommands:
@@ -60,7 +60,7 @@ directCommands:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_policy_assignment_delete
   name: az policy assignment delete
   summary: Delete a resource policy assignment.
@@ -84,7 +84,7 @@ directCommands:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_policy_assignment_list
   name: az policy assignment list
   summary: List resource policy assignments.
@@ -107,7 +107,7 @@ directCommands:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_policy_assignment_show
   name: az policy assignment show
   summary: Show a resource policy assignment.
@@ -135,7 +135,7 @@ directCommands:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 commands:
 - az_policy_assignment_create
 - az_policy_assignment_delete
@@ -157,6 +157,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/24/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage resource policy assignments.

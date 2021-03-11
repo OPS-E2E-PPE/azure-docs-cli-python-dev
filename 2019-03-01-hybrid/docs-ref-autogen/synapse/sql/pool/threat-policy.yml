@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_synapse_sql_pool_threat_policy
+uid: az_synapse_sql_pool_threat-policy
 name: az synapse sql pool threat-policy
 summary: Manage a SQL pool's threat detection policies.
 description: ''
 directCommands:
-- uid: az_synapse_sql_pool_threat_policy_show
+- uid: az_synapse_sql_pool_threat-policy_show
   name: az synapse sql pool threat-policy show
   summary: Get a SQL pool's threat detection policy.
   description: ''
@@ -37,8 +37,8 @@ directCommands:
   - name: --workspace-name
     summary: The workspace name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_sql_pool_threat_policy_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_sql_pool_threat-policy_update
   name: az synapse sql pool threat-policy update
   summary: Update a SQL pool's threat detection policy.
   description: If the policy is being enabled, storage_account or both storage_endpoint and storage_account_access_key must be specified.
@@ -140,10 +140,10 @@ directCommands:
   - name: --workspace-name
     summary: The workspace name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 commands:
-- az_synapse_sql_pool_threat_policy_show
-- az_synapse_sql_pool_threat_policy_update
+- az_synapse_sql_pool_threat-policy_show
+- az_synapse_sql_pool_threat-policy_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -160,6 +160,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/26/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/19/2020
   description: Manage a SQL pool's threat detection policies.

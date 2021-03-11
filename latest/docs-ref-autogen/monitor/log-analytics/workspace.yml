@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_monitor_log_analytics_workspace
+uid: az_monitor_log-analytics_workspace
 name: az monitor log-analytics workspace
 summary: Manage Azure log analytics workspace.
 description: ''
 directCommands:
-- uid: az_monitor_log_analytics_workspace_create
+- uid: az_monitor_log-analytics_workspace_create
   name: az monitor log-analytics workspace create
   summary: Create a workspace instance.
   description: ''
@@ -68,8 +68,8 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_delete
   name: az monitor log-analytics workspace delete
   summary: Delete a workspace instance.
   description: ''
@@ -102,8 +102,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_get_schema
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_get-schema
   name: az monitor log-analytics workspace get-schema
   summary: Get the schema for a given workspace.
   description: 'Schema represents the internal structure of the workspace, which can be used during the query. For more information, visit: <a href="https://docs.microsoft.com/en-us/rest/api/loganalytics/workspaces%202015-03-20/getschema">https://docs.microsoft.com/en-us/rest/api/loganalytics/workspaces%202015-03-20/getschema</a>.'
@@ -127,8 +127,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_get_shared_keys
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_get-shared-keys
   name: az monitor log-analytics workspace get-shared-keys
   summary: Get the shared keys for a workspace.
   description: ''
@@ -152,8 +152,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_list
   name: az monitor log-analytics workspace list
   summary: Get a list of workspaces under a resource group or a subscription.
   description: ''
@@ -171,8 +171,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_list_deleted_workspaces
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_list-deleted-workspaces
   name: az monitor log-analytics workspace list-deleted-workspaces
   summary: Get a list of deleted workspaces that can be recovered in a subscription or a resource group.
   description: ''
@@ -189,8 +189,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_list_management_groups
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_list-management-groups
   name: az monitor log-analytics workspace list-management-groups
   summary: Get a list of management groups connected to a workspace.
   description: ''
@@ -214,8 +214,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_list_usages
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_list-usages
   name: az monitor log-analytics workspace list-usages
   summary: Get a list of usage metrics for a workspace.
   description: ''
@@ -239,8 +239,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_recover
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_recover
   name: az monitor log-analytics workspace recover
   summary: Recover a workspace in a soft-delete state within 14 days.
   description: ''
@@ -267,8 +267,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_show
   name: az monitor log-analytics workspace show
   summary: Show a workspace instance.
   description: ''
@@ -296,8 +296,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_update
   name: az monitor log-analytics workspace update
   summary: Update a workspace instance.
   description: ''
@@ -364,53 +364,53 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
 commands:
-- az_monitor_log_analytics_workspace_create
-- az_monitor_log_analytics_workspace_data_export
-- az_monitor_log_analytics_workspace_data_export_create
-- az_monitor_log_analytics_workspace_data_export_delete
-- az_monitor_log_analytics_workspace_data_export_list
-- az_monitor_log_analytics_workspace_data_export_show
-- az_monitor_log_analytics_workspace_data_export_update
-- az_monitor_log_analytics_workspace_delete
-- az_monitor_log_analytics_workspace_get_schema
-- az_monitor_log_analytics_workspace_get_shared_keys
-- az_monitor_log_analytics_workspace_linked_service
-- az_monitor_log_analytics_workspace_linked_service_create
-- az_monitor_log_analytics_workspace_linked_service_delete
-- az_monitor_log_analytics_workspace_linked_service_list
-- az_monitor_log_analytics_workspace_linked_service_show
-- az_monitor_log_analytics_workspace_linked_service_update
-- az_monitor_log_analytics_workspace_linked_service_wait
-- az_monitor_log_analytics_workspace_linked_storage
-- az_monitor_log_analytics_workspace_linked_storage_add
-- az_monitor_log_analytics_workspace_linked_storage_create
-- az_monitor_log_analytics_workspace_linked_storage_delete
-- az_monitor_log_analytics_workspace_linked_storage_list
-- az_monitor_log_analytics_workspace_linked_storage_remove
-- az_monitor_log_analytics_workspace_linked_storage_show
-- az_monitor_log_analytics_workspace_list
-- az_monitor_log_analytics_workspace_list_deleted_workspaces
-- az_monitor_log_analytics_workspace_list_management_groups
-- az_monitor_log_analytics_workspace_list_usages
-- az_monitor_log_analytics_workspace_pack
-- az_monitor_log_analytics_workspace_pack_disable
-- az_monitor_log_analytics_workspace_pack_enable
-- az_monitor_log_analytics_workspace_pack_list
-- az_monitor_log_analytics_workspace_recover
-- az_monitor_log_analytics_workspace_saved_search
-- az_monitor_log_analytics_workspace_saved_search_create
-- az_monitor_log_analytics_workspace_saved_search_delete
-- az_monitor_log_analytics_workspace_saved_search_list
-- az_monitor_log_analytics_workspace_saved_search_show
-- az_monitor_log_analytics_workspace_saved_search_update
-- az_monitor_log_analytics_workspace_show
-- az_monitor_log_analytics_workspace_table
-- az_monitor_log_analytics_workspace_table_list
-- az_monitor_log_analytics_workspace_table_show
-- az_monitor_log_analytics_workspace_table_update
-- az_monitor_log_analytics_workspace_update
+- az_monitor_log-analytics_workspace_create
+- az_monitor_log-analytics_workspace_data-export
+- az_monitor_log-analytics_workspace_data-export_create
+- az_monitor_log-analytics_workspace_data-export_delete
+- az_monitor_log-analytics_workspace_data-export_list
+- az_monitor_log-analytics_workspace_data-export_show
+- az_monitor_log-analytics_workspace_data-export_update
+- az_monitor_log-analytics_workspace_delete
+- az_monitor_log-analytics_workspace_get-schema
+- az_monitor_log-analytics_workspace_get-shared-keys
+- az_monitor_log-analytics_workspace_linked-service
+- az_monitor_log-analytics_workspace_linked-service_create
+- az_monitor_log-analytics_workspace_linked-service_delete
+- az_monitor_log-analytics_workspace_linked-service_list
+- az_monitor_log-analytics_workspace_linked-service_show
+- az_monitor_log-analytics_workspace_linked-service_update
+- az_monitor_log-analytics_workspace_linked-service_wait
+- az_monitor_log-analytics_workspace_linked-storage
+- az_monitor_log-analytics_workspace_linked-storage_add
+- az_monitor_log-analytics_workspace_linked-storage_create
+- az_monitor_log-analytics_workspace_linked-storage_delete
+- az_monitor_log-analytics_workspace_linked-storage_list
+- az_monitor_log-analytics_workspace_linked-storage_remove
+- az_monitor_log-analytics_workspace_linked-storage_show
+- az_monitor_log-analytics_workspace_list
+- az_monitor_log-analytics_workspace_list-deleted-workspaces
+- az_monitor_log-analytics_workspace_list-management-groups
+- az_monitor_log-analytics_workspace_list-usages
+- az_monitor_log-analytics_workspace_pack
+- az_monitor_log-analytics_workspace_pack_disable
+- az_monitor_log-analytics_workspace_pack_enable
+- az_monitor_log-analytics_workspace_pack_list
+- az_monitor_log-analytics_workspace_recover
+- az_monitor_log-analytics_workspace_saved-search
+- az_monitor_log-analytics_workspace_saved-search_create
+- az_monitor_log-analytics_workspace_saved-search_delete
+- az_monitor_log-analytics_workspace_saved-search_list
+- az_monitor_log-analytics_workspace_saved-search_show
+- az_monitor_log-analytics_workspace_saved-search_update
+- az_monitor_log-analytics_workspace_show
+- az_monitor_log-analytics_workspace_table
+- az_monitor_log-analytics_workspace_table_list
+- az_monitor_log-analytics_workspace_table_show
+- az_monitor_log-analytics_workspace_table_update
+- az_monitor_log-analytics_workspace_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -427,6 +427,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/20/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 09/11/2020
   description: Manage Azure log analytics workspace.

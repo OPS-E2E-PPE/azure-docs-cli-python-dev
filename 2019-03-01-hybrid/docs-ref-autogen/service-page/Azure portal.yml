@@ -1,0 +1,7 @@
+### YamlMime:AzureCLIGroup
+uid: sp-Azure_portal
+name: Azure portal
+summary: description for Azure portal
+commands:
+- az_portal
+metadata: {}

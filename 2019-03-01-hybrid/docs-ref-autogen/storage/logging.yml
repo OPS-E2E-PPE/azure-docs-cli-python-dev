@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_logging
-name: az storage logging
+name: Storage service logging
 summary: Manage storage service logging information.
 description: ''
 directCommands:
@@ -42,7 +42,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_logging_show
   name: az storage logging show
   summary: Show logging settings for a storage account.
@@ -85,7 +85,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_logging_update
   name: az storage logging update
   summary: Update logging settings for a storage account.
@@ -136,7 +136,7 @@ directCommands:
   - name: --version
     summary: Version of the logging schema.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
 - az_storage_logging_off
 - az_storage_logging_show
@@ -157,6 +157,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage storage service logging information.

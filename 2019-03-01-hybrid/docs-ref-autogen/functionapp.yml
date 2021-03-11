@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_functionapp
-name: az functionapp
+name: Functions
 summary: Manage function apps. To install the Azure Functions Core tools see <a href="https://github.com/Azure/azure-functions-core-tools">https://github.com/Azure/azure-functions-core-tools</a>.
 description: ''
 directCommands:
@@ -27,7 +27,7 @@ directCommands:
                           [--os-type {Linux, Windows}]
                           [--plan]
                           [--role]
-                          [--runtime {custom, dotnet, java, node, powershell, python}]
+                          [--runtime {custom, dotnet, dotnet-isolated, java, node, powershell, python}]
                           [--runtime-version]
                           [--scope]
                           [--subscription]
@@ -104,11 +104,11 @@ directCommands:
     summary: Role name or id the system assigned identity will have.
     description: ''
   - name: --runtime
-    parameterValueGroup: custom, dotnet, java, node, powershell, python
+    parameterValueGroup: custom, dotnet, dotnet-isolated, java, node, powershell, python
     summary: The functions runtime stack.
     description: ''
   - name: --runtime-version
-    summary: 'The version of the functions runtime stack. Allowed values for each --runtime are: node -> [8, 10, 12, 14 (preview)], java -> [8, 11], powershell -> [7.0], python -> [3.6, 3.7, 3.8, 3.9 (preview)].'
+    summary: 'The version of the functions runtime stack. Allowed values for each --runtime are: dotnet-isolated -> [5.0 (preview)], node -> [8, 10, 12, 14], java -> [8, 11], powershell -> [7.0], python -> [3.6, 3.7, 3.8, 3.9 (preview)].'
     description: ''
   - name: --scope
     summary: Scope that the system assigned identity can access.
@@ -119,7 +119,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_delete
   name: az functionapp delete
   summary: Delete a function app.
@@ -149,7 +149,79 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_functionapp_deploy
+  name: az functionapp deploy
+  summary: Deploys a provided artifact to Azure functionapp.
+  description: ''
+  syntax: >-
+    az functionapp deploy [--async {false, true}]
+                          [--clean {false, true}]
+                          [--ids]
+                          [--ignore-stack {false, true}]
+                          [--name]
+                          [--resource-group]
+                          [--restart {false, true}]
+                          [--slot]
+                          [--src-path]
+                          [--src-url]
+                          [--subscription]
+                          [--target-path]
+                          [--timeout]
+                          [--type]
+  examples:
+  - summary: Deploy a war file asynchronously.
+    syntax: az functionapp deploy --resource-group ResouceGroup --name AppName --src-path SourcePath --type war --async true
+  - summary: Deploy a static text file to wwwroot/staticfiles/test.txt
+    syntax: az functionapp deploy --resource-group ResouceGroup --name AppName --src-path SourcePath --type static --target-path staticfiles/test.txt
+  optionalParameters:
+  - name: --async
+    parameterValueGroup: false, true
+    summary: Asynchronous deployment.
+    description: ''
+  - name: --clean
+    parameterValueGroup: false, true
+    summary: Clean or not. default is target-type specific.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --ignore-stack
+    parameterValueGroup: false, true
+    summary: Should override the default stack check.
+    description: ''
+  - name: --name -n
+    summary: Name of the functionapp to connect to.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - name: --restart
+    parameterValueGroup: false, true
+    summary: Restart or not. default behavior is to restart.
+    description: ''
+  - name: --slot -s
+    summary: Name of the deployment slot to use.
+    description: ''
+  - name: --src-path
+    summary: 'Path of the file to be deployed. Example: /mnt/apps/myapp.war.'
+    description: ''
+  - name: --src-url
+    summary: 'Url to download the package from. Example: <a href="http://mysite.com/files/myapp.war?key=123">http://mysite.com/files/myapp.war?key=123</a>.'
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  - name: --target-path
+    summary: Target path relative to wwwroot to which the file will be deployed to.
+    description: ''
+  - name: --timeout
+    summary: Timeout for operation in milliseconds.
+    description: ''
+  - name: --type
+    summary: Type of deployment requested.
+    description: ''
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_list
   name: az functionapp list
   summary: List function apps.
@@ -173,8 +245,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-- uid: az_functionapp_list_consumption_locations
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_functionapp_list-consumption-locations
   name: az functionapp list-consumption-locations
   summary: List available locations for running function apps.
   description: ''
@@ -183,7 +255,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_restart
   name: az functionapp restart
   summary: Restart a function app.
@@ -213,7 +285,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_show
   name: az functionapp show
   summary: Get the details of a function app.
@@ -247,7 +319,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_start
   name: az functionapp start
   summary: Start a function app.
@@ -277,7 +349,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_stop
   name: az functionapp stop
   summary: Stop a function app.
@@ -307,7 +379,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_update
   name: az functionapp update
   summary: Update a function app.
@@ -357,14 +429,14 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 commands:
 - az_functionapp_config
-- az_functionapp_config_access_restriction
-- az_functionapp_config_access_restriction_add
-- az_functionapp_config_access_restriction_remove
-- az_functionapp_config_access_restriction_set
-- az_functionapp_config_access_restriction_show
+- az_functionapp_config_access-restriction
+- az_functionapp_config_access-restriction_add
+- az_functionapp_config_access-restriction_remove
+- az_functionapp_config_access-restriction_set
+- az_functionapp_config_access-restriction_show
 - az_functionapp_config_appsettings
 - az_functionapp_config_appsettings_delete
 - az_functionapp_config_appsettings_list
@@ -376,7 +448,7 @@ commands:
 - az_functionapp_config_hostname
 - az_functionapp_config_hostname_add
 - az_functionapp_config_hostname_delete
-- az_functionapp_config_hostname_get_external_ip
+- az_functionapp_config_hostname_get-external-ip
 - az_functionapp_config_hostname_list
 - az_functionapp_config_set
 - az_functionapp_config_show
@@ -395,31 +467,32 @@ commands:
 - az_functionapp_cors_show
 - az_functionapp_create
 - az_functionapp_delete
+- az_functionapp_deploy
 - az_functionapp_deployment
 - az_functionapp_deployment_container
 - az_functionapp_deployment_container_config
-- az_functionapp_deployment_container_show_cd_url
-- az_functionapp_deployment_list_publishing_credentials
-- az_functionapp_deployment_list_publishing_profiles
+- az_functionapp_deployment_container_show-cd-url
+- az_functionapp_deployment_list-publishing-credentials
+- az_functionapp_deployment_list-publishing-profiles
 - az_functionapp_deployment_slot
-- az_functionapp_deployment_slot_auto_swap
+- az_functionapp_deployment_slot_auto-swap
 - az_functionapp_deployment_slot_create
 - az_functionapp_deployment_slot_delete
 - az_functionapp_deployment_slot_list
 - az_functionapp_deployment_slot_swap
 - az_functionapp_deployment_source
 - az_functionapp_deployment_source_config
-- az_functionapp_deployment_source_config_local_git
-- az_functionapp_deployment_source_config_zip
+- az_functionapp_deployment_source_config-local-git
+- az_functionapp_deployment_source_config-zip
 - az_functionapp_deployment_source_delete
 - az_functionapp_deployment_source_show
 - az_functionapp_deployment_source_sync
-- az_functionapp_deployment_source_update_token
+- az_functionapp_deployment_source_update-token
 - az_functionapp_deployment_user
 - az_functionapp_deployment_user_set
 - az_functionapp_deployment_user_show
-- az_functionapp_devops_pipeline
-- az_functionapp_devops_pipeline_create
+- az_functionapp_devops-pipeline
+- az_functionapp_devops-pipeline_create
 - az_functionapp_function
 - az_functionapp_function_delete
 - az_functionapp_function_keys
@@ -427,10 +500,10 @@ commands:
 - az_functionapp_function_keys_list
 - az_functionapp_function_keys_set
 - az_functionapp_function_show
-- az_functionapp_hybrid_connection
-- az_functionapp_hybrid_connection_add
-- az_functionapp_hybrid_connection_list
-- az_functionapp_hybrid_connection_remove
+- az_functionapp_hybrid-connection
+- az_functionapp_hybrid-connection_add
+- az_functionapp_hybrid-connection_list
+- az_functionapp_hybrid-connection_remove
 - az_functionapp_identity
 - az_functionapp_identity_assign
 - az_functionapp_identity_remove
@@ -440,7 +513,7 @@ commands:
 - az_functionapp_keys_list
 - az_functionapp_keys_set
 - az_functionapp_list
-- az_functionapp_list_consumption_locations
+- az_functionapp_list-consumption-locations
 - az_functionapp_log
 - az_functionapp_log_deployment
 - az_functionapp_log_deployment_list
@@ -456,10 +529,12 @@ commands:
 - az_functionapp_start
 - az_functionapp_stop
 - az_functionapp_update
-- az_functionapp_vnet_integration
-- az_functionapp_vnet_integration_add
-- az_functionapp_vnet_integration_list
-- az_functionapp_vnet_integration_remove
+- az_functionapp_vnet-integration
+- az_functionapp_vnet-integration_add
+- az_functionapp_vnet-integration_list
+- az_functionapp_vnet-integration_remove
+- az_functionapp_app
+- az_functionapp_app_up
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -476,6 +551,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/19/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/05/2020
   description: Manage function apps. To install the Azure Functions Core tools see <a href="https://github.com/Azure/azure-functions-core-tools">https://github.com/Azure/azure-functions-core-tools</a>.

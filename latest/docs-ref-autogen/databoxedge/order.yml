@@ -94,7 +94,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
 - uid: az_databoxedge_order_delete
   name: az databoxedge order delete
   summary: Delete the order related to the device.
@@ -128,7 +128,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
 - uid: az_databoxedge_order_list
   name: az databoxedge order list
   summary: List all the orders related to a Data Box Edge/Data Box Gateway device.
@@ -157,7 +157,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
 - uid: az_databoxedge_order_show
   name: az databoxedge order show
   summary: Get a specific order by name.
@@ -187,7 +187,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
 - uid: az_databoxedge_order_update
   name: az databoxedge order update
   summary: Update an order.
@@ -286,7 +286,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
 - uid: az_databoxedge_order_wait
   name: az databoxedge order wait
   summary: Place the CLI in a waiting state until a condition of the databoxedge order is met.
@@ -346,7 +346,7 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/databoxedge/_help.py
 commands:
 - az_databoxedge_order_create
 - az_databoxedge_order_delete
@@ -370,6 +370,5 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/23/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   description: Manage order with databoxedge.

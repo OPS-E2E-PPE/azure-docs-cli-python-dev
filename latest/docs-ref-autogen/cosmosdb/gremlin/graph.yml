@@ -78,7 +78,7 @@ directCommands:
   - name: --ttl
     summary: Default TTL. If the value is missing or set to "-1", items don’t expire. If the value is set to "n", items will expire "n" seconds after last modified time.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_gremlin_graph_delete
   name: az cosmosdb gremlin graph delete
   summary: Delete the Gremlin graph under an Azure Cosmos DB Gremlin database.
@@ -114,7 +114,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_gremlin_graph_exists
   name: az cosmosdb gremlin graph exists
   summary: Checks if an Azure Cosmos DB Gremlin graph exists.
@@ -146,7 +146,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_gremlin_graph_list
   name: az cosmosdb gremlin graph list
   summary: List the Gremlin graphs under an Azure Cosmos DB Gremlin database.
@@ -177,7 +177,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_gremlin_graph_show
   name: az cosmosdb gremlin graph show
   summary: Show the details of a Gremlin graph under an Azure Cosmos DB Gremlin database.
@@ -213,7 +213,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_gremlin_graph_update
   name: az cosmosdb gremlin graph update
   summary: Update an Gremlin graph under an Azure Cosmos DB Gremlin database.
@@ -253,7 +253,7 @@ directCommands:
   - name: --ttl
     summary: Default TTL. If the value is missing or set to "-1", items don’t expire. If the value is set to "n", items will expire "n" seconds after last modified time.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 commands:
 - az_cosmosdb_gremlin_graph_create
 - az_cosmosdb_gremlin_graph_delete
@@ -281,6 +281,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 10/23/2020
   description: Manage Azure Cosmos DB Gremlin graphs.

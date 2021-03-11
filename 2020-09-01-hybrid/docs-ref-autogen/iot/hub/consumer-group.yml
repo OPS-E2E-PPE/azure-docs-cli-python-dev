@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_iot_hub_consumer_group
-name: az iot hub consumer-group
+uid: az_iot_hub_consumer-group
+name: IoT hub consumer groups
 summary: Manage the event hub consumer groups of an IoT hub.
 description: ''
 directCommands:
-- uid: az_iot_hub_consumer_group_create
+- uid: az_iot_hub_consumer-group_create
   name: az iot hub consumer-group create
   summary: Create an event hub consumer group.
   description: ''
@@ -39,8 +39,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
-- uid: az_iot_hub_consumer_group_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/iot/_help.py
+- uid: az_iot_hub_consumer-group_delete
   name: az iot hub consumer-group delete
   summary: Delete an event hub consumer group.
   description: ''
@@ -71,8 +71,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
-- uid: az_iot_hub_consumer_group_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/iot/_help.py
+- uid: az_iot_hub_consumer-group_list
   name: az iot hub consumer-group list
   summary: List event hub consumer groups.
   description: ''
@@ -106,8 +106,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
-- uid: az_iot_hub_consumer_group_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/iot/_help.py
+- uid: az_iot_hub_consumer-group_show
   name: az iot hub consumer-group show
   summary: Get the details for an event hub consumer group.
   description: ''
@@ -145,12 +145,12 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/iot/_help.py
 commands:
-- az_iot_hub_consumer_group_create
-- az_iot_hub_consumer_group_delete
-- az_iot_hub_consumer_group_list
-- az_iot_hub_consumer_group_show
+- az_iot_hub_consumer-group_create
+- az_iot_hub_consumer-group_delete
+- az_iot_hub_consumer-group_list
+- az_iot_hub_consumer-group_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -167,6 +167,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/14/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/15/2020
   description: Manage the event hub consumer groups of an IoT hub.

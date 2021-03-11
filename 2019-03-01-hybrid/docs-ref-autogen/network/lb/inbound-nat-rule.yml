@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_lb_inbound_nat_rule
-name: az network lb inbound-nat-rule
+uid: az_network_lb_inbound-nat-rule
+name: Inbound NAT address rules
 summary: Manage inbound NAT rules of a load balancer.
 description: ''
 directCommands:
-- uid: az_network_lb_inbound_nat_rule_create
+- uid: az_network_lb_inbound-nat-rule_create
   name: az network lb inbound-nat-rule create
   summary: Create an inbound NAT rule.
   description: ''
@@ -68,8 +68,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_lb_inbound_nat_rule_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_lb_inbound-nat-rule_delete
   name: az network lb inbound-nat-rule delete
   summary: Delete an inbound NAT rule.
   description: ''
@@ -98,8 +98,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_lb_inbound_nat_rule_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_lb_inbound-nat-rule_list
   name: az network lb inbound-nat-rule list
   summary: List inbound NAT rules.
   description: ''
@@ -127,8 +127,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_lb_inbound_nat_rule_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_lb_inbound-nat-rule_show
   name: az network lb inbound-nat-rule show
   summary: Get the details of an inbound NAT rule.
   description: ''
@@ -161,8 +161,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_lb_inbound_nat_rule_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_lb_inbound-nat-rule_update
   name: az network lb inbound-nat-rule update
   summary: Update an inbound NAT rule.
   description: ''
@@ -239,13 +239,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_lb_inbound_nat_rule_create
-- az_network_lb_inbound_nat_rule_delete
-- az_network_lb_inbound_nat_rule_list
-- az_network_lb_inbound_nat_rule_show
-- az_network_lb_inbound_nat_rule_update
+- az_network_lb_inbound-nat-rule_create
+- az_network_lb_inbound-nat-rule_delete
+- az_network_lb_inbound-nat-rule_list
+- az_network_lb_inbound-nat-rule_show
+- az_network_lb_inbound-nat-rule_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -262,6 +262,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage inbound NAT rules of a load balancer.

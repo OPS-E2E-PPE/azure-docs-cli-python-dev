@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_cloud
-name: az cloud
+name: Cloud management
 summary: Manage registered Azure clouds.
 description: ''
 directCommands:
@@ -13,8 +13,8 @@ directCommands:
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cloud/_help.py
-- uid: az_cloud_list_profiles
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cloud/_help.py
+- uid: az_cloud_list-profiles
   name: az cloud list-profiles
   summary: List the supported profiles for a cloud.
   description: ''
@@ -29,7 +29,7 @@ directCommands:
   - name: --show-all
     summary: Show all available profiles supported in the CLI.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cloud/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cloud/_help.py
 - uid: az_cloud_register
   name: az cloud register
   summary: Register a cloud.
@@ -133,7 +133,7 @@ directCommands:
   - name: --suffix-storage-endpoint
     summary: The endpoint suffix for storage accounts.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cloud/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cloud/_help.py
 - uid: az_cloud_set
   name: az cloud set
   summary: Set the active cloud.
@@ -154,7 +154,7 @@ directCommands:
     parameterValueGroup: 2017-03-09-profile, 2018-03-01-hybrid, 2019-03-01-hybrid, 2020-09-01-hybrid, latest
     summary: Profile to use for this cloud.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cloud/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cloud/_help.py
 - uid: az_cloud_show
   name: az cloud show
   summary: Get the details of a registered cloud.
@@ -170,7 +170,7 @@ directCommands:
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cloud/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cloud/_help.py
 - uid: az_cloud_unregister
   name: az cloud unregister
   summary: Unregister a cloud.
@@ -184,7 +184,7 @@ directCommands:
     name: --name -n
     summary: Name of a registered cloud.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cloud/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cloud/_help.py
 - uid: az_cloud_update
   name: az cloud update
   summary: Update the configuration of a cloud.
@@ -268,10 +268,10 @@ directCommands:
   - name: --suffix-storage-endpoint
     summary: The endpoint suffix for storage accounts.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cloud/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cloud/_help.py
 commands:
 - az_cloud_list
-- az_cloud_list_profiles
+- az_cloud_list-profiles
 - az_cloud_register
 - az_cloud_set
 - az_cloud_show
@@ -293,6 +293,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 10/30/2020
   description: Manage registered Azure clouds.

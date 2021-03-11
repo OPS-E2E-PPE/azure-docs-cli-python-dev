@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_sql_failover_group
+uid: az_sql_failover-group
 name: az sql failover-group
 summary: Manage SQL Failover Groups.
 description: ''
 directCommands:
-- uid: az_sql_failover_group_create
+- uid: az_sql_failover-group_create
   name: az sql failover-group create
   summary: Creates a failover group.
   description: ''
@@ -57,8 +57,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_failover_group_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_failover-group_delete
   name: az sql failover-group delete
   summary: Deletes a failover group.
   description: ''
@@ -86,8 +86,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_failover_group_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_failover-group_list
   name: az sql failover-group list
   summary: Lists the failover groups in a server.
   description: ''
@@ -113,8 +113,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_failover_group_set_primary
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_failover-group_set-primary
   name: az sql failover-group set-primary
   summary: Set the primary of the failover group by failing over all databases from the current primary server.
   description: ''
@@ -149,8 +149,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_failover_group_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_failover-group_show
   name: az sql failover-group show
   summary: Gets a failover group.
   description: ''
@@ -182,8 +182,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_failover_group_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_failover-group_update
   name: az sql failover-group update
   summary: Updates the failover group.
   description: ''
@@ -244,14 +244,14 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 commands:
-- az_sql_failover_group_create
-- az_sql_failover_group_delete
-- az_sql_failover_group_list
-- az_sql_failover_group_set_primary
-- az_sql_failover_group_show
-- az_sql_failover_group_update
+- az_sql_failover-group_create
+- az_sql_failover-group_delete
+- az_sql_failover-group_list
+- az_sql_failover-group_set-primary
+- az_sql_failover-group_show
+- az_sql_failover-group_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -268,6 +268,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/28/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/22/2020
   description: Manage SQL Failover Groups.

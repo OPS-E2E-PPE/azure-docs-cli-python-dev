@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_role_assignment
-name: az role assignment
+name: Role assignments
 summary: Manage role assignments.
 description: ''
 directCommands:
@@ -41,7 +41,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_role_assignment_delete
   name: az role assignment delete
   summary: Delete role assignments.
@@ -83,7 +83,7 @@ directCommands:
   - name: --yes -y
     summary: Continue to delete all assignments under the subscription.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_role_assignment_list
   name: az role assignment list
   summary: List role assignments.
@@ -131,8 +131,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
-- uid: az_role_assignment_list_changelogs
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
+- uid: az_role_assignment_list-changelogs
   name: az role assignment list-changelogs
   summary: List changelogs for role assignments.
   description: ''
@@ -150,12 +150,12 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 commands:
 - az_role_assignment_create
 - az_role_assignment_delete
 - az_role_assignment_list
-- az_role_assignment_list_changelogs
+- az_role_assignment_list-changelogs
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -172,6 +172,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/20/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 09/16/2020
   description: Manage role assignments.

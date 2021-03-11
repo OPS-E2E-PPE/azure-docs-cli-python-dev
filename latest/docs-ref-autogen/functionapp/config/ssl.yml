@@ -45,7 +45,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_config_ssl_create
   name: az functionapp config ssl create
   summary: Create a Managed Certificate for a hostname in a function app.
@@ -57,8 +57,8 @@ directCommands:
                                      [--slot]
                                      [--subscription]
   examples:
-  - summary: Create a Managed Certificate for $fqdn.
-    syntax: az functionapp config ssl create --resource-group MyResourceGroup --name MyWebapp --hostname $fqdn
+  - summary: Create a Managed Certificate for cname.mycustomdomain.com.
+    syntax: az functionapp config ssl create --resource-group MyResourceGroup --name MyWebapp --hostname cname.mycustomdomain.com
   requiredParameters:
   - isRequired: true
     name: --hostname
@@ -66,7 +66,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --name -n
-    summary: Name of the function app.
+    summary: Name of the web app.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -79,7 +79,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_config_ssl_delete
   name: az functionapp config ssl delete
   summary: Delete an SSL certificate from a function app.
@@ -101,7 +101,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_config_ssl_import
   name: az functionapp config ssl import
   summary: Import an SSL certificate to a function app from Key Vault.
@@ -140,7 +140,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_config_ssl_list
   name: az functionapp config ssl list
   summary: List SSL certificates for a function app.
@@ -164,7 +164,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_config_ssl_show
   name: az functionapp config ssl show
   summary: Show the details of an SSL certificate for a function app.
@@ -193,7 +193,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_config_ssl_unbind
   name: az functionapp config ssl unbind
   summary: Unbind an SSL certificate from a function app.
@@ -226,7 +226,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_config_ssl_upload
   name: az functionapp config ssl upload
   summary: Upload an SSL certificate to a function app.
@@ -267,7 +267,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 commands:
 - az_functionapp_config_ssl_bind
 - az_functionapp_config_ssl_create
@@ -293,6 +293,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/19/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/05/2020
   description: Configure SSL certificates.

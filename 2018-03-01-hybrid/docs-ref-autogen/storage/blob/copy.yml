@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_blob_copy
-name: az storage blob copy
+name: Blob storage copy operations
 summary: Manage blob copy operations. Use `az storage blob show` to check the status of the blobs.
 description: ''
 directCommands:
@@ -54,7 +54,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_blob_copy_start
   name: az storage blob copy start
   summary: Copies a blob asynchronously. Use `az storage blob show` to check the status of the blobs.
@@ -181,8 +181,8 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_blob_copy_start_batch
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_blob_copy_start-batch
   name: az storage blob copy start-batch
   summary: Copy multiple blobs to a blob container. Use `az storage blob show` to check the status of the blobs.
   description: ''
@@ -251,11 +251,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
 - az_storage_blob_copy_cancel
 - az_storage_blob_copy_start
-- az_storage_blob_copy_start_batch
+- az_storage_blob_copy_start-batch
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -272,6 +272,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage blob copy operations. Use `az storage blob show` to check the status of the blobs.

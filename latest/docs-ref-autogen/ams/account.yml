@@ -4,28 +4,27 @@ name: az ams account
 summary: Manage Azure Media Services accounts.
 description: ''
 directCommands:
-- uid: az_ams_account_check_name
+- uid: az_ams_account_check-name
   name: az ams account check-name
   summary: Checks whether the Media Service resource name is available.
   description: ''
   syntax: >-
-    az ams account check-name --location
-                              --name
+    az ams account check-name --name
+                              [--location]
                               [--subscription]
   requiredParameters:
-  - isRequired: true
-    name: --location -l
-    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
-    description: ''
   - isRequired: true
     name: --name -n
     summary: The name of the Azure Media Services account.
     description: ''
   optionalParameters:
+  - name: --location -l
+    summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_account_create
   name: az ams account create
   summary: Create an Azure Media Services account.
@@ -35,6 +34,7 @@ directCommands:
                           --resource-group
                           --storage-account
                           [--location]
+                          [--mi-system-assigned]
                           [--subscription]
                           [--tags]
   requiredParameters:
@@ -54,13 +54,16 @@ directCommands:
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
     description: ''
+  - name: --mi-system-assigned
+    summary: Set the system managed identity on the media services account.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_account_delete
   name: az ams account delete
   summary: Delete an Azure Media Services account.
@@ -83,7 +86,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_account_list
   name: az ams account list
   summary: List Azure Media Services accounts for the entire subscription.
@@ -102,7 +105,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_account_show
   name: az ams account show
   summary: Show the details of an Azure Media Services account.
@@ -129,7 +132,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_account_update
   name: az ams account update
   summary: Update the details of an Azure Media Services account.
@@ -172,11 +175,14 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 commands:
-- az_ams_account_check_name
+- az_ams_account_check-name
 - az_ams_account_create
 - az_ams_account_delete
+- az_ams_account_encryption
+- az_ams_account_encryption_set
+- az_ams_account_encryption_show
 - az_ams_account_list
 - az_ams_account_mru
 - az_ams_account_mru_set
@@ -184,11 +190,12 @@ commands:
 - az_ams_account_show
 - az_ams_account_sp
 - az_ams_account_sp_create
-- az_ams_account_sp_reset_credentials
+- az_ams_account_sp_reset-credentials
 - az_ams_account_storage
 - az_ams_account_storage_add
 - az_ams_account_storage_remove
-- az_ams_account_storage_sync_storage_keys
+- az_ams_account_storage_set-authentication
+- az_ams_account_storage_sync-storage-keys
 - az_ams_account_update
 globalParameters:
 - name: --debug
@@ -206,6 +213,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 07/28/2020
   description: Manage Azure Media Services accounts.

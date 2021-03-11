@@ -4,7 +4,7 @@ name: az dms
 summary: Manage Azure Data Migration Service (DMS) instances.
 description: ''
 directCommands:
-- uid: az_dms_check_name
+- uid: az_dms_check-name
   name: az dms check-name
   summary: Check if a given DMS instance name is available in a given region as well as the name's validity.
   description: ''
@@ -28,8 +28,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
-- uid: az_dms_check_status
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
+- uid: az_dms_check-status
   name: az dms check-status
   summary: Perform a health check and return the status of the service and virtual machine size.
   description: ''
@@ -53,7 +53,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_create
   name: az dms create
   summary: Create an instance of the Data Migration Service.
@@ -101,7 +101,7 @@ directCommands:
   - name: --tags
     summary: A space-delimited list of tags in "tag1[=value1]" format.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_delete
   name: az dms delete
   summary: Delete an instance of the Data Migration Service.
@@ -138,7 +138,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_list
   name: az dms list
   summary: List the DMS instances within your currently configured subscription (to set this use "az account set"). If provided, only show the instances within a given resource group.
@@ -162,8 +162,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
-- uid: az_dms_list_skus
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
+- uid: az_dms_list-skus
   name: az dms list-skus
   summary: List the SKUs that are supported by the Data Migration Service.
   description: ''
@@ -172,7 +172,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_show
   name: az dms show
   summary: Show the details for an instance of the Data Migration Service.
@@ -198,7 +198,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_start
   name: az dms start
   summary: Start an instance of the Data Migration Service. It can then be used to run data migrations.
@@ -227,7 +227,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_stop
   name: az dms stop
   summary: Stop an instance of the Data Migration Service. While stopped, it can't be used to run data migrations and the owner won't be billed.
@@ -253,7 +253,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_wait
   name: az dms wait
   summary: Place the CLI in a waiting state until a condition of the DMS instance is met.
@@ -305,23 +305,23 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dms/_help.py
 commands:
-- az_dms_check_name
-- az_dms_check_status
+- az_dms_check-name
+- az_dms_check-status
 - az_dms_create
 - az_dms_delete
 - az_dms_list
-- az_dms_list_skus
+- az_dms_list-skus
 - az_dms_project
-- az_dms_project_check_name
+- az_dms_project_check-name
 - az_dms_project_create
 - az_dms_project_delete
 - az_dms_project_list
 - az_dms_project_show
 - az_dms_project_task
 - az_dms_project_task_cancel
-- az_dms_project_task_check_name
+- az_dms_project_task_check-name
 - az_dms_project_task_create
 - az_dms_project_task_cutover
 - az_dms_project_task_delete
@@ -331,6 +331,14 @@ commands:
 - az_dms_start
 - az_dms_stop
 - az_dms_wait
+- az_dms_project_task_restart
+- az_dms_project_task_stop
+- az_dms_task
+- az_dms_task_cancel
+- az_dms_task_create
+- az_dms_task_delete
+- az_dms_task_list
+- az_dms_task_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -347,6 +355,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/15/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/19/2019
   description: Manage Azure Data Migration Service (DMS) instances.

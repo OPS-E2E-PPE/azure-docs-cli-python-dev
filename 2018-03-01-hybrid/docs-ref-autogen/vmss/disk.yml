@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vmss_disk
-name: az vmss disk
+name: VMSS disks
 summary: Manage data disks of a VMSS.
 description: ''
 directCommands:
@@ -49,7 +49,7 @@ directCommands:
   - name: --vmss-name
     summary: Scale set name. You can configure the default using `az configure --defaults vmss=<name>`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_disk_detach
   name: az vmss disk detach
   summary: Detach managed data disks from a scale set or its instances.
@@ -81,7 +81,7 @@ directCommands:
   - name: --vmss-name
     summary: Scale set name. You can configure the default using `az configure --defaults vmss=<name>`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 commands:
 - az_vmss_disk_attach
 - az_vmss_disk_detach
@@ -101,6 +101,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/29/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/05/2020
   description: Manage data disks of a VMSS.

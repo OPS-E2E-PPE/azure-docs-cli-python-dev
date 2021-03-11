@@ -22,6 +22,7 @@ directCommands:
                                   [--force-string]
                                   [--ids]
                                   [--kdc-ip]
+                                  [--ldap-over-tls]
                                   [--ldap-signing]
                                   [--organizational-unit]
                                   [--remove]
@@ -80,6 +81,9 @@ directCommands:
   - name: --kdc-ip
     summary: Kdc server IP addresses for the active directory machine. This optional parameter is used only while creating kerberos volume.
     description: ''
+  - name: --ldap-over-tls
+    summary: Specifies whether or not the LDAP traffic needs to be secured via TLS.
+    description: ''
   - name: --ldap-signing
     summary: Specifies whether or not the LDAP traffic needs to be signed.
     description: ''
@@ -107,7 +111,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_account_ad_list
   name: az netappfiles account ad list
   summary: List the active directories of an account.
@@ -136,7 +140,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_account_ad_remove
   name: az netappfiles account ad remove
   summary: Remove an active directory from the account.
@@ -168,7 +172,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 commands:
 - az_netappfiles_account_ad_add
 - az_netappfiles_account_ad_list
@@ -189,6 +193,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/25/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/08/2020
   description: Manage Azure NetApp Files (ANF) Account active directories.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_dla_account_compute_policy
+uid: az_dla_account_compute-policy
 name: az dla account compute-policy
 summary: Manage Data Lake Analytics account compute policies.
 description: ''
 directCommands:
-- uid: az_dla_account_compute_policy_create
+- uid: az_dla_account_compute-policy_create
   name: az dla account compute-policy create
   summary: Create a compute policy in the Data Lake Analytics account.
   description: ''
@@ -47,8 +47,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
-- uid: az_dla_account_compute_policy_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dla/_help.py
+- uid: az_dla_account_compute-policy_delete
   name: az dla account compute-policy delete
   summary: Delete a compute policy in a Data Lake Analytics account.
   description: ''
@@ -76,8 +76,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
-- uid: az_dla_account_compute_policy_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dla/_help.py
+- uid: az_dla_account_compute-policy_list
   name: az dla account compute-policy list
   summary: List compute policies in the a Lake Analytics account.
   description: ''
@@ -103,8 +103,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
-- uid: az_dla_account_compute_policy_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dla/_help.py
+- uid: az_dla_account_compute-policy_show
   name: az dla account compute-policy show
   summary: Retrieve a compute policy in a Data Lake Analytics account.
   description: ''
@@ -136,8 +136,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
-- uid: az_dla_account_compute_policy_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dla/_help.py
+- uid: az_dla_account_compute-policy_update
   name: az dla account compute-policy update
   summary: Update a compute policy in the Data Lake Analytics account.
   description: ''
@@ -173,13 +173,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dla/_help.py
 commands:
-- az_dla_account_compute_policy_create
-- az_dla_account_compute_policy_delete
-- az_dla_account_compute_policy_list
-- az_dla_account_compute_policy_show
-- az_dla_account_compute_policy_update
+- az_dla_account_compute-policy_create
+- az_dla_account_compute-policy_delete
+- az_dla_account_compute-policy_list
+- az_dla_account_compute-policy_show
+- az_dla_account_compute-policy_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -196,6 +196,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 09/16/2019
   description: Manage Data Lake Analytics account compute policies.

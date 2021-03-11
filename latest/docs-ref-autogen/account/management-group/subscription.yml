@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_account_management_group_subscription
+uid: az_account_management-group_subscription
 name: az account management-group subscription
 summary: Subscription operations for Management Groups.
 description: ''
 directCommands:
-- uid: az_account_management_group_subscription_add
+- uid: az_account_management-group_subscription_add
   name: az account management-group subscription add
   summary: Add a subscription to a management group.
   description: Add a subscription to a management group.
@@ -23,8 +23,8 @@ directCommands:
     name: --subscription -s
     summary: Subscription Id or Name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
-- uid: az_account_management_group_subscription_remove
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/profile/_help.py
+- uid: az_account_management-group_subscription_remove
   name: az account management-group subscription remove
   summary: Remove an existing subscription from a management group.
   description: Remove an existing subscription from a management group.
@@ -43,10 +43,10 @@ directCommands:
     name: --subscription -s
     summary: Subscription Id or Name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/profile/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/profile/_help.py
 commands:
-- az_account_management_group_subscription_add
-- az_account_management_group_subscription_remove
+- az_account_management-group_subscription_add
+- az_account_management-group_subscription_remove
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -63,6 +63,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/18/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 03/16/2020
   description: Subscription operations for Management Groups.

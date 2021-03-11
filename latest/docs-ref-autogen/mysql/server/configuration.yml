@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_mysql_server_configuration
-name: az mysql server configuration
+name: Azure Database for MySQL server configurations
 summary: Manage configuration values for a server.
 description: ''
 directCommands:

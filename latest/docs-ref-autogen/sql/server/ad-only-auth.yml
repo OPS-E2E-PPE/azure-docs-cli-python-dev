@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_sql_server_ad_only_auth
+uid: az_sql_server_ad-only-auth
 name: az sql server ad-only-auth
 summary: Manage Azure Active Directly only Authentication settings for this Server.
 description: ''
 directCommands:
-- uid: az_sql_server_ad_only_auth_disable
+- uid: az_sql_server_ad-only-auth_disable
   name: az sql server ad-only-auth disable
   summary: Disable Azure Active Directly only Authentication for this Server.
   description: ''
@@ -29,8 +29,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_server_ad_only_auth_enable
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_server_ad-only-auth_enable
   name: az sql server ad-only-auth enable
   summary: Enable Azure Active Directly only Authentication for this Server.
   description: ''
@@ -55,8 +55,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_server_ad_only_auth_get
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_server_ad-only-auth_get
   name: az sql server ad-only-auth get
   summary: Get a specific Azure Active Directly only Authentication property.
   description: ''
@@ -81,11 +81,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 commands:
-- az_sql_server_ad_only_auth_disable
-- az_sql_server_ad_only_auth_enable
-- az_sql_server_ad_only_auth_get
+- az_sql_server_ad-only-auth_disable
+- az_sql_server_ad-only-auth_enable
+- az_sql_server_ad-only-auth_get
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -102,6 +102,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/28/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/22/2020
   description: Manage Azure Active Directly only Authentication settings for this Server.

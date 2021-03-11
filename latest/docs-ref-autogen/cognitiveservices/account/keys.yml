@@ -34,7 +34,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
 - uid: az_cognitiveservices_account_keys_regenerate
   name: az cognitiveservices account keys regenerate
   summary: Manage Azure Cognitive Services accounts.
@@ -65,7 +65,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
 commands:
 - az_cognitiveservices_account_keys_list
 - az_cognitiveservices_account_keys_regenerate
@@ -85,6 +85,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 06/13/2020
   description: This article lists the Azure CLI commands for Azure Cognitive Services account and subscription management only. Refer to the documentation at <a href="https://docs.microsoft.com/azure/cognitive-services/">https://docs.microsoft.com/azure/cognitive-services/</a> for individual services to learn how to use the APIs and supported SDKs.

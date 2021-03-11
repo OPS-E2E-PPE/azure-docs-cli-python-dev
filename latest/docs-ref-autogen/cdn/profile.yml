@@ -12,7 +12,7 @@ directCommands:
     az cdn profile create --name
                           --resource-group
                           [--location]
-                          [--sku {Custom_Verizon, Premium_ChinaCdn, Premium_Verizon, Standard_Akamai, Standard_ChinaCdn, Standard_Microsoft, Standard_Verizon}]
+                          [--sku {Custom_Verizon, Premium_ChinaCdn, Premium_Verizon, StandardPlus_955BandWidth_ChinaCdn, StandardPlus_AvgBandWidth_ChinaCdn, StandardPlus_ChinaCdn, Standard_955BandWidth_ChinaCdn, Standard_Akamai, Standard_AvgBandWidth_ChinaCdn, Standard_ChinaCdn, Standard_Microsoft, Standard_Verizon}]
                           [--subscription]
                           [--tags]
   examples:
@@ -35,7 +35,7 @@ directCommands:
     description: ''
   - name: --sku
     defaultValue: Standard_Akamai
-    parameterValueGroup: Custom_Verizon, Premium_ChinaCdn, Premium_Verizon, Standard_Akamai, Standard_ChinaCdn, Standard_Microsoft, Standard_Verizon
+    parameterValueGroup: Custom_Verizon, Premium_ChinaCdn, Premium_Verizon, StandardPlus_955BandWidth_ChinaCdn, StandardPlus_AvgBandWidth_ChinaCdn, StandardPlus_ChinaCdn, Standard_955BandWidth_ChinaCdn, Standard_Akamai, Standard_AvgBandWidth_ChinaCdn, Standard_ChinaCdn, Standard_Microsoft, Standard_Verizon
     summary: The pricing tier (defines a CDN provider, feature list and rate) of the CDN profile. Defaults to Standard_Akamai.
     description: ''
   - name: --subscription
@@ -44,7 +44,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_profile_delete
   name: az cdn profile delete
   summary: Delete a CDN profile.
@@ -70,7 +70,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_profile_list
   name: az cdn profile list
   summary: List CDN profiles.
@@ -92,10 +92,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_profile_show
   name: az cdn profile show
-  summary: Gets a CDN profile with the specified profile name under the specified subscription and resource group.
+  summary: Show CDN profile details.
   description: ''
   syntax: >-
     az cdn profile show [--ids]
@@ -103,6 +103,9 @@ directCommands:
                         [--query-examples]
                         [--resource-group]
                         [--subscription]
+  examples:
+  - summary: Show CDN profile details.
+    syntax: az cdn profile show -g group -n profile
   optionalParameters:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
@@ -119,7 +122,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_profile_update
   name: az cdn profile update
   summary: Update a CDN profile.
@@ -165,7 +168,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_profile_usage
   name: az cdn profile usage
   summary: Checks the quota and actual usage of endpoints under the given CDN profile.
@@ -188,7 +191,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 commands:
 - az_cdn_profile_create
 - az_cdn_profile_delete
@@ -212,6 +215,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/02/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 07/30/2020
   description: Manage CDN profiles to define an edge network.

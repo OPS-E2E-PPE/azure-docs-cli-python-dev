@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_ad_user
-name: az ad user
+name: AAD users
 summary: Manage Azure Active Directory users and user authentication.
 description: ''
 directCommands:
@@ -39,7 +39,7 @@ directCommands:
   - name: --mail-nickname
     summary: Mail alias. Defaults to user principal name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_user_delete
   name: az ad user delete
   summary: Delete a user.
@@ -50,8 +50,8 @@ directCommands:
     name: --id
     summary: The object ID or principal name of the user for which to get information.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
-- uid: az_ad_user_get_member_groups
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
+- uid: az_ad_user_get-member-groups
   name: az ad user get-member-groups
   summary: Get groups of which the user is a member.
   description: ''
@@ -70,7 +70,7 @@ directCommands:
   - name: --security-enabled-only
     summary: If true, only membership in security-enabled groups should be checked. Otherwise, membership in all groups should be checked.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_user_list
   name: az ad user list
   summary: List Azure Active Directory users.
@@ -93,7 +93,7 @@ directCommands:
   - name: --upn
     summary: User principal name, e.g. john.doe@contoso.com.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_user_show
   name: az ad user show
   summary: Gets user information from the directory.
@@ -110,7 +110,7 @@ directCommands:
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_user_update
   name: az ad user update
   summary: Update Azure Active Directory users.
@@ -148,11 +148,11 @@ directCommands:
   - name: --password
     summary: User password.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 commands:
 - az_ad_user_create
 - az_ad_user_delete
-- az_ad_user_get_member_groups
+- az_ad_user_get-member-groups
 - az_ad_user_list
 - az_ad_user_show
 - az_ad_user_update
@@ -172,6 +172,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/20/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 09/16/2020
   description: Manage Azure Active Directory users and user authentication.

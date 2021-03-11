@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_role_definition
-name: az role definition
+name: Role definitions
 summary: Manage role definitions.
 description: ''
 directCommands:
@@ -18,16 +18,16 @@ directCommands:
           "Name": "Contoso On-call",
           "Description": "Perform VM actions and read storage and network information.",
           "Actions": [
-              "Microsoft.Compute/*/read",
+              "Microsoft.Compute//read",
                   "Microsoft.Compute/virtualMachines/start/action",
                   "Microsoft.Compute/virtualMachines/restart/action",
-                  "Microsoft.Network/*/read",
-              "Microsoft.Storage/*/read",
-                  "Microsoft.Authorization/*/read",
+                  "Microsoft.Network//read",
+              "Microsoft.Storage//read",
+                  "Microsoft.Authorization//read",
               "Microsoft.Resources/subscriptions/resourceGroups/read",
               "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
-              "Microsoft.Insights/alertRules/*",
-                  "Microsoft.Support/*"
+              "Microsoft.Insights/alertRules/",
+                  "Microsoft.Support/"
           ],
           "DataActions": [
               "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/*"
@@ -48,7 +48,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_role_definition_delete
   name: az role definition delete
   summary: Delete a role definition.
@@ -81,7 +81,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_role_definition_list
   name: az role definition list
   summary: List role definitions.
@@ -113,7 +113,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_role_definition_update
   name: az role definition update
   summary: Update a role definition.
@@ -131,18 +131,18 @@ directCommands:
           "roleType": "CustomRole",
           "type": "Microsoft.Authorization/roleDefinitions",
           "Actions": [
-              "Microsoft.Compute/*/read",
+              "Microsoft.Compute//read",
                   "Microsoft.Compute/virtualMachines/start/action",
                   "Microsoft.Compute/virtualMachines/restart/action",
-                  "Microsoft.Network/*/read",
-              "Microsoft.Storage/*/read",
-                  "Microsoft.Authorization/*/read",
+                  "Microsoft.Network//read",
+              "Microsoft.Storage//read",
+                  "Microsoft.Authorization//read",
               "Microsoft.Resources/subscriptions/resourceGroups/read",
               "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
-              "Microsoft.Support/*"
+              "Microsoft.Support/"
               ],
               "DataActions": [
-                  "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/*"
+                  "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/"
           ],
           "NotDataActions": [
               "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write"
@@ -158,7 +158,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/role/_help.py
 commands:
 - az_role_definition_create
 - az_role_definition_delete
@@ -180,6 +180,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/20/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 09/16/2020
   description: Manage role definitions.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_eventgrid_system_topic
+uid: az_eventgrid_system-topic
 name: az eventgrid system-topic
 summary: Manage system topics.
 description: ''
 directCommands:
-- uid: az_eventgrid_system_topic_create
+- uid: az_eventgrid_system-topic_create
   name: az eventgrid system-topic create
   summary: Create a system topic.
   description: ''
@@ -47,8 +47,8 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_system_topic_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_system-topic_delete
   name: az eventgrid system-topic delete
   summary: Delete a system topic.
   description: ''
@@ -77,8 +77,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_system_topic_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_system-topic_list
   name: az eventgrid system-topic list
   summary: List available system topics.
   description: ''
@@ -109,8 +109,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_system_topic_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_system-topic_show
   name: az eventgrid system-topic show
   summary: Get the details of a system topic.
   description: ''
@@ -141,8 +141,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_system_topic_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_system-topic_update
   name: az eventgrid system-topic update
   summary: Update a system topic.
   description: ''
@@ -171,19 +171,19 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
 commands:
-- az_eventgrid_system_topic_create
-- az_eventgrid_system_topic_delete
-- az_eventgrid_system_topic_event_subscription
-- az_eventgrid_system_topic_event_subscription_create
-- az_eventgrid_system_topic_event_subscription_delete
-- az_eventgrid_system_topic_event_subscription_list
-- az_eventgrid_system_topic_event_subscription_show
-- az_eventgrid_system_topic_event_subscription_update
-- az_eventgrid_system_topic_list
-- az_eventgrid_system_topic_show
-- az_eventgrid_system_topic_update
+- az_eventgrid_system-topic_create
+- az_eventgrid_system-topic_delete
+- az_eventgrid_system-topic_event-subscription
+- az_eventgrid_system-topic_event-subscription_create
+- az_eventgrid_system-topic_event-subscription_delete
+- az_eventgrid_system-topic_event-subscription_list
+- az_eventgrid_system-topic_event-subscription_show
+- az_eventgrid_system-topic_event-subscription_update
+- az_eventgrid_system-topic_list
+- az_eventgrid_system-topic_show
+- az_eventgrid_system-topic_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -200,6 +200,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 07/06/2020
   description: Manage system topics.

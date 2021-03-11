@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_ddos_protection
+uid: az_network_ddos-protection
 name: az network ddos-protection
 summary: Manage DDoS Protection Plans.
 description: ''
 directCommands:
-- uid: az_network_ddos_protection_create
+- uid: az_network_ddos-protection_create
   name: az network ddos-protection create
   summary: Create a DDoS protection plan.
   description: ''
@@ -42,8 +42,8 @@ directCommands:
   - name: --vnets
     summary: Space-separated list of VNets (name or IDs) to associate with the plan.
     description: This parameter can only be used if all the VNets are within the same subscription as the DDoS protection plan. If this is not the case, set the protection plan on the VNet directly using the `az network vnet update` command.
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_ddos_protection_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_ddos-protection_delete
   name: az network ddos-protection delete
   summary: Delete a DDoS protection plan.
   description: ''
@@ -68,8 +68,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_ddos_protection_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_ddos-protection_list
   name: az network ddos-protection list
   summary: List DDoS protection plans.
   description: ''
@@ -90,8 +90,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_ddos_protection_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_ddos-protection_show
   name: az network ddos-protection show
   summary: Show details of a DDoS protection plan.
   description: ''
@@ -120,8 +120,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_ddos_protection_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_ddos-protection_update
   name: az network ddos-protection update
   summary: Update a DDoS protection plan.
   description: ''
@@ -172,13 +172,13 @@ directCommands:
   - name: --vnets
     summary: Space-separated list of VNets (name or IDs) to associate with the plan.
     description: This parameter can only be used if all the VNets are within the same subscription as the DDoS protection plan. If this is not the case, set the protection plan on the VNet directly using the `az network vnet update` command.
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_ddos_protection_create
-- az_network_ddos_protection_delete
-- az_network_ddos_protection_list
-- az_network_ddos_protection_show
-- az_network_ddos_protection_update
+- az_network_ddos-protection_create
+- az_network_ddos-protection_delete
+- az_network_ddos-protection_list
+- az_network_ddos-protection_show
+- az_network_ddos-protection_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -195,6 +195,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage DDoS Protection Plans.

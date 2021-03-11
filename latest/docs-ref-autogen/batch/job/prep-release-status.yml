@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_batch_job_prep_release_status
-name: az batch job prep-release-status
+uid: az_batch_job_prep-release-status
+name: Batch job preparation and release status
 summary: View the status of Batch job preparation and release tasks.
 description: ''
 directCommands:
-- uid: az_batch_job_prep_release_status_list
+- uid: az_batch_job_prep-release-status_list
   name: az batch job prep-release-status list
   summary: Lists the execution status of the Job Preparation and Job Release Task for the specified Job across the Compute Nodes where the Job has run.
   description: This API returns the Job Preparation and Job Release Task status on all Compute Nodes that have run the Job Preparation or Job Release Task. This includes Compute Nodes which have since been removed from the Pool. If this API is invoked on a Job which has no Job Preparation or Job Release Task, the Batch service returns HTTP status code 409 (Conflict) with an error code of JobPreparationTaskNotSpecified.
@@ -44,9 +44,9 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
 commands:
-- az_batch_job_prep_release_status_list
+- az_batch_job_prep-release-status_list
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -63,6 +63,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/07/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/19/2019
   description: View the status of Batch job preparation and release tasks.

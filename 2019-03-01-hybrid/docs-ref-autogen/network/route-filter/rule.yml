@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_route_filter_rule
+uid: az_network_route-filter_rule
 name: az network route-filter rule
 summary: Manage rules in a route filter.
 description: To learn more about route filters with Microsoft peering with ExpressRoute, visit <a href="https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli">https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli</a>.
 directCommands:
-- uid: az_network_route_filter_rule_create
+- uid: az_network_route-filter_rule_create
   name: az network route-filter rule create
   summary: Create a rule in a route filter.
   description: ''
@@ -51,8 +51,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_route_filter_rule_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_route-filter_rule_delete
   name: az network route-filter rule delete
   summary: Delete a rule from a route filter.
   description: ''
@@ -81,8 +81,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_route_filter_rule_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_route-filter_rule_list
   name: az network route-filter rule list
   summary: List rules in a route filter.
   description: ''
@@ -110,8 +110,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_route_filter_rule_list_service_communities
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_route-filter_rule_list-service-communities
   name: az network route-filter rule list-service-communities
   summary: Gets all the available BGP service communities.
   description: ''
@@ -127,8 +127,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_route_filter_rule_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_route-filter_rule_show
   name: az network route-filter rule show
   summary: Get the details of a rule in a route filter.
   description: ''
@@ -161,8 +161,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_route_filter_rule_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_route-filter_rule_update
   name: az network route-filter rule update
   summary: Update a rule in a route filter.
   description: ''
@@ -209,14 +209,14 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_route_filter_rule_create
-- az_network_route_filter_rule_delete
-- az_network_route_filter_rule_list
-- az_network_route_filter_rule_list_service_communities
-- az_network_route_filter_rule_show
-- az_network_route_filter_rule_update
+- az_network_route-filter_rule_create
+- az_network_route-filter_rule_delete
+- az_network_route-filter_rule_list
+- az_network_route-filter_rule_list-service-communities
+- az_network_route-filter_rule_show
+- az_network_route-filter_rule_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -233,6 +233,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: To learn more about route filters with Microsoft peering with ExpressRoute, visit <a href="https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli">https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli</a>.

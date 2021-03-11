@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_file
-name: az storage file
+name: Files
 summary: Manage file shares that use the SMB 3.0 protocol.
 description: ''
 directCommands:
@@ -45,8 +45,8 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_file_delete_batch
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_file_delete-batch
   name: az storage file delete-batch
   summary: Delete files from an Azure Storage File Share.
   description: ''
@@ -95,7 +95,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_file_download
   name: az storage file download
   summary: Downloads a file to a file path, with automatic chunking and progress notifications.
@@ -177,8 +177,8 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_file_download_batch
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_file_download-batch
   name: az storage file download-batch
   summary: Download files from an Azure Storage File Share to a local directory in a batch operation.
   description: ''
@@ -239,7 +239,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_file_exists
   name: az storage file exists
   summary: Check for the existence of a file.
@@ -286,8 +286,8 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_file_generate_sas
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_file_generate-sas
   name: az storage file generate-sas
   summary: Generates a shared access signature for the file.
   description: ''
@@ -378,7 +378,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_file_list
   name: az storage file list
   summary: List files and directories in a share.
@@ -443,7 +443,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_file_resize
   name: az storage file resize
   summary: Resizes a file to the specified size.
@@ -490,7 +490,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_file_show
   name: az storage file show
   summary: Returns all user-defined metadata, standard HTTP properties, and system properties for the file.
@@ -536,7 +536,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_file_update
   name: az storage file update
   summary: Sets system properties on the file.
@@ -548,7 +548,7 @@ directCommands:
                            [--account-name]
                            [--clear-content-settings {false, true}]
                            [--connection-string]
-                           [--content-cache-control]
+                           [--content-cache]
                            [--content-disposition]
                            [--content-encoding]
                            [--content-language]
@@ -580,7 +580,7 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
-  - name: --content-cache-control
+  - name: --content-cache --content-cache-control
     summary: The cache control string.
     description: ''
   - name: --content-disposition
@@ -607,7 +607,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_file_upload
   name: az storage file upload
   summary: Upload a file to a share that uses the SMB 3.0 protocol.
@@ -618,7 +618,7 @@ directCommands:
                            [--account-key]
                            [--account-name]
                            [--connection-string]
-                           [--content-cache-control]
+                           [--content-cache]
                            [--content-disposition]
                            [--content-encoding]
                            [--content-language]
@@ -657,7 +657,7 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
-  - name: --content-cache-control
+  - name: --content-cache --content-cache-control
     summary: The cache control string.
     description: ''
   - name: --content-disposition
@@ -705,8 +705,8 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_file_upload_batch
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_file_upload-batch
   name: az storage file upload-batch
   summary: Upload files from a local directory to an Azure Storage File Share in a batch operation.
   description: ''
@@ -716,7 +716,7 @@ directCommands:
                                  [--account-key]
                                  [--account-name]
                                  [--connection-string]
-                                 [--content-cache-control]
+                                 [--content-cache]
                                  [--content-disposition]
                                  [--content-encoding]
                                  [--content-language]
@@ -752,7 +752,7 @@ directCommands:
   - name: --connection-string
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
-  - name: --content-cache-control
+  - name: --content-cache --content-cache-control
     summary: The cache control string.
     description: ''
   - name: --content-disposition
@@ -795,7 +795,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_file_url
   name: az storage file url
   summary: Create the url to access a file.
@@ -842,18 +842,18 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
 - az_storage_file_copy
 - az_storage_file_copy_cancel
 - az_storage_file_copy_start
-- az_storage_file_copy_start_batch
+- az_storage_file_copy_start-batch
 - az_storage_file_delete
-- az_storage_file_delete_batch
+- az_storage_file_delete-batch
 - az_storage_file_download
-- az_storage_file_download_batch
+- az_storage_file_download-batch
 - az_storage_file_exists
-- az_storage_file_generate_sas
+- az_storage_file_generate-sas
 - az_storage_file_list
 - az_storage_file_metadata
 - az_storage_file_metadata_show
@@ -862,7 +862,7 @@ commands:
 - az_storage_file_show
 - az_storage_file_update
 - az_storage_file_upload
-- az_storage_file_upload_batch
+- az_storage_file_upload-batch
 - az_storage_file_url
 globalParameters:
 - name: --debug
@@ -880,6 +880,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage file shares that use the SMB 3.0 protocol.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_dls_account_trusted_provider
-name: az dls account trusted-provider
+uid: az_dls_account_trusted-provider
+name: Data Lake Store account trusted identity providers
 summary: Manage Data Lake Store account trusted identity providers.
 description: ''
 directCommands:
-- uid: az_dls_account_trusted_provider_create
+- uid: az_dls_account_trusted-provider_create
   name: az dls account trusted-provider create
   summary: Creates or updates the specified trusted identity provider.
   description: During update, the trusted identity provider with the specified name will be replaced with this new provider.
@@ -34,8 +34,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
-- uid: az_dls_account_trusted_provider_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dls/_help.py
+- uid: az_dls_account_trusted-provider_delete
   name: az dls account trusted-provider delete
   summary: Deletes the specified trusted identity provider from the specified Data Lake Store account.
   description: ''
@@ -63,8 +63,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
-- uid: az_dls_account_trusted_provider_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dls/_help.py
+- uid: az_dls_account_trusted-provider_list
   name: az dls account trusted-provider list
   summary: Lists the Data Lake Store trusted identity providers within the specified Data Lake Store account.
   description: ''
@@ -90,8 +90,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
-- uid: az_dls_account_trusted_provider_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dls/_help.py
+- uid: az_dls_account_trusted-provider_show
   name: az dls account trusted-provider show
   summary: Gets the specified Data Lake Store trusted identity provider.
   description: ''
@@ -123,8 +123,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
-- uid: az_dls_account_trusted_provider_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dls/_help.py
+- uid: az_dls_account_trusted-provider_update
   name: az dls account trusted-provider update
   summary: Updates the specified trusted identity provider.
   description: ''
@@ -156,13 +156,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/dls/_help.py
 commands:
-- az_dls_account_trusted_provider_create
-- az_dls_account_trusted_provider_delete
-- az_dls_account_trusted_provider_list
-- az_dls_account_trusted_provider_show
-- az_dls_account_trusted_provider_update
+- az_dls_account_trusted-provider_create
+- az_dls_account_trusted-provider_delete
+- az_dls_account_trusted-provider_list
+- az_dls_account_trusted-provider_show
+- az_dls_account_trusted-provider_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -179,6 +179,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 06/21/2019
   description: Manage Data Lake Store account trusted identity providers.

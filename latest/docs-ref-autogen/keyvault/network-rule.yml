@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_keyvault_network_rule
+uid: az_keyvault_network-rule
 name: az keyvault network-rule
 summary: Manage vault network ACLs.
 description: ''
 directCommands:
-- uid: az_keyvault_network_rule_add
+- uid: az_keyvault_network-rule_add
   name: az keyvault network-rule add
   summary: Add a network rule to the network ACLs for a Key Vault.
   description: ''
@@ -40,8 +40,8 @@ directCommands:
   - name: --vnet-name
     summary: Name of a virtual network.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
-- uid: az_keyvault_network_rule_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+- uid: az_keyvault_network-rule_list
   name: az keyvault network-rule list
   summary: List the network rules from the network ACLs for a Key Vault.
   description: ''
@@ -65,8 +65,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
-- uid: az_keyvault_network_rule_remove
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+- uid: az_keyvault_network-rule_remove
   name: az keyvault network-rule remove
   summary: Remove a network rule from the network ACLs for a Key Vault.
   description: ''
@@ -102,8 +102,8 @@ directCommands:
   - name: --vnet-name
     summary: Name of a virtual network.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
-- uid: az_keyvault_network_rule_wait
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+- uid: az_keyvault_network-rule_wait
   name: az keyvault network-rule wait
   summary: Place the CLI in a waiting state until a condition of the vault is met.
   description: ''
@@ -156,12 +156,12 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 commands:
-- az_keyvault_network_rule_add
-- az_keyvault_network_rule_list
-- az_keyvault_network_rule_remove
-- az_keyvault_network_rule_wait
+- az_keyvault_network-rule_add
+- az_keyvault_network-rule_list
+- az_keyvault_network-rule_remove
+- az_keyvault_network-rule_wait
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -178,6 +178,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/14/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 09/25/2020
   description: Manage vault network ACLs.

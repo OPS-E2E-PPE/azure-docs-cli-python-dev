@@ -4,7 +4,7 @@ name: az acr task
 summary: Manage a collection of steps for building, testing and OS & Framework patching container images using Azure Container Registries.
 description: ''
 directCommands:
-- uid: az_acr_task_cancel_run
+- uid: az_acr_task_cancel-run
   name: az acr task cancel-run
   summary: Cancel a specified run of an Azure Container Registry.
   description: ''
@@ -32,7 +32,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_task_create
   name: az acr task create
   summary: Create a series of steps for building, testing and OS & Framework patching containers. Tasks support triggers from git commits and base image updates.
@@ -235,7 +235,7 @@ directCommands:
   - name: --values
     summary: The task values/parameters file path relative to the source context.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_task_delete
   name: az acr task delete
   summary: Delete a task from an Azure Container Registry.
@@ -268,7 +268,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_task_list
   name: az acr task list
   summary: List the tasks for an Azure Container Registry.
@@ -296,8 +296,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-- uid: az_acr_task_list_runs
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
+- uid: az_acr_task_list-runs
   name: az acr task list-runs
   summary: List all of the executed runs for an Azure Container Registry, with the ability to filter by a specific Task.
   description: ''
@@ -344,7 +344,7 @@ directCommands:
     defaultValue: "15"
     summary: Limit the number of latest runs in the results.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_task_logs
   name: az acr task logs
   summary: Show logs for a particular run. If no run-id is supplied, show logs for the last created run.
@@ -386,7 +386,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_task_run
   name: az acr task run
   summary: Manually trigger a task that might otherwise be waiting for git commits or base image update triggers.
@@ -469,7 +469,7 @@ directCommands:
   - name: --update-trigger-token
     summary: The payload that will be passed back alongwith the base image trigger notification.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_task_show
   name: az acr task show
   summary: Get the properties of a named task for an Azure Container Registry.
@@ -508,8 +508,8 @@ directCommands:
   - name: --with-secure-properties
     summary: Indicates whether the secure properties of a task should be returned.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-- uid: az_acr_task_show_run
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
+- uid: az_acr_task_show-run
   name: az acr task show-run
   summary: Get the properties of a specified run of an Azure Container Registry Task.
   description: ''
@@ -537,7 +537,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_task_update
   name: az acr task update
   summary: Update a task for an Azure Container Registry.
@@ -686,8 +686,8 @@ directCommands:
   - name: --values
     summary: The task values/parameters file path relative to the source context.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-- uid: az_acr_task_update_run
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
+- uid: az_acr_task_update-run
   name: az acr task update-run
   summary: Patch the run properties of an Azure Container Registry Task.
   description: ''
@@ -720,9 +720,9 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acr/_help.py
 commands:
-- az_acr_task_cancel_run
+- az_acr_task_cancel-run
 - az_acr_task_create
 - az_acr_task_credential
 - az_acr_task_credential_add
@@ -735,18 +735,18 @@ commands:
 - az_acr_task_identity_remove
 - az_acr_task_identity_show
 - az_acr_task_list
-- az_acr_task_list_runs
+- az_acr_task_list-runs
 - az_acr_task_logs
 - az_acr_task_run
 - az_acr_task_show
-- az_acr_task_show_run
+- az_acr_task_show-run
 - az_acr_task_timer
 - az_acr_task_timer_add
 - az_acr_task_timer_list
 - az_acr_task_timer_remove
 - az_acr_task_timer_update
 - az_acr_task_update
-- az_acr_task_update_run
+- az_acr_task_update-run
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -763,6 +763,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/26/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 08/28/2020
   description: Manage a collection of steps for building, testing and OS & Framework patching container images using Azure Container Registries.

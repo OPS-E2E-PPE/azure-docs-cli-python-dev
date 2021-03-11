@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_sql_midb_short_term_retention_policy
+uid: az_sql_midb_short-term-retention-policy
 name: az sql midb short-term-retention-policy
 summary: Manage SQL Managed Instance database backup short term retention policy.
 description: ''
 directCommands:
-- uid: az_sql_midb_short_term_retention_policy_set
+- uid: az_sql_midb_short-term-retention-policy_set
   name: az sql midb short-term-retention-policy set
   summary: Update short term retention for automated backups on a single database.
   description: ''
@@ -49,8 +49,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_midb_short_term_retention_policy_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_midb_short-term-retention-policy_show
   name: az sql midb short-term-retention-policy show
   summary: Show short term retention for automated backups on a single database.
   description: ''
@@ -89,10 +89,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 commands:
-- az_sql_midb_short_term_retention_policy_set
-- az_sql_midb_short_term_retention_policy_show
+- az_sql_midb_short-term-retention-policy_set
+- az_sql_midb_short-term-retention-policy_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -109,6 +109,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/28/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/22/2020
   description: Manage SQL Managed Instance database backup short term retention policy.

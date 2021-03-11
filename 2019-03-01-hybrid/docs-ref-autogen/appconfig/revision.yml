@@ -70,7 +70,7 @@ directCommands:
   - name: --top -t
     summary: Maximum number of items to return. Must be a positive integer. Default to 100.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 commands:
 - az_appconfig_revision_list
 globalParameters:
@@ -89,6 +89,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/18/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage revisions for key-values stored in an App Configuration.

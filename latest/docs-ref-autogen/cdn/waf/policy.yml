@@ -33,7 +33,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_waf_policy_list
   name: az cdn waf policy list
   summary: List CDN WAF policies.
@@ -57,7 +57,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_waf_policy_set
   name: az cdn waf policy set
   summary: Create a new CDN WAF policy.
@@ -116,7 +116,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_waf_policy_show
   name: az cdn waf policy show
   summary: Show details of a CDN WAF policy.
@@ -146,32 +146,32 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 commands:
-- az_cdn_waf_policy_custom_rule
-- az_cdn_waf_policy_custom_rule_delete
-- az_cdn_waf_policy_custom_rule_list
-- az_cdn_waf_policy_custom_rule_set
-- az_cdn_waf_policy_custom_rule_show
+- az_cdn_waf_policy_custom-rule
+- az_cdn_waf_policy_custom-rule_delete
+- az_cdn_waf_policy_custom-rule_list
+- az_cdn_waf_policy_custom-rule_set
+- az_cdn_waf_policy_custom-rule_show
 - az_cdn_waf_policy_delete
 - az_cdn_waf_policy_list
-- az_cdn_waf_policy_managed_rule_set
-- az_cdn_waf_policy_managed_rule_set_add
-- az_cdn_waf_policy_managed_rule_set_list
-- az_cdn_waf_policy_managed_rule_set_list_available
-- az_cdn_waf_policy_managed_rule_set_remove
-- az_cdn_waf_policy_managed_rule_set_rule_group_override
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_delete
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_list
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_list_available
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_set
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_show
-- az_cdn_waf_policy_managed_rule_set_show
-- az_cdn_waf_policy_rate_limit_rule
-- az_cdn_waf_policy_rate_limit_rule_delete
-- az_cdn_waf_policy_rate_limit_rule_list
-- az_cdn_waf_policy_rate_limit_rule_set
-- az_cdn_waf_policy_rate_limit_rule_show
+- az_cdn_waf_policy_managed-rule-set
+- az_cdn_waf_policy_managed-rule-set_add
+- az_cdn_waf_policy_managed-rule-set_list
+- az_cdn_waf_policy_managed-rule-set_list-available
+- az_cdn_waf_policy_managed-rule-set_remove
+- az_cdn_waf_policy_managed-rule-set_rule-group-override
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_delete
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_list
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_list-available
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_set
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_show
+- az_cdn_waf_policy_managed-rule-set_show
+- az_cdn_waf_policy_rate-limit-rule
+- az_cdn_waf_policy_rate-limit-rule_delete
+- az_cdn_waf_policy_rate-limit-rule_list
+- az_cdn_waf_policy_rate-limit-rule_set
+- az_cdn_waf_policy_rate-limit-rule_show
 - az_cdn_waf_policy_set
 - az_cdn_waf_policy_show
 globalParameters:
@@ -190,6 +190,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/02/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 07/30/2020
   description: Manage CDN WAF policies.

@@ -4,7 +4,7 @@ name: az storage fs access
 summary: Manage file system access and permissions for Azure Data Lake Storage Gen2 account.
 description: ''
 directCommands:
-- uid: az_storage_fs_access_remove_recursive
+- uid: az_storage_fs_access_remove-recursive
   name: az storage fs access remove-recursive
   summary: Remove the Access Control on a path and sub-paths in Azure Data Lake Storage Gen2 account.
   description: ''
@@ -75,7 +75,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_fs_access_set
   name: az storage fs access set
   summary: Set the access control properties of a path(directory or file) in Azure Data Lake Storage Gen2 account.
@@ -143,8 +143,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_fs_access_set_recursive
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_fs_access_set-recursive
   name: az storage fs access set-recursive
   summary: Set the Access Control on a path and sub-paths in Azure Data Lake Storage Gen2 account.
   description: ''
@@ -215,7 +215,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_fs_access_show
   name: az storage fs access show
   summary: Show the access control properties of a path (directory or file) in Azure Data Lake Storage Gen2 account.
@@ -265,8 +265,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_fs_access_update_recursive
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_fs_access_update-recursive
   name: az storage fs access update-recursive
   summary: Modify the Access Control on a path and sub-paths in Azure Data Lake Storage Gen2 account.
   description: ''
@@ -337,13 +337,13 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
-- az_storage_fs_access_remove_recursive
+- az_storage_fs_access_remove-recursive
 - az_storage_fs_access_set
-- az_storage_fs_access_set_recursive
+- az_storage_fs_access_set-recursive
 - az_storage_fs_access_show
-- az_storage_fs_access_update_recursive
+- az_storage_fs_access_update-recursive
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -360,6 +360,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage file system access and permissions for Azure Data Lake Storage Gen2 account.

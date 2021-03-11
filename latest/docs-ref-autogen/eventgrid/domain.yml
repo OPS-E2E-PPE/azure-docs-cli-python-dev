@@ -77,7 +77,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
 - uid: az_eventgrid_domain_delete
   name: az eventgrid domain delete
   summary: Delete a domain.
@@ -103,7 +103,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
 - uid: az_eventgrid_domain_list
   name: az eventgrid domain list
   summary: List available domains.
@@ -135,7 +135,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
 - uid: az_eventgrid_domain_show
   name: az eventgrid domain show
   summary: Get the details of a domain.
@@ -169,7 +169,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
 - uid: az_eventgrid_domain_update
   name: az eventgrid domain update
   summary: Update a domain.
@@ -218,7 +218,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
 commands:
 - az_eventgrid_domain_create
 - az_eventgrid_domain_delete
@@ -233,6 +233,15 @@ commands:
 - az_eventgrid_domain_topic_list
 - az_eventgrid_domain_topic_show
 - az_eventgrid_domain_update
+- az_eventgrid_domain_private-endpoint-connection
+- az_eventgrid_domain_private-endpoint-connection_approve
+- az_eventgrid_domain_private-endpoint-connection_delete
+- az_eventgrid_domain_private-endpoint-connection_list
+- az_eventgrid_domain_private-endpoint-connection_reject
+- az_eventgrid_domain_private-endpoint-connection_show
+- az_eventgrid_domain_private-link-resource
+- az_eventgrid_domain_private-link-resource_list
+- az_eventgrid_domain_private-link-resource_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -249,6 +258,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 07/06/2020
   description: Manage event domains.

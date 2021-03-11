@@ -4,7 +4,7 @@ name: az sql vm
 summary: Manage SQL virtual machines.
 description: ''
 directCommands:
-- uid: az_sql_vm_add_to_group
+- uid: az_sql_vm_add-to-group
   name: az sql vm add-to-group
   summary: Adds SQL virtual machine to a SQL virtual machine group.
   description: ''
@@ -47,7 +47,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 - uid: az_sql_vm_create
   name: az sql vm create
   summary: Creates a SQL virtual machine.
@@ -234,7 +234,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 - uid: az_sql_vm_delete
   name: az sql vm delete
   summary: Deletes a SQL virtual machine.
@@ -261,7 +261,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 - uid: az_sql_vm_list
   name: az sql vm list
   summary: Lists all SQL virtual machines in a resource group or subscription.
@@ -280,8 +280,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_vm_remove_from_group
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_vm_remove-from-group
   name: az sql vm remove-from-group
   summary: Remove SQL virtual machine from its current SQL virtual machine group.
   description: ''
@@ -306,7 +306,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 - uid: az_sql_vm_show
   name: az sql vm show
   summary: Gets a SQL virtual machine.
@@ -338,7 +338,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 - uid: az_sql_vm_update
   name: az sql vm update
   summary: Updates the properties of a SQL virtual machine.
@@ -533,25 +533,25 @@ directCommands:
     defaultValue: "1"
     summary: Do not prompt for confirmation. Requires --sql-mgmt-type.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 commands:
-- az_sql_vm_add_to_group
+- az_sql_vm_add-to-group
 - az_sql_vm_create
 - az_sql_vm_delete
 - az_sql_vm_group
-- az_sql_vm_group_ag_listener
-- az_sql_vm_group_ag_listener_create
-- az_sql_vm_group_ag_listener_delete
-- az_sql_vm_group_ag_listener_list
-- az_sql_vm_group_ag_listener_show
-- az_sql_vm_group_ag_listener_update
+- az_sql_vm_group_ag-listener
+- az_sql_vm_group_ag-listener_create
+- az_sql_vm_group_ag-listener_delete
+- az_sql_vm_group_ag-listener_list
+- az_sql_vm_group_ag-listener_show
+- az_sql_vm_group_ag-listener_update
 - az_sql_vm_group_create
 - az_sql_vm_group_delete
 - az_sql_vm_group_list
 - az_sql_vm_group_show
 - az_sql_vm_group_update
 - az_sql_vm_list
-- az_sql_vm_remove_from_group
+- az_sql_vm_remove-from-group
 - az_sql_vm_show
 - az_sql_vm_update
 globalParameters:
@@ -570,6 +570,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/28/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/22/2020
   description: Manage SQL virtual machines.

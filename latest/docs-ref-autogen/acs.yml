@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_acs
-name: az acs
+name: Container Service
 summary: Manage Azure Container Services.
 description: >-
   ACS will be retired as a standalone service on January 31, 2020.
@@ -40,7 +40,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_acs_create
   name: az acs create
   summary: Create a new container service.
@@ -215,7 +215,7 @@ directCommands:
   - name: --windows
     summary: If true, set the default osType of agent pools to be Windows.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_acs_delete
   name: az acs delete
   summary: Delete a container service.
@@ -244,7 +244,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_acs_list
   name: az acs list
   summary: List container services.
@@ -263,8 +263,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-- uid: az_acs_list_locations
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acs/_help.py
+- uid: az_acs_list-locations
   name: az acs list-locations
   summary: List locations where Azure Container Service is in preview and in production.
   description: ''
@@ -273,7 +273,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_acs_scale
   name: az acs scale
   summary: Change the private agent count of a container service.
@@ -303,7 +303,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_acs_show
   name: az acs show
   summary: Show the details for a container service.
@@ -332,7 +332,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_acs_wait
   name: az acs wait
   summary: Wait for a container service to reach a desired state.
@@ -384,20 +384,20 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/acs/_help.py
 commands:
 - az_acs_browse
 - az_acs_create
 - az_acs_dcos
 - az_acs_dcos_browse
-- az_acs_dcos_install_cli
+- az_acs_dcos_install-cli
 - az_acs_delete
 - az_acs_kubernetes
 - az_acs_kubernetes_browse
-- az_acs_kubernetes_get_credentials
-- az_acs_kubernetes_install_cli
+- az_acs_kubernetes_get-credentials
+- az_acs_kubernetes_install-cli
 - az_acs_list
-- az_acs_list_locations
+- az_acs_list-locations
 - az_acs_scale
 - az_acs_show
 - az_acs_wait
@@ -417,8 +417,8 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/13/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: >-
     ACS will be retired as a standalone service on January 31, 2020.
 

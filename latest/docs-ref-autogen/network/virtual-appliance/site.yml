@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_virtual_appliance_site
+uid: az_network_virtual-appliance_site
 name: az network virtual-appliance site
 summary: Manage Azure Network Virtual Appliance Site.
 description: ''
 directCommands:
-- uid: az_network_virtual_appliance_site_create
+- uid: az_network_virtual-appliance_site_create
   name: az network virtual-appliance site create
   summary: Create an Azure network virtual appliance site.
   description: ''
@@ -53,8 +53,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_virtual_appliance_site_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_virtual-appliance_site_delete
   name: az network virtual-appliance site delete
   summary: Delete an Azure network virtual appliance site.
   description: ''
@@ -84,8 +84,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_virtual_appliance_site_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_virtual-appliance_site_list
   name: az network virtual-appliance site list
   summary: List all Azure network virtual appliance site.
   description: ''
@@ -110,8 +110,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_virtual_appliance_site_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_virtual-appliance_site_show
   name: az network virtual-appliance site show
   summary: Show the detail of an Azure network virtual appliance site.
   description: ''
@@ -141,8 +141,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_virtual_appliance_site_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_virtual-appliance_site_update
   name: az network virtual-appliance site update
   summary: Update an Azure network virtual appliance site.
   description: ''
@@ -207,13 +207,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_virtual_appliance_site_create
-- az_network_virtual_appliance_site_delete
-- az_network_virtual_appliance_site_list
-- az_network_virtual_appliance_site_show
-- az_network_virtual_appliance_site_update
+- az_network_virtual-appliance_site_create
+- az_network_virtual-appliance_site_delete
+- az_network_virtual-appliance_site_list
+- az_network_virtual-appliance_site_show
+- az_network_virtual-appliance_site_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -230,6 +230,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage Azure Network Virtual Appliance Site.

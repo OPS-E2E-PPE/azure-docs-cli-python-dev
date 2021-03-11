@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_nic_ip_config_address_pool
-name: az network nic ip-config address-pool
+uid: az_network_nic_ip-config_address-pool
+name: Address pools
 summary: Manage address pools in an IP configuration.
 description: ''
 directCommands:
-- uid: az_network_nic_ip_config_address_pool_add
+- uid: az_network_nic_ip-config_address-pool_add
   name: az network nic ip-config address-pool add
   summary: Add an address pool to an IP configuration.
   description: ''
@@ -50,8 +50,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_nic_ip_config_address_pool_remove
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_nic_ip-config_address-pool_remove
   name: az network nic ip-config address-pool remove
   summary: Remove an address pool of an IP configuration.
   description: ''
@@ -97,10 +97,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_nic_ip_config_address_pool_add
-- az_network_nic_ip_config_address_pool_remove
+- az_network_nic_ip-config_address-pool_add
+- az_network_nic_ip-config_address-pool_remove
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -117,6 +117,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage address pools in an IP configuration.

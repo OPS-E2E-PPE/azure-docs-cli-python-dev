@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
 uid: az_tag
-name: az tag
+name: Resource tags
 summary: Tag Management on a resource.
 description: ''
 directCommands:
-- uid: az_tag_add_value
+- uid: az_tag_add-value
   name: az tag add-value
   summary: Create a tag value.
   description: ''
@@ -28,7 +28,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_tag_create
   name: az tag create
   summary: Create tags on a specific resource.
@@ -56,7 +56,7 @@ directCommands:
   - name: --tags
     summary: The tags to be applied on the resource.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_tag_delete
   name: az tag delete
   summary: Delete tags on a specific resource.
@@ -84,7 +84,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_tag_list
   name: az tag list
   summary: List the entire set of tags on a specific resource.
@@ -106,8 +106,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
-- uid: az_tag_remove_value
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
+- uid: az_tag_remove-value
   name: az tag remove-value
   summary: Deletes a tag value.
   description: ''
@@ -128,13 +128,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 commands:
-- az_tag_add_value
+- az_tag_add-value
 - az_tag_create
 - az_tag_delete
 - az_tag_list
-- az_tag_remove_value
+- az_tag_remove-value
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -151,6 +151,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/24/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Tag Management on a resource.

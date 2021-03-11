@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_batch_node_remote_desktop
-name: az batch node remote-desktop
+uid: az_batch_node_remote-desktop
+name: Remote desktop protocols for batch compute nodes
 summary: Retrieve the remote desktop protocol file for a Batch compute node.
 description: ''
 directCommands:
-- uid: az_batch_node_remote_desktop_download
+- uid: az_batch_node_remote-desktop_download
   name: az batch node remote-desktop download
   summary: Gets the Remote Desktop Protocol file for the specified Compute Node.
   description: Before you can access a Compute Node by using the RDP file, you must create a user Account on the Compute Node. This API can only be invoked on Pools created with a cloud service configuration. For Pools created with a virtual machine configuration, see the GetRemoteLoginSettings API.
@@ -42,9 +42,9 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
 commands:
-- az_batch_node_remote_desktop_download
+- az_batch_node_remote-desktop_download
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -61,6 +61,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/07/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/19/2019
   description: Retrieve the remote desktop protocol file for a Batch compute node.

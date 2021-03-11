@@ -17,9 +17,12 @@ directCommands:
                                  --resource-group
                                  --usage-threshold
                                  --vnet
+                                 [--allowed-clients]
                                  [--backup-enabled {false, true}]
                                  [--backup-id]
                                  [--backup-policy-id]
+                                 [--cifs {false, true}]
+                                 [--encryption-key-source]
                                  [--endpoint-type]
                                  [--has-root-access]
                                  [--kerberos-enabled {false, true}]
@@ -33,6 +36,7 @@ directCommands:
                                  [--protocol-types]
                                  [--remote-volume-resource-id]
                                  [--replication-schedule]
+                                 [--rule-index]
                                  [--security-style]
                                  [--service-level {Premium, Standard, Ultra}]
                                  [--smb-continuously-avl {false, true}]
@@ -44,6 +48,8 @@ directCommands:
                                  [--subscription]
                                  [--tags]
                                  [--throughput-mibps]
+                                 [--unix-read-only {false, true}]
+                                 [--unix-read-write {false, true}]
                                  [--vault-id]
                                  [--volume-type]
   examples:
@@ -83,6 +89,9 @@ directCommands:
     summary: The ARM Id or name of the vnet for the volume.
     description: ''
   optionalParameters:
+  - name: --allowed-clients
+    summary: Client ingress specification as comma separated string with IPv4 CIDRs, IPv4 host addresses and host names.
+    description: ''
   - name: --backup-enabled
     parameterValueGroup: false, true
     summary: Backup Enabled.
@@ -92,6 +101,13 @@ directCommands:
     description: ''
   - name: --backup-policy-id
     summary: Backup Policy Resource ID.
+    description: ''
+  - name: --cifs
+    parameterValueGroup: false, true
+    summary: Allows NFSv3 protocol. Enable only for NFSv3 type volumes.
+    description: ''
+  - name: --encryption-key-source
+    summary: Encryption Key Source.
     description: ''
   - name: --endpoint-type
     summary: Whether the volume is source ("src") or destination ("dst").
@@ -134,6 +150,9 @@ directCommands:
   - name: --replication-schedule
     summary: The replication schedule, e.g. "_10minutely, hourly, daily, weekly, monthly".
     description: ''
+  - name: --rule-index
+    summary: Order index.
+    description: ''
   - name: --security-style
     summary: The security style of volume.
     description: ''
@@ -171,13 +190,21 @@ directCommands:
   - name: --throughput-mibps
     summary: Maximum throughput in Mibps that can be achieved by this volume.
     description: ''
+  - name: --unix-read-only
+    parameterValueGroup: false, true
+    summary: Read only access.
+    description: ''
+  - name: --unix-read-write
+    parameterValueGroup: false, true
+    summary: Read and write access.
+    description: ''
   - name: --vault-id
     summary: Vault Resource ID.
     description: ''
   - name: --volume-type
     summary: Whether the volume should be a data protection volume ("DataProtection"), empty if this is not a data protection volume.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_volume_delete
   name: az netappfiles volume delete
   summary: Delete the specified ANF volume.
@@ -211,7 +238,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_volume_list
   name: az netappfiles volume list
   summary: List the ANF Pools for the specified account.
@@ -245,8 +272,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
-- uid: az_netappfiles_volume_pool_change
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+- uid: az_netappfiles_volume_pool-change
   name: az netappfiles volume pool-change
   summary: Get the specified ANF volume.
   description: ''
@@ -285,7 +312,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_volume_revert
   name: az netappfiles volume revert
   summary: Revert a volume to one of its snapshots.
@@ -325,7 +352,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_volume_show
   name: az netappfiles volume show
   summary: Get the specified ANF volume.
@@ -363,7 +390,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_volume_update
   name: az netappfiles volume update
   summary: Update the specified ANF volume with the values provided. Unspecified values will remain unchanged. Export policies are amended/created with the subgroup commands.
@@ -452,7 +479,7 @@ directCommands:
   - name: --vault-id
     summary: Vault Resource ID.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 commands:
 - az_netappfiles_volume_backup
 - az_netappfiles_volume_backup_create
@@ -462,15 +489,15 @@ commands:
 - az_netappfiles_volume_backup_update
 - az_netappfiles_volume_create
 - az_netappfiles_volume_delete
-- az_netappfiles_volume_export_policy
-- az_netappfiles_volume_export_policy_add
-- az_netappfiles_volume_export_policy_list
-- az_netappfiles_volume_export_policy_remove
+- az_netappfiles_volume_export-policy
+- az_netappfiles_volume_export-policy_add
+- az_netappfiles_volume_export-policy_list
+- az_netappfiles_volume_export-policy_remove
 - az_netappfiles_volume_list
-- az_netappfiles_volume_pool_change
+- az_netappfiles_volume_pool-change
 - az_netappfiles_volume_replication
 - az_netappfiles_volume_replication_approve
-- az_netappfiles_volume_replication_re_initialize
+- az_netappfiles_volume_replication_re-initialize
 - az_netappfiles_volume_replication_remove
 - az_netappfiles_volume_replication_resume
 - az_netappfiles_volume_replication_status
@@ -494,6 +521,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/25/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/08/2020
   description: Manage Azure NetApp Files (ANF) Volume Resources.

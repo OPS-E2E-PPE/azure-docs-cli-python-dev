@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_express_route_port
+uid: az_network_express-route_port
 name: az network express-route port
 summary: Manage ExpressRoute ports.
 description: ''
 directCommands:
-- uid: az_network_express_route_port_create
+- uid: az_network_express-route_port_create
   name: az network express-route port create
   summary: Create an ExpressRoute port.
   description: ''
@@ -49,8 +49,8 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express_route_port_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_express-route_port_delete
   name: az network express-route port delete
   summary: Delete an ExpressRoute port.
   description: ''
@@ -75,8 +75,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express_route_port_generate_loa
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_express-route_port_generate-loa
   name: az network express-route port generate-loa
   summary: Generate and download a letter of authorization for the requested ExpressRoutePort.
   description: ''
@@ -98,8 +98,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express_route_port_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_express-route_port_list
   name: az network express-route port list
   summary: List ExpressRoute ports.
   description: ''
@@ -120,8 +120,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express_route_port_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_express-route_port_show
   name: az network express-route port show
   summary: Get the details of an ExpressRoute port.
   description: ''
@@ -150,8 +150,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express_route_port_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_express-route_port_update
   name: az network express-route port update
   summary: Update settings of an ExpressRoute port.
   description: ''
@@ -196,20 +196,20 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_express_route_port_create
-- az_network_express_route_port_delete
-- az_network_express_route_port_generate_loa
-- az_network_express_route_port_link
-- az_network_express_route_port_link_list
-- az_network_express_route_port_link_show
-- az_network_express_route_port_list
-- az_network_express_route_port_location
-- az_network_express_route_port_location_list
-- az_network_express_route_port_location_show
-- az_network_express_route_port_show
-- az_network_express_route_port_update
+- az_network_express-route_port_create
+- az_network_express-route_port_delete
+- az_network_express-route_port_generate-loa
+- az_network_express-route_port_link
+- az_network_express-route_port_link_list
+- az_network_express-route_port_link_show
+- az_network_express-route_port_list
+- az_network_express-route_port_location
+- az_network_express-route_port_location_list
+- az_network_express-route_port_location_show
+- az_network_express-route_port_show
+- az_network_express-route_port_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -226,6 +226,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage ExpressRoute ports.

@@ -4,7 +4,7 @@ name: az apim
 summary: Manage Azure API Management services.
 description: ''
 directCommands:
-- uid: az_apim_apply_network_updates
+- uid: az_apim_apply-network-updates
   name: az apim apply-network-updates
   summary: Back up an API Management service to the configured storage account.
   description: ''
@@ -33,7 +33,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_backup
   name: az apim backup
   summary: Creates a backup of the API Management service to the given Azure Storage Account. This is long running operation and could take several minutes to complete.
@@ -82,8 +82,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
-- uid: az_apim_check_name
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
+- uid: az_apim_check-name
   name: az apim check-name
   summary: Checks to see if a service name is available to use.
   description: ''
@@ -99,7 +99,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_create
   name: az apim create
   summary: Create an API Management service instance.
@@ -180,7 +180,7 @@ directCommands:
     parameterValueGroup: External, Internal, None
     summary: The virtual network type.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_delete
   name: az apim delete
   summary: Deletes an API Management service.
@@ -213,7 +213,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_list
   name: az apim list
   summary: List API Management service instances.
@@ -232,7 +232,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_restore
   name: az apim restore
   summary: Restores a backup of an API Management service created using the ApiManagementService_Backup operation on the current service. This is a long running operation and could take several minutes to complete.
@@ -281,7 +281,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_show
   name: az apim show
   summary: Show details of an API Management service instance.
@@ -307,7 +307,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_update
   name: az apim update
   summary: Update an API Management service instance.
@@ -385,7 +385,7 @@ directCommands:
     parameterValueGroup: External, Internal, None
     summary: The virtual network type.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_wait
   name: az apim wait
   summary: Place the CLI in a waiting state until a condition of an apim is met.
@@ -440,7 +440,7 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/apim/_help.py
 commands:
 - az_apim_api
 - az_apim_api_create
@@ -471,9 +471,9 @@ commands:
 - az_apim_api_versionset_show
 - az_apim_api_versionset_update
 - az_apim_api_wait
-- az_apim_apply_network_updates
+- az_apim_apply-network-updates
 - az_apim_backup
-- az_apim_check_name
+- az_apim_check-name
 - az_apim_create
 - az_apim_delete
 - az_apim_list
@@ -482,7 +482,7 @@ commands:
 - az_apim_nv_delete
 - az_apim_nv_list
 - az_apim_nv_show
-- az_apim_nv_show_secret
+- az_apim_nv_show-secret
 - az_apim_nv_update
 - az_apim_product
 - az_apim_product_api
@@ -516,6 +516,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/01/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 09/22/2020
   description: Manage Azure API Management services.

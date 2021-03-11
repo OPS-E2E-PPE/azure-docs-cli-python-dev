@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_express_route_port_link
+uid: az_network_express-route_port_link
 name: az network express-route port link
 summary: View ExpressRoute links.
 description: ''
 directCommands:
-- uid: az_network_express_route_port_link_list
+- uid: az_network_express-route_port_link_list
   name: az network express-route port link list
   summary: List ExpressRoute links.
   description: ''
@@ -32,8 +32,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express_route_port_link_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_express-route_port_link_show
   name: az network express-route port link show
   summary: Get the details of an ExpressRoute link.
   description: ''
@@ -66,10 +66,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_express_route_port_link_list
-- az_network_express_route_port_link_show
+- az_network_express-route_port_link_list
+- az_network_express-route_port_link_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -86,6 +86,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: View ExpressRoute links.

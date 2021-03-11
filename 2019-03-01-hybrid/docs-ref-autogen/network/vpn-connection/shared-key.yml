@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_vpn_connection_shared_key
-name: az network vpn-connection shared-key
+uid: az_network_vpn-connection_shared-key
+name: VPN shared keys
 summary: Manage VPN shared keys.
 description: ''
 directCommands:
-- uid: az_network_vpn_connection_shared_key_reset
+- uid: az_network_vpn-connection_shared-key_reset
   name: az network vpn-connection shared-key reset
   summary: Reset a VPN connection shared key.
   description: ''
@@ -37,8 +37,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vpn_connection_shared_key_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vpn-connection_shared-key_show
   name: az network vpn-connection shared-key show
   summary: Retrieve a VPN connection shared key.
   description: ''
@@ -69,8 +69,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vpn_connection_shared_key_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vpn-connection_shared-key_update
   name: az network vpn-connection shared-key update
   summary: Update a VPN connection shared key.
   description: ''
@@ -119,11 +119,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_vpn_connection_shared_key_reset
-- az_network_vpn_connection_shared_key_show
-- az_network_vpn_connection_shared_key_update
+- az_network_vpn-connection_shared-key_reset
+- az_network_vpn-connection_shared-key_show
+- az_network_vpn-connection_shared-key_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -140,6 +140,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage VPN shared keys.

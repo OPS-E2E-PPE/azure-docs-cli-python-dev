@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_private_dns_link_vnet
+uid: az_network_private-dns_link_vnet
 name: az network private-dns link vnet
 summary: Manage virtual network links to the specified Private DNS zone.
 description: ''
 directCommands:
-- uid: az_network_private_dns_link_vnet_create
+- uid: az_network_private-dns_link_vnet_create
   name: az network private-dns link vnet create
   summary: Create a virtual network link to the specified Private DNS zone.
   description: ''
@@ -56,8 +56,8 @@ directCommands:
   - name: --tags
     summary: Resource tags for the virtual network link.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_dns_link_vnet_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-dns_link_vnet_delete
   name: az network private-dns link vnet delete
   summary: Delete a virtual network link to the specified Private DNS zone.
   description: In case of a registration virtual network, all auto-registered DNS records in the zone for the virtual network will also be deleted. This operation cannot be undone.
@@ -98,8 +98,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_dns_link_vnet_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-dns_link_vnet_list
   name: az network private-dns link vnet list
   summary: List the virtual network links to the specified Private DNS zone.
   description: ''
@@ -131,8 +131,8 @@ directCommands:
   - name: --top
     summary: The maximum number of virtual network links to return. If not specified, returns up to 100 virtual network links.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_dns_link_vnet_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-dns_link_vnet_show
   name: az network private-dns link vnet show
   summary: Get a virtual network link to the specified Private DNS zone.
   description: ''
@@ -165,8 +165,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_dns_link_vnet_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-dns_link_vnet_update
   name: az network private-dns link vnet update
   summary: Update a virtual network link's properties. Does not modify virtual network within the link.
   description: ''
@@ -230,8 +230,8 @@ directCommands:
   - name: --tags
     summary: Resource tags for the virtual network link.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_dns_link_vnet_wait
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-dns_link_vnet_wait
   name: az network private-dns link vnet wait
   summary: Place the CLI in a waiting state until a condition of the virtual network link to the specified Private DNS zone is met.
   description: ''
@@ -290,14 +290,14 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_private_dns_link_vnet_create
-- az_network_private_dns_link_vnet_delete
-- az_network_private_dns_link_vnet_list
-- az_network_private_dns_link_vnet_show
-- az_network_private_dns_link_vnet_update
-- az_network_private_dns_link_vnet_wait
+- az_network_private-dns_link_vnet_create
+- az_network_private-dns_link_vnet_delete
+- az_network_private-dns_link_vnet_list
+- az_network_private-dns_link_vnet_show
+- az_network_private-dns_link_vnet_update
+- az_network_private-dns_link_vnet_wait
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -314,6 +314,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage virtual network links to the specified Private DNS zone.

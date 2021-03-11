@@ -58,7 +58,7 @@ directCommands:
   - name: --throughput
     summary: The throughput of MongoDB collection (RU/s). Default value is 400. Omit this parameter if the database has shared throughput unless the collection should have dedicated throughput.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_mongodb_collection_delete
   name: az cosmosdb mongodb collection delete
   summary: Delete the MongoDB collection under an Azure Cosmos DB MongoDB database.
@@ -94,7 +94,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_mongodb_collection_exists
   name: az cosmosdb mongodb collection exists
   summary: Checks if an Azure Cosmos DB MongoDB collection exists.
@@ -126,7 +126,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_mongodb_collection_list
   name: az cosmosdb mongodb collection list
   summary: List the MongoDB collections under an Azure Cosmos DB MongoDB database.
@@ -157,7 +157,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_mongodb_collection_show
   name: az cosmosdb mongodb collection show
   summary: Show the details of a MongoDB collection under an Azure Cosmos DB MongoDB database.
@@ -193,7 +193,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_mongodb_collection_update
   name: az cosmosdb mongodb collection update
   summary: Update an MongoDB collection under an Azure Cosmos DB MongoDB database.
@@ -233,7 +233,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 commands:
 - az_cosmosdb_mongodb_collection_create
 - az_cosmosdb_mongodb_collection_delete
@@ -261,6 +261,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 10/23/2020
   description: Manage Azure Cosmos DB MongoDB collections.

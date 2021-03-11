@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_nic_ip_config
-name: az network nic ip-config
+uid: az_network_nic_ip-config
+name: NIC IP configurations
 summary: Manage IP configurations of a network interface.
 description: ''
 directCommands:
-- uid: az_network_nic_ip_config_create
+- uid: az_network_nic_ip-config_create
   name: az network nic ip-config create
   summary: Create an IP configuration.
   description: You must have the Microsoft.Network/AllowMultipleIpConfigurationsPerNic feature enabled for your subscription. Only one configuration may be designated as the primary IP configuration per NIC, using the `--make-primary` flag.
@@ -84,8 +84,8 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) associated with the subnet (Omit if supplying a subnet id).
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_nic_ip_config_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_nic_ip-config_delete
   name: az network nic ip-config delete
   summary: Delete an IP configuration.
   description: A NIC must have at least one IP configuration.
@@ -114,8 +114,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_nic_ip_config_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_nic_ip-config_list
   name: az network nic ip-config list
   summary: List the IP configurations of a NIC.
   description: ''
@@ -143,8 +143,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_nic_ip_config_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_nic_ip-config_show
   name: az network nic ip-config show
   summary: Show the details of an IP configuration.
   description: ''
@@ -177,8 +177,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_nic_ip_config_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_nic_ip-config_update
   name: az network nic ip-config update
   summary: Update an IP configuration.
   description: ''
@@ -280,19 +280,19 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) associated with the subnet (Omit if supplying a subnet id).
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_nic_ip_config_address_pool
-- az_network_nic_ip_config_address_pool_add
-- az_network_nic_ip_config_address_pool_remove
-- az_network_nic_ip_config_create
-- az_network_nic_ip_config_delete
-- az_network_nic_ip_config_inbound_nat_rule
-- az_network_nic_ip_config_inbound_nat_rule_add
-- az_network_nic_ip_config_inbound_nat_rule_remove
-- az_network_nic_ip_config_list
-- az_network_nic_ip_config_show
-- az_network_nic_ip_config_update
+- az_network_nic_ip-config_address-pool
+- az_network_nic_ip-config_address-pool_add
+- az_network_nic_ip-config_address-pool_remove
+- az_network_nic_ip-config_create
+- az_network_nic_ip-config_delete
+- az_network_nic_ip-config_inbound-nat-rule
+- az_network_nic_ip-config_inbound-nat-rule_add
+- az_network_nic_ip-config_inbound-nat-rule_remove
+- az_network_nic_ip-config_list
+- az_network_nic_ip-config_show
+- az_network_nic_ip-config_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -309,6 +309,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage IP configurations of a network interface.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_batch_job_schedule
-name: az batch job-schedule
+uid: az_batch_job-schedule
+name: Batch job schedules
 summary: Manage Batch job schedules.
 description: ''
 directCommands:
-- uid: az_batch_job_schedule_create
+- uid: az_batch_job-schedule_create
   name: az batch job-schedule create
   summary: Add a Batch job schedule to an account.
   description: ''
@@ -95,8 +95,8 @@ directCommands:
   - name: --uses-task-dependencies
     summary: Whether Tasks in the Job can define dependencies on each other. The default is false. True if flag present.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-- uid: az_batch_job_schedule_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
+- uid: az_batch_job-schedule_delete
   name: az batch job-schedule delete
   summary: Deletes a Job Schedule from the specified Account.
   description: When you delete a Job Schedule, this also deletes all Jobs and Tasks under that schedule. When Tasks are deleted, all the files in their working directories on the Compute Nodes are also deleted (the retention period is ignored). The Job Schedule statistics are no longer accessible once the Job Schedule is deleted, though they are still counted towards Account lifetime statistics.
@@ -144,8 +144,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-- uid: az_batch_job_schedule_disable
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
+- uid: az_batch_job-schedule_disable
   name: az batch job-schedule disable
   summary: Disables a Job Schedule.
   description: No new Jobs will be created until the Job Schedule is enabled again.
@@ -189,8 +189,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-- uid: az_batch_job_schedule_enable
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
+- uid: az_batch_job-schedule_enable
   name: az batch job-schedule enable
   summary: Enables a Job Schedule.
   description: ''
@@ -234,8 +234,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-- uid: az_batch_job_schedule_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
+- uid: az_batch_job-schedule_list
   name: az batch job-schedule list
   summary: Lists all of the Job Schedules in the specified Account.
   description: ''
@@ -273,8 +273,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-- uid: az_batch_job_schedule_reset
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
+- uid: az_batch_job-schedule_reset
   name: az batch job-schedule reset
   summary: Reset the properties of a job schedule.  An updated job specification only applies to new jobs.
   description: ''
@@ -387,8 +387,8 @@ directCommands:
   - name: --uses-task-dependencies
     summary: Whether Tasks in the Job can define dependencies on each other. The default is false. True if flag present.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-- uid: az_batch_job_schedule_set
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
+- uid: az_batch_job-schedule_set
   name: az batch job-schedule set
   summary: Update the properties of a job schedule.
   description: You can independently update the schedule and the job specification, but any change to either of these entities will reset all properties in that entity.
@@ -501,8 +501,8 @@ directCommands:
   - name: --uses-task-dependencies
     summary: Whether Tasks in the Job can define dependencies on each other. The default is false. Specify either 'true' or 'false' to update the property.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-- uid: az_batch_job_schedule_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
+- uid: az_batch_job-schedule_show
   name: az batch job-schedule show
   summary: Gets information about the specified Job Schedule.
   description: ''
@@ -558,8 +558,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
-- uid: az_batch_job_schedule_stop
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
+- uid: az_batch_job-schedule_stop
   name: az batch job-schedule stop
   summary: Terminates a Job Schedule.
   description: ''
@@ -603,17 +603,17 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/batch/_help.py
 commands:
-- az_batch_job_schedule_create
-- az_batch_job_schedule_delete
-- az_batch_job_schedule_disable
-- az_batch_job_schedule_enable
-- az_batch_job_schedule_list
-- az_batch_job_schedule_reset
-- az_batch_job_schedule_set
-- az_batch_job_schedule_show
-- az_batch_job_schedule_stop
+- az_batch_job-schedule_create
+- az_batch_job-schedule_delete
+- az_batch_job-schedule_disable
+- az_batch_job-schedule_enable
+- az_batch_job-schedule_list
+- az_batch_job-schedule_reset
+- az_batch_job-schedule_set
+- az_batch_job-schedule_show
+- az_batch_job-schedule_stop
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -630,6 +630,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/07/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/19/2019
   description: Manage Batch job schedules.

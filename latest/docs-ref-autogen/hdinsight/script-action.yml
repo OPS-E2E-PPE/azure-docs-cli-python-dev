@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_hdinsight_script_action
+uid: az_hdinsight_script-action
 name: az hdinsight script-action
 summary: Manage HDInsight script actions.
 description: ''
 directCommands:
-- uid: az_hdinsight_script_action_delete
+- uid: az_hdinsight_script-action_delete
   name: az hdinsight script-action delete
   summary: Deletes a specified persisted script action of the cluster.
   description: ''
@@ -30,8 +30,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-- uid: az_hdinsight_script_action_execute
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+- uid: az_hdinsight_script-action_execute
   name: az hdinsight script-action execute
   summary: Execute script actions on the specified HDInsight cluster.
   description: ''
@@ -87,8 +87,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-- uid: az_hdinsight_script_action_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+- uid: az_hdinsight_script-action_list
   name: az hdinsight script-action list
   summary: Lists all the persisted script actions for the specified cluster.
   description: ''
@@ -113,8 +113,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-- uid: az_hdinsight_script_action_list_execution_history
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+- uid: az_hdinsight_script-action_list-execution-history
   name: az hdinsight script-action list-execution-history
   summary: Lists all scripts' execution history for the specified cluster.
   description: ''
@@ -135,8 +135,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-- uid: az_hdinsight_script_action_promote
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+- uid: az_hdinsight_script-action_promote
   name: az hdinsight script-action promote
   summary: Promotes the specified ad-hoc script execution to a persisted script.
   description: ''
@@ -162,8 +162,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-- uid: az_hdinsight_script_action_show_execution_details
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+- uid: az_hdinsight_script-action_show-execution-details
   name: az hdinsight script-action show-execution-details
   summary: Gets the script execution detail for the given script execution ID.
   description: ''
@@ -189,14 +189,14 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 commands:
-- az_hdinsight_script_action_delete
-- az_hdinsight_script_action_execute
-- az_hdinsight_script_action_list
-- az_hdinsight_script_action_list_execution_history
-- az_hdinsight_script_action_promote
-- az_hdinsight_script_action_show_execution_details
+- az_hdinsight_script-action_delete
+- az_hdinsight_script-action_execute
+- az_hdinsight_script-action_list
+- az_hdinsight_script-action_list-execution-history
+- az_hdinsight_script-action_promote
+- az_hdinsight_script-action_show-execution-details
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -213,6 +213,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 11/12/2020
   description: Manage HDInsight script actions.

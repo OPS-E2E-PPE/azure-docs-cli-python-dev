@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_synapse_workspace_firewall_rule
+uid: az_synapse_workspace_firewall-rule
 name: az synapse workspace firewall-rule
 summary: Manage a workspace's firewall rules.
 description: ''
 directCommands:
-- uid: az_synapse_workspace_firewall_rule_create
+- uid: az_synapse_workspace_firewall-rule_create
   name: az synapse workspace firewall-rule create
   summary: Create a firewall rule.
   description: ''
@@ -50,8 +50,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_workspace_firewall_rule_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_workspace_firewall-rule_delete
   name: az synapse workspace firewall-rule delete
   summary: Delete a firewall rule.
   description: ''
@@ -88,8 +88,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_workspace_firewall_rule_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_workspace_firewall-rule_list
   name: az synapse workspace firewall-rule list
   summary: List all firewall rules.
   description: ''
@@ -117,8 +117,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_workspace_firewall_rule_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_workspace_firewall-rule_show
   name: az synapse workspace firewall-rule show
   summary: Get a firewall rule.
   description: ''
@@ -151,8 +151,8 @@ directCommands:
   - name: --workspace-name
     summary: The workspace name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_workspace_firewall_rule_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_workspace_firewall-rule_update
   name: az synapse workspace firewall-rule update
   summary: Update a firewall rule.
   description: ''
@@ -196,8 +196,8 @@ directCommands:
   - name: --workspace-name
     summary: The workspace name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_workspace_firewall_rule_wait
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_workspace_firewall-rule_wait
   name: az synapse workspace firewall-rule wait
   summary: Place the CLI in a waiting state until a condition of a firewall rule is met.
   description: ''
@@ -255,14 +255,14 @@ directCommands:
   - name: --workspace-name
     summary: The workspace name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 commands:
-- az_synapse_workspace_firewall_rule_create
-- az_synapse_workspace_firewall_rule_delete
-- az_synapse_workspace_firewall_rule_list
-- az_synapse_workspace_firewall_rule_show
-- az_synapse_workspace_firewall_rule_update
-- az_synapse_workspace_firewall_rule_wait
+- az_synapse_workspace_firewall-rule_create
+- az_synapse_workspace_firewall-rule_delete
+- az_synapse_workspace_firewall-rule_list
+- az_synapse_workspace_firewall-rule_show
+- az_synapse_workspace_firewall-rule_update
+- az_synapse_workspace_firewall-rule_wait
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -279,6 +279,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/26/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/19/2020
   description: Manage a workspace's firewall rules.

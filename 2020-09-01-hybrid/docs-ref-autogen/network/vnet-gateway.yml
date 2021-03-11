@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_vnet_gateway
-name: az network vnet-gateway
+uid: az_network_vnet-gateway
+name: Virtual Network gateways
 summary: Use an Azure Virtual Network Gateway to establish secure, cross-premises connectivity.
 description: To learn more about Azure Virtual Network Gateways, visit <a href="https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli">https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli</a>.
 directCommands:
-- uid: az_network_vnet_gateway_create
+- uid: az_network_vnet-gateway_create
   name: az network vnet-gateway create
   summary: Create a virtual network gateway.
   description: ''
@@ -110,8 +110,8 @@ directCommands:
     parameterValueGroup: PolicyBased, RouteBased
     summary: VPN routing type.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_delete
   name: az network vnet-gateway delete
   summary: Delete a virtual network gateway.
   description: >-
@@ -144,8 +144,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_list
   name: az network vnet-gateway list
   summary: List virtual network gateways.
   description: ''
@@ -168,8 +168,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_list_advertised_routes
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_list-advertised-routes
   name: az network vnet-gateway list-advertised-routes
   summary: List the routes of a virtual network gateway advertised to the specified peer.
   description: ''
@@ -200,8 +200,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_list_bgp_peer_status
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_list-bgp-peer-status
   name: az network vnet-gateway list-bgp-peer-status
   summary: Retrieve the status of BGP peers.
   description: ''
@@ -230,8 +230,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_list_learned_routes
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_list-learned-routes
   name: az network vnet-gateway list-learned-routes
   summary: This operation retrieves a list of routes the virtual network gateway has learned, including routes learned from BGP peers.
   description: ''
@@ -256,8 +256,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_reset
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_reset
   name: az network vnet-gateway reset
   summary: Reset a virtual network gateway.
   description: ''
@@ -288,8 +288,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_show
   name: az network vnet-gateway show
   summary: Get the details of a virtual network gateway.
   description: ''
@@ -318,8 +318,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_update
   name: az network vnet-gateway update
   summary: Update a virtual network gateway.
   description: ''
@@ -431,8 +431,8 @@ directCommands:
     parameterValueGroup: PolicyBased, RouteBased
     summary: VPN routing type.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_wait
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_wait
   name: az network vnet-gateway wait
   summary: Place the CLI in a waiting state until a condition of the virtual network gateway is met.
   description: ''
@@ -489,31 +489,31 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_vnet_gateway_create
-- az_network_vnet_gateway_delete
-- az_network_vnet_gateway_ipsec_policy
-- az_network_vnet_gateway_ipsec_policy_add
-- az_network_vnet_gateway_ipsec_policy_clear
-- az_network_vnet_gateway_ipsec_policy_list
-- az_network_vnet_gateway_list
-- az_network_vnet_gateway_list_advertised_routes
-- az_network_vnet_gateway_list_bgp_peer_status
-- az_network_vnet_gateway_list_learned_routes
-- az_network_vnet_gateway_reset
-- az_network_vnet_gateway_revoked_cert
-- az_network_vnet_gateway_revoked_cert_create
-- az_network_vnet_gateway_revoked_cert_delete
-- az_network_vnet_gateway_root_cert
-- az_network_vnet_gateway_root_cert_create
-- az_network_vnet_gateway_root_cert_delete
-- az_network_vnet_gateway_show
-- az_network_vnet_gateway_update
-- az_network_vnet_gateway_vpn_client
-- az_network_vnet_gateway_vpn_client_generate
-- az_network_vnet_gateway_vpn_client_show_url
-- az_network_vnet_gateway_wait
+- az_network_vnet-gateway_create
+- az_network_vnet-gateway_delete
+- az_network_vnet-gateway_ipsec-policy
+- az_network_vnet-gateway_ipsec-policy_add
+- az_network_vnet-gateway_ipsec-policy_clear
+- az_network_vnet-gateway_ipsec-policy_list
+- az_network_vnet-gateway_list
+- az_network_vnet-gateway_list-advertised-routes
+- az_network_vnet-gateway_list-bgp-peer-status
+- az_network_vnet-gateway_list-learned-routes
+- az_network_vnet-gateway_reset
+- az_network_vnet-gateway_revoked-cert
+- az_network_vnet-gateway_revoked-cert_create
+- az_network_vnet-gateway_revoked-cert_delete
+- az_network_vnet-gateway_root-cert
+- az_network_vnet-gateway_root-cert_create
+- az_network_vnet-gateway_root-cert_delete
+- az_network_vnet-gateway_show
+- az_network_vnet-gateway_update
+- az_network_vnet-gateway_vpn-client
+- az_network_vnet-gateway_vpn-client_generate
+- az_network_vnet-gateway_vpn-client_show-url
+- az_network_vnet-gateway_wait
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -530,6 +530,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: To learn more about Azure Virtual Network Gateways, visit <a href="https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli">https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli</a>.

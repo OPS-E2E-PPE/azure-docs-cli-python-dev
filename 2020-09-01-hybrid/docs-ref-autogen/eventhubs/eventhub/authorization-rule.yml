@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_eventhubs_eventhub_authorization_rule
+uid: az_eventhubs_eventhub_authorization-rule
 name: az eventhubs eventhub authorization-rule
 summary: Manage Azure Service Bus Authorizationrule for Eventhub.
 description: ''
 directCommands:
-- uid: az_eventhubs_eventhub_authorization_rule_create
+- uid: az_eventhubs_eventhub_authorization-rule_create
   name: az eventhubs eventhub authorization-rule create
   summary: Creates Authorizationrule for the given Eventhub.
   description: ''
@@ -44,8 +44,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
-- uid: az_eventhubs_eventhub_authorization_rule_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+- uid: az_eventhubs_eventhub_authorization-rule_delete
   name: az eventhubs eventhub authorization-rule delete
   summary: Deletes the Authorizationrule of Eventhub.
   description: ''
@@ -78,8 +78,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
-- uid: az_eventhubs_eventhub_authorization_rule_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+- uid: az_eventhubs_eventhub_authorization-rule_list
   name: az eventhubs eventhub authorization-rule list
   summary: Shows the list of Authorization-rules by Eventhub.
   description: ''
@@ -112,8 +112,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
-- uid: az_eventhubs_eventhub_authorization_rule_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+- uid: az_eventhubs_eventhub_authorization-rule_show
   name: az eventhubs eventhub authorization-rule show
   summary: Shows the details of Authorizationrule.
   description: ''
@@ -150,8 +150,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
-- uid: az_eventhubs_eventhub_authorization_rule_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+- uid: az_eventhubs_eventhub_authorization-rule_update
   name: az eventhubs eventhub authorization-rule update
   summary: Updates Authorizationrule for the given Eventhub.
   description: ''
@@ -207,16 +207,16 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
 commands:
-- az_eventhubs_eventhub_authorization_rule_create
-- az_eventhubs_eventhub_authorization_rule_delete
-- az_eventhubs_eventhub_authorization_rule_keys
-- az_eventhubs_eventhub_authorization_rule_keys_list
-- az_eventhubs_eventhub_authorization_rule_keys_renew
-- az_eventhubs_eventhub_authorization_rule_list
-- az_eventhubs_eventhub_authorization_rule_show
-- az_eventhubs_eventhub_authorization_rule_update
+- az_eventhubs_eventhub_authorization-rule_create
+- az_eventhubs_eventhub_authorization-rule_delete
+- az_eventhubs_eventhub_authorization-rule_keys
+- az_eventhubs_eventhub_authorization-rule_keys_list
+- az_eventhubs_eventhub_authorization-rule_keys_renew
+- az_eventhubs_eventhub_authorization-rule_list
+- az_eventhubs_eventhub_authorization-rule_show
+- az_eventhubs_eventhub_authorization-rule_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -233,6 +233,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 09/16/2020
   description: Manage Azure Service Bus Authorizationrule for Eventhub.

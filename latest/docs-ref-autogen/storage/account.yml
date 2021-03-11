@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_account
-name: az storage account
+name: Storage accounts
 summary: Manage storage accounts.
 description: ''
 directCommands:
-- uid: az_storage_account_check_name
+- uid: az_storage_account_check-name
   name: az storage account check-name
   summary: Check that the storage account name is valid and is not already in use.
   description: ''
@@ -20,7 +20,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_account_create
   name: az storage account create
   summary: Create a storage account.
@@ -30,6 +30,7 @@ directCommands:
                               --resource-group
                               [--access-tier {Cool, Hot}]
                               [--allow-blob-public-access {false, true}]
+                              [--allow-shared-key-access {false, true}]
                               [--assign-identity]
                               [--azure-storage-sid]
                               [--bypass {AzureServices, Logging, Metrics, None}]
@@ -80,6 +81,10 @@ directCommands:
   - name: --allow-blob-public-access
     parameterValueGroup: false, true
     summary: Allow or disallow public access to all blobs or containers in the storage account. The default value for this property is null, which is equivalent to true. When true, containers in the account may be configured for public access. Note that setting this property to true does not enable anonymous access to any data in the account. The additional step of configuring the public access setting for a container is required to enable anonymous access.
+    description: ''
+  - name: --allow-shared-key-access -k
+    parameterValueGroup: false, true
+    summary: Indicate whether the storage account permits requests to be authorized with the account access key via Shared Key. If false, then all requests, including shared access signatures, must be authorized with Azure Active Directory (Azure AD). The default value is null, which is equivalent to true.
     description: ''
   - name: --assign-identity
     summary: Generate and assign a new Storage Account Identity for this storage account for use with key management services like Azure KeyVault.
@@ -183,7 +188,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_account_delete
   name: az storage account delete
   summary: Delete a storage account.
@@ -215,7 +220,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_account_failover
   name: az storage account failover
   summary: Failover request can be triggered for a storage account in case of availability issues.
@@ -259,8 +264,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_generate_sas
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_generate-sas
   name: az storage account generate-sas
   summary: Generates a shared access signature for the account.
   description: ''
@@ -332,7 +337,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_account_list
   name: az storage account list
   summary: List storage accounts.
@@ -356,8 +361,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_revoke_delegation_keys
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_revoke-delegation-keys
   name: az storage account revoke-delegation-keys
   summary: Revoke all user delegation keys for a storage account.
   description: ''
@@ -384,7 +389,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_account_show
   name: az storage account show
   summary: Show storage account properties.
@@ -420,8 +425,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_show_connection_string
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_show-connection-string
   name: az storage account show-connection-string
   summary: Get the connection string for a storage account.
   description: ''
@@ -480,8 +485,8 @@ directCommands:
   - name: --table-endpoint
     summary: Custom endpoint for tables.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_show_usage
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_show-usage
   name: az storage account show-usage
   summary: Show the current count and limit of the storage accounts under the subscription.
   description: ''
@@ -500,7 +505,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_account_update
   name: az storage account update
   summary: Update the properties of a storage account.
@@ -509,6 +514,7 @@ directCommands:
     az storage account update [--access-tier {Cool, Hot}]
                               [--add]
                               [--allow-blob-public-access {false, true}]
+                              [--allow-shared-key-access {false, true}]
                               [--assign-identity]
                               [--azure-storage-sid]
                               [--bypass {AzureServices, Logging, Metrics, None}]
@@ -556,6 +562,10 @@ directCommands:
   - name: --allow-blob-public-access
     parameterValueGroup: false, true
     summary: Allow or disallow public access to all blobs or containers in the storage account. The default value for this property is null, which is equivalent to true. When true, containers in the account may be configured for public access. Note that setting this property to true does not enable anonymous access to any data in the account. The additional step of configuring the public access setting for a container is required to enable anonymous access.
+    description: ''
+  - name: --allow-shared-key-access -k
+    parameterValueGroup: false, true
+    summary: Indicate whether the storage account permits requests to be authorized with the account access key via Shared Key. If false, then all requests, including shared access signatures, must be authorized with Azure Active Directory (Azure AD). The default value is null, which is equivalent to true.
     description: ''
   - name: --assign-identity
     summary: Generate and assign a new Storage Account Identity for this storage account for use with key management services like Azure KeyVault.
@@ -657,7 +667,7 @@ directCommands:
     description: ''
   - name: --sku
     parameterValueGroup: Premium_LRS, Premium_ZRS, Standard_GRS, Standard_GZRS, Standard_LRS, Standard_RAGRS, Standard_RAGZRS, Standard_ZRS
-    summary: The storage account SKU.
+    summary: Note that the SKU name cannot be updated to Standard_ZRS, Premium_LRS or Premium_ZRS, nor can accounts of those SKU names be updated to any other value.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
@@ -669,61 +679,66 @@ directCommands:
     parameterValueGroup: false, true
     summary: Specify whether to use indirect CNAME validation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
-- az_storage_account_blob_service_properties
-- az_storage_account_blob_service_properties_show
-- az_storage_account_blob_service_properties_update
-- az_storage_account_check_name
+- az_storage_account_blob-service-properties
+- az_storage_account_blob-service-properties_show
+- az_storage_account_blob-service-properties_update
+- az_storage_account_check-name
 - az_storage_account_create
 - az_storage_account_delete
-- az_storage_account_encryption_scope
-- az_storage_account_encryption_scope_create
-- az_storage_account_encryption_scope_list
-- az_storage_account_encryption_scope_show
-- az_storage_account_encryption_scope_update
+- az_storage_account_encryption-scope
+- az_storage_account_encryption-scope_create
+- az_storage_account_encryption-scope_list
+- az_storage_account_encryption-scope_show
+- az_storage_account_encryption-scope_update
 - az_storage_account_failover
-- az_storage_account_file_service_properties
-- az_storage_account_file_service_properties_show
-- az_storage_account_file_service_properties_update
-- az_storage_account_generate_sas
+- az_storage_account_file-service-properties
+- az_storage_account_file-service-properties_show
+- az_storage_account_file-service-properties_update
+- az_storage_account_generate-sas
 - az_storage_account_keys
 - az_storage_account_keys_list
 - az_storage_account_keys_renew
 - az_storage_account_list
-- az_storage_account_management_policy
-- az_storage_account_management_policy_create
-- az_storage_account_management_policy_delete
-- az_storage_account_management_policy_show
-- az_storage_account_management_policy_update
-- az_storage_account_network_rule
-- az_storage_account_network_rule_add
-- az_storage_account_network_rule_list
-- az_storage_account_network_rule_remove
-- az_storage_account_or_policy
-- az_storage_account_or_policy_create
-- az_storage_account_or_policy_delete
-- az_storage_account_or_policy_list
-- az_storage_account_or_policy_rule
-- az_storage_account_or_policy_rule_add
-- az_storage_account_or_policy_rule_list
-- az_storage_account_or_policy_rule_remove
-- az_storage_account_or_policy_rule_show
-- az_storage_account_or_policy_rule_update
-- az_storage_account_or_policy_show
-- az_storage_account_or_policy_update
-- az_storage_account_private_endpoint_connection
-- az_storage_account_private_endpoint_connection_approve
-- az_storage_account_private_endpoint_connection_delete
-- az_storage_account_private_endpoint_connection_reject
-- az_storage_account_private_endpoint_connection_show
-- az_storage_account_private_link_resource
-- az_storage_account_private_link_resource_list
-- az_storage_account_revoke_delegation_keys
+- az_storage_account_management-policy
+- az_storage_account_management-policy_create
+- az_storage_account_management-policy_delete
+- az_storage_account_management-policy_show
+- az_storage_account_management-policy_update
+- az_storage_account_network-rule
+- az_storage_account_network-rule_add
+- az_storage_account_network-rule_list
+- az_storage_account_network-rule_remove
+- az_storage_account_or-policy
+- az_storage_account_or-policy_create
+- az_storage_account_or-policy_delete
+- az_storage_account_or-policy_list
+- az_storage_account_or-policy_rule
+- az_storage_account_or-policy_rule_add
+- az_storage_account_or-policy_rule_list
+- az_storage_account_or-policy_rule_remove
+- az_storage_account_or-policy_rule_show
+- az_storage_account_or-policy_rule_update
+- az_storage_account_or-policy_show
+- az_storage_account_or-policy_update
+- az_storage_account_private-endpoint-connection
+- az_storage_account_private-endpoint-connection_approve
+- az_storage_account_private-endpoint-connection_delete
+- az_storage_account_private-endpoint-connection_reject
+- az_storage_account_private-endpoint-connection_show
+- az_storage_account_private-link-resource
+- az_storage_account_private-link-resource_list
+- az_storage_account_revoke-delegation-keys
 - az_storage_account_show
-- az_storage_account_show_connection_string
-- az_storage_account_show_usage
+- az_storage_account_show-connection-string
+- az_storage_account_show-usage
 - az_storage_account_update
+- az_storage_account_blob-inventory-policy
+- az_storage_account_blob-inventory-policy_create
+- az_storage_account_blob-inventory-policy_delete
+- az_storage_account_blob-inventory-policy_show
+- az_storage_account_blob-inventory-policy_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -740,6 +755,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage storage accounts.

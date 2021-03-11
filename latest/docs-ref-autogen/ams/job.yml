@@ -38,7 +38,7 @@ directCommands:
   - name: --transform-name -t
     summary: The name of the transform.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_job_delete
   name: az ams job delete
   summary: Delete a job.
@@ -69,7 +69,7 @@ directCommands:
   - name: --transform-name -t
     summary: The name of the transform.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_job_list
   name: az ams job list
   summary: List all the jobs of a transform within an Azure Media Services account.
@@ -113,7 +113,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_job_show
   name: az ams job show
   summary: Show the details of a job.
@@ -148,7 +148,7 @@ directCommands:
   - name: --transform-name -t
     summary: The name of the transform.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_job_start
   name: az ams job start
   summary: Start a job.
@@ -214,7 +214,7 @@ directCommands:
   - name: --transform-name -t
     summary: The name of the transform.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_job_update
   name: az ams job update
   summary: Update an existing job.
@@ -270,7 +270,7 @@ directCommands:
   - name: --transform-name -t
     summary: The name of the transform.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/ams/_help.py
 commands:
 - az_ams_job_cancel
 - az_ams_job_delete
@@ -294,6 +294,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 07/28/2020
   description: Manage jobs for a transform.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_sql_elastic_pool
-name: az sql elastic-pool
+uid: az_sql_elastic-pool
+name: SQL elastic pools
 summary: Manage elastic pools.
 description: ''
 directCommands:
-- uid: az_sql_elastic_pool_create
+- uid: az_sql_elastic-pool_create
   name: az sql elastic-pool create
   summary: Create an elastic pool.
   description: ''
@@ -18,6 +18,7 @@ directCommands:
                                [--edition]
                                [--family]
                                [--license-type {BasePrice, LicenseIncluded}]
+                               [--maint-config-id]
                                [--max-size]
                                [--no-wait]
                                [--subscription]
@@ -65,6 +66,9 @@ directCommands:
     parameterValueGroup: BasePrice, LicenseIncluded
     summary: The license type to apply for this elastic pool.
     description: ''
+  - name: --maint-config-id -m
+    summary: Specified maintenance configuration id or name for this resource.
+    description: ''
   - name: --max-size --storage
     summary: The max storage size. If no unit is specified, defaults to bytes (B).
     description: ''
@@ -81,8 +85,8 @@ directCommands:
     parameterValueGroup: false, true
     summary: Specifies whether to enable zone redundancy.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_elastic_pool_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_elastic-pool_delete
   name: az sql elastic-pool delete
   summary: Deletes an elastic pool.
   description: ''
@@ -112,8 +116,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_elastic_pool_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_elastic-pool_list
   name: az sql elastic-pool list
   summary: Gets all elastic pools in a server.
   description: ''
@@ -143,8 +147,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_elastic_pool_list_dbs
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_elastic-pool_list-dbs
   name: az sql elastic-pool list-dbs
   summary: Gets a list of databases in an elastic pool.
   description: ''
@@ -170,8 +174,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_elastic_pool_list_editions
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_elastic-pool_list-editions
   name: az sql elastic-pool list-editions
   summary: List elastic pool editions available for the active subscription.
   description: Also includes available pool DTU settings, storage limits, and per database settings. In order to reduce verbosity, additional storage limits and per database settings are hidden by default.
@@ -217,8 +221,8 @@ directCommands:
   - name: --vcores
     summary: Number of vcores to search for. If unspecified, all vcore sizes are shown.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_elastic_pool_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_elastic-pool_show
   name: az sql elastic-pool show
   summary: Gets an elastic pool.
   description: ''
@@ -248,8 +252,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_elastic_pool_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_elastic-pool_update
   name: az sql elastic-pool update
   summary: Update an elastic pool.
   description: ''
@@ -262,6 +266,7 @@ directCommands:
                                [--family]
                                [--force-string]
                                [--ids]
+                               [--maint-config-id]
                                [--max-size]
                                [--name]
                                [--no-wait]
@@ -301,6 +306,9 @@ directCommands:
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
+  - name: --maint-config-id -m
+    summary: Specified maintenance configuration id or name for this resource.
+    description: ''
   - name: --max-size --storage
     summary: The max storage size. If no unit is specified, defaults to bytes (B).
     description: ''
@@ -329,18 +337,18 @@ directCommands:
     parameterValueGroup: false, true
     summary: Specifies whether to enable zone redundancy.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/sql/_help.py
 commands:
-- az_sql_elastic_pool_create
-- az_sql_elastic_pool_delete
-- az_sql_elastic_pool_list
-- az_sql_elastic_pool_list_dbs
-- az_sql_elastic_pool_list_editions
-- az_sql_elastic_pool_op
-- az_sql_elastic_pool_op_cancel
-- az_sql_elastic_pool_op_list
-- az_sql_elastic_pool_show
-- az_sql_elastic_pool_update
+- az_sql_elastic-pool_create
+- az_sql_elastic-pool_delete
+- az_sql_elastic-pool_list
+- az_sql_elastic-pool_list-dbs
+- az_sql_elastic-pool_list-editions
+- az_sql_elastic-pool_op
+- az_sql_elastic-pool_op_cancel
+- az_sql_elastic-pool_op_list
+- az_sql_elastic-pool_show
+- az_sql_elastic-pool_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -357,6 +365,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/28/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/22/2020
   description: Manage elastic pools.

@@ -51,7 +51,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 - uid: az_hdinsight_autoscale_condition_delete
   name: az hdinsight autoscale condition delete
   summary: Delete schedule condition.
@@ -91,7 +91,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 - uid: az_hdinsight_autoscale_condition_list
   name: az hdinsight autoscale condition list
   summary: List all schedule conditions.
@@ -120,7 +120,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 - uid: az_hdinsight_autoscale_condition_update
   name: az hdinsight autoscale condition update
   summary: Update a schedule condition.
@@ -170,7 +170,7 @@ directCommands:
   - name: --workernode-count
     summary: The schedule workernode count.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 - uid: az_hdinsight_autoscale_condition_wait
   name: az hdinsight autoscale condition wait
   summary: Place the CLI in a waiting state until an operation is complete.
@@ -222,7 +222,7 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 commands:
 - az_hdinsight_autoscale_condition_create
 - az_hdinsight_autoscale_condition_delete
@@ -245,6 +245,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 11/12/2020
   description: Manage schedule condition of the HDInsight cluster which enabled Schedule-based Autoscale.

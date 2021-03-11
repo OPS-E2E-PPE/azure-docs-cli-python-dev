@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_resource
-name: az resource
+name: Resources
 summary: Manage Azure resources.
 description: ''
 directCommands:
@@ -77,7 +77,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_resource_delete
   name: az resource delete
   summary: Delete a resource.
@@ -129,8 +129,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
-- uid: az_resource_invoke_action
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
+- uid: az_resource_invoke-action
   name: az resource invoke-action
   summary: Invoke an action on the resource.
   description: A list of possible actions corresponding to a resource can be found at <a href="https://docs.microsoft.com/rest/api/">https://docs.microsoft.com/rest/api/</a>. All POST requests are actions that can be invoked and are specified at the end of the URI path. For instance, to stop a VM, the request URI is <a href="https://management.azure.com/subscriptions">https://management.azure.com/subscriptions</a>/{SubscriptionId}/resourceGroups/{ResourceGroup}/providers/Microsoft.Compute/virtualMachines/{VM}/powerOff?api-version={APIVersion} and the corresponding action is `powerOff`. This can be found at <a href="https://docs.microsoft.com/rest/api/compute/virtualmachines/virtualmachines-stop">https://docs.microsoft.com/rest/api/compute/virtualmachines/virtualmachines-stop</a>.
@@ -196,7 +196,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_resource_list
   name: az resource list
   summary: List resources.
@@ -246,7 +246,7 @@ directCommands:
   - name: --tag
     summary: A single tag in 'key[=value]' format. Use "" to clear existing tags.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_resource_move
   name: az resource move
   summary: Moves resources from one resource group to another(can be under different subscription).
@@ -272,7 +272,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_resource_show
   name: az resource show
   summary: Get the details of a resource.
@@ -337,7 +337,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_resource_tag
   name: az resource tag
   summary: Tag a resource.
@@ -399,7 +399,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_resource_update
   name: az resource update
   summary: Update a resource.
@@ -470,7 +470,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_resource_wait
   name: az resource wait
   summary: Place the CLI in a waiting state until a condition of a resources is met.
@@ -551,11 +551,11 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/resource/_help.py
 commands:
 - az_resource_create
 - az_resource_delete
-- az_resource_invoke_action
+- az_resource_invoke-action
 - az_resource_link
 - az_resource_link_create
 - az_resource_link_delete
@@ -590,6 +590,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/24/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage Azure resources.

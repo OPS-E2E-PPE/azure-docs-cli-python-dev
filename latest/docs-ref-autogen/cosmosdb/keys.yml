@@ -38,7 +38,7 @@ directCommands:
     parameterValueGroup: connection-strings, keys, read-only-keys
     summary: The type of account key.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_keys_regenerate
   name: az cosmosdb keys regenerate
   summary: Regenerates an access key for the specified Azure Cosmos DB database account.
@@ -68,7 +68,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 commands:
 - az_cosmosdb_keys_list
 - az_cosmosdb_keys_regenerate
@@ -88,6 +88,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 10/23/2020
   description: Manage Azure Cosmos DB keys.

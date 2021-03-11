@@ -75,7 +75,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 - uid: az_hdinsight_autoscale_delete
   name: az hdinsight autoscale delete
   summary: Disable Autoscale for a running cluster.
@@ -108,8 +108,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
-- uid: az_hdinsight_autoscale_list_timezones
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+- uid: az_hdinsight_autoscale_list-timezones
   name: az hdinsight autoscale list-timezones
   summary: List the available timezone name when enabling Schedule-based Autoscale.
   description: ''
@@ -121,7 +121,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 - uid: az_hdinsight_autoscale_show
   name: az hdinsight autoscale show
   summary: Get the Autoscale configuration of a specified cluster.
@@ -150,7 +150,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 - uid: az_hdinsight_autoscale_update
   name: az hdinsight autoscale update
   summary: Update the Autoscale configuration.
@@ -193,7 +193,7 @@ directCommands:
   - name: --timezone
     summary: The timezone for schedule autoscale type. Values from `az hdinsight autoscale list-timezones`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 - uid: az_hdinsight_autoscale_wait
   name: az hdinsight autoscale wait
   summary: Place the CLI in a waiting state until an operation is complete.
@@ -245,7 +245,7 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/hdinsight/_help.py
 commands:
 - az_hdinsight_autoscale_condition
 - az_hdinsight_autoscale_condition_create
@@ -255,7 +255,7 @@ commands:
 - az_hdinsight_autoscale_condition_wait
 - az_hdinsight_autoscale_create
 - az_hdinsight_autoscale_delete
-- az_hdinsight_autoscale_list_timezones
+- az_hdinsight_autoscale_list-timezones
 - az_hdinsight_autoscale_show
 - az_hdinsight_autoscale_update
 - az_hdinsight_autoscale_wait
@@ -275,6 +275,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 11/12/2020
   description: Manage HDInsight cluster's Autoscale configuration.

@@ -86,7 +86,7 @@ directCommands:
     defaultValue: "1000"
     summary: The weight of the origin in given origin group for load balancing. Must be between 1 and 1000.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_origin_delete
   name: az cdn origin delete
   summary: Deletes an existing origin within an endpoint.
@@ -121,7 +121,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_origin_list
   name: az cdn origin list
   summary: Lists all of the existing origins within an endpoint.
@@ -152,7 +152,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_origin_show
   name: az cdn origin show
   summary: Gets an existing origin within an endpoint.
@@ -187,7 +187,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_origin_update
   name: az cdn origin update
   summary: Update an origin.
@@ -266,7 +266,7 @@ directCommands:
   - name: --weight
     summary: The weight of the origin in given origin group for load balancing. Must be between 1 and 1000.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 commands:
 - az_cdn_origin_create
 - az_cdn_origin_delete
@@ -289,6 +289,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/02/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 07/30/2020
   description: List or show existing origins related to CDN endpoints.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_lb_frontend_ip
-name: az network lb frontend-ip
+uid: az_network_lb_frontend-ip
+name: Front-end IP addresses
 summary: Manage frontend IP addresses of a load balancer.
 description: ''
 directCommands:
-- uid: az_network_lb_frontend_ip_create
+- uid: az_network_lb_frontend-ip_create
   name: az network lb frontend-ip create
   summary: Create a frontend IP address.
   description: ''
@@ -53,8 +53,8 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) associated with the subnet (Omit if supplying a subnet id).
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_lb_frontend_ip_delete
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_lb_frontend-ip_delete
   name: az network lb frontend-ip delete
   summary: Delete a frontend IP address.
   description: ''
@@ -83,8 +83,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_lb_frontend_ip_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_lb_frontend-ip_list
   name: az network lb frontend-ip list
   summary: List frontend IP addresses.
   description: ''
@@ -112,8 +112,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_lb_frontend_ip_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_lb_frontend-ip_show
   name: az network lb frontend-ip show
   summary: Get the details of a frontend IP address.
   description: ''
@@ -148,8 +148,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_lb_frontend_ip_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_lb_frontend-ip_update
   name: az network lb frontend-ip update
   summary: Update a frontend IP address.
   description: ''
@@ -214,13 +214,13 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) associated with the subnet (Omit if supplying a subnet id).
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_lb_frontend_ip_create
-- az_network_lb_frontend_ip_delete
-- az_network_lb_frontend_ip_list
-- az_network_lb_frontend_ip_show
-- az_network_lb_frontend_ip_update
+- az_network_lb_frontend-ip_create
+- az_network_lb_frontend-ip_delete
+- az_network_lb_frontend-ip_list
+- az_network_lb_frontend-ip_show
+- az_network_lb_frontend-ip_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -237,6 +237,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage frontend IP addresses of a load balancer.

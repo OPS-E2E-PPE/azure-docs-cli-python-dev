@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_vnet_gateway_ipsec_policy
+uid: az_network_vnet-gateway_ipsec-policy
 name: az network vnet-gateway ipsec-policy
 summary: Manage virtual network gateway IPSec policies.
 description: ''
 directCommands:
-- uid: az_network_vnet_gateway_ipsec_policy_add
+- uid: az_network_vnet-gateway_ipsec-policy_add
   name: az network vnet-gateway ipsec-policy add
   summary: Add a virtual network gateway IPSec policy.
   description: Set all IPsec policies of a virtual network gateway. If you want to set any IPsec policy, you must set them all.
@@ -81,8 +81,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_ipsec_policy_clear
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_ipsec-policy_clear
   name: az network vnet-gateway ipsec-policy clear
   summary: Delete all IPsec policies on a virtual network gateway.
   description: ''
@@ -110,8 +110,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_vnet_gateway_ipsec_policy_list
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_vnet-gateway_ipsec-policy_list
   name: az network vnet-gateway ipsec-policy list
   summary: List IPSec policies associated with a virtual network gateway.
   description: ''
@@ -139,11 +139,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_vnet_gateway_ipsec_policy_add
-- az_network_vnet_gateway_ipsec_policy_clear
-- az_network_vnet_gateway_ipsec_policy_list
+- az_network_vnet-gateway_ipsec-policy_add
+- az_network_vnet-gateway_ipsec-policy_clear
+- az_network_vnet-gateway_ipsec-policy_list
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -160,6 +160,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage virtual network gateway IPSec policies.

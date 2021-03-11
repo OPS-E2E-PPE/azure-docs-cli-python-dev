@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vmss
-name: az vmss
+name: VM scale Sets (VMSS)
 summary: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).
 description: ''
 directCommands:
@@ -49,7 +49,7 @@ directCommands:
                    [--max-price]
                    [--no-wait]
                    [--nsg]
-                   [--orchestration-mode {ScaleSetVM, VM}]
+                   [--orchestration-mode {Flexible, Uniform}]
                    [--os-disk-caching {None, ReadOnly, ReadWrite}]
                    [--os-disk-encryption-set]
                    [--os-disk-name]
@@ -265,9 +265,9 @@ directCommands:
     summary: Name or ID of an existing Network Security Group.
     description: ''
   - name: --orchestration-mode
-    defaultValue: ScaleSetVM
-    parameterValueGroup: ScaleSetVM, VM
-    summary: Choose how virtual machines are managed by the scale set. In VM mode, you manually create and add a virtual machine of any configuration to the scale set. In ScaleSetVM mode, you define a virtual machine model and Azure will generate identical instances based on that model.
+    defaultValue: Uniform
+    parameterValueGroup: Flexible, Uniform
+    summary: Choose how virtual machines are managed by the scale set. In Uniform mode, you define a virtual machine model and Azure will generate identical instances based on that model. In Flexible mode, you manually create and add a virtual machine of any configuration to the scale set or generate identical instances based on virtual machine model defined for the scale set.
     description: ''
   - name: --os-disk-caching
     parameterValueGroup: None, ReadOnly, ReadWrite
@@ -403,7 +403,7 @@ directCommands:
     parameterValueGroup: 1, 2, 3
     summary: Space-separated list of availability zones into which to provision the resource.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_deallocate
   name: az vmss deallocate
   summary: Deallocate VMs within a VMSS.
@@ -436,18 +436,22 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_delete
   name: az vmss delete
   summary: Deletes a VM scale set.
   description: ''
   syntax: >-
-    az vmss delete [--ids]
+    az vmss delete [--force-deletion]
+                   [--ids]
                    [--name]
                    [--no-wait]
                    [--resource-group]
                    [--subscription]
   optionalParameters:
+  - name: --force-deletion
+    summary: Optional parameter to force delete a VM scale set. (Feature in Preview).
+    description: ''
   - name: --ids
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
@@ -463,8 +467,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_delete_instances
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_delete-instances
   name: az vmss delete-instances
   summary: Delete VMs within a VMSS.
   description: ''
@@ -497,8 +501,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_get_instance_view
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_get-instance-view
   name: az vmss get-instance-view
   summary: View an instance of a VMSS.
   description: ''
@@ -527,8 +531,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_get_os_upgrade_history
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_get-os-upgrade-history
   name: az vmss get-os-upgrade-history
   summary: Gets list of OS upgrades on a VM scale set instance.
   description: ''
@@ -550,7 +554,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_list
   name: az vmss list
   summary: List VMSS.
@@ -572,8 +576,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_list_instance_connection_info
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_list-instance-connection-info
   name: az vmss list-instance-connection-info
   summary: Get the IP address and port number used to connect to individual VM instances within a set.
   description: ''
@@ -598,8 +602,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_list_instance_public_ips
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_list-instance-public-ips
   name: az vmss list-instance-public-ips
   summary: List public IP addresses of VM instances within a set.
   description: ''
@@ -624,8 +628,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_list_instances
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_list-instances
   name: az vmss list-instances
   summary: Gets a list of all virtual machines in a VM scale sets.
   description: ''
@@ -659,8 +663,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_list_skus
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_list-skus
   name: az vmss list-skus
   summary: Gets a list of SKUs available for your VM scale set, including the minimum and maximum VM instances allowed for each SKU.
   description: ''
@@ -682,8 +686,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_perform_maintenance
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_perform-maintenance
   name: az vmss perform-maintenance
   summary: Perform maintenance on one or more virtual machines in a VM scale set.
   description: 'Operation on instances which are not eligible for perform maintenance will be failed. Please refer to best practices for more details: <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual">https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual</a>- machine-scale-sets-maintenance-notifications.'
@@ -709,7 +713,7 @@ directCommands:
   - name: --vm-instance-i-ds
     summary: A list of virtual machine instance IDs from the VM scale set.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_reimage
   name: az vmss reimage
   summary: Reimage VMs within a VMSS.
@@ -743,7 +747,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_restart
   name: az vmss restart
   summary: Restart VMs within a VMSS.
@@ -776,7 +780,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_scale
   name: az vmss scale
   summary: Change the number of VMs within a VMSS.
@@ -812,8 +816,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_set_orchestration_service_state
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_set-orchestration-service-state
   name: az vmss set-orchestration-service-state
   summary: Change ServiceState property for a given service within a VMSS.
   description: ''
@@ -855,7 +859,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_show
   name: az vmss show
   summary: Get details on VMs within a VMSS.
@@ -888,8 +892,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_simulate_eviction
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_simulate-eviction
   name: az vmss simulate-eviction
   summary: Simulate the eviction of a Spot virtual machine in a VM scale set.
   description: ''
@@ -918,7 +922,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_start
   name: az vmss start
   summary: Start VMs within a VMSS.
@@ -951,7 +955,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_stop
   name: az vmss stop
   summary: Power off (stop) VMs within a VMSS.
@@ -990,7 +994,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_update
   name: az vmss update
   summary: Update a VMSS.
@@ -1106,8 +1110,8 @@ directCommands:
     parameterValueGroup: false, true
     summary: Enables or disables the capability to have 1 or more managed data disks with UltraSSD_LRS storage account.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vmss_update_instances
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vmss_update-instances
   name: az vmss update-instances
   summary: Upgrade VMs within a VMSS.
   description: ''
@@ -1140,7 +1144,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_wait
   name: az vmss wait
   summary: Place the CLI in a waiting state until a condition of a scale set is met.
@@ -1204,14 +1208,14 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/vm/_help.py
 commands:
 - az_vmss_create
 - az_vmss_deallocate
 - az_vmss_delete
-- az_vmss_delete_instances
+- az_vmss_delete-instances
 - az_vmss_diagnostics
-- az_vmss_diagnostics_get_default_config
+- az_vmss_diagnostics_get-default-config
 - az_vmss_diagnostics_set
 - az_vmss_disk
 - az_vmss_disk_attach
@@ -1224,47 +1228,47 @@ commands:
 - az_vmss_extension_delete
 - az_vmss_extension_image
 - az_vmss_extension_image_list
-- az_vmss_extension_image_list_names
-- az_vmss_extension_image_list_versions
+- az_vmss_extension_image_list-names
+- az_vmss_extension_image_list-versions
 - az_vmss_extension_image_show
 - az_vmss_extension_list
 - az_vmss_extension_set
 - az_vmss_extension_show
 - az_vmss_extension_upgrade
-- az_vmss_get_instance_view
-- az_vmss_get_os_upgrade_history
+- az_vmss_get-instance-view
+- az_vmss_get-os-upgrade-history
 - az_vmss_identity
 - az_vmss_identity_assign
 - az_vmss_identity_remove
 - az_vmss_identity_show
 - az_vmss_list
-- az_vmss_list_instance_connection_info
-- az_vmss_list_instance_public_ips
-- az_vmss_list_instances
-- az_vmss_list_skus
+- az_vmss_list-instance-connection-info
+- az_vmss_list-instance-public-ips
+- az_vmss_list-instances
+- az_vmss_list-skus
 - az_vmss_nic
 - az_vmss_nic_list
-- az_vmss_nic_list_vm_nics
+- az_vmss_nic_list-vm-nics
 - az_vmss_nic_show
-- az_vmss_perform_maintenance
+- az_vmss_perform-maintenance
 - az_vmss_reimage
 - az_vmss_restart
-- az_vmss_rolling_upgrade
-- az_vmss_rolling_upgrade_cancel
-- az_vmss_rolling_upgrade_get_latest
-- az_vmss_rolling_upgrade_start
-- az_vmss_run_command
-- az_vmss_run_command_invoke
-- az_vmss_run_command_list
-- az_vmss_run_command_show
+- az_vmss_rolling-upgrade
+- az_vmss_rolling-upgrade_cancel
+- az_vmss_rolling-upgrade_get-latest
+- az_vmss_rolling-upgrade_start
+- az_vmss_run-command
+- az_vmss_run-command_invoke
+- az_vmss_run-command_list
+- az_vmss_run-command_show
 - az_vmss_scale
-- az_vmss_set_orchestration_service_state
+- az_vmss_set-orchestration-service-state
 - az_vmss_show
-- az_vmss_simulate_eviction
+- az_vmss_simulate-eviction
 - az_vmss_start
 - az_vmss_stop
 - az_vmss_update
-- az_vmss_update_instances
+- az_vmss_update-instances
 - az_vmss_wait
 globalParameters:
 - name: --debug
@@ -1282,6 +1286,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/29/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/05/2020
   description: Manage groupings of virtual machines in an Azure Virtual Machine Scale Set (VMSS).

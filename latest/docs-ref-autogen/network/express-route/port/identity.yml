@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_express_route_port_identity
+uid: az_network_express-route_port_identity
 name: az network express-route port identity
 summary: Manage the managed service identity of an ExpressRoute Port.
 description: ''
 directCommands:
-- uid: az_network_express_route_port_identity_assign
+- uid: az_network_express-route_port_identity_assign
   name: az network express-route port identity assign
   summary: Assign a managed service identity to an ExpressRoute Port.
   description: ''
@@ -46,8 +46,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express_route_port_identity_remove
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_express-route_port_identity_remove
   name: az network express-route port identity remove
   summary: Remove the managed service identity of an ExpressRoute Port.
   description: ''
@@ -76,8 +76,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express_route_port_identity_show
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_express-route_port_identity_show
   name: az network express-route port identity show
   summary: Show the managed service identity of an ExpressRoute Port.
   description: ''
@@ -106,11 +106,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_express_route_port_identity_assign
-- az_network_express_route_port_identity_remove
-- az_network_express_route_port_identity_show
+- az_network_express-route_port_identity_assign
+- az_network_express-route_port_identity_remove
+- az_network_express-route_port_identity_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -127,6 +127,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 10/09/2020
   description: Manage the managed service identity of an ExpressRoute Port.

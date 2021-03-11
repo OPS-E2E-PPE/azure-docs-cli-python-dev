@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_storage_blob_service_properties
-name: az storage blob service-properties
+uid: az_storage_blob_service-properties
+name: Blob storage service properties
 summary: Manage storage blob service properties.
 description: ''
 directCommands:
-- uid: az_storage_blob_service_properties_show
+- uid: az_storage_blob_service-properties_show
   name: az storage blob service-properties show
   summary: Gets the properties of a storage account's Blob service, including Azure Storage Analytics.
   description: ''
@@ -38,8 +38,8 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_blob_service_properties_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_blob_service-properties_update
   name: az storage blob service-properties update
   summary: Update storage blob service properties.
   description: ''
@@ -88,10 +88,13 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
-- az_storage_blob_service_properties_show
-- az_storage_blob_service_properties_update
+- az_storage_blob_service-properties_show
+- az_storage_blob_service-properties_update
+- az_storage_blob_service-properties_delete-policy
+- az_storage_blob_service-properties_delete-policy_show
+- az_storage_blob_service-properties_delete-policy_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -108,6 +111,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage storage blob service properties.

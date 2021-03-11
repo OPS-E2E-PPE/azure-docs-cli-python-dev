@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lab_vm
-name: az lab vm
+name: Dev/Test Lab virtual machines
 summary: Manage VMs in an Azure DevTest Lab.
 description: ''
 directCommands:
-- uid: az_lab_vm_apply_artifacts
+- uid: az_lab_vm_apply-artifacts
   name: az lab vm apply-artifacts
   summary: Apply artifacts to a virtual machine in Azure DevTest Lab.
   description: ''
@@ -37,7 +37,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_vm_claim
   name: az lab vm claim
   summary: Claim a virtual machine from the Lab.
@@ -74,7 +74,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_vm_create
   name: az lab vm create
   summary: Create a VM in a lab.
@@ -194,7 +194,7 @@ directCommands:
   - name: --vnet-name
     summary: Name of the virtual network to add the VM to.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_vm_delete
   name: az lab vm delete
   summary: Delete virtual machine.
@@ -221,7 +221,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_vm_list
   name: az lab vm list
   summary: List the VMs in an Azure DevTest Lab.
@@ -282,7 +282,7 @@ directCommands:
   - name: --top
     summary: The maximum number of resources to return.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_vm_show
   name: az lab vm show
   summary: Get virtual machine.
@@ -317,7 +317,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_vm_start
   name: az lab vm start
   summary: Start a virtual machine.
@@ -344,7 +344,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_vm_stop
   name: az lab vm stop
   summary: Stop a virtual machine This operation can take a while to complete.
@@ -371,9 +371,9 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/lab/_help.py
 commands:
-- az_lab_vm_apply_artifacts
+- az_lab_vm_apply-artifacts
 - az_lab_vm_claim
 - az_lab_vm_create
 - az_lab_vm_delete
@@ -397,6 +397,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
   ms.date: 10/20/2019
   description: Manage VMs in an Azure DevTest Lab.

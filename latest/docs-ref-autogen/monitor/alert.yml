@@ -91,7 +91,7 @@ directCommands:
   - name: --target-type
     summary: "Target resource type. Can also accept namespace/type format (Ex: 'Microsoft.Compute/virtualMachines')."
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
 - uid: az_monitor_alert_delete
   name: az monitor alert delete
   summary: Delete an alert rule.
@@ -117,7 +117,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
 - uid: az_monitor_alert_list
   name: az monitor alert list
   summary: List alert rules in a resource group.
@@ -141,8 +141,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_alert_list_incidents
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_alert_list-incidents
   name: az monitor alert list-incidents
   summary: List all incidents for an alert rule.
   description: ''
@@ -166,7 +166,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
 - uid: az_monitor_alert_show
   name: az monitor alert show
   summary: Show an alert rule.
@@ -196,8 +196,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_alert_show_incident
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_alert_show-incident
   name: az monitor alert show-incident
   summary: Get the details of an alert rule incident.
   description: ''
@@ -223,7 +223,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
 - uid: az_monitor_alert_update
   name: az monitor alert update
   summary: Update a classic metric-based alert rule.
@@ -351,14 +351,14 @@ directCommands:
   - name: --threshold
     summary: Numeric threshold at which to trigger the alert.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/monitor/_help.py
 commands:
 - az_monitor_alert_create
 - az_monitor_alert_delete
 - az_monitor_alert_list
-- az_monitor_alert_list_incidents
+- az_monitor_alert_list-incidents
 - az_monitor_alert_show
-- az_monitor_alert_show_incident
+- az_monitor_alert_show-incident
 - az_monitor_alert_update
 globalParameters:
 - name: --debug
@@ -376,6 +376,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/20/2021
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 09/11/2020
   description: Manage classic metric-based alert rules.

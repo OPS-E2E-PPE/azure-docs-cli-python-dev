@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_policy
-name: az policy
+name: Policy
 summary: Manage resource policies.
 description: ''
 commands:
@@ -32,16 +32,16 @@ commands:
 - az_policy_remediation_deployment_list
 - az_policy_remediation_list
 - az_policy_remediation_show
-- az_policy_set_definition
-- az_policy_set_definition_create
-- az_policy_set_definition_delete
-- az_policy_set_definition_list
-- az_policy_set_definition_show
-- az_policy_set_definition_update
+- az_policy_set-definition
+- az_policy_set-definition_create
+- az_policy_set-definition_delete
+- az_policy_set-definition_list
+- az_policy_set-definition_show
+- az_policy_set-definition_update
 - az_policy_state
 - az_policy_state_list
 - az_policy_state_summarize
-- az_policy_state_trigger_scan
+- az_policy_state_trigger-scan
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -58,6 +58,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/24/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage resource policies.

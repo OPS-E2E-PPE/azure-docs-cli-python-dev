@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_storage_account_blob_service_properties
+uid: az_storage_account_blob-service-properties
 name: az storage account blob-service-properties
 summary: Manage the properties of a storage account's blob service.
 description: ''
 directCommands:
-- uid: az_storage_account_blob_service_properties_show
+- uid: az_storage_account_blob-service-properties_show
   name: az storage account blob-service-properties show
   summary: Show the properties of a storage account's blob service.
   description: Show the properties of a storage account's blob service, including properties for Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.
@@ -31,15 +31,17 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_blob_service_properties_update
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_blob-service-properties_update
   name: az storage account blob-service-properties update
   summary: Update the properties of a storage account's blob service.
   description: Update the properties of a storage account's blob service, including properties for Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.
   syntax: >-
     az storage account blob-service-properties update --account-name
                                                       [--add]
+                                                      [--change-feed-retention-days]
                                                       [--container-delete-retention-days]
+                                                      [--default-service-version]
                                                       [--delete-retention-days]
                                                       [--enable-change-feed {false, true}]
                                                       [--enable-container-delete-retention]
@@ -53,12 +55,18 @@ directCommands:
                                                       [--set]
                                                       [--subscription]
   examples:
-  - summary: Enable the change feed for the storage account 'mystorageaccount' in resource group 'MyResourceGroup'.
-    syntax: az storage account blob-service-properties update --enable-change-feed true -n mystorageaccount -g MyResourceGroup
-  - summary: Enable delete retention policy and set delete retention days to 100 for the storage account 'mystorageaccount' in resource group 'MyResourceGroup'.
-    syntax: az storage account blob-service-properties update --enable-delete-retention true --delete-retention-days 100 -n mystorageaccount -g MyResourceGroup
-  - summary: Enable versioning for the storage account 'mystorageaccount' in resource group 'MyResourceGroup'.
-    syntax: az storage account blob-service-properties update --enable-versioning -n mystorageaccount -g MyResourceGroup
+  - summary: Enable change feed and set change feed retention days to infinite for the storage account 'mystorageaccount' in resource group 'myresourcegroup'.
+    syntax: az storage account blob-service-properties update --enable-change-feed true -n mystorageaccount -g myresourcegroup
+  - summary: Enable change feed and set change feed retention days to 100 for the storage account 'mystorageaccount' in resource group 'myresourcegroup'.
+    syntax: az storage account blob-service-properties update --enable-change-feed --change-feed-days 100 -n mystorageaccount -g myresourcegroup
+  - summary: Disable change feed for the storage account 'mystorageaccount' in resource group 'myresourcegroup'.
+    syntax: az storage account blob-service-properties update --enable-change-feed false -n mystorageaccount -g myresourcegroup
+  - summary: Enable delete retention policy and set delete retention days to 100 for the storage account 'mystorageaccount' in resource group 'myresourcegroup'.
+    syntax: az storage account blob-service-properties update --enable-delete-retention true --delete-retention-days 100 -n mystorageaccount -g myresourcegroup
+  - summary: Enable versioning for the storage account 'mystorageaccount' in resource group 'myresourcegroup'.
+    syntax: az storage account blob-service-properties update --enable-versioning -n mystorageaccount -g myresourcegroup
+  - summary: Set default version for incoming request for storage account 'mystorageaccount'.
+    syntax: az storage account blob-service-properties update --default-service-version 2020-04-08 -n mystorageaccount -g myresourcegroup
   requiredParameters:
   - isRequired: true
     name: --account-name -n
@@ -68,7 +76,13 @@ directCommands:
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
     description: ''
+  - name: --change-feed-retention-days
+    summary: ''
+    description: ''
   - name: --container-delete-retention-days
+    summary: ''
+    description: ''
+  - name: --default-service-version
     summary: ''
     description: ''
   - name: --delete-retention-days
@@ -111,10 +125,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/Azure/azure-cli/blob/dev/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
-- az_storage_account_blob_service_properties_show
-- az_storage_account_blob_service_properties_update
+- az_storage_account_blob-service-properties_show
+- az_storage_account_blob-service-properties_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -131,6 +145,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/dev/
+  ms.date: 11/12/2020
   description: Manage the properties of a storage account's blob service.
