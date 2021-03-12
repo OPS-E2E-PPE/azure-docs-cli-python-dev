@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_synapse_linked_service
+uid: az_synapse_linked-service
 name: az synapse linked-service
 summary: Manage Synapse's linked services.
 description: ''
 directCommands:
-- uid: az_synapse_linked_service_create
+- uid: az_synapse_linked-service_create
   name: az synapse linked-service create
   summary: Create a linked service.
   description: ''
@@ -39,8 +39,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_linked_service_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_linked-service_delete
   name: az synapse linked-service delete
   summary: Delete a linked service.
   description: ''
@@ -74,8 +74,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_linked_service_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_linked-service_list
   name: az synapse linked-service list
   summary: List linked services.
   description: ''
@@ -98,8 +98,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_linked_service_set
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_linked-service_set
   name: az synapse linked-service set
   summary: Set an exist linked service.
   description: ''
@@ -134,8 +134,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_linked_service_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_linked-service_show
   name: az synapse linked-service show
   summary: Get a linked service.
   description: ''
@@ -165,13 +165,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 commands:
-- az_synapse_linked_service_create
-- az_synapse_linked_service_delete
-- az_synapse_linked_service_list
-- az_synapse_linked_service_set
-- az_synapse_linked_service_show
+- az_synapse_linked-service_create
+- az_synapse_linked-service_delete
+- az_synapse_linked-service_list
+- az_synapse_linked-service_set
+- az_synapse_linked-service_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -188,6 +188,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/26/2021
   description: Manage Synapse's linked services.

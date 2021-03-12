@@ -50,8 +50,8 @@ directCommands:
     parameterValueGroup: AzureFileShare, MSSQL, SAPHANA, SAPHanaDatabase, SQLDataBase, VM
     summary: Specifiy the type of applications within the Resource which should be discovered and protected by Azure Backup.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
-- uid: az_backup_item_set_policy
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+- uid: az_backup_item_set-policy
   name: az backup item set-policy
   summary: Update the policy associated with this item. Use this to change policies of the backup item.
   description: ''
@@ -100,7 +100,7 @@ directCommands:
     parameterValueGroup: AzureFileShare, MSSQL, SAPHANA, SAPHanaDatabase, SQLDataBase, VM
     summary: Specifiy the type of applications within the Resource which should be discovered and protected by Azure Backup.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
 - uid: az_backup_item_show
   name: az backup item show
   summary: Show details of a particular backed up item.
@@ -157,10 +157,10 @@ directCommands:
     parameterValueGroup: AzureFileShare, MSSQL, SAPHANA, SAPHanaDatabase, SQLDataBase, VM
     summary: Specifiy the type of applications within the Resource which should be discovered and protected by Azure Backup.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
 commands:
 - az_backup_item_list
-- az_backup_item_set_policy
+- az_backup_item_set-policy
 - az_backup_item_show
 globalParameters:
 - name: --debug
@@ -178,6 +178,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 03/12/2020
   description: An item which is already protected or backed up to an Azure Recovery services vault with an associated policy.

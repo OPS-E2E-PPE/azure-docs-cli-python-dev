@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_security_iot_solution
+uid: az_security_iot-solution
 name: az security iot-solution
 summary: Manage your IoT Security solution.
 description: ''
 directCommands:
-- uid: az_security_iot_solution_create
+- uid: az_security_iot-solution_create
   name: az security iot-solution create
   summary: Create your IoT Security solution.
   description: ''
@@ -43,8 +43,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
-- uid: az_security_iot_solution_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+- uid: az_security_iot-solution_delete
   name: az security iot-solution delete
   summary: Delete your IoT Security solution.
   description: ''
@@ -68,8 +68,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
-- uid: az_security_iot_solution_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+- uid: az_security_iot-solution_list
   name: az security iot-solution list
   summary: List all IoT Security solutions.
   description: ''
@@ -90,8 +90,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
-- uid: az_security_iot_solution_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+- uid: az_security_iot-solution_show
   name: az security iot-solution show
   summary: Shows a IoT Security solution.
   description: ''
@@ -119,8 +119,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
-- uid: az_security_iot_solution_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+- uid: az_security_iot-solution_update
   name: az security iot-solution update
   summary: Update your IoT Security solution.
   description: ''
@@ -152,13 +152,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
 commands:
-- az_security_iot_solution_create
-- az_security_iot_solution_delete
-- az_security_iot_solution_list
-- az_security_iot_solution_show
-- az_security_iot_solution_update
+- az_security_iot-solution_create
+- az_security_iot-solution_delete
+- az_security_iot-solution_list
+- az_security_iot-solution_show
+- az_security_iot-solution_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -175,6 +175,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/11/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/03/2021
   description: Manage your IoT Security solution.

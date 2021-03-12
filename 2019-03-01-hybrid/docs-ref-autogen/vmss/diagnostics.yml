@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vmss_diagnostics
-name: az vmss diagnostics
+name: VMSS diagnostics
 summary: Configure the Azure Virtual Machine Scale Set diagnostics extension.
 description: ''
 directCommands:
-- uid: az_vmss_diagnostics_get_default_config
+- uid: az_vmss_diagnostics_get-default-config
   name: az vmss diagnostics get-default-config
   summary: Show the default config file which defines data to be collected.
   description: ''
@@ -18,7 +18,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vmss_diagnostics_set
   name: az vmss diagnostics set
   summary: Enable diagnostics on a VMSS.
@@ -66,9 +66,9 @@ directCommands:
   - name: --version
     summary: Version of the diagnostics extension. Will use the latest if not specfied.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
 commands:
-- az_vmss_diagnostics_get_default_config
+- az_vmss_diagnostics_get-default-config
 - az_vmss_diagnostics_set
 globalParameters:
 - name: --debug
@@ -86,6 +86,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/29/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Configure the Azure Virtual Machine Scale Set diagnostics extension.

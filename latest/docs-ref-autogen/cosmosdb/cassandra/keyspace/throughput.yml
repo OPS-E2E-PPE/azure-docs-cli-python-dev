@@ -36,7 +36,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_cassandra_keyspace_throughput_show
   name: az cosmosdb cassandra keyspace throughput show
   summary: Get the throughput of the Cassandra keyspace under an Azure Cosmos DB account.
@@ -67,7 +67,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_cassandra_keyspace_throughput_update
   name: az cosmosdb cassandra keyspace throughput update
   summary: Update the throughput of the Cassandra keyspace under an Azure Cosmos DB account.
@@ -102,7 +102,7 @@ directCommands:
   - name: --throughput
     summary: The throughput of Cassandra keyspace (RU/s).
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 commands:
 - az_cosmosdb_cassandra_keyspace_throughput_migrate
 - az_cosmosdb_cassandra_keyspace_throughput_show
@@ -123,6 +123,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 10/23/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Manage throughput of Cassandra keyspace under an Azure Cosmos DB account.

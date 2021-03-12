@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_virtual_appliance_sku
+uid: az_network_virtual-appliance_sku
 name: az network virtual-appliance sku
 summary: Manage Azure Network Virtual Appliance Sku.
 description: ''
 directCommands:
-- uid: az_network_virtual_appliance_sku_list
+- uid: az_network_virtual-appliance_sku_list
   name: az network virtual-appliance sku list
   summary: List all Azure network virtual appliance sku.
   description: ''
@@ -18,8 +18,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_virtual_appliance_sku_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_virtual-appliance_sku_show
   name: az network virtual-appliance sku show
   summary: Show the detail of an Azure network virtual appliance sku.
   description: ''
@@ -39,10 +39,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_virtual_appliance_sku_list
-- az_network_virtual_appliance_sku_show
+- az_network_virtual-appliance_sku_list
+- az_network_virtual-appliance_sku_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -59,6 +59,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage Azure Network Virtual Appliance Sku.

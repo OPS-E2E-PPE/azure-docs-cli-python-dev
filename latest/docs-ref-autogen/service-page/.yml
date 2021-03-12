@@ -1,0 +1,6 @@
+### YamlMime:AzureCLIGroup
+uid: sp-
+name: ''
+commands:
+- az_confluent
+metadata: {}

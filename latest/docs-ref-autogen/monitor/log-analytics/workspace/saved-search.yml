@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_monitor_log_analytics_workspace_saved_search
+uid: az_monitor_log-analytics_workspace_saved-search
 name: az monitor log-analytics workspace saved-search
 summary: Manage saved search for log analytics workspace.
 description: ''
 directCommands:
-- uid: az_monitor_log_analytics_workspace_saved_search_create
+- uid: az_monitor_log-analytics_workspace_saved-search_create
   name: az monitor log-analytics workspace saved-search create
   summary: Create a saved search for a given workspace.
   description: ''
@@ -21,7 +21,7 @@ directCommands:
                                                            [--tags]
   examples:
   - summary: Create a saved search for a given workspace.
-    syntax: az monitor log-analytics workspace saved-search create -g MyRG --workspace-name MyWS -n MySavedSearch --category Test1 --display-name TestSavedSearch -q "AzureActivity | summarize count() by bin(timestamp, 1h)" --fa myfun --fp "a:string = value"
+    syntax: az monitor log-analytics workspace saved-search create -g MyRG --workspace-name MyWS -n MySavedSearch --category Test1 --display-name TestSavedSearch -q "AzureActivity | summarize count() by bin(TimeGenerated, 1h)" --fa myfun --fp "a:string = value"
   requiredParameters:
   - isRequired: true
     name: --category
@@ -60,8 +60,8 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_saved_search_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_saved-search_delete
   name: az monitor log-analytics workspace saved-search delete
   summary: Delete a saved search for a given workspace.
   description: ''
@@ -91,8 +91,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_saved_search_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_saved-search_list
   name: az monitor log-analytics workspace saved-search list
   summary: List all saved searches for a given workspace.
   description: ''
@@ -117,8 +117,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_saved_search_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_saved-search_show
   name: az monitor log-analytics workspace saved-search show
   summary: Show a saved search for a given workspace.
   description: ''
@@ -148,8 +148,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_analytics_workspace_saved_search_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-analytics_workspace_saved-search_update
   name: az monitor log-analytics workspace saved-search update
   summary: Update a saved search for a given workspace.
   description: ''
@@ -170,7 +170,7 @@ directCommands:
                                                            [--tags]
   examples:
   - summary: Update a saved search for a given workspace.
-    syntax: az monitor log-analytics workspace saved-search update -g MyRG --workspace-name MyWS -n MySavedSearch --category Test1 --display-name TestSavedSearch -q "AzureActivity | summarize count() by bin(timestamp, 1h)" --fa myfun --fp "a:string = value"
+    syntax: az monitor log-analytics workspace saved-search update -g MyRG --workspace-name MyWS -n MySavedSearch --category Test1 --display-name TestSavedSearch -q "AzureActivity | summarize count() by bin(TimeGenerated, 1h)" --fa myfun --fp "a:string = value"
   requiredParameters:
   - isRequired: true
     name: --name -n
@@ -218,13 +218,13 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
 commands:
-- az_monitor_log_analytics_workspace_saved_search_create
-- az_monitor_log_analytics_workspace_saved_search_delete
-- az_monitor_log_analytics_workspace_saved_search_list
-- az_monitor_log_analytics_workspace_saved_search_show
-- az_monitor_log_analytics_workspace_saved_search_update
+- az_monitor_log-analytics_workspace_saved-search_create
+- az_monitor_log-analytics_workspace_saved-search_delete
+- az_monitor_log-analytics_workspace_saved-search_list
+- az_monitor_log-analytics_workspace_saved-search_show
+- az_monitor_log-analytics_workspace_saved-search_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -241,6 +241,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/20/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/23/2021
   description: Manage saved search for log analytics workspace.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_watcher_packet_capture
+uid: az_network_watcher_packet-capture
 name: az network watcher packet-capture
 summary: Manage packet capture sessions on VMs.
 description: These commands require that both Azure Network Watcher is enabled for the VMs region and that AzureNetworkWatcherExtension is enabled on the VM. For more information visit <a href="https://docs.microsoft.com/azure/network-watcher/network-watcher-packet-capture-manage-cli">https://docs.microsoft.com/azure/network-watcher/network-watcher-packet-capture-manage-cli</a>.
 directCommands:
-- uid: az_network_watcher_packet_capture_create
+- uid: az_network_watcher_packet-capture_create
   name: az network watcher packet-capture create
   summary: Create and start a packet capture session.
   description: ''
@@ -86,8 +86,8 @@ directCommands:
   - name: --time-limit
     summary: Maximum duration of the capture session in seconds.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_watcher_packet_capture_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_watcher_packet-capture_delete
   name: az network watcher packet-capture delete
   summary: Delete a packet capture session.
   description: ''
@@ -113,8 +113,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_watcher_packet_capture_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_watcher_packet-capture_list
   name: az network watcher packet-capture list
   summary: List all packet capture sessions within a resource group.
   description: ''
@@ -139,8 +139,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_watcher_packet_capture_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_watcher_packet-capture_show
   name: az network watcher packet-capture show
   summary: Show details of a packet capture session.
   description: ''
@@ -168,8 +168,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_watcher_packet_capture_show_status
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_watcher_packet-capture_show-status
   name: az network watcher packet-capture show-status
   summary: Show the status of a packet capture session.
   description: ''
@@ -193,8 +193,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_watcher_packet_capture_stop
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_watcher_packet-capture_stop
   name: az network watcher packet-capture stop
   summary: Stop a running packet capture session.
   description: ''
@@ -218,14 +218,14 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_watcher_packet_capture_create
-- az_network_watcher_packet_capture_delete
-- az_network_watcher_packet_capture_list
-- az_network_watcher_packet_capture_show
-- az_network_watcher_packet_capture_show_status
-- az_network_watcher_packet_capture_stop
+- az_network_watcher_packet-capture_create
+- az_network_watcher_packet-capture_delete
+- az_network_watcher_packet-capture_list
+- az_network_watcher_packet-capture_show
+- az_network_watcher_packet-capture_show-status
+- az_network_watcher_packet-capture_stop
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -242,6 +242,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: These commands require that both Azure Network Watcher is enabled for the VMs region and that AzureNetworkWatcherExtension is enabled on the VM. For more information visit <a href="https://docs.microsoft.com/azure/network-watcher/network-watcher-packet-capture-manage-cli">https://docs.microsoft.com/azure/network-watcher/network-watcher-packet-capture-manage-cli</a>.

@@ -53,7 +53,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 - uid: az_appconfig_kv_export
   name: az appconfig kv export
   summary: Export configurations to another place from your App Configuration.
@@ -183,7 +183,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for preview.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 - uid: az_appconfig_kv_import
   name: az appconfig kv import
   summary: Import configurations into your App Configuration from another place.
@@ -307,7 +307,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for preview.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 - uid: az_appconfig_kv_list
   name: az appconfig kv list
   summary: List key-values.
@@ -383,7 +383,7 @@ directCommands:
   - name: --top -t
     summary: Maximum number of items to return. Must be a positive integer. Default to 100.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 - uid: az_appconfig_kv_lock
   name: az appconfig kv lock
   summary: Lock a key-value to prohibit write operations.
@@ -431,7 +431,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 - uid: az_appconfig_kv_restore
   name: az appconfig kv restore
   summary: Restore key-values.
@@ -483,7 +483,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 - uid: az_appconfig_kv_set
   name: az appconfig kv set
   summary: Set a key-value.
@@ -551,8 +551,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
-- uid: az_appconfig_kv_set_keyvault
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+- uid: az_appconfig_kv_set-keyvault
   name: az appconfig kv set-keyvault
   summary: Set a keyvault reference.
   description: ''
@@ -608,7 +608,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 - uid: az_appconfig_kv_show
   name: az appconfig kv show
   summary: Show all attributes of a key-value.
@@ -662,7 +662,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 - uid: az_appconfig_kv_unlock
   name: az appconfig kv unlock
   summary: Unlock a key-value to gain write operations.
@@ -710,7 +710,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appconfig/_help.py
 commands:
 - az_appconfig_kv_delete
 - az_appconfig_kv_export
@@ -719,7 +719,7 @@ commands:
 - az_appconfig_kv_lock
 - az_appconfig_kv_restore
 - az_appconfig_kv_set
-- az_appconfig_kv_set_keyvault
+- az_appconfig_kv_set-keyvault
 - az_appconfig_kv_show
 - az_appconfig_kv_unlock
 globalParameters:
@@ -738,6 +738,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/18/2021
   description: Manage key-values stored in an App Configuration.

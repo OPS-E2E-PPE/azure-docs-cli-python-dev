@@ -20,7 +20,7 @@ commands:
 - az_synapse_spark_session_cancel
 - az_synapse_spark_session_create
 - az_synapse_spark_session_list
-- az_synapse_spark_session_reset_timeout
+- az_synapse_spark_session_reset-timeout
 - az_synapse_spark_session_show
 - az_synapse_spark_statement
 - az_synapse_spark_statement_cancel
@@ -43,6 +43,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/26/2021
   description: Manage Spark pools and Spark jobs.

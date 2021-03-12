@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_vm_boot_diagnostics
-name: az vm boot-diagnostics
+uid: az_vm_boot-diagnostics
+name: VM boot diagnostics
 summary: Troubleshoot the startup of an Azure Virtual Machine.
 description: Use this feature to troubleshoot boot failures for custom or platform images.
 directCommands:
-- uid: az_vm_boot_diagnostics_disable
+- uid: az_vm_boot-diagnostics_disable
   name: az vm boot-diagnostics disable
   summary: Disable the boot diagnostics on a VM.
   description: ''
@@ -31,8 +31,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vm_boot_diagnostics_enable
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vm_boot-diagnostics_enable
   name: az vm boot-diagnostics enable
   summary: Enable the boot diagnostics on a VM.
   description: ''
@@ -63,8 +63,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vm_boot_diagnostics_get_boot_log
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vm_boot-diagnostics_get-boot-log
   name: az vm boot-diagnostics get-boot-log
   summary: Get the boot diagnostics log from a VM.
   description: ''
@@ -91,11 +91,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
 commands:
-- az_vm_boot_diagnostics_disable
-- az_vm_boot_diagnostics_enable
-- az_vm_boot_diagnostics_get_boot_log
+- az_vm_boot-diagnostics_disable
+- az_vm_boot-diagnostics_enable
+- az_vm_boot-diagnostics_get-boot-log
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -112,6 +112,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/29/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Use this feature to troubleshoot boot failures for custom or platform images.

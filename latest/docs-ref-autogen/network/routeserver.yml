@@ -1,12 +1,12 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_routeserver
 name: az network routeserver
-summary: Manage the virtual hub router.
+summary: Manage the route server.
 description: ''
 directCommands:
 - uid: az_network_routeserver_create
   name: az network routeserver create
-  summary: Create a virtual hub router.
+  summary: Create a route server.
   description: ''
   syntax: >-
     az network routeserver create --name
@@ -16,12 +16,12 @@ directCommands:
                                   [--subscription]
                                   [--tags]
   examples:
-  - summary: Create a virtual hub router.
-    syntax: az network routeserver create --resource-group myresourcegroup --name myvirtualrouter --hosted-subnet my_subnet_id
+  - summary: Create a route server.
+    syntax: az network routeserver create --resource-group myresourcegroup --name myrouteserver --hosted-subnet my_subnet_id
   requiredParameters:
   - isRequired: true
     name: --name -n
-    summary: The name of the Virtual Hub Router.
+    summary: The name of the Route Server.
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -29,7 +29,7 @@ directCommands:
     description: ''
   optionalParameters:
   - name: --hosted-subnet
-    summary: The ID of a subnet where Virtual Hub Router would be deployed.
+    summary: The ID of a subnet where Route Server would be deployed.
     description: ''
   - name: --location -l
     summary: 'Location. Values from: `az account list-locations`. You can configure the default location using `az configure --defaults location=<location>`.'
@@ -40,10 +40,10 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_routeserver_delete
   name: az network routeserver delete
-  summary: Delete a virtual hub router under a resource group.
+  summary: Delete a route server under a resource group.
   description: ''
   syntax: >-
     az network routeserver delete [--ids]
@@ -57,7 +57,7 @@ directCommands:
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
-    summary: The name of the Virtual Hub Router.
+    summary: The name of the Route Server.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -71,10 +71,10 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_routeserver_list
   name: az network routeserver list
-  summary: List all virtual hub routers under a subscription or a resource group.
+  summary: List all route servers under a subscription or a resource group.
   description: ''
   syntax: >-
     az network routeserver list [--query-examples]
@@ -90,10 +90,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_routeserver_show
   name: az network routeserver show
-  summary: Show a virtual hub router.
+  summary: Show a route server.
   description: ''
   syntax: >-
     az network routeserver show [--ids]
@@ -106,7 +106,7 @@ directCommands:
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
-    summary: The name of the Virtual Hub Router.
+    summary: The name of the Route Server.
     description: ''
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
@@ -117,10 +117,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_routeserver_update
   name: az network routeserver update
-  summary: Update a virtual hub router.
+  summary: Update a route server.
   description: ''
   syntax: >-
     az network routeserver update [--add]
@@ -134,8 +134,8 @@ directCommands:
                                   [--subscription]
                                   [--tags]
   examples:
-  - summary: Update a virtual hub router. (autogenerated)
-    syntax: az network routeserver update --name myvirtualrouter --resource-group myresourcegroup --tags super_secure no_80 no_22
+  - summary: Update a route server.
+    syntax: az network routeserver update --name myrouteserver --resource-group myresourcegroup --tags super_secure no_80 no_22
   optionalParameters:
   - name: --add
     summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
@@ -151,7 +151,7 @@ directCommands:
     summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
     description: ''
   - name: --name -n
-    summary: The name of the Virtual Hub Router.
+    summary: The name of the Route Server.
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
@@ -168,7 +168,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
 - az_network_routeserver_create
 - az_network_routeserver_delete
@@ -177,8 +177,8 @@ commands:
 - az_network_routeserver_peering_create
 - az_network_routeserver_peering_delete
 - az_network_routeserver_peering_list
-- az_network_routeserver_peering_list_advertised_routes
-- az_network_routeserver_peering_list_learned_routes
+- az_network_routeserver_peering_list-advertised-routes
+- az_network_routeserver_peering_list-learned-routes
 - az_network_routeserver_peering_show
 - az_network_routeserver_peering_update
 - az_network_routeserver_show
@@ -199,6 +199,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
-  description: Manage the virtual hub router.
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
+  description: Manage the route server.

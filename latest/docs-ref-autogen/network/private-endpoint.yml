@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_private_endpoint
+uid: az_network_private-endpoint
 name: az network private-endpoint
 summary: Manage private endpoints.
 description: ''
 directCommands:
-- uid: az_network_private_endpoint_create
+- uid: az_network_private-endpoint_create
   name: az network private-endpoint create
   summary: Create a private endpoint.
   description: ''
@@ -72,8 +72,8 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) associated with the subnet (Omit if supplying a subnet id).
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_endpoint_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-endpoint_delete
   name: az network private-endpoint delete
   summary: Delete a private endpoint.
   description: ''
@@ -98,8 +98,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_endpoint_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-endpoint_list
   name: az network private-endpoint list
   summary: List private endpoints.
   description: ''
@@ -117,8 +117,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_endpoint_list_types
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-endpoint_list-types
   name: az network private-endpoint list-types
   summary: Returns all of the resource types that can be linked to a Private Endpoint in this subscription in this region.
   description: ''
@@ -134,8 +134,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_endpoint_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-endpoint_show
   name: az network private-endpoint show
   summary: Get the details of a private endpoint.
   description: ''
@@ -164,8 +164,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_private_endpoint_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_private-endpoint_update
   name: az network private-endpoint update
   summary: Update a private endpoint.
   description: ''
@@ -216,21 +216,21 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_private_endpoint_create
-- az_network_private_endpoint_delete
-- az_network_private_endpoint_dns_zone_group
-- az_network_private_endpoint_dns_zone_group_add
-- az_network_private_endpoint_dns_zone_group_create
-- az_network_private_endpoint_dns_zone_group_delete
-- az_network_private_endpoint_dns_zone_group_list
-- az_network_private_endpoint_dns_zone_group_remove
-- az_network_private_endpoint_dns_zone_group_show
-- az_network_private_endpoint_list
-- az_network_private_endpoint_list_types
-- az_network_private_endpoint_show
-- az_network_private_endpoint_update
+- az_network_private-endpoint_create
+- az_network_private-endpoint_delete
+- az_network_private-endpoint_dns-zone-group
+- az_network_private-endpoint_dns-zone-group_add
+- az_network_private-endpoint_dns-zone-group_create
+- az_network_private-endpoint_dns-zone-group_delete
+- az_network_private-endpoint_dns-zone-group_list
+- az_network_private-endpoint_dns-zone-group_remove
+- az_network_private-endpoint_dns-zone-group_show
+- az_network_private-endpoint_list
+- az_network_private-endpoint_list-types
+- az_network_private-endpoint_show
+- az_network_private-endpoint_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -247,6 +247,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage private endpoints.

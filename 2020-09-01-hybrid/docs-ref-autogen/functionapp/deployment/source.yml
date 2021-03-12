@@ -105,8 +105,8 @@ directCommands:
   - name: --test
     summary: 'Name of the web app to be used for load testing. If web app is not available, it will be created. Default: Disable.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-- uid: az_functionapp_deployment_source_config_local_git
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_functionapp_deployment_source_config-local-git
   name: az functionapp deployment source config-local-git
   summary: Get a URL for a git repository endpoint to clone and push to for function app deployment.
   description: ''
@@ -140,8 +140,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-- uid: az_functionapp_deployment_source_config_zip
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_functionapp_deployment_source_config-zip
   name: az functionapp deployment source config-zip
   summary: Perform deployment using the kudu zip push deployment for a function app.
   description: By default Kudu assumes that zip deployments do not require any build-related actions like npm install or dotnet publish. This can be overridden by including an .deployment file in your zip file with the following content '[config] SCM_DO_BUILD_DURING_DEPLOYMENT = true', to enable Kudu detection logic and build script generation process. See <a href="https://github.com/projectkudu/kudu/wiki/Configurable-settings#enabledisable-build-actions-preview">https://github.com/projectkudu/kudu/wiki/Configurable-settings#enabledisable-build-actions-preview</a>. Alternately the setting can be enabled using the az functionapp config appsettings set command.
@@ -188,7 +188,7 @@ directCommands:
   - name: --timeout -t
     summary: Configurable timeout in seconds for checking the status of deployment.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_deployment_source_delete
   name: az functionapp deployment source delete
   summary: Delete a source control deployment configuration.
@@ -218,7 +218,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_deployment_source_show
   name: az functionapp deployment source show
   summary: Get the details of a source control deployment configuration.
@@ -252,7 +252,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_functionapp_deployment_source_sync
   name: az functionapp deployment source sync
   summary: Synchronize from the repository. Only needed under manual integration mode.
@@ -282,8 +282,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-- uid: az_functionapp_deployment_source_update_token
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_functionapp_deployment_source_update-token
   name: az functionapp deployment source update-token
   summary: Update source control token cached in Azure app service.
   description: If no token is provided, the command will clean up existing token.
@@ -297,15 +297,15 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 commands:
 - az_functionapp_deployment_source_config
-- az_functionapp_deployment_source_config_local_git
-- az_functionapp_deployment_source_config_zip
+- az_functionapp_deployment_source_config-local-git
+- az_functionapp_deployment_source_config-zip
 - az_functionapp_deployment_source_delete
 - az_functionapp_deployment_source_show
 - az_functionapp_deployment_source_sync
-- az_functionapp_deployment_source_update_token
+- az_functionapp_deployment_source_update-token
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -322,6 +322,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/19/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage function app deployment via source control.

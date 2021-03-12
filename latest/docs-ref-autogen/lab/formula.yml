@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lab_formula
-name: az lab formula
+name: Dev/Test Lab formulas
 summary: Manage formulas for an Azure DevTest Lab.
 description: ''
 directCommands:
@@ -30,8 +30,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
-- uid: az_lab_formula_export_artifacts
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+- uid: az_lab_formula_export-artifacts
   name: az lab formula export-artifacts
   summary: Export artifacts from a formula.
   description: ''
@@ -60,7 +60,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_formula_list
   name: az lab formula list
   summary: List formulas in a given lab.
@@ -102,7 +102,7 @@ directCommands:
   - name: --top
     summary: "The maximum number of resources to return from the operation. Example: '$top=10'."
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_formula_show
   name: az lab formula show
   summary: Show formulae from an Azure DevTest Lab.
@@ -140,10 +140,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
 commands:
 - az_lab_formula_delete
-- az_lab_formula_export_artifacts
+- az_lab_formula_export-artifacts
 - az_lab_formula_list
 - az_lab_formula_show
 globalParameters:
@@ -162,6 +162,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/20/2019
   description: Manage formulas for an Azure DevTest Lab.

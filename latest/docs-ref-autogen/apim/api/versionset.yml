@@ -60,7 +60,7 @@ directCommands:
   - name: --version-set-id
     summary: A resource identifier for the related ApiVersionSet.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_api_versionset_delete
   name: az apim api versionset delete
   summary: Deletes specific Api Version Set.
@@ -94,7 +94,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_api_versionset_list
   name: az apim api versionset list
   summary: Lists a collection of API Version Sets in the specified service instance.
@@ -123,7 +123,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_api_versionset_show
   name: az apim api versionset show
   summary: Gets the details of the Api Version Set specified by its identifier.
@@ -157,7 +157,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_api_versionset_update
   name: az apim api versionset update
   summary: Updates the details of the Api VersionSet specified by its identifier.
@@ -229,7 +229,7 @@ directCommands:
   - name: --versioning-scheme
     summary: Required. An value that determines where the API Version identifer will be located in a HTTP request.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 commands:
 - az_apim_api_versionset_create
 - az_apim_api_versionset_delete
@@ -252,6 +252,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 12/01/2020
   description: Manage Azure API Management API Version Set.

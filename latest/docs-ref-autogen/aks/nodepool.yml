@@ -136,7 +136,7 @@ directCommands:
     parameterValueGroup: 1, 2, 3
     summary: Availability zones where agent nodes will be placed.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_aks_nodepool_delete
   name: az aks nodepool delete
   summary: Delete the agent pool in the managed Kubernetes cluster.
@@ -167,8 +167,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
-- uid: az_aks_nodepool_get_upgrades
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+- uid: az_aks_nodepool_get-upgrades
   name: az aks nodepool get-upgrades
   summary: Get the available upgrade versions for an agent pool of the managed Kubernetes cluster.
   description: ''
@@ -197,7 +197,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_aks_nodepool_list
   name: az aks nodepool list
   summary: List node pools in the managed Kubernetes cluster.
@@ -223,7 +223,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_aks_nodepool_scale
   name: az aks nodepool scale
   summary: Scale the node pool in a managed Kubernetes cluster.
@@ -259,7 +259,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_aks_nodepool_show
   name: az aks nodepool show
   summary: Show the details for a node pool in the managed Kubernetes cluster.
@@ -290,7 +290,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_aks_nodepool_update
   name: az aks nodepool update
   summary: Update a node pool to enable/disable cluster-autoscaler or change min-count or max-count.
@@ -361,7 +361,7 @@ directCommands:
   - name: --update-cluster-autoscaler -u
     summary: Update min-count or max-count for cluster autoscaler.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
 - uid: az_aks_nodepool_upgrade
   name: az aks nodepool upgrade
   summary: Upgrade the node pool in a managed Kubernetes cluster.
@@ -404,11 +404,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acs/_help.py
 commands:
 - az_aks_nodepool_add
 - az_aks_nodepool_delete
-- az_aks_nodepool_get_upgrades
+- az_aks_nodepool_get-upgrades
 - az_aks_nodepool_list
 - az_aks_nodepool_scale
 - az_aks_nodepool_show
@@ -430,6 +430,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/13/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Commands to manage node pools in Kubernetes kubernetes cluster.

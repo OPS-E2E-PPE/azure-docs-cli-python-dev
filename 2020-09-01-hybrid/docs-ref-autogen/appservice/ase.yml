@@ -138,8 +138,8 @@ directCommands:
   - name: --vnet-name
     summary: Name of the vNet. Mandatory if only subnet name is specified.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-- uid: az_appservice_ase_create_inbound_services
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_appservice_ase_create-inbound-services
   name: az appservice ase create-inbound-services
   summary: Create the inbound services needed in preview for ASEv3 (private endpoint and DNS) or Private DNS Zone for Internal ASEv2.
   description: ''
@@ -183,7 +183,7 @@ directCommands:
   - name: --vnet-name
     summary: Name of the vNet. Mandatory if only subnet name is specified.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_appservice_ase_delete
   name: az appservice ase delete
   summary: Delete app service environment.
@@ -215,7 +215,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_appservice_ase_list
   name: az appservice ase list
   summary: List app service environments.
@@ -239,8 +239,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-- uid: az_appservice_ase_list_addresses
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_appservice_ase_list-addresses
   name: az appservice ase list-addresses
   summary: List VIPs associated with an app service environment.
   description: ''
@@ -263,8 +263,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-- uid: az_appservice_ase_list_plans
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_appservice_ase_list-plans
   name: az appservice ase list-plans
   summary: List app service plans associated with an app service environment.
   description: ''
@@ -287,7 +287,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_appservice_ase_show
   name: az appservice ase show
   summary: Show details of an app service environment.
@@ -315,7 +315,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 - uid: az_appservice_ase_update
   name: az appservice ase update
   summary: Update app service environment.
@@ -354,14 +354,14 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 commands:
 - az_appservice_ase_create
-- az_appservice_ase_create_inbound_services
+- az_appservice_ase_create-inbound-services
 - az_appservice_ase_delete
 - az_appservice_ase_list
-- az_appservice_ase_list_addresses
-- az_appservice_ase_list_plans
+- az_appservice_ase_list-addresses
+- az_appservice_ase_list-plans
 - az_appservice_ase_show
 - az_appservice_ase_update
 globalParameters:
@@ -380,6 +380,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/19/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage App Service Environments v2.

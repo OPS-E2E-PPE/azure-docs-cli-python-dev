@@ -4,7 +4,7 @@ name: az backup restore files
 summary: Gives access to all files of a recovery point.
 description: ''
 directCommands:
-- uid: az_backup_restore_files_mount_rp
+- uid: az_backup_restore_files_mount-rp
   name: az backup restore files mount-rp
   summary: Download a script which mounts files of a recovery point.
   description: ''
@@ -45,8 +45,8 @@ directCommands:
   - name: --vault-name -v
     summary: Name of the Recovery services vault.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
-- uid: az_backup_restore_files_unmount_rp
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+- uid: az_backup_restore_files_unmount-rp
   name: az backup restore files unmount-rp
   summary: Close access to the recovery point.
   description: ''
@@ -87,10 +87,10 @@ directCommands:
   - name: --vault-name -v
     summary: Name of the Recovery services vault.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
 commands:
-- az_backup_restore_files_mount_rp
-- az_backup_restore_files_unmount_rp
+- az_backup_restore_files_mount-rp
+- az_backup_restore_files_unmount-rp
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -107,6 +107,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 03/12/2020
   description: Gives access to all files of a recovery point.

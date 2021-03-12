@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_account
-name: az dla account
+name: Data Lake Analytics accounts
 summary: Manage Data Lake Analytics accounts.
 description: ''
 directCommands:
@@ -57,7 +57,7 @@ directCommands:
     parameterValueGroup: Commitment_100000AUHours, Commitment_10000AUHours, Commitment_1000AUHours, Commitment_100AUHours, Commitment_500000AUHours, Commitment_50000AUHours, Commitment_5000AUHours, Commitment_500AUHours, Consumption
     summary: The desired commitment tier for this account to use.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 - uid: az_dla_account_delete
   name: az dla account delete
   summary: Delete a Data Lake Analytics account.
@@ -80,7 +80,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 - uid: az_dla_account_list
   name: az dla account list
   summary: List available Data Lake Analytics accounts.
@@ -99,7 +99,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 - uid: az_dla_account_show
   name: az dla account show
   summary: Get the details of a Data Lake Analytics account.
@@ -126,7 +126,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 - uid: az_dla_account_update
   name: az dla account update
   summary: Update a Data Lake Analytics account.
@@ -180,26 +180,26 @@ directCommands:
     parameterValueGroup: Commitment_100000AUHours, Commitment_10000AUHours, Commitment_1000AUHours, Commitment_100AUHours, Commitment_500000AUHours, Commitment_50000AUHours, Commitment_5000AUHours, Commitment_500AUHours, Consumption
     summary: The desired commitment tier for this account to use.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 commands:
-- az_dla_account_blob_storage
-- az_dla_account_blob_storage_add
-- az_dla_account_blob_storage_delete
-- az_dla_account_blob_storage_list
-- az_dla_account_blob_storage_show
-- az_dla_account_blob_storage_update
-- az_dla_account_compute_policy
-- az_dla_account_compute_policy_create
-- az_dla_account_compute_policy_delete
-- az_dla_account_compute_policy_list
-- az_dla_account_compute_policy_show
-- az_dla_account_compute_policy_update
+- az_dla_account_blob-storage
+- az_dla_account_blob-storage_add
+- az_dla_account_blob-storage_delete
+- az_dla_account_blob-storage_list
+- az_dla_account_blob-storage_show
+- az_dla_account_blob-storage_update
+- az_dla_account_compute-policy
+- az_dla_account_compute-policy_create
+- az_dla_account_compute-policy_delete
+- az_dla_account_compute-policy_list
+- az_dla_account_compute-policy_show
+- az_dla_account_compute-policy_update
 - az_dla_account_create
-- az_dla_account_data_lake_store
-- az_dla_account_data_lake_store_add
-- az_dla_account_data_lake_store_delete
-- az_dla_account_data_lake_store_list
-- az_dla_account_data_lake_store_show
+- az_dla_account_data-lake-store
+- az_dla_account_data-lake-store_add
+- az_dla_account_data-lake-store_delete
+- az_dla_account_data-lake-store_list
+- az_dla_account_data-lake-store_show
 - az_dla_account_delete
 - az_dla_account_firewall
 - az_dla_account_firewall_create
@@ -226,6 +226,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 09/16/2019
   description: Manage Data Lake Analytics accounts.

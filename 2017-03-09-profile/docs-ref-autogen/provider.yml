@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_provider
-name: az provider
+name: Resource providers
 summary: Manage resource providers.
 description: ''
 directCommands:
@@ -25,7 +25,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_provider_register
   name: az provider register
   summary: Register a provider.
@@ -33,6 +33,7 @@ directCommands:
   syntax: >-
     az provider register --namespace
                          [--accept-terms]
+                         [--management-group-id]
                          [--subscription]
                          [--wait]
   examples:
@@ -40,6 +41,8 @@ directCommands:
     syntax: az provider register --namespace 'Microsoft.PolicyInsights'
   - summary: Register a provider from RPaaS.
     syntax: az provider register -n 'Microsoft.Confluent' --accept-terms
+  - summary: Register a management group.
+    syntax: az provider register --namespace Microsoft.Automation -m mgID
   requiredParameters:
   - isRequired: true
     name: --namespace -n
@@ -49,13 +52,16 @@ directCommands:
   - name: --accept-terms
     summary: Accept market place terms and RP terms for RPaaS. Required when registering RPs from RPaaS, such as 'Microsoft.Confluent' and 'Microsoft.Datadog'.
     description: ''
+  - name: --management-group-id -m
+    summary: The management group id to register.
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --wait
     summary: Wait for the registration to finish.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_provider_show
   name: az provider show
   summary: Gets a resource provider.
@@ -80,7 +86,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_provider_unregister
   name: az provider unregister
   summary: Unregister a provider.
@@ -104,7 +110,7 @@ directCommands:
   - name: --wait
     summary: Wait for unregistration to finish.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 commands:
 - az_provider_list
 - az_provider_operation
@@ -129,6 +135,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/24/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage resource providers.

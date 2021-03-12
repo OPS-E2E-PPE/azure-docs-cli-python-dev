@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_cdn_waf_policy_managed_rule_set_rule_group_override
+uid: az_cdn_waf_policy_managed-rule-set_rule-group-override
 name: az cdn waf policy managed-rule-set rule-group-override
 summary: Manage rule group overrides of a managed rule on a CDN WAF policy.
 description: ''
 directCommands:
-- uid: az_cdn_waf_policy_managed_rule_set_rule_group_override_delete
+- uid: az_cdn_waf_policy_managed-rule-set_rule-group-override_delete
   name: az cdn waf policy managed-rule-set rule-group-override delete
   summary: Remove a rule group override from a managed rule set on a CDN WAF policy.
   description: ''
@@ -49,8 +49,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
-- uid: az_cdn_waf_policy_managed_rule_set_rule_group_override_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+- uid: az_cdn_waf_policy_managed-rule-set_rule-group-override_list
   name: az cdn waf policy managed-rule-set rule-group-override list
   summary: List rule group overrides of a managed rule on a CDN WAF policy.
   description: ''
@@ -88,8 +88,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
-- uid: az_cdn_waf_policy_managed_rule_set_rule_group_override_list_available
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+- uid: az_cdn_waf_policy_managed-rule-set_rule-group-override_list-available
   name: az cdn waf policy managed-rule-set rule-group-override list-available
   summary: List available CDN WAF managed rule groups of a managed rule set.
   description: ''
@@ -113,8 +113,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
-- uid: az_cdn_waf_policy_managed_rule_set_rule_group_override_set
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+- uid: az_cdn_waf_policy_managed-rule-set_rule-group-override_set
   name: az cdn waf policy managed-rule-set rule-group-override set
   summary: Add or update a rule group override to a managed rule set on a CDN WAF policy.
   description: ''
@@ -162,8 +162,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
-- uid: az_cdn_waf_policy_managed_rule_set_rule_group_override_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+- uid: az_cdn_waf_policy_managed-rule-set_rule-group-override_show
   name: az cdn waf policy managed-rule-set rule-group-override show
   summary: Show a rule group override of a managed rule on a CDN WAF policy.
   description: ''
@@ -208,13 +208,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 commands:
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_delete
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_list
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_list_available
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_set
-- az_cdn_waf_policy_managed_rule_set_rule_group_override_show
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_delete
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_list
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_list-available
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_set
+- az_cdn_waf_policy_managed-rule-set_rule-group-override_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -231,6 +231,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/02/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage rule group overrides of a managed rule on a CDN WAF policy.

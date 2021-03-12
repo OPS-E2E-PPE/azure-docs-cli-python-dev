@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dls_account
-name: az dls account
+name: Data Lake Store accounts
 summary: Manage Data Lake Store accounts.
 description: ''
 directCommands:
@@ -66,7 +66,7 @@ directCommands:
     parameterValueGroup: Commitment_100TB, Commitment_10TB, Commitment_1PB, Commitment_1TB, Commitment_500TB, Commitment_5PB, Consumption
     summary: The desired commitment tier for this account to use.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
 - uid: az_dls_account_delete
   name: az dls account delete
   summary: Delete a Data Lake Store account.
@@ -92,8 +92,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
-- uid: az_dls_account_enable_key_vault
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
+- uid: az_dls_account_enable-key-vault
   name: az dls account enable-key-vault
   summary: Enable the use of Azure Key Vault for encryption of a Data Lake Store account.
   description: ''
@@ -118,7 +118,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
 - uid: az_dls_account_list
   name: az dls account list
   summary: Lists available Data Lake Store accounts.
@@ -140,7 +140,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
 - uid: az_dls_account_show
   name: az dls account show
   summary: Get the details of a Data Lake Store account.
@@ -170,7 +170,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
 - uid: az_dls_account_update
   name: az dls account update
   summary: Updates a Data Lake Store account.
@@ -228,11 +228,11 @@ directCommands:
     parameterValueGroup: Disabled, Enabled
     summary: Enable/disable the existing trusted ID providers.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dls/_help.py
 commands:
 - az_dls_account_create
 - az_dls_account_delete
-- az_dls_account_enable_key_vault
+- az_dls_account_enable-key-vault
 - az_dls_account_firewall
 - az_dls_account_firewall_create
 - az_dls_account_firewall_delete
@@ -240,19 +240,19 @@ commands:
 - az_dls_account_firewall_show
 - az_dls_account_firewall_update
 - az_dls_account_list
-- az_dls_account_network_rule
-- az_dls_account_network_rule_create
-- az_dls_account_network_rule_delete
-- az_dls_account_network_rule_list
-- az_dls_account_network_rule_show
-- az_dls_account_network_rule_update
+- az_dls_account_network-rule
+- az_dls_account_network-rule_create
+- az_dls_account_network-rule_delete
+- az_dls_account_network-rule_list
+- az_dls_account_network-rule_show
+- az_dls_account_network-rule_update
 - az_dls_account_show
-- az_dls_account_trusted_provider
-- az_dls_account_trusted_provider_create
-- az_dls_account_trusted_provider_delete
-- az_dls_account_trusted_provider_list
-- az_dls_account_trusted_provider_show
-- az_dls_account_trusted_provider_update
+- az_dls_account_trusted-provider
+- az_dls_account_trusted-provider_create
+- az_dls_account_trusted-provider_delete
+- az_dls_account_trusted-provider_list
+- az_dls_account_trusted-provider_show
+- az_dls_account_trusted-provider_update
 - az_dls_account_update
 globalParameters:
 - name: --debug
@@ -270,6 +270,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 06/21/2019
   description: Manage Data Lake Store accounts.

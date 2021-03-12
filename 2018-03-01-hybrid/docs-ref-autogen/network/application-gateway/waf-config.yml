@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_application_gateway_waf_config
-name: az network application-gateway waf-config
+uid: az_network_application-gateway_waf-config
+name: Web application firewall settings
 summary: Configure the settings of a web application firewall.
 description: These commands are only applicable to application gateways with an SKU type of WAF. To learn more, visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-cli</a>.
 directCommands:
-- uid: az_network_application_gateway_waf_config_list_rule_sets
+- uid: az_network_application-gateway_waf-config_list-rule-sets
   name: az network application-gateway waf-config list-rule-sets
   summary: Get information on available WAF rule sets, rule groups, and rule IDs.
   description: ''
@@ -35,8 +35,8 @@ directCommands:
   - name: --version
     summary: Rule set version to list. Omit to list all versions.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_application_gateway_waf_config_set
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_application-gateway_waf-config_set
   name: az network application-gateway waf-config set
   summary: Update the firewall configuration of a web application.
   description: This command is only applicable to application gateways with an SKU type of WAF. To learn more, visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-cli</a>.
@@ -113,8 +113,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_application_gateway_waf_config_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_application-gateway_waf-config_show
   name: az network application-gateway waf-config show
   summary: Get the firewall configuration of a web application.
   description: ''
@@ -143,11 +143,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_application_gateway_waf_config_list_rule_sets
-- az_network_application_gateway_waf_config_set
-- az_network_application_gateway_waf_config_show
+- az_network_application-gateway_waf-config_list-rule-sets
+- az_network_application-gateway_waf-config_set
+- az_network_application-gateway_waf-config_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -164,6 +164,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: These commands are only applicable to application gateways with an SKU type of WAF. To learn more, visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-cli</a>.

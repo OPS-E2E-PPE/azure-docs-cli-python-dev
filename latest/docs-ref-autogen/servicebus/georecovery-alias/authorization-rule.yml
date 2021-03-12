@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_servicebus_georecovery_alias_authorization_rule
+uid: az_servicebus_georecovery-alias_authorization-rule
 name: az servicebus georecovery-alias authorization-rule
 summary: Manage Azure Service Bus Authorization Rule for Namespace with Geo-Disaster Recovery Configuration Alias.
 description: ''
 directCommands:
-- uid: az_servicebus_georecovery_alias_authorization_rule_list
+- uid: az_servicebus_georecovery-alias_authorization-rule_list
   name: az servicebus georecovery-alias authorization-rule list
   summary: Shows the list of Authorization Rule by Service Bus Namespace.
   description: ''
@@ -37,8 +37,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
-- uid: az_servicebus_georecovery_alias_authorization_rule_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+- uid: az_servicebus_georecovery-alias_authorization-rule_show
   name: az servicebus georecovery-alias authorization-rule show
   summary: Gets an authorization rule for a namespace by rule name.
   description: ''
@@ -72,12 +72,12 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 commands:
-- az_servicebus_georecovery_alias_authorization_rule_keys
-- az_servicebus_georecovery_alias_authorization_rule_keys_list
-- az_servicebus_georecovery_alias_authorization_rule_list
-- az_servicebus_georecovery_alias_authorization_rule_show
+- az_servicebus_georecovery-alias_authorization-rule_keys
+- az_servicebus_georecovery-alias_authorization-rule_keys_list
+- az_servicebus_georecovery-alias_authorization-rule_list
+- az_servicebus_georecovery-alias_authorization-rule_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -94,6 +94,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/17/2019
   description: Manage Azure Service Bus Authorization Rule for Namespace with Geo-Disaster Recovery Configuration Alias.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
 uid: az_appservice
-name: az appservice
+name: App Service
 summary: Manage App Service plans.
 description: ''
 directCommands:
-- uid: az_appservice_list_locations
+- uid: az_appservice_list-locations
   name: az appservice list-locations
   summary: List regions where a plan sku is available.
   description: ''
@@ -28,31 +28,31 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 commands:
 - az_appservice_ase
 - az_appservice_ase_create
-- az_appservice_ase_create_inbound_services
+- az_appservice_ase_create-inbound-services
 - az_appservice_ase_delete
 - az_appservice_ase_list
-- az_appservice_ase_list_addresses
-- az_appservice_ase_list_plans
+- az_appservice_ase_list-addresses
+- az_appservice_ase_list-plans
 - az_appservice_ase_show
 - az_appservice_ase_update
 - az_appservice_domain
 - az_appservice_domain_create
-- az_appservice_domain_show_terms
-- az_appservice_hybrid_connection
-- az_appservice_hybrid_connection_set_key
-- az_appservice_list_locations
+- az_appservice_domain_show-terms
+- az_appservice_hybrid-connection
+- az_appservice_hybrid-connection_set-key
+- az_appservice_list-locations
 - az_appservice_plan
 - az_appservice_plan_create
 - az_appservice_plan_delete
 - az_appservice_plan_list
 - az_appservice_plan_show
 - az_appservice_plan_update
-- az_appservice_vnet_integration
-- az_appservice_vnet_integration_list
+- az_appservice_vnet-integration
+- az_appservice_vnet-integration_list
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -69,6 +69,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/19/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage App Service plans.

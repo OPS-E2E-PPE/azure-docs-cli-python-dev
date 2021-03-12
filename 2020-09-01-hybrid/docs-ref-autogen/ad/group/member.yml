@@ -25,7 +25,7 @@ directCommands:
   - name: --additional-properties
     summary: Unmatched properties from the message are deserialized this collection.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_group_member_check
   name: az ad group member check
   summary: Check if a member is in a group.
@@ -45,7 +45,7 @@ directCommands:
     name: --member-id
     summary: The object ID of the contact, group, user, or service principal.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_group_member_list
   name: az ad group member list
   summary: Gets the members of a group.
@@ -62,7 +62,7 @@ directCommands:
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_group_member_remove
   name: az ad group member remove
   summary: Remove a member from a group.
@@ -79,7 +79,7 @@ directCommands:
     name: --member-id
     summary: The object ID of the contact, group, user, or service principal.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
 commands:
 - az_ad_group_member_add
 - az_ad_group_member_check
@@ -101,6 +101,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/20/2021
   description: Manage Azure Active Directory group members.

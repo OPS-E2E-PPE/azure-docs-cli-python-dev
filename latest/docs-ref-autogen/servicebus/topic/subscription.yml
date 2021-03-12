@@ -87,7 +87,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 - uid: az_servicebus_topic_subscription_delete
   name: az servicebus topic subscription delete
   summary: Deletes the Service Bus Subscription.
@@ -121,7 +121,7 @@ directCommands:
   - name: --topic-name
     summary: Name of Topic.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 - uid: az_servicebus_topic_subscription_list
   name: az servicebus topic subscription list
   summary: List the Subscription by Service Bus Topic.
@@ -163,7 +163,7 @@ directCommands:
   - name: --top
     summary: May be used to limit the number of results to the most recent N usageDetails.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 - uid: az_servicebus_topic_subscription_show
   name: az servicebus topic subscription show
   summary: Shows Service Bus Subscription Details.
@@ -201,7 +201,7 @@ directCommands:
   - name: --topic-name
     summary: Name of Topic.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 - uid: az_servicebus_topic_subscription_update
   name: az servicebus topic subscription update
   summary: Updates the ServiceBus Subscription.
@@ -302,7 +302,7 @@ directCommands:
   - name: --topic-name
     summary: Name of Topic.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/servicebus/_help.py
 commands:
 - az_servicebus_topic_subscription_create
 - az_servicebus_topic_subscription_delete
@@ -331,6 +331,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/17/2019
   description: Manage Azure Service Bus Subscription.

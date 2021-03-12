@@ -28,7 +28,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
 - uid: az_cognitiveservices_account_identity_remove
   name: az cognitiveservices account identity remove
   summary: Remove the identity from a Cognitive Services account.
@@ -53,7 +53,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
 - uid: az_cognitiveservices_account_identity_show
   name: az cognitiveservices account identity show
   summary: Show the identity of a Cognitive Services account.
@@ -82,7 +82,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
 commands:
 - az_cognitiveservices_account_identity_assign
 - az_cognitiveservices_account_identity_remove
@@ -103,6 +103,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 06/13/2020
   description: Manage identity of Cognitive Services accounts.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_sql_vm_group_ag_listener
+uid: az_sql_vm_group_ag-listener
 name: az sql vm group ag-listener
 summary: Manage SQL availability group listeners.
 description: ''
 directCommands:
-- uid: az_sql_vm_group_ag_listener_create
+- uid: az_sql_vm_group_ag-listener_create
   name: az sql vm group ag-listener create
   summary: Creates an availability group listener.
   description: ''
@@ -78,8 +78,8 @@ directCommands:
   - name: --vnet-name
     summary: Name of the virtual network. Provide only if name of the subnet has been provided.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_vm_group_ag_listener_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_vm_group_ag-listener_delete
   name: az sql vm group ag-listener delete
   summary: Deletes an availability group listener.
   description: ''
@@ -111,8 +111,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_vm_group_ag_listener_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_vm_group_ag-listener_list
   name: az sql vm group ag-listener list
   summary: Lists all availability group listeners in a SQL virtual machine group.
   description: ''
@@ -137,8 +137,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_vm_group_ag_listener_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_vm_group_ag-listener_show
   name: az sql vm group ag-listener show
   summary: Gets an availability group listener.
   description: ''
@@ -170,8 +170,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
-- uid: az_sql_vm_group_ag_listener_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+- uid: az_sql_vm_group_ag-listener_update
   name: az sql vm group ag-listener update
   summary: Updates an availability group listener.
   description: ''
@@ -222,13 +222,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/sql/_help.py
 commands:
-- az_sql_vm_group_ag_listener_create
-- az_sql_vm_group_ag_listener_delete
-- az_sql_vm_group_ag_listener_list
-- az_sql_vm_group_ag_listener_show
-- az_sql_vm_group_ag_listener_update
+- az_sql_vm_group_ag-listener_create
+- az_sql_vm_group_ag-listener_delete
+- az_sql_vm_group_ag-listener_list
+- az_sql_vm_group_ag-listener_show
+- az_sql_vm_group_ag-listener_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -245,6 +245,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/28/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/18/2021
   description: Manage SQL availability group listeners.

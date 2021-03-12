@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_eventgrid_event_subscription
+uid: az_eventgrid_event-subscription
 name: az eventgrid event-subscription
 summary: Manage event subscriptions.
 description: Manage event subscriptions for an Event Grid topic, domain, domain topic, Azure subscription, resource group or for any other Azure resource that supports event notifications.
 directCommands:
-- uid: az_eventgrid_event_subscription_create
+- uid: az_eventgrid_event-subscription_create
   name: az eventgrid event-subscription create
   summary: Create a new event subscription.
   description: ''
@@ -260,8 +260,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_event_subscription_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_event-subscription_delete
   name: az eventgrid event-subscription delete
   summary: Delete an event subscription.
   description: ''
@@ -319,8 +319,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_event_subscription_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_event-subscription_list
   name: az eventgrid event-subscription list
   summary: List event subscriptions.
   description: >-
@@ -413,8 +413,8 @@ directCommands:
           --resource-group TestRG --topic-type-name Microsoft.Storage.StorageAccounts --location westus2
       Example 2: List all event subscriptions on Azure subscriptions
           --topic-type-name Microsoft.Resources.Subscriptions --location global.
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_event_subscription_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_event-subscription_show
   name: az eventgrid event-subscription show
   summary: Get the details of an event subscription.
   description: ''
@@ -473,8 +473,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_event_subscription_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_event-subscription_update
   name: az eventgrid event-subscription update
   summary: Update an event subscription.
   description: ''
@@ -641,13 +641,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
 commands:
-- az_eventgrid_event_subscription_create
-- az_eventgrid_event_subscription_delete
-- az_eventgrid_event_subscription_list
-- az_eventgrid_event_subscription_show
-- az_eventgrid_event_subscription_update
+- az_eventgrid_event-subscription_create
+- az_eventgrid_event-subscription_delete
+- az_eventgrid_event-subscription_list
+- az_eventgrid_event-subscription_show
+- az_eventgrid_event-subscription_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -664,6 +664,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 07/06/2020
   description: Manage event subscriptions for an Event Grid topic, domain, domain topic, Azure subscription, resource group or for any other Azure resource that supports event notifications.

@@ -9,7 +9,7 @@ directCommands:
   summary: Add a condition to a delivery rule.
   description: ''
   syntax: >-
-    az cdn endpoint rule condition add --match-variable
+    az cdn endpoint rule condition add --match-variable {Cookies, HttpVersion, IsDevice, PostArgs, QueryString, RemoteAddress, RequestBody, RequestHeader, RequestMethod, RequestScheme, RequestUri, UrlFileExtension, UrlFileName, UrlPath}
                                        --operator
                                        --rule-name
                                        [--ids]
@@ -27,6 +27,7 @@ directCommands:
   requiredParameters:
   - isRequired: true
     name: --match-variable
+    parameterValueGroup: Cookies, HttpVersion, IsDevice, PostArgs, QueryString, RemoteAddress, RequestBody, RequestHeader, RequestMethod, RequestScheme, RequestUri, UrlFileExtension, UrlFileName, UrlPath
     summary: Name of the match condition.
     description: ''
   - isRequired: true
@@ -67,7 +68,7 @@ directCommands:
     parameterValueGroup: Lowercase, Uppercase
     summary: Transform to apply before matching.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_endpoint_rule_condition_remove
   name: az cdn endpoint rule condition remove
   summary: Remove a condition from a delivery rule.
@@ -108,7 +109,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_endpoint_rule_condition_show
   name: az cdn endpoint rule condition show
   summary: Show delivery rules asscociate with the endpoint.
@@ -142,7 +143,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 commands:
 - az_cdn_endpoint_rule_condition_add
 - az_cdn_endpoint_rule_condition_remove
@@ -163,6 +164,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/02/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage delivery rule conditions for an endpoint.

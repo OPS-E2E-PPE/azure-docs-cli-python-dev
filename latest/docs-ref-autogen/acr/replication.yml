@@ -52,7 +52,7 @@ directCommands:
     parameterValueGroup: Disabled, Enabled
     summary: Indicates whether or not zone redundancy should be enabled for this registry or replication. For more information, such as supported locations, please visit <a href="https://aka.ms/acr/az">https://aka.ms/acr/az</a>. Zone-redundancy cannot be updated. Defaults to 'Disabled'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_replication_delete
   name: az acr replication delete
   summary: Delete a replicated region from an Azure Container Registry.
@@ -81,7 +81,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_replication_list
   name: az acr replication list
   summary: List all of the regions for a geo-replicated Azure Container Registry.
@@ -109,7 +109,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_replication_show
   name: az acr replication show
   summary: Get the details of a replicated region.
@@ -142,7 +142,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_replication_update
   name: az acr replication update
   summary: Updates a replication.
@@ -198,7 +198,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
 commands:
 - az_acr_replication_create
 - az_acr_replication_delete
@@ -221,6 +221,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/26/2021
   description: Manage geo-replicated regions of Azure Container Registries.

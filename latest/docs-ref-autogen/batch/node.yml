@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_node
-name: az batch node
+name: Batch compute nodes
 summary: Manage Batch compute nodes.
 description: ''
 directCommands:
@@ -65,7 +65,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_node_list
   name: az batch node list
   summary: Lists the Compute Nodes in the specified Pool.
@@ -106,7 +106,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_node_reboot
   name: az batch node reboot
   summary: Restarts the specified Compute Node.
@@ -145,7 +145,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_node_reimage
   name: az batch node reimage
   summary: Reinstalls the operating system on the specified Compute Node.
@@ -184,7 +184,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_node_show
   name: az batch node show
   summary: Gets information about the specified Compute Node.
@@ -226,7 +226,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 commands:
 - az_batch_node_delete
 - az_batch_node_file
@@ -237,15 +237,15 @@ commands:
 - az_batch_node_list
 - az_batch_node_reboot
 - az_batch_node_reimage
-- az_batch_node_remote_desktop
-- az_batch_node_remote_desktop_download
-- az_batch_node_remote_login_settings
-- az_batch_node_remote_login_settings_show
+- az_batch_node_remote-desktop
+- az_batch_node_remote-desktop_download
+- az_batch_node_remote-login-settings
+- az_batch_node_remote-login-settings_show
 - az_batch_node_scheduling
 - az_batch_node_scheduling_disable
 - az_batch_node_scheduling_enable
-- az_batch_node_service_logs
-- az_batch_node_service_logs_upload
+- az_batch_node_service-logs
+- az_batch_node_service-logs_upload
 - az_batch_node_show
 - az_batch_node_user
 - az_batch_node_user_create
@@ -267,6 +267,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 12/07/2020
   description: Manage Batch compute nodes.

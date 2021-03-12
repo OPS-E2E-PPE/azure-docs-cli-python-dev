@@ -69,7 +69,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_storage_backup
   name: az keyvault storage backup
   summary: Backs up the specified storage account.
@@ -98,7 +98,7 @@ directCommands:
   - name: --vault-name
     summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_storage_list
   name: az keyvault storage list
   summary: List storage accounts managed by the specified key vault.
@@ -123,8 +123,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
-- uid: az_keyvault_storage_list_deleted
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+- uid: az_keyvault_storage_list-deleted
   name: az keyvault storage list-deleted
   summary: Lists deleted storage accounts for the specified vault.
   description: The Get Deleted Storage Accounts operation returns the storage accounts that have been deleted for a vault enabled for soft-delete. This operation requires the storage/list permission.
@@ -144,7 +144,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_storage_purge
   name: az keyvault storage purge
   summary: Permanently deletes the specified storage account.
@@ -166,7 +166,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_storage_recover
   name: az keyvault storage recover
   summary: Recovers the deleted storage account.
@@ -188,8 +188,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
-- uid: az_keyvault_storage_regenerate_key
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+- uid: az_keyvault_storage_regenerate-key
   name: az keyvault storage regenerate-key
   summary: Regenerates the specified key value for the given storage account.
   description: This operation requires the storage/regeneratekey permission.
@@ -217,7 +217,7 @@ directCommands:
   - name: --vault-name
     summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_storage_remove
   name: az keyvault storage remove
   summary: Remove a Key Vault managed Azure Storage Account and all associated SAS definitions. This operation requires the storage/delete permission.
@@ -245,7 +245,7 @@ directCommands:
   - name: --vault-name
     summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_storage_restore
   name: az keyvault storage restore
   summary: Restores a backed up storage account to a vault.
@@ -267,7 +267,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_storage_show
   name: az keyvault storage show
   summary: Gets information about a specified storage account.
@@ -294,8 +294,8 @@ directCommands:
   - name: --vault-name
     summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
-- uid: az_keyvault_storage_show_deleted
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+- uid: az_keyvault_storage_show-deleted
   name: az keyvault storage show-deleted
   summary: Gets the specified deleted storage account.
   description: The Get Deleted Storage Account operation returns the specified deleted storage account along with its attributes. This operation requires the storage/get permission.
@@ -316,7 +316,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 - uid: az_keyvault_storage_update
   name: az keyvault storage update
   summary: Updates the specified attributes associated with the given storage account.
@@ -361,28 +361,28 @@ directCommands:
   - name: --vault-name
     summary: Name of the Key Vault. Required if --id is not specified.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/keyvault/_help.py
 commands:
 - az_keyvault_storage_add
 - az_keyvault_storage_backup
 - az_keyvault_storage_list
-- az_keyvault_storage_list_deleted
+- az_keyvault_storage_list-deleted
 - az_keyvault_storage_purge
 - az_keyvault_storage_recover
-- az_keyvault_storage_regenerate_key
+- az_keyvault_storage_regenerate-key
 - az_keyvault_storage_remove
 - az_keyvault_storage_restore
-- az_keyvault_storage_sas_definition
-- az_keyvault_storage_sas_definition_create
-- az_keyvault_storage_sas_definition_delete
-- az_keyvault_storage_sas_definition_list
-- az_keyvault_storage_sas_definition_list_deleted
-- az_keyvault_storage_sas_definition_recover
-- az_keyvault_storage_sas_definition_show
-- az_keyvault_storage_sas_definition_show_deleted
-- az_keyvault_storage_sas_definition_update
+- az_keyvault_storage_sas-definition
+- az_keyvault_storage_sas-definition_create
+- az_keyvault_storage_sas-definition_delete
+- az_keyvault_storage_sas-definition_list
+- az_keyvault_storage_sas-definition_list-deleted
+- az_keyvault_storage_sas-definition_recover
+- az_keyvault_storage_sas-definition_show
+- az_keyvault_storage_sas-definition_show-deleted
+- az_keyvault_storage_sas-definition_update
 - az_keyvault_storage_show
-- az_keyvault_storage_show_deleted
+- az_keyvault_storage_show-deleted
 - az_keyvault_storage_update
 globalParameters:
 - name: --debug
@@ -400,6 +400,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 12/14/2020
   description: Manage storage accounts.

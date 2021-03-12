@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_lab_gallery_image
-name: az lab gallery-image
+uid: az_lab_gallery-image
+name: Dev/Test Lab gallery images
 summary: List Azure Marketplace images allowed for a DevTest Lab.
 description: ''
 directCommands:
-- uid: az_lab_gallery_image_list
+- uid: az_lab_gallery-image_list
   name: az lab gallery-image list
   summary: List gallery images in a given lab.
   description: ''
@@ -45,9 +45,9 @@ directCommands:
   - name: --top
     summary: "The maximum number of resources to return from the operation. Example: '$top=10'."
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
 commands:
-- az_lab_gallery_image_list
+- az_lab_gallery-image_list
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -64,6 +64,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/20/2019
   description: List Azure Marketplace images allowed for a DevTest Lab.

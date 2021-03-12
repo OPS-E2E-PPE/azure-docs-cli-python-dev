@@ -51,7 +51,7 @@ directCommands:
   - name: --value
     summary: The value of the Named Value.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_nv_delete
   name: az apim nv delete
   summary: Delete an API Management Named Value.
@@ -82,7 +82,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_nv_list
   name: az apim nv list
   summary: List API Management Named Values.
@@ -108,7 +108,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_nv_show
   name: az apim nv show
   summary: Show details of an API Management Named Value.
@@ -139,8 +139,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
-- uid: az_apim_nv_show_secret
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+- uid: az_apim_nv_show-secret
   name: az apim nv show-secret
   summary: Gets the secret of an API Management Named Value.
   description: ''
@@ -166,7 +166,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 - uid: az_apim_nv_update
   name: az apim nv update
   summary: Update an API Management Named Value.
@@ -229,13 +229,13 @@ directCommands:
   - name: --value
     summary: The value of the Named Value.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/apim/_help.py
 commands:
 - az_apim_nv_create
 - az_apim_nv_delete
 - az_apim_nv_list
 - az_apim_nv_show
-- az_apim_nv_show_secret
+- az_apim_nv_show-secret
 - az_apim_nv_update
 globalParameters:
 - name: --debug
@@ -253,6 +253,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 12/01/2020
   description: Manage Azure API Management Named Values.

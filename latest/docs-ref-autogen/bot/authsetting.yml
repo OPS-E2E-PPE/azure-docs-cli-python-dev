@@ -62,7 +62,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 - uid: az_bot_authsetting_delete
   name: az bot authsetting delete
   summary: Delete an OAuth connection setting on a bot.
@@ -89,7 +89,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 - uid: az_bot_authsetting_list
   name: az bot authsetting list
   summary: Show all OAuth connection settings on a bot.
@@ -115,8 +115,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
-- uid: az_bot_authsetting_list_providers
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+- uid: az_bot_authsetting_list-providers
   name: az bot authsetting list-providers
   summary: List details for all service providers available for creating OAuth connection settings.
   description: ''
@@ -135,7 +135,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 - uid: az_bot_authsetting_show
   name: az bot authsetting show
   summary: Show details of an OAuth connection setting on a bot.
@@ -166,12 +166,12 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 commands:
 - az_bot_authsetting_create
 - az_bot_authsetting_delete
 - az_bot_authsetting_list
-- az_bot_authsetting_list_providers
+- az_bot_authsetting_list-providers
 - az_bot_authsetting_show
 globalParameters:
 - name: --debug
@@ -189,6 +189,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 12/11/2019
   description: Manage OAuth connection settings on a bot.

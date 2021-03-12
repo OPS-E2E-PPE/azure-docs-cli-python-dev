@@ -4,7 +4,7 @@ name: az synapse workspace
 summary: Manage Synapse workspaces.
 description: ''
 directCommands:
-- uid: az_synapse_workspace_check_name
+- uid: az_synapse_workspace_check-name
   name: az synapse workspace check-name
   summary: Check if a Synapse workspace name is available or not.
   description: ''
@@ -23,7 +23,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 - uid: az_synapse_workspace_create
   name: az synapse workspace create
   summary: Create a Synapse workspace.
@@ -117,7 +117,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 - uid: az_synapse_workspace_delete
   name: az synapse workspace delete
   summary: Delete a Synapse workspace.
@@ -151,7 +151,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 - uid: az_synapse_workspace_list
   name: az synapse workspace list
   summary: List all Synapse workspaces.
@@ -175,7 +175,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 - uid: az_synapse_workspace_show
   name: az synapse workspace show
   summary: Get a Synapse workspace.
@@ -205,7 +205,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 - uid: az_synapse_workspace_update
   name: az synapse workspace update
   summary: Update a Synapse workspace.
@@ -253,7 +253,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 - uid: az_synapse_workspace_wait
   name: az synapse workspace wait
   summary: Place the CLI in a waiting state until a condition of the workspace is met.
@@ -305,18 +305,18 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 commands:
-- az_synapse_workspace_check_name
+- az_synapse_workspace_check-name
 - az_synapse_workspace_create
 - az_synapse_workspace_delete
-- az_synapse_workspace_firewall_rule
-- az_synapse_workspace_firewall_rule_create
-- az_synapse_workspace_firewall_rule_delete
-- az_synapse_workspace_firewall_rule_list
-- az_synapse_workspace_firewall_rule_show
-- az_synapse_workspace_firewall_rule_update
-- az_synapse_workspace_firewall_rule_wait
+- az_synapse_workspace_firewall-rule
+- az_synapse_workspace_firewall-rule_create
+- az_synapse_workspace_firewall-rule_delete
+- az_synapse_workspace_firewall-rule_list
+- az_synapse_workspace_firewall-rule_show
+- az_synapse_workspace_firewall-rule_update
+- az_synapse_workspace_firewall-rule_wait
 - az_synapse_workspace_key
 - az_synapse_workspace_key_create
 - az_synapse_workspace_key_delete
@@ -325,11 +325,11 @@ commands:
 - az_synapse_workspace_key_update
 - az_synapse_workspace_key_wait
 - az_synapse_workspace_list
-- az_synapse_workspace_managed_identity
-- az_synapse_workspace_managed_identity_grant_sql_access
-- az_synapse_workspace_managed_identity_revoke_sql_access
-- az_synapse_workspace_managed_identity_show_sql_access
-- az_synapse_workspace_managed_identity_wait
+- az_synapse_workspace_managed-identity
+- az_synapse_workspace_managed-identity_grant-sql-access
+- az_synapse_workspace_managed-identity_revoke-sql-access
+- az_synapse_workspace_managed-identity_show-sql-access
+- az_synapse_workspace_managed-identity_wait
 - az_synapse_workspace_show
 - az_synapse_workspace_update
 - az_synapse_workspace_wait
@@ -349,6 +349,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/26/2021
   description: Manage Synapse workspaces.

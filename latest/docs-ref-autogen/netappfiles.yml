@@ -11,12 +11,12 @@ commands:
 - az_netappfiles_account_ad_remove
 - az_netappfiles_account_backup
 - az_netappfiles_account_backup_list
-- az_netappfiles_account_backup_policy
-- az_netappfiles_account_backup_policy_create
-- az_netappfiles_account_backup_policy_delete
-- az_netappfiles_account_backup_policy_list
-- az_netappfiles_account_backup_policy_show
-- az_netappfiles_account_backup_policy_update
+- az_netappfiles_account_backup-policy
+- az_netappfiles_account_backup-policy_create
+- az_netappfiles_account_backup-policy_delete
+- az_netappfiles_account_backup-policy_list
+- az_netappfiles_account_backup-policy_show
+- az_netappfiles_account_backup-policy_update
 - az_netappfiles_account_create
 - az_netappfiles_account_delete
 - az_netappfiles_account_list
@@ -51,15 +51,15 @@ commands:
 - az_netappfiles_volume_backup_update
 - az_netappfiles_volume_create
 - az_netappfiles_volume_delete
-- az_netappfiles_volume_export_policy
-- az_netappfiles_volume_export_policy_add
-- az_netappfiles_volume_export_policy_list
-- az_netappfiles_volume_export_policy_remove
+- az_netappfiles_volume_export-policy
+- az_netappfiles_volume_export-policy_add
+- az_netappfiles_volume_export-policy_list
+- az_netappfiles_volume_export-policy_remove
 - az_netappfiles_volume_list
-- az_netappfiles_volume_pool_change
+- az_netappfiles_volume_pool-change
 - az_netappfiles_volume_replication
 - az_netappfiles_volume_replication_approve
-- az_netappfiles_volume_replication_re_initialize
+- az_netappfiles_volume_replication_re-initialize
 - az_netappfiles_volume_replication_remove
 - az_netappfiles_volume_replication_resume
 - az_netappfiles_volume_replication_status
@@ -67,6 +67,9 @@ commands:
 - az_netappfiles_volume_revert
 - az_netappfiles_volume_show
 - az_netappfiles_volume_update
+- az_netappfiles_account_set
+- az_netappfiles_mount-target
+- az_netappfiles_mount-target_list
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -83,6 +86,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/25/2021
   description: Manage Azure NetApp Files (ANF) Resources.
