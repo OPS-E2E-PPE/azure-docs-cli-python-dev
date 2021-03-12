@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_route_table
-name: az network route-table
+uid: az_network_route-table
+name: Route tables
 summary: Manage route tables.
 description: ''
 directCommands:
-- uid: az_network_route_table_create
+- uid: az_network_route-table_create
   name: az network route-table create
   summary: Create a route table.
   description: ''
@@ -41,8 +41,8 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_route_table_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_route-table_delete
   name: az network route-table delete
   summary: Delete a route table.
   description: ''
@@ -67,8 +67,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_route_table_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_route-table_list
   name: az network route-table list
   summary: List route tables.
   description: ''
@@ -89,8 +89,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_route_table_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_route-table_show
   name: az network route-table show
   summary: Get the details of a route table.
   description: ''
@@ -123,8 +123,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_route_table_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_route-table_update
   name: az network route-table update
   summary: Update a route table.
   description: ''
@@ -174,19 +174,19 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_route_table_create
-- az_network_route_table_delete
-- az_network_route_table_list
-- az_network_route_table_route
-- az_network_route_table_route_create
-- az_network_route_table_route_delete
-- az_network_route_table_route_list
-- az_network_route_table_route_show
-- az_network_route_table_route_update
-- az_network_route_table_show
-- az_network_route_table_update
+- az_network_route-table_create
+- az_network_route-table_delete
+- az_network_route-table_list
+- az_network_route-table_route
+- az_network_route-table_route_create
+- az_network_route-table_route_delete
+- az_network_route-table_route_list
+- az_network_route-table_route_show
+- az_network_route-table_route_update
+- az_network_route-table_show
+- az_network_route-table_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -203,6 +203,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage route tables.

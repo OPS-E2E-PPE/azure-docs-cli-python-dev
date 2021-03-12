@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_storage_account_file_service_properties
+uid: az_storage_account_file-service-properties
 name: az storage account file-service-properties
 summary: Manage the properties of file service in storage account.
 description: ''
 directCommands:
-- uid: az_storage_account_file_service_properties_show
+- uid: az_storage_account_file-service-properties_show
   name: az storage account file-service-properties show
   summary: Show the properties of file service in storage account.
   description: Show the properties of file service in storage account.
@@ -31,8 +31,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_file_service_properties_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_file-service-properties_update
   name: az storage account file-service-properties update
   summary: Update the properties of file service in storage account.
   description: Update the properties of file service in storage account.
@@ -40,6 +40,7 @@ directCommands:
     az storage account file-service-properties update --instance
                                                       [--delete-retention-days]
                                                       [--enable-delete-retention {false, true}]
+                                                      [--enable-smb-multichannel]
                                                       [--subscription]
   examples:
   - summary: Enable soft delete policy and set delete retention days to 100 for file service in storage account.
@@ -59,13 +60,16 @@ directCommands:
     parameterValueGroup: false, true
     summary: Enable file service properties for share soft delete.
     description: ''
+  - name: --enable-smb-multichannel
+    summary: ''
+    description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
-- az_storage_account_file_service_properties_show
-- az_storage_account_file_service_properties_update
+- az_storage_account_file-service-properties_show
+- az_storage_account_file-service-properties_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -82,6 +86,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage the properties of file service in storage account.

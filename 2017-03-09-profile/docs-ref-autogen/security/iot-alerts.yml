@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_security_iot_alerts
+uid: az_security_iot-alerts
 name: az security iot-alerts
 summary: View IoT Security aggregated alerts.
 description: ''
 directCommands:
-- uid: az_security_iot_alerts_delete
+- uid: az_security_iot-alerts_delete
   name: az security iot-alerts delete
   summary: Dismiss an aggregated IoT Security Alert.
   description: ''
@@ -33,8 +33,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
-- uid: az_security_iot_alerts_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+- uid: az_security_iot-alerts_list
   name: az security iot-alerts list
   summary: List all yours IoT Security solution aggregated alerts.
   description: ''
@@ -62,8 +62,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
-- uid: az_security_iot_alerts_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+- uid: az_security_iot-alerts_show
   name: az security iot-alerts show
   summary: Shows a single aggregated alert of yours IoT Security solution.
   description: ''
@@ -96,11 +96,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
 commands:
-- az_security_iot_alerts_delete
-- az_security_iot_alerts_list
-- az_security_iot_alerts_show
+- az_security_iot-alerts_delete
+- az_security_iot-alerts_list
+- az_security_iot-alerts_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -117,6 +117,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/11/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/03/2021
   description: View IoT Security aggregated alerts.

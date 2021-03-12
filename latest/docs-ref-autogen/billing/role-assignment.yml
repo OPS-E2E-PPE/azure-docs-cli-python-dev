@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_billing_role_assignment
+uid: az_billing_role-assignment
 name: az billing role-assignment
 summary: Billing role-assignment.
 description: ''
 directCommands:
-- uid: az_billing_role_assignment_delete
+- uid: az_billing_role-assignment_delete
   name: az billing role-assignment delete
   summary: Delete a role assignment for the caller on a billing account. The operation is supported for billing accounts with agreement type Microsoft Partner Agreement or Microsoft Customer Agreement.
   description: ''
@@ -40,8 +40,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
-- uid: az_billing_role_assignment_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
+- uid: az_billing_role-assignment_list
   name: az billing role-assignment list
   summary: List the role assignments for the caller on a billing account. The operation is supported for billing accounts with agreement type Microsoft Partner Agreement or Microsoft Customer Agreement.
   description: ''
@@ -76,8 +76,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
-- uid: az_billing_role_assignment_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
+- uid: az_billing_role-assignment_show
   name: az billing role-assignment show
   summary: Show the role assignment detail for the caller within different scopes. The operation is supported for billing accounts with agreement type Microsoft Partner Agreement or Microsoft Customer Agreement.
   description: ''
@@ -117,11 +117,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
 commands:
-- az_billing_role_assignment_delete
-- az_billing_role_assignment_list
-- az_billing_role_assignment_show
+- az_billing_role-assignment_delete
+- az_billing_role-assignment_list
+- az_billing_role-assignment_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -138,6 +138,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/26/2020
   description: Billing role-assignment.

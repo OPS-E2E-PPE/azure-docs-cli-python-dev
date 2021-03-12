@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_dla_catalog_external_data_source
-name: az dla catalog external-data-source
+uid: az_dla_catalog_external-data-source
+name: Data Lake Analytics catalog external data sources
 summary: Manage Data Lake Analytics catalog external data sources.
 description: ''
 directCommands:
-- uid: az_dla_catalog_external_data_source_list
+- uid: az_dla_catalog_external-data-source_list
   name: az dla catalog external-data-source list
   summary: Retrieves the list of external data sources from the Data Lake Analytics catalog.
   description: ''
@@ -56,8 +56,8 @@ directCommands:
   - name: --top
     summary: Maximum number of items to return.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
-- uid: az_dla_catalog_external_data_source_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+- uid: az_dla_catalog_external-data-source_show
   name: az dla catalog external-data-source show
   summary: Retrieves the specified external data source from the Data Lake Analytics catalog.
   description: ''
@@ -90,10 +90,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 commands:
-- az_dla_catalog_external_data_source_list
-- az_dla_catalog_external_data_source_show
+- az_dla_catalog_external-data-source_list
+- az_dla_catalog_external-data-source_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -110,6 +110,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 09/16/2019
   description: Manage Data Lake Analytics catalog external data sources.

@@ -67,7 +67,7 @@ directCommands:
   - name: --umask
     summary: When creating a file or directory and the parent folder does not have a default ACL, the umask restricts the permissions of the file or directory to be created. The resulting permission is given by p & ^u, where p is the permission and u is the umask. For more information, please refer to <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control#umask">https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-access-control#umask</a>.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_fs_directory_delete
   name: az storage fs directory delete
   summary: Delete a directory in ADLS Gen2 file system.
@@ -123,7 +123,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_fs_directory_exists
   name: az storage fs directory exists
   summary: Check for the existence of a directory in ADLS Gen2 file system.
@@ -175,7 +175,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_fs_directory_list
   name: az storage fs directory list
   summary: List directories in ADLS Gen2 file system.
@@ -240,7 +240,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_fs_directory_move
   name: az storage fs directory move
   summary: Move a directory in ADLS Gen2 file system.
@@ -297,7 +297,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_fs_directory_show
   name: az storage fs directory show
   summary: Show properties of a directory in ADLS Gen2 file system.
@@ -355,7 +355,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
 - az_storage_fs_directory_create
 - az_storage_fs_directory_delete
@@ -382,6 +382,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage directories in Azure Data Lake Storage Gen2 account.

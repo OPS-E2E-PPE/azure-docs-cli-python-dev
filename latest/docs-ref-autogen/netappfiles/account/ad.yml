@@ -107,7 +107,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_account_ad_list
   name: az netappfiles account ad list
   summary: List the active directories of an account.
@@ -136,7 +136,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_account_ad_remove
   name: az netappfiles account ad remove
   summary: Remove an active directory from the account.
@@ -168,7 +168,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 commands:
 - az_netappfiles_account_ad_add
 - az_netappfiles_account_ad_list
@@ -189,6 +189,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/25/2021
   description: Manage Azure NetApp Files (ANF) Account active directories.

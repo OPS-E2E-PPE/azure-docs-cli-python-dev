@@ -55,8 +55,8 @@ directCommands:
   - name: --years
     summary: 'Number of years for which the secret will be valid. Default: 1 year.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_account_sp_reset_credentials
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_account_sp_reset-credentials
   name: az ams account sp reset-credentials
   summary: Generate a new client secret for a service principal configured for an Azure Media Services account.
   description: ''
@@ -99,10 +99,10 @@ directCommands:
   - name: --years
     summary: 'Number of years for which the secret will be valid. Default: 1 year.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
 commands:
 - az_ams_account_sp_create
-- az_ams_account_sp_reset_credentials
+- az_ams_account_sp_reset-credentials
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -119,6 +119,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 07/28/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Manage service principal and role based access for an Azure Media Services account.

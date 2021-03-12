@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_job
-name: az batch job
+name: Batch jobs
 summary: Manage Batch jobs.
 description: ''
 directCommands:
@@ -78,7 +78,7 @@ directCommands:
   - name: --uses-task-dependencies
     summary: Whether Tasks in the Job can define dependencies on each other. The default is false. True if flag present.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_job_delete
   name: az batch job delete
   summary: Deletes a Job.
@@ -127,7 +127,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_job_disable
   name: az batch job disable
   summary: Disables the specified Job, preventing new Tasks from running.
@@ -177,7 +177,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_job_enable
   name: az batch job enable
   summary: Enables the specified Job, allowing new Tasks to run.
@@ -222,7 +222,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_job_list
   name: az batch job list
   summary: List all of the jobs or job schedule in a Batch account.
@@ -265,7 +265,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_job_reset
   name: az batch job reset
   summary: Update the properties of a Batch job. Unspecified properties which can be updated are reset to their defaults.
@@ -339,7 +339,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_job_set
   name: az batch job set
   summary: Update the properties of a Batch job. Updating a property in a subgroup will reset the unspecified properties of that group.
@@ -413,7 +413,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_job_show
   name: az batch job show
   summary: Gets information about the specified Job.
@@ -470,7 +470,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 - uid: az_batch_job_stop
   name: az batch job stop
   summary: Terminates the specified Job, marking it as completed.
@@ -519,23 +519,23 @@ directCommands:
   - name: --terminate-reason
     summary: The text you want to appear as the Job's TerminateReason. The default is 'UserTerminate'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batch/_help.py
 commands:
-- az_batch_job_all_statistics
-- az_batch_job_all_statistics_show
+- az_batch_job_all-statistics
+- az_batch_job_all-statistics_show
 - az_batch_job_create
 - az_batch_job_delete
 - az_batch_job_disable
 - az_batch_job_enable
 - az_batch_job_list
-- az_batch_job_prep_release_status
-- az_batch_job_prep_release_status_list
+- az_batch_job_prep-release-status
+- az_batch_job_prep-release-status_list
 - az_batch_job_reset
 - az_batch_job_set
 - az_batch_job_show
 - az_batch_job_stop
-- az_batch_job_task_counts
-- az_batch_job_task_counts_show
+- az_batch_job_task-counts
+- az_batch_job_task-counts_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -552,6 +552,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 12/07/2020
   description: Manage Batch jobs.

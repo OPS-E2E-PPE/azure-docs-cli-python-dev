@@ -27,7 +27,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 - uid: az_synapse_role_definition_show
   name: az synapse role definition show
   summary: Get role definition by role id/name.
@@ -59,7 +59,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 commands:
 - az_synapse_role_definition_list
 - az_synapse_role_definition_show
@@ -79,6 +79,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/26/2021
   description: Manage Synapse's role definitions.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_billing_enrollment_account
+uid: az_billing_enrollment-account
 name: az billing enrollment-account
 summary: Get enrollment accounts.
 description: ''
 directCommands:
-- uid: az_billing_enrollment_account_list
+- uid: az_billing_enrollment-account_list
   name: az billing enrollment-account list
   summary: Lists the enrollment accounts the caller has access to.
   description: ''
@@ -18,8 +18,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
-- uid: az_billing_enrollment_account_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
+- uid: az_billing_enrollment-account_show
   name: az billing enrollment-account show
   summary: Gets a enrollment account by name.
   description: ''
@@ -39,10 +39,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/billing/_help.py
 commands:
-- az_billing_enrollment_account_list
-- az_billing_enrollment_account_show
+- az_billing_enrollment-account_list
+- az_billing_enrollment-account_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -59,6 +59,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/26/2020
   description: Get enrollment accounts.

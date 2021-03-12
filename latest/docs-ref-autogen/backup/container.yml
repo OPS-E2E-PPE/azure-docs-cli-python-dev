@@ -42,8 +42,8 @@ directCommands:
   - name: --use-secondary-region
     summary: Use this flag to list containers in secondary region.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
-- uid: az_backup_container_re_register
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+- uid: az_backup_container_re-register
   name: az backup container re-register
   summary: Reset the registration details for a given container.
   description: ''
@@ -90,7 +90,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
 - uid: az_backup_container_register
   name: az backup container register
   summary: Register a Resource to the given Recovery Services Vault.
@@ -134,7 +134,7 @@ directCommands:
   - name: --vault-name -v
     summary: Name of the Recovery services vault.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
 - uid: az_backup_container_show
   name: az backup container show
   summary: Show details of a container registered to a Recovery services vault.
@@ -179,7 +179,7 @@ directCommands:
   - name: --vault-name -v
     summary: Name of the Recovery services vault.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
 - uid: az_backup_container_unregister
   name: az backup container unregister
   summary: Unregister a Backup Container to make the underlying 'resource' be protected by another vault.
@@ -220,10 +220,10 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
 commands:
 - az_backup_container_list
-- az_backup_container_re_register
+- az_backup_container_re-register
 - az_backup_container_register
 - az_backup_container_show
 - az_backup_container_unregister
@@ -243,6 +243,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 03/12/2020
   description: Resource which houses items or applications to be protected.

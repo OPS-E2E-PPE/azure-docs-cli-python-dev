@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_redis
-name: az redis
+name: Redis Cache
 summary: Manage dedicated Redis caches for your Azure applications.
 description: ''
 directCommands:
@@ -87,7 +87,7 @@ directCommands:
     parameterValueGroup: 1, 2, 3
     summary: Space-separated list of availability zones into which to provision the resource.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
 - uid: az_redis_delete
   name: az redis delete
   summary: Deletes a Redis cache.
@@ -114,7 +114,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
 - uid: az_redis_export
   name: az redis export
   summary: Export data stored in a Redis cache.
@@ -152,8 +152,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
-- uid: az_redis_force_reboot
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+- uid: az_redis_force-reboot
   name: az redis force-reboot
   summary: Reboot specified Redis node(s).
   description: This operation requires write permission to the cache resource. There can be potential data loss.
@@ -186,7 +186,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
 - uid: az_redis_import
   name: az redis import
   summary: Import data into a Redis cache.
@@ -219,8 +219,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
-- uid: az_redis_import_method
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+- uid: az_redis_import-method
   name: az redis import-method
   summary: Import data into Redis cache.
   description: ''
@@ -252,7 +252,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
 - uid: az_redis_list
   name: az redis list
   summary: List Redis Caches.
@@ -271,8 +271,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
-- uid: az_redis_list_keys
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+- uid: az_redis_list-keys
   name: az redis list-keys
   summary: Retrieve a Redis cache's access keys.
   description: This operation requires write permission to the cache resource.
@@ -294,8 +294,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
-- uid: az_redis_regenerate_keys
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+- uid: az_redis_regenerate-keys
   name: az redis regenerate-keys
   summary: Regenerate Redis cache's access keys.
   description: This operation requires write permission to the cache resource.
@@ -324,7 +324,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
 - uid: az_redis_show
   name: az redis show
   summary: Gets a Redis cache (resource description).
@@ -351,7 +351,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
 - uid: az_redis_update
   name: az redis update
   summary: Update a Redis cache.
@@ -400,33 +400,33 @@ directCommands:
     parameterValueGroup: c0, c1, c2, c3, c4, c5, c6, p1, p2, p3, p4, p5
     summary: Size of Redis cache to deploy. Basic and Standard Cache sizes start with C. Premium Cache sizes start with P.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
 commands:
 - az_redis_create
 - az_redis_delete
 - az_redis_export
-- az_redis_firewall_rules
-- az_redis_firewall_rules_create
-- az_redis_firewall_rules_delete
-- az_redis_firewall_rules_list
-- az_redis_firewall_rules_show
-- az_redis_firewall_rules_update
-- az_redis_force_reboot
+- az_redis_firewall-rules
+- az_redis_firewall-rules_create
+- az_redis_firewall-rules_delete
+- az_redis_firewall-rules_list
+- az_redis_firewall-rules_show
+- az_redis_firewall-rules_update
+- az_redis_force-reboot
 - az_redis_import
-- az_redis_import_method
+- az_redis_import-method
 - az_redis_list
-- az_redis_list_keys
-- az_redis_patch_schedule
-- az_redis_patch_schedule_create
-- az_redis_patch_schedule_delete
-- az_redis_patch_schedule_show
-- az_redis_patch_schedule_update
-- az_redis_regenerate_keys
-- az_redis_server_link
-- az_redis_server_link_create
-- az_redis_server_link_delete
-- az_redis_server_link_list
-- az_redis_server_link_show
+- az_redis_list-keys
+- az_redis_patch-schedule
+- az_redis_patch-schedule_create
+- az_redis_patch-schedule_delete
+- az_redis_patch-schedule_show
+- az_redis_patch-schedule_update
+- az_redis_regenerate-keys
+- az_redis_server-link
+- az_redis_server-link_create
+- az_redis_server-link_delete
+- az_redis_server-link_list
+- az_redis_server-link_show
 - az_redis_show
 - az_redis_update
 globalParameters:
@@ -445,6 +445,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/17/2019
   description: Manage dedicated Redis caches for your Azure applications.

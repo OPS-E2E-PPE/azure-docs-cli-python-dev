@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_eventgrid_partner_namespace_event_channel
+uid: az_eventgrid_partner_namespace_event-channel
 name: az eventgrid partner namespace event-channel
 summary: Manage partner event channels.
 description: ''
 directCommands:
-- uid: az_eventgrid_partner_namespace_event_channel_create
+- uid: az_eventgrid_partner_namespace_event-channel_create
   name: az eventgrid partner namespace event-channel create
   summary: Create an event channel under a partner namespace.
   description: ''
@@ -96,8 +96,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_partner_namespace_event_channel_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_partner_namespace_event-channel_delete
   name: az eventgrid partner namespace event-channel delete
   summary: Delete a partner namespace.
   description: ''
@@ -130,8 +130,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_partner_namespace_event_channel_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_partner_namespace_event-channel_list
   name: az eventgrid partner namespace event-channel list
   summary: List available partner event-channels.
   description: ''
@@ -165,8 +165,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_partner_namespace_event_channel_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_partner_namespace_event-channel_show
   name: az eventgrid partner namespace event-channel show
   summary: Get the details of an event channel under a partner namespace.
   description: ''
@@ -201,12 +201,12 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
 commands:
-- az_eventgrid_partner_namespace_event_channel_create
-- az_eventgrid_partner_namespace_event_channel_delete
-- az_eventgrid_partner_namespace_event_channel_list
-- az_eventgrid_partner_namespace_event_channel_show
+- az_eventgrid_partner_namespace_event-channel_create
+- az_eventgrid_partner_namespace_event-channel_delete
+- az_eventgrid_partner_namespace_event-channel_list
+- az_eventgrid_partner_namespace_event-channel_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -223,6 +223,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 07/06/2020
   description: Manage partner event channels.

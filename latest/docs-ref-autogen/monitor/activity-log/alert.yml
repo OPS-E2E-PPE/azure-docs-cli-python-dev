@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_monitor_activity_log_alert
+uid: az_monitor_activity-log_alert
 name: az monitor activity-log alert
 summary: Manage activity log alerts.
 description: ''
 directCommands:
-- uid: az_monitor_activity_log_alert_create
+- uid: az_monitor_activity-log_alert_create
   name: az monitor activity-log alert create
   summary: Create a default activity log alert.
   description: This command will create a default activity log with one condition which compares if the activities logs 'category' field equals to 'ServiceHealth'. The newly created activity log alert does not have any action groups attached to it.
@@ -67,8 +67,8 @@ directCommands:
   - name: --webhook-properties -w
     summary: Space-separated webhook properties in 'key[=value]' format. These properties are associated with the action groups added in this command.
     description: For any webhook receiver in these action group, this data is appended to the webhook payload. To attach different webhook properties to different action groups, add the action groups in separate update-action commands.
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_activity_log_alert_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_activity-log_alert_delete
   name: az monitor activity-log alert delete
   summary: Delete an activity log alert.
   description: ''
@@ -90,8 +90,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_activity_log_alert_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_activity-log_alert_list
   name: az monitor activity-log alert list
   summary: List activity log alerts under a resource group or the current subscription.
   description: ''
@@ -109,8 +109,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_activity_log_alert_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_activity-log_alert_show
   name: az monitor activity-log alert show
   summary: Get an activity log alert.
   description: ''
@@ -136,8 +136,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_activity_log_alert_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_activity-log_alert_update
   name: az monitor activity-log alert update
   summary: Update the details of this activity log alert.
   description: ''
@@ -203,19 +203,19 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
 commands:
-- az_monitor_activity_log_alert_action_group
-- az_monitor_activity_log_alert_action_group_add
-- az_monitor_activity_log_alert_action_group_remove
-- az_monitor_activity_log_alert_create
-- az_monitor_activity_log_alert_delete
-- az_monitor_activity_log_alert_list
-- az_monitor_activity_log_alert_scope
-- az_monitor_activity_log_alert_scope_add
-- az_monitor_activity_log_alert_scope_remove
-- az_monitor_activity_log_alert_show
-- az_monitor_activity_log_alert_update
+- az_monitor_activity-log_alert_action-group
+- az_monitor_activity-log_alert_action-group_add
+- az_monitor_activity-log_alert_action-group_remove
+- az_monitor_activity-log_alert_create
+- az_monitor_activity-log_alert_delete
+- az_monitor_activity-log_alert_list
+- az_monitor_activity-log_alert_scope
+- az_monitor_activity-log_alert_scope_add
+- az_monitor_activity-log_alert_scope_remove
+- az_monitor_activity-log_alert_show
+- az_monitor_activity-log_alert_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -232,6 +232,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/20/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/23/2021
   description: Manage activity log alerts.

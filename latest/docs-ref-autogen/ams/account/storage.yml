@@ -30,7 +30,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
 - uid: az_ams_account_storage_remove
   name: az ams account storage remove
   summary: Detach a secondary storage from an Azure Media Services account.
@@ -57,8 +57,38 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_account_storage_sync_storage_keys
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_account_storage_set-authentication
+  name: az ams account storage set-authentication
+  summary: Set the authentication of a storage account attached to an Azure Media Services account.
+  description: ''
+  syntax: >-
+    az ams account storage set-authentication --storage-auth {ManagedIdentity, System}
+                                              [--account-name]
+                                              [--ids]
+                                              [--resource-group]
+                                              [--subscription]
+  requiredParameters:
+  - isRequired: true
+    name: --storage-auth
+    parameterValueGroup: ManagedIdentity, System
+    summary: The type of authentication for the storage account associated with the media services account.
+    description: ''
+  optionalParameters:
+  - name: --account-name -a
+    summary: The name of the Azure Media Services account.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs (space-delimited). It should be a complete resource ID containing all information of 'Resource Id' arguments. You should provide either --ids or other 'Resource Id' arguments.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - name: --subscription
+    summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+    description: ''
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_account_storage_sync-storage-keys
   name: az ams account storage sync-storage-keys
   summary: Synchronize storage account keys for a storage account associated with an Azure Media Services account.
   description: ''
@@ -86,11 +116,12 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
 commands:
 - az_ams_account_storage_add
 - az_ams_account_storage_remove
-- az_ams_account_storage_sync_storage_keys
+- az_ams_account_storage_set-authentication
+- az_ams_account_storage_sync-storage-keys
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -107,6 +138,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 07/28/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Manage storage for an Azure Media Services account.

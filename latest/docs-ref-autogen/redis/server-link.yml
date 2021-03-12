@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_redis_server_link
+uid: az_redis_server-link
 name: az redis server-link
 summary: Manage Redis server links.
 description: ''
 directCommands:
-- uid: az_redis_server_link_create
+- uid: az_redis_server-link_create
   name: az redis server-link create
   summary: Adds a server link to the Redis cache (requires Premium SKU).
   description: Usage example - az redis server-link create --name testCacheName --resource-group testResourceGroup --cache-to-link secondTestCacheName --replication-role Secondary.
@@ -36,8 +36,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
-- uid: az_redis_server_link_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+- uid: az_redis_server-link_delete
   name: az redis server-link delete
   summary: Deletes the linked server from a redis cache (requires Premium SKU).
   description: ''
@@ -63,8 +63,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
-- uid: az_redis_server_link_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+- uid: az_redis_server-link_list
   name: az redis server-link list
   summary: Gets the list of linked servers associated with this redis cache (requires Premium SKU).
   description: ''
@@ -89,8 +89,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
-- uid: az_redis_server_link_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+- uid: az_redis_server-link_show
   name: az redis server-link show
   summary: Gets the detailed information about a linked server of a redis cache (requires Premium SKU).
   description: ''
@@ -120,12 +120,12 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/redis/_help.py
 commands:
-- az_redis_server_link_create
-- az_redis_server_link_delete
-- az_redis_server_link_list
-- az_redis_server_link_show
+- az_redis_server-link_create
+- az_redis_server-link_delete
+- az_redis_server-link_list
+- az_redis_server-link_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -142,6 +142,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/17/2019
   description: Manage Redis server links.

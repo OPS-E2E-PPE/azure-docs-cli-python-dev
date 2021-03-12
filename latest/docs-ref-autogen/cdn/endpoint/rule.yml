@@ -24,7 +24,7 @@ directCommands:
                              [--header-value]
                              [--ids]
                              [--match-values]
-                             [--match-variable]
+                             [--match-variable {Cookies, HttpVersion, IsDevice, PostArgs, QueryString, RemoteAddress, RequestBody, RequestHeader, RequestMethod, RequestScheme, RequestUri, UrlFileExtension, UrlFileName, UrlPath}]
                              [--name]
                              [--negate-condition {false, true}]
                              [--operator]
@@ -51,7 +51,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --order
-    summary: The order of the rule. The order number must start from 0 and consecutive.                    Rule with higher order will be applied later.
+    summary: The order of the rule. The order number must start from 0 and consecutive. Rule with higher order will be applied later.
     description: ''
   - isRequired: true
     name: --rule-name
@@ -63,19 +63,19 @@ directCommands:
     summary: Caching behavior for the requests.
     description: ''
   - name: --cache-duration
-    summary: The duration for which the content needs to be cached.                    Allowed format is [d.]hh:mm:ss.
+    summary: The duration for which the content needs to be cached.                Allowed format is [d.]hh:mm:ss.
     description: ''
   - name: --custom-fragment
     summary: Fragment to add to the redirect URL.
     description: ''
   - name: --custom-hostname
-    summary: Host to redirect.                    Leave empty to use the incoming host as the destination host.
+    summary: Host to redirect.                Leave empty to use the incoming host as the destination host.
     description: ''
   - name: --custom-path
-    summary: The full path to redirect. Path cannot be empty and must start with /.                    Leave empty to use the incoming path as destination path.
+    summary: The full path to redirect. Path cannot be empty and must start with /.                Leave empty to use the incoming path as destination path.
     description: ''
   - name: --custom-querystring
-    summary: The set of query strings to be placed in the redirect URL.                    leave empty to preserve the incoming query string.
+    summary: The set of query strings to be placed in the redirect URL.                leave empty to preserve the incoming query string.
     description: ''
   - name: --destination
     summary: The destination path to be used in the rewrite.
@@ -97,6 +97,7 @@ directCommands:
     summary: Match values of the match condition (comma separated).
     description: ''
   - name: --match-variable
+    parameterValueGroup: Cookies, HttpVersion, IsDevice, PostArgs, QueryString, RemoteAddress, RequestBody, RequestHeader, RequestMethod, RequestScheme, RequestUri, UrlFileExtension, UrlFileName, UrlPath
     summary: Name of the match condition.
     description: ''
   - name: --name -n
@@ -111,7 +112,7 @@ directCommands:
     description: ''
   - name: --preserve-unmatched-path
     parameterValueGroup: false, true
-    summary: If True, the remaining path after the source                    pattern will be appended to the new destination path.
+    summary: If True, the remaining path after the source                pattern will be appended to the new destination path.
     description: ''
   - name: --profile-name
     summary: Name of the CDN profile which is unique within the resource group.
@@ -147,7 +148,7 @@ directCommands:
     parameterValueGroup: Lowercase, Uppercase
     summary: Transform to apply before matching.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_endpoint_rule_remove
   name: az cdn endpoint rule remove
   summary: Remove a delivery rule from an endpoint.
@@ -183,7 +184,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 - uid: az_cdn_endpoint_rule_show
   name: az cdn endpoint rule show
   summary: Show delivery rules asscociate with the endpoint.
@@ -217,7 +218,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 commands:
 - az_cdn_endpoint_rule_action
 - az_cdn_endpoint_rule_action_add
@@ -246,6 +247,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/02/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage delivery rules for an endpoint.

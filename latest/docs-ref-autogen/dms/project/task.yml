@@ -35,8 +35,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
-- uid: az_dms_project_task_check_name
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+- uid: az_dms_project_task_check-name
   name: az dms project task check-name
   summary: Check if a given task name is available within a given instance of DMS as well as the name's validity.
   description: ''
@@ -67,7 +67,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_project_task_create
   name: az dms project task create
   summary: Create and start a migration task.
@@ -247,7 +247,7 @@ directCommands:
   - name: --task-type
     summary: 'The type of data movement the task will support. The supported types are: OnlineMigration, OfflineMigration. If not provided, will default to OfflineMigration for SQL and OnlineMigration for MySQL and PostgreSQL.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_project_task_cutover
   name: az dms project task cutover
   summary: For an online migration task, complete the migration by performing a cutover.
@@ -286,7 +286,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_project_task_delete
   name: az dms project task delete
   summary: Delete a migration task.
@@ -329,7 +329,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_project_task_list
   name: az dms project task list
   summary: List the tasks within a project. Some tasks may have a status of Unknown, which indicates that an error occurred while querying the status of that task.
@@ -369,7 +369,7 @@ directCommands:
   - name: --task-type
     summary: Filters the list by the type of task. For the list of possible types see "az dms check-status".
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
 - uid: az_dms_project_task_show
   name: az dms project task show
   summary: Show the details of a migration task. Use the "--expand" to get more details.
@@ -412,15 +412,83 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dms/_help.py
+- uid: az_dms_project_task_restart
+  name: az dms project task restart
+  summary: ''
+  description: >-
+    To see the result of the request, please use the 'task show' command:
+        az dms project task show ... --expand command.
+  syntax: >-
+    az dms project task restart --name
+                                --project-name
+                                --resource-group
+                                --service-name
+                                [--object-name]
+  requiredParameters:
+  - isRequired: true
+    name: --name -n
+    summary: The name of the Task. A DMS Project Task is the activity that performs migration related work. There could be multiple Tasks associated with a Project.
+    description: ''
+  - isRequired: true
+    name: --project-name
+    summary: The name of the Project. DMS Project is a logical grouping that encompasses source database connection, target database connection and a list of databases to migrate.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - isRequired: true
+    name: --service-name
+    summary: The name of the Service. DMS Service is an Azure instance that performs database migrations.
+    description: ''
+  optionalParameters:
+  - name: --object-name
+    summary: The qualified name of the database or collection you wish to restart. Leave blank to restart the entire migration.
+    description: ''
+- uid: az_dms_project_task_stop
+  name: az dms project task stop
+  summary: Stops the task, or stops migration on the specified object (MongoDB migrations only).
+  description: >-
+    To see the result of the request, please use the 'task show' command:
+        az dms project task show ... --expand command.
+  syntax: >-
+    az dms project task stop --name
+                             --project-name
+                             --resource-group
+                             --service-name
+                             [--object-name]
+  requiredParameters:
+  - isRequired: true
+    name: --name -n
+    summary: The name of the Task. A DMS Project Task is the activity that performs migration related work. There could be multiple Tasks associated with a Project.
+    description: ''
+  - isRequired: true
+    name: --project-name
+    summary: The name of the Project. DMS Project is a logical grouping that encompasses source database connection, target database connection and a list of databases to migrate.
+    description: ''
+  - isRequired: true
+    name: --resource-group -g
+    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
+    description: ''
+  - isRequired: true
+    name: --service-name
+    summary: The name of the Service. DMS Service is an Azure instance that performs database migrations.
+    description: ''
+  optionalParameters:
+  - name: --object-name
+    summary: Supported by MongoDB migrations only. The qualified name of the database or collection you wish to stop. Leave blank to stop the entire migration.
+    description: ''
 commands:
 - az_dms_project_task_cancel
-- az_dms_project_task_check_name
+- az_dms_project_task_check-name
 - az_dms_project_task_create
 - az_dms_project_task_cutover
 - az_dms_project_task_delete
 - az_dms_project_task_list
 - az_dms_project_task_show
+- az_dms_project_task_restart
+- az_dms_project_task_stop
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -437,6 +505,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/15/2021
   description: Manage tasks for a Data Migration Service instance's project.

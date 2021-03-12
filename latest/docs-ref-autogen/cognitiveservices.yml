@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_cognitiveservices
-name: az cognitiveservices
+name: Cognitive Services
 summary: Manage Azure Cognitive Services accounts.
 description: This article lists the Azure CLI commands for Azure Cognitive Services account and subscription management only. Refer to the documentation at <a href="https://docs.microsoft.com/azure/cognitive-services/">https://docs.microsoft.com/azure/cognitive-services/</a> for individual services to learn how to use the APIs and supported SDKs.
 directCommands:
@@ -25,7 +25,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cognitiveservices/_help.py
 commands:
 - az_cognitiveservices_account
 - az_cognitiveservices_account_create
@@ -38,13 +38,13 @@ commands:
 - az_cognitiveservices_account_keys_list
 - az_cognitiveservices_account_keys_regenerate
 - az_cognitiveservices_account_list
-- az_cognitiveservices_account_list_kinds
-- az_cognitiveservices_account_list_skus
-- az_cognitiveservices_account_list_usage
-- az_cognitiveservices_account_network_rule
-- az_cognitiveservices_account_network_rule_add
-- az_cognitiveservices_account_network_rule_list
-- az_cognitiveservices_account_network_rule_remove
+- az_cognitiveservices_account_list-kinds
+- az_cognitiveservices_account_list-skus
+- az_cognitiveservices_account_list-usage
+- az_cognitiveservices_account_network-rule
+- az_cognitiveservices_account_network-rule_add
+- az_cognitiveservices_account_network-rule_list
+- az_cognitiveservices_account_network-rule_remove
 - az_cognitiveservices_account_show
 - az_cognitiveservices_account_update
 - az_cognitiveservices_list
@@ -64,6 +64,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 06/13/2020
   description: This article lists the Azure CLI commands for Azure Cognitive Services account and subscription management only. Refer to the documentation at <a href="https://docs.microsoft.com/azure/cognitive-services/">https://docs.microsoft.com/azure/cognitive-services/</a> for individual services to learn how to use the APIs and supported SDKs.

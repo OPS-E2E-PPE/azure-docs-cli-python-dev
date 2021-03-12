@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_appservice_hybrid_connection
+uid: az_appservice_hybrid-connection
 name: az appservice hybrid-connection
 summary: A method that sets the key a hybrid-connection uses.
 description: ''
 directCommands:
-- uid: az_appservice_hybrid_connection_set_key
+- uid: az_appservice_hybrid-connection_set-key
   name: az appservice hybrid-connection set-key
   summary: Set the key that all apps in an appservice plan use to connect to the hybrid-connections in that appservice plan.
   description: ''
@@ -43,9 +43,9 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 commands:
-- az_appservice_hybrid_connection_set_key
+- az_appservice_hybrid-connection_set-key
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -62,6 +62,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/19/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: A method that sets the key a hybrid-connection uses.

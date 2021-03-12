@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_eventgrid_partner_topic_event_subscription
+uid: az_eventgrid_partner_topic_event-subscription
 name: az eventgrid partner topic event-subscription
 summary: Manage event subscriptions of partner topic.
 description: ''
 directCommands:
-- uid: az_eventgrid_partner_topic_event_subscription_create
+- uid: az_eventgrid_partner_topic_event-subscription_create
   name: az eventgrid partner topic event-subscription create
   summary: Create a new event subscription for a partner topic.
   description: ''
@@ -168,8 +168,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_partner_topic_event_subscription_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_partner_topic_event-subscription_delete
   name: az eventgrid partner topic event-subscription delete
   summary: Delete an event subscription of a partner topic.
   description: ''
@@ -204,8 +204,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_partner_topic_event_subscription_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_partner_topic_event-subscription_list
   name: az eventgrid partner topic event-subscription list
   summary: List event subscriptions of a specific partner topic.
   description: ''
@@ -237,8 +237,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_partner_topic_event_subscription_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_partner_topic_event-subscription_show
   name: az eventgrid partner topic event-subscription show
   summary: Get the details of an event subscription of a partner topic.
   description: ''
@@ -278,8 +278,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
-- uid: az_eventgrid_partner_topic_event_subscription_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+- uid: az_eventgrid_partner_topic_event-subscription_update
   name: az eventgrid partner topic event-subscription update
   summary: Update an event subscription of a partner topic.
   description: ''
@@ -395,13 +395,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventgrid/_help.py
 commands:
-- az_eventgrid_partner_topic_event_subscription_create
-- az_eventgrid_partner_topic_event_subscription_delete
-- az_eventgrid_partner_topic_event_subscription_list
-- az_eventgrid_partner_topic_event_subscription_show
-- az_eventgrid_partner_topic_event_subscription_update
+- az_eventgrid_partner_topic_event-subscription_create
+- az_eventgrid_partner_topic_event-subscription_delete
+- az_eventgrid_partner_topic_event-subscription_list
+- az_eventgrid_partner_topic_event-subscription_show
+- az_eventgrid_partner_topic_event-subscription_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -418,6 +418,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 07/06/2020
   description: Manage event subscriptions of partner topic.

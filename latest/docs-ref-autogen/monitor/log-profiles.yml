@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_monitor_log_profiles
-name: az monitor log-profiles
+uid: az_monitor_log-profiles
+name: Monitoring log profiles
 summary: Manage log profiles.
 description: ''
 directCommands:
-- uid: az_monitor_log_profiles_create
+- uid: az_monitor_log-profiles_create
   name: az monitor log-profiles create
   summary: Create a log profile.
   description: ''
@@ -61,8 +61,8 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_profiles_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-profiles_delete
   name: az monitor log-profiles delete
   summary: Deletes the log profile.
   description: ''
@@ -78,8 +78,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_profiles_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-profiles_list
   name: az monitor log-profiles list
   summary: List the log profiles.
   description: 'keyword callable clsA custom type or function that will be passed the direct response :return: An iterator like instance of either LogProfileCollection or the result of cls(response) :rtype: ~azure.core.paging.ItemPaged[~$(python-base-namespace).v2016_03_01.models.LogProfileCollection] :raises: ~azure.core.exceptions.HttpResponseError.'
@@ -93,8 +93,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_profiles_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-profiles_show
   name: az monitor log-profiles show
   summary: Gets the log profile.
   description: ''
@@ -114,8 +114,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
-- uid: az_monitor_log_profiles_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+- uid: az_monitor_log-profiles_update
   name: az monitor log-profiles update
   summary: Update a log profile.
   description: ''
@@ -150,13 +150,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/monitor/_help.py
 commands:
-- az_monitor_log_profiles_create
-- az_monitor_log_profiles_delete
-- az_monitor_log_profiles_list
-- az_monitor_log_profiles_show
-- az_monitor_log_profiles_update
+- az_monitor_log-profiles_create
+- az_monitor_log-profiles_delete
+- az_monitor_log-profiles_list
+- az_monitor_log-profiles_show
+- az_monitor_log-profiles_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -173,6 +173,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/20/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/23/2021
   description: Manage log profiles.

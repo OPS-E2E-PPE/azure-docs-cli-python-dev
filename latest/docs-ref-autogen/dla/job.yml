@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_job
-name: az dla job
+name: Data Lake Analytics jobs
 summary: Manage Data Lake Analytics jobs.
 description: ''
 directCommands:
@@ -28,7 +28,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 - uid: az_dla_job_list
   name: az dla job list
   summary: List Data Lake Analytics jobs.
@@ -90,7 +90,7 @@ directCommands:
     defaultValue: "500"
     summary: Maximum number of items to return.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 - uid: az_dla_job_show
   name: az dla job show
   summary: Get information for a Data Lake Analytics job.
@@ -119,7 +119,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 - uid: az_dla_job_submit
   name: az dla job submit
   summary: Submit a job to a Data Lake Analytics account.
@@ -196,7 +196,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 - uid: az_dla_job_wait
   name: az dla job wait
   summary: Wait for a Data Lake Analytics job to finish.
@@ -231,7 +231,7 @@ directCommands:
     defaultValue: "5"
     summary: The polling interval between checks for the job status, in seconds.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/dla/_help.py
 commands:
 - az_dla_job_cancel
 - az_dla_job_list
@@ -260,6 +260,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 09/16/2019
   description: Manage Data Lake Analytics jobs.

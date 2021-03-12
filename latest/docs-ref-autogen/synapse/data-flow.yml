@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_synapse_data_flow
+uid: az_synapse_data-flow
 name: az synapse data-flow
 summary: Manage Synapse's data flows.
 description: ''
 directCommands:
-- uid: az_synapse_data_flow_create
+- uid: az_synapse_data-flow_create
   name: az synapse data-flow create
   summary: Create a data flow.
   description: ''
@@ -39,8 +39,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_data_flow_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_data-flow_delete
   name: az synapse data-flow delete
   summary: Delete a data flow.
   description: ''
@@ -74,8 +74,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_data_flow_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_data-flow_list
   name: az synapse data-flow list
   summary: List data flows.
   description: ''
@@ -98,8 +98,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_data_flow_set
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_data-flow_set
   name: az synapse data-flow set
   summary: Set an exist data flow.
   description: ''
@@ -134,8 +134,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
-- uid: az_synapse_data_flow_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+- uid: az_synapse_data-flow_show
   name: az synapse data-flow show
   summary: Get a data flow.
   description: ''
@@ -165,13 +165,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/synapse/_help.py
 commands:
-- az_synapse_data_flow_create
-- az_synapse_data_flow_delete
-- az_synapse_data_flow_list
-- az_synapse_data_flow_set
-- az_synapse_data_flow_show
+- az_synapse_data-flow_create
+- az_synapse_data-flow_delete
+- az_synapse_data-flow_list
+- az_synapse_data-flow_set
+- az_synapse_data-flow_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -188,6 +188,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/26/2021
   description: Manage Synapse's data flows.

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_group_deployment_operation
-name: az group deployment operation
+name: Deployment operations
 summary: Manage deployment operations.
 description: ''
 directCommands:
@@ -33,7 +33,7 @@ directCommands:
   - name: --top
     summary: Query parameters.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_group_deployment_operation_show
   name: az group deployment operation show
   summary: Get a deployment's operation.
@@ -64,7 +64,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 commands:
 - az_group_deployment_operation_list
 - az_group_deployment_operation_show
@@ -84,6 +84,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/24/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage deployment operations.

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_nic
-name: az network nic
+name: Network interfaces
 summary: Manage network interfaces.
 description: To learn more about network interfaces in Azure visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface">https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface</a>.
 directCommands:
@@ -117,7 +117,7 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_nic_delete
   name: az network nic delete
   summary: Delete a network interface.
@@ -147,7 +147,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_nic_list
   name: az network nic list
   summary: List network interfaces.
@@ -169,8 +169,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_nic_list_effective_nsg
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_nic_list-effective-nsg
   name: az network nic list-effective-nsg
   summary: List all effective network security groups applied to a network interface.
   description: To learn more about troubleshooting using effective security rules visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-troubleshoot-portal">https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-troubleshoot-portal</a>.
@@ -195,7 +195,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_nic_show
   name: az network nic show
   summary: Get the details of a network interface.
@@ -229,8 +229,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_nic_show_effective_route_table
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_nic_show-effective-route-table
   name: az network nic show-effective-route-table
   summary: Show the effective route table applied to a network interface.
   description: To learn more about troubleshooting using the effective route tables visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-routes-troubleshoot-portal#using-effective-routes-to-troubleshoot-vm-traffic-flow">https://docs.microsoft.com/azure/virtual-network/virtual-network-routes-troubleshoot-portal#using-effective-routes-to-troubleshoot-vm-traffic-flow</a>.
@@ -255,7 +255,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_nic_update
   name: az network nic update
   summary: Update a network interface.
@@ -325,7 +325,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_nic_wait
   name: az network nic wait
   summary: Place the CLI in a waiting state until a condition of the network interface is met.
@@ -387,28 +387,33 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
 - az_network_nic_create
 - az_network_nic_delete
-- az_network_nic_ip_config
-- az_network_nic_ip_config_address_pool
-- az_network_nic_ip_config_address_pool_add
-- az_network_nic_ip_config_address_pool_remove
-- az_network_nic_ip_config_create
-- az_network_nic_ip_config_delete
-- az_network_nic_ip_config_inbound_nat_rule
-- az_network_nic_ip_config_inbound_nat_rule_add
-- az_network_nic_ip_config_inbound_nat_rule_remove
-- az_network_nic_ip_config_list
-- az_network_nic_ip_config_show
-- az_network_nic_ip_config_update
+- az_network_nic_ip-config
+- az_network_nic_ip-config_address-pool
+- az_network_nic_ip-config_address-pool_add
+- az_network_nic_ip-config_address-pool_remove
+- az_network_nic_ip-config_create
+- az_network_nic_ip-config_delete
+- az_network_nic_ip-config_inbound-nat-rule
+- az_network_nic_ip-config_inbound-nat-rule_add
+- az_network_nic_ip-config_inbound-nat-rule_remove
+- az_network_nic_ip-config_list
+- az_network_nic_ip-config_show
+- az_network_nic_ip-config_update
 - az_network_nic_list
-- az_network_nic_list_effective_nsg
+- az_network_nic_list-effective-nsg
 - az_network_nic_show
-- az_network_nic_show_effective_route_table
+- az_network_nic_show-effective-route-table
 - az_network_nic_update
 - az_network_nic_wait
+- az_network_nic_vtap-config
+- az_network_nic_vtap-config_create
+- az_network_nic_vtap-config_delete
+- az_network_nic_vtap-config_list
+- az_network_nic_vtap-config_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -425,6 +430,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: To learn more about network interfaces in Azure visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface">https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface</a>.

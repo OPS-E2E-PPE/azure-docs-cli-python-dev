@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_service_endpoint_policy_definition
+uid: az_network_service-endpoint_policy-definition
 name: az network service-endpoint policy-definition
 summary: Manage service endpoint policy definitions.
 description: ''
 directCommands:
-- uid: az_network_service_endpoint_policy_definition_create
+- uid: az_network_service-endpoint_policy-definition_create
   name: az network service-endpoint policy-definition create
   summary: Create a service endpoint policy definition.
   description: ''
@@ -45,9 +45,9 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_service_endpoint_policy_definition_create
+- az_network_service-endpoint_policy-definition_create
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -64,6 +64,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage service endpoint policy definitions.

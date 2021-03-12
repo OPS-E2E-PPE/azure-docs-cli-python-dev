@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_deploymentmanager_service_unit
+uid: az_deploymentmanager_service-unit
 name: az deploymentmanager service-unit
 summary: Manage the service units.
 description: Service units combine to form a service in a service topology.
 directCommands:
-- uid: az_deploymentmanager_service_unit_create
+- uid: az_deploymentmanager_service-unit_create
   name: az deploymentmanager service-unit create
   summary: Creates a service unit under the specified service and service topology.
   description: ''
@@ -74,8 +74,8 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
-- uid: az_deploymentmanager_service_unit_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
+- uid: az_deploymentmanager_service-unit_delete
   name: az deploymentmanager service-unit delete
   summary: Deletes the service unit.
   description: ''
@@ -109,8 +109,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
-- uid: az_deploymentmanager_service_unit_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
+- uid: az_deploymentmanager_service-unit_list
   name: az deploymentmanager service-unit list
   summary: List all service units in a service.
   description: ''
@@ -143,8 +143,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
-- uid: az_deploymentmanager_service_unit_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
+- uid: az_deploymentmanager_service-unit_show
   name: az deploymentmanager service-unit show
   summary: Get the details of a service unit.
   description: ''
@@ -182,8 +182,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
-- uid: az_deploymentmanager_service_unit_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
+- uid: az_deploymentmanager_service-unit_update
   name: az deploymentmanager service-unit update
   summary: Updates the service unit.
   description: ''
@@ -257,13 +257,13 @@ directCommands:
   - name: --template-path
     summary: The path to the ARM template file. Either the full SAS Uri or the relative path in the artifact source for this topology.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/deploymentmanager/_help.py
 commands:
-- az_deploymentmanager_service_unit_create
-- az_deploymentmanager_service_unit_delete
-- az_deploymentmanager_service_unit_list
-- az_deploymentmanager_service_unit_show
-- az_deploymentmanager_service_unit_update
+- az_deploymentmanager_service-unit_create
+- az_deploymentmanager_service-unit_delete
+- az_deploymentmanager_service-unit_list
+- az_deploymentmanager_service-unit_show
+- az_deploymentmanager_service-unit_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -280,6 +280,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/30/2020
   description: Service units combine to form a service in a service topology.

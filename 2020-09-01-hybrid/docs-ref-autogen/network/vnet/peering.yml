@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_vnet_peering
-name: az network vnet peering
+name: Peering connections
 summary: Manage peering connections between Azure Virtual Networks.
 description: To learn more about virtual network peering visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering">https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering</a>.
 directCommands:
@@ -56,7 +56,7 @@ directCommands:
   - name: --use-remote-gateways
     summary: Allows VNet to use the remote VNet's gateway. Remote VNet gateway must have --allow-gateway-transit enabled for remote peering. Only 1 peering can have this flag enabled. Cannot be set if the VNet already has a gateway.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vnet_peering_delete
   name: az network vnet peering delete
   summary: Delete a peering.
@@ -86,7 +86,7 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vnet_peering_list
   name: az network vnet peering list
   summary: List peerings.
@@ -115,7 +115,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vnet_peering_show
   name: az network vnet peering show
   summary: Show details of a peering.
@@ -149,7 +149,7 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 - uid: az_network_vnet_peering_update
   name: az network vnet peering update
   summary: Update a peering.
@@ -201,7 +201,7 @@ directCommands:
   - name: --vnet-name
     summary: The virtual network (VNet) name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
 - az_network_vnet_peering_create
 - az_network_vnet_peering_delete
@@ -224,6 +224,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: To learn more about virtual network peering visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering">https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering</a>.

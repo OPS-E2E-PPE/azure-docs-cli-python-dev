@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_iot_hub_policy
-name: az iot hub policy
+name: IoT hub policies
 summary: Manage shared access policies of an IoT hub.
 description: ''
 directCommands:
@@ -37,7 +37,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
 - uid: az_iot_hub_policy_delete
   name: az iot hub policy delete
   summary: Delete a shared access policy from an IoT hub.
@@ -67,7 +67,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
 - uid: az_iot_hub_policy_list
   name: az iot hub policy list
   summary: List shared access policies of an IoT hub.
@@ -97,8 +97,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
-- uid: az_iot_hub_policy_renew_key
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
+- uid: az_iot_hub_policy_renew-key
   name: az iot hub policy renew-key
   summary: Regenerate keys of a shared access policy of an IoT hub.
   description: ''
@@ -138,7 +138,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
 - uid: az_iot_hub_policy_show
   name: az iot hub policy show
   summary: Get the details of a shared access policy of an IoT hub.
@@ -172,12 +172,12 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/iot/_help.py
 commands:
 - az_iot_hub_policy_create
 - az_iot_hub_policy_delete
 - az_iot_hub_policy_list
-- az_iot_hub_policy_renew_key
+- az_iot_hub_policy_renew-key
 - az_iot_hub_policy_show
 globalParameters:
 - name: --debug
@@ -195,6 +195,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/14/2021
   description: Manage shared access policies of an IoT hub.

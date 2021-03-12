@@ -38,7 +38,7 @@ directCommands:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_policy_assignment_identity_remove
   name: az policy assignment identity remove
   summary: Remove a managed identity from a policy assignment.
@@ -59,7 +59,7 @@ directCommands:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_policy_assignment_identity_show
   name: az policy assignment identity show
   summary: Show a policy assignment's managed identity.
@@ -87,7 +87,7 @@ directCommands:
   - name: --scope
     summary: Scope to which this policy assignment applies.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 commands:
 - az_policy_assignment_identity_assign
 - az_policy_assignment_identity_remove
@@ -108,6 +108,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/24/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage a policy assignment's managed identity.

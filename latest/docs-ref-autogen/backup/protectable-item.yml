@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_backup_protectable_item
+uid: az_backup_protectable-item
 name: az backup protectable-item
 summary: Manage the item which is yet to be protected or backed up to an Azure Recovery services vault with an associated policy.
 description: ''
 directCommands:
-- uid: az_backup_protectable_item_initialize
+- uid: az_backup_protectable-item_initialize
   name: az backup protectable-item initialize
   summary: Trigger the discovery of any unprotected items of the given workload type in the given container.
   description: ''
@@ -39,8 +39,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
-- uid: az_backup_protectable_item_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+- uid: az_backup_protectable-item_list
   name: az backup protectable-item list
   summary: Retrieve all protectable items within a certain container or across all registered containers.
   description: ''
@@ -49,6 +49,7 @@ directCommands:
                                     --vault-name
                                     --workload-type {MSSQL, SAPASE, SAPHANA, SAPHanaDatabase, SQLDataBase}
                                     [--container-name]
+                                    [--protectable-item-type {HANAInstance, SAPHanaDatabase, SAPHanaSystem, SQLAG, SQLDatabase, SQLInstance}]
                                     [--query-examples]
                                     [--subscription]
   examples:
@@ -72,14 +73,18 @@ directCommands:
   - name: --container-name -c
     summary: Name of the backup container. Accepts 'Name' or 'FriendlyName' from the output of az backup container list command. If 'FriendlyName' is passed then BackupManagementType is required.
     description: ''
+  - name: --protectable-item-type
+    parameterValueGroup: HANAInstance, SAPHanaDatabase, SAPHanaSystem, SQLAG, SQLDatabase, SQLInstance
+    summary: Specifiy the type of applications within the Resource which should be discovered and protected by Azure Backup.
+    description: ''
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
-- uid: az_backup_protectable_item_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+- uid: az_backup_protectable-item_show
   name: az backup protectable-item show
   summary: Retrieve the specified protectable item within the given container.
   description: ''
@@ -129,11 +134,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/backup/_help.py
 commands:
-- az_backup_protectable_item_initialize
-- az_backup_protectable_item_list
-- az_backup_protectable_item_show
+- az_backup_protectable-item_initialize
+- az_backup_protectable-item_list
+- az_backup_protectable-item_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -150,6 +155,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 03/12/2020
   description: Manage the item which is yet to be protected or backed up to an Azure Recovery services vault with an associated policy.

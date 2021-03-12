@@ -13,6 +13,7 @@ directCommands:
                   --kind {registration, webapp}
                   --name
                   --resource-group
+                  [--cmk]
                   [--description]
                   [--display-name]
                   [--echo {false, true}]
@@ -42,6 +43,9 @@ directCommands:
     summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
     description: ''
   optionalParameters:
+  - name: --cmk --cmk-key-vault-key-url
+    summary: The key vault key url to enable Customer Managed Keys encryption.
+    description: ''
   - name: --description -d
     summary: The description of the bot.
     description: ''
@@ -77,7 +81,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 - uid: az_bot_delete
   name: az bot delete
   summary: Delete an existing bot.
@@ -99,7 +103,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 - uid: az_bot_download
   name: az bot download
   summary: Download an existing bot.
@@ -125,8 +129,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
-- uid: az_bot_prepare_deploy
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+- uid: az_bot_prepare-deploy
   name: az bot prepare-deploy
   summary: Add scripts/config files for publishing with `az webapp deployment`.
   description: Add scripts or configuration files to the root of your local source code directory to be able to publish using `az webapp deployment`. When your code is deployed to your App Service, the generated scripts or configuration files should be appear in D:homesitewwwroot on App Service's Kudu web page.
@@ -156,8 +160,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
-- uid: az_bot_prepare_publish
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+- uid: az_bot_prepare-publish
   name: az bot prepare-publish
   summary: (Maintenance mode) Add scripts to your local source code directory to be able to publish back using `az bot publish` for v3 SDK bots.
   description: ''
@@ -198,7 +202,7 @@ directCommands:
     parameterValueGroup: v3, v4
     summary: The Microsoft Bot Builder SDK version to be used in the bot template that will be created.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 - uid: az_bot_publish
   name: az bot publish
   summary: Publish to a bot's associated app service.
@@ -245,7 +249,7 @@ directCommands:
     defaultValue: v4
     summary: The Microsoft Bot Builder SDK version of the bot.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 - uid: az_bot_show
   name: az bot show
   summary: Get an existing bot.
@@ -279,7 +283,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 - uid: az_bot_update
   name: az bot update
   summary: Update an existing bot.
@@ -290,6 +294,8 @@ directCommands:
                   [--ai-api-key]
                   [--ai-app-id]
                   [--ai-key]
+                  [--cmk]
+                  [--cmk-off]
                   [--description]
                   [--display-name]
                   [--endpoint]
@@ -319,6 +325,12 @@ directCommands:
   - name: --ai-key --app-insights-key
     summary: Azure Application Insights Key used to write bot analytics data. Provide a key if you want to receive bot analytics.
     description: ''
+  - name: --cmk --cmk-key-vault-key-url
+    summary: The key vault key url to enable Customer Managed Keys encryption.
+    description: ''
+  - name: --cmk-off
+    summary: Set encryption to Microsoft-Managed Keys.
+    description: ''
   - name: --description
     summary: The bot's new description.
     description: ''
@@ -341,13 +353,13 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/botservice/_help.py
 commands:
 - az_bot_authsetting
 - az_bot_authsetting_create
 - az_bot_authsetting_delete
 - az_bot_authsetting_list
-- az_bot_authsetting_list_providers
+- az_bot_authsetting_list-providers
 - az_bot_authsetting_show
 - az_bot_create
 - az_bot_delete
@@ -373,8 +385,8 @@ commands:
 - az_bot_msteams_create
 - az_bot_msteams_delete
 - az_bot_msteams_show
-- az_bot_prepare_deploy
-- az_bot_prepare_publish
+- az_bot_prepare-deploy
+- az_bot_prepare-publish
 - az_bot_publish
 - az_bot_show
 - az_bot_skype
@@ -412,6 +424,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 12/11/2019
   description: Manage Microsoft Azure Bot Service.

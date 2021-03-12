@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_storage_share_rm
+uid: az_storage_share-rm
 name: az storage share-rm
 summary: Manage Azure file shares using the Microsoft.Storage resource provider.
 description: ''
 directCommands:
-- uid: az_storage_share_rm_create
+- uid: az_storage_share-rm_create
   name: az storage share-rm create
   summary: Create a new Azure file share under the specified storage account.
   description: ''
@@ -62,8 +62,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_share_rm_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_share-rm_delete
   name: az storage share-rm delete
   summary: Delete the specified Azure file share.
   description: ''
@@ -73,6 +73,7 @@ directCommands:
                                [--resource-group]
                                [--storage-account]
                                [--subscription]
+                               [--x-ms-snapshot]
                                [--yes]
   examples:
   - summary: Delete an Azure file share 'myfileshare' under the storage account 'mystorageaccount' (account name) in resource group 'MyResourceGroup'.
@@ -97,11 +98,14 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
+  - name: --x-ms-snapshot
+    summary: Optional, used to delete a snapshot.
+    description: ''
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_share_rm_exists
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_share-rm_exists
   name: az storage share-rm exists
   summary: Check for the existence of an Azure file share.
   description: ''
@@ -134,8 +138,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_share_rm_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_share-rm_list
   name: az storage share-rm list
   summary: List the Azure file shares under the specified storage account.
   description: ''
@@ -170,8 +174,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_share_rm_restore
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_share-rm_restore
   name: az storage share-rm restore
   summary: Restore a file share within a valid retention days if share soft delete is enabled.
   description: ''
@@ -212,8 +216,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_share_rm_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_share-rm_show
   name: az storage share-rm show
   summary: Show the properties for a specified Azure file share.
   description: ''
@@ -225,6 +229,7 @@ directCommands:
                              [--resource-group]
                              [--storage-account]
                              [--subscription]
+                             [--x-ms-snapshot]
   examples:
   - summary: Show the properties for an Azure file share 'myfileshare' under the storage account 'mystorageaccount' (account name) in resource group 'MyResourceGroup'.
     syntax: az storage share-rm show -g MyResourceGroup --storage-account mystorageaccount --name myfileshare
@@ -254,8 +259,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_share_rm_stats
+  - name: --x-ms-snapshot
+    summary: Optional, used to retrieve properties of a snapshot.
+    description: ''
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_share-rm_stats
   name: az storage share-rm stats
   summary: Get the usage bytes of the data stored on the share.
   description: ''
@@ -284,8 +292,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_share_rm_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_share-rm_update
   name: az storage share-rm update
   summary: Update the properties for an Azure file share.
   description: ''
@@ -303,6 +311,7 @@ directCommands:
                                [--set]
                                [--storage-account]
                                [--subscription]
+                               [--x-ms-snapshot]
   examples:
   - summary: Update the properties for an Azure file share 'myfileshare' under the storage account 'mystorageaccount' (account name) in resource group 'MyResourceGroup'.
     syntax: az storage share-rm update -g MyResourceGroup --storage-account mystorageaccount --name myfileshare --quota 3 --metadata key1=value1 key2=value2
@@ -352,16 +361,19 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  - name: --x-ms-snapshot
+    summary: Optional, used to retrieve properties of a snapshot.
+    description: ''
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
-- az_storage_share_rm_create
-- az_storage_share_rm_delete
-- az_storage_share_rm_exists
-- az_storage_share_rm_list
-- az_storage_share_rm_restore
-- az_storage_share_rm_show
-- az_storage_share_rm_stats
-- az_storage_share_rm_update
+- az_storage_share-rm_create
+- az_storage_share-rm_delete
+- az_storage_share-rm_exists
+- az_storage_share-rm_list
+- az_storage_share-rm_restore
+- az_storage_share-rm_show
+- az_storage_share-rm_stats
+- az_storage_share-rm_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -378,6 +390,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage Azure file shares using the Microsoft.Storage resource provider.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_security_iot_analytics
+uid: az_security_iot-analytics
 name: az security iot-analytics
 summary: View IoT Security Analytics metrics.
 description: ''
 directCommands:
-- uid: az_security_iot_analytics_list
+- uid: az_security_iot-analytics_list
   name: az security iot-analytics list
   summary: List all IoT security Analytics metrics.
   description: ''
@@ -32,8 +32,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
-- uid: az_security_iot_analytics_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+- uid: az_security_iot-analytics_show
   name: az security iot-analytics show
   summary: Shows IoT Security Analytics metrics.
   description: ''
@@ -61,10 +61,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
 commands:
-- az_security_iot_analytics_list
-- az_security_iot_analytics_show
+- az_security_iot-analytics_list
+- az_security_iot-analytics_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -81,6 +81,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/11/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/03/2021
   description: View IoT Security Analytics metrics.

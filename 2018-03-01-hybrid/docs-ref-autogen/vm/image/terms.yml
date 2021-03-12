@@ -33,7 +33,7 @@ directCommands:
   - name: --urn
     summary: URN, in the format of 'publisher:offer:sku:version'. If specified, other argument values can be omitted.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vm_image_terms_cancel
   name: az vm image terms cancel
   summary: Cancel Azure Marketplace image terms.
@@ -65,7 +65,7 @@ directCommands:
   - name: --urn
     summary: URN, in the format of 'publisher:offer:sku:version'. If specified, other argument values can be omitted.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vm_image_terms_show
   name: az vm image terms show
   summary: Get the details of Azure Marketplace image terms.
@@ -99,7 +99,7 @@ directCommands:
   - name: --urn
     summary: URN, in the format of 'publisher:offer:sku:version'. If specified, other argument values can be omitted.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
 commands:
 - az_vm_image_terms_accept
 - az_vm_image_terms_cancel
@@ -120,6 +120,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/29/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Manage Azure Marketplace image terms.

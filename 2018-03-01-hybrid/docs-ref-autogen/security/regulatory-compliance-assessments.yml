@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_security_regulatory_compliance_assessments
+uid: az_security_regulatory-compliance-assessments
 name: az security regulatory-compliance-assessments
 summary: Regulatory compliance assessments.
 description: ''
 directCommands:
-- uid: az_security_regulatory_compliance_assessments_list
+- uid: az_security_regulatory-compliance-assessments_list
   name: az security regulatory-compliance-assessments list
   summary: Get details and state of assessments mapped to selected regulatory compliance control.
   description: ''
@@ -32,8 +32,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
-- uid: az_security_regulatory_compliance_assessments_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+- uid: az_security_regulatory-compliance-assessments_show
   name: az security regulatory-compliance-assessments show
   summary: Shows supported regulatory compliance details and state for selected assessment.
   description: ''
@@ -66,10 +66,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/security/_help.py
 commands:
-- az_security_regulatory_compliance_assessments_list
-- az_security_regulatory_compliance_assessments_show
+- az_security_regulatory-compliance-assessments_list
+- az_security_regulatory-compliance-assessments_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -86,6 +86,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/11/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/03/2021
   description: Regulatory compliance assessments.

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lab
-name: az lab
+name: Dev/Test Lab
 summary: Manage Azure DevTest Labs.
 description: ''
 directCommands:
@@ -25,7 +25,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
 - uid: az_lab_get
   name: az lab get
   summary: Get lab.
@@ -51,21 +51,21 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/lab/_help.py
 commands:
-- az_lab_arm_template
-- az_lab_arm_template_list
-- az_lab_arm_template_show
+- az_lab_arm-template
+- az_lab_arm-template_list
+- az_lab_arm-template_show
 - az_lab_artifact
 - az_lab_artifact_list
-- az_lab_artifact_source
-- az_lab_artifact_source_list
-- az_lab_artifact_source_show
-- az_lab_custom_image
-- az_lab_custom_image_create
-- az_lab_custom_image_delete
-- az_lab_custom_image_list
-- az_lab_custom_image_show
+- az_lab_artifact-source
+- az_lab_artifact-source_list
+- az_lab_artifact-source_show
+- az_lab_custom-image
+- az_lab_custom-image_create
+- az_lab_custom-image_delete
+- az_lab_custom-image_list
+- az_lab_custom-image_show
 - az_lab_delete
 - az_lab_environment
 - az_lab_environment_create
@@ -74,11 +74,11 @@ commands:
 - az_lab_environment_show
 - az_lab_formula
 - az_lab_formula_delete
-- az_lab_formula_export_artifacts
+- az_lab_formula_export-artifacts
 - az_lab_formula_list
 - az_lab_formula_show
-- az_lab_gallery_image
-- az_lab_gallery_image_list
+- az_lab_gallery-image
+- az_lab_gallery-image_list
 - az_lab_get
 - az_lab_secret
 - az_lab_secret_delete
@@ -86,7 +86,7 @@ commands:
 - az_lab_secret_set
 - az_lab_secret_show
 - az_lab_vm
-- az_lab_vm_apply_artifacts
+- az_lab_vm_apply-artifacts
 - az_lab_vm_claim
 - az_lab_vm_create
 - az_lab_vm_delete
@@ -113,6 +113,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/20/2019
   description: Manage Azure DevTest Labs.

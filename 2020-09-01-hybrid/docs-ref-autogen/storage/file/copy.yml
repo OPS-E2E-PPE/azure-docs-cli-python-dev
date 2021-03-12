@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_file_copy
-name: az storage file copy
+name: File copy operations
 summary: Manage file copy operations.
 description: ''
 directCommands:
@@ -50,7 +50,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_file_copy_start
   name: az storage file copy start
   summary: Copy a file asynchronously.
@@ -143,8 +143,8 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_file_copy_start_batch
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_file_copy_start-batch
   name: az storage file copy start-batch
   summary: Copy multiple files or blobs to a file share.
   description: ''
@@ -223,11 +223,11 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
 - az_storage_file_copy_cancel
 - az_storage_file_copy_start
-- az_storage_file_copy_start_batch
+- az_storage_file_copy_start-batch
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -244,6 +244,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage file copy operations.

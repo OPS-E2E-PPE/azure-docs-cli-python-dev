@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_storage_account_or_policy
+uid: az_storage_account_or-policy
 name: az storage account or-policy
 summary: Manage storage account Object Replication Policy.
 description: ''
 directCommands:
-- uid: az_storage_account_or_policy_create
+- uid: az_storage_account_or-policy_create
   name: az storage account or-policy create
   summary: Create Object Replication Service Policy for storage account.
   description: ''
@@ -68,8 +68,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_or_policy_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_or-policy_delete
   name: az storage account or-policy delete
   summary: Delete specified Object Replication Service Policy associated with the specified storage account.
   description: ''
@@ -97,8 +97,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_or_policy_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_or-policy_list
   name: az storage account or-policy list
   summary: List Object Replication Service Policies associated with the specified storage account.
   description: ''
@@ -125,8 +125,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_or_policy_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_or-policy_show
   name: az storage account or-policy show
   summary: Show the properties of specified Object Replication Service Policy for storage account.
   description: ''
@@ -158,8 +158,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_account_or_policy_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_account_or-policy_update
   name: az storage account or-policy update
   summary: Update Object Replication Service Policy properties for storage account.
   description: ''
@@ -216,19 +216,19 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
-- az_storage_account_or_policy_create
-- az_storage_account_or_policy_delete
-- az_storage_account_or_policy_list
-- az_storage_account_or_policy_rule
-- az_storage_account_or_policy_rule_add
-- az_storage_account_or_policy_rule_list
-- az_storage_account_or_policy_rule_remove
-- az_storage_account_or_policy_rule_show
-- az_storage_account_or_policy_rule_update
-- az_storage_account_or_policy_show
-- az_storage_account_or_policy_update
+- az_storage_account_or-policy_create
+- az_storage_account_or-policy_delete
+- az_storage_account_or-policy_list
+- az_storage_account_or-policy_rule
+- az_storage_account_or-policy_rule_add
+- az_storage_account_or-policy_rule_list
+- az_storage_account_or-policy_rule_remove
+- az_storage_account_or-policy_rule_show
+- az_storage_account_or-policy_rule_update
+- az_storage_account_or-policy_show
+- az_storage_account_or-policy_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -245,6 +245,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage storage account Object Replication Policy.

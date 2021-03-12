@@ -40,8 +40,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
-- uid: az_functionapp_deployment_container_show_cd_url
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+- uid: az_functionapp_deployment_container_show-cd-url
   name: az functionapp deployment container show-cd-url
   summary: Get the URL which can be used to configure webhooks for continuous deployment.
   description: ''
@@ -72,10 +72,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/appservice/_help.py
 commands:
 - az_functionapp_deployment_container_config
-- az_functionapp_deployment_container_show_cd_url
+- az_functionapp_deployment_container_show-cd-url
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -92,6 +92,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/19/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage container-based continuous deployment.

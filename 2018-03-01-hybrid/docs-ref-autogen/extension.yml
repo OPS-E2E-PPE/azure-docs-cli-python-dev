@@ -58,7 +58,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
 - uid: az_extension_list
   name: az extension list
   summary: List the installed extensions.
@@ -68,8 +68,8 @@ directCommands:
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
-- uid: az_extension_list_available
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
+- uid: az_extension_list-available
   name: az extension list-available
   summary: List publicly available extensions.
   description: ''
@@ -83,8 +83,8 @@ directCommands:
   - name: --show-details -d
     summary: Show the raw data from the extension index.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
-- uid: az_extension_list_versions
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
+- uid: az_extension_list-versions
   name: az extension list-versions
   summary: List available versions for an extension.
   description: ''
@@ -97,7 +97,7 @@ directCommands:
     name: --name -n
     summary: Name of extension.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
 - uid: az_extension_remove
   name: az extension remove
   summary: Remove an extension.
@@ -111,7 +111,7 @@ directCommands:
     name: --name -n
     summary: Name of extension.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
 - uid: az_extension_show
   name: az extension show
   summary: Show an extension.
@@ -131,7 +131,7 @@ directCommands:
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
 - uid: az_extension_update
   name: az extension update
   summary: Update an extension.
@@ -157,12 +157,12 @@ directCommands:
   - name: --pip-proxy
     summary: Proxy for pip to use for extension dependencies in the form of [user:passwd@]proxy.server:port.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/extension/_help.py
 commands:
 - az_extension_add
 - az_extension_list
-- az_extension_list_available
-- az_extension_list_versions
+- az_extension_list-available
+- az_extension_list-versions
 - az_extension_remove
 - az_extension_show
 - az_extension_update
@@ -182,6 +182,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 09/16/2020
   description: Manage and update CLI extensions.

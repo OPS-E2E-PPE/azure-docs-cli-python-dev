@@ -59,7 +59,7 @@ directCommands:
   - name: --ttl
     summary: Default TTL. If the value is missing or set to "-1", items don’t expire. If the value is set to "n", items will expire "n" seconds after last modified time.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_cassandra_table_delete
   name: az cosmosdb cassandra table delete
   summary: Delete the Cassandra table under an Azure Cosmos DB Cassandra keyspace.
@@ -95,7 +95,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_cassandra_table_exists
   name: az cosmosdb cassandra table exists
   summary: Checks if an Azure Cosmos DB Cassandra table exists.
@@ -127,7 +127,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_cassandra_table_list
   name: az cosmosdb cassandra table list
   summary: List the Cassandra tables under an Azure Cosmos DB Cassandra keyspace.
@@ -161,7 +161,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_cassandra_table_show
   name: az cosmosdb cassandra table show
   summary: Show the details of a Cassandra table under an Azure Cosmos DB Cassandra keyspace.
@@ -197,7 +197,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 - uid: az_cosmosdb_cassandra_table_update
   name: az cosmosdb cassandra table update
   summary: Update an Cassandra table under an Azure Cosmos DB Cassandra keyspace.
@@ -244,7 +244,7 @@ directCommands:
   - name: --ttl
     summary: Default TTL. If the value is missing or set to "-1", items don’t expire. If the value is set to "n", items will expire "n" seconds after last modified time.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cosmosdb/_help.py
 commands:
 - az_cosmosdb_cassandra_table_create
 - az_cosmosdb_cassandra_table_delete
@@ -272,6 +272,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 10/23/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Manage Azure Cosmos DB Cassandra tables.

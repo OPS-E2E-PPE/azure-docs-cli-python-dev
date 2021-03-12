@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_eventhubs_eventhub_consumer_group
+uid: az_eventhubs_eventhub_consumer-group
 name: az eventhubs eventhub consumer-group
 summary: Manage Azure Event Hubs consumergroup.
 description: ''
 directCommands:
-- uid: az_eventhubs_eventhub_consumer_group_create
+- uid: az_eventhubs_eventhub_consumer-group_create
   name: az eventhubs eventhub consumer-group create
   summary: Creates the EventHub ConsumerGroup.
   description: ''
@@ -42,8 +42,8 @@ directCommands:
   - name: --user-metadata
     summary: Usermetadata is a placeholder to store user-defined string data with maximum length 1024. e.g. it can be used to store descriptive data, such as list of teams and their contact information also user-defined configuration settings can be stored.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
-- uid: az_eventhubs_eventhub_consumer_group_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+- uid: az_eventhubs_eventhub_consumer-group_delete
   name: az eventhubs eventhub consumer-group delete
   summary: Deletes the ConsumerGroup.
   description: ''
@@ -76,8 +76,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
-- uid: az_eventhubs_eventhub_consumer_group_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+- uid: az_eventhubs_eventhub_consumer-group_list
   name: az eventhubs eventhub consumer-group list
   summary: List the ConsumerGroup by Eventhub.
   description: ''
@@ -118,8 +118,8 @@ directCommands:
   - name: --top
     summary: May be used to limit the number of results to the most recent N usageDetails.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
-- uid: az_eventhubs_eventhub_consumer_group_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+- uid: az_eventhubs_eventhub_consumer-group_show
   name: az eventhubs eventhub consumer-group show
   summary: Shows the ConsumerGroup Details.
   description: ''
@@ -156,8 +156,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
-- uid: az_eventhubs_eventhub_consumer_group_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+- uid: az_eventhubs_eventhub_consumer-group_update
   name: az eventhubs eventhub consumer-group update
   summary: Updates the EventHub ConsumerGroup.
   description: ''
@@ -210,13 +210,13 @@ directCommands:
   - name: --user-metadata
     summary: Usermetadata is a placeholder to store user-defined string data with maximum length 1024. e.g. it can be used to store descriptive data, such as list of teams and their contact information also user-defined configuration settings can be stored.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/eventhubs/_help.py
 commands:
-- az_eventhubs_eventhub_consumer_group_create
-- az_eventhubs_eventhub_consumer_group_delete
-- az_eventhubs_eventhub_consumer_group_list
-- az_eventhubs_eventhub_consumer_group_show
-- az_eventhubs_eventhub_consumer_group_update
+- az_eventhubs_eventhub_consumer-group_create
+- az_eventhubs_eventhub_consumer-group_delete
+- az_eventhubs_eventhub_consumer-group_list
+- az_eventhubs_eventhub_consumer-group_show
+- az_eventhubs_eventhub_consumer-group_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -233,6 +233,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 09/16/2020
   description: Manage Azure Event Hubs consumergroup.

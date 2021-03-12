@@ -33,7 +33,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batchai/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batchai/_help.py
 - uid: az_batchai_experiment_delete
   name: az batchai experiment delete
   summary: Delete an experiment.
@@ -75,7 +75,7 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batchai/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batchai/_help.py
 - uid: az_batchai_experiment_list
   name: az batchai experiment list
   summary: List experiments.
@@ -104,7 +104,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batchai/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batchai/_help.py
 - uid: az_batchai_experiment_show
   name: az batchai experiment show
   summary: Show information about an experiment.
@@ -138,7 +138,7 @@ directCommands:
   - name: --workspace -w
     summary: Name of workspace.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batchai/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/batchai/_help.py
 commands:
 - az_batchai_experiment_create
 - az_batchai_experiment_delete
@@ -160,6 +160,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 10/19/2019
   description: Commands to manage experiments.

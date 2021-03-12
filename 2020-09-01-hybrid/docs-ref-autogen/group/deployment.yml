@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_group_deployment
-name: az group deployment
+name: Deployments
 summary: Manage Azure Resource Manager deployments.
 description: ''
 directCommands:
@@ -25,7 +25,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_group_deployment_create
   name: az group deployment create
   summary: Start a deployment.
@@ -95,12 +95,12 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --template-file -f
-    summary: A template file path in the file system.
+    summary: A path to a template file or Bicep file in the file system.
     description: ''
   - name: --template-uri -u
     summary: A uri to a remote template file.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_group_deployment_delete
   name: az group deployment delete
   summary: Deletes a deployment from the deployment history.
@@ -126,7 +126,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_group_deployment_export
   name: az group deployment export
   summary: Export the template used for a deployment.
@@ -151,7 +151,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_group_deployment_list
   name: az group deployment list
   summary: Get all the deployments for a resource group.
@@ -180,7 +180,7 @@ directCommands:
   - name: --top
     summary: The number of results to get. If null is passed, returns all deployments.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_group_deployment_show
   name: az group deployment show
   summary: Gets a deployment.
@@ -206,7 +206,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_group_deployment_validate
   name: az group deployment validate
   summary: Validate whether a template is syntactically correct.
@@ -254,12 +254,12 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --template-file -f
-    summary: A template file path in the file system.
+    summary: A path to a template file or Bicep file in the file system.
     description: ''
   - name: --template-uri -u
     summary: A uri to a remote template file.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 - uid: az_group_deployment_wait
   name: az group deployment wait
   summary: Place the CLI in a waiting state until a deployment condition is met.
@@ -316,7 +316,7 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/resource/_help.py
 commands:
 - az_group_deployment_cancel
 - az_group_deployment_create
@@ -345,6 +345,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/24/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage Azure Resource Manager deployments.

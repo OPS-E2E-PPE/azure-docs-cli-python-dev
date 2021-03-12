@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_private_link_resource
+uid: az_network_private-link-resource
 name: az network private-link-resource
 summary: Manage private link resources.
 description: ''
 directCommands:
-- uid: az_network_private_link_resource_list
+- uid: az_network_private-link-resource_list
   name: az network private-link-resource list
   summary: List all private link resources.
   description: ''
@@ -14,7 +14,7 @@ directCommands:
                                           [--query-examples]
                                           [--resource-group]
                                           [--subscription]
-                                          [--type {Microsoft.AppConfiguration/configurationStores, Microsoft.Batch/batchAccounts, Microsoft.CognitiveServices/accounts, Microsoft.Compute/diskAccesses, Microsoft.ContainerRegistry/registries, Microsoft.DBforMariaDB/servers, Microsoft.DBforMySQL/servers, Microsoft.DBforPostgreSQL/servers, Microsoft.Devices/IotHubs, Microsoft.DocumentDB/databaseAccounts, Microsoft.EventGrid/domains, Microsoft.EventGrid/topics, Microsoft.Keyvault/vaults, Microsoft.Network/applicationGateways, Microsoft.SignalRService/signalr, Microsoft.Storage/storageAccounts, Microsoft.Web/sites, microsoft.insights/privateLinkScopes}]
+                                          [--type {Microsoft.AppConfiguration/configurationStores, Microsoft.Batch/batchAccounts, Microsoft.CognitiveServices/accounts, Microsoft.Compute/diskAccesses, Microsoft.ContainerRegistry/registries, Microsoft.DBforMariaDB/servers, Microsoft.DBforMySQL/servers, Microsoft.DBforPostgreSQL/servers, Microsoft.Devices/IotHubs, Microsoft.DigitalTwins/digitalTwinsInstances, Microsoft.DocumentDB/databaseAccounts, Microsoft.EventGrid/domains, Microsoft.EventGrid/topics, Microsoft.Keyvault/vaults, Microsoft.Network/applicationGateways, Microsoft.Search/searchServices, Microsoft.SignalRService/signalr, Microsoft.Storage/storageAccounts, Microsoft.Web/sites, microsoft.insights/privateLinkScopes}]
   examples:
   - summary: List all private link resources for a storage account.
     syntax: az network private-link-resource list -g MyResourceGroup -n MySA --type Microsoft.Storage/storageAccounts
@@ -39,12 +39,12 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   - name: --type
-    parameterValueGroup: Microsoft.AppConfiguration/configurationStores, Microsoft.Batch/batchAccounts, Microsoft.CognitiveServices/accounts, Microsoft.Compute/diskAccesses, Microsoft.ContainerRegistry/registries, Microsoft.DBforMariaDB/servers, Microsoft.DBforMySQL/servers, Microsoft.DBforPostgreSQL/servers, Microsoft.Devices/IotHubs, Microsoft.DocumentDB/databaseAccounts, Microsoft.EventGrid/domains, Microsoft.EventGrid/topics, Microsoft.Keyvault/vaults, Microsoft.Network/applicationGateways, Microsoft.SignalRService/signalr, Microsoft.Storage/storageAccounts, Microsoft.Web/sites, microsoft.insights/privateLinkScopes
+    parameterValueGroup: Microsoft.AppConfiguration/configurationStores, Microsoft.Batch/batchAccounts, Microsoft.CognitiveServices/accounts, Microsoft.Compute/diskAccesses, Microsoft.ContainerRegistry/registries, Microsoft.DBforMariaDB/servers, Microsoft.DBforMySQL/servers, Microsoft.DBforPostgreSQL/servers, Microsoft.Devices/IotHubs, Microsoft.DigitalTwins/digitalTwinsInstances, Microsoft.DocumentDB/databaseAccounts, Microsoft.EventGrid/domains, Microsoft.EventGrid/topics, Microsoft.Keyvault/vaults, Microsoft.Network/applicationGateways, Microsoft.Search/searchServices, Microsoft.SignalRService/signalr, Microsoft.Storage/storageAccounts, Microsoft.Web/sites, microsoft.insights/privateLinkScopes
     summary: Type of the resource. If provided, --name and --resource-group must be provided too.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_private_link_resource_list
+- az_network_private-link-resource_list
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -61,6 +61,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage private link resources.

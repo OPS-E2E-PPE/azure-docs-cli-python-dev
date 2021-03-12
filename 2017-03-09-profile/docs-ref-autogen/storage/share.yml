@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_share
-name: az storage share
+name: File shares
 summary: Manage file shares.
 description: ''
 directCommands:
@@ -55,7 +55,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_share_delete
   name: az storage share delete
   summary: Marks the specified share for deletion.
@@ -96,7 +96,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_share_exists
   name: az storage share exists
   summary: Check for the existence of a file share.
@@ -138,8 +138,8 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
-- uid: az_storage_share_generate_sas
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+- uid: az_storage_share_generate-sas
   name: az storage share generate-sas
   summary: Generates a shared access signature for the share.
   description: ''
@@ -227,7 +227,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_share_list
   name: az storage share list
   summary: List the file shares in a storage account.
@@ -279,7 +279,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_share_show
   name: az storage share show
   summary: Returns all user-defined metadata and system properties for the specified share.
@@ -320,7 +320,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_share_stats
   name: az storage share stats
   summary: Gets the approximate size of the data stored on the share, rounded up to the nearest gigabyte.
@@ -357,7 +357,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_share_update
   name: az storage share update
   summary: Sets service-defined properties for the specified share.
@@ -399,7 +399,7 @@ directCommands:
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_share_url
   name: az storage share url
   summary: Create a URI to access a file share.
@@ -445,12 +445,12 @@ directCommands:
   - name: --unc
     summary: Output UNC network path.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 commands:
 - az_storage_share_create
 - az_storage_share_delete
 - az_storage_share_exists
-- az_storage_share_generate_sas
+- az_storage_share_generate-sas
 - az_storage_share_list
 - az_storage_share_metadata
 - az_storage_share_metadata_show
@@ -481,6 +481,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/21/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/26/2021
   description: Manage file shares.

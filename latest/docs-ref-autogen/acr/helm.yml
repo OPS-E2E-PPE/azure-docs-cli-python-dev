@@ -57,8 +57,8 @@ directCommands:
   - name: <CHART>
     summary: The helm chart name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
-- uid: az_acr_helm_install_cli
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+- uid: az_acr_helm_install-cli
   name: az acr helm install-cli
   summary: Download and install Helm command-line tool.
   description: ''
@@ -91,7 +91,7 @@ directCommands:
   - name: --yes -y
     summary: Agree to the license of Helm, and do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_helm_list
   name: az acr helm list
   summary: List all helm charts in an Azure Container Registry.
@@ -131,7 +131,7 @@ directCommands:
   - name: --username -u
     summary: The username used to log into a container registry.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_helm_push
   name: az acr helm push
   summary: Push a helm chart package to an Azure Container Registry.
@@ -177,7 +177,7 @@ directCommands:
   - name: <CHART_PACKAGE>
     summary: The helm chart package.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
 - uid: az_acr_helm_show
   name: az acr helm show
   summary: Describe a helm chart in an Azure Container Registry.
@@ -227,10 +227,10 @@ directCommands:
   - name: <CHART>
     summary: The helm chart name.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/acr/_help.py
 commands:
 - az_acr_helm_delete
-- az_acr_helm_install_cli
+- az_acr_helm_install-cli
 - az_acr_helm_list
 - az_acr_helm_push
 - az_acr_helm_repo
@@ -252,6 +252,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/26/2021
   description: Manage helm charts for Azure Container Registries.

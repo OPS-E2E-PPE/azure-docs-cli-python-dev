@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_ams_streaming_endpoint
+uid: az_ams_streaming-endpoint
 name: az ams streaming-endpoint
 summary: Manage streaming endpoints for an Azure Media Service account.
 description: ''
 directCommands:
-- uid: az_ams_streaming_endpoint_create
+- uid: az_ams_streaming-endpoint_create
   name: az ams streaming-endpoint create
   summary: Create a streaming endpoint.
   description: ''
@@ -83,8 +83,8 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_streaming_endpoint_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_streaming-endpoint_delete
   name: az ams streaming-endpoint delete
   summary: Delete a streaming endpoint.
   description: ''
@@ -110,8 +110,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_streaming_endpoint_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_streaming-endpoint_list
   name: az ams streaming-endpoint list
   summary: List all the streaming endpoints within an Azure Media Services account.
   description: ''
@@ -136,8 +136,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_streaming_endpoint_scale
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_streaming-endpoint_scale
   name: az ams streaming-endpoint scale
   summary: Set the scale of a streaming endpoint.
   description: ''
@@ -167,8 +167,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_streaming_endpoint_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_streaming-endpoint_show
   name: az ams streaming-endpoint show
   summary: Show the details of a streaming endpoint.
   description: ''
@@ -198,8 +198,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_streaming_endpoint_start
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_streaming-endpoint_start
   name: az ams streaming-endpoint start
   summary: Start a streaming endpoint.
   description: ''
@@ -229,8 +229,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_streaming_endpoint_stop
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_streaming-endpoint_stop
   name: az ams streaming-endpoint stop
   summary: Stop a streaming endpoint.
   description: ''
@@ -260,8 +260,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_streaming_endpoint_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_streaming-endpoint_update
   name: az ams streaming-endpoint update
   summary: Update the details of a streaming endpoint.
   description: ''
@@ -347,8 +347,8 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
-- uid: az_ams_streaming_endpoint_wait
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+- uid: az_ams_streaming-endpoint_wait
   name: az ams streaming-endpoint wait
   summary: Place the CLI in a waiting state until a condition of the streaming endpoint is met.
   description: ''
@@ -407,20 +407,20 @@ directCommands:
   - name: --updated
     summary: Wait until updated with provisioningState at 'Succeeded'.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/ams/_help.py
 commands:
-- az_ams_streaming_endpoint_akamai
-- az_ams_streaming_endpoint_akamai_add
-- az_ams_streaming_endpoint_akamai_remove
-- az_ams_streaming_endpoint_create
-- az_ams_streaming_endpoint_delete
-- az_ams_streaming_endpoint_list
-- az_ams_streaming_endpoint_scale
-- az_ams_streaming_endpoint_show
-- az_ams_streaming_endpoint_start
-- az_ams_streaming_endpoint_stop
-- az_ams_streaming_endpoint_update
-- az_ams_streaming_endpoint_wait
+- az_ams_streaming-endpoint_akamai
+- az_ams_streaming-endpoint_akamai_add
+- az_ams_streaming-endpoint_akamai_remove
+- az_ams_streaming-endpoint_create
+- az_ams_streaming-endpoint_delete
+- az_ams_streaming-endpoint_list
+- az_ams_streaming-endpoint_scale
+- az_ams_streaming-endpoint_show
+- az_ams_streaming-endpoint_start
+- az_ams_streaming-endpoint_stop
+- az_ams_streaming-endpoint_update
+- az_ams_streaming-endpoint_wait
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -437,6 +437,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 07/28/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Manage streaming endpoints for an Azure Media Service account.

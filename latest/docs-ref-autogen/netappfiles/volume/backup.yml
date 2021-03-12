@@ -52,7 +52,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_volume_backup_delete
   name: az netappfiles volume backup delete
   summary: Delete backup.
@@ -87,7 +87,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_volume_backup_list
   name: az netappfiles volume backup list
   summary: List the ANF Backups for the specified volume.
@@ -126,7 +126,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_volume_backup_show
   name: az netappfiles volume backup show
   summary: Get the specified ANF Backup.
@@ -168,7 +168,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_volume_backup_update
   name: az netappfiles volume backup update
   summary: Update the specified ANF backup with the values provided.
@@ -214,7 +214,7 @@ directCommands:
   - name: --tags
     summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 commands:
 - az_netappfiles_volume_backup_create
 - az_netappfiles_volume_backup_delete
@@ -237,6 +237,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/25/2021
   description: Manage Azure NetApp Files (ANF) Volume Backup Resources.

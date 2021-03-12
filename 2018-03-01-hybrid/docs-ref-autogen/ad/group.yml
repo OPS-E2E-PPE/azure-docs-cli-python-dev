@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_ad_group
-name: az ad group
+name: AAD groups
 summary: Manage Azure Active Directory groups.
 description: ''
 directCommands:
@@ -33,7 +33,7 @@ directCommands:
     parameterValueGroup: false, true
     summary: Always create a new group instead of updating the one with same display and mail nickname.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_group_delete
   name: az ad group delete
   summary: Delete a group from the directory.
@@ -44,8 +44,8 @@ directCommands:
     name: --group -g
     summary: Group's object id or display name(prefix also works if there is a unique match).
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
-- uid: az_ad_group_get_member_groups
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+- uid: az_ad_group_get-member-groups
   name: az ad group get-member-groups
   summary: Gets a collection of object IDs of groups of which the specified group is a member.
   description: ''
@@ -66,7 +66,7 @@ directCommands:
     parameterValueGroup: false, true
     summary: If true, only membership in security-enabled groups should be checked. Otherwise, membership in all groups should be checked.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_group_list
   name: az ad group list
   summary: List groups in the directory.
@@ -85,7 +85,7 @@ directCommands:
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
 - uid: az_ad_group_show
   name: az ad group show
   summary: Gets group information from the directory.
@@ -102,11 +102,11 @@ directCommands:
   - name: --query-examples
     summary: Recommend JMESPath string for you. You can copy one of the query and paste it after --query parameter within double quotation marks to see the results. You can add one or more positional keywords so that we can give suggestions based on these key words.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/role/_help.py
 commands:
 - az_ad_group_create
 - az_ad_group_delete
-- az_ad_group_get_member_groups
+- az_ad_group_get-member-groups
 - az_ad_group_list
 - az_ad_group_member
 - az_ad_group_member_add
@@ -134,6 +134,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/20/2021
   description: Manage Azure Active Directory groups.

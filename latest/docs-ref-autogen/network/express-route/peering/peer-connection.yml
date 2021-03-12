@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_express_route_peering_peer_connection
+uid: az_network_express-route_peering_peer-connection
 name: az network express-route peering peer-connection
 summary: Manage ExpressRoute circuit peer connections.
 description: ''
 directCommands:
-- uid: az_network_express_route_peering_peer_connection_list
+- uid: az_network_express-route_peering_peer-connection_list
   name: az network express-route peering peer-connection list
   summary: Gets all global reach peer connections associated with a private peering in an express route circuit.
   description: ''
@@ -34,8 +34,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express_route_peering_peer_connection_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_express-route_peering_peer-connection_show
   name: az network express-route peering peer-connection show
   summary: Gets the specified Peer Express Route Circuit Connection from the specified express route circuit.
   description: ''
@@ -70,10 +70,10 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_express_route_peering_peer_connection_list
-- az_network_express_route_peering_peer_connection_show
+- az_network_express-route_peering_peer-connection_list
+- az_network_express-route_peering_peer-connection_show
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -90,6 +90,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage ExpressRoute circuit peer connections.

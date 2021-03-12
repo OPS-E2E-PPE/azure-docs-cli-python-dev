@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_network_dns_record_set_a
-name: az network dns record-set a
+uid: az_network_dns_record-set_a
+name: DNS - A records
 summary: Manage DNS A records.
 description: ''
 directCommands:
-- uid: az_network_dns_record_set_a_add_record
+- uid: az_network_dns_record-set_a_add-record
   name: az network dns record-set a add-record
   summary: Add an A record.
   description: ''
@@ -49,8 +49,8 @@ directCommands:
     defaultValue: "3600"
     summary: Record set TTL (time-to-live).
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_dns_record_set_a_create
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_dns_record-set_a_create
   name: az network dns record-set a create
   summary: Create an empty A record set.
   description: ''
@@ -102,8 +102,8 @@ directCommands:
     defaultValue: "3600"
     summary: Record set TTL (time-to-live).
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_dns_record_set_a_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_dns_record-set_a_delete
   name: az network dns record-set a delete
   summary: Delete an A record set and all associated records.
   description: ''
@@ -140,8 +140,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_dns_record_set_a_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_dns_record-set_a_list
   name: az network dns record-set a list
   summary: List all A record sets in a zone.
   description: ''
@@ -169,8 +169,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_dns_record_set_a_remove_record
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_dns_record-set_a_remove-record
   name: az network dns record-set a remove-record
   summary: Remove an A record from its record set.
   description: By default, if the last record in a set is removed, the record set is deleted. To retain the empty record set, include --keep-empty-record-set.
@@ -210,8 +210,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_dns_record_set_a_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_dns_record-set_a_show
   name: az network dns record-set a show
   summary: Get the details of an A record set.
   description: ''
@@ -244,8 +244,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_dns_record_set_a_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+- uid: az_network_dns_record-set_a_update
   name: az network dns record-set a update
   summary: Update an A record set.
   description: ''
@@ -310,15 +310,15 @@ directCommands:
   - name: --target-resource
     summary: ID of an Azure resource from which the DNS resource value is taken.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
 commands:
-- az_network_dns_record_set_a_add_record
-- az_network_dns_record_set_a_create
-- az_network_dns_record_set_a_delete
-- az_network_dns_record_set_a_list
-- az_network_dns_record_set_a_remove_record
-- az_network_dns_record_set_a_show
-- az_network_dns_record_set_a_update
+- az_network_dns_record-set_a_add-record
+- az_network_dns_record-set_a_create
+- az_network_dns_record-set_a_delete
+- az_network_dns_record-set_a_list
+- az_network_dns_record-set_a_remove-record
+- az_network_dns_record-set_a_show
+- az_network_dns_record-set_a_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -335,6 +335,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/27/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage DNS A records.

@@ -1,10 +1,10 @@
 ### YamlMime:AzureCLIGroup
-uid: az_cdn_origin_group
+uid: az_cdn_origin-group
 name: az cdn origin-group
 summary: Manage origin groups of an endpoint.
 description: ''
 directCommands:
-- uid: az_cdn_origin_group_create
+- uid: az_cdn_origin-group_create
   name: az cdn origin-group create
   summary: Create an origin group.
   description: ''
@@ -65,8 +65,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
-- uid: az_cdn_origin_group_delete
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+- uid: az_cdn_origin-group_delete
   name: az cdn origin-group delete
   summary: Deletes an existing origin group within an endpoint.
   description: ''
@@ -100,8 +100,8 @@ directCommands:
   - name: --yes -y
     summary: Do not prompt for confirmation.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
-- uid: az_cdn_origin_group_list
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+- uid: az_cdn_origin-group_list
   name: az cdn origin-group list
   summary: Lists all of the existing origin groups within an endpoint.
   description: ''
@@ -131,8 +131,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
-- uid: az_cdn_origin_group_show
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+- uid: az_cdn_origin-group_show
   name: az cdn origin-group show
   summary: Gets an existing origin group within an endpoint.
   description: ''
@@ -166,8 +166,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
-- uid: az_cdn_origin_group_update
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+- uid: az_cdn_origin-group_update
   name: az cdn origin-group update
   summary: Update an origin group.
   description: ''
@@ -224,13 +224,13 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/cdn/_help.py
 commands:
-- az_cdn_origin_group_create
-- az_cdn_origin_group_delete
-- az_cdn_origin_group_list
-- az_cdn_origin_group_show
-- az_cdn_origin_group_update
+- az_cdn_origin-group_create
+- az_cdn_origin-group_delete
+- az_cdn_origin-group_list
+- az_cdn_origin-group_show
+- az_cdn_origin-group_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -247,6 +247,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 12/02/2020
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/25/2021
   description: Manage origin groups of an endpoint.

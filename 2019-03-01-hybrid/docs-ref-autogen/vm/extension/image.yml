@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_extension_image
-name: az vm extension image
+name: VM extension images
 summary: Find the available VM extensions for a subscription and region.
 description: ''
 directCommands:
@@ -48,8 +48,8 @@ directCommands:
   - name: --version
     summary: Extension version.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vm_extension_image_list_names
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vm_extension_image_list-names
   name: az vm extension image list-names
   summary: List the names of available extensions.
   description: ''
@@ -79,8 +79,8 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
-- uid: az_vm_extension_image_list_versions
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+- uid: az_vm_extension_image_list-versions
   name: az vm extension image list-versions
   summary: List the versions for available extensions.
   description: ''
@@ -123,7 +123,7 @@ directCommands:
   - name: --top
     summary: The $top odata query option.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
 - uid: az_vm_extension_image_show
   name: az vm extension image show
   summary: Display information for an extension.
@@ -179,11 +179,11 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/vm/_help.py
 commands:
 - az_vm_extension_image_list
-- az_vm_extension_image_list_names
-- az_vm_extension_image_list_versions
+- az_vm_extension_image_list-names
+- az_vm_extension_image_list-versions
 - az_vm_extension_image_show
 globalParameters:
 - name: --debug
@@ -201,6 +201,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
-  ms.date: 01/29/2021
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
+  ms.date: 02/24/2021
   description: Find the available VM extensions for a subscription and region.

@@ -57,7 +57,7 @@ directCommands:
   - name: --tags
     summary: Space-separated tags in `key[=value]` format.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_pool_delete
   name: az netappfiles pool delete
   summary: Delete the specified ANF pool.
@@ -87,7 +87,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_pool_list
   name: az netappfiles pool list
   summary: L:ist the ANF pools for the specified account.
@@ -116,7 +116,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_pool_show
   name: az netappfiles pool show
   summary: Get the specified ANF pool.
@@ -150,7 +150,7 @@ directCommands:
   - name: --subscription
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 - uid: az_netappfiles_pool_update
   name: az netappfiles pool update
   summary: Update the tags of the specified ANF pool.
@@ -208,7 +208,7 @@ directCommands:
   - name: --tags
     summary: Space-separated tags in `key[=value]` format.
     description: ''
-  editLink: https://github.com/Azure/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
+  editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/netappfiles/_help.py
 commands:
 - az_netappfiles_pool_create
 - az_netappfiles_pool_delete
@@ -231,6 +231,6 @@ globalParameters:
 - name: --verbose
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
-  doc_source_url_repo: https://github.com/Azure/azure-cli/blob/master/
+  doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
   ms.date: 01/25/2021
   description: Manage Azure NetApp Files (ANF) Pool Resources.
