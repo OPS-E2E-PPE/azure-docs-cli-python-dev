@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_sql_server
-name: SQL Server
+name: az sql server
 summary: Manage SQL servers.
 description: ''
 directCommands:

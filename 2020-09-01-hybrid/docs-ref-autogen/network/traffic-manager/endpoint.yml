@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_traffic-manager_endpoint
-name: End points
+name: az network traffic-manager endpoint
 summary: Manage Azure Traffic Manager end points.
 description: ''
 directCommands:

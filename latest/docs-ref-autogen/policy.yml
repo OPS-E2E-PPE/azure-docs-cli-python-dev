@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_policy
-name: Policy
+name: az policy
 summary: Manage resource policies.
 description: ''
 commands:

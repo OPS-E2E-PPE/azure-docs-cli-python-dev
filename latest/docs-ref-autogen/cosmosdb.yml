@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_cosmosdb
-name: Cosmos DB
+name: az cosmosdb
 summary: Manage Azure Cosmos DB database accounts.
 description: ''
 directCommands:

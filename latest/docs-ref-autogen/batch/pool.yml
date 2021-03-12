@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_pool
-name: Batch pools
+name: az batch pool
 summary: Manage Batch pools.
 description: ''
 directCommands:

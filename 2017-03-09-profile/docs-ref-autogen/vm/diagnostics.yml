@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_diagnostics
-name: VM diagnostics
+name: az vm diagnostics
 summary: Configure the Azure Virtual Machine diagnostics extension.
 description: ''
 directCommands:

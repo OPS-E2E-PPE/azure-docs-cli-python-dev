@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_local-gateway
-name: Local gateways
+name: az network local-gateway
 summary: Manage local gateways.
 description: 'For more information on local gateways, visit: <a href="https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli#localnet">https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli#localnet</a>.'
 directCommands:

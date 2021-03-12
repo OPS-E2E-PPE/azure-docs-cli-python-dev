@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lab_artifact
-name: Dev/Test Lab artifacts
+name: az lab artifact
 summary: Manage DevTest Labs artifacts.
 description: ''
 directCommands:

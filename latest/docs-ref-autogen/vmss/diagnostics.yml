@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vmss_diagnostics
-name: VMSS diagnostics
+name: az vmss diagnostics
 summary: Configure the Azure Virtual Machine Scale Set diagnostics extension.
 description: ''
 directCommands:

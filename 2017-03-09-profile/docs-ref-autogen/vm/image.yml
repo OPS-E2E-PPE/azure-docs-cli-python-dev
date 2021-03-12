@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_image
-name: VM images
+name: az vm image
 summary: Information on available virtual machine images.
 description: ''
 directCommands:

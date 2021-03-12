@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_ad_sp
-name: AAD service principals
+name: az ad sp
 summary: Manage Azure Active Directory service principals for automation authentication.
 description: ''
 directCommands:

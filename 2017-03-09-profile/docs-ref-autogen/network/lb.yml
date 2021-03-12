@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_lb
-name: Network Load balancer
+name: az network lb
 summary: Manage and configure load balancers.
 description: >-
   [Coming breaking change] In the coming release, the default behavior will be changed. When sku is Standard and in zone-redundant regions, the default 'zones' of 'frontendIPConfigurations' will display as 'zones:[1,2,3]' instead of 'zones:null'.

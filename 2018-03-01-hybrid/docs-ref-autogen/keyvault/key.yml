@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_keyvault_key
-name: Key Vault keys
+name: az keyvault key
 summary: Manage keys.
 description: ''
 directCommands:

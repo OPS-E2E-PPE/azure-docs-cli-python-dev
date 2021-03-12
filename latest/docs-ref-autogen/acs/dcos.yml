@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_acs_dcos
-name: Container Service - DC/OS
+name: az acs dcos
 summary: Commands to manage a DC/OS-orchestrated Azure Container Service.
 description: ''
 directCommands:

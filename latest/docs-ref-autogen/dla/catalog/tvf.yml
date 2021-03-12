@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_catalog_tvf
-name: Data Lake Analytics catalog table-valued functions
+name: az dla catalog tvf
 summary: Manage Data Lake Analytics catalog table valued functions.
 description: ''
 directCommands:

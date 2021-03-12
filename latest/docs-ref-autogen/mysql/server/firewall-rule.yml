@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_mysql_server_firewall-rule
-name: Firewall rules for Azure Database for MySQL servers
+name: az mysql server firewall-rule
 summary: Manage firewall rules for a server.
 description: ''
 directCommands:

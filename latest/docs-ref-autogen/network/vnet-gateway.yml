@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_vnet-gateway
-name: Virtual Network gateways
+name: az network vnet-gateway
 summary: Use an Azure Virtual Network Gateway to establish secure, cross-premises connectivity.
 description: To learn more about Azure Virtual Network Gateways, visit <a href="https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli">https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-cli</a>.
 directCommands:

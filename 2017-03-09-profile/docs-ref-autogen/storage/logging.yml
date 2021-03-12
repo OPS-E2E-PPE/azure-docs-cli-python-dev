@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_logging
-name: Storage service logging
+name: az storage logging
 summary: Manage storage service logging information.
 description: ''
 directCommands:

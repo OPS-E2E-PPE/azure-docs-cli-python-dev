@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_redis_patch-schedule
-name: Patch schedules
+name: az redis patch-schedule
 summary: Manage Redis patch schedules.
 description: ''
 directCommands:

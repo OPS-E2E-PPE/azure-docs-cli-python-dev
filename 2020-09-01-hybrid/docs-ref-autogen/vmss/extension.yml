@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vmss_extension
-name: VMSS extensions
+name: az vmss extension
 summary: Manage extensions on a VM scale set.
 description: ''
 directCommands:

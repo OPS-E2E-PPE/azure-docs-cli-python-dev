@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_location_quotas
-name: Batch location quotas
+name: az batch location quotas
 summary: Manage Batch service quotas at the region level.
 description: ''
 directCommands:

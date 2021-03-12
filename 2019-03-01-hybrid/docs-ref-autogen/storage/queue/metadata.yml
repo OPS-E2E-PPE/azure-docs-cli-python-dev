@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_queue_metadata
-name: Storage queue metadata
+name: az storage queue metadata
 summary: Manage the metadata for a storage queue.
 description: ''
 directCommands:

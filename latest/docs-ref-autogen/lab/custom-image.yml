@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lab_custom-image
-name: Dev/Test Lab custom images
+name: az lab custom-image
 summary: Manage custom images of a DevTest Lab.
 description: ''
 directCommands:

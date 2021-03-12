@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dls_account
-name: Data Lake Store accounts
+name: az dls account
 summary: Manage Data Lake Store accounts.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_snapshot
-name: VM Snapshots
+name: az snapshot
 summary: Manage point-in-time copies of managed disks, native blobs, or other snapshots.
 description: ''
 directCommands:

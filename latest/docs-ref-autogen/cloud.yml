@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_cloud
-name: Cloud management
+name: az cloud
 summary: Manage registered Azure clouds.
 description: ''
 directCommands:

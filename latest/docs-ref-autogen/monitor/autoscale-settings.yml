@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_monitor_autoscale-settings
-name: Monitoring auto-scale settings
+name: az monitor autoscale-settings
 summary: Manage autoscale settings.
 description: ''
 directCommands:

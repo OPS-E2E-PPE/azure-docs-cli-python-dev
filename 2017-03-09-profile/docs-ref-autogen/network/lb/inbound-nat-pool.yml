@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_lb_inbound-nat-pool
-name: Inbound NAT address pools
+name: az network lb inbound-nat-pool
 summary: Manage inbound NAT address pools of a load balancer.
 description: ''
 directCommands:

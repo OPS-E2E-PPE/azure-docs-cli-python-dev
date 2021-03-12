@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_monitor_activity-log
-name: Monitoring activity log
+name: az monitor activity-log
 summary: Manage activity logs.
 description: ''
 directCommands:

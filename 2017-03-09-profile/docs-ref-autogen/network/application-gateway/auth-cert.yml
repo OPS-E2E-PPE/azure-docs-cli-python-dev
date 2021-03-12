@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_auth-cert
-name: Authorization certificates
+name: az network application-gateway auth-cert
 summary: Manage authorization certificates of an application gateway.
 description: ''
 directCommands:

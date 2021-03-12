@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lock
-name: Resource locks
+name: az lock
 summary: Manage Azure locks.
 description: ''
 directCommands:

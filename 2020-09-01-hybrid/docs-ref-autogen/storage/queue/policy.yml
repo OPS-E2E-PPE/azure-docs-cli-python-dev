@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_queue_policy
-name: Storage queue policies
+name: az storage queue policy
 summary: Manage shared access policies for a storage queue.
 description: ''
 directCommands:

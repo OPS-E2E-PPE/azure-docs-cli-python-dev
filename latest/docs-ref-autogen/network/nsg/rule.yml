@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_nsg_rule
-name: Network security group rules
+name: az network nsg rule
 summary: Manage network security group rules.
 description: ''
 directCommands:

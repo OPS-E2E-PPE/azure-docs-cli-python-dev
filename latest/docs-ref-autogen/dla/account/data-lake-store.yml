@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_account_data-lake-store
-name: Data Lake Analytics accounts linked to Data Lake Store accounts
+name: az dla account data-lake-store
 summary: Manage links between Data Lake Analytics and Data Lake Store accounts.
 description: ''
 directCommands:

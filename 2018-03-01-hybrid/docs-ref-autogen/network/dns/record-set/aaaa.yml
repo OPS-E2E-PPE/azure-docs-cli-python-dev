@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_dns_record-set_aaaa
-name: DNS - AAAA records
+name: az network dns record-set aaaa
 summary: Manage DNS AAAA records.
 description: ''
 directCommands:

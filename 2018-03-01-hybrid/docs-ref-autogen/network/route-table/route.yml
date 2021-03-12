@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_route-table_route
-name: Route table routes
+name: az network route-table route
 summary: Manage routes in a route table.
 description: ''
 directCommands:

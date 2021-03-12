@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_hdinsight
-name: HDInsight
+name: az hdinsight
 summary: Manage HDInsight resources.
 description: ''
 directCommands:

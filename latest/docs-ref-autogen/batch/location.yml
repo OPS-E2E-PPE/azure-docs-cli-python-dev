@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_location
-name: Batch locations
+name: az batch location
 summary: Manage Batch service options for a subscription at the region level.
 description: ''
 commands:

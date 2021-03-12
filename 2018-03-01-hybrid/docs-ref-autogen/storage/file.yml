@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_file
-name: Files
+name: az storage file
 summary: Manage file shares that use the SMB 3.0 protocol.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_keyvault_certificate_issuer_admin
-name: Key Vault certificate issuer administration
+name: az keyvault certificate issuer admin
 summary: Manage admin information for certificate issuers.
 description: ''
 directCommands:

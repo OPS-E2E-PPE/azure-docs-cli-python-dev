@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_traffic-manager
-name: Network Traffic Manager
+name: az network traffic-manager
 summary: Manage the routing of incoming traffic.
 description: ''
 commands:

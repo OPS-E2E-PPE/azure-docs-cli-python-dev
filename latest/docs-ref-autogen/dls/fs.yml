@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dls_fs
-name: Data Lake Store file system
+name: az dls fs
 summary: Manage a Data Lake Store filesystem.
 description: ''
 directCommands:

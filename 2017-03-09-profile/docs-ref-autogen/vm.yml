@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm
-name: Virtual Machines (VM)
+name: az vm
 summary: Manage Linux or Windows virtual machines.
 description: ''
 directCommands:

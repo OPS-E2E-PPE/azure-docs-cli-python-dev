@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_policy_metadata
-name: Policy metadata
+name: az policy metadata
 summary: Get policy metadata resources.
 description: ''
 directCommands:

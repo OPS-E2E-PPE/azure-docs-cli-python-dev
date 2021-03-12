@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_extension_image
-name: VM extension images
+name: az vm extension image
 summary: Find the available VM extensions for a subscription and region.
 description: ''
 directCommands:

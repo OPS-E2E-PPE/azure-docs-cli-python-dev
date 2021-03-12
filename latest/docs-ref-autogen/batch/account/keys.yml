@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_account_keys
-name: Batch account keys
+name: az batch account keys
 summary: Manage Batch account keys.
 description: ''
 directCommands:

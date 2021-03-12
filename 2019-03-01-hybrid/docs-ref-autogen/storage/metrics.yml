@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_metrics
-name: Storage metrics
+name: az storage metrics
 summary: Manage storage service metrics.
 description: ''
 directCommands:

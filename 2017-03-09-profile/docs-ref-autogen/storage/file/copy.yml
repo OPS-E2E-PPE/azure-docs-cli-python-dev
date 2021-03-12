@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_file_copy
-name: File copy operations
+name: az storage file copy
 summary: Manage file copy operations.
 description: ''
 directCommands:

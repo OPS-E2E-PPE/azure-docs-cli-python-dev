@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_postgres_db
-name: Azure Database for PostgreSQL databases
+name: az postgres db
 summary: Manage PostgreSQL databases on a server.
 description: ''
 directCommands:

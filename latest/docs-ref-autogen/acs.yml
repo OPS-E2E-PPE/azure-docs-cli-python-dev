@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_acs
-name: Container Service
+name: az acs
 summary: Manage Azure Container Services.
 description: >-
   ACS will be retired as a standalone service on January 31, 2020.

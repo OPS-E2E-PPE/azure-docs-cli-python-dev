@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_http-settings
-name: HTTP settings
+name: az network application-gateway http-settings
 summary: Manage HTTP settings of an application gateway.
 description: ''
 directCommands:

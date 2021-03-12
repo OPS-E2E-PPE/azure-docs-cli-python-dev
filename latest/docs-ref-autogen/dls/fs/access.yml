@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dls_fs_access
-name: Data Lake Store file system access and permissions
+name: az dls fs access
 summary: Manage Data Lake Store filesystem access and permissions.
 description: ''
 directCommands:

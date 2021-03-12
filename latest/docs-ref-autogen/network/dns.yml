@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_dns
-name: DNS domains
+name: az network dns
 summary: Manage DNS domains in Azure.
 description: ''
 directCommands:

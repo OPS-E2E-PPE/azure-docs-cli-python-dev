@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_queue
-name: Storage queues
+name: az storage queue
 summary: Manage storage queues.
 description: ''
 directCommands:

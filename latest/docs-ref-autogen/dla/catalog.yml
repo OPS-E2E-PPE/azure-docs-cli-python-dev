@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_catalog
-name: Data Lake Analytics catalogs
+name: az dla catalog
 summary: Manage Data Lake Analytics catalogs.
 description: ''
 commands:

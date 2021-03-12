@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_sql
-name: SQL
+name: az sql
 summary: Manage Azure SQL Databases and Data Warehouses.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_nic_ip-config_inbound-nat-rule
-name: Inbound NAT rules
+name: az network nic ip-config inbound-nat-rule
 summary: Manage inbound NAT rules of an IP configuration.
 description: ''
 directCommands:

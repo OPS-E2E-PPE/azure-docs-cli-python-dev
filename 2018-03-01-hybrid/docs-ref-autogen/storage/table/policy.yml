@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_table_policy
-name: Table policies
+name: az storage table policy
 summary: Manage shared access policies of a storage table.
 description: ''
 directCommands:

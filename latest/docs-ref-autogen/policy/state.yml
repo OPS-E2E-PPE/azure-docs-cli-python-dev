@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_policy_state
-name: Policy compliance state
+name: az policy state
 summary: Manage policy compliance states.
 description: ''
 directCommands:

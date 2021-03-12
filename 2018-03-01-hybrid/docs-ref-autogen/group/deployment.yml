@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_group_deployment
-name: Deployments
+name: az group deployment
 summary: Manage Azure Resource Manager deployments.
 description: ''
 directCommands:

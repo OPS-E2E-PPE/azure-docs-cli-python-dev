@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_blob_metadata
-name: Blob storage metadata
+name: az storage blob metadata
 summary: Manage blob metadata.
 description: ''
 directCommands:

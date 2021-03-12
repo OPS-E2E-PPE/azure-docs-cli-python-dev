@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch
-name: Batch
+name: az batch
 summary: Manage Azure Batch.
 description: ''
 commands:

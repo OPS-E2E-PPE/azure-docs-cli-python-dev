@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_frontend-ip
-name: Front-end IP addresses
+name: az network application-gateway frontend-ip
 summary: Manage frontend IP addresses of an application gateway.
 description: ''
 directCommands:

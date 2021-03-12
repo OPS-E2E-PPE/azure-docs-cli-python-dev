@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_monitor_log-profiles
-name: Monitoring log profiles
+name: az monitor log-profiles
 summary: Manage log profiles.
 description: ''
 directCommands:

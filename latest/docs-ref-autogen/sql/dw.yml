@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_sql_dw
-name: SQL data warehouses
+name: az sql dw
 summary: Manage data warehouses.
 description: ''
 directCommands:

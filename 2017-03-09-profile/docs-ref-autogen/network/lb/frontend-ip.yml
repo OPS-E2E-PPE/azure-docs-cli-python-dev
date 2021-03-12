@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_lb_frontend-ip
-name: Front-end IP addresses
+name: az network lb frontend-ip
 summary: Manage frontend IP addresses of a load balancer.
 description: ''
 directCommands:

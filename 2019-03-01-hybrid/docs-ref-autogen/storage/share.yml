@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_share
-name: File shares
+name: az storage share
 summary: Manage file shares.
 description: ''
 directCommands:

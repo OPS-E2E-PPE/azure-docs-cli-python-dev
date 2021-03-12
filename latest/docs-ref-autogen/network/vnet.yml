@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_vnet
-name: Virtual Network
+name: az network vnet
 summary: Manage Azure Virtual Networks.
 description: To learn more about Virtual Networks visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-network">https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-network</a>.
 directCommands:

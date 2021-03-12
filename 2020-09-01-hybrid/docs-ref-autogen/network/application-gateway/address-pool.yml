@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_address-pool
-name: Address pools
+name: az network application-gateway address-pool
 summary: Manage address pools of an application gateway.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_job-schedule
-name: Batch job schedules
+name: az batch job-schedule
 summary: Manage Batch job schedules.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dls_account_firewall
-name: Data Lake Store account firewall rules
+name: az dls account firewall
 summary: Manage Data Lake Store account firewall rules.
 description: ''
 directCommands:

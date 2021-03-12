@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_nic
-name: VM network interfaces
+name: az vm nic
 summary: Manage network interfaces. See also `az network nic`.
 description: A network interface (NIC) is the interconnection between a VM and the underlying software network. For more information, see <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface-overview">https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface-overview</a>.
 directCommands:

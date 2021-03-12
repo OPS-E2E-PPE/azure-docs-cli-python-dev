@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lab_vm
-name: Dev/Test Lab virtual machines
+name: az lab vm
 summary: Manage VMs in an Azure DevTest Lab.
 description: ''
 directCommands:

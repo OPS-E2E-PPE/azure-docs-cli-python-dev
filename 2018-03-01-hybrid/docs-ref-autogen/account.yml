@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_account
-name: Subscriptions
+name: az account
 summary: Manage Azure subscription information.
 description: ''
 directCommands:

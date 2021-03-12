@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_nic_ip-config
-name: NIC IP configurations
+name: az network nic ip-config
 summary: Manage IP configurations of a network interface.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_managedapp_definition
-name: Managed application definitions
+name: az managedapp definition
 summary: Manage Azure Managed Applications.
 description: ''
 directCommands:

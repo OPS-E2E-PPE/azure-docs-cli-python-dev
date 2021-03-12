@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lab_formula
-name: Dev/Test Lab formulas
+name: az lab formula
 summary: Manage formulas for an Azure DevTest Lab.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_traffic-manager_profile
-name: Traffic Manager profiles
+name: az network traffic-manager profile
 summary: Manage Azure Traffic Manager profiles.
 description: ''
 directCommands:

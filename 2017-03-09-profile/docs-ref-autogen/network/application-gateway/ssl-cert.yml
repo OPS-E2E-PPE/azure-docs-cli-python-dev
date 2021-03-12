@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_ssl-cert
-name: SSL certificates
+name: az network application-gateway ssl-cert
 summary: Manage SSL certificates of an application gateway.
 description: For more information visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-ssl-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-ssl-cli</a>.
 directCommands:

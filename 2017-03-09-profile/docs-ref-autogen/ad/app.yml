@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_ad_app
-name: AAD applications
+name: az ad app
 summary: Manage applications with AAD Graph.
 description: ''
 directCommands:

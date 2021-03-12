@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lab_vnet
-name: Dev/Test Lab virtual networks
+name: az lab vnet
 summary: Manage virtual networks of an Azure DevTest Lab.
 description: ''
 directCommands:

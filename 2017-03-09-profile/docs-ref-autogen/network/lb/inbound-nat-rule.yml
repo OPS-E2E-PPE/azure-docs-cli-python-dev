@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_lb_inbound-nat-rule
-name: Inbound NAT address rules
+name: az network lb inbound-nat-rule
 summary: Manage inbound NAT rules of a load balancer.
 description: ''
 directCommands:

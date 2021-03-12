@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dls_account_trusted-provider
-name: Data Lake Store account trusted identity providers
+name: az dls account trusted-provider
 summary: Manage Data Lake Store account trusted identity providers.
 description: ''
 directCommands:
