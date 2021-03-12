@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_task_file
-name: Batch task files
+name: az batch task file
 summary: Manage Batch task files.
 description: ''
 directCommands:

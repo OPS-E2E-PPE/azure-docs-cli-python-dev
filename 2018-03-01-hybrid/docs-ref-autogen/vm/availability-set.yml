@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_availability-set
-name: VM availability sets
+name: az vm availability-set
 summary: Group resources into availability sets.
 description: To provide redundancy to an application, it is recommended to group two or more virtual machines in an availability set. This configuration ensures that during either a planned or unplanned maintenance event, at least one virtual machine will be available.
 directCommands:

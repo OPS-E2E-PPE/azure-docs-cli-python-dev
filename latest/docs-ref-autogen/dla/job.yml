@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_job
-name: Data Lake Analytics jobs
+name: az dla job
 summary: Manage Data Lake Analytics jobs.
 description: ''
 directCommands:

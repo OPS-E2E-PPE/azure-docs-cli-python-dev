@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_node
-name: Batch compute nodes
+name: az batch node
 summary: Manage Batch compute nodes.
 description: ''
 directCommands:

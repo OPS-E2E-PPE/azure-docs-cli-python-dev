@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_directory_metadata
-name: Directory metadata
+name: az storage directory metadata
 summary: Manage file storage directory metadata.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_group
-name: Resource groups
+name: az group
 summary: Manage resource groups and template deployments.
 description: ''
 directCommands:

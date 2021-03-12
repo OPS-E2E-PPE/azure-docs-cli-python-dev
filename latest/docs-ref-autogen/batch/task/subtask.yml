@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_task_subtask
-name: Subtasks of batch tasks
+name: az batch task subtask
 summary: Manage subtask information of a Batch task.
 description: ''
 directCommands:

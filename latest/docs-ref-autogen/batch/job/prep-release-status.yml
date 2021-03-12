@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_job_prep-release-status
-name: Batch job preparation and release status
+name: az batch job prep-release-status
 summary: View the status of Batch job preparation and release tasks.
 description: ''
 directCommands:

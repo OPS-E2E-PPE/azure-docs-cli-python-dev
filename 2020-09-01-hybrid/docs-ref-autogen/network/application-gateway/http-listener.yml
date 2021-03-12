@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_http-listener
-name: HTTP listeners
+name: az network application-gateway http-listener
 summary: Manage HTTP listeners of an application gateway.
 description: ''
 directCommands:

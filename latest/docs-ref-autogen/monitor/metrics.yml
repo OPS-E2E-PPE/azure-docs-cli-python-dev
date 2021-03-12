@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_monitor_metrics
-name: Monitoring metrics
+name: az monitor metrics
 summary: View Azure resource metrics.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_acs_kubernetes
-name: Container Service - Kubernetes
+name: az acs kubernetes
 summary: Commands to manage a Kubernetes-orchestrated Azure Container Service.
 description: ''
 directCommands:

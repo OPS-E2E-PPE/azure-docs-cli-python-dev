@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_lab_gallery-image
-name: Dev/Test Lab gallery images
+name: az lab gallery-image
 summary: List Azure Marketplace images allowed for a DevTest Lab.
 description: ''
 directCommands:

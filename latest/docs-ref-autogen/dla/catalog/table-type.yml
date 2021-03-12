@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_catalog_table-type
-name: Data Lake Analytics catalog table types
+name: az dla catalog table-type
 summary: Manage Data Lake Analytics catalog table types.
 description: ''
 directCommands:

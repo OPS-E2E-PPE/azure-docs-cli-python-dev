@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_policy_definition
-name: Policy definitions
+name: az policy definition
 summary: Manage resource policy definitions.
 description: ''
 directCommands:

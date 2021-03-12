@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_functionapp
-name: Functions
+name: az functionapp
 summary: Manage function apps. To install the Azure Functions Core tools see <a href="https://github.com/Azure/azure-functions-core-tools">https://github.com/Azure/azure-functions-core-tools</a>.
 description: ''
 directCommands:

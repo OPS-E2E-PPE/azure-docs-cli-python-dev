@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_node_remote-desktop
-name: Remote desktop protocols for batch compute nodes
+name: az batch node remote-desktop
 summary: Retrieve the remote desktop protocol file for a Batch compute node.
 description: ''
 directCommands:

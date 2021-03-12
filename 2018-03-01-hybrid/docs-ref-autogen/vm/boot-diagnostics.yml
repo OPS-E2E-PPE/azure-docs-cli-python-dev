@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_boot-diagnostics
-name: VM boot diagnostics
+name: az vm boot-diagnostics
 summary: Troubleshoot the startup of an Azure Virtual Machine.
 description: Use this feature to troubleshoot boot failures for custom or platform images.
 directCommands:

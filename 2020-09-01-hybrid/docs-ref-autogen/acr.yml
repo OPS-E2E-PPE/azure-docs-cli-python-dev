@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_acr
-name: Container Registry
+name: az acr
 extensionInformation: >-
   > [!Note]
 

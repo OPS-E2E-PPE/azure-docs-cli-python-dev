@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_vnet_peering
-name: Peering connections
+name: az network vnet peering
 summary: Manage peering connections between Azure Virtual Networks.
 description: To learn more about virtual network peering visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering">https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering</a>.
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_vnet-gateway_root-cert
-name: Root certificates
+name: az network vnet-gateway root-cert
 summary: Manage root certificates of a virtual network gateway.
 description: ''
 directCommands:

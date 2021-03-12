@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_policy_assignment
-name: Policy assignments
+name: az policy assignment
 summary: Manage resource policy assignments.
 description: ''
 directCommands:

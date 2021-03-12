@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_user
-name: VM users
+name: az vm user
 summary: Manage user accounts for a VM.
 description: ''
 directCommands:

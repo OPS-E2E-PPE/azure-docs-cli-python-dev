@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_ad_user
-name: AAD users
+name: az ad user
 summary: Manage Azure Active Directory users and user authentication.
 description: ''
 directCommands:

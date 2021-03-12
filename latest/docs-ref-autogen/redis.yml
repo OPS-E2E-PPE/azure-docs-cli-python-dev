@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_redis
-name: Redis Cache
+name: az redis
 summary: Manage dedicated Redis caches for your Azure applications.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_ssl-policy
-name: SSL policies
+name: az network application-gateway ssl-policy
 summary: Manage the SSL policy of an application gateway.
 description: ''
 directCommands:

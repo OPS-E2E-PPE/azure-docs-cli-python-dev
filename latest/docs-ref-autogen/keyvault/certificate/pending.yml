@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_keyvault_certificate_pending
-name: Pending Key Vault certificates
+name: az keyvault certificate pending
 summary: Manage pending certificate creation operations.
 description: ''
 directCommands:

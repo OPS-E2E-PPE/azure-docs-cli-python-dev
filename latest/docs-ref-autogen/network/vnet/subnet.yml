@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_vnet_subnet
-name: Subnets
+name: az network vnet subnet
 summary: Manage subnets in an Azure Virtual Network.
 description: To learn more about subnets visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-subnet">https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-subnet</a>.
 directCommands:

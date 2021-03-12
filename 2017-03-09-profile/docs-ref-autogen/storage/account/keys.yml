@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_account_keys
-name: Storage accounts keys
+name: az storage account keys
 summary: Manage storage account keys.
 description: ''
 directCommands:

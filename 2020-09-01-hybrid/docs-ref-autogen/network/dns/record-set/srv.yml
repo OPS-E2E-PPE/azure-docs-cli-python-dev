@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_dns_record-set_srv
-name: DNS - SRV records
+name: az network dns record-set srv
 summary: Manage DNS SRV records.
 description: ''
 directCommands:

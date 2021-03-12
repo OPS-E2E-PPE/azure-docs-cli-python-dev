@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_catalog_external-data-source
-name: Data Lake Analytics catalog external data sources
+name: az dla catalog external-data-source
 summary: Manage Data Lake Analytics catalog external data sources.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_application_summary
-name: Batch application summaries
+name: az batch application summary
 summary: View a summary of Batch application packages.
 description: ''
 directCommands:

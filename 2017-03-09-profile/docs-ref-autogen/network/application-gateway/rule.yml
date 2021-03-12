@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_rule
-name: Routing rules
+name: az network application-gateway rule
 summary: Evaluate probe information and define routing rules.
 description: For more information, visit, <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-customize-waf-rules-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-customize-waf-rules-cli</a>.
 directCommands:

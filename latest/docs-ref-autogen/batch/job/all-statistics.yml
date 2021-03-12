@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_job_all-statistics
-name: Batch job statistics
+name: az batch job all-statistics
 summary: View statistics of all jobs under a Batch account.
 description: ''
 directCommands:

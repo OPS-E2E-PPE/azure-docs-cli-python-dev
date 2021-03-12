@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_account_blob-storage
-name: Data Lake Analytics accounts linked to Azure Storage
+name: az dla account blob-storage
 summary: Manage links between Data Lake Analytics accounts and Azure Storage.
 description: ''
 directCommands:

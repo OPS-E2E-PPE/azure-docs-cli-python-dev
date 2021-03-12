@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_encryption
-name: VM storage encryption
+name: az vm encryption
 summary: Manage encryption of VM disks.
 description: >-
   For more information, see:

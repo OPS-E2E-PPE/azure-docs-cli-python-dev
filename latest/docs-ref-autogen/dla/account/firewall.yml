@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_account_firewall
-name: Data Lake Analytics account firewall rules
+name: az dla account firewall
 summary: Manage Data Lake Analytics account firewall rules.
 description: ''
 directCommands:

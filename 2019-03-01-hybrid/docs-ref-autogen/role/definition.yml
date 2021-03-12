@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_role_definition
-name: Role definitions
+name: az role definition
 summary: Manage role definitions.
 description: ''
 directCommands:

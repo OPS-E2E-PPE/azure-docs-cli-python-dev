@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_url-path-map_rule
-name: URL path map rules
+name: az network application-gateway url-path-map rule
 summary: Manage the rules of a URL path map.
 description: ''
 directCommands:

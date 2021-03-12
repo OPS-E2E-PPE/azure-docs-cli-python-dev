@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_pool_autoscale
-name: Automatic scaling of batch pools
+name: az batch pool autoscale
 summary: Manage automatic scaling of Batch pools.
 description: ''
 directCommands:

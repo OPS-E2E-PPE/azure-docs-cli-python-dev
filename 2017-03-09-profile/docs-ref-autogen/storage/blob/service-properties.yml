@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_blob_service-properties
-name: Blob storage service properties
+name: az storage blob service-properties
 summary: Manage storage blob service properties.
 description: ''
 directCommands:

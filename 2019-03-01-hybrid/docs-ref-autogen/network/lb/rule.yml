@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_lb_rule
-name: Load Balancing rules
+name: az network lb rule
 summary: Manage load balancing rules.
 description: ''
 directCommands:

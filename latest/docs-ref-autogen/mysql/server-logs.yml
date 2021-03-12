@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_mysql_server-logs
-name: Azure Database for MySQL server logs
+name: az mysql server-logs
 summary: Manage server logs.
 description: ''
 directCommands:

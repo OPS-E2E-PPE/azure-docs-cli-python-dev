@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_policy_remediation
-name: Policy remedation tasks
+name: az policy remediation
 summary: Manage resource policy remediations.
 description: ''
 directCommands:

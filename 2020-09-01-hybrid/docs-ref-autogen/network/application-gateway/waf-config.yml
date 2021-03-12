@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_waf-config
-name: Web application firewall settings
+name: az network application-gateway waf-config
 summary: Configure the settings of a web application firewall.
 description: These commands are only applicable to application gateways with an SKU type of WAF. To learn more, visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-cli</a>.
 directCommands:

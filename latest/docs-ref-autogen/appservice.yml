@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_appservice
-name: App Service
+name: az appservice
 summary: Manage App Service plans.
 description: ''
 directCommands:

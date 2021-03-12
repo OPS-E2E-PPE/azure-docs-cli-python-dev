@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_ad
-name: Azure Active Directory (AAD)
+name: az ad
 summary: Manage Azure Active Directory Graph entities needed for Role Based Access Control.
 description: ''
 commands:

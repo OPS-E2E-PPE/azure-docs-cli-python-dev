@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_frontend-port
-name: Front-end ports
+name: az network application-gateway frontend-port
 summary: Manage frontend ports of an application gateway.
 description: ''
 directCommands:

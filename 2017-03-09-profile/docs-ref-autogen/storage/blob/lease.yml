@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_blob_lease
-name: Blob storage leases
+name: az storage blob lease
 summary: Manage storage blob leases.
 description: ''
 directCommands:

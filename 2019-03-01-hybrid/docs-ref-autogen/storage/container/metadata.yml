@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_container_metadata
-name: Storage container metadata
+name: az storage container metadata
 summary: Manage container metadata.
 description: ''
 directCommands:

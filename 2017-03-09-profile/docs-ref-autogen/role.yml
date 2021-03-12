@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_role
-name: Roles
+name: az role
 summary: Manage user roles for access control with Azure Active Directory and service principals.
 description: ''
 commands:

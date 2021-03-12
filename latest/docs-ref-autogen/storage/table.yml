@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_table
-name: Tables
+name: az storage table
 summary: Manage NoSQL key-value storage.
 description: ''
 directCommands:

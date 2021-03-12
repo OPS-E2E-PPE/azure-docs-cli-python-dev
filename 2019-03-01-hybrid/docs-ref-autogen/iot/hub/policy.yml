@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_iot_hub_policy
-name: IoT hub policies
+name: az iot hub policy
 summary: Manage shared access policies of an IoT hub.
 description: ''
 directCommands:

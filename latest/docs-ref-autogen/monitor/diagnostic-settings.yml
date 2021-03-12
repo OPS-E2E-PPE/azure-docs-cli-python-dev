@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_monitor_diagnostic-settings
-name: Monitoring diagnostics settings
+name: az monitor diagnostic-settings
 summary: Manage service diagnostic settings.
 description: ''
 directCommands:

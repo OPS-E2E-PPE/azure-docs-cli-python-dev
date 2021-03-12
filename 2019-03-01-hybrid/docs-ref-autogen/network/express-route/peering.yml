@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_express-route_peering
-name: Express Route peering
+name: az network express-route peering
 summary: Manage ExpressRoute peering of an ExpressRoute circuit.
 description: ''
 directCommands:

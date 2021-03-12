@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_postgres_server-logs
-name: Azure Database for PostgreSQL server logs
+name: az postgres server-logs
 summary: Manage server logs.
 description: ''
 directCommands:

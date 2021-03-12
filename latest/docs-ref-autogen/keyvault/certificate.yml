@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_keyvault_certificate
-name: Key Vault certificates
+name: az keyvault certificate
 summary: Manage certificates.
 description: ''
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_application_package
-name: Batch application packages
+name: az batch application package
 summary: Manage Batch application packages.
 description: ''
 directCommands:

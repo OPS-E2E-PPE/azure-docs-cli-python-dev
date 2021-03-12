@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_group_deployment_operation
-name: Deployment operations
+name: az group deployment operation
 summary: Manage deployment operations.
 description: ''
 directCommands:

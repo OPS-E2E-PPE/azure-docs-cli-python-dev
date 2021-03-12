@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_vm_extension
-name: VM extensions
+name: az vm extension
 summary: Manage extensions on VMs.
 description: Extensions are small applications that provide post-deployment configuration and automation tasks on Azure virtual machines. For example, if a virtual machine requires software installation, anti-virus protection, or Docker configuration, a VM extension can be used to complete these tasks. Extensions can be bundled with a new virtual machine deployment or run against any existing system.
 directCommands:

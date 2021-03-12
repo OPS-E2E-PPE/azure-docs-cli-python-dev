@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_lb_address-pool
-name: Back-end address pools
+name: az network lb address-pool
 summary: Manage address pools of a load balancer.
 description: ''
 directCommands:

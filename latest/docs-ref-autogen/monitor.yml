@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_monitor
-name: 'Monitoring '
+name: az monitor
 summary: Manage the Azure Monitor Service.
 description: ''
 directCommands:

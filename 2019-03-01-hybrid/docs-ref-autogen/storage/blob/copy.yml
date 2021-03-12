@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_blob_copy
-name: Blob storage copy operations
+name: az storage blob copy
 summary: Manage blob copy operations. Use `az storage blob show` to check the status of the blobs.
 description: ''
 directCommands:

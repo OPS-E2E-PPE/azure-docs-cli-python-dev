@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_catalog_table-partition
-name: Data Lake Analytics catalog table partitions
+name: az dla catalog table-partition
 summary: Manage Data Lake Analytics catalog table partitions.
 description: ''
 directCommands:

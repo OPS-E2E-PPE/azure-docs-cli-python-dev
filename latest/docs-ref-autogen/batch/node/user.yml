@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_node_user
-name: Users for batch compute nodes
+name: az batch node user
 summary: Manage the user accounts of a Batch compute node.
 description: ''
 directCommands:

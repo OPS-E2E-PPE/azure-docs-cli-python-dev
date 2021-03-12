@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_acr
-name: Container Registry
+name: az acr
 summary: Manage private registries with Azure Container Registries.
 description: ''
 directCommands:

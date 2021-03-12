@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_postgres
-name: Azure Database for PostgreSQL
+name: az postgres
 extensionInformation: >-
   > [!Note]
 

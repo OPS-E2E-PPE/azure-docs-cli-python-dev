@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_keyvault_certificate_issuer
-name: Key Vault certificate issuers
+name: az keyvault certificate issuer
 summary: Manage certificate issuer information.
 description: ''
 directCommands:

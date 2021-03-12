@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_entity
-name: Table storage entities
+name: az storage entity
 summary: Manage table storage entities.
 description: ''
 directCommands:

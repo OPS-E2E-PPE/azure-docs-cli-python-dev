@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_application-gateway_probe
-name: Application Gateway probes
+name: az network application-gateway probe
 summary: Manage probes to gather and evaluate information on a gateway.
 description: ''
 directCommands:

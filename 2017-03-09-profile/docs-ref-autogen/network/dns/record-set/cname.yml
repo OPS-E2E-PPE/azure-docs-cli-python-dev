@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_dns_record-set_cname
-name: DNS - CNAME records
+name: az network dns record-set cname
 summary: Manage DNS CNAME records.
 description: ''
 directCommands:

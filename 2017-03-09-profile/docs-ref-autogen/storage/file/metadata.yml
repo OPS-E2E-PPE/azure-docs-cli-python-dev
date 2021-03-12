@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_file_metadata
-name: File metadata
+name: az storage file metadata
 summary: Manage file metadata.
 description: ''
 directCommands:

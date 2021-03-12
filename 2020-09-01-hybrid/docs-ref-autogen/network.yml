@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network
-name: Networking
+name: az network
 summary: Manage Azure Network resources.
 description: ''
 directCommands:

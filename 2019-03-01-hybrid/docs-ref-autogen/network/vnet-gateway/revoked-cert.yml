@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_vnet-gateway_revoked-cert
-name: Revoked certificates
+name: az network vnet-gateway revoked-cert
 summary: Manage revoked certificates in a virtual network gateway.
 description: Prevent machines using this certificate from accessing Azure through this gateway.
 directCommands:

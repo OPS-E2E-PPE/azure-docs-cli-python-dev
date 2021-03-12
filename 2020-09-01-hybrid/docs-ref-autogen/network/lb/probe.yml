@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_network_lb_probe
-name: Load Balancer probes
+name: az network lb probe
 summary: Evaluate probe information and define routing rules.
 description: ''
 directCommands:

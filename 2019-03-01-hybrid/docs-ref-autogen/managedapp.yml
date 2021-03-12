@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_managedapp
-name: Managed applications
+name: az managedapp
 summary: Manage template solutions provided and maintained by Independent Software Vendors (ISVs).
 description: ''
 directCommands:

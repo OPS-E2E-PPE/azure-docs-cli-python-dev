@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_postgres_server_firewall-rule
-name: Firewall rules for Azure Database for PostgreSQL servers
+name: az postgres server firewall-rule
 summary: Manage firewall rules for a server.
 description: ''
 directCommands:

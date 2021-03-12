@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_share_policy
-name: File share policies
+name: az storage share policy
 summary: Manage shared access policies of a storage file share.
 description: ''
 directCommands:

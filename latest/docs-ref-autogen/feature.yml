@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_feature
-name: Resource provider features
+name: az feature
 summary: Manage resource provider features.
 description: ''
 directCommands:

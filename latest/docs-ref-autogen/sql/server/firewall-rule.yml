@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_sql_server_firewall-rule
-name: SQL Server firewall rules
+name: az sql server firewall-rule
 summary: Manage a server's firewall rules.
 description: ''
 directCommands:

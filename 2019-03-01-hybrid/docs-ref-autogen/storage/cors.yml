@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_storage_cors
-name: Cross-origin resource sharing
+name: az storage cors
 summary: Manage storage service Cross-Origin Resource Sharing (CORS).
 description: ''
 directCommands:

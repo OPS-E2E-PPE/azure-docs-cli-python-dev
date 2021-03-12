@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_dla_account
-name: Data Lake Analytics accounts
+name: az dla account
 summary: Manage Data Lake Analytics accounts.
 description: ''
 directCommands:

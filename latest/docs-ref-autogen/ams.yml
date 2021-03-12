@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_ams
-name: Azure Media Services (AMS)
+name: az ams
 summary: Manage Azure Media Services resources.
 description: ''
 commands:

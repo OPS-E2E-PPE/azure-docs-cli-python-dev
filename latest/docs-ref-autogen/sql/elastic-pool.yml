@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_sql_elastic-pool
-name: SQL elastic pools
+name: az sql elastic-pool
 summary: Manage elastic pools.
 description: ''
 directCommands:

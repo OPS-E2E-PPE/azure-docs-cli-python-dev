@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_batch_pool_usage-metrics
-name: Batch pool usage metrics
+name: az batch pool usage-metrics
 summary: View usage metrics of Batch pools.
 description: ''
 directCommands:

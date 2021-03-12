@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_cognitiveservices
-name: Cognitive Services
+name: az cognitiveservices
 summary: Manage Azure Cognitive Services accounts.
 description: This article lists the Azure CLI commands for Azure Cognitive Services account and subscription management only. Refer to the documentation at <a href="https://docs.microsoft.com/azure/cognitive-services/">https://docs.microsoft.com/azure/cognitive-services/</a> for individual services to learn how to use the APIs and supported SDKs.
 directCommands:

@@ -1,6 +1,6 @@
 ### YamlMime:AzureCLIGroup
 uid: az_ad_group
-name: AAD groups
+name: az ad group
 summary: Manage Azure Active Directory groups.
 description: ''
 directCommands:
