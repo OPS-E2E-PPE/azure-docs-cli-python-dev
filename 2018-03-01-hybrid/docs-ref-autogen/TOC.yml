@@ -2,111 +2,934 @@
   items:
   - name: List A - Z
     uid: sp-List_A_-_Z
-  - name: Azure Machine Learning
+  - name: ''
     items:
     - name: Summary
-      uid: sp-Azure_Machine_Learning
-    - name: ml
+      uid: sp-
+    - name: confluent
       items:
       - name: Summary
-        uid: az_ml
-      - name: computetarget
+        uid: az_confluent
+      - name: organization
+        uid: az_confluent_organization
+        items: []
+      - name: terms
+        uid: az_confluent_terms
+        items: []
+  - name: API Management
+    uid: sp-API_Management
+    items: []
+  - name: Azure Active Directory
+    items:
+    - name: Summary
+      uid: sp-Azure_Active_Directory
+    - name: Azure Active Directory
+      items:
+      - name: Summary
+        uid: az_ad
+      - name: Applications
         items:
         - name: Summary
-          uid: az_ml_computetarget
-        - name: amlcompute
-          items:
-          - name: Summary
-            uid: az_ml_computetarget_amlcompute
-          - name: identity
-            uid: az_ml_computetarget_amlcompute_identity
-            items: []
-        - name: attach
-          uid: az_ml_computetarget_attach
+          uid: az_ad_app
+        - name: credential
+          uid: az_ad_app_credential
           items: []
-        - name: computeinstance
-          uid: az_ml_computetarget_computeinstance
+        - name: owner
+          uid: az_ad_app_owner
           items: []
-        - name: create
-          uid: az_ml_computetarget_create
+        - name: permission
+          uid: az_ad_app_permission
           items: []
-        - name: update
-          uid: az_ml_computetarget_update
-          items: []
-      - name: dataset
-        uid: az_ml_dataset
+      - name: ds
+        uid: az_ad_ds
         items: []
-      - name: datastore
-        uid: az_ml_datastore
-        items: []
-      - name: endpoint
+      - name: Groups
         items:
         - name: Summary
-          uid: az_ml_endpoint
-        - name: realtime
-          uid: az_ml_endpoint_realtime
+          uid: az_ad_group
+        - name: member
+          uid: az_ad_group_member
           items: []
-      - name: environment
-        uid: az_ml_environment
+        - name: owner
+          uid: az_ad_group_owner
+          items: []
+      - name: signed-in-user
+        uid: az_ad_signed-in-user
         items: []
-      - name: experiment
-        uid: az_ml_experiment
+      - name: Service principals
+        items:
+        - name: Summary
+          uid: az_ad_sp
+        - name: credential
+          uid: az_ad_sp_credential
+          items: []
+        - name: owner
+          uid: az_ad_sp_owner
+          items: []
+      - name: Users
+        uid: az_ad_user
         items: []
-      - name: folder
-        uid: az_ml_folder
+  - name: Azure Advisor
+    uid: sp-Azure_Advisor
+    items: []
+  - name: Azure API for FHIR
+    items:
+    - name: Summary
+      uid: sp-Azure_API_for_FHIR
+    - name: healthcareapis
+      items:
+      - name: Summary
+        uid: az_healthcareapis
+      - name: acr
+        uid: az_healthcareapis_acr
         items: []
-      - name: model
-        uid: az_ml_model
+      - name: operation-result
+        uid: az_healthcareapis_operation-result
         items: []
-      - name: pipeline
-        uid: az_ml_pipeline
+      - name: private-endpoint-connection
+        uid: az_healthcareapis_private-endpoint-connection
         items: []
-      - name: run
-        uid: az_ml_run
+      - name: private-link-resource
+        uid: az_healthcareapis_private-link-resource
         items: []
       - name: service
-        uid: az_ml_service
+        uid: az_healthcareapis_service
         items: []
+  - name: Azure App Configuration
+    items:
+    - name: Summary
+      uid: sp-Azure_App_Configuration
+    - name: appconfig
+      items:
+      - name: Summary
+        uid: az_appconfig
+      - name: credential
+        uid: az_appconfig_credential
+        items: []
+      - name: feature
+        items:
+        - name: Summary
+          uid: az_appconfig_feature
+        - name: filter
+          uid: az_appconfig_feature_filter
+          items: []
+      - name: identity
+        uid: az_appconfig_identity
+        items: []
+      - name: kv
+        uid: az_appconfig_kv
+        items: []
+      - name: revision
+        uid: az_appconfig_revision
+        items: []
+  - name: Azure App Service
+    uid: sp-Azure_App_Service
+    items: []
+  - name: Azure Application Insights
+    uid: sp-Azure_Application_Insights
+    items: []
+  - name: Azure Arc
+    items:
+    - name: Summary
+      uid: sp-Azure_Arc
+    - name: connectedmachine
+      items:
+      - name: Summary
+        uid: az_connectedmachine
+      - name: extension
+        uid: az_connectedmachine_extension
+        items: []
+  - name: Azure Artifacts
+    items:
+    - name: Summary
+      uid: sp-Azure_Artifacts
+    - name: artifacts
+      items:
+      - name: Summary
+        uid: az_artifacts
+      - name: universal
+        uid: az_artifacts_universal
+        items: []
+  - name: Azure Attestation
+    items:
+    - name: Summary
+      uid: sp-Azure_Attestation
+    - name: attestation
+      items:
+      - name: Summary
+        uid: az_attestation
+      - name: policy
+        uid: az_attestation_policy
+        items: []
+      - name: signer
+        uid: az_attestation_signer
+        items: []
+  - name: Azure Automation
+    items:
+    - name: Summary
+      uid: sp-Azure_Automation
+    - name: automation
+      items:
+      - name: Summary
+        uid: az_automation
+      - name: account
+        uid: az_automation_account
+        items: []
+      - name: job
+        uid: az_automation_job
+        items: []
+      - name: runbook
+        uid: az_automation_runbook
+        items: []
+  - name: Azure Backup
+    uid: sp-Azure_Backup
+    items: []
+  - name: Azure Batch
+    items:
+    - name: Summary
+      uid: sp-Azure_Batch
+    - name: Batch
+      items:
+      - name: Summary
+        uid: az_batch
+      - name: file
+        uid: az_batch_file
+        items: []
+      - name: Jobs
+        uid: az_batch_job
+        items: []
+      - name: Pools
+        uid: az_batch_pool
+        items: []
+  - name: Azure Blockchain
+    items:
+    - name: Summary
+      uid: sp-Azure_Blockchain
+    - name: blockchain
+      items:
+      - name: Summary
+        uid: az_blockchain
+      - name: consortium
+        uid: az_blockchain_consortium
+        items: []
+      - name: member
+        uid: az_blockchain_member
+        items: []
+      - name: transaction-node
+        uid: az_blockchain_transaction-node
+        items: []
+  - name: Azure Blueprint
+    items:
+    - name: Summary
+      uid: sp-Azure_Blueprint
+    - name: blueprint
+      items:
+      - name: Summary
+        uid: az_blueprint
+      - name: artifact
+        items:
+        - name: Summary
+          uid: az_blueprint_artifact
+        - name: policy
+          uid: az_blueprint_artifact_policy
+          items: []
+        - name: role
+          uid: az_blueprint_artifact_role
+          items: []
+        - name: template
+          uid: az_blueprint_artifact_template
+          items: []
+      - name: assignment
+        uid: az_blueprint_assignment
+        items: []
+      - name: resource-group
+        uid: az_blueprint_resource-group
+        items: []
+      - name: version
+        items:
+        - name: Summary
+          uid: az_blueprint_version
+        - name: artifact
+          uid: az_blueprint_version_artifact
+          items: []
+  - name: Azure Boards
+    items:
+    - name: Summary
+      uid: sp-Azure_Boards
+    - name: boards
+      items:
+      - name: Summary
+        uid: az_boards
+      - name: area
+        items:
+        - name: Summary
+          uid: az_boards_area
+        - name: project
+          uid: az_boards_area_project
+          items: []
+        - name: team
+          uid: az_boards_area_team
+          items: []
+      - name: iteration
+        items:
+        - name: Summary
+          uid: az_boards_iteration
+        - name: project
+          uid: az_boards_iteration_project
+          items: []
+        - name: team
+          uid: az_boards_iteration_team
+          items: []
+      - name: work-item
+        items:
+        - name: Summary
+          uid: az_boards_work-item
+        - name: relation
+          uid: az_boards_work-item_relation
+          items: []
+  - name: Azure Bot
+    items:
+    - name: Summary
+      uid: sp-Azure_Bot
+    - name: healthbot
+      uid: az_healthbot
+      items: []
+  - name: Azure Bot Service
+    uid: sp-Azure_Bot_Service
+    items: []
+  - name: Azure Cache for Redis
+    uid: sp-Azure_Cache_for_Redis
+    items: []
+  - name: Azure CLI
+    items:
+    - name: Summary
+      uid: sp-Azure_CLI
+    - name: Subscriptions
+      items:
+      - name: Summary
+        uid: az_account
+      - name: alias
+        uid: az_account_alias
+        items: []
+      - name: lock
+        uid: az_account_lock
+        items: []
+      - name: management-group
+        items:
+        - name: Summary
+          uid: az_account_management-group
+        - name: subscription
+          uid: az_account_management-group_subscription
+          items: []
+      - name: subscription
+        uid: az_account_subscription
+        items: []
+      - name: tenant
+        uid: az_account_tenant
+        items: []
+    - name: alias
+      uid: az_alias
+      items: []
+    - name: cache
+      uid: az_cache
+      items: []
+    - name: cli-translator
+      items:
+      - name: Summary
+        uid: az_cli-translator
+      - name: arm
+        uid: az_cli-translator_arm
+        items: []
+    - name: Cloud management
+      uid: az_cloud
+      items: []
+    - name: config
+      items:
+      - name: Summary
+        uid: az_config
+      - name: param-persist
+        uid: az_config_param-persist
+        items: []
+    - name: demo
+      uid: az_demo
+      items: []
+    - name: extension
+      uid: az_extension
+      items: []
+    - name: fzf
+      uid: az_fzf
+      items: []
+    - name: local-context
+      uid: az_local-context
+      items: []
+    - name: resource-mover
+      items:
+      - name: Summary
+        uid: az_resource-mover
+      - name: move-collection
+        uid: az_resource-mover_move-collection
+        items: []
+      - name: move-resource
+        uid: az_resource-mover_move-resource
+        items: []
+  - name: Azure Cognitive Search
+    uid: sp-Azure_Cognitive_Search
+    items: []
+  - name: Azure Cognitive Service
+    uid: sp-Azure_Cognitive_Service
+    items: []
+  - name: Azure Communication Service
+    items:
+    - name: Summary
+      uid: sp-Azure_Communication_Service
+    - name: communication
+      uid: az_communication
+      items: []
+  - name: Azure Container Instances
+    items:
+    - name: Summary
+      uid: sp-Azure_Container_Instances
+    - name: Container
+      items:
+      - name: Summary
+        uid: az_container
+      - name: app
+        uid: az_container_app
+        items: []
+  - name: Azure Container Registries
+    items:
+    - name: Summary
+      uid: sp-Azure_Container_Registries
+    - name: Container Registry
+      items:
+      - name: Summary
+        uid: az_acr
+      - name: export-pipeline
+        uid: az_acr_export-pipeline
+        items: []
+      - name: import-pipeline
+        uid: az_acr_import-pipeline
+        items: []
+      - name: pipeline-run
+        uid: az_acr_pipeline-run
+        items: []
+  - name: Azure Container Services
+    uid: sp-Azure_Container_Services
+    items: []
+  - name: Azure Cosmos DB
+    items:
+    - name: Summary
+      uid: sp-Azure_Cosmos_DB
+    - name: Cosmos DB
+      items:
+      - name: Summary
+        uid: az_cosmosdb
+      - name: mongodb
+        items:
+        - name: Summary
+          uid: az_cosmosdb_mongodb
+        - name: restorable-collection
+          uid: az_cosmosdb_mongodb_restorable-collection
+          items: []
+        - name: restorable-database
+          uid: az_cosmosdb_mongodb_restorable-database
+          items: []
+        - name: restorable-resource
+          uid: az_cosmosdb_mongodb_restorable-resource
+          items: []
+      - name: restorable-database-account
+        uid: az_cosmosdb_restorable-database-account
+        items: []
+      - name: sql
+        items:
+        - name: Summary
+          uid: az_cosmosdb_sql
+        - name: restorable-container
+          uid: az_cosmosdb_sql_restorable-container
+          items: []
+        - name: restorable-database
+          uid: az_cosmosdb_sql_restorable-database
+          items: []
+        - name: restorable-resource
+          uid: az_cosmosdb_sql_restorable-resource
+          items: []
+        - name: role
+          items:
+          - name: Summary
+            uid: az_cosmosdb_sql_role
+          - name: assignment
+            uid: az_cosmosdb_sql_role_assignment
+            items: []
+          - name: definition
+            uid: az_cosmosdb_sql_role_definition
+            items: []
+    - name: managed-cassandra
+      items:
+      - name: Summary
+        uid: az_managed-cassandra
+      - name: cluster
+        uid: az_managed-cassandra_cluster
+        items: []
+      - name: datacenter
+        uid: az_managed-cassandra_datacenter
+        items: []
+  - name: Azure Cost Management + Billing
+    items:
+    - name: Summary
+      uid: sp-Azure_Cost_Management_+_Billing
+    - name: costmanagement
+      items:
+      - name: Summary
+        uid: az_costmanagement
+      - name: export
+        uid: az_costmanagement_export
+        items: []
+  - name: Azure Custom Providers
+    items:
+    - name: Summary
+      uid: sp-Azure_Custom_Providers
+    - name: custom-providers
+      items:
+      - name: Summary
+        uid: az_custom-providers
+      - name: resource-provider
+        uid: az_custom-providers_resource-provider
+        items: []
+  - name: Azure Data Explorer
+    items:
+    - name: Summary
+      uid: sp-Azure_Data_Explorer
+    - name: kusto
+      items:
+      - name: Summary
+        uid: az_kusto
+      - name: attached-database-configuration
+        uid: az_kusto_attached-database-configuration
+        items: []
+      - name: cluster
+        uid: az_kusto_cluster
+        items: []
+      - name: cluster-principal-assignment
+        uid: az_kusto_cluster-principal-assignment
+        items: []
+      - name: database
+        uid: az_kusto_database
+        items: []
+      - name: database-principal-assignment
+        uid: az_kusto_database-principal-assignment
+        items: []
+      - name: data-connection
+        items:
+        - name: Summary
+          uid: az_kusto_data-connection
+        - name: event-grid
+          uid: az_kusto_data-connection_event-grid
+          items: []
+        - name: event-hub
+          uid: az_kusto_data-connection_event-hub
+          items: []
+        - name: iot-hub
+          uid: az_kusto_data-connection_iot-hub
+          items: []
+  - name: Azure Data Factory
+    items:
+    - name: Summary
+      uid: sp-Azure_Data_Factory
+    - name: datafactory
+      items:
+      - name: Summary
+        uid: az_datafactory
+      - name: activity-run
+        uid: az_datafactory_activity-run
+        items: []
+      - name: dataset
+        uid: az_datafactory_dataset
+        items: []
+      - name: factory
+        uid: az_datafactory_factory
+        items: []
+      - name: integration-runtime
+        items:
+        - name: Summary
+          uid: az_datafactory_integration-runtime
+        - name: linked-integration-runtime
+          uid: az_datafactory_integration-runtime_linked-integration-runtime
+          items: []
+        - name: managed
+          uid: az_datafactory_integration-runtime_managed
+          items: []
+        - name: self-hosted
+          uid: az_datafactory_integration-runtime_self-hosted
+          items: []
+      - name: integration-runtime-node
+        uid: az_datafactory_integration-runtime-node
+        items: []
+      - name: linked-service
+        uid: az_datafactory_linked-service
+        items: []
+      - name: pipeline
+        uid: az_datafactory_pipeline
+        items: []
+      - name: pipeline-run
+        uid: az_datafactory_pipeline-run
+        items: []
+      - name: trigger
+        uid: az_datafactory_trigger
+        items: []
+      - name: trigger-run
+        uid: az_datafactory_trigger-run
+        items: []
+  - name: Azure Data Lake Analytics
+    uid: sp-Azure_Data_Lake_Analytics
+    items: []
+  - name: Azure Data Lake Storage
+    uid: sp-Azure_Data_Lake_Storage
+    items: []
+  - name: Azure Data Migration
+    items:
+    - name: Summary
+      uid: sp-Azure_Data_Migration
+    - name: dms
+      items:
+      - name: Summary
+        uid: az_dms
+      - name: project
+        items:
+        - name: Summary
+          uid: az_dms_project
+        - name: task
+          uid: az_dms_project_task
+          items: []
+      - name: task
+        uid: az_dms_task
+        items: []
+  - name: Azure Data Share
+    items:
+    - name: Summary
+      uid: sp-Azure_Data_Share
+    - name: datashare
+      items:
+      - name: Summary
+        uid: az_datashare
+      - name: account
+        uid: az_datashare_account
+        items: []
+      - name: consumer
+        items:
+        - name: Summary
+          uid: az_datashare_consumer
+        - name: dataset-mapping
+          uid: az_datashare_consumer_dataset-mapping
+          items: []
+        - name: invitation
+          uid: az_datashare_consumer_invitation
+          items: []
+        - name: share-subscription
+          items:
+          - name: Summary
+            uid: az_datashare_consumer_share-subscription
+          - name: synchronization
+            uid: az_datashare_consumer_share-subscription_synchronization
+            items: []
+        - name: trigger
+          uid: az_datashare_consumer_trigger
+          items: []
+      - name: dataset
+        uid: az_datashare_dataset
+        items: []
+      - name: invitation
+        uid: az_datashare_invitation
+        items: []
+      - name: provider-share-subscription
+        uid: az_datashare_provider-share-subscription
+        items: []
+      - name: synchronization
+        uid: az_datashare_synchronization
+        items: []
+      - name: synchronization-setting
+        uid: az_datashare_synchronization-setting
+        items: []
+  - name: Azure Database for MariaDB
+    uid: sp-Azure_Database_for_MariaDB
+    items: []
+  - name: Azure Database for MySQL
+    items:
+    - name: Summary
+      uid: sp-Azure_Database_for_MySQL
+    - name: MySQL
+      items:
+      - name: Summary
+        uid: az_mysql
+      - name: flexible-server
+        uid: az_mysql_flexible-server
+        items: []
+  - name: Azure Database for PostgreSQL
+    items:
+    - name: Summary
+      uid: sp-Azure_Database_for_PostgreSQL
+    - name: PostgreSQL
+      items:
+      - name: Summary
+        uid: az_postgres
+      - name: flexible-server
+        uid: az_postgres_flexible-server
+        items: []
+  - name: Azure Databox
+    items:
+    - name: Summary
+      uid: sp-Azure_Databox
+    - name: databox
+      items:
+      - name: Summary
+        uid: az_databox
+      - name: job
+        uid: az_databox_job
+        items: []
+  - name: Azure Databricks
+    items:
+    - name: Summary
+      uid: sp-Azure_Databricks
+    - name: databricks
+      items:
+      - name: Summary
+        uid: az_databricks
       - name: workspace
         items:
         - name: Summary
-          uid: az_ml_workspace
-        - name: private-endpoint
-          uid: az_ml_workspace_private-endpoint
+          uid: az_databricks_workspace
+        - name: vnet-peering
+          uid: az_databricks_workspace_vnet-peering
           items: []
-  - name: Azure Managed Services
-    uid: sp-Azure_Managed_Services
-    items: []
-  - name: Microsoft AI
+  - name: Azure Dedicated HSM
     items:
     - name: Summary
-      uid: sp-Microsoft_AI
-    - name: ai-examples
-      uid: az_ai-examples
+      uid: sp-Azure_Dedicated_HSM
+    - name: dedicated-hsm
+      uid: az_dedicated-hsm
       items: []
-  - name: Microsoft Windows
+  - name: Azure DevOps
     items:
     - name: Summary
-      uid: sp-Microsoft_Windows
-    - name: baremetalinstance
-      uid: az_baremetalinstance
-      items: []
-  - name: Visual Studio
-    items:
-    - name: Summary
-      uid: sp-Visual_Studio
-    - name: codespace
+      uid: sp-Azure_DevOps
+    - name: devops
       items:
       - name: Summary
-        uid: az_codespace
-      - name: location
-        uid: az_codespace_location
+        uid: az_devops
+      - name: admin
+        items:
+        - name: Summary
+          uid: az_devops_admin
+        - name: banner
+          uid: az_devops_admin_banner
+          items: []
+      - name: extension
+        uid: az_devops_extension
         items: []
-      - name: plan
-        uid: az_codespace_plan
+      - name: project
+        uid: az_devops_project
         items: []
-      - name: secret
-        uid: az_codespace_secret
+      - name: security
+        items:
+        - name: Summary
+          uid: az_devops_security
+        - name: group
+          items:
+          - name: Summary
+            uid: az_devops_security_group
+          - name: membership
+            uid: az_devops_security_group_membership
+            items: []
+        - name: permission
+          items:
+          - name: Summary
+            uid: az_devops_security_permission
+          - name: namespace
+            uid: az_devops_security_permission_namespace
+            items: []
+      - name: service-endpoint
+        items:
+        - name: Summary
+          uid: az_devops_service-endpoint
+        - name: azurerm
+          uid: az_devops_service-endpoint_azurerm
+          items: []
+        - name: github
+          uid: az_devops_service-endpoint_github
+          items: []
+      - name: team
+        uid: az_devops_team
+        items: []
+      - name: user
+        uid: az_devops_user
+        items: []
+      - name: wiki
+        items:
+        - name: Summary
+          uid: az_devops_wiki
+        - name: page
+          uid: az_devops_wiki_page
+          items: []
+  - name: Azure DevTest Labs
+    uid: sp-Azure_DevTest_Labs
+    items: []
+  - name: Azure Disk Storage
+    items:
+    - name: Summary
+      uid: sp-Azure_Disk_Storage
+    - name: Managed Disks
+      uid: az_disk
+      items: []
+  - name: Azure Event Grid
+    items:
+    - name: Summary
+      uid: sp-Azure_Event_Grid
+    - name: eventgrid
+      items:
+      - name: Summary
+        uid: az_eventgrid
+      - name: domain
+        items:
+        - name: Summary
+          uid: az_eventgrid_domain
+        - name: key
+          uid: az_eventgrid_domain_key
+          items: []
+        - name: private-endpoint-connection
+          uid: az_eventgrid_domain_private-endpoint-connection
+          items: []
+        - name: private-link-resource
+          uid: az_eventgrid_domain_private-link-resource
+          items: []
+        - name: topic
+          uid: az_eventgrid_domain_topic
+          items: []
+      - name: event-subscription
+        uid: az_eventgrid_event-subscription
+        items: []
+      - name: extension-topic
+        uid: az_eventgrid_extension-topic
+        items: []
+      - name: partner
+        items:
+        - name: Summary
+          uid: az_eventgrid_partner
+        - name: namespace
+          items:
+          - name: Summary
+            uid: az_eventgrid_partner_namespace
+          - name: event-channel
+            uid: az_eventgrid_partner_namespace_event-channel
+            items: []
+          - name: key
+            uid: az_eventgrid_partner_namespace_key
+            items: []
+        - name: registration
+          uid: az_eventgrid_partner_registration
+          items: []
+        - name: topic
+          items:
+          - name: Summary
+            uid: az_eventgrid_partner_topic
+          - name: event-subscription
+            uid: az_eventgrid_partner_topic_event-subscription
+            items: []
+      - name: system-topic
+        items:
+        - name: Summary
+          uid: az_eventgrid_system-topic
+        - name: event-subscription
+          uid: az_eventgrid_system-topic_event-subscription
+          items: []
+      - name: topic
+        items:
+        - name: Summary
+          uid: az_eventgrid_topic
+        - name: key
+          uid: az_eventgrid_topic_key
+          items: []
+        - name: private-endpoint-connection
+          uid: az_eventgrid_topic_private-endpoint-connection
+          items: []
+        - name: private-link-resource
+          uid: az_eventgrid_topic_private-link-resource
+          items: []
+      - name: topic-type
+        uid: az_eventgrid_topic-type
+        items: []
+  - name: Azure Event Hubs
+    uid: sp-Azure_Event_Hubs
+    items: []
+  - name: Azure Functions
+    items:
+    - name: Summary
+      uid: sp-Azure_Functions
+    - name: Functions
+      items:
+      - name: Summary
+        uid: az_functionapp
+      - name: app
+        uid: az_functionapp_app
+        items: []
+  - name: Azure Graph
+    items:
+    - name: Summary
+      uid: sp-Azure_Graph
+    - name: graph
+      items:
+      - name: Summary
+        uid: az_graph
+      - name: shared-query
+        uid: az_graph_shared-query
+        items: []
+  - name: Azure HDInsight
+    items:
+    - name: Summary
+      uid: sp-Azure_HDInsight
+    - name: HDInsight
+      items:
+      - name: Summary
+        uid: az_hdinsight
+      - name: application
+        uid: az_hdinsight_application
+        items: []
+      - name: autoscale
+        items:
+        - name: Summary
+          uid: az_hdinsight_autoscale
+        - name: condition
+          uid: az_hdinsight_autoscale_condition
+          items: []
+      - name: host
+        uid: az_hdinsight_host
+        items: []
+      - name: monitor
+        uid: az_hdinsight_monitor
+        items: []
+      - name: script-action
+        uid: az_hdinsight_script-action
+        items: []
+  - name: Azure HPC Cache
+    items:
+    - name: Summary
+      uid: sp-Azure_HPC_Cache
+    - name: hpc-cache
+      items:
+      - name: Summary
+        uid: az_hpc-cache
+      - name: blob-storage-target
+        uid: az_hpc-cache_blob-storage-target
+        items: []
+      - name: nfs-storage-target
+        uid: az_hpc-cache_nfs-storage-target
+        items: []
+      - name: skus
+        uid: az_hpc-cache_skus
+        items: []
+      - name: storage-target
+        uid: az_hpc-cache_storage-target
+        items: []
+      - name: usage-model
+        uid: az_hpc-cache_usage-model
         items: []
   - name: Azure IoT
     items:
@@ -281,6 +1104,230 @@
           - name: task
             uid: az_iot_product_test_task
             items: []
+  - name: Azure Key Vault
+    items:
+    - name: Summary
+      uid: sp-Azure_Key_Vault
+    - name: Key Vault
+      items:
+      - name: Summary
+        uid: az_keyvault
+      - name: Certificates
+        items:
+        - name: Summary
+          uid: az_keyvault_certificate
+        - name: Contacts
+          uid: az_keyvault_certificate_contact
+          items: []
+        - name: Issuers
+          items:
+          - name: Summary
+            uid: az_keyvault_certificate_issuer
+          - name: Administration
+            uid: az_keyvault_certificate_issuer_admin
+            items: []
+        - name: Pending
+          uid: az_keyvault_certificate_pending
+          items: []
+      - name: Keys
+        uid: az_keyvault_key
+        items: []
+      - name: Secrets
+        uid: az_keyvault_secret
+        items: []
+  - name: Azure Kubernetes
+    items:
+    - name: Summary
+      uid: sp-Azure_Kubernetes
+    - name: k8s-configuration
+      uid: az_k8s-configuration
+      items: []
+  - name: Azure Kubernetes Service
+    items:
+    - name: Summary
+      uid: sp-Azure_Kubernetes_Service
+    - name: aks
+      items:
+      - name: Summary
+        uid: az_aks
+      - name: app
+        uid: az_aks_app
+        items: []
+      - name: maintenanceconfiguration
+        uid: az_aks_maintenanceconfiguration
+        items: []
+      - name: nodepool
+        uid: az_aks_nodepool
+        items: []
+      - name: pod-identity
+        items:
+        - name: Summary
+          uid: az_aks_pod-identity
+        - name: exception
+          uid: az_aks_pod-identity_exception
+          items: []
+    - name: connectedk8s
+      uid: az_connectedk8s
+      items: []
+    - name: k8sconfiguration
+      uid: az_k8sconfiguration
+      items: []
+  - name: Azure Lab Services
+    items:
+    - name: Summary
+      uid: sp-Azure_Lab_Services
+    - name: hack
+      uid: az_hack
+      items: []
+  - name: Azure Logic Apps
+    items:
+    - name: Summary
+      uid: sp-Azure_Logic_Apps
+    - name: logic
+      items:
+      - name: Summary
+        uid: az_logic
+      - name: integration-account
+        uid: az_logic_integration-account
+        items: []
+      - name: workflow
+        uid: az_logic_workflow
+        items: []
+  - name: Azure Machine Learning
+    items:
+    - name: Summary
+      uid: sp-Azure_Machine_Learning
+    - name: ml
+      items:
+      - name: Summary
+        uid: az_ml
+      - name: computetarget
+        items:
+        - name: Summary
+          uid: az_ml_computetarget
+        - name: amlcompute
+          items:
+          - name: Summary
+            uid: az_ml_computetarget_amlcompute
+          - name: identity
+            uid: az_ml_computetarget_amlcompute_identity
+            items: []
+        - name: attach
+          uid: az_ml_computetarget_attach
+          items: []
+        - name: computeinstance
+          uid: az_ml_computetarget_computeinstance
+          items: []
+        - name: create
+          uid: az_ml_computetarget_create
+          items: []
+        - name: update
+          uid: az_ml_computetarget_update
+          items: []
+      - name: dataset
+        uid: az_ml_dataset
+        items: []
+      - name: datastore
+        uid: az_ml_datastore
+        items: []
+      - name: endpoint
+        items:
+        - name: Summary
+          uid: az_ml_endpoint
+        - name: realtime
+          uid: az_ml_endpoint_realtime
+          items: []
+      - name: environment
+        uid: az_ml_environment
+        items: []
+      - name: experiment
+        uid: az_ml_experiment
+        items: []
+      - name: folder
+        uid: az_ml_folder
+        items: []
+      - name: model
+        uid: az_ml_model
+        items: []
+      - name: pipeline
+        uid: az_ml_pipeline
+        items: []
+      - name: run
+        uid: az_ml_run
+        items: []
+      - name: service
+        uid: az_ml_service
+        items: []
+      - name: workspace
+        items:
+        - name: Summary
+          uid: az_ml_workspace
+        - name: private-endpoint
+          uid: az_ml_workspace_private-endpoint
+          items: []
+  - name: Azure Managed Applications
+    items:
+    - name: Summary
+      uid: sp-Azure_Managed_Applications
+    - name: Managed App
+      items:
+      - name: Summary
+        uid: az_managedapp
+      - name: Definition
+        uid: az_managedapp_definition
+        items: []
+  - name: Azure Managed Services
+    uid: sp-Azure_Managed_Services
+    items: []
+  - name: Azure Maps
+    uid: sp-Azure_Maps
+    items: []
+  - name: Azure Media Services
+    uid: sp-Azure_Media_Services
+    items: []
+  - name: Azure Migrate
+    items:
+    - name: Summary
+      uid: sp-Azure_Migrate
+    - name: offazure
+      items:
+      - name: Summary
+        uid: az_offazure
+      - name: hyperv
+        items:
+        - name: Summary
+          uid: az_offazure_hyperv
+        - name: cluster
+          uid: az_offazure_hyperv_cluster
+          items: []
+        - name: host
+          uid: az_offazure_hyperv_host
+          items: []
+        - name: machine
+          uid: az_offazure_hyperv_machine
+          items: []
+        - name: run-as-account
+          uid: az_offazure_hyperv_run-as-account
+          items: []
+        - name: site
+          uid: az_offazure_hyperv_site
+          items: []
+      - name: vmware
+        items:
+        - name: Summary
+          uid: az_offazure_vmware
+        - name: machine
+          uid: az_offazure_vmware_machine
+          items: []
+        - name: run-as-account
+          uid: az_offazure_vmware_run-as-account
+          items: []
+        - name: site
+          uid: az_offazure_vmware_site
+          items: []
+        - name: vcenter
+          uid: az_offazure_vmware_vcenter
+          items: []
   - name: Azure Monitor
     items:
     - name: Summary
@@ -370,366 +1417,28 @@
       - name: scheduled-query
         uid: az_monitor_scheduled-query
         items: []
-  - name: Microsoft Partner Network
+  - name: Azure NetApp Files
     items:
     - name: Summary
-      uid: sp-Microsoft_Partner_Network
-    - name: managementpartner
-      uid: az_managementpartner
-      items: []
-  - name: Azure Stack HCI
-    items:
-    - name: Summary
-      uid: sp-Azure_Stack_HCI
-    - name: stack-hci
+      uid: sp-Azure_NetApp_Files
+    - name: netappfiles
       items:
       - name: Summary
-        uid: az_stack-hci
-      - name: cluster
-        uid: az_stack-hci_cluster
+        uid: az_netappfiles
+      - name: account
+        uid: az_netappfiles_account
         items: []
-  - name: Azure Support
-    items:
-    - name: Summary
-      uid: sp-Azure_Support
-    - name: support
-      items:
-      - name: Summary
-        uid: az_support
-      - name: services
-        items:
-        - name: Summary
-          uid: az_support_services
-        - name: problem-classifications
-          uid: az_support_services_problem-classifications
-          items: []
-      - name: tickets
-        items:
-        - name: Summary
-          uid: az_support_tickets
-        - name: communications
-          uid: az_support_tickets_communications
-          items: []
-  - name: Azure core
-    items:
-    - name: Summary
-      uid: sp-Azure_core
-    - name: Subscriptions
-      items:
-      - name: Summary
-        uid: az_account
-      - name: alias
-        uid: az_account_alias
+      - name: mount-target
+        uid: az_netappfiles_mount-target
         items: []
-      - name: lock
-        uid: az_account_lock
+      - name: pool
+        uid: az_netappfiles_pool
         items: []
-      - name: management-group
-        items:
-        - name: Summary
-          uid: az_account_management-group
-        - name: subscription
-          uid: az_account_management-group_subscription
-          items: []
-      - name: subscription
-        uid: az_account_subscription
+      - name: snapshot
+        uid: az_netappfiles_snapshot
         items: []
-      - name: tenant
-        uid: az_account_tenant
-        items: []
-  - name: Azure Container Registries
-    items:
-    - name: Summary
-      uid: sp-Azure_Container_Registries
-    - name: Container Registry
-      items:
-      - name: Summary
-        uid: az_acr
-      - name: export-pipeline
-        uid: az_acr_export-pipeline
-        items: []
-      - name: import-pipeline
-        uid: az_acr_import-pipeline
-        items: []
-      - name: pipeline-run
-        uid: az_acr_pipeline-run
-        items: []
-  - name: Azure Container Services
-    uid: sp-Azure_Container_Services
-    items: []
-  - name: Azure Active Directory
-    items:
-    - name: Summary
-      uid: sp-Azure_Active_Directory
-    - name: Azure Active Directory
-      items:
-      - name: Summary
-        uid: az_ad
-      - name: Applications
-        items:
-        - name: Summary
-          uid: az_ad_app
-        - name: credential
-          uid: az_ad_app_credential
-          items: []
-        - name: owner
-          uid: az_ad_app_owner
-          items: []
-        - name: permission
-          uid: az_ad_app_permission
-          items: []
-      - name: ds
-        uid: az_ad_ds
-        items: []
-      - name: Groups
-        items:
-        - name: Summary
-          uid: az_ad_group
-        - name: member
-          uid: az_ad_group_member
-          items: []
-        - name: owner
-          uid: az_ad_group_owner
-          items: []
-      - name: signed-in-user
-        uid: az_ad_signed-in-user
-        items: []
-      - name: Service principals
-        items:
-        - name: Summary
-          uid: az_ad_sp
-        - name: credential
-          uid: az_ad_sp_credential
-          items: []
-        - name: owner
-          uid: az_ad_sp_owner
-          items: []
-      - name: Users
-        uid: az_ad_user
-        items: []
-  - name: Azure Advisor
-    uid: sp-Azure_Advisor
-    items: []
-  - name: Azure Kubernetes Service
-    items:
-    - name: Summary
-      uid: sp-Azure_Kubernetes_Service
-    - name: aks
-      items:
-      - name: Summary
-        uid: az_aks
-      - name: app
-        uid: az_aks_app
-        items: []
-      - name: maintenanceconfiguration
-        uid: az_aks_maintenanceconfiguration
-        items: []
-      - name: nodepool
-        uid: az_aks_nodepool
-        items: []
-      - name: pod-identity
-        items:
-        - name: Summary
-          uid: az_aks_pod-identity
-        - name: exception
-          uid: az_aks_pod-identity_exception
-          items: []
-    - name: connectedk8s
-      uid: az_connectedk8s
-      items: []
-    - name: k8sconfiguration
-      uid: az_k8sconfiguration
-      items: []
-  - name: Azure Media Services
-    uid: sp-Azure_Media_Services
-    items: []
-  - name: API Management
-    uid: sp-API_Management
-    items: []
-  - name: Azure App Configuration
-    items:
-    - name: Summary
-      uid: sp-Azure_App_Configuration
-    - name: appconfig
-      items:
-      - name: Summary
-        uid: az_appconfig
-      - name: credential
-        uid: az_appconfig_credential
-        items: []
-      - name: feature
-        items:
-        - name: Summary
-          uid: az_appconfig_feature
-        - name: filter
-          uid: az_appconfig_feature_filter
-          items: []
-      - name: identity
-        uid: az_appconfig_identity
-        items: []
-      - name: kv
-        uid: az_appconfig_kv
-        items: []
-      - name: revision
-        uid: az_appconfig_revision
-        items: []
-  - name: Azure App Service
-    uid: sp-Azure_App_Service
-    items: []
-  - name: Azure Red Hat OpenShift
-    uid: sp-Azure_Red_Hat_OpenShift
-    items: []
-  - name: Azure Artifacts
-    items:
-    - name: Summary
-      uid: sp-Azure_Artifacts
-    - name: artifacts
-      items:
-      - name: Summary
-        uid: az_artifacts
-      - name: universal
-        uid: az_artifacts_universal
-        items: []
-  - name: Azure Backup
-    uid: sp-Azure_Backup
-    items: []
-  - name: Azure Batch
-    items:
-    - name: Summary
-      uid: sp-Azure_Batch
-    - name: Batch
-      items:
-      - name: Summary
-        uid: az_batch
-      - name: file
-        uid: az_batch_file
-        items: []
-      - name: Jobs
-        uid: az_batch_job
-        items: []
-      - name: Pools
-        uid: az_batch_pool
-        items: []
-  - name: Azure Cost Management + Billing
-    items:
-    - name: Summary
-      uid: sp-Azure_Cost_Management_+_Billing
-    - name: costmanagement
-      items:
-      - name: Summary
-        uid: az_costmanagement
-      - name: export
-        uid: az_costmanagement_export
-        items: []
-  - name: Azure Boards
-    items:
-    - name: Summary
-      uid: sp-Azure_Boards
-    - name: boards
-      items:
-      - name: Summary
-        uid: az_boards
-      - name: area
-        items:
-        - name: Summary
-          uid: az_boards_area
-        - name: project
-          uid: az_boards_area_project
-          items: []
-        - name: team
-          uid: az_boards_area_team
-          items: []
-      - name: iteration
-        items:
-        - name: Summary
-          uid: az_boards_iteration
-        - name: project
-          uid: az_boards_iteration_project
-          items: []
-        - name: team
-          uid: az_boards_iteration_team
-          items: []
-      - name: work-item
-        items:
-        - name: Summary
-          uid: az_boards_work-item
-        - name: relation
-          uid: az_boards_work-item_relation
-          items: []
-  - name: Azure Bot Service
-    uid: sp-Azure_Bot_Service
-    items: []
-  - name: Azure CLI
-    items:
-    - name: Summary
-      uid: sp-Azure_CLI
-    - name: Subscriptions
-      items:
-      - name: Summary
-        uid: az_account
-      - name: alias
-        uid: az_account_alias
-        items: []
-      - name: lock
-        uid: az_account_lock
-        items: []
-      - name: management-group
-        items:
-        - name: Summary
-          uid: az_account_management-group
-        - name: subscription
-          uid: az_account_management-group_subscription
-          items: []
-      - name: subscription
-        uid: az_account_subscription
-        items: []
-      - name: tenant
-        uid: az_account_tenant
-        items: []
-    - name: alias
-      uid: az_alias
-      items: []
-    - name: cache
-      uid: az_cache
-      items: []
-    - name: cli-translator
-      items:
-      - name: Summary
-        uid: az_cli-translator
-      - name: arm
-        uid: az_cli-translator_arm
-        items: []
-    - name: Cloud management
-      uid: az_cloud
-      items: []
-    - name: config
-      items:
-      - name: Summary
-        uid: az_config
-      - name: param-persist
-        uid: az_config_param-persist
-        items: []
-    - name: demo
-      uid: az_demo
-      items: []
-    - name: extension
-      uid: az_extension
-      items: []
-    - name: fzf
-      uid: az_fzf
-      items: []
-    - name: local-context
-      uid: az_local-context
-      items: []
-    - name: resource-mover
-      items:
-      - name: Summary
-        uid: az_resource-mover
-      - name: move-collection
-        uid: az_resource-mover_move-collection
-        items: []
-      - name: move-resource
-        uid: az_resource-mover_move-resource
+      - name: volume
+        uid: az_netappfiles_volume
         items: []
   - name: Azure Network
     items:
@@ -1334,603 +2043,46 @@
         - name: provider
           uid: az_peering_service_provider
           items: []
-  - name: Azure cloud services
+  - name: Azure Notification Hubs
     items:
     - name: Summary
-      uid: sp-Azure_cloud_services
-    - name: Cloud management
-      uid: az_cloud
-      items: []
-  - name: Azure Cognitive Service
-    uid: sp-Azure_Cognitive_Service
-    items: []
-  - name: Azure Container Instances
-    items:
-    - name: Summary
-      uid: sp-Azure_Container_Instances
-    - name: Container
+      uid: sp-Azure_Notification_Hubs
+    - name: notification-hub
       items:
       - name: Summary
-        uid: az_container
-      - name: app
-        uid: az_container_app
+        uid: az_notification-hub
+      - name: authorization-rule
+        uid: az_notification-hub_authorization-rule
         items: []
-  - name: Azure Cosmos DB
-    items:
-    - name: Summary
-      uid: sp-Azure_Cosmos_DB
-    - name: Cosmos DB
-      items:
-      - name: Summary
-        uid: az_cosmosdb
-      - name: mongodb
+      - name: credential
         items:
         - name: Summary
-          uid: az_cosmosdb_mongodb
-        - name: restorable-collection
-          uid: az_cosmosdb_mongodb_restorable-collection
+          uid: az_notification-hub_credential
+        - name: adm
+          uid: az_notification-hub_credential_adm
           items: []
-        - name: restorable-database
-          uid: az_cosmosdb_mongodb_restorable-database
+        - name: apns
+          uid: az_notification-hub_credential_apns
           items: []
-        - name: restorable-resource
-          uid: az_cosmosdb_mongodb_restorable-resource
+        - name: baidu
+          uid: az_notification-hub_credential_baidu
           items: []
-      - name: restorable-database-account
-        uid: az_cosmosdb_restorable-database-account
-        items: []
-      - name: sql
+        - name: gcm
+          uid: az_notification-hub_credential_gcm
+          items: []
+        - name: mpns
+          uid: az_notification-hub_credential_mpns
+          items: []
+        - name: wns
+          uid: az_notification-hub_credential_wns
+          items: []
+      - name: namespace
         items:
         - name: Summary
-          uid: az_cosmosdb_sql
-        - name: restorable-container
-          uid: az_cosmosdb_sql_restorable-container
+          uid: az_notification-hub_namespace
+        - name: authorization-rule
+          uid: az_notification-hub_namespace_authorization-rule
           items: []
-        - name: restorable-database
-          uid: az_cosmosdb_sql_restorable-database
-          items: []
-        - name: restorable-resource
-          uid: az_cosmosdb_sql_restorable-resource
-          items: []
-        - name: role
-          items:
-          - name: Summary
-            uid: az_cosmosdb_sql_role
-          - name: assignment
-            uid: az_cosmosdb_sql_role_assignment
-            items: []
-          - name: definition
-            uid: az_cosmosdb_sql_role_definition
-            items: []
-    - name: managed-cassandra
-      items:
-      - name: Summary
-        uid: az_managed-cassandra
-      - name: cluster
-        uid: az_managed-cassandra_cluster
-        items: []
-      - name: datacenter
-        uid: az_managed-cassandra_datacenter
-        items: []
-  - name: Azure Stack Edge
-    uid: sp-Azure_Stack_Edge
-    items: []
-  - name: Azure Resource Manager
-    items:
-    - name: Summary
-      uid: sp-Azure_Resource_Manager
-    - name: deployment
-      items:
-      - name: Summary
-        uid: az_deployment
-      - name: group
-        uid: az_deployment_group
-        items: []
-      - name: operation
-        items:
-        - name: Summary
-          uid: az_deployment_operation
-        - name: group
-          uid: az_deployment_operation_group
-          items: []
-    - name: deployment-scripts
-      uid: az_deployment-scripts
-      items: []
-    - name: Resource groups
-      items:
-      - name: Summary
-        uid: az_group
-      - name: Deployments
-        items:
-        - name: Summary
-          uid: az_group_deployment
-        - name: Operations
-          uid: az_group_deployment_operation
-          items: []
-      - name: lock
-        uid: az_group_lock
-        items: []
-    - name: Locks
-      uid: az_lock
-      items: []
-    - name: Resource providers
-      items:
-      - name: Summary
-        uid: az_provider
-      - name: operation
-        uid: az_provider_operation
-        items: []
-    - name: Resources
-      items:
-      - name: Summary
-        uid: az_resource
-      - name: Links
-        uid: az_resource_link
-        items: []
-      - name: lock
-        uid: az_resource_lock
-        items: []
-    - name: Resource tags
-      uid: az_tag
-      items: []
-  - name: Azure DevOps
-    items:
-    - name: Summary
-      uid: sp-Azure_DevOps
-    - name: devops
-      items:
-      - name: Summary
-        uid: az_devops
-      - name: admin
-        items:
-        - name: Summary
-          uid: az_devops_admin
-        - name: banner
-          uid: az_devops_admin_banner
-          items: []
-      - name: extension
-        uid: az_devops_extension
-        items: []
-      - name: project
-        uid: az_devops_project
-        items: []
-      - name: security
-        items:
-        - name: Summary
-          uid: az_devops_security
-        - name: group
-          items:
-          - name: Summary
-            uid: az_devops_security_group
-          - name: membership
-            uid: az_devops_security_group_membership
-            items: []
-        - name: permission
-          items:
-          - name: Summary
-            uid: az_devops_security_permission
-          - name: namespace
-            uid: az_devops_security_permission_namespace
-            items: []
-      - name: service-endpoint
-        items:
-        - name: Summary
-          uid: az_devops_service-endpoint
-        - name: azurerm
-          uid: az_devops_service-endpoint_azurerm
-          items: []
-        - name: github
-          uid: az_devops_service-endpoint_github
-          items: []
-      - name: team
-        uid: az_devops_team
-        items: []
-      - name: user
-        uid: az_devops_user
-        items: []
-      - name: wiki
-        items:
-        - name: Summary
-          uid: az_devops_wiki
-        - name: page
-          uid: az_devops_wiki_page
-          items: []
-  - name: Azure Disk Storage
-    items:
-    - name: Summary
-      uid: sp-Azure_Disk_Storage
-    - name: Managed Disks
-      uid: az_disk
-      items: []
-  - name: Azure Data Lake Analytics
-    uid: sp-Azure_Data_Lake_Analytics
-    items: []
-  - name: Azure Data Lake Storage
-    uid: sp-Azure_Data_Lake_Storage
-    items: []
-  - name: Azure Data Migration
-    items:
-    - name: Summary
-      uid: sp-Azure_Data_Migration
-    - name: dms
-      items:
-      - name: Summary
-        uid: az_dms
-      - name: project
-        items:
-        - name: Summary
-          uid: az_dms_project
-        - name: task
-          uid: az_dms_project_task
-          items: []
-      - name: task
-        uid: az_dms_task
-        items: []
-  - name: Azure Event Grid
-    items:
-    - name: Summary
-      uid: sp-Azure_Event_Grid
-    - name: eventgrid
-      items:
-      - name: Summary
-        uid: az_eventgrid
-      - name: domain
-        items:
-        - name: Summary
-          uid: az_eventgrid_domain
-        - name: key
-          uid: az_eventgrid_domain_key
-          items: []
-        - name: private-endpoint-connection
-          uid: az_eventgrid_domain_private-endpoint-connection
-          items: []
-        - name: private-link-resource
-          uid: az_eventgrid_domain_private-link-resource
-          items: []
-        - name: topic
-          uid: az_eventgrid_domain_topic
-          items: []
-      - name: event-subscription
-        uid: az_eventgrid_event-subscription
-        items: []
-      - name: extension-topic
-        uid: az_eventgrid_extension-topic
-        items: []
-      - name: partner
-        items:
-        - name: Summary
-          uid: az_eventgrid_partner
-        - name: namespace
-          items:
-          - name: Summary
-            uid: az_eventgrid_partner_namespace
-          - name: event-channel
-            uid: az_eventgrid_partner_namespace_event-channel
-            items: []
-          - name: key
-            uid: az_eventgrid_partner_namespace_key
-            items: []
-        - name: registration
-          uid: az_eventgrid_partner_registration
-          items: []
-        - name: topic
-          items:
-          - name: Summary
-            uid: az_eventgrid_partner_topic
-          - name: event-subscription
-            uid: az_eventgrid_partner_topic_event-subscription
-            items: []
-      - name: system-topic
-        items:
-        - name: Summary
-          uid: az_eventgrid_system-topic
-        - name: event-subscription
-          uid: az_eventgrid_system-topic_event-subscription
-          items: []
-      - name: topic
-        items:
-        - name: Summary
-          uid: az_eventgrid_topic
-        - name: key
-          uid: az_eventgrid_topic_key
-          items: []
-        - name: private-endpoint-connection
-          uid: az_eventgrid_topic_private-endpoint-connection
-          items: []
-        - name: private-link-resource
-          uid: az_eventgrid_topic_private-link-resource
-          items: []
-      - name: topic-type
-        uid: az_eventgrid_topic-type
-        items: []
-  - name: Azure Event Hubs
-    uid: sp-Azure_Event_Hubs
-    items: []
-  - name: Azure resource providers
-    uid: sp-Azure_resource_providers
-    items: []
-  - name: Azure Application Insights
-    uid: sp-Azure_Application_Insights
-    items: []
-  - name: Azure Functions
-    items:
-    - name: Summary
-      uid: sp-Azure_Functions
-    - name: Functions
-      items:
-      - name: Summary
-        uid: az_functionapp
-      - name: app
-        uid: az_functionapp_app
-        items: []
-  - name: Azure HDInsight
-    items:
-    - name: Summary
-      uid: sp-Azure_HDInsight
-    - name: HDInsight
-      items:
-      - name: Summary
-        uid: az_hdinsight
-      - name: application
-        uid: az_hdinsight_application
-        items: []
-      - name: autoscale
-        items:
-        - name: Summary
-          uid: az_hdinsight_autoscale
-        - name: condition
-          uid: az_hdinsight_autoscale_condition
-          items: []
-      - name: host
-        uid: az_hdinsight_host
-        items: []
-      - name: monitor
-        uid: az_hdinsight_monitor
-        items: []
-      - name: script-action
-        uid: az_hdinsight_script-action
-        items: []
-  - name: Azure Virtual Machines
-    items:
-    - name: Summary
-      uid: sp-Azure_Virtual_Machines
-    - name: desktopvirtualization
-      items:
-      - name: Summary
-        uid: az_desktopvirtualization
-      - name: applicationgroup
-        uid: az_desktopvirtualization_applicationgroup
-        items: []
-      - name: hostpool
-        uid: az_desktopvirtualization_hostpool
-        items: []
-      - name: workspace
-        uid: az_desktopvirtualization_workspace
-        items: []
-    - name: VM Images
-      items:
-      - name: Summary
-        uid: az_image
-      - name: builder
-        items:
-        - name: Summary
-          uid: az_image_builder
-        - name: customizer
-          uid: az_image_builder_customizer
-          items: []
-        - name: output
-          uid: az_image_builder_output
-          items: []
-    - name: maintenance
-      items:
-      - name: Summary
-        uid: az_maintenance
-      - name: applyupdate
-        uid: az_maintenance_applyupdate
-        items: []
-      - name: assignment
-        uid: az_maintenance_assignment
-        items: []
-      - name: configuration
-        uid: az_maintenance_configuration
-        items: []
-      - name: public-configuration
-        uid: az_maintenance_public-configuration
-        items: []
-      - name: update
-        uid: az_maintenance_update
-        items: []
-    - name: ssh
-      uid: az_ssh
-      items: []
-    - name: sshkey
-      uid: az_sshkey
-      items: []
-    - name: Virtual Machines
-      items:
-      - name: Summary
-        uid: az_vm
-      - name: aem
-        uid: az_vm_aem
-        items: []
-      - name: Availability sets
-        uid: az_vm_availability-set
-        items: []
-      - name: Boot diagnostics
-        uid: az_vm_boot-diagnostics
-        items: []
-      - name: Diagnostics
-        uid: az_vm_diagnostics
-        items: []
-      - name: Storage disks
-        uid: az_vm_disk
-        items: []
-      - name: Encryption
-        uid: az_vm_encryption
-        items: []
-      - name: Extensions
-        items:
-        - name: Summary
-          uid: az_vm_extension
-        - name: Extension images
-          uid: az_vm_extension_image
-          items: []
-      - name: identity
-        uid: az_vm_identity
-        items: []
-      - name: Images
-        items:
-        - name: Summary
-          uid: az_vm_image
-        - name: terms
-          uid: az_vm_image_terms
-          items: []
-      - name: monitor
-        items:
-        - name: Summary
-          uid: az_vm_monitor
-        - name: log
-          uid: az_vm_monitor_log
-          items: []
-      - name: Network interfaces
-        uid: az_vm_nic
-        items: []
-      - name: repair
-        uid: az_vm_repair
-        items: []
-      - name: run-command
-        uid: az_vm_run-command
-        items: []
-      - name: secret
-        uid: az_vm_secret
-        items: []
-      - name: Unmanaged disks
-        uid: az_vm_unmanaged-disk
-        items: []
-      - name: Users
-        uid: az_vm_user
-        items: []
-  - name: Azure Key Vault
-    items:
-    - name: Summary
-      uid: sp-Azure_Key_Vault
-    - name: Key Vault
-      items:
-      - name: Summary
-        uid: az_keyvault
-      - name: Certificates
-        items:
-        - name: Summary
-          uid: az_keyvault_certificate
-        - name: Contacts
-          uid: az_keyvault_certificate_contact
-          items: []
-        - name: Issuers
-          items:
-          - name: Summary
-            uid: az_keyvault_certificate_issuer
-          - name: Administration
-            uid: az_keyvault_certificate_issuer_admin
-            items: []
-        - name: Pending
-          uid: az_keyvault_certificate_pending
-          items: []
-      - name: Keys
-        uid: az_keyvault_key
-        items: []
-      - name: Secrets
-        uid: az_keyvault_secret
-        items: []
-  - name: Azure Data Explorer
-    items:
-    - name: Summary
-      uid: sp-Azure_Data_Explorer
-    - name: kusto
-      items:
-      - name: Summary
-        uid: az_kusto
-      - name: attached-database-configuration
-        uid: az_kusto_attached-database-configuration
-        items: []
-      - name: cluster
-        uid: az_kusto_cluster
-        items: []
-      - name: cluster-principal-assignment
-        uid: az_kusto_cluster-principal-assignment
-        items: []
-      - name: database
-        uid: az_kusto_database
-        items: []
-      - name: database-principal-assignment
-        uid: az_kusto_database-principal-assignment
-        items: []
-      - name: data-connection
-        items:
-        - name: Summary
-          uid: az_kusto_data-connection
-        - name: event-grid
-          uid: az_kusto_data-connection_event-grid
-          items: []
-        - name: event-hub
-          uid: az_kusto_data-connection_event-hub
-          items: []
-        - name: iot-hub
-          uid: az_kusto_data-connection_iot-hub
-          items: []
-  - name: Azure DevTest Labs
-    uid: sp-Azure_DevTest_Labs
-    items: []
-  - name: Azure Managed Applications
-    items:
-    - name: Summary
-      uid: sp-Azure_Managed_Applications
-    - name: Managed App
-      items:
-      - name: Summary
-        uid: az_managedapp
-      - name: Definition
-        uid: az_managedapp_definition
-        items: []
-  - name: Azure Maps
-    uid: sp-Azure_Maps
-    items: []
-  - name: Azure Database for MariaDB
-    uid: sp-Azure_Database_for_MariaDB
-    items: []
-  - name: Azure Database for MySQL
-    items:
-    - name: Summary
-      uid: sp-Azure_Database_for_MySQL
-    - name: MySQL
-      items:
-      - name: Summary
-        uid: az_mysql
-      - name: flexible-server
-        uid: az_mysql_flexible-server
-        items: []
-  - name: Azure NetApp Files
-    items:
-    - name: Summary
-      uid: sp-Azure_NetApp_Files
-    - name: netappfiles
-      items:
-      - name: Summary
-        uid: az_netappfiles
-      - name: account
-        uid: az_netappfiles_account
-        items: []
-      - name: mount-target
-        uid: az_netappfiles_mount-target
-        items: []
-      - name: pool
-        uid: az_netappfiles_pool
-        items: []
-      - name: snapshot
-        uid: az_netappfiles_snapshot
-        items: []
-      - name: volume
-        uid: az_netappfiles_volume
-        items: []
   - name: Azure Pipelines
     items:
     - name: Summary
@@ -2018,19 +2170,62 @@
       - name: Definitions
         uid: az_policy_definition
         items: []
-  - name: Azure Database for PostgreSQL
+  - name: Azure portal
     items:
     - name: Summary
-      uid: sp-Azure_Database_for_PostgreSQL
-    - name: PostgreSQL
+      uid: sp-Azure_portal
+    - name: portal
       items:
       - name: Summary
-        uid: az_postgres
-      - name: flexible-server
-        uid: az_postgres_flexible-server
+        uid: az_portal
+      - name: dashboard
+        uid: az_portal_dashboard
         items: []
-  - name: Azure Cache for Redis
-    uid: sp-Azure_Cache_for_Redis
+  - name: Azure Providers
+    items:
+    - name: Summary
+      uid: sp-Azure_Providers
+    - name: providerhub
+      items:
+      - name: Summary
+        uid: az_providerhub
+      - name: custom-rollout
+        uid: az_providerhub_custom-rollout
+        items: []
+      - name: default-rollout
+        uid: az_providerhub_default-rollout
+        items: []
+      - name: manifest
+        uid: az_providerhub_manifest
+        items: []
+      - name: provider-registration
+        uid: az_providerhub_provider-registration
+        items: []
+      - name: resource-type-registration
+        uid: az_providerhub_resource-type-registration
+        items: []
+  - name: Azure Quantum
+    items:
+    - name: Summary
+      uid: sp-Azure_Quantum
+    - name: quantum
+      items:
+      - name: Summary
+        uid: az_quantum
+      - name: job
+        uid: az_quantum_job
+        items: []
+      - name: offerings
+        uid: az_quantum_offerings
+        items: []
+      - name: target
+        uid: az_quantum_target
+        items: []
+      - name: workspace
+        uid: az_quantum_workspace
+        items: []
+  - name: Azure Red Hat OpenShift
+    uid: sp-Azure_Red_Hat_OpenShift
     items: []
   - name: Azure Relay
     uid: sp-Azure_Relay
@@ -2093,6 +2288,67 @@
   - name: Azure Reservations
     uid: sp-Azure_Reservations
     items: []
+  - name: Azure Resource Manager
+    items:
+    - name: Summary
+      uid: sp-Azure_Resource_Manager
+    - name: deployment
+      items:
+      - name: Summary
+        uid: az_deployment
+      - name: group
+        uid: az_deployment_group
+        items: []
+      - name: operation
+        items:
+        - name: Summary
+          uid: az_deployment_operation
+        - name: group
+          uid: az_deployment_operation_group
+          items: []
+    - name: deployment-scripts
+      uid: az_deployment-scripts
+      items: []
+    - name: Resource groups
+      items:
+      - name: Summary
+        uid: az_group
+      - name: Deployments
+        items:
+        - name: Summary
+          uid: az_group_deployment
+        - name: Operations
+          uid: az_group_deployment_operation
+          items: []
+      - name: lock
+        uid: az_group_lock
+        items: []
+    - name: Locks
+      uid: az_lock
+      items: []
+    - name: Resource providers
+      items:
+      - name: Summary
+        uid: az_provider
+      - name: operation
+        uid: az_provider_operation
+        items: []
+    - name: Resources
+      items:
+      - name: Summary
+        uid: az_resource
+      - name: Links
+        uid: az_resource_link
+        items: []
+      - name: lock
+        uid: az_resource_lock
+        items: []
+    - name: Resource tags
+      uid: az_tag
+      items: []
+  - name: Azure resource providers
+    uid: sp-Azure_resource_providers
+    items: []
   - name: Azure role-based access Control
     items:
     - name: Summary
@@ -2107,9 +2363,6 @@
       - name: Definitions
         uid: az_role_definition
         items: []
-  - name: Azure Cognitive Search
-    uid: sp-Azure_Cognitive_Search
-    items: []
   - name: Azure Security Center
     items:
     - name: Summary
@@ -2226,15 +2479,174 @@
       - name: workspace-setting
         uid: az_security_workspace-setting
         items: []
+  - name: Azure Sentinel
+    items:
+    - name: Summary
+      uid: sp-Azure_Sentinel
+    - name: sentinel
+      items:
+      - name: Summary
+        uid: az_sentinel
+      - name: action
+        uid: az_sentinel_action
+        items: []
+      - name: alert-rule
+        uid: az_sentinel_alert-rule
+        items: []
+      - name: alert-rule-template
+        uid: az_sentinel_alert-rule-template
+        items: []
+      - name: bookmark
+        uid: az_sentinel_bookmark
+        items: []
+      - name: data-connector
+        uid: az_sentinel_data-connector
+        items: []
+      - name: incident
+        uid: az_sentinel_incident
+        items: []
+      - name: incident-comment
+        uid: az_sentinel_incident-comment
+        items: []
   - name: Azure Service Bus Messaging
     uid: sp-Azure_Service_Bus_Messaging
     items: []
   - name: Azure Service Fabric
     uid: sp-Azure_Service_Fabric
     items: []
+  - name: Azure Service Fabric Mesh
+    items:
+    - name: Summary
+      uid: sp-Azure_Service_Fabric_Mesh
+    - name: mesh
+      items:
+      - name: Summary
+        uid: az_mesh
+      - name: app
+        uid: az_mesh_app
+        items: []
+      - name: code-package-log
+        uid: az_mesh_code-package-log
+        items: []
+      - name: deployment
+        uid: az_mesh_deployment
+        items: []
+      - name: gateway
+        uid: az_mesh_gateway
+        items: []
+      - name: generate
+        uid: az_mesh_generate
+        items: []
+      - name: network
+        uid: az_mesh_network
+        items: []
+      - name: secret
+        uid: az_mesh_secret
+        items: []
+      - name: secretvalue
+        uid: az_mesh_secretvalue
+        items: []
+      - name: service
+        uid: az_mesh_service
+        items: []
+      - name: service-replica
+        uid: az_mesh_service-replica
+        items: []
+      - name: volume
+        uid: az_mesh_volume
+        items: []
   - name: Azure SignalR
     uid: sp-Azure_SignalR
     items: []
+  - name: Azure Spatial Anchors
+    items:
+    - name: Summary
+      uid: sp-Azure_Spatial_Anchors
+    - name: spatial-anchors-account
+      items:
+      - name: Summary
+        uid: az_spatial-anchors-account
+      - name: key
+        uid: az_spatial-anchors-account_key
+        items: []
+  - name: Azure Spring Cloud
+    items:
+    - name: Summary
+      uid: sp-Azure_Spring_Cloud
+    - name: spring-cloud
+      items:
+      - name: Summary
+        uid: az_spring-cloud
+      - name: app
+        items:
+        - name: Summary
+          uid: az_spring-cloud_app
+        - name: binding
+          items:
+          - name: Summary
+            uid: az_spring-cloud_app_binding
+          - name: cosmos
+            uid: az_spring-cloud_app_binding_cosmos
+            items: []
+          - name: mysql
+            uid: az_spring-cloud_app_binding_mysql
+            items: []
+          - name: redis
+            uid: az_spring-cloud_app_binding_redis
+            items: []
+        - name: custom-domain
+          uid: az_spring-cloud_app_custom-domain
+          items: []
+        - name: deployment
+          uid: az_spring-cloud_app_deployment
+          items: []
+        - name: identity
+          uid: az_spring-cloud_app_identity
+          items: []
+        - name: log
+          uid: az_spring-cloud_app_log
+          items: []
+      - name: app-insights
+        uid: az_spring-cloud_app-insights
+        items: []
+      - name: certificate
+        uid: az_spring-cloud_certificate
+        items: []
+      - name: config-server
+        items:
+        - name: Summary
+          uid: az_spring-cloud_config-server
+        - name: git
+          items:
+          - name: Summary
+            uid: az_spring-cloud_config-server_git
+          - name: repo
+            uid: az_spring-cloud_config-server_git_repo
+            items: []
+      - name: test-endpoint
+        uid: az_spring-cloud_test-endpoint
+        items: []
+  - name: Azure SQL Server
+    items:
+    - name: Summary
+      uid: sp-Azure_SQL_Server
+    - name: SQL
+      uid: az_sql
+      items: []
+  - name: Azure Stack Edge
+    uid: sp-Azure_Stack_Edge
+    items: []
+  - name: Azure Stack HCI
+    items:
+    - name: Summary
+      uid: sp-Azure_Stack_HCI
+    - name: stack-hci
+      items:
+      - name: Summary
+        uid: az_stack-hci
+      - name: cluster
+        uid: az_stack-hci_cluster
+        items: []
   - name: Azure Storage
     items:
     - name: Summary
@@ -2410,30 +2822,54 @@
         - name: server-endpoint
           uid: az_storagesync_sync-group_server-endpoint
           items: []
-  - name: Azure SQL Server
+  - name: Azure Stream Analytics
     items:
     - name: Summary
-      uid: sp-Azure_SQL_Server
-    - name: SQL
-      uid: az_sql
-      items: []
-  - name: Azure Web Apps
-    items:
-    - name: Summary
-      uid: sp-Azure_Web_Apps
-    - name: Web Apps
+      uid: sp-Azure_Stream_Analytics
+    - name: stream-analytics
       items:
       - name: Summary
-        uid: az_webapp
-      - name: container
-        uid: az_webapp_container
+        uid: az_stream-analytics
+      - name: function
+        uid: az_stream-analytics_function
         items: []
-      - name: remote-connection
-        uid: az_webapp_remote-connection
+      - name: input
+        uid: az_stream-analytics_input
         items: []
-      - name: scan
-        uid: az_webapp_scan
+      - name: job
+        uid: az_stream-analytics_job
         items: []
+      - name: output
+        uid: az_stream-analytics_output
+        items: []
+      - name: quota
+        uid: az_stream-analytics_quota
+        items: []
+      - name: transformation
+        uid: az_stream-analytics_transformation
+        items: []
+  - name: Azure Support
+    items:
+    - name: Summary
+      uid: sp-Azure_Support
+    - name: support
+      items:
+      - name: Summary
+        uid: az_support
+      - name: services
+        items:
+        - name: Summary
+          uid: az_support_services
+        - name: problem-classifications
+          uid: az_support_services_problem-classifications
+          items: []
+      - name: tickets
+        items:
+        - name: Summary
+          uid: az_support_tickets
+        - name: communications
+          uid: az_support_tickets_communications
+          items: []
   - name: Azure Synapse Analytics
     items:
     - name: Summary
@@ -2544,6 +2980,40 @@
         - name: managed-identity
           uid: az_synapse_workspace_managed-identity
           items: []
+  - name: Azure Time Series Insights
+    items:
+    - name: Summary
+      uid: sp-Azure_Time_Series_Insights
+    - name: tsi
+      items:
+      - name: Summary
+        uid: az_tsi
+      - name: access-policy
+        uid: az_tsi_access-policy
+        items: []
+      - name: environment
+        items:
+        - name: Summary
+          uid: az_tsi_environment
+        - name: gen1
+          uid: az_tsi_environment_gen1
+          items: []
+        - name: gen2
+          uid: az_tsi_environment_gen2
+          items: []
+      - name: event-source
+        items:
+        - name: Summary
+          uid: az_tsi_event-source
+        - name: eventhub
+          uid: az_tsi_event-source_eventhub
+          items: []
+        - name: iothub
+          uid: az_tsi_event-source_iothub
+          items: []
+      - name: reference-data-set
+        uid: az_tsi_reference-data-set
+        items: []
   - name: Azure Virtual Machine scale sets
     items:
     - name: Summary
@@ -2577,105 +3047,125 @@
       - name: rolling-upgrade
         uid: az_vmss_rolling-upgrade
         items: []
-  - name: Azure Attestation
+  - name: Azure Virtual Machines
     items:
     - name: Summary
-      uid: sp-Azure_Attestation
-    - name: attestation
+      uid: sp-Azure_Virtual_Machines
+    - name: desktopvirtualization
       items:
       - name: Summary
-        uid: az_attestation
-      - name: policy
-        uid: az_attestation_policy
+        uid: az_desktopvirtualization
+      - name: applicationgroup
+        uid: az_desktopvirtualization_applicationgroup
         items: []
-      - name: signer
-        uid: az_attestation_signer
+      - name: hostpool
+        uid: az_desktopvirtualization_hostpool
         items: []
-  - name: Azure Automation
-    items:
-    - name: Summary
-      uid: sp-Azure_Automation
-    - name: automation
+      - name: workspace
+        uid: az_desktopvirtualization_workspace
+        items: []
+    - name: VM Images
       items:
       - name: Summary
-        uid: az_automation
-      - name: account
-        uid: az_automation_account
-        items: []
-      - name: job
-        uid: az_automation_job
-        items: []
-      - name: runbook
-        uid: az_automation_runbook
-        items: []
-  - name: Azure Blockchain
-    items:
-    - name: Summary
-      uid: sp-Azure_Blockchain
-    - name: blockchain
-      items:
-      - name: Summary
-        uid: az_blockchain
-      - name: consortium
-        uid: az_blockchain_consortium
-        items: []
-      - name: member
-        uid: az_blockchain_member
-        items: []
-      - name: transaction-node
-        uid: az_blockchain_transaction-node
-        items: []
-  - name: Azure Blueprint
-    items:
-    - name: Summary
-      uid: sp-Azure_Blueprint
-    - name: blueprint
-      items:
-      - name: Summary
-        uid: az_blueprint
-      - name: artifact
+        uid: az_image
+      - name: builder
         items:
         - name: Summary
-          uid: az_blueprint_artifact
-        - name: policy
-          uid: az_blueprint_artifact_policy
+          uid: az_image_builder
+        - name: customizer
+          uid: az_image_builder_customizer
           items: []
-        - name: role
-          uid: az_blueprint_artifact_role
+        - name: output
+          uid: az_image_builder_output
           items: []
-        - name: template
-          uid: az_blueprint_artifact_template
-          items: []
+    - name: maintenance
+      items:
+      - name: Summary
+        uid: az_maintenance
+      - name: applyupdate
+        uid: az_maintenance_applyupdate
+        items: []
       - name: assignment
-        uid: az_blueprint_assignment
+        uid: az_maintenance_assignment
         items: []
-      - name: resource-group
-        uid: az_blueprint_resource-group
+      - name: configuration
+        uid: az_maintenance_configuration
         items: []
-      - name: version
-        items:
-        - name: Summary
-          uid: az_blueprint_version
-        - name: artifact
-          uid: az_blueprint_version_artifact
-          items: []
-  - name: Azure Communication Service
-    items:
-    - name: Summary
-      uid: sp-Azure_Communication_Service
-    - name: communication
-      uid: az_communication
+      - name: public-configuration
+        uid: az_maintenance_public-configuration
+        items: []
+      - name: update
+        uid: az_maintenance_update
+        items: []
+    - name: ssh
+      uid: az_ssh
       items: []
-  - name: Azure Arc
-    items:
-    - name: Summary
-      uid: sp-Azure_Arc
-    - name: connectedmachine
+    - name: sshkey
+      uid: az_sshkey
+      items: []
+    - name: Virtual Machines
       items:
       - name: Summary
-        uid: az_connectedmachine
-      - name: extension
-        uid: az_connectedmachine_extension
+        uid: az_vm
+      - name: aem
+        uid: az_vm_aem
+        items: []
+      - name: Availability sets
+        uid: az_vm_availability-set
+        items: []
+      - name: Boot diagnostics
+        uid: az_vm_boot-diagnostics
+        items: []
+      - name: Diagnostics
+        uid: az_vm_diagnostics
+        items: []
+      - name: Storage disks
+        uid: az_vm_disk
+        items: []
+      - name: Encryption
+        uid: az_vm_encryption
+        items: []
+      - name: Extensions
+        items:
+        - name: Summary
+          uid: az_vm_extension
+        - name: Extension images
+          uid: az_vm_extension_image
+          items: []
+      - name: identity
+        uid: az_vm_identity
+        items: []
+      - name: Images
+        items:
+        - name: Summary
+          uid: az_vm_image
+        - name: terms
+          uid: az_vm_image_terms
+          items: []
+      - name: monitor
+        items:
+        - name: Summary
+          uid: az_vm_monitor
+        - name: log
+          uid: az_vm_monitor_log
+          items: []
+      - name: Network interfaces
+        uid: az_vm_nic
+        items: []
+      - name: repair
+        uid: az_vm_repair
+        items: []
+      - name: run-command
+        uid: az_vm_run-command
+        items: []
+      - name: secret
+        uid: az_vm_secret
+        items: []
+      - name: Unmanaged disks
+        uid: az_vm_unmanaged-disk
+        items: []
+      - name: Users
+        uid: az_vm_user
         items: []
   - name: Azure VMWare Solution
     items:
@@ -2729,162 +3219,55 @@
       - name: private-cloud
         uid: az_vmware_private-cloud
         items: []
-  - name: Azure Custom Providers
+  - name: Azure Web Apps
     items:
     - name: Summary
-      uid: sp-Azure_Custom_Providers
-    - name: custom-providers
+      uid: sp-Azure_Web_Apps
+    - name: Web Apps
       items:
       - name: Summary
-        uid: az_custom-providers
-      - name: resource-provider
-        uid: az_custom-providers_resource-provider
+        uid: az_webapp
+      - name: container
+        uid: az_webapp_container
         items: []
-  - name: Azure Databox
+      - name: remote-connection
+        uid: az_webapp_remote-connection
+        items: []
+      - name: scan
+        uid: az_webapp_scan
+        items: []
+  - name: Microsoft AI
     items:
     - name: Summary
-      uid: sp-Azure_Databox
-    - name: databox
-      items:
-      - name: Summary
-        uid: az_databox
-      - name: job
-        uid: az_databox_job
-        items: []
-  - name: Azure Databricks
-    items:
-    - name: Summary
-      uid: sp-Azure_Databricks
-    - name: databricks
-      items:
-      - name: Summary
-        uid: az_databricks
-      - name: workspace
-        items:
-        - name: Summary
-          uid: az_databricks_workspace
-        - name: vnet-peering
-          uid: az_databricks_workspace_vnet-peering
-          items: []
-  - name: Azure Data Factory
-    items:
-    - name: Summary
-      uid: sp-Azure_Data_Factory
-    - name: datafactory
-      items:
-      - name: Summary
-        uid: az_datafactory
-      - name: activity-run
-        uid: az_datafactory_activity-run
-        items: []
-      - name: dataset
-        uid: az_datafactory_dataset
-        items: []
-      - name: factory
-        uid: az_datafactory_factory
-        items: []
-      - name: integration-runtime
-        items:
-        - name: Summary
-          uid: az_datafactory_integration-runtime
-        - name: linked-integration-runtime
-          uid: az_datafactory_integration-runtime_linked-integration-runtime
-          items: []
-        - name: managed
-          uid: az_datafactory_integration-runtime_managed
-          items: []
-        - name: self-hosted
-          uid: az_datafactory_integration-runtime_self-hosted
-          items: []
-      - name: integration-runtime-node
-        uid: az_datafactory_integration-runtime-node
-        items: []
-      - name: linked-service
-        uid: az_datafactory_linked-service
-        items: []
-      - name: pipeline
-        uid: az_datafactory_pipeline
-        items: []
-      - name: pipeline-run
-        uid: az_datafactory_pipeline-run
-        items: []
-      - name: trigger
-        uid: az_datafactory_trigger
-        items: []
-      - name: trigger-run
-        uid: az_datafactory_trigger-run
-        items: []
-  - name: Azure Data Share
-    items:
-    - name: Summary
-      uid: sp-Azure_Data_Share
-    - name: datashare
-      items:
-      - name: Summary
-        uid: az_datashare
-      - name: account
-        uid: az_datashare_account
-        items: []
-      - name: consumer
-        items:
-        - name: Summary
-          uid: az_datashare_consumer
-        - name: dataset-mapping
-          uid: az_datashare_consumer_dataset-mapping
-          items: []
-        - name: invitation
-          uid: az_datashare_consumer_invitation
-          items: []
-        - name: share-subscription
-          items:
-          - name: Summary
-            uid: az_datashare_consumer_share-subscription
-          - name: synchronization
-            uid: az_datashare_consumer_share-subscription_synchronization
-            items: []
-        - name: trigger
-          uid: az_datashare_consumer_trigger
-          items: []
-      - name: dataset
-        uid: az_datashare_dataset
-        items: []
-      - name: invitation
-        uid: az_datashare_invitation
-        items: []
-      - name: provider-share-subscription
-        uid: az_datashare_provider-share-subscription
-        items: []
-      - name: synchronization
-        uid: az_datashare_synchronization
-        items: []
-      - name: synchronization-setting
-        uid: az_datashare_synchronization-setting
-        items: []
-  - name: Azure Dedicated HSM
-    items:
-    - name: Summary
-      uid: sp-Azure_Dedicated_HSM
-    - name: dedicated-hsm
-      uid: az_dedicated-hsm
+      uid: sp-Microsoft_AI
+    - name: ai-examples
+      uid: az_ai-examples
       items: []
-  - name: Azure Graph
+  - name: Microsoft Partner Network
     items:
     - name: Summary
-      uid: sp-Azure_Graph
-    - name: graph
+      uid: sp-Microsoft_Partner_Network
+    - name: managementpartner
+      uid: az_managementpartner
+      items: []
+  - name: Microsoft Windows
+    items:
+    - name: Summary
+      uid: sp-Microsoft_Windows
+    - name: baremetalinstance
+      uid: az_baremetalinstance
+      items: []
+  - name: Power BI
+    items:
+    - name: Summary
+      uid: sp-Power_BI
+    - name: powerbi
       items:
       - name: Summary
-        uid: az_graph
-      - name: shared-query
-        uid: az_graph_shared-query
+        uid: az_powerbi
+      - name: embedded-capacity
+        uid: az_powerbi_embedded-capacity
         items: []
-  - name: Azure Lab Services
-    items:
-    - name: Summary
-      uid: sp-Azure_Lab_Services
-    - name: hack
-      uid: az_hack
-      items: []
   - name: SAP HANA on Azure
     items:
     - name: Summary
@@ -2899,323 +3282,20 @@
       - name: provider-instance
         uid: az_sapmonitor_provider-instance
         items: []
-  - name: Azure API for FHIR
+  - name: Visual Studio
     items:
     - name: Summary
-      uid: sp-Azure_API_for_FHIR
-    - name: healthcareapis
+      uid: sp-Visual_Studio
+    - name: codespace
       items:
       - name: Summary
-        uid: az_healthcareapis
-      - name: acr
-        uid: az_healthcareapis_acr
+        uid: az_codespace
+      - name: location
+        uid: az_codespace_location
         items: []
-      - name: operation-result
-        uid: az_healthcareapis_operation-result
-        items: []
-      - name: private-endpoint-connection
-        uid: az_healthcareapis_private-endpoint-connection
-        items: []
-      - name: private-link-resource
-        uid: az_healthcareapis_private-link-resource
-        items: []
-      - name: service
-        uid: az_healthcareapis_service
-        items: []
-  - name: Azure HPC Cache
-    items:
-    - name: Summary
-      uid: sp-Azure_HPC_Cache
-    - name: hpc-cache
-      items:
-      - name: Summary
-        uid: az_hpc-cache
-      - name: blob-storage-target
-        uid: az_hpc-cache_blob-storage-target
-        items: []
-      - name: nfs-storage-target
-        uid: az_hpc-cache_nfs-storage-target
-        items: []
-      - name: skus
-        uid: az_hpc-cache_skus
-        items: []
-      - name: storage-target
-        uid: az_hpc-cache_storage-target
-        items: []
-      - name: usage-model
-        uid: az_hpc-cache_usage-model
-        items: []
-  - name: Azure Logic Apps
-    items:
-    - name: Summary
-      uid: sp-Azure_Logic_Apps
-    - name: logic
-      items:
-      - name: Summary
-        uid: az_logic
-      - name: integration-account
-        uid: az_logic_integration-account
-        items: []
-      - name: workflow
-        uid: az_logic_workflow
-        items: []
-  - name: Azure Service Fabric Mesh
-    items:
-    - name: Summary
-      uid: sp-Azure_Service_Fabric_Mesh
-    - name: mesh
-      items:
-      - name: Summary
-        uid: az_mesh
-      - name: app
-        uid: az_mesh_app
-        items: []
-      - name: code-package-log
-        uid: az_mesh_code-package-log
-        items: []
-      - name: deployment
-        uid: az_mesh_deployment
-        items: []
-      - name: gateway
-        uid: az_mesh_gateway
-        items: []
-      - name: generate
-        uid: az_mesh_generate
-        items: []
-      - name: network
-        uid: az_mesh_network
+      - name: plan
+        uid: az_codespace_plan
         items: []
       - name: secret
-        uid: az_mesh_secret
-        items: []
-      - name: secretvalue
-        uid: az_mesh_secretvalue
-        items: []
-      - name: service
-        uid: az_mesh_service
-        items: []
-      - name: service-replica
-        uid: az_mesh_service-replica
-        items: []
-      - name: volume
-        uid: az_mesh_volume
-        items: []
-  - name: Azure Notification Hubs
-    items:
-    - name: Summary
-      uid: sp-Azure_Notification_Hubs
-    - name: notification-hub
-      items:
-      - name: Summary
-        uid: az_notification-hub
-      - name: authorization-rule
-        uid: az_notification-hub_authorization-rule
-        items: []
-      - name: credential
-        items:
-        - name: Summary
-          uid: az_notification-hub_credential
-        - name: adm
-          uid: az_notification-hub_credential_adm
-          items: []
-        - name: apns
-          uid: az_notification-hub_credential_apns
-          items: []
-        - name: baidu
-          uid: az_notification-hub_credential_baidu
-          items: []
-        - name: gcm
-          uid: az_notification-hub_credential_gcm
-          items: []
-        - name: mpns
-          uid: az_notification-hub_credential_mpns
-          items: []
-        - name: wns
-          uid: az_notification-hub_credential_wns
-          items: []
-      - name: namespace
-        items:
-        - name: Summary
-          uid: az_notification-hub_namespace
-        - name: authorization-rule
-          uid: az_notification-hub_namespace_authorization-rule
-          items: []
-  - name: Azure portal
-    items:
-    - name: Summary
-      uid: sp-Azure_portal
-    - name: portal
-      items:
-      - name: Summary
-        uid: az_portal
-      - name: dashboard
-        uid: az_portal_dashboard
-        items: []
-  - name: Power BI
-    items:
-    - name: Summary
-      uid: sp-Power_BI
-    - name: powerbi
-      items:
-      - name: Summary
-        uid: az_powerbi
-      - name: embedded-capacity
-        uid: az_powerbi_embedded-capacity
-        items: []
-  - name: Azure Sentinel
-    items:
-    - name: Summary
-      uid: sp-Azure_Sentinel
-    - name: sentinel
-      items:
-      - name: Summary
-        uid: az_sentinel
-      - name: action
-        uid: az_sentinel_action
-        items: []
-      - name: alert-rule
-        uid: az_sentinel_alert-rule
-        items: []
-      - name: alert-rule-template
-        uid: az_sentinel_alert-rule-template
-        items: []
-      - name: bookmark
-        uid: az_sentinel_bookmark
-        items: []
-      - name: data-connector
-        uid: az_sentinel_data-connector
-        items: []
-      - name: incident
-        uid: az_sentinel_incident
-        items: []
-      - name: incident-comment
-        uid: az_sentinel_incident-comment
-        items: []
-  - name: Azure Spatial Anchors
-    items:
-    - name: Summary
-      uid: sp-Azure_Spatial_Anchors
-    - name: spatial-anchors-account
-      items:
-      - name: Summary
-        uid: az_spatial-anchors-account
-      - name: key
-        uid: az_spatial-anchors-account_key
-        items: []
-  - name: Azure Spring Cloud
-    items:
-    - name: Summary
-      uid: sp-Azure_Spring_Cloud
-    - name: spring-cloud
-      items:
-      - name: Summary
-        uid: az_spring-cloud
-      - name: app
-        items:
-        - name: Summary
-          uid: az_spring-cloud_app
-        - name: binding
-          items:
-          - name: Summary
-            uid: az_spring-cloud_app_binding
-          - name: cosmos
-            uid: az_spring-cloud_app_binding_cosmos
-            items: []
-          - name: mysql
-            uid: az_spring-cloud_app_binding_mysql
-            items: []
-          - name: redis
-            uid: az_spring-cloud_app_binding_redis
-            items: []
-        - name: custom-domain
-          uid: az_spring-cloud_app_custom-domain
-          items: []
-        - name: deployment
-          uid: az_spring-cloud_app_deployment
-          items: []
-        - name: identity
-          uid: az_spring-cloud_app_identity
-          items: []
-        - name: log
-          uid: az_spring-cloud_app_log
-          items: []
-      - name: app-insights
-        uid: az_spring-cloud_app-insights
-        items: []
-      - name: certificate
-        uid: az_spring-cloud_certificate
-        items: []
-      - name: config-server
-        items:
-        - name: Summary
-          uid: az_spring-cloud_config-server
-        - name: git
-          items:
-          - name: Summary
-            uid: az_spring-cloud_config-server_git
-          - name: repo
-            uid: az_spring-cloud_config-server_git_repo
-            items: []
-      - name: test-endpoint
-        uid: az_spring-cloud_test-endpoint
-        items: []
-  - name: Azure Stream Analytics
-    items:
-    - name: Summary
-      uid: sp-Azure_Stream_Analytics
-    - name: stream-analytics
-      items:
-      - name: Summary
-        uid: az_stream-analytics
-      - name: function
-        uid: az_stream-analytics_function
-        items: []
-      - name: input
-        uid: az_stream-analytics_input
-        items: []
-      - name: job
-        uid: az_stream-analytics_job
-        items: []
-      - name: output
-        uid: az_stream-analytics_output
-        items: []
-      - name: quota
-        uid: az_stream-analytics_quota
-        items: []
-      - name: transformation
-        uid: az_stream-analytics_transformation
-        items: []
-  - name: Azure Time Series Insights
-    items:
-    - name: Summary
-      uid: sp-Azure_Time_Series_Insights
-    - name: tsi
-      items:
-      - name: Summary
-        uid: az_tsi
-      - name: access-policy
-        uid: az_tsi_access-policy
-        items: []
-      - name: environment
-        items:
-        - name: Summary
-          uid: az_tsi_environment
-        - name: gen1
-          uid: az_tsi_environment_gen1
-          items: []
-        - name: gen2
-          uid: az_tsi_environment_gen2
-          items: []
-      - name: event-source
-        items:
-        - name: Summary
-          uid: az_tsi_event-source
-        - name: eventhub
-          uid: az_tsi_event-source_eventhub
-          items: []
-        - name: iothub
-          uid: az_tsi_event-source_iothub
-          items: []
-      - name: reference-data-set
-        uid: az_tsi_reference-data-set
+        uid: az_codespace_secret
         items: []
