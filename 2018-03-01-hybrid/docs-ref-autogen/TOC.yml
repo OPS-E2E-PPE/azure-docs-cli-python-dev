@@ -2,20 +2,6 @@
   items:
   - name: List A - Z
     uid: sp-List_A_-_Z
-  - name: ''
-    items:
-    - name: Summary
-      uid: sp-
-    - name: confluent
-      items:
-      - name: Summary
-        uid: az_confluent
-      - name: organization
-        uid: az_confluent_organization
-        items: []
-      - name: terms
-        uid: az_confluent_terms
-        items: []
   - name: API Management
     uid: sp-API_Management
     items: []
@@ -362,16 +348,6 @@
     - name: local-context
       uid: az_local-context
       items: []
-    - name: resource-mover
-      items:
-      - name: Summary
-        uid: az_resource-mover
-      - name: move-collection
-        uid: az_resource-mover_move-collection
-        items: []
-      - name: move-resource
-        uid: az_resource-mover_move-resource
-        items: []
   - name: Azure Cognitive Search
     uid: sp-Azure_Cognitive_Search
     items: []
@@ -859,6 +835,9 @@
   - name: Azure Event Hubs
     uid: sp-Azure_Event_Hubs
     items: []
+  - name: Azure Front Door
+    uid: sp-Azure_Front_Door
+    items: []
   - name: Azure Functions
     items:
     - name: Summary
@@ -1132,19 +1111,9 @@
       - name: Keys
         uid: az_keyvault_key
         items: []
-      - name: network-rule
-        uid: az_keyvault_network-rule
-        items: []
       - name: Secrets
         uid: az_keyvault_secret
         items: []
-      - name: storage
-        items:
-        - name: Summary
-          uid: az_keyvault_storage
-        - name: sas-definition
-          uid: az_keyvault_storage_sas-definition
-          items: []
   - name: Azure Kubernetes
     items:
     - name: Summary
@@ -1162,6 +1131,9 @@
         uid: az_aks
       - name: app
         uid: az_aks_app
+        items: []
+      - name: maintenanceconfiguration
+        uid: az_aks_maintenanceconfiguration
         items: []
       - name: nodepool
         uid: az_aks_nodepool
@@ -1619,15 +1591,8 @@
             uid: az_network_express-route_peering_connection
             items: []
         - name: port
-          items:
-          - name: Summary
-            uid: az_network_express-route_port
-          - name: link
-            uid: az_network_express-route_port_link
-            items: []
-          - name: location
-            uid: az_network_express-route_port_location
-            items: []
+          uid: az_network_express-route_port
+          items: []
       - name: firewall
         items:
         - name: Summary
@@ -2184,10 +2149,10 @@
       - name: Definitions
         uid: az_policy_definition
         items: []
-  - name: Azure portal
+  - name: Azure Portal
     items:
     - name: Summary
-      uid: sp-Azure_portal
+      uid: sp-Azure_Portal
     - name: portal
       items:
       - name: Summary
@@ -2228,6 +2193,9 @@
         uid: az_quantum
       - name: job
         uid: az_quantum_job
+        items: []
+      - name: offerings
+        uid: az_quantum_offerings
         items: []
       - name: target
         uid: az_quantum_target
@@ -2357,6 +2325,20 @@
     - name: Resource tags
       uid: az_tag
       items: []
+  - name: Azure Resource Mover
+    items:
+    - name: Summary
+      uid: sp-Azure_Resource_Mover
+    - name: resource-mover
+      items:
+      - name: Summary
+        uid: az_resource-mover
+      - name: move-collection
+        uid: az_resource-mover_move-collection
+        items: []
+      - name: move-resource
+        uid: az_resource-mover_move-resource
+        items: []
   - name: Azure resource providers
     uid: sp-Azure_resource_providers
     items: []
@@ -2695,9 +2677,6 @@
         - name: Keys
           uid: az_storage_account_keys
           items: []
-        - name: management-policy
-          uid: az_storage_account_management-policy
-          items: []
         - name: network-rule
           uid: az_storage_account_network-rule
           items: []
@@ -2738,8 +2717,12 @@
           uid: az_storage_blob_metadata
           items: []
         - name: Service properties
-          uid: az_storage_blob_service-properties
-          items: []
+          items:
+          - name: Summary
+            uid: az_storage_blob_service-properties
+          - name: delete-policy
+            uid: az_storage_blob_service-properties_delete-policy
+            items: []
         - name: tag
           uid: az_storage_blob_tag
           items: []
@@ -3246,6 +3229,16 @@
       - name: scan
         uid: az_webapp_scan
         items: []
+  - name: Bicep
+    items:
+    - name: Summary
+      uid: sp-Bicep
+    - name: bicep
+      uid: az_bicep
+      items: []
+  - name: Content Delivery Network
+    uid: sp-Content_Delivery_Network
+    items: []
   - name: Microsoft AI
     items:
     - name: Summary
@@ -3291,6 +3284,20 @@
         uid: az_sapmonitor
       - name: provider-instance
         uid: az_sapmonitor_provider-instance
+        items: []
+  - name: Third-party service in LiftR
+    items:
+    - name: Summary
+      uid: sp-Third-party_service_in_LiftR
+    - name: confluent
+      items:
+      - name: Summary
+        uid: az_confluent
+      - name: organization
+        uid: az_confluent_organization
+        items: []
+      - name: terms
+        uid: az_confluent_terms
         items: []
   - name: Visual Studio
     items:

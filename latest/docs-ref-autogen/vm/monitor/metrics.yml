@@ -84,7 +84,7 @@ directCommands:
     description: ''
   - name: --filter
     summary: A string used to reduce the set of metric data returned. eg. "LUN eq '\*'".
-    description: For a full list of filters, see the filter string reference at <a href="https://docs.microsoft.com/rest/api/monitor/metrics/list">https://docs.microsoft.com/rest/api/monitor/metrics/list</a>.
+    description: For a full list of filters, see the filter string reference at https://docs.microsoft.com/rest/api/monitor/metrics/list.
   - name: --interval
     defaultValue: 1m
     summary: 'The interval over which to aggregate metrics, in ##h##m format.'
@@ -137,5 +137,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/24/2021
+  ms.date: 03/18/2021
   description: Manage metrics for a vm.

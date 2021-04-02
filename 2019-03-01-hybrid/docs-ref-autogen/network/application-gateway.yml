@@ -2,7 +2,7 @@
 uid: az_network_application-gateway
 name: az network application-gateway
 summary: Manage application-level routing and load balancing services.
-description: To learn more about Application Gateway, visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli</a>.
+description: To learn more about Application Gateway, visit https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli.
 directCommands:
 - uid: az_network_application-gateway_create
   name: az network application-gateway create
@@ -575,5 +575,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/25/2021
-  description: To learn more about Application Gateway, visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli</a>.
+  ms.date: 03/18/2021
+  description: To learn more about Application Gateway, visit https://docs.microsoft.com/azure/application-gateway/application-gateway-create-gateway-cli.

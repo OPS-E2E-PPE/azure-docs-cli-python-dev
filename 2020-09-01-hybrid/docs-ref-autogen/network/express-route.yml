@@ -2,7 +2,7 @@
 uid: az_network_express-route
 name: az network express-route
 summary: Manage dedicated private network fiber connections to Azure.
-description: To learn more about ExpressRoute circuits visit <a href="https://docs.microsoft.com/azure/expressroute/howto-circuit-cli">https://docs.microsoft.com/azure/expressroute/howto-circuit-cli</a>.
+description: To learn more about ExpressRoute circuits visit https://docs.microsoft.com/azure/expressroute/howto-circuit-cli.
 directCommands:
 - uid: az_network_express-route_create
   name: az network express-route create
@@ -498,5 +498,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/25/2021
-  description: To learn more about ExpressRoute circuits visit <a href="https://docs.microsoft.com/azure/expressroute/howto-circuit-cli">https://docs.microsoft.com/azure/expressroute/howto-circuit-cli</a>.
+  ms.date: 03/18/2021
+  description: To learn more about ExpressRoute circuits visit https://docs.microsoft.com/azure/expressroute/howto-circuit-cli.

@@ -2,7 +2,7 @@
 uid: az_network_application-gateway_rule
 name: az network application-gateway rule
 summary: Evaluate probe information and define routing rules.
-description: For more information, visit, <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-customize-waf-rules-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-customize-waf-rules-cli</a>.
+description: For more information, visit, https://docs.microsoft.com/azure/application-gateway/application-gateway-customize-waf-rules-cli.
 directCommands:
 - uid: az_network_application-gateway_rule_create
   name: az network application-gateway rule create
@@ -279,5 +279,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/25/2021
-  description: For more information, visit, <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-customize-waf-rules-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-customize-waf-rules-cli</a>.
+  ms.date: 03/18/2021
+  description: For more information, visit, https://docs.microsoft.com/azure/application-gateway/application-gateway-customize-waf-rules-cli.

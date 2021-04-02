@@ -23,7 +23,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --policy
-    summary: 'The Storage Account ManagementPolicies Rules, in JSON format. See more details in: <a href="https://docs.microsoft.com/azure/storage/common/storage-lifecycle-managment-concepts">https://docs.microsoft.com/azure/storage/common/storage-lifecycle-managment-concepts</a>.'
+    summary: 'The Storage Account ManagementPolicies Rules, in JSON format. See more details in: https://docs.microsoft.com/azure/storage/common/storage-lifecycle-managment-concepts.'
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -142,5 +142,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/26/2021
+  ms.date: 03/22/2021
   description: Manage storage account management policies.

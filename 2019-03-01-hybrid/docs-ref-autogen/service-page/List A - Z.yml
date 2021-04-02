@@ -11,6 +11,7 @@ commands:
 - az_alias
 - az_appconfig
 - az_appservice
+- az_arcappliance
 - az_artifacts
 - az_attestation
 - az_automation
@@ -33,6 +34,7 @@ commands:
 - az_cosmosdb
 - az_costmanagement
 - az_csvmware
+- az_customlocation
 - az_custom-providers
 - az_databox
 - az_databoxedge
@@ -69,6 +71,7 @@ commands:
 - az_iot
 - az_k8sconfiguration
 - az_k8s-configuration
+- az_k8s-extension
 - az_keyvault
 - az_kusto
 - az_local-context
@@ -95,6 +98,7 @@ commands:
 - az_provider
 - az_providerhub
 - az_quantum
+- az_redisenterprise
 - az_repos
 - az_resource
 - az_resource-mover

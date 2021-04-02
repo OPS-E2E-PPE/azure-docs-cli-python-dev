@@ -123,7 +123,7 @@ directCommands:
     summary: Allow the blob service to exhibit filesystem semantics. This property can be enabled only when storage account kind is StorageV2.
     description: ''
   - name: --enable-large-file-share
-    summary: Enable the capability to support large file shares with more than 5 TiB capacity for storage account.Once the property is enabled, the feature cannot be disabled. Currently only supported for LRS and ZRS replication types, hence account conversions to geo-redundant accounts would not be possible. For more information, please refer to <a href="https://go.microsoft.com/fwlink/?linkid=2086047">https://go.microsoft.com/fwlink/?linkid=2086047</a>.
+    summary: Enable the capability to support large file shares with more than 5 TiB capacity for storage account.Once the property is enabled, the feature cannot be disabled. Currently only supported for LRS and ZRS replication types, hence account conversions to geo-redundant accounts would not be possible. For more information, please refer to https://go.microsoft.com/fwlink/?linkid=2086047.
     description: ''
   - name: --encryption-key-type-for-queue -q
     parameterValueGroup: Account, Service
@@ -225,7 +225,7 @@ directCommands:
 
     cluster will become primary after failover. For more information, please refer to
 
-    <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-disaster-recovery-guidance">https://docs.microsoft.com/en-us/azure/storage/common/storage-disaster-recovery-guidance</a>.
+    https://docs.microsoft.com/en-us/azure/storage/common/storage-disaster-recovery-guidance.
   syntax: >-
     az storage account failover [--ids]
                                 [--name]
@@ -263,7 +263,7 @@ directCommands:
   editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_account_generate-sas
   name: az storage account generate-sas
-  summary: Generates a shared access signature for the account.
+  summary: Generate a shared access signature for the storage account.
   description: ''
   syntax: >-
     az storage account generate-sas --expiry
@@ -596,7 +596,7 @@ directCommands:
     summary: Enable Azure Files Active Directory Domain Service Authentication for storage account. When --enable-files-adds is set to true, Azure Active Directory Properties arguments must be provided.
     description: ''
   - name: --enable-large-file-share
-    summary: Enable the capability to support large file shares with more than 5 TiB capacity for storage account.Once the property is enabled, the feature cannot be disabled. Currently only supported for LRS and ZRS replication types, hence account conversions to geo-redundant accounts would not be possible. For more information, please refer to <a href="https://go.microsoft.com/fwlink/?linkid=2086047">https://go.microsoft.com/fwlink/?linkid=2086047</a>.
+    summary: Enable the capability to support large file shares with more than 5 TiB capacity for storage account.Once the property is enabled, the feature cannot be disabled. Currently only supported for LRS and ZRS replication types, hence account conversions to geo-redundant accounts would not be possible. For more information, please refer to https://go.microsoft.com/fwlink/?linkid=2086047.
     description: ''
   - name: --encryption-key-name
     summary: The name of the KeyVault key.
@@ -737,5 +737,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/26/2021
+  ms.date: 03/22/2021
   description: Manage storage accounts.

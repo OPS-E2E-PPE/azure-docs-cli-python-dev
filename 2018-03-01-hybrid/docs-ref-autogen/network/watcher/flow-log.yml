@@ -2,7 +2,7 @@
 uid: az_network_watcher_flow-log
 name: az network watcher flow-log
 summary: Manage network security group flow logging.
-description: For more information about configuring flow logs visit <a href="https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-cli">https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-cli</a>.
+description: For more information about configuring flow logs visit https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-cli.
 directCommands:
 - uid: az_network_watcher_flow-log_configure
   name: az network watcher flow-log configure
@@ -96,5 +96,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/25/2021
-  description: For more information about configuring flow logs visit <a href="https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-cli">https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-cli</a>.
+  ms.date: 03/18/2021
+  description: For more information about configuring flow logs visit https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-cli.

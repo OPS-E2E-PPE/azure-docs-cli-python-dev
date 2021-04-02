@@ -2,7 +2,7 @@
 uid: az_network_route-filter_rule
 name: az network route-filter rule
 summary: Manage rules in a route filter.
-description: To learn more about route filters with Microsoft peering with ExpressRoute, visit <a href="https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli">https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli</a>.
+description: To learn more about route filters with Microsoft peering with ExpressRoute, visit https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli.
 directCommands:
 - uid: az_network_route-filter_rule_create
   name: az network route-filter rule create
@@ -234,5 +234,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/25/2021
-  description: To learn more about route filters with Microsoft peering with ExpressRoute, visit <a href="https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli">https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli</a>.
+  ms.date: 03/18/2021
+  description: To learn more about route filters with Microsoft peering with ExpressRoute, visit https://docs.microsoft.com/azure/expressroute/how-to-routefilter-cli.

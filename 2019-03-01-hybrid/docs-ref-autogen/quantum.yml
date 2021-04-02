@@ -114,6 +114,10 @@ commands:
 - az_quantum_job_show
 - az_quantum_job_submit
 - az_quantum_job_wait
+- az_quantum_offerings
+- az_quantum_offerings_accept-terms
+- az_quantum_offerings_list
+- az_quantum_offerings_show-terms
 - az_quantum_run
 - az_quantum_target
 - az_quantum_target_clear

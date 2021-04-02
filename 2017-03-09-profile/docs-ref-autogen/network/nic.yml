@@ -2,7 +2,7 @@
 uid: az_network_nic
 name: az network nic
 summary: Manage network interfaces.
-description: To learn more about network interfaces in Azure visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface">https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface</a>.
+description: To learn more about network interfaces in Azure visit https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface.
 directCommands:
 - uid: az_network_nic_create
   name: az network nic create
@@ -357,5 +357,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/25/2021
-  description: To learn more about network interfaces in Azure visit <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface">https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface</a>.
+  ms.date: 03/18/2021
+  description: To learn more about network interfaces in Azure visit https://docs.microsoft.com/azure/virtual-network/virtual-network-network-interface.

@@ -267,6 +267,7 @@ commands:
 - az_storage_fs_directory
 - az_storage_fs_directory_create
 - az_storage_fs_directory_delete
+- az_storage_fs_directory_download
 - az_storage_fs_directory_exists
 - az_storage_fs_directory_list
 - az_storage_fs_directory_metadata
@@ -274,6 +275,7 @@ commands:
 - az_storage_fs_directory_metadata_update
 - az_storage_fs_directory_move
 - az_storage_fs_directory_show
+- az_storage_fs_directory_upload
 - az_storage_fs_exists
 - az_storage_fs_file
 - az_storage_fs_file_append
@@ -310,5 +312,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/26/2021
+  ms.date: 03/22/2021
   description: Manage file systems in Azure Data Lake Storage Gen2 account.

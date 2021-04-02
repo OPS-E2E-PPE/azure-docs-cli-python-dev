@@ -45,7 +45,7 @@ directCommands:
     description: ''
   - isRequired: true
     name: --sku
-    summary: 'SKU of the dedicated host. Available SKUs: <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/dedicated-host/">https://azure.microsoft.com/en-us/pricing/details/virtual-machines/dedicated-host/</a>.'
+    summary: 'SKU of the dedicated host. Available SKUs: https://azure.microsoft.com/en-us/pricing/details/virtual-machines/dedicated-host/.'
     description: ''
   optionalParameters:
   - name: --auto-replace
@@ -274,5 +274,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/24/2021
+  ms.date: 03/18/2021
   description: Manage Dedicated Hosts for Virtual Machines.

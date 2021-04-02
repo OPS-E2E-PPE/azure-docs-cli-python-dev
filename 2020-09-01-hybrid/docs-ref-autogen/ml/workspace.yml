@@ -108,7 +108,7 @@ directCommands:
     description: ''
   - name: --system_datastores_auth_mode
     defaultValue: accessKey
-    summary: Determines whether or not to use credentials for the system datastores of the workspace                'workspaceblobstore' and 'workspacefilestore'. The default value is 'accesskey', in which case,                the workspace will create the system datastores with credentials.  If set to 'identity',                the workspace will create the system datastores with no credentials.
+    summary: Determines whether or not to use credentials for the system datastores of the workspace                'workspaceblobstore' and 'workspacefilestore'. The default value is 'accessKey', in which case,                the workspace will create the system datastores with credentials.  If set to 'identity',                the workspace will create the system datastores with no credentials.
     description: ''
   - name: --tags -t
     summary: Tags associated with this workspace with 'key=value' syntax.
@@ -333,6 +333,41 @@ directCommands:
   - name: --workspace-name -w
     summary: Workspace name.
     description: ''
+- uid: az_ml_workspace_update-dependencies
+  name: az ml workspace update-dependencies
+  summary: Update workspace dependent resources.
+  description: ''
+  syntax: >-
+    az ml workspace update-dependencies [--acr]
+                                        [--force]
+                                        [--output-metadata-file]
+                                        [--path]
+                                        [--resource-group]
+                                        [--subscription-id]
+                                        [--workspace-name]
+  optionalParameters:
+  - name: --acr
+    summary: The arm id of the container registry that you want to update this workspace with.
+    description: ''
+  - name: --force
+    summary: Force update dependent resources without user's confirmation.
+    description: ''
+  - name: --output-metadata-file -t
+    summary: Provide an optional output file location for structured object output.
+    description: ''
+  - name: --path
+    defaultValue: .
+    summary: Path to a root directory for run configuration files.
+    description: ''
+  - name: --resource-group -g
+    summary: Resource group name.
+    description: ''
+  - name: --subscription-id
+    summary: Specifies the subscription Id.
+    description: ''
+  - name: --workspace-name -w
+    summary: Workspace name.
+    description: ''
 commands:
 - az_ml_workspace_create
 - az_ml_workspace_delete
@@ -346,6 +381,7 @@ commands:
 - az_ml_workspace_show
 - az_ml_workspace_sync-keys
 - az_ml_workspace_update
+- az_ml_workspace_update-dependencies
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.

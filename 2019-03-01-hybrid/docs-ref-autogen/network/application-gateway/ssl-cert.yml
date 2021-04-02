@@ -2,7 +2,7 @@
 uid: az_network_application-gateway_ssl-cert
 name: az network application-gateway ssl-cert
 summary: Manage SSL certificates of an application gateway.
-description: For more information visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-ssl-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-ssl-cli</a>.
+description: For more information visit https://docs.microsoft.com/azure/application-gateway/application-gateway-ssl-cli.
 directCommands:
 - uid: az_network_application-gateway_ssl-cert_create
   name: az network application-gateway ssl-cert create
@@ -278,5 +278,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/25/2021
-  description: For more information visit <a href="https://docs.microsoft.com/azure/application-gateway/application-gateway-ssl-cli">https://docs.microsoft.com/azure/application-gateway/application-gateway-ssl-cli</a>.
+  ms.date: 03/18/2021
+  description: For more information visit https://docs.microsoft.com/azure/application-gateway/application-gateway-ssl-cli.

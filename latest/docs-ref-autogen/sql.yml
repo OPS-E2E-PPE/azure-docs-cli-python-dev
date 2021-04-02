@@ -324,6 +324,11 @@ commands:
 - az_sql_server_vnet-rule_update
 - az_sql_server_wait
 - az_sql_show-usage
+- az_sql_stg
+- az_sql_stg_create
+- az_sql_stg_delete
+- az_sql_stg_list
+- az_sql_stg_show
 - az_sql_virtual-cluster
 - az_sql_virtual-cluster_delete
 - az_sql_virtual-cluster_list
@@ -367,5 +372,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/18/2021
+  ms.date: 03/18/2021
   description: Manage Azure SQL Databases and Data Warehouses.

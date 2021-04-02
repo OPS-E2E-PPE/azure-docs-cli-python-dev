@@ -142,6 +142,11 @@ commands:
 - az_postgres_db_show
 - az_postgres_flexible-server
 - az_postgres_flexible-server_create
+- az_postgres_flexible-server_db
+- az_postgres_flexible-server_db_create
+- az_postgres_flexible-server_db_delete
+- az_postgres_flexible-server_db_list
+- az_postgres_flexible-server_db_show
 - az_postgres_flexible-server_delete
 - az_postgres_flexible-server_firewall-rule
 - az_postgres_flexible-server_firewall-rule_create

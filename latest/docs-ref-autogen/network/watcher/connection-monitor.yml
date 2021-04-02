@@ -5,7 +5,7 @@ summary: Manage connection monitoring between an Azure Virtual Machine and any I
 description: >-
   Connection monitor can be used to monitor network connectivity between an Azure virtual machine and an IP address.
    The IP address can be assigned to another Azure resource or a resource on the Internet or on-premises. To learn
-   more visit <a href="https://aka.ms/connectionmonitordoc">https://aka.ms/connectionmonitordoc</a>.
+   more visit https://aka.ms/connectionmonitordoc.
 directCommands:
 - uid: az_network_watcher_connection-monitor_create
   name: az network watcher connection-monitor create
@@ -413,8 +413,8 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/25/2021
+  ms.date: 03/18/2021
   description: >-
     Connection monitor can be used to monitor network connectivity between an Azure virtual machine and an IP address.
      The IP address can be assigned to another Azure resource or a resource on the Internet or on-premises. To learn
-     more visit <a href="https://aka.ms/connectionmonitordoc">https://aka.ms/connectionmonitordoc</a>.
+     more visit https://aka.ms/connectionmonitordoc.

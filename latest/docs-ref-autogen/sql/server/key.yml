@@ -16,7 +16,7 @@ directCommands:
   requiredParameters:
   - isRequired: true
     name: --kid -k
-    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
+    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901".
     description: ''
   - isRequired: true
     name: --resource-group -g
@@ -44,7 +44,7 @@ directCommands:
   requiredParameters:
   - isRequired: true
     name: --kid -k
-    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
+    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901".
     description: ''
   optionalParameters:
   - name: --ids
@@ -101,7 +101,7 @@ directCommands:
   requiredParameters:
   - isRequired: true
     name: --kid -k
-    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "<a href="https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901">https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901</a>".
+    summary: The Azure Key Vault key identifier of the server key. An example key identifier is "https://YourVaultName.vault.azure.net/keys/YourKeyName/01234567890123456789012345678901".
     description: ''
   optionalParameters:
   - name: --ids
@@ -142,5 +142,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/18/2021
+  ms.date: 03/18/2021
   description: Manage a server's keys.

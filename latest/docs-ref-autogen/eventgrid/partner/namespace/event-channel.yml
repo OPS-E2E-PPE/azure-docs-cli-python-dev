@@ -9,9 +9,9 @@ directCommands:
   summary: Create an event channel under a partner namespace.
   description: ''
   syntax: >-
-    az eventgrid partner namespace event-channel create --desination-topic-name
-                                                        --destination-resource-group-name
+    az eventgrid partner namespace event-channel create --destination-resource-group-name
                                                         --destination-subscription-id
+                                                        --destination-topic-name
                                                         --name
                                                         --partner-namespace-name
                                                         --resource-group
@@ -22,16 +22,12 @@ directCommands:
                                                         [--subscription]
   examples:
   - summary: Create a specific event channel.
-    syntax: az eventgrid partner namespace event-channel create -g rg1 --partner-namespace-name partnernamespace1 -n eventChannelName1 --source SourceExample1 --destination-subscription-id 61f7c265-374d-499e-866d-5f4cc302b888 --destination-resource-group-name rg2 --desination-topic-name topicName1
+    syntax: az eventgrid partner namespace event-channel create -g rg1 --partner-namespace-name partnernamespace1 -n eventChannelName1 --source SourceExample1 --destination-subscription-id 61f7c265-374d-499e-866d-5f4cc302b888 --destination-resource-group-name rg2 --destination-topic-name topicName1
   - summary: Create a specific event channel with an activation expiration time and partner topic friendly description.
-    syntax: az eventgrid partner namespace event-channel create -g rg1 --partner-namespace-name partnernamespace1 -n eventChannelName1 --source SourceExample1 --destination-subscription-id 61f7c265-374d-499e-866d-5f4cc302b888 --destination-resource-group-name rg2 --desination-topic-name topicName1 --activation-expiration-date '2020-05-20T10:00' --partner-topic-description 'This topic is created by Costoco corp on user behavior.'
+    syntax: az eventgrid partner namespace event-channel create -g rg1 --partner-namespace-name partnernamespace1 -n eventChannelName1 --source SourceExample1 --destination-subscription-id 61f7c265-374d-499e-866d-5f4cc302b888 --destination-resource-group-name rg2 --destination-topic-name topicName1 --activation-expiration-date '2020-05-20T10:00' --partner-topic-description 'This topic is created by Costoco corp on user behavior.'
   - summary: Create a specific event channel with publisher filters.
-    syntax: az eventgrid partner namespace event-channel create -g rg1 --partner-namespace-name partnernamespace1 -n eventChannelName1 --source SourceExample1 --destination-subscription-id 61f7c265-374d-499e-866d-5f4cc302b888 --destination-resource-group-name rg2 --desination-topic-name topicName1 --publisher-filter data.key1 NumberIn 2 3 4 100 200 --publisher-filter data.key2 StringIn 2 3 4 100 200
+    syntax: az eventgrid partner namespace event-channel create -g rg1 --partner-namespace-name partnernamespace1 -n eventChannelName1 --source SourceExample1 --destination-subscription-id 61f7c265-374d-499e-866d-5f4cc302b888 --destination-resource-group-name rg2 --destination-topic-name topicName1 --publisher-filter data.key1 NumberIn 2 3 4 100 200 --publisher-filter data.key2 StringIn 2 3 4 100 200
   requiredParameters:
-  - isRequired: true
-    name: --desination-topic-name
-    summary: Name of the partner topic associated with the event channel.
-    description: ''
   - isRequired: true
     name: --destination-resource-group-name
     summary: Azure Resource Group of the customer creating the event channel. The partner topic associated with the event channel will be created under this resource group.
@@ -39,6 +35,10 @@ directCommands:
   - isRequired: true
     name: --destination-subscription-id
     summary: Azure subscription Id of the customer creating the event channel. The partner topic associated with the event channel will be created under this Azure subscription.
+    description: ''
+  - isRequired: true
+    name: --destination-topic-name
+    summary: Name of the partner topic associated with the event channel.
     description: ''
   - isRequired: true
     name: --name -n
@@ -224,5 +224,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 07/06/2020
+  ms.date: 03/30/2021
   description: Manage partner event channels.

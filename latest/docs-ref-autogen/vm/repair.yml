@@ -16,6 +16,7 @@ directCommands:
     az vm repair create --name
                         --resource-group
                         [--copy-disk-name]
+                        [--enable-nested]
                         [--repair-group-name]
                         [--repair-password]
                         [--repair-username]
@@ -39,6 +40,9 @@ directCommands:
   - name: --copy-disk-name
     summary: Name of OS disk copy.
     description: ''
+  - name: --enable-nested
+    summary: Enable nested hyperv.
+    description: ''
   - name: --repair-group-name
     summary: Repair resource group name.
     description: ''
@@ -56,7 +60,7 @@ directCommands:
     description: ''
 - uid: az_vm_repair_list-scripts
   name: az vm repair list-scripts
-  summary: List available scripts. Located <a href="https://github.com/Azure/repair-script-library">https://github.com/Azure/repair-script-library</a>.
+  summary: List available scripts. Located https://github.com/Azure/repair-script-library.
   description: ''
   syntax: az vm repair list-scripts
   examples:

@@ -582,32 +582,6 @@ commands:
 - az_keyvault_show
 - az_keyvault_update
 - az_keyvault_wait
-- az_keyvault_network-rule
-- az_keyvault_network-rule_add
-- az_keyvault_network-rule_list
-- az_keyvault_network-rule_remove
-- az_keyvault_storage
-- az_keyvault_storage_add
-- az_keyvault_storage_backup
-- az_keyvault_storage_list
-- az_keyvault_storage_list-deleted
-- az_keyvault_storage_purge
-- az_keyvault_storage_recover
-- az_keyvault_storage_regenerate-key
-- az_keyvault_storage_remove
-- az_keyvault_storage_restore
-- az_keyvault_storage_sas-definition
-- az_keyvault_storage_sas-definition_create
-- az_keyvault_storage_sas-definition_delete
-- az_keyvault_storage_sas-definition_list
-- az_keyvault_storage_sas-definition_list-deleted
-- az_keyvault_storage_sas-definition_recover
-- az_keyvault_storage_sas-definition_show
-- az_keyvault_storage_sas-definition_show-deleted
-- az_keyvault_storage_sas-definition_update
-- az_keyvault_storage_show
-- az_keyvault_storage_show-deleted
-- az_keyvault_storage_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -625,5 +599,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 12/14/2020
+  ms.date: 03/04/2021
   description: Manage KeyVault keys, secrets, and certificates.

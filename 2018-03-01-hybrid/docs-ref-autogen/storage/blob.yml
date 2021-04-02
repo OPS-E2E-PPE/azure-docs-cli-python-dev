@@ -150,7 +150,7 @@ directCommands:
     summary: The active lease id for the blob.
     description: ''
   - name: --pattern
-    summary: The pattern used for globbing files or blobs in the source. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to <a href="https://docs.python.org/3.7/library/fnmatch.html">https://docs.python.org/3.7/library/fnmatch.html</a>.
+    summary: The pattern used for globbing files or blobs in the source. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to https://docs.python.org/3.7/library/fnmatch.html.
     description: When you use '*' in --pattern, it will match any character including the the directory separator '/'. You can also try "az storage remove" command with --include and --exclude with azure cli >= 2.0.70 to match multiple patterns.
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -319,7 +319,7 @@ directCommands:
     summary: Include this flag to disable progress reporting for the command.
     description: ''
   - name: --pattern
-    summary: The pattern used for globbing files or blobs in the source. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to <a href="https://docs.python.org/3.7/library/fnmatch.html">https://docs.python.org/3.7/library/fnmatch.html</a>.
+    summary: The pattern used for globbing files or blobs in the source. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to https://docs.python.org/3.7/library/fnmatch.html.
     description: When you use '*' in --pattern, it will match any character including the the directory separator '/'.
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -782,7 +782,7 @@ directCommands:
     summary: 'Storage account connection string. Environment variable: AZURE_STORAGE_CONNECTION_STRING.'
     description: ''
   - name: --destination -d
-    summary: The destination path that will be appended to the blob name.
+    summary: The destination path that will be prepended to the blob name.
     description: ''
   - name: --exclude-path
     summary: 'Exclude these paths. This option does not support wildcard characters (\*). Checks relative path prefix. For example: myFolder;myFolder/subDirName/file.pdf.'
@@ -1107,7 +1107,7 @@ directCommands:
     summary: The content MIME type.
     description: ''
   - name: --destination-path
-    summary: The destination path that will be appended to the blob name.
+    summary: The destination path that will be prepended to the blob name.
     description: ''
   - name: --dryrun
     summary: Show the summary of the operations to be taken instead of actually uploading the file(s).
@@ -1141,7 +1141,7 @@ directCommands:
     summary: Include this flag to disable progress reporting for the command.
     description: ''
   - name: --pattern
-    summary: The pattern used for globbing files or blobs in the source. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to <a href="https://docs.python.org/3.7/library/fnmatch.html">https://docs.python.org/3.7/library/fnmatch.html</a>.
+    summary: The pattern used for globbing files or blobs in the source. The supported patterns are '\*', '?', '[seq]', and '[!seq]'. For more information, please refer to https://docs.python.org/3.7/library/fnmatch.html.
     description: When you use '*' in --pattern, it will match any character including the the directory separator '/'.
   - name: --sas-token
     summary: 'A Shared Access Signature (SAS). Must be used in conjunction with storage account name. Environment variable: AZURE_STORAGE_SAS_TOKEN.'
@@ -1405,6 +1405,9 @@ commands:
 - az_storage_blob_upload-batch
 - az_storage_blob_url
 - az_storage_blob_filter
+- az_storage_blob_service-properties_delete-policy
+- az_storage_blob_service-properties_delete-policy_show
+- az_storage_blob_service-properties_delete-policy_update
 - az_storage_blob_tag
 - az_storage_blob_tag_list
 - az_storage_blob_tag_set
@@ -1447,5 +1450,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/26/2021
+  ms.date: 03/22/2021
   description: 'Please specify one of the following authentication parameters for your commands: --auth-mode, --account-key, --connection-string, --sas-token. You also can use corresponding environment variables to store your authentication credentials, e.g. AZURE_STORAGE_KEY, AZURE_STORAGE_CONNECTION_STRING and AZURE_STORAGE_SAS_TOKEN.'

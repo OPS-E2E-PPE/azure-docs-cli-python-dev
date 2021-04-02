@@ -17,9 +17,12 @@ directCommands:
                                  --resource-group
                                  --usage-threshold
                                  --vnet
+                                 [--allowed-clients]
                                  [--backup-enabled {false, true}]
                                  [--backup-id]
                                  [--backup-policy-id]
+                                 [--cifs {false, true}]
+                                 [--encryption-key-source]
                                  [--endpoint-type]
                                  [--has-root-access]
                                  [--kerberos-enabled {false, true}]
@@ -29,10 +32,12 @@ directCommands:
                                  [--kerberos5i-rw]
                                  [--kerberos5p-r]
                                  [--kerberos5p-rw]
+                                 [--ldap-enabled {false, true}]
                                  [--policy-enforced {false, true}]
                                  [--protocol-types]
                                  [--remote-volume-resource-id]
                                  [--replication-schedule]
+                                 [--rule-index]
                                  [--security-style]
                                  [--service-level {Premium, Standard, Ultra}]
                                  [--smb-continuously-avl {false, true}]
@@ -44,6 +49,8 @@ directCommands:
                                  [--subscription]
                                  [--tags]
                                  [--throughput-mibps]
+                                 [--unix-read-only {false, true}]
+                                 [--unix-read-write {false, true}]
                                  [--vault-id]
                                  [--volume-type]
   examples:
@@ -83,6 +90,9 @@ directCommands:
     summary: The ARM Id or name of the vnet for the volume.
     description: ''
   optionalParameters:
+  - name: --allowed-clients
+    summary: Client ingress specification as comma separated string with IPv4 CIDRs, IPv4 host addresses and host names.
+    description: ''
   - name: --backup-enabled
     parameterValueGroup: false, true
     summary: Backup Enabled.
@@ -92,6 +102,13 @@ directCommands:
     description: ''
   - name: --backup-policy-id
     summary: Backup Policy Resource ID.
+    description: ''
+  - name: --cifs
+    parameterValueGroup: false, true
+    summary: Allows NFSv3 protocol. Enable only for NFSv3 type volumes.
+    description: ''
+  - name: --encryption-key-source
+    summary: Encryption Key Source.
     description: ''
   - name: --endpoint-type
     summary: Whether the volume is source ("src") or destination ("dst").
@@ -121,6 +138,10 @@ directCommands:
   - name: --kerberos5p-rw
     summary: Kerberos5p Read and write access.
     description: ''
+  - name: --ldap-enabled
+    parameterValueGroup: false, true
+    summary: Specifies whether LDAP is enabled or not for a given NFS volume.
+    description: ''
   - name: --policy-enforced
     parameterValueGroup: false, true
     summary: Policy Enforced.
@@ -133,6 +154,9 @@ directCommands:
     description: ''
   - name: --replication-schedule
     summary: The replication schedule, e.g. "_10minutely, hourly, daily, weekly, monthly".
+    description: ''
+  - name: --rule-index
+    summary: Order index.
     description: ''
   - name: --security-style
     summary: The security style of volume.
@@ -170,6 +194,14 @@ directCommands:
     description: ''
   - name: --throughput-mibps
     summary: Maximum throughput in Mibps that can be achieved by this volume.
+    description: ''
+  - name: --unix-read-only
+    parameterValueGroup: false, true
+    summary: Read only access.
+    description: ''
+  - name: --unix-read-write
+    parameterValueGroup: false, true
+    summary: Read and write access.
     description: ''
   - name: --vault-id
     summary: Vault Resource ID.
@@ -378,7 +410,6 @@ directCommands:
                                  [--name]
                                  [--policy-enforced {false, true}]
                                  [--pool-name]
-                                 [--protocol-types]
                                  [--remove]
                                  [--resource-group]
                                  [--service-level {Premium, Standard, Ultra}]
@@ -420,9 +451,6 @@ directCommands:
     description: ''
   - name: --pool-name -p
     summary: The name of the ANF pool.
-    description: ''
-  - name: --protocol-types
-    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
     description: ''
   - name: --remove
     summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
@@ -495,5 +523,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 01/25/2021
+  ms.date: 03/26/2021
   description: Manage Azure NetApp Files (ANF) Volume Resources.

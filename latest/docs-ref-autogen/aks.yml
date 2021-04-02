@@ -110,6 +110,7 @@ directCommands:
                   [--enable-private-cluster]
                   [--enable-rbac]
                   [--enable-sgxquotehelper]
+                  [--fqdn-subdomain]
                   [--generate-ssh-keys]
                   [--kubernetes-version]
                   [--load-balancer-idle-timeout]
@@ -130,6 +131,7 @@ directCommands:
                   [--node-osdisk-diskencryptionset-id]
                   [--node-osdisk-size]
                   [--node-osdisk-type]
+                  [--node-public-ip-prefix-id]
                   [--node-vm-size]
                   [--nodepool-labels]
                   [--nodepool-name]
@@ -137,6 +139,7 @@ directCommands:
                   [--outbound-type {loadBalancer, userDefinedRouting}]
                   [--pod-cidr]
                   [--ppg]
+                  [--private-dns-zone]
                   [--service-cidr]
                   [--service-principal]
                   [--skip-subnet-role-assignment]
@@ -301,6 +304,9 @@ directCommands:
   - name: --enable-sgxquotehelper
     summary: Enable SGX quote helper for confcom addon.
     description: ''
+  - name: --fqdn-subdomain
+    summary: Prefix for FQDN that is created for private cluster with custom private dns zone scenario.
+    description: ''
   - name: --generate-ssh-keys
     summary: Generate SSH public and private key files if missing. The keys will be stored in the ~/.ssh directory.
     description: ''
@@ -369,12 +375,15 @@ directCommands:
   - name: --node-osdisk-type
     summary: "OS disk type to be used for machines in a given agent pool: Ephemeral or Managed. Defaults to 'Ephemeral' when possible in conjunction with VM size and OS disk size. May not be changed for this pool after creation."
     description: ''
+  - name: --node-public-ip-prefix-id
+    summary: Public IP prefix ID used to assign public IPs to VMSS nodes.
+    description: ''
   - name: --node-vm-size -s
     defaultValue: Standard_DS2_v2
     summary: Size of Virtual Machines to create as Kubernetes nodes.
     description: ''
   - name: --nodepool-labels
-    summary: 'Space-separated labels: key[=value] [key[=value] ...]. You can not change the node labels through CLI after creation. See <a href="https://aka.ms/node-labels">https://aka.ms/node-labels</a> for syntax of labels.'
+    summary: 'Space-separated labels: key[=value] [key[=value] ...]. You can not change the node labels through CLI after creation. See https://aka.ms/node-labels for syntax of labels.'
     description: ''
   - name: --nodepool-name
     defaultValue: nodepool1
@@ -393,6 +402,9 @@ directCommands:
   - name: --ppg
     summary: The ID of a PPG.
     description: ''
+  - name: --private-dns-zone
+    summary: Private dns zone mode for private cluster.
+    description: Allowed values are "system" or custom private dns zone resource id. If not set, defaults to type system. Requires --enable-private-cluster to be used.
   - name: --service-cidr
     summary: A CIDR notation IP range from which to assign service cluster IPs.
     description: This range must not overlap with any Subnet IP ranges. For example, 10.0.0.0/16.
@@ -931,6 +943,7 @@ directCommands:
                   [--load-balancer-outbound-ports]
                   [--max-count]
                   [--min-count]
+                  [--no-uptime-sla]
                   [--no-wait]
                   [--subscription]
                   [--update-cluster-autoscaler]
@@ -1023,6 +1036,9 @@ directCommands:
     description: ''
   - name: --min-count
     summary: Minimum nodes count used for autoscaler, when "--enable-cluster-autoscaler" specified. Please specify the value in the range of [1, 100].
+    description: ''
+  - name: --no-uptime-sla
+    summary: Change a paid managed cluster to a free one.
     description: ''
   - name: --no-wait
     summary: Do not wait for the long-running operation to finish.
@@ -1180,7 +1196,7 @@ directCommands:
   - name: --endpoint -e
     defaultValue: Public
     parameterValueGroup: None, Private, Public
-    summary: The endpoint type to be used for a Azure Dev Spaces controller. See <a href="https://aka.ms/azds-networking">https://aka.ms/azds-networking</a> for more information.
+    summary: The endpoint type to be used for a Azure Dev Spaces controller. See https://aka.ms/azds-networking for more information.
     description: ''
   - name: --space -s
     summary: Name of the new or existing dev space to select. Defaults to an interactive selection experience.
@@ -1368,6 +1384,12 @@ commands:
 - az_aks_wait
 - az_aks_kanalyze
 - az_aks_kollect
+- az_aks_maintenanceconfiguration
+- az_aks_maintenanceconfiguration_add
+- az_aks_maintenanceconfiguration_delete
+- az_aks_maintenanceconfiguration_list
+- az_aks_maintenanceconfiguration_show
+- az_aks_maintenanceconfiguration_update
 - az_aks_pod-identity
 - az_aks_pod-identity_add
 - az_aks_pod-identity_delete
@@ -1396,5 +1418,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/24/2021
+  ms.date: 03/31/2021
   description: Manage Azure Kubernetes Services.

@@ -2,7 +2,7 @@
 uid: az_network_express-route
 name: az network express-route
 summary: Manage dedicated private network fiber connections to Azure.
-description: To learn more about ExpressRoute circuits visit <a href="https://docs.microsoft.com/azure/expressroute/howto-circuit-cli">https://docs.microsoft.com/azure/expressroute/howto-circuit-cli</a>.
+description: To learn more about ExpressRoute circuits visit https://docs.microsoft.com/azure/expressroute/howto-circuit-cli.
 directCommands:
 - uid: az_network_express-route_create
   name: az network express-route create
@@ -133,100 +133,6 @@ directCommands:
     summary: Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
     description: ''
   editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/network/_help.py
-- uid: az_network_express-route_show
-  name: az network express-route show
-  summary: Get the details of an ExpressRoute circuit.
-  description: ''
-  syntax: >-
-    az network express-route show --name
-                                  --resource-group
-  examples:
-  - summary: Get the details of an ExpressRoute circuit.
-    syntax: az network express-route show -n MyCircuit -g MyResourceGroup
-  requiredParameters:
-  - isRequired: true
-    name: --name -n
-    summary: ExpressRoute circuit name.
-    description: ''
-  - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
-    description: ''
-- uid: az_network_express-route_update
-  name: az network express-route update
-  summary: Update settings of an ExpressRoute circuit.
-  description: ''
-  syntax: >-
-    az network express-route update --name
-                                    --resource-group
-                                    [--add]
-                                    [--allow-global-reach {false, true}]
-                                    [--bandwidth]
-                                    [--express-route-port]
-                                    [--force-string]
-                                    [--no-wait]
-                                    [--peering-location]
-                                    [--provider]
-                                    [--remove]
-                                    [--set]
-                                    [--sku-family {MeteredData, UnlimitedData}]
-                                    [--sku-tier {Premium, Standard}]
-                                    [--tags]
-  examples:
-  - summary: Change the SKU of an ExpressRoute circuit from Standard to Premium.
-    syntax: az network express-route update -n MyCircuit -g MyResourceGroup --sku-tier Premium
-  requiredParameters:
-  - isRequired: true
-    name: --name -n
-    summary: ExpressRoute circuit name.
-    description: ''
-  - isRequired: true
-    name: --resource-group -g
-    summary: Name of resource group. You can configure the default group using `az configure --defaults group=<name>`.
-    description: ''
-  optionalParameters:
-  - name: --add
-    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
-    description: ''
-  - name: --allow-global-reach
-    parameterValueGroup: false, true
-    summary: Enable global reach on the circuit.
-    description: ''
-  - name: --bandwidth
-    summary: 'Bandwidth of the circuit. Usage: INT {Mbps,Gbps}. Defaults to Mbps.'
-    description: ''
-  - name: --express-route-port
-    summary: Name or ID of an ExpressRoute port.
-    description: ''
-  - name: --force-string
-    summary: When using 'set' or 'add', preserve string literals instead of attempting to convert to JSON.
-    description: ''
-  - name: --no-wait
-    summary: Do not wait for the long-running operation to finish.
-    description: ''
-  - name: --peering-location
-    summary: Name of the peering location.
-    description: ''
-  - name: --provider
-    summary: Name of the ExpressRoute Service Provider.
-    description: ''
-  - name: --remove
-    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
-    description: ''
-  - name: --set
-    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
-    description: ''
-  - name: --sku-family
-    parameterValueGroup: MeteredData, UnlimitedData
-    summary: Chosen SKU family of ExpressRoute circuit.
-    description: ''
-  - name: --sku-tier
-    parameterValueGroup: Premium, Standard
-    summary: SKU Tier of ExpressRoute circuit.
-    description: ''
-  - name: --tags
-    summary: 'Space-separated tags: key[=value] [key[=value] ...]. Use "" to clear existing tags.'
-    description: ''
 commands:
 - az_network_express-route_create
 - az_network_express-route_gateway
@@ -248,24 +154,6 @@ commands:
 - az_network_express-route_port_create
 - az_network_express-route_port_generate-loa
 - az_network_express-route_port_list
-- az_network_express-route_gateway_connection_delete
-- az_network_express-route_gateway_connection_list
-- az_network_express-route_gateway_connection_show
-- az_network_express-route_gateway_connection_update
-- az_network_express-route_gateway_delete
-- az_network_express-route_gateway_show
-- az_network_express-route_gateway_update
-- az_network_express-route_port_delete
-- az_network_express-route_port_link
-- az_network_express-route_port_link_list
-- az_network_express-route_port_link_show
-- az_network_express-route_port_location
-- az_network_express-route_port_location_list
-- az_network_express-route_port_location_show
-- az_network_express-route_port_show
-- az_network_express-route_port_update
-- az_network_express-route_show
-- az_network_express-route_update
 globalParameters:
 - name: --debug
   summary: Increase logging verbosity to show all debug logs.
@@ -283,5 +171,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/25/2021
-  description: To learn more about ExpressRoute circuits visit <a href="https://docs.microsoft.com/azure/expressroute/howto-circuit-cli">https://docs.microsoft.com/azure/expressroute/howto-circuit-cli</a>.
+  ms.date: 03/18/2021
+  description: To learn more about ExpressRoute circuits visit https://docs.microsoft.com/azure/expressroute/howto-circuit-cli.

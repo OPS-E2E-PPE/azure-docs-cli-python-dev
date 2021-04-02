@@ -2,20 +2,6 @@
   items:
   - name: List A - Z
     uid: sp-List_A_-_Z
-  - name: ''
-    items:
-    - name: Summary
-      uid: sp-
-    - name: confluent
-      items:
-      - name: Summary
-        uid: az_confluent
-      - name: organization
-        uid: az_confluent_organization
-        items: []
-      - name: terms
-        uid: az_confluent_terms
-        items: []
   - name: API Management
     items:
     - name: Summary
@@ -613,16 +599,6 @@
     - name: local-context
       uid: az_local-context
       items: []
-    - name: resource-mover
-      items:
-      - name: Summary
-        uid: az_resource-mover
-      - name: move-collection
-        uid: az_resource-mover_move-collection
-        items: []
-      - name: move-resource
-        uid: az_resource-mover_move-resource
-        items: []
   - name: Azure Cognitive Search
     items:
     - name: Summary
@@ -1426,6 +1402,9 @@
         items:
         - name: Summary
           uid: az_postgres_flexible-server
+        - name: db
+          uid: az_postgres_flexible-server_db
+          items: []
         - name: firewall-rule
           uid: az_postgres_flexible-server_firewall-rule
           items: []
@@ -1739,6 +1718,77 @@
             items: []
         - name: network-rule
           uid: az_eventhubs_namespace_network-rule
+          items: []
+  - name: Azure Front Door
+    items:
+    - name: Summary
+      uid: sp-Azure_Front_Door
+    - name: afd
+      items:
+      - name: Summary
+        uid: az_afd
+      - name: custom-domain
+        uid: az_afd_custom-domain
+        items: []
+      - name: endpoint
+        uid: az_afd_endpoint
+        items: []
+      - name: log-analytic
+        items:
+        - name: Summary
+          uid: az_afd_log-analytic
+        - name: location
+          uid: az_afd_log-analytic_location
+          items: []
+        - name: metric
+          uid: az_afd_log-analytic_metric
+          items: []
+        - name: ranking
+          uid: az_afd_log-analytic_ranking
+          items: []
+        - name: resource
+          uid: az_afd_log-analytic_resource
+          items: []
+      - name: origin
+        uid: az_afd_origin
+        items: []
+      - name: origin-group
+        uid: az_afd_origin-group
+        items: []
+      - name: profile
+        uid: az_afd_profile
+        items: []
+      - name: route
+        uid: az_afd_route
+        items: []
+      - name: rule
+        items:
+        - name: Summary
+          uid: az_afd_rule
+        - name: action
+          uid: az_afd_rule_action
+          items: []
+        - name: condition
+          uid: az_afd_rule_condition
+          items: []
+      - name: rule-set
+        uid: az_afd_rule-set
+        items: []
+      - name: secret
+        uid: az_afd_secret
+        items: []
+      - name: security-policy
+        uid: az_afd_security-policy
+        items: []
+      - name: waf-log-analytic
+        items:
+        - name: Summary
+          uid: az_afd_waf-log-analytic
+        - name: metric
+          uid: az_afd_waf-log-analytic_metric
+          items: []
+        - name: ranking
+          uid: az_afd_waf-log-analytic_ranking
           items: []
   - name: Azure Functions
     items:
@@ -2171,6 +2221,9 @@
         uid: az_aks
       - name: app
         uid: az_aks_app
+        items: []
+      - name: maintenanceconfiguration
+        uid: az_aks_maintenanceconfiguration
         items: []
       - name: nodepool
         uid: az_aks_nodepool
@@ -2707,67 +2760,6 @@
     items:
     - name: Summary
       uid: sp-Azure_Network
-    - name: CDN
-      items:
-      - name: Summary
-        uid: az_cdn
-      - name: custom-domain
-        uid: az_cdn_custom-domain
-        items: []
-      - name: edge-node
-        uid: az_cdn_edge-node
-        items: []
-      - name: endpoint
-        items:
-        - name: Summary
-          uid: az_cdn_endpoint
-        - name: rule
-          items:
-          - name: Summary
-            uid: az_cdn_endpoint_rule
-          - name: action
-            uid: az_cdn_endpoint_rule_action
-            items: []
-          - name: condition
-            uid: az_cdn_endpoint_rule_condition
-            items: []
-        - name: waf
-          items:
-          - name: Summary
-            uid: az_cdn_endpoint_waf
-          - name: policy
-            uid: az_cdn_endpoint_waf_policy
-            items: []
-      - name: origin
-        uid: az_cdn_origin
-        items: []
-      - name: origin-group
-        uid: az_cdn_origin-group
-        items: []
-      - name: profile
-        uid: az_cdn_profile
-        items: []
-      - name: waf
-        items:
-        - name: Summary
-          uid: az_cdn_waf
-        - name: policy
-          items:
-          - name: Summary
-            uid: az_cdn_waf_policy
-          - name: custom-rule
-            uid: az_cdn_waf_policy_custom-rule
-            items: []
-          - name: managed-rule-set
-            items:
-            - name: Summary
-              uid: az_cdn_waf_policy_managed-rule-set
-            - name: rule-group-override
-              uid: az_cdn_waf_policy_managed-rule-set_rule-group-override
-              items: []
-          - name: rate-limit-rule
-            uid: az_cdn_waf_policy_rate-limit-rule
-            items: []
     - name: internet-analyzer
       items:
       - name: Summary
@@ -3628,10 +3620,10 @@
       - name: State
         uid: az_policy_state
         items: []
-  - name: Azure portal
+  - name: Azure Portal
     items:
     - name: Summary
-      uid: sp-Azure_portal
+      uid: sp-Azure_Portal
     - name: portal
       items:
       - name: Summary
@@ -3672,6 +3664,9 @@
         uid: az_quantum
       - name: job
         uid: az_quantum_job
+        items: []
+      - name: offerings
+        uid: az_quantum_offerings
         items: []
       - name: target
         uid: az_quantum_target
@@ -3910,6 +3905,20 @@
     - name: ts
       uid: az_ts
       items: []
+  - name: Azure Resource Mover
+    items:
+    - name: Summary
+      uid: sp-Azure_Resource_Mover
+    - name: resource-mover
+      items:
+      - name: Summary
+        uid: az_resource-mover
+      - name: move-collection
+        uid: az_resource-mover_move-collection
+        items: []
+      - name: move-resource
+        uid: az_resource-mover_move-resource
+        items: []
   - name: Azure resource providers
     items:
     - name: Summary
@@ -4475,6 +4484,9 @@
         - name: vnet-rule
           uid: az_sql_server_vnet-rule
           items: []
+      - name: stg
+        uid: az_sql_stg
+        items: []
       - name: virtual-cluster
         uid: az_sql_virtual-cluster
         items: []
@@ -5291,6 +5303,78 @@
         - name: triggered
           uid: az_webapp_webjob_triggered
           items: []
+  - name: Bicep
+    items:
+    - name: Summary
+      uid: sp-Bicep
+    - name: bicep
+      uid: az_bicep
+      items: []
+  - name: Content Delivery Network
+    items:
+    - name: Summary
+      uid: sp-Content_Delivery_Network
+    - name: CDN
+      items:
+      - name: Summary
+        uid: az_cdn
+      - name: custom-domain
+        uid: az_cdn_custom-domain
+        items: []
+      - name: edge-node
+        uid: az_cdn_edge-node
+        items: []
+      - name: endpoint
+        items:
+        - name: Summary
+          uid: az_cdn_endpoint
+        - name: rule
+          items:
+          - name: Summary
+            uid: az_cdn_endpoint_rule
+          - name: action
+            uid: az_cdn_endpoint_rule_action
+            items: []
+          - name: condition
+            uid: az_cdn_endpoint_rule_condition
+            items: []
+        - name: waf
+          items:
+          - name: Summary
+            uid: az_cdn_endpoint_waf
+          - name: policy
+            uid: az_cdn_endpoint_waf_policy
+            items: []
+      - name: origin
+        uid: az_cdn_origin
+        items: []
+      - name: origin-group
+        uid: az_cdn_origin-group
+        items: []
+      - name: profile
+        uid: az_cdn_profile
+        items: []
+      - name: waf
+        items:
+        - name: Summary
+          uid: az_cdn_waf
+        - name: policy
+          items:
+          - name: Summary
+            uid: az_cdn_waf_policy
+          - name: custom-rule
+            uid: az_cdn_waf_policy_custom-rule
+            items: []
+          - name: managed-rule-set
+            items:
+            - name: Summary
+              uid: az_cdn_waf_policy_managed-rule-set
+            - name: rule-group-override
+              uid: az_cdn_waf_policy_managed-rule-set_rule-group-override
+              items: []
+          - name: rate-limit-rule
+            uid: az_cdn_waf_policy_rate-limit-rule
+            items: []
   - name: Microsoft AI
     items:
     - name: Summary
@@ -5336,6 +5420,20 @@
         uid: az_sapmonitor
       - name: provider-instance
         uid: az_sapmonitor_provider-instance
+        items: []
+  - name: Third-party service in LiftR
+    items:
+    - name: Summary
+      uid: sp-Third-party_service_in_LiftR
+    - name: confluent
+      items:
+      - name: Summary
+        uid: az_confluent
+      - name: organization
+        uid: az_confluent_organization
+        items: []
+      - name: terms
+        uid: az_confluent_terms
         items: []
   - name: Visual Studio
     items:

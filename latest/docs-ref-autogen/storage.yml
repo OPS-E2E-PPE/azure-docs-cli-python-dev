@@ -155,7 +155,7 @@ directCommands:
     description: ''
   - name: --preserve-s2s-access-tier
     parameterValueGroup: false, true
-    summary: Preserve access tier during service to service copy. Please refer to <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers">https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers</a> to ensure destination storage account support setting access tier. In the cases that setting access tier is not supported, please use `--preserve-s2s-access-tier false` to bypass copying access tier. (Default true).
+    summary: Preserve access tier during service to service copy. Please refer to https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers to ensure destination storage account support setting access tier. In the cases that setting access tier is not supported, please use `--preserve-s2s-access-tier false` to bypass copying access tier. (Default true).
     description: ''
   - name: --put-md5
     summary: Create an MD5 hash of each file, and save the hash as the Content-MD5 property of the destination blob/file.Only available when uploading.
@@ -473,6 +473,7 @@ commands:
 - az_storage_fs_directory
 - az_storage_fs_directory_create
 - az_storage_fs_directory_delete
+- az_storage_fs_directory_download
 - az_storage_fs_directory_exists
 - az_storage_fs_directory_list
 - az_storage_fs_directory_metadata
@@ -480,6 +481,7 @@ commands:
 - az_storage_fs_directory_metadata_update
 - az_storage_fs_directory_move
 - az_storage_fs_directory_show
+- az_storage_fs_directory_upload
 - az_storage_fs_exists
 - az_storage_fs_file
 - az_storage_fs_file_append
@@ -627,5 +629,5 @@ globalParameters:
   summary: Increase logging verbosity. Use --debug for full debug logs.
 metadata:
   doc_source_url_repo: https://github.com/qwordy/azure-cli/blob/master/
-  ms.date: 02/26/2021
+  ms.date: 03/22/2021
   description: Manage Azure Cloud Storage resources.
