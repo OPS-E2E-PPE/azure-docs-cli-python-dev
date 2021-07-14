@@ -16,7 +16,6 @@ commands:
 - az_attestation
 - az_automation
 - az_baremetalinstance
-- az_batch
 - az_bicep
 - az_blockchain
 - az_blueprint
@@ -85,7 +84,7 @@ commands:
 - az_managed-cassandra
 - az_managementpartner
 - az_mesh
-- az_ml
+- az_ml(v1)
 - az_monitor
 - az_mysql
 - az_netappfiles

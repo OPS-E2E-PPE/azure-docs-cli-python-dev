@@ -342,8 +342,8 @@ directCommands:
   editLink: https://github.com/qwordy/azure-cli/blob/master/src/azure-cli/azure/cli/command_modules/storage/_help.py
 - uid: az_storage_container_restore
   name: az storage container restore
-  summary: Restores soft-deleted container.
-  description: "Operation will only be successful if used within the specified number of days set in the delete retention policy.  .. versionadded:: 12.4.0     This operation was introduced in API version '2019-12-12'."
+  summary: Restore soft-deleted container.
+  description: Operation will only be successful if used within the specified number of days set in the delete retention policy.
   syntax: >-
     az storage container restore --deleted-version
                                  --name
@@ -353,6 +353,9 @@ directCommands:
                                  [--connection-string]
                                  [--sas-token]
                                  [--timeout]
+  examples:
+  - summary: Restore soft-deleted container.
+    syntax: az storage container restore -n deletedcontainer --deleted-version deletedversion
   requiredParameters:
   - isRequired: true
     name: --deleted-version
